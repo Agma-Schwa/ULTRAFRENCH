@@ -1,3 +1,5 @@
 .idea/
-out/
 .~lock*
+*.aux
+*.log
+*.synctex.gz
