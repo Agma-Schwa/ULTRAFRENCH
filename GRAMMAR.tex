@@ -1,0 +1,134 @@
+\documentclass[a4paper, 12pt, oneside, final]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{array, tabularx, multirow}
+\usepackage{longtable}
+
+\setmainfont{Minion 3}
+\frenchspacing
+
+\AtBeginDocument{
+    \def\today{
+        \number\day\space
+        \ifcase\month\or
+        January\or February\or March\or April\or May\or June\or
+        July\or August\or September\or October\or November\or December\fi\space
+        \number\year
+    }
+}
+
+\makeatletter
+\def\footnoterule{%
+    \kern-3\p@
+    \hrule\@width.4\columnwidth
+    \kern2.6\p@
+}
+
+\def\@makefntext#1{%
+    \setlength\parindent{1em}%
+    \noindent
+    {%
+    \mbox{\llap{{}\textsuperscript{\@thefnmark}\kern.5pt}}{#1}%1
+    }%
+}
+\makeatother
+
+\title{ULTRAFRENCH}
+\author{Agma Schwa \& Ætérnal}
+\date{\today}
+
+\ExplSyntaxOn
+\cs_new:Npn \TwoCols #1 #2 {
+    \ifvmode\else\unskip\par\fi
+    \noindent\leavevmode
+    \hbox to \hsize {
+        \hbox to .45\hsize { \vtop {#1} }
+        \hskip   .10\hsize
+        \hbox to .45\hsize { \vtop {#2} }
+    }\par
+}
+\ExplSyntaxOff
+
+\newlength{\EnumItemSep} \EnumItemSep-3pt
+
+\newenvironment{enum}[1][0]{%
+    \vspace{-.5em}%
+    \settowidth{\leftmargini}{99.\hskip\labelsep}%
+    \begin{enumerate}\setcounter{enumi}{#1}\itemsep\EnumItemSep
+}{%
+    \end{enumerate}%
+    \vspace{-.5em}%
+}
+
+\def\parheading#1{\noindent\textbf{#1}}
+
+\begin{document}
+\maketitle
+\clearpage
+
+\section{Phonology}\label{sec:phonology}
+
+\subsection{Sound Changes from Modern Pseudo-French}\label{subsec:sound-changes-from-modern-french}
+\parheading{Legend}\par\medskip\noindent
+Ṽ = nasalised vowel, Ṽ̃ = nasal vowel, V = any vowel (or, when next to Ṽ/Ṽ̃, oral vowel)\\
+C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant\\
+
+\TwoCols{
+\parheading{Preliminary Changes}
+\begin{enum}
+    \item g, r, w > ɰ ⟨r⟩
+    \item œ, œ̃ > y, ỹ
+    \item y > j / \_(\#)V
+    \item V > $\emptyset$ / \_\#V
+    \item j > ɥ ⟨y’⟩
+    \item C > $\emptyset$ / \#\_C
+    \item C > $\emptyset$ / C\_\#
+    \item k > x ([χ] around back vowels, [ɕ] elsewhere)
+    \item ʃ > ɕ ⟨ç⟩
+    \item nt > nθ
+    \item t > d$_2$ ⟨dd⟩ (‘hard /d/’)
+    \item p > b$_2$ ⟨bb⟩ (‘hard /b/’)
+    \item f, v > ɸ, β ⟨b’h⟩
+\end{enum}
+}{
+\parheading{Great Nasal Shift}
+\begin{enum}[13]
+    \item ɔl, ɔ̃l > ɰ ⟨r⟩, ɰ̃ ⟨w⟩
+    \item V, Ṽ > Ṽ, Ṽ̃ / \_[C̃ɥɰ], [C̃ɥɰ]\_
+    \item n, m, ŋ, ɲ, C̃ > $\emptyset$ / V\_\#
+    \item m > ʋ̃ ⟨v⟩
+\end{enum}
+
+\parheading{Intervocalic Lenition (/ V\_V is implied)}
+\begin{enum}[17]
+    \item x, s > h ⟨’⟩
+    \item ɕ > j̊ ⟨ç⟩
+    \item nθ > n
+    \item d, d$_2$, b, b$_2$ > ð, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
+    \item e > $\emptyset$ / C\_C
+\end{enum}
+
+\parheading{Late Changes}
+\begin{enum}[22]
+    \item V[-nasal] > V̥ / \_\#
+\end{enum}
+}\medskip
+
+\parheading{Example}\\
+Our example sentence is ‘Charles, you bought a fish on the mountain?’ or \textbf{\textit{Charles, tu as acheté un pois\-son dans la montagne?}}\par\medskip
+\noindent\begin{tabular}{@{}>{}l>{}l>{}l>{}l}
+PF& ʃaʁl ty a aʃete œ̃ pwasɔ̃ dɔ̃ la mõtaɲ &(14)& ɕaɰ ɥaɕed$_2$e ỹ ɰasɔ̃ dɰ̃a mõd$_2$aɲ \\
+(1)&ʃaɰl ty a aʃete œ̃ pɰasɔ̃ dɔ̃ la mõtaɲ &(15)&ɕãɰ ɥãɕed$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mõ̃d$_2$ãɲ \\
+(2)&ʃaɰl ty a aʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(16)&ɕãɰ ɥãɕed$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mõ̃d$_2$ã \\
+(3)&ʃaɰl tja aʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(17)&ɕãɰ ɥãɕed$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ ʋ̃õ̃d$_2$ã \\
+(4)&ʃaɰl tjaʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(18)&ɕãɰ ɥãɕed$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃d$_2$ã \\
+(5)&ʃaɰl tɥaʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(19)&ɕãɰ ɥãj̊ed$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃d$_2$ã \\
+(6)&ʃaɰl ɥaʃete ỹ ɰasɔ̃ dɔ̃ la mõtaɲ &(21)&ɕãɰ ɥãj̊eθe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃θã \\
+(7)&ʃaɰ ɥaʃete ỹ ɰasɔ̃ dɔ̃ la mõtaɲ &(22)&ɕãɰ ɥãj̊θe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃θã \\
+(9)&ɕaɰ ɥaɕete ỹ ɰasɔ̃ dɔ̃ la mõtaɲ &(23)&ɕãɰ ɥãj̊θe̥ ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃θã \\
+(11)&ɕaɰ ɥaɕed$_2$e ỹ ɰasɔ̃ dɔ̃ la mõd$_2$aɲ &UF&\bfseries\itshape Çár, y’áçt’he ý ráhó dwã-võt’há \\
+\end{tabular}
+
+\end{document}
