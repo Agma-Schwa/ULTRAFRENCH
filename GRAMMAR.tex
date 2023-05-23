@@ -40,14 +40,24 @@
 \date{\today}
 
 \ExplSyntaxOn
-\cs_new:Npn \TwoCols #1 #2 {
+\cs_new:Npn \__two_cols:nnnnn #1 #2 #3 #4 #5 {
     \ifvmode\else\unskip\par\fi
     \noindent\leavevmode
     \hbox to \hsize {
-        \hbox to .45\hsize { \vtop {#1} }
-        \hskip   .10\hsize
-        \hbox to .45\hsize { \vtop {#2} }
+        \hbox to #3 { \vtop {#1} }
+        \hskip   #4
+        \hbox to #5 { \vtop {#2} }
     }\par
+}
+
+\NewDocumentCommand \TwoCols {
+    D[]{.475\hsize}
+    D[]{.475\hsize}
+    D[]{0pt plus 1fill}
+    +m
+    +m
+} {
+    \__two_cols:nnnnn{#4}{#5}{#1}{#3}{#2}
 }
 \ExplSyntaxOff
 
@@ -68,59 +78,62 @@
 \maketitle
 \clearpage
 
-\section{Phonology}\label{sec:phonology}{\def\arraystretch{1.2}
-\noindent\begin{tabular}{@{}|>{}l|>{}l|>{}l|>{}l|>{}l|>{}l|}                 \hline
-                   & Labial & Dental/Alveolar & Palatal  & Velar & Glottal \\\hline
-    Stop           & b, bʱ  & d               &          & k     &         \\\hline
-    Nasal          &        & n               &          &       &         \\\hline
-    Fricative      & ɸ β, ʋ̃ & s z, θ ð        & ɕ ʑ      & x     & h       \\\hline
-    Approximant    &        &                 & ɥ ɥ̃, j̊   & ɰ ɰ̃   &         \\\hline
-    Lat. Fricative &        & ɮ̃               &          &       &         \\\hline
+\section{Phonology}\label{sec:phonology}{\def\arraystretch{1.25}\setlength{\tabcolsep}{.4em}
+\noindent\begin{tabular}{@{}|l|l|l|l|l|l|l@{\quad}|l|l|l|}                                                   \cline{1-6} \cline{8-10}
+               & Labial & Coronal  & Palatal  & Velar & Glottal &&           & Front        & Back        \\ \cline{1-6} \cline{8-10}
+    Stop       & b, bʱ  & d        &          & k     &         && Close     & i ĩ ĩ̃ i̥, y ỹ ỹ̃ ẙ & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
+    Nasal      &        & n        &          &       &         && Close-mid & e ẽ ẽ̃ e̥      & o o̥         \\ \cline{1-6} \cline{8-10}
+    Fricative  & ɸ β, ʋ̃ & s z, θ ð & ɕ ʑ      & x     & h       && Mid       & \multicolumn{2}{c|}{ə ə̥}   \\ \cline{1-6} \cline{8-10}
+    Approx.    &        &          & ɥ ɥ̃, j̊   & ɰ ɰ̃   &         && Open-mid  & ɛ ɛ̃ ɛ̃̃ ɛ̥      & ɔ̃ ɔ̃̃         \\ \cline{1-6} \cline{8-10}
+    Lat. Fric. &        & ɮ̃        & ʎ̝̃        &       &         && Open      & a ḁ          & ɑ̃ ɑ̃̃         \\ \cline{1-6} \cline{8-10}
 \end{tabular}}
 
 \subsection{Sound Changes from Modern Pseudo-French}\label{subsec:sound-changes-from-modern-french}
 \parheading{Legend}\par\medskip\noindent
 Ṽ = nasalised vowel, Ṽ̃ = nasal vowel, V = any vowel (or, in conjunction with Ṽ/Ṽ̃, oral vowel)\\
-C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant\\
+C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant.\medskip
 
-\TwoCols{
+\TwoCols[.45\hsize][.45\hsize][0pt]{
 \parheading{Preliminary Changes}
 \begin{enum}
     \item g, r, w > ɰ ⟨r⟩
-    \item œ, œ̃ > y, ỹ
+    \item œ, œ̃, ø > y, ỹ, ỹ
+    \item ɔ > o
     \item y > j / \_(\#)V
     \item V > $\emptyset$ / \_\#V
+    \item lj > ʎ
     \item j > ɥ ⟨y’⟩
     \item C > $\emptyset$ / \#\_C
     \item C > $\emptyset$ / C\_\#
-    \item k > x\footnotemark
+    \item k > x\footnotemark ⟨c’h⟩
     \item ʃ, ʒ > ɕ ⟨ç⟩, ʑ ⟨j⟩
     \item nt > nθ
     \item t > d$_2$ (‘hard /d/’)
     \item p > b$_2$ (‘hard /b/’)
-    \item f, v > ɸ, β ⟨b’h⟩
+    \item f, v > ɸ ⟨f⟩, β ⟨b’h⟩
 \end{enum}
 }{
 \parheading{Great Nasal Shift}
-\begin{enum}[13]
-    \item ɔl, ɔ̃l > ɰ ⟨r⟩, ɰ̃ ⟨w⟩
+\begin{enum}[15]
+    \item Ṽl > ɰ̃ ⟨w⟩
     \item V, Ṽ > Ṽ, Ṽ̃ / \_[C̃ɥɰ], [C̃ɥɰ]\_
+    \item ə̃, ə̃̃, ã, ã̃, õ, õ̃ > ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃
     \item n, m, ŋ, ɲ, C̃ > $\emptyset$ / V\_\#
     \item ɲ, ŋ > n
-    \item m, l > ʋ̃ ⟨v⟩, ɮ̃ ⟨l⟩
+    \item m, l, ʎ > ʋ̃ ⟨v⟩, ɮ̃ ⟨l⟩, ʎ̝̃ ⟨l⟩
 \end{enum}
 
 \parheading{Intervocalic Lenition (/ V\_V is implied)}
-\begin{enum}[18]
-    \item x, s > h ⟨’⟩
-    \item ɕ, ɮ̃ > j̊ ⟨ç⟩, ɥ̃ ⟨l⟩
+\begin{enum}[21]
+    \item x, s > h
+    \item ɕ, ɮ̃, ʎ̝̃ > j̊ ⟨ç⟩, ɥ̃ ⟨l⟩, ɰ̃ ⟨l⟩
     \item nθ > n
-    \item d, d$_2$, b, b$_2$ > ð, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
-    \item e > $\emptyset$ / C\_C
+    \item d, d$_2$, b, b$_2$ > ð ⟨d’h⟩, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
 \end{enum}
 
 \parheading{Late Changes}
-\begin{enum}[22]
+\begin{enum}[25]
+    \item ə > $\emptyset$ / C\_C
     \item V[-nasal] > V̥ / \_\#
 \end{enum}
 }\medskip
@@ -128,18 +141,20 @@ C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant\
 \footnotetext{[χ] around back vowels, [ɕ] elsewhere.}
 
 \parheading{Example}\\
-Our example sentence is ‘Charles, you bought a fish on the mountain?’ or \textbf{\textit{Charles, tu as acheté un pois\-son dans la montagne?}}\par\medskip
-\noindent\begin{tabular}{@{}>{}l>{}l>{}l>{}l}
-PF& ʃaʁl ty a aʃete œ̃ pwasɔ̃ dɔ̃ la mõtaɲ &(14)& ɕaɰ ɥaɕed$_2$e ỹ ɰasɔ̃ dɰ̃a mõd$_2$aɲ \\
-(1)&ʃaɰl ty a aʃete œ̃ pɰasɔ̃ dɔ̃ la mõtaɲ &(15)&ɕãɰ ɥãɕed$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mõ̃d$_2$ãɲ \\
-(2)&ʃaɰl ty a aʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(16)&ɕãɰ ɥãɕed$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mõ̃d$_2$ã \\
-(3)&ʃaɰl tja aʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(18)&ɕãɰ ɥãɕed$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ ʋ̃õ̃d$_2$ã \\
-(4)&ʃaɰl tjaʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(19)&ɕãɰ ɥãɕed$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃d$_2$ã \\
-(5)&ʃaɰl tɥaʃete ỹ pɰasɔ̃ dɔ̃ la mõtaɲ &(20)&ɕãɰ ɥãj̊ed$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃d$_2$ã \\
-(6)&ʃaɰl ɥaʃete ỹ ɰasɔ̃ dɔ̃ la mõtaɲ &(22)&ɕãɰ ɥãj̊eθe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃θã \\
-(7)&ʃaɰ ɥaʃete ỹ ɰasɔ̃ dɔ̃ la mõtaɲ &(23)&ɕãɰ ɥãj̊θe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃θã \\
-(9)&ɕaɰ ɥaɕete ỹ ɰasɔ̃ dɔ̃ la mõtaɲ &(24)&ɕãɰ ɥãj̊θe̥ ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃õ̃θã \\
-(11)&ɕaɰ ɥaɕed$_2$e ỹ ɰasɔ̃ dɔ̃ la mõd$_2$aɲ &UF&\bfseries\itshape Çár, y’áçt’he ý ráhó dwã-võt’há \\
+Our example sentence is ‘Charles, you bought a fish on the mountain?’ or \textbf{\textit{Charles, tu as acheté un pois\-son dans la montagne?}}
+In this simple case, the grammar is more or less the same in PF and UF, so no grammatical changes apply here.\par\medskip
+
+\noindent\begin{tabular}{@{}llll}
+PF& ʃaʁl ty a aʃəte œ̃ pwasɔ̃ dɑ̃ la mɔ̃taɲ &(16)& ɕaɰ ɥaɕəd$_2$e ỹ ɰasɔ̃ dɰ̃a mɔ̃d$_2$aɲ \\
+(1)&ʃaɰl ty a aʃəte œ̃ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(17)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mɔ̃̃d$_2$ãɲ \\
+(2)&ʃaɰl ty a aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(19)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mɔ̃̃d$_2$ã \\
+(4)&ʃaɰl tja aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(21)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃d$_2$ã \\
+(5)&ʃaɰl tjaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(22)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃d$_2$ã \\
+(7)&ʃaɰl tɥaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(23)&ɕãɰ ɥãj̊əd$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃d$_2$ã \\
+(8)&ʃaɰl ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ &(25)&ɕãɰ ɥãj̊əθe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃θã \\
+(9)&ʃaɰ ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ &(26)&ɕãɰ ɥãj̊θe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃θã \\
+(11)&ɕaɰ ɥaɕəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ &(27)&ɕãɰ ɥãj̊θe̥ ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃θã \\
+(13)&ɕaɰ ɥaɕəd$_2$e ỹ ɰasɔ̃ dɑ̃ la mɔ̃d$_2$aɲ &UF&\bfseries\itshape Çár, y’áçt’he ý ráhó dwâ-vôt’há \\
 \end{tabular}
 
 \end{document}
