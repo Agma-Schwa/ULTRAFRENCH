@@ -1,12 +1,13 @@
 \documentclass[a4paper, 12pt, oneside, final]{article}
 \usepackage[margin=2cm]{geometry}
-\usepackage{fontspec}
+\usepackage{unicode-math}
 \usepackage[english]{babel}
 \usepackage{csquotes}
 \usepackage{array, tabularx, multirow}
 \usepackage{longtable}
 
 \setmainfont{Minion 3}
+\setmathfont[range=\mathit]{Minion 3 Italic}
 \frenchspacing
 
 \AtBeginDocument{
@@ -59,6 +60,7 @@
 } {
     \__two_cols:nnnnn{#4}{#5}{#1}{#3}{#2}
 }
+
 \ExplSyntaxOff
 
 \newlength{\EnumItemSep} \EnumItemSep-3pt
@@ -74,11 +76,15 @@
 
 \def\parheading#1{\noindent\textbf{#1}}
 
+\let\Sub\textsubscript
+
 \begin{document}
 \maketitle
+\thispagestyle{empty}
 \clearpage
+\setcounter{page}{1}
 
-\section{Phonology}\label{sec:phonology}{\def\arraystretch{1.25}\setlength{\tabcolsep}{.4em}
+\section{Phonology and Evolution from Modern Pseudo-French}\label{sec:phonology}{\def\arraystretch{1.25}\setlength{\tabcolsep}{.4em}
 \noindent\begin{tabular}{@{}|l|l|l|l|l|l|l@{\quad}|l|l|l|}                                                   \cline{1-6} \cline{8-10}
                & Labial & Coronal  & Palatal  & Velar & Glottal &&           & Front        & Back        \\ \cline{1-6} \cline{8-10}
     Stop       & b, bʱ  & d        &          & k     &         && Close     & i ĩ ĩ̃ i̥, y ỹ ỹ̃ ẙ & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
@@ -86,21 +92,20 @@
     Fricative  & ɸ β, ʋ̃ & s z, θ ð & ɕ ʑ      & x     & h       && Mid       & \multicolumn{2}{c|}{ə ə̥}   \\ \cline{1-6} \cline{8-10}
     Approx.    &        &          & ɥ ɥ̃, j̊   & ɰ ɰ̃   &         && Open-mid  & ɛ ɛ̃ ɛ̃̃ ɛ̥      & ɔ̃ ɔ̃̃         \\ \cline{1-6} \cline{8-10}
     Lat. Fric. &        & ɮ̃        & ʎ̝̃        &       &         && Open      & a ḁ          & ɑ̃ ɑ̃̃         \\ \cline{1-6} \cline{8-10}
-\end{tabular}}
+\end{tabular}}\bigskip
 
-\subsection{Sound Changes from Modern Pseudo-French}\label{subsec:sound-changes-from-modern-french}
-\parheading{Legend}\par\medskip\noindent
+\parheading{Legend}\par\noindent
 Ṽ = nasalised vowel, Ṽ̃ = nasal vowel, V = any vowel (or, in conjunction with Ṽ/Ṽ̃, oral vowel)\\
-C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant.\medskip
+N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant.\medskip
 
 \TwoCols[.45\hsize][.45\hsize][0pt]{
 \parheading{Preliminary Changes}
 \begin{enum}
-    \item g, r, w > ɰ ⟨r⟩
+    \item g, ʁ, w > ɰ ⟨r⟩
     \item œ, œ̃, ø > y, ỹ, ỹ
     \item ɔ > o
     \item y > j / \_(\#)V
-    \item V > $\emptyset$ / \_\#V
+    \item V\kern-2pt\raisebox{2pt}{\Sub α} > $\emptyset$ / \_\#V\kern-2pt\raisebox{2pt}{\Sub α}
     \item lj > ʎ
     \item j > ɥ ⟨y’⟩
     \item C > $\emptyset$ / \#\_C
@@ -108,17 +113,17 @@ C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant.
     \item k > x\footnotemark ⟨c’h⟩
     \item ʃ, ʒ > ɕ ⟨ç⟩, ʑ ⟨j⟩
     \item nt > nθ
-    \item t > d$_2$ (‘hard /d/’)
-    \item p > b$_2$ (‘hard /b/’)
+    \item t > d\Sub2 (‘hard /d/’)
+    \item p > b\Sub2 (‘hard /b/’)
     \item f, v > ɸ ⟨f⟩, β ⟨b’h⟩
 \end{enum}
 }{
 \parheading{Great Nasal Shift}
 \begin{enum}[15]
     \item Ṽl > ɰ̃ ⟨w⟩
-    \item V, Ṽ > Ṽ, Ṽ̃ / \_[C̃ɥɰ], [C̃ɥɰ]\_
+    \item V, Ṽ > Ṽ, Ṽ̃ / \_[NC̃ɥɰ], [NC̃ɥɰ]\_
     \item ə̃, ə̃̃, ã, ã̃, õ, õ̃ > ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃
-    \item n, m, ŋ, ɲ, C̃ > $\emptyset$ / V\_\#
+    \item N, C̃ > $\emptyset$ / V\_\#
     \item ɲ, ŋ > n
     \item m, l, ʎ > ʋ̃ ⟨v⟩, ɮ̃ ⟨l⟩, ʎ̝̃ ⟨l⟩
 \end{enum}
@@ -128,13 +133,13 @@ C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant.
     \item x, s > h
     \item ɕ, ɮ̃, ʎ̝̃ > j̊ ⟨ç⟩, ɥ̃ ⟨l⟩, ɰ̃ ⟨l⟩
     \item nθ > n
-    \item d, d$_2$, b, b$_2$ > ð ⟨d’h⟩, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
+    \item d, d\Sub2, b, b\Sub2 > ð ⟨d’h⟩, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
 \end{enum}
 
 \parheading{Late Changes}
 \begin{enum}[25]
     \item ə > $\emptyset$ / C\_C
-    \item V[-nasal] > V̥ / \_\#
+    \item V[-nasalised, -nasal] > V̥ / \_\#
 \end{enum}
 }\medskip
 
@@ -142,19 +147,20 @@ C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant.
 
 \parheading{Example}\\
 Our example sentence is ‘Charles, you bought a fish on the mountain?’ or \textbf{\textit{Charles, tu as acheté un pois\-son dans la montagne?}}
+The resulting UF sentence is \textit{\textbf{Çár, y’áçt’he ý ráhó dwávôt’há}}.
 In this simple case, the grammar is more or less the same in PF and UF, so no grammatical changes apply here.\par\medskip
 
 \noindent\begin{tabular}{@{}llll}
-PF& ʃaʁl ty a aʃəte œ̃ pwasɔ̃ dɑ̃ la mɔ̃taɲ &(16)& ɕaɰ ɥaɕəd$_2$e ỹ ɰasɔ̃ dɰ̃a mɔ̃d$_2$aɲ \\
-(1)&ʃaɰl ty a aʃəte œ̃ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(17)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mɔ̃̃d$_2$ãɲ \\
-(2)&ʃaɰl ty a aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(19)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ mɔ̃̃d$_2$ã \\
-(4)&ʃaɰl tja aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(21)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãsɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃d$_2$ã \\
-(5)&ʃaɰl tjaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(22)&ɕãɰ ɥãɕəd$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃d$_2$ã \\
-(7)&ʃaɰl tɥaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ &(23)&ɕãɰ ɥãj̊əd$_2$e ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃d$_2$ã \\
-(8)&ʃaɰl ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ &(25)&ɕãɰ ɥãj̊əθe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃θã \\
-(9)&ʃaɰ ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ &(26)&ɕãɰ ɥãj̊θe ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃θã \\
-(11)&ɕaɰ ɥaɕəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ &(27)&ɕãɰ ɥãj̊θe̥ ỹ ɰãhɔ̃ dɰ̃ã̃ ʋ̃ɔ̃̃θã \\
-(13)&ɕaɰ ɥaɕəd$_2$e ỹ ɰasɔ̃ dɑ̃ la mɔ̃d$_2$aɲ &UF&\bfseries\itshape Çár, y’áçt’he ý ráhó dwâ-vôt’há \\
+PF &ʃaʁl ty a aʃəte œ̃ pwasɔ̃ dɑ̃ la mɔ̃taɲ       &(16)&ɕaɰ ɥaɕəd\Sub2e ỹ ɰasɔ̃ dɰ̃a mɔ̃d\Sub2aɲ \\
+(1)&ʃaɰl ty a aʃəte œ̃ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(17)&ɕãɰ ɥãɕəd\Sub2e ỹ ɰãsɔ̃ dɰ̃ã mɔ̃̃d\Sub2ãɲ \\
+(2)&ʃaɰl ty a aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(18)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃d\Sub2ɑ̃ɲ \\
+(4)&ʃaɰl tja aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ        &(19)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃d\Sub2ɑ̃ \\
+(5)&ʃaɰl tjaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(21)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃d\Sub2ɑ̃ \\
+(7)&ʃaɰl tɥaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(22)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃d\Sub2ɑ̃ \\
+(8)&ʃaɰl ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(23)&ɕɑ̃ɰ ɥɑ̃j̊əd\Sub2e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃d\Sub2ɑ̃ \\
+(9)&ʃaɰ ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ             &(25)&ɕɑ̃ɰ ɥɑ̃j̊əθe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+(11)&ɕaɰ ɥaɕəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(26)&ɕɑ̃ɰ ɥɑ̃j̊θe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+(13)&ɕaɰ ɥaɕəd\Sub2e ỹ ɰasɔ̃ dɑ̃ la mɔ̃d\Sub2aɲ  &(27)&ɕɑ̃ɰ ɥɑ̃j̊θe̥ ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
 \end{tabular}
-
+\section{Grammar}\label{sec:grammar}
 \end{document}

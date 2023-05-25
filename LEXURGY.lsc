@@ -1,0 +1,62 @@
+#Feature +nasalised, +nasal, +voiced
+#
+#Diacritic ̃  (floating) [+nasalised]
+#Diacritic ̃̃  (floating) [+nasal]
+#Diacritic ̥  (floating) [-voiced]
+
+Symbol d2, b2, bʱ, ȷ̊, ʎ̝
+
+Class cn  {ɰ̃, ɥ̃, ʋ̃, ɮ̃, ʎ̝̃}
+Class n   {m, n, ɲ, ŋ}
+Class cpf {@n, p, t, k, b, d, ɡ, f, s, ʃ, ʁ, v, z, ʒ, l, j, ɥ, w}
+Class cuf {ɰ, ʎ, x, ɕ, ʑ, θ, ð, ɸ, β, ȷ̊, bʱ}
+Class c   {@cn, @cpf, @cuf}
+Class vn  {ĩ, ỹ, ẽ, ɔ̃, õ, ɛ̃, ã, ɑ̃, ũ, ə̃}
+Class vnn {ĩ̃, ỹ̃, ẽ̃, ɔ̃̃, õ̃, ɛ̃̃, ã̃, ɑ̃̃, ũ̃, ə̃̃}
+Class vq  {i̥, ẙ, e̥, ɔ̥, o̥, ɛ̥, ḁ, ɑ̥, u̥, ə̥}
+Class vo  {i, y, e, ɔ, o, ɛ, a, ɑ, u, ə}
+Class v   {@vn, @vnn, @vq, @vo}
+
+Class gnsnasal {@n, @cn, ɥ, ɰ}
+
+Prelim: 
+  {g, ʁ, w} => ɰ
+  Then: {œ, œ̃, ø} => {y, ỹ, ỹ}
+  Then: ɔ => o
+  Then: $$ => * / y _ @v
+  Then: y => j / _ @v
+  Then: $$ => * / @v$1 _ $1
+  Then: @v$1 $1 => $1
+  Then: lj => ʎ
+  Then: j => ɥ
+  Then: @c => * / $ _ @c
+  Then: @c => * / @c _ $
+  Then: k => x
+  Then: {ʃ, ʒ} => {ɕ, ʑ}
+  Then: nt => nθ
+  Then: t => d2
+  Then: p => b2
+  Then: {f, v} => {ɸ, β}
+
+GNS:
+  $$ => * / @vn _ l
+  Then: @vn l => ɰ̃
+  Then: 
+    @vo => @vn / _ @gnsnasal
+    @vn => @vnn / _ @gnsnasal
+    @vo => @vn / @gnsnasal _
+    @vn => @vnn / @gnsnasal _
+  Then: {ə̃, ə̃̃, ã, ã̃, õ, õ̃} => {ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃}
+  Then: {@n, @cn} => * / @v _ $
+  Then: {ɲ, ŋ} => n
+  Then: {m, l, ʎ} => {ʋ̃, ɮ̃, ʎ̝̃}
+
+Lenition:
+  {x, s} => h / @v _ @v
+  Then: {ɕ, ɮ̃, ʎ̝̃} => {ȷ̊, ɥ̃, ɰ̃} / @v _ @v
+  Then: nθ => n / @v _ @v
+  Then: {d, d2, b, b2} => {ð, θ, β, bʱ} / @v _ @v
+
+Late:
+  ə => * / @c _ @c
+  @vo => @vq / _ $
