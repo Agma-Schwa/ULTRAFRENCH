@@ -1,5 +1,6 @@
 \documentclass[a4paper, 12pt, oneside, final]{article}
 \usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
 \usepackage{unicode-math}
 \usepackage[english]{babel}
 \usepackage{csquotes}
@@ -7,6 +8,7 @@
 \usepackage{longtable}
 
 \setmainfont{Minion 3}
+\setmathfont{latinmodern-math.otf}
 \setmathfont[range=\mathit]{Minion 3 Italic}
 \frenchspacing
 
@@ -61,6 +63,26 @@
     \__two_cols:nnnnn{#4}{#5}{#1}{#3}{#2}
 }
 
+\def \UF { \bfseries \itshape }
+\let \nf \normalfont
+
+\def \d {ḍ}
+\def \D {Ḍ}
+\def \b {ḅ}
+\def \B {Ḅ}
+\def \l {ḷ}
+\def \L {Ḷ}
+\def \e {ẹ}
+\def \E {Ẹ}
+
+\def \__md_star:w #1*{ \textit{#1} \char_set_catcode_active:N \* }
+\def\* { \detokenize{*} }
+\char_set_catcode_active:N \*
+\cs_new:Npn * { \char_set_catcode_other:N \* \__md_star:w }
+
+\cs_new:Npn \items { \itemize\itemsep6pt }
+\cs_new:Npn \enditems { \enditemize }
+
 \ExplSyntaxOff
 
 \newlength{\EnumItemSep} \EnumItemSep-3pt
@@ -89,7 +111,7 @@
                & Labial & Coronal  & Palatal  & Velar & Glottal &&           & Front        & Back        \\ \cline{1-6} \cline{8-10}
     Stop       & b, bʱ  & d        &          & k     &         && Close     & i ĩ ĩ̃ i̥, y ỹ ỹ̃ ẙ & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
     Nasal      &        & n        &          &       &         && Close-mid & e ẽ ẽ̃ e̥      & o o̥         \\ \cline{1-6} \cline{8-10}
-    Fricative  & ɸ β, ʋ̃ & s z, θ ð & ɕ ʑ      & x     & h       && Mid       & \multicolumn{2}{c|}{ə ə̥}   \\ \cline{1-6} \cline{8-10}
+    Fricative  & ɸ β, ʋ̃ & s z, θ ð & ɕ ʑ      & x     & h       && Mid       & \multicolumn{2}{c|}{ə ⟨\e{}⟩ ə̥}   \\ \cline{1-6} \cline{8-10}
     Approx.    &        &          & ɥ ɥ̃, j̊   & ɰ ɰ̃   &         && Open-mid  & ɛ ɛ̃ ɛ̃̃ ɛ̥      & ɔ̃ ɔ̃̃         \\ \cline{1-6} \cline{8-10}
     Lat. Fric. &        & ɮ̃        & ʎ̝̃        &       &         && Open      & a ḁ          & ɑ̃ ɑ̃̃         \\ \cline{1-6} \cline{8-10}
 \end{tabular}}\bigskip
@@ -106,15 +128,15 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
     \item ɔ > o
     \item y > j / \_(\#)V
     \item V\kern-2pt\raisebox{2pt}{\Sub α} > $\emptyset$ / \_\#V\kern-2pt\raisebox{2pt}{\Sub α}
-    \item lj > ʎ
+    \item lj, lɥ > ʎ
     \item j > ɥ ⟨y’⟩
     \item C > $\emptyset$ / \#\_C
     \item C > $\emptyset$ / C\_\#
     \item k > x\footnotemark ⟨c’h⟩
     \item ʃ, ʒ > ɕ ⟨ç⟩, ʑ ⟨j⟩
     \item nt > nθ
-    \item t > d\Sub2 (‘hard /d/’)
-    \item p > b\Sub2 (‘hard /b/’)
+    \item t > \d{} [d] (‘hard /d/’)
+    \item p > \b{} [b] (‘hard /b/’)
     \item f, v > ɸ ⟨f⟩, β ⟨b’h⟩
 \end{enum}
 }{
@@ -125,15 +147,16 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
     \item ə̃, ə̃̃, ã, ã̃, õ, õ̃ > ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃
     \item N, C̃ > $\emptyset$ / V\_\#
     \item ɲ, ŋ > n
-    \item m, l, ʎ > ʋ̃ ⟨v⟩, ɮ̃ ⟨l⟩, ʎ̝̃ ⟨l⟩
+    \item V, Ṽ > $\emptyset$ / N \_ N
+    \item m, l, ʎ > ʋ̃ ⟨v⟩, ɮ̃ ⟨l⟩, ʎ̝̃ ⟨\l⟩
 \end{enum}
 
 \parheading{Intervocalic Lenition (/ V\_V is implied)}
 \begin{enum}[21]
     \item x, s > h
-    \item ɕ, ɮ̃, ʎ̝̃ > j̊ ⟨ç⟩, ɥ̃ ⟨l⟩, ɰ̃ ⟨l⟩
+    \item ɕ, ɮ̃, ʎ̝̃ > j̊ ⟨ç⟩, ɥ̃ ⟨l⟩, ɰ̃ ⟨\l⟩
     \item nθ > n
-    \item d, d\Sub2, b, b\Sub2 > ð ⟨d’h⟩, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
+    \item d, \d{}, b, \b{} > ð ⟨d’h⟩, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
 \end{enum}
 
 \parheading{Late Changes}
@@ -151,16 +174,102 @@ The resulting UF sentence is \textit{\textbf{Çár, y’áçt’he ý ráhó dw
 In this simple case, the grammar is more or less the same in PF and UF, so no grammatical changes apply here.\par\medskip
 
 \noindent\begin{tabular}{@{}llll}
-PF &ʃaʁl ty a aʃəte œ̃ pwasɔ̃ dɑ̃ la mɔ̃taɲ       &(16)&ɕaɰ ɥaɕəd\Sub2e ỹ ɰasɔ̃ dɰ̃a mɔ̃d\Sub2aɲ \\
-(1)&ʃaɰl ty a aʃəte œ̃ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(17)&ɕãɰ ɥãɕəd\Sub2e ỹ ɰãsɔ̃ dɰ̃ã mɔ̃̃d\Sub2ãɲ \\
-(2)&ʃaɰl ty a aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(18)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃d\Sub2ɑ̃ɲ \\
-(4)&ʃaɰl tja aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ        &(19)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃d\Sub2ɑ̃ \\
-(5)&ʃaɰl tjaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(21)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃d\Sub2ɑ̃ \\
-(7)&ʃaɰl tɥaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(22)&ɕɑ̃ɰ ɥɑ̃ɕəd\Sub2e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃d\Sub2ɑ̃ \\
-(8)&ʃaɰl ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(23)&ɕɑ̃ɰ ɥɑ̃j̊əd\Sub2e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃d\Sub2ɑ̃ \\
-(9)&ʃaɰ ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ             &(25)&ɕɑ̃ɰ ɥɑ̃j̊əθe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
-(11)&ɕaɰ ɥaɕəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(26)&ɕɑ̃ɰ ɥɑ̃j̊θe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
-(13)&ɕaɰ ɥaɕəd\Sub2e ỹ ɰasɔ̃ dɑ̃ la mɔ̃d\Sub2aɲ  &(27)&ɕɑ̃ɰ ɥɑ̃j̊θe̥ ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+PF &ʃaʁl ty a aʃəte œ̃ pwasɔ̃ dɑ̃ la mɔ̃taɲ       &(16)&ɕaɰ ɥaɕə\d{}e ỹ ɰasɔ̃ dɰ̃a mɔ̃\d{}aɲ \\
+(1)&ʃaɰl ty a aʃəte œ̃ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(17)&ɕãɰ ɥãɕə\d{}e ỹ ɰãsɔ̃ dɰ̃ã mɔ̃̃\d{}ãɲ \\
+(2)&ʃaɰl ty a aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(18)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃\d{}ɑ̃ɲ \\
+(4)&ʃaɰl tja aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ        &(19)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃\d{}ɑ̃ \\
+(5)&ʃaɰl tjaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(22)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
+(7)&ʃaɰl tɥaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(23)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
+(8)&ʃaɰl ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(24)&ɕɑ̃ɰ ɥɑ̃j̊ə\d{}e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
+(9)&ʃaɰ ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ             &(26)&ɕɑ̃ɰ ɥɑ̃j̊əθe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+(11)&ɕaɰ ɥaɕəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(27)&ɕɑ̃ɰ ɥɑ̃j̊θe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+(13)&ɕaɰ ɥaɕə\d{}e ỹ ɰasɔ̃ dɑ̃ la mɔ̃\d{}aɲ  &(28)&ɕɑ̃ɰ ɥɑ̃j̊θe̥ ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
 \end{tabular}
-\section{Grammar}\label{sec:grammar}
+
+\section{Accidence}\label{sec:accidence}
+\subsection{Verbal Morphology}\label{subsec:verbal-morphology}
+Verbs in UF are inflected for person, number, tense, aspect, mood, and voice. Verbal inflexion is mainly done
+by means of concatenating a vast set of prefixes onto a verb, with the occasional suffix and circumfix making
+its appearance. This chapter details these affixes, their meanings, uses, forms, and restrictions.
+
+
+\subsubsection{Active/Passive Affixes}\label{subsubsec:active-passive-affixes}
+UF has a set of active/subject as well as passive/object prefixes which can be used on their own or in combination
+with one another, though at most one active and one passive prefix may be combined with a verb.\footnote{Irrespective
+of whether they are personal or infinitive prefixes. For instance, it would also be illegal to combine e.g. the active
+infinitive prefix with the first person active singular prefix.} Table~\ref{tab:active-passive-prefixes}
+below lists those prefixes, two of which are actually circumfixes.
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st&j-&ó-/r-/w- -ó&&1st&v-&ó-/r-/w-\\\cline{1-3}\cline{5-7}
+2nd&\d{}(\e)-&b’h(y)- -é&&2nd&\d{}(\e)-&b’h(y)-\\\cline{1-3}\cline{5-7}
+3rd m&l(\e)-&l(\e)-&&3rd m&y’-&lý-\\\cline{1-3}\cline{5-7}
+3rd f&ll(a)-&ll(\e)-&&3rd f&y’- &lý-\\\cline{1-3}\cline{5-7}
+3rd n&ý’- &l-&&3rd n&ý’-&lý-\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it d\e-}&&Infinitive&\multicolumn{2}{c|}{\it à-/h-}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Active (left) and passive (right) verbal prefixes and circumfixes.}\label{tab:active-passive-prefixes}
+\end{table}
+
+\noindent A great degree of syncretism can be observed in the third-person forms. The gender distinction in the
+third person singular that diachronically resulted from gendered personal pronouns is almost non-existent in the
+plural; the reason for this development is that those forms are derived from the old dative forms, which lacked
+this distinction altogether.
+Furthermore, the active first and second person plural only distinguished from their passive counterparts by
+the presence of additional suffixes in the former case.
+
+The first person plural prefix varies depending on the vowel following it; if it is
+any vowel that is not a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
+*rad’hóró* ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as *w-* instead, e.g. *ob’heír* ‘obey’
+to *wob’heíró* ‘we obey’.
+
+The passive infinitive prefix *à-* coalesces with any vowel following it. It becomes *á-* if it
+is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â-* if it is
+followed by a nasal variant of ‘a’, e.g. *ánvé* ‘give life to’ to *ânvé* ‘to be animated’; and *h-* if it is
+followed by any other vowel, e.g. *ob’heír* to *hob’heír* ‘to be obeyed’.
+
+The parenthesised vowels are used if the prefix is followed by a consonant, e.g. *dír* ‘say’ to *ll\e{}dír*
+‘they (f) say’ and *b’hydíré* ‘you (pl) say’, but *ad’hór* to *llad’hór* ‘they (f) love’ and *b’had’hóré* ‘you
+(pl) love’. The prefixes *ó-* and *à-* retain their main forms if followed by a consonant,
+e.g. *dír* ‘say’ to *ódíró* ‘We say’ and *àdír* ‘to be said’.
+
+When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive prefixes
+always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (pl) love him/her’,
+but *d\e{}vad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (pl)’. Recall that at most one infinitive prefix
+may be used.
+
+By way of illustration, consider the paradigm of the verb *ad’hór* as shown in Table~\ref{tab:adhor-paradigm} below.
+Since this word starts with a vowel, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} above
+are not used. Furthermore, since it starts with a non-nasal ‘a’-like vowel, the *ó-* prefix is realised as *r-*
+and the *à-* prefix coalesces with the initial ‘a’ of the stem to form *á*.
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+\nf Active&\nf Sg&\nf Pl&\nf &\nf Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st&jad’hór&rad’hóró&&1st&vad’hór&rad’hór\\\cline{1-3}\cline{5-7}
+2nd&\d{}ad’hór&b’had’hóré&&2nd&\d{}ad’hór&b’had’hór\\\cline{1-3}\cline{5-7}
+3rd m&lad’hór&lad’hór&&3rd m&y’ad’hór&lýad’hór\\\cline{1-3}\cline{5-7}
+3rd f&llad’hór&llad’hór&&3rd f&y’ad’hór &lýad’hór\\\cline{1-3}\cline{5-7}
+3rd n&ý’ad’hór&lad’hór&&3rd n&ý’ad’hór&lýad’hór\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it dad’hór}&&Infinitive&\multicolumn{2}{c|}{\it ád’hór}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Paradigm of the verb \emph{ad’hór}.}\label{tab:adhor-paradigm}
+\end{table}
+
+\noindent [to be continued]
+
+
+
+
+
+
+
+
+
+
 \end{document}
+

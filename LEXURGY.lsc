@@ -27,7 +27,7 @@ Prelim:
   Then: y => j / _ @v
   Then: $$ => * / @v$1 _ $1
   Then: @v$1 $1 => $1
-  Then: lj => ʎ
+  Then: {lj, lɥ} => ʎ
   Then: j => ɥ
   Then: @c => * / $ _ @c
   Then: @c => * / @c _ $
@@ -49,6 +49,7 @@ GNS:
   Then: {ə̃, ə̃̃, ã, ã̃, õ, õ̃} => {ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃}
   Then: {@n, @cn} => * / @v _ $
   Then: {ɲ, ŋ} => n
+  Then: {@vo, @vn} => * / @n _ @n
   Then: {m, l, ʎ} => {ʋ̃, ɮ̃, ʎ̝̃}
 
 Lenition:
