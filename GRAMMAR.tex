@@ -75,10 +75,10 @@
 \def \e {ẹ}
 \def \E {Ẹ}
 
-\def \__md_star:w #1*{ \textit{#1} \char_set_catcode_active:N \* }
-\def\* { \detokenize{*} }
 \char_set_catcode_active:N \*
-\cs_new:Npn * { \char_set_catcode_other:N \* \__md_star:w }
+\cs_set_protected:Npn \__md_star:w #1*{ \textit{#1} }
+\def\* { \detokenize{*} }
+\cs_new:Npn * { \__md_star:w }
 
 \cs_new:Npn \items { \itemize\itemsep6pt }
 \cs_new:Npn \enditems { \enditemize }
@@ -130,6 +130,7 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
     \item V\kern-2pt\raisebox{2pt}{\Sub α} > $\emptyset$ / \_\#V\kern-2pt\raisebox{2pt}{\Sub α}
     \item lj, lɥ > ʎ
     \item j > ɥ ⟨y’⟩
+    \item ɰ > ɥ / \_i
     \item C > $\emptyset$ / \#\_C
     \item C > $\emptyset$ / C\_\#
     \item k > x\footnotemark ⟨c’h⟩
@@ -153,7 +154,7 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
 
 \parheading{Intervocalic Lenition (/ V\_V is implied)}
 \begin{enum}[21]
-    \item x, s > h
+    \item x, s, z > h
     \item ɕ, ɮ̃, ʎ̝̃ > j̊ ⟨ç⟩, ɥ̃ ⟨l⟩, ɰ̃ ⟨\l⟩
     \item nθ > n
     \item d, \d{}, b, \b{} > ð ⟨d’h⟩, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
@@ -174,16 +175,16 @@ The resulting UF sentence is \textit{\textbf{Çár, y’áçt’he ý ráhó dw
 In this simple case, the grammar is more or less the same in PF and UF, so no grammatical changes apply here.\par\medskip
 
 \noindent\begin{tabular}{@{}llll}
-PF &ʃaʁl ty a aʃəte œ̃ pwasɔ̃ dɑ̃ la mɔ̃taɲ       &(16)&ɕaɰ ɥaɕə\d{}e ỹ ɰasɔ̃ dɰ̃a mɔ̃\d{}aɲ \\
-(1)&ʃaɰl ty a aʃəte œ̃ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(17)&ɕãɰ ɥãɕə\d{}e ỹ ɰãsɔ̃ dɰ̃ã mɔ̃̃\d{}ãɲ \\
-(2)&ʃaɰl ty a aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(18)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃\d{}ɑ̃ɲ \\
-(4)&ʃaɰl tja aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ        &(19)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃\d{}ɑ̃ \\
-(5)&ʃaɰl tjaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(22)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
-(7)&ʃaɰl tɥaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(23)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
-(8)&ʃaɰl ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(24)&ɕɑ̃ɰ ɥɑ̃j̊ə\d{}e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
-(9)&ʃaɰ ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ             &(26)&ɕɑ̃ɰ ɥɑ̃j̊əθe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
-(11)&ɕaɰ ɥaɕəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(27)&ɕɑ̃ɰ ɥɑ̃j̊θe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
-(13)&ɕaɰ ɥaɕə\d{}e ỹ ɰasɔ̃ dɑ̃ la mɔ̃\d{}aɲ  &(28)&ɕɑ̃ɰ ɥɑ̃j̊θe̥ ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+PF &ʃaʁl ty a aʃəte œ̃ pwasɔ̃ dɑ̃ la mɔ̃taɲ       &(17)&ɕaɰ ɥaɕə\d{}e ỹ ɰasɔ̃ dɰ̃a mɔ̃\d{}aɲ \\
+(1)&ʃaɰl ty a aʃəte œ̃ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(18)&ɕãɰ ɥãɕə\d{}e ỹ ɰãsɔ̃ dɰ̃ã mɔ̃̃\d{}ãɲ \\
+(2)&ʃaɰl ty a aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ       &(19)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃\d{}ɑ̃ɲ \\
+(4)&ʃaɰl tja aʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ        &(20)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ mɔ̃̃\d{}ɑ̃ \\
+(5)&ʃaɰl tjaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(23)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃sɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
+(7)&ʃaɰl tɥaʃəte ỹ pɰasɔ̃ dɑ̃ la mɔ̃taɲ          &(24)&ɕɑ̃ɰ ɥɑ̃ɕə\d{}e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
+(9)&ʃaɰl ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(25)&ɕɑ̃ɰ ɥɑ̃j̊ə\d{}e ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃\d{}ɑ̃ \\
+(10)&ʃaɰ ɥaʃəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ             &(27)&ɕɑ̃ɰ ɥɑ̃j̊əθe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+(12)&ɕaɰ ɥaɕəte ỹ ɰasɔ̃ dɑ̃ la mɔ̃taɲ            &(28)&ɕɑ̃ɰ ɥɑ̃j̊θe ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
+(14)&ɕaɰ ɥaɕə\d{}e ỹ ɰasɔ̃ dɑ̃ la mɔ̃\d{}aɲ  &(29)&ɕɑ̃ɰ ɥɑ̃j̊θe̥ ỹ ɰɑ̃hɔ̃ dɰ̃ɑ̃ ʋ̃ɔ̃̃θɑ̃ \\
 \end{tabular}
 
 \section{Accidence}\label{sec:accidence}
@@ -208,33 +209,34 @@ below lists those prefixes, two of which are actually circumfixes.
 2nd&\d{}(\e)-&b’h(y)- -é&&2nd&\d{}(\e)-&b’h(y)-\\\cline{1-3}\cline{5-7}
 3rd m&l(\e)-&l(\e)-&&3rd m&y’-&lý-\\\cline{1-3}\cline{5-7}
 3rd f&ll(a)-&ll(\e)-&&3rd f&y’- &lý-\\\cline{1-3}\cline{5-7}
-3rd n&ý’- &l-&&3rd n&ý’-&lý-\\\cline{1-3}\cline{5-7}
-Infinitive&\multicolumn{2}{c|}{\it d\e-}&&Infinitive&\multicolumn{2}{c|}{\it à-/h-}\\\cline{1-3}\cline{5-7}
+3rd n&ý’- &l(a)-&&3rd n&ý’-&lý-\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it d(\e)-}&&Infinitive&\multicolumn{2}{c|}{\it à-/h-}\\\cline{1-3}\cline{5-7}
 \end{tabular}
-\caption{Active (left) and passive (right) verbal prefixes and circumfixes.}\label{tab:active-passive-prefixes}
+\caption{Active (left) and passive (right) verbal affixes.}\label{tab:active-passive-prefixes}
 \end{table}
 
 \noindent A great degree of syncretism can be observed in the third-person forms. The gender distinction in the
 third person singular that diachronically resulted from gendered personal pronouns is almost non-existent in the
-plural; the reason for this development is that those forms are derived from the old dative forms, which lacked
+plural; the reason for this development is that those forms are derived from the old dative form, which lacked
 this distinction altogether.
-Furthermore, the active first and second person plural only distinguished from their passive counterparts by
-the presence of additional suffixes in the former case.
+Furthermore, the active first and second person plural are only distinguished from their passive counterparts by
+the presence of additional suffixes in the former.
 
-The first person plural prefix varies depending on the vowel following it; if it is
+The first person plural prefix varies if there is a vowel following it: if it is
 any vowel that is not a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
 *rad’hóró* ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as *w-* instead, e.g. *ob’heír* ‘obey’
 to *wob’heíró* ‘we obey’.
 
-The passive infinitive prefix *à-* coalesces with any vowel following it. It becomes *á-* if it
-is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â-* if it is
+The passive infinitive prefix *à-* coalesces with any vowel following it: it becomes *á* if it
+is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â* if it is
 followed by a nasal variant of ‘a’, e.g. *ánvé* ‘give life to’ to *ânvé* ‘to be animated’; and *h-* if it is
 followed by any other vowel, e.g. *ob’heír* to *hob’heír* ‘to be obeyed’.
 
 The parenthesised vowels are used if the prefix is followed by a consonant, e.g. *dír* ‘say’ to *ll\e{}dír*
 ‘they (f) say’ and *b’hydíré* ‘you (pl) say’, but *ad’hór* to *llad’hór* ‘they (f) love’ and *b’had’hóré* ‘you
 (pl) love’. The prefixes *ó-* and *à-* retain their main forms if followed by a consonant,
-e.g. *dír* ‘say’ to *ódíró* ‘We say’ and *àdír* ‘to be said’.
+e.g. *dír* ‘say’ to *ódíró* ‘We say’ and *àdír* ‘to be said’. The exception to this is that second person plural *b’h(y)-*
+drops the *y* if followed by a glide, e.g. *y’ír* ‘to hear’ to *b’hy’íré* ‘you (pl) hear’ (not \**b’hyy’íré*).
 
 When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive prefixes
 always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (pl) love him/her’,
@@ -245,6 +247,17 @@ By way of illustration, consider the paradigm of the verb *ad’hór* as shown i
 Since this word starts with a vowel, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} above
 are not used. Furthermore, since it starts with a non-nasal ‘a’-like vowel, the *ó-* prefix is realised as *r-*
 and the *à-* prefix coalesces with the initial ‘a’ of the stem to form *á*.
+
+% TEMPLATE:
+%\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+%\nf Active&\nf Sg&\nf Pl&\nf &\nf Passive&\nf Sg&\nf Pl \\\cline{1-3}\cline{5-7}
+%1st       &   &  &&1st   &   &   \\\cline{1-3}\cline{5-7}
+%2nd       &   &  &&2nd   &   &   \\\cline{1-3}\cline{5-7}
+%3rd m     &   &  &&3rd m &   &   \\\cline{1-3}\cline{5-7}
+%3rd f     &   &  &&3rd f &   &   \\\cline{1-3}\cline{5-7}
+%3rd n     &   &  &&3rd n &   &   \\\cline{1-3}\cline{5-7}
+%Infinitive& \multicolumn{2}{c|}{\it }  && Infinitive & \multicolumn{2}{c|}{\it } \\\cline{1-3}\cline{5-7}
+%\end{tabular}
 
 \begin{table}[h]
 \centering
@@ -260,12 +273,102 @@ Infinitive&\multicolumn{2}{c|}{\it dad’hór}&&Infinitive&\multicolumn{2}{c|}{\
 \caption{Paradigm of the verb \emph{ad’hór}.}\label{tab:adhor-paradigm}
 \end{table}
 
-\noindent [to be continued]
+\noindent For comparison, the paradigm of the verb *vvóríhe* ‘remember’ is shown in Table~\ref{tab:vvorihe-paradigm} below.
+Since it starts with a consonant, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} are used, and any
+prefixes that end with a vowel remain unchanged.
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+\nf Active&\nf Sg&\nf Pl&\nf &\nf Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st&jvvóríhe&óvvóríhy’ó&&1st&vvvóríhe&óvvóríhe\\\cline{1-3}\cline{5-7}
+2nd&ḍẹvvóríhe&b’hyvvóríhê&&2nd&ḍẹvvóríhe&b’hyvvóríhe\\\cline{1-3}\cline{5-7}
+3rd m&lẹvvóríhe&lẹvvóríhe&&3rd m&y’vvóríhe&lývvóríhe\\\cline{1-3}\cline{5-7}
+3rd f&llavvóríhe&llẹvvóríhe&&3rd f&y’vvóríhe&lývvóríhe\\\cline{1-3}\cline{5-7}
+3rd n&ý’vvóríhe&lavvóríhe&&3rd n&ý’vvóríhe&lývvóríhe\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it dẹvvóríhe}&&Infinitive&\multicolumn{2}{c|}{\it àvvóríhe}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Paradigm of the verb \emph{vvóríhe}.}\label{tab:vvorihe-paradigm}
+\end{table}
+
+\subsubsection{The Conjugation of \textit{eḍ} ‘to be’}
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|}\hline
+&\nf Sg&\nf Pl\\\hline
+1st       & vy’í & ósó \\\hline
+2nd       & ḍe   & b’heḍ \\\hline
+3rd m     & le   & lẹsó \\\hline
+3rd f     & lle  & llẹsó \\\hline
+3rd n     & ý’e  & lasó \\\hline
+Infinitive& \multicolumn{2}{c|}{\it éḍ} \\\hline
+\end{tabular}
+\caption{Paradigm of the verb \emph{eḍ}.}\label{tab:ed-paradigm}
+\end{table}
 
 
 
 
 
+
+
+\twocolumn
+\clearpage
+\section{Dictionary}
+\ExplSyntaxOn
+
+\cs_new:Npn \start_entry: {
+    \hangindent = 6pt
+    \hangafter = 1
+    \noindent
+}
+
+\def \pfabbr { \textsc { pf \space } }
+
+%% word, part of speech, etymology, definition, (forms)
+\def \entry #1 #2 #3 #4 #5 {
+    \start_entry:
+
+    %% Typeset word and part of speech.
+    \textbf { \ignorespaces #1 } \space
+    \textit { \ignorespaces #2 }
+
+    %% Typeset etymology.
+    \tl_set:Nn \l_tmpa_tl {#3}
+    \tl_if_empty:NTF \l_tmpa_tl { } {
+        \space [
+            \ignorespaces \textit { \tl_use:N \l_tmpa_tl }
+        ]
+    }
+
+    %% Typeset forms, if any.
+    \tl_set:Nn \l_tmpa_tl {#5}
+    \tl_if_empty:NTF \l_tmpa_tl { } {
+        \space \textsc{forms}: \space
+        \ignorespaces \tl_use:N \l_tmpa_tl
+        .
+    }
+
+    %% Typeset definition.
+    \space \ignorespaces #4 .
+    \par
+}
+
+%% Reference to another entry.
+\def \refentry #1 #2 {
+    \start_entry:
+
+    \textbf { \ignorespaces #1 } \space
+    \(\to\) \space
+    \textit { \ignorespaces #2 }
+    .
+    \par
+}
+
+\ExplSyntaxOff
+
+\input{DICTIONARY.tex}
 
 
 

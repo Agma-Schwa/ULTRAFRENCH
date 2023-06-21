@@ -1,0 +1,46 @@
+##
+## ULTRAFRENCH DICTIONARY
+##
+## Lines starting with ‘#’ are ignored. Entries are automatically
+## sorted alphabetically; they can be in any order in this file.
+##
+## Each line in this file is an entry in the dictionary. An entry
+## consists of several fields, each delimited by ‘|’. No field may
+## contain a ‘|’ character. The fields are as follows:
+##
+##     1. The word in the UF orthography.
+##     2. The part of speech and other initial annotations.
+##     3. The etymology of the word. If this field contains no spaces, it
+##        is assumed to be a PF word.
+##     4. The English translation of the word.
+##     5. (optional) Grammatical forms of the word.
+##
+## To break an entry across multiple lines, end each line with a ‘\’
+## character. There MUST NOT be any characters between the ‘\’ and the
+## end of the line. The ‘\’ character will be removed and the next line
+## will be concatenated to the current line.
+##
+## Furthermore, it is possible to create references to other entries by
+## adding a line that contains NO ‘|’ characters and is of the form
+##
+##     entries > reference
+##
+## where ‘entries’ is a comma-separated list of words for which to create
+## references, and ‘reference’ is the word to which the references should
+## point.
+##
+
+ad’hór|v. tr.|adore|To love, adore
+ob’heír|v. (in)tr.|obéir|To obey
+ánvé|v. tr.|animer|To bring to life, animate
+dír|v. tr.|dire|To say, tell
+vvóríhe|v. (in)tr.|mémoriser|To remember
+y’ír|v. (in)tr.|ouïr|To hear, understand, listen
+
+# To be is a rather complicated entry.
+eḍ|v. intr. irreg.|être|To be|*active only*              \
+    \textsc{sg} *vy’í*, *ḍe*, *le*, *lle*, *ý’e*;        \
+    \textsc{pl} *ósó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*; \
+    \textsc{inf} *éḍ*
+
+vy’í, ḍe, le, lle, ý’e, ósó, b’heḍ, lẹsó, llẹsó, lasó, éḍ > eḍ

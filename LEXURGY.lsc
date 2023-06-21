@@ -29,6 +29,7 @@ Prelim:
   Then: @v$1 $1 => $1
   Then: {lj, lɥ} => ʎ
   Then: j => ɥ
+  Then: ɰ => ɥ / _ i
   Then: @c => * / $ _ @c
   Then: @c => * / @c _ $
   Then: k => x
@@ -53,7 +54,7 @@ GNS:
   Then: {m, l, ʎ} => {ʋ̃, ɮ̃, ʎ̝̃}
 
 Lenition:
-  {x, s} => h / @v _ @v
+  {x, s, z} => h / @v _ @v
   Then: {ɕ, ɮ̃, ʎ̝̃} => {ȷ̊, ɥ̃, ɰ̃} / @v _ @v
   Then: nθ => n / @v _ @v
   Then: {d, d2, b, b2} => {ð, θ, β, bʱ} / @v _ @v
