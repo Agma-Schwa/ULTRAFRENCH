@@ -36,6 +36,11 @@ ob’heír|v. (in)tr.|obéir|To obey
 dír|v. tr.|dire|To say, tell
 vvóríhe|v. (in)tr.|mémoriser|To remember
 y’ír|v. (in)tr.|ouïr|To hear, understand, listen
+Çár|n.|Charles|Charles (name)
+ráhó|n.|poisson|Fish
+aç̇t’he|v. tr.|acheter|To buy
+vôt’há|n.|montagne|Mountain
+
 
 # To be is a rather complicated entry.
 eḍ|v. intr. irreg.|être|To be|*active only*              \
