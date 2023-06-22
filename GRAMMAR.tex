@@ -70,10 +70,12 @@
 \def \D {Ḍ}
 \def \b {ḅ}
 \def \B {Ḅ}
-\def \l {ḷ}
-\def \L {Ḷ}
 \def \e {ẹ}
 \def \E {Ẹ}
+\let \s \textsc
+
+\def \L {\textsuperscript{L}}
+\def \N {\textsuperscript{N}}
 
 \char_set_catcode_active:N \*
 \cs_set_protected:Npn \__md_star:w #1*{ \textit{#1} }
@@ -111,7 +113,7 @@
                & Labial & Coronal  & Palatal  & Velar & Glottal &&           & Front        & Back        \\ \cline{1-6} \cline{8-10}
     Stop       & b, bʱ  & d        &          & k     &         && Close     & i ĩ ĩ̃ i̥, y ỹ ỹ̃ ẙ & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
     Nasal      &        & n        &          &       &         && Close-mid & e ẽ ẽ̃ e̥      & o o̥         \\ \cline{1-6} \cline{8-10}
-    Fricative  & ɸ β, ʋ̃ & s z, θ ð & ɕ ʑ      & x     & h       && Mid       & \multicolumn{2}{c|}{ə ⟨\e{}⟩ ə̥}   \\ \cline{1-6} \cline{8-10}
+    Fricative  & ɸ β, ʋ̃ & s z, θ ð & ç ɕ ʑ    & x χ   & h       && Mid       & \multicolumn{2}{c|}{ə ⟨\e{}⟩ ə̥}   \\ \cline{1-6} \cline{8-10}
     Approx.    &        &          & ɥ ɥ̃, j̊   & ɰ ɰ̃   &         && Open-mid  & ɛ ɛ̃ ɛ̃̃ ɛ̥      & ɔ̃ ɔ̃̃         \\ \cline{1-6} \cline{8-10}
     Lat. Fric. &        & ɮ̃        & ʎ̝̃        &       &         && Open      & a ḁ          & ɑ̃ ɑ̃̃         \\ \cline{1-6} \cline{8-10}
 \end{tabular}}\bigskip
@@ -119,6 +121,11 @@
 \parheading{Legend}\par\noindent
 Ṽ = nasalised vowel, Ṽ̃ = nasal vowel, V = any vowel (or, in conjunction with Ṽ/Ṽ̃, oral vowel)\\
 N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals), C = any consonant.\medskip
+\def\scalpha{\kern-2pt\raisebox{2pt}{\Sub α}}
+
+%% NOTE: In case the changes below and the ones listed
+%% in the Lexurgy file differ, the latter are authoritative,
+%% as I may forget to update these here sometimes.
 
 \TwoCols[.45\hsize][.45\hsize][0pt]{
 \parheading{Preliminary Changes}
@@ -127,7 +134,7 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
     \item œ, œ̃, ø > y, ỹ, ỹ
     \item ɔ > o
     \item y > j / \_(\#)V
-    \item V\kern-2pt\raisebox{2pt}{\Sub α} > $\emptyset$ / \_\#V\kern-2pt\raisebox{2pt}{\Sub α}
+    \item V\scalpha > $\emptyset$ / \_\#V\scalpha
     \item lj, lɥ > ʎ
     \item j > ɥ ⟨y’⟩
     \item ɰ > ɥ / \_i
@@ -149,12 +156,12 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
     \item N, C̃ > $\emptyset$ / V\_\#
     \item ɲ, ŋ > n
     \item V, Ṽ > $\emptyset$ / N \_ N
-    \item m, l, ʎ > ʋ̃ ⟨v⟩, ɮ̃ ⟨l⟩, ʎ̝̃ ⟨\l⟩
+    \item m, l, ʎ > ʋ̃ ⟨v⟩, ɮ̃ ⟨l⟩, ʎ̝̃ ⟨ḷ⟩
 \end{enum}
 
 \parheading{Intervocalic Lenition (/ V\_V is implied)}
 \begin{enum}[21]
-    \item x, s, z > h
+    \item x, s, z > h\footnotemark
     \item ɕ, ɮ̃, ʎ̝̃ > j̊ ⟨ç̇⟩, ɥ̃, ɰ̃
     \item nθ > n
     \item d, \d{}, b, \b{} > ð ⟨d’h⟩, θ ⟨t’h⟩, β, bʱ ⟨bh⟩
@@ -162,12 +169,15 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
 
 \parheading{Late Changes}
 \begin{enum}[25]
+    \item C[+stop, -alveolar]C\scalpha > C\scalpha
+    \item h > $\emptyset$ / hV\_
     \item ə > $\emptyset$ / C\_C
-    \item V[-nasalised, -nasal] > V̥ / \_\#
+    \item V[-nasalised, -nasal] > ə̥ / \_\#
 \end{enum}
 }\medskip
 
 \footnotetext{[χ] around back vowels, [ɕ] elsewhere.}
+\footnotetext[2]{[ç] before variants of /i/ and /y/, [h] elsewhere.}
 
 \clearpage
 
@@ -199,6 +209,9 @@ Infinitive&\multicolumn{2}{c|}{\it d(\e)-}&&Infinitive&\multicolumn{2}{c|}{\it �
 \caption{Active (left) and passive (right) verbal affixes.}\label{tab:active-passive-prefixes}
 \end{table}
 
+TODO: Change neuter to be derived from ‘ce’.
+TODO: Document coalescence of the first and second person suffixes when a verb ends with a vowel.
+
 \noindent A great degree of syncretism can be observed in the third-person forms. The gender distinction in the
 third person singular that diachronically resulted from gendered personal pronouns is almost non-existent in the
 plural; the reason for this development is that those forms are derived from the old dative form, which lacked
@@ -209,7 +222,8 @@ the presence of additional suffixes in the former.
 The first person plural prefix varies if there is a vowel following it: if it is
 any vowel that is not a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
 *rad’hóró* ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as *w-* instead, e.g. *ob’heír* ‘obey’
-to *wob’heíró* ‘we obey’.
+to *wob’heíró* ‘we obey’.\footnote{Diachronically, the base form of this prefix is \**o-*, whence e.g.
+\**oad’hóró* > *rad’hóró* and \**oob’heíró* > *wob’heíró*.}
 
 The passive infinitive prefix *à-* coalesces with any vowel following it: it becomes *á* if it
 is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â* if it is
@@ -291,25 +305,63 @@ Infinitive& \multicolumn{2}{c|}{\it éḍ} \\\hline
 \caption{Paradigm of the verb \emph{eḍ}.}\label{tab:ed-paradigm}
 \end{table}
 
-\subsection{Noun Morphology}
+\subsection{Noun Morphology}\label{subsec:noun-morphology}
 UF has 4 declensions. A definite and indefinite vocalic declension, and a definite and indefinite consonantal declension.
 As their names might suggest, the former two are used for nouns that start with a vowel, and the latter two for nouns
 that start with a consonant. UF has no morphologically separate articles; rather, the old PF articles have been incorporated
-into the declensions.
+into the declensions. Furthermore, UF no longer has a gender distinction in nouns.
+
+\subsubsection{Declension}
+The table below shows the affixes of the definite and indefinite declensions. The declensions are mostly identical,
+except that, as with the conjugation of verbs, the consonantal prefixes often end in a vowel (marked below with
+parentheses), which are not present in the vocalic declension.
 
 \begin{table}[h]
 \centering
-\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
-Definite&\nf Sg&\nf Pl & Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-1st       & vy’í & ósó \\\hline
-2nd       & ḍe   & b’heḍ \\\hline
-3rd m     & le   & lẹsó \\\hline
-3rd f     & lle  & llẹsó \\\hline
-3rd n     & ý’e  & lasó \\\hline
-Infinitive& \multicolumn{2}{c|}{\it éḍ} \\\hline
+\noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+
+Nominative  & lá-\L & lé-\L                    &&Nominative &ŷn-\N & ý-\L         \\\cline{1-3}\cline{5-7}
+Vocative    & $\emptyset$-\L & $\emptyset$-\L  &&Vocative   & / & /                     \\\cline{1-3}\cline{5-7}
+Partitive   & dy-\L  & dẹ-\L                   &&Partitive  &dŷn-\N & dý-\L                      \\\cline{1-3}\cline{5-7}
+Accusative  & y’i-\L  & sý-\L                  &&Accusative & s-\L & s-                       \\\cline{1-3}\cline{5-7}
+...         &  &                               &&           & &              \\\cline{1-3}\cline{5-7}
+Inessive    & dwá- & dwé-                      &&Inessive   & dáhŷn- & dáhŷ-                    \\\cline{1-3}\cline{5-7}
 \end{tabular}
-\caption{Vocalic Declension.}\label{tab:vocalic-declension}
+\caption{UF Declension.}\label{tab:table-uf-declension}
 \end{table}
+
+\noindent Most of these forms cause lenition in the initial consonant of the noun, e.g. *ḍalẹ* ‘table’ to
+\s{def acc sg} *s’thalẹ*; this lenition is blocked in the \s{indef acc pl} due to the presence of a hypercorrected ‘s’
+in PF \**ces*, e.g. *s’ḍalẹ* ‘the tables (\s{acc})’ (not *s’thalẹ*, which is the singular), as well as in
+less commonly used forms such as the \s{def} inessive *dwáḍalẹ* ‘on the table’.
+
+The \s{indef nom sg} *ŷn-* prefix and some other forms nasalise nouns; as a reminder, this means that in
+nouns starting with *ḍ*, the *ḍ* is deleted, e.g. *ŷnalẹ* ‘a table’;
+it causes nasalisation in words that start with a vowel e.g. *ehyó* ‘shield’ to *ŷnéhyó* ‘a shield’. The indefinite vocative
+does not exist, as that would make little sense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef} inessive
+*dáhŷnḍalẹ* ‘on a table’.
+
+The diachrony of these forms is mostly from the PF definite and indefinite pronouns, though some forms, such as the
+accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite partitive forms are from the PF partitive article, and
+the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
+of the articles and PF prepositions.
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Definite    &\nf Sg&\nf Pl && Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+
+Nominative  & lát’halẹ  & lét’halẹ   &&Nominative & ŷnalẹ & ýt’halẹ         \\\cline{1-3}\cline{5-7}
+Vocative    & t’halẹ    & t’halẹ    &&Vocative   & / & /                      \\\cline{1-3}\cline{5-7}
+Partitive   & dyt’halẹ  & dẹt’halẹ &&Partitive   & dŷnalẹ & dýt’halẹ                     \\\cline{1-3}\cline{5-7}
+Accusative  & y’it’halẹ & sýt’halẹ  &&Accusative & st’halẹ & sḍalẹ                       \\\cline{1-3}\cline{5-7}
+...         &  &  &&           & &              \\\cline{1-3}\cline{5-7}
+Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáhýḍalẹ                    \\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Consonantal declension of *ḍalẹ*.}\label{tab:vocalic-declension}
+\end{table}
+
 
 
 \section{Examples}
@@ -350,7 +402,7 @@ As an example, the sentence below is the UF translation of ‘Charles, you bough
     %% Typeset forms, if any.
     \tl_set:Nn \l_tmpa_tl {#5}
     \tl_if_empty:NTF \l_tmpa_tl { } {
-        \space \textsc{forms}: \space
+        \space {\nf\scshape{forms}}: \space
         \ignorespaces \tl_use:N \l_tmpa_tl
         .
     }
