@@ -6,6 +6,7 @@
 \usepackage{csquotes}
 \usepackage{array, tabularx, multirow}
 \usepackage{longtable}
+\usepackage{float}
 
 \setmainfont[Numbers=OldStyle]{Minion 3}
 \setmathfont{latinmodern-math.otf}
@@ -109,7 +110,7 @@
 \section{Phonology and Evolution from Modern Pseudo-French}\label{sec:phonology}{\def\arraystretch{1.25}\setlength{\tabcolsep}{.4em}
 \noindent\begin{tabular}{@{}|l|l|l|l|l|l|l@{\quad}|l|l|l|}                                                   \cline{1-6} \cline{8-10}
                & Labial & Coronal  & Palatal  & Velar & Glottal &&           & Front        & Back        \\ \cline{1-6} \cline{8-10}
-    Stop       & b, bʱ  & d        &          & k     &         && Close     & i ĩ ĩ̃ i̥, y ỹ ỹ̃ ẙ & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
+    Stop       & b, bʱ  & d        &          &       &         && Close     & i ĩ ĩ̃ i̥, y ỹ ỹ̃ ẙ & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
     Nasal      &        & n        &          &       &         && Close-mid & e ẽ ẽ̃ e̥      & o o̥         \\ \cline{1-6} \cline{8-10}
     Fricative  & ɸ β, ʋ̃ & s z, θ ð & ç ɕ ʑ    & x χ   & h       && Mid       & \multicolumn{2}{c|}{ə ⟨ẹ⟩ ə̥}   \\ \cline{1-6} \cline{8-10}
     Approx.    &        &          & ɥ ɥ̃, j̊   & ɰ ɰ̃   &         && Open-mid  & ɛ ɛ̃ ɛ̃̃ ɛ̥      & ɔ̃ ɔ̃̃         \\ \cline{1-6} \cline{8-10}
@@ -178,7 +179,13 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
 \footnotetext{[χ] around back vowels, [ɕ] elsewhere.}
 \footnotetext[2]{[ç] before variants of /i/ and /y/, [h] elsewhere.}
 
-\clearpage
+\subsection{Orthography}
+The spelling of most UF sounds is indicated above; the less exotic consonants are spelt as
+one might expect. That is, /b, d, n, ɸ, s, z, h/ are spelt ⟨b, d, n, f, s, z, h⟩, respectively.
+
+The ‘hard’ voiced *ḅ*, *ḍ* which are pronounced exactly like their regular counterparts, are normally also spelt ⟨b⟩ and
+⟨d⟩. However, the dot below is commonly used in dictionaries and grammatical material to distinguish between the two
+as they differ from one another in how they are lenited.
 
 %% TODO: ORTHOGRAPHY. Dot below is schwa if it’s an e, nasalised e instead of ɛ if it has an accent,
 %% hard d, b, as well as palatal l. dot above ç indicates lenition.
@@ -197,7 +204,7 @@ of whether they are personal or infinitive prefixes. For instance, it would also
 infinitive prefix with the first person active singular prefix.} Table~\ref{tab:active-passive-prefixes}
 below lists those prefixes, two of which are actually circumfixes.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
  Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
@@ -264,7 +271,7 @@ and the *à-* prefix coalesces with the initial ‘a’ of the stem to form *á*
 %Infinitive& \multicolumn{2}{c|}{\it }  && Infinitive & \multicolumn{2}{c|}{\it } \\\cline{1-3}\cline{5-7}
 %\end{tabular}
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 \nf Active&\nf Sg&\nf Pl&\nf &\nf Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
@@ -282,7 +289,7 @@ Infinitive&\multicolumn{2}{c|}{\it dad’hór}&&Infinitive&\multicolumn{2}{c|}{\
 Since it starts with a consonant, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} are used, and any
 prefixes that end with a vowel remain unchanged.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 \nf Active&\nf Sg&\nf Pl&\nf &\nf Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
@@ -310,7 +317,7 @@ former is commonly used to describe events that are completed—particularly eve
 is used to describe events that are ongoing or habitual.
 
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 \nf Present Anterior&\nf Sg&\nf Pl&\nf &\nf Preterite&\nf Sg&\nf Pl \\\cline{1-3}\cline{5-7}
@@ -322,18 +329,32 @@ Infinitive& \multicolumn{2}{c|}{\it -á }  && Infinitive & \multicolumn{2}{c|}{\
 \caption{Present Anterior and Preterite Affixes.}\label{tab:present-anterior-and-preterite-suffixes}
 \end{table}
 
-Neither tense distinguishes gender in the third person. All suffixes, except for the infinitive and \s{1pl, 2pl pret},
+\noindent Neither tense distinguishes gender in the third person. All suffixes, except for the infinitive and \s{1pl, 2pl pret},
 lenite any consonant *before* them, e.g. *ḅárḍáḍ* ‘to be willing’ to *jḅárḍát’hé* ‘I was willing’ but *dẹḅárḍáḍá*
 ‘to have been willing’.
 
-\noindent Diachronically, the \s{1sg pret} is an interesting case; in EUF, it was originally \**-é*, but it later changed to *-á*
+Diachronically, the \s{1sg pret} is an interesting case; in EUF, it was originally \**-é*, but it later changed to *-á*
 to distinguish it from the \s{2sg, 3sg pres ant}. The remaining forms—save the infinitives, which are derived from the
 tenses’ definite endings by analogy—originated from the PF simple past tenses.
 
 The table below lists the example paradigm of the verb *ad’hór* in the present anterior and preterite tenses.
 Observe that there is no difference between the \s{1pl, 2pl} active and passive.
 
-\begin{table}[h]
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+\nf Active & \nf Sg   & \nf Pl     & \nf & \nf Passive & \nf Sg   & \nf Pl    \\\cline{1-3}\cline{5-7}
+1st        & jad’hóré  & rad’hórâ     &     & 1st         & vad’hóré  & rad’hórâ   \\\cline{1-3}\cline{5-7}
+2nd        & ḍad’hórá  & b’had’hóráḍ  &     & 2nd         & ḍad’hórá  & b’had’hóráḍ \\\cline{1-3}\cline{5-7}
+3rd m      & lad’hórá  & lad’hórér    &     & 3rd m       & y’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
+3rd f      & llad’hórá & llad’hórér   &     & 3rd f       & y’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
+3rd n      & ý’ad’hórá & lad’hórér    &     & 3rd n       & ý’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
+Infinitive & \multicolumn{2}{c|}{\it dad’hórá} & & Infinitive & \multicolumn{2}{c|}{\it ád’hórá} \\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Present Anterior Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pres-ant}
+\end{table}
+
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 \nf Active & \nf Sg   & \nf Pl     & \nf & \nf Passive & \nf Sg   & \nf Pl    \\\cline{1-3}\cline{5-7}
@@ -342,29 +363,16 @@ Observe that there is no difference between the \s{1pl, 2pl} active and passive.
 3rd m      & lad’hóré  & lad’hóré    &     & 3rd m      & y’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
 3rd f      & llad’hóré & llad’hóré   &     & 3rd f      & y’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
 3rd n      & ý’ad’hóré & lad’hóré   &     & 3rd n       & ý’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
-Infinitive & \multicolumn{2}{c|}{\it dad’hórá} & & Infinitive & \multicolumn{2}{c|}{\it ád’hóré} \\\cline{1-3}\cline{5-7}
-\end{tabular}
-\caption{Present Anterior Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pres}
-\end{table}
-
-\begin{table}[h]
-\centering
-\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
-\nf Active & \nf Sg   & \nf Pl     & \nf & \nf Passive & \nf Sg   & \nf Pl    \\\cline{1-3}\cline{5-7}
-1st        & jad’hóré  & rad’hórâ     &     & 1st         & vad’hóré  & rad’hórâ   \\\cline{1-3}\cline{5-7}
-2nd        & ḍad’hórá  & b’had’hóráḍ  &     & 2nd         & ḍad’hóré  & b’had’hóráḍ \\\cline{1-3}\cline{5-7}
-3rd m      & lad’hórá  & lad’hórér    &     & 3rd m       & y’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
-3rd f      & llad’hórá & llad’hórér   &     & 3rd f       & y’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
-3rd n      & ý’ad’hórá & lad’hórér    &     & 3rd n       & ý’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
-Infinitive & \multicolumn{2}{c|}{\it dad’hórá} & & Infinitive & \multicolumn{2}{c|}{\it ád’hórá} \\\cline{1-3}\cline{5-7}
+Infinitive & \multicolumn{2}{c|}{\it dad’hóré} & & Infinitive & \multicolumn{2}{c|}{\it ád’hóré} \\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Preterite Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pret}
 \end{table}
 
+
 \subsection{Irregular Verbs}\label{subsec:irregular-verbs}
 \subsubsection{The Conjugation of \textit{eḍ} ‘to be’}
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|}\hline
 &\nf Sg&\nf Pl\\\hline
@@ -389,7 +397,7 @@ The table below shows the affixes of the definite and indefinite declensions. Th
 except that, as with the conjugation of verbs, the consonantal prefixes often end in a vowel (marked below with
 parentheses), which are not present in the vocalic declension.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
@@ -421,7 +429,7 @@ partitive forms are from the PF partitive article, and
 the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
 of the articles and PF prepositions.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 Definite    &\nf Sg&\nf Pl && Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
@@ -440,10 +448,10 @@ Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáh�
 
 \section{Examples}
 \noindent\begin{tabular}{@{}lllll}
-\multicolumn{5}{@{}l}{\it Ç̇ár, c’hes sráhó dwávôt’há ḍaç̇t’heá?}\\
-Ç̇ár &c’hes &s-ráhó &dwá-vôt’há &ḍ-aç̇t’he-á\\
-ˈj̊ɑ̃ɰ&ɕes&ˌsɰɑ̃ˈhɔ̃&dɰɑ̃ˌʋ̃ɔ̃̃ˈθɑ̃&daj̊ˈθe.ɑ̃\\
-Charles.\s{voc}&\s{q part}&\s{indef.acc}-fish&\s{def.iness}-mountain&\s{2sg}-buy-\s{pres.ant.2sg}\\
+\multicolumn{5}{@{}l}{\it Ç̇ár, rvá sráhó dwávôt’há ḍaç̇t’heá?}\\
+Ç̇ár &rvá &s-ráhó &dwá-vôt’há &ḍ-aç̇t’he-á\\
+ˈj̊ɑ̃ɰ&ɰʋ̃ɑ̃&ˌsɰɑ̃ˈhɔ̃&dɰɑ̃ˌʋ̃ɔ̃̃ˈθɑ̃&daj̊ˈθe.ɑ̃\\
+Charles.\s{voc}&\s{part}&\s{indef.acc}-fish&\s{def.iness}-mountain&\s{2sg.act}-buy-\s{pres.ant.2sg}\\
 \multicolumn{5}{@{}l}{‘Charles, you bought a fish on the mountain?’}\\
 \end{tabular}
 
