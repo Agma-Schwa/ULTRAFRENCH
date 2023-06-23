@@ -7,7 +7,7 @@
 \usepackage{array, tabularx, multirow}
 \usepackage{longtable}
 
-\setmainfont{Minion 3}
+\setmainfont[Numbers=OldStyle]{Minion 3}
 \setmathfont{latinmodern-math.otf}
 \setmathfont[range=\mathit]{Minion 3 Italic}
 \frenchspacing
@@ -38,7 +38,7 @@
 }
 \makeatother
 
-\title{ULTRAFRENCH}
+\title{A Comprehensive Diachronic Grammar of Modern ULTRAFRENCH}
 \author{Agma Schwa \& Ætérnal}
 \date{\today}
 
@@ -70,8 +70,6 @@
 \def \D {Ḍ}
 \def \b {ḅ}
 \def \B {Ḅ}
-\def \e {ẹ}
-\def \E {Ẹ}
 \let \s \textsc
 
 \def \L {\textsuperscript{L}}
@@ -113,7 +111,7 @@
                & Labial & Coronal  & Palatal  & Velar & Glottal &&           & Front        & Back        \\ \cline{1-6} \cline{8-10}
     Stop       & b, bʱ  & d        &          & k     &         && Close     & i ĩ ĩ̃ i̥, y ỹ ỹ̃ ẙ & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
     Nasal      &        & n        &          &       &         && Close-mid & e ẽ ẽ̃ e̥      & o o̥         \\ \cline{1-6} \cline{8-10}
-    Fricative  & ɸ β, ʋ̃ & s z, θ ð & ç ɕ ʑ    & x χ   & h       && Mid       & \multicolumn{2}{c|}{ə ⟨\e{}⟩ ə̥}   \\ \cline{1-6} \cline{8-10}
+    Fricative  & ɸ β, ʋ̃ & s z, θ ð & ç ɕ ʑ    & x χ   & h       && Mid       & \multicolumn{2}{c|}{ə ⟨ẹ⟩ ə̥}   \\ \cline{1-6} \cline{8-10}
     Approx.    &        &          & ɥ ɥ̃, j̊   & ɰ ɰ̃   &         && Open-mid  & ɛ ɛ̃ ɛ̃̃ ɛ̥      & ɔ̃ ɔ̃̃         \\ \cline{1-6} \cline{8-10}
     Lat. Fric. &        & ɮ̃        & ʎ̝̃        &       &         && Open      & a ḁ          & ɑ̃ ɑ̃̃         \\ \cline{1-6} \cline{8-10}
 \end{tabular}}\bigskip
@@ -151,6 +149,7 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
 \parheading{Great Nasal Shift}
 \begin{enum}[15]
     \item Ṽl > ɰ̃ ⟨w⟩
+    \item V > Ṽ̃ / [NC̃ɥɰ]\_N\#
     \item V, Ṽ > Ṽ, Ṽ̃ / \_[NC̃ɥɰ], [NC̃ɥɰ]\_
     \item ə̃, ə̃̃, ã, ã̃, õ, õ̃ > ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃
     \item N, C̃ > $\emptyset$ / V\_\#
@@ -199,46 +198,51 @@ below lists those prefixes, two of which are actually circumfixes.
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
  Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-1st&j-&ó-/r-/w- -ó&&1st&v-&ó-/r-/w-\\\cline{1-3}\cline{5-7}
-2nd&\d{}(\e)-&b’h(y)- -é&&2nd&\d{}(\e)-&b’h(y)-\\\cline{1-3}\cline{5-7}
-3rd m&l(\e)-&l(\e)-&&3rd m&y’-&lý-\\\cline{1-3}\cline{5-7}
-3rd f&ll(a)-&ll(\e)-&&3rd f&y’- &lý-\\\cline{1-3}\cline{5-7}
-3rd n&ý’- &l(a)-&&3rd n&ý’-&lý-\\\cline{1-3}\cline{5-7}
-Infinitive&\multicolumn{2}{c|}{\it d(\e)-}&&Infinitive&\multicolumn{2}{c|}{\it à-/h-}\\\cline{1-3}\cline{5-7}
+1st&j-&ó-/r-/w- -(y’)ó&&1st&v-&ó-/r-/w-\\\cline{1-3}\cline{5-7}
+2nd&\d{}(ẹ)-&b’h(y)- -(y’)é&&2nd&\d{}(ẹ)-&b’h(y)-\\\cline{1-3}\cline{5-7}
+3rd m&l(ẹ)-&l(ẹ)-&&3rd m&y’-&lý-\\\cline{1-3}\cline{5-7}
+3rd f&ll(a)-&ll(ẹ)-&&3rd f&y’- &lý-\\\cline{1-3}\cline{5-7}
+3rd n&s- &l(a)-&&3rd n&sy-&lý-\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it d(ẹ)-}&&Infinitive&\multicolumn{2}{c|}{\it à-/h-}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Active (left) and passive (right) verbal affixes.}\label{tab:active-passive-prefixes}
 \end{table}
 
-TODO: Change neuter to be derived from ‘ce’.
-TODO: Document coalescence of the first and second person suffixes when a verb ends with a vowel.
-
 \noindent A great degree of syncretism can be observed in the third-person forms. The gender distinction in the
-third person singular that diachronically resulted from gendered personal pronouns is almost non-existent in the
+\s{3sg} that diachronically resulted from gendered personal pronouns is almost non-existent in the
 plural; the reason for this development is that those forms are derived from the old dative form, which lacked
 this distinction altogether.
-Furthermore, the active first and second person plural are only distinguished from their passive counterparts by
-the presence of additional suffixes in the former.
 
-The first person plural prefix varies if there is a vowel following it: if it is
+The \s{act 1pl, 2pl} forms are only distinguished from their passive counterparts by
+the presence of additional suffixes in the former. The \s{3sg n} in the active and passive is derived from the PF
+demonstrative \**ce* and its variants; the \s{3pl n} is derived from the other \s{3pl} forms.
+
+The \s{1pl} prefix varies if there is a vowel following it: if it is
 any vowel that is not a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
 *rad’hóró* ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as *w-* instead, e.g. *ob’heír* ‘obey’
 to *wob’heíró* ‘we obey’.\footnote{Diachronically, the base form of this prefix is \**o-*, whence e.g.
 \**oad’hóró* > *rad’hóró* and \**oob’heíró* > *wob’heíró*.}
 
-The passive infinitive prefix *à-* coalesces with any vowel following it: it becomes *á* if it
+The \s{inf pass} prefix *à-* coalesces with any vowel following it: it becomes *á* if it
 is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â* if it is
 followed by a nasal variant of ‘a’, e.g. *ánvé* ‘give life to’ to *ânvé* ‘to be animated’; and *h-* if it is
 followed by any other vowel, e.g. *ob’heír* to *hob’heír* ‘to be obeyed’.
 
-The parenthesised vowels are used if the prefix is followed by a consonant, e.g. *dír* ‘say’ to *ll\e{}dír*
-‘they (f) say’ and *b’hydíré* ‘you (pl) say’, but *ad’hór* to *llad’hór* ‘they (f) love’ and *b’had’hóré* ‘you
-(pl) love’. The prefixes *ó-* and *à-* retain their main forms if followed by a consonant,
-e.g. *dír* ‘say’ to *ódíró* ‘We say’ and *àdír* ‘to be said’. The exception to this is that second person plural *b’h(y)-*
-drops the *y* if followed by a glide, e.g. *y’ír* ‘to hear’ to *b’hy’íré* ‘you (pl) hear’ (not \**b’hyy’íré*).
+The parenthesised vowels are used if the prefix is followed by a consonant, e.g. *dír* ‘say’ to *llẹ{}dír*
+‘they (\s{f}) say’ and *b’hydíré* ‘you (\s{pl}) say’, but *ad’hór* to *llad’hór* ‘they (\s{f}) love’ and *b’had’hóré* ‘you
+(\s{pl}) love’. The prefixes *ó-* and *à-* retain their main forms if followed by a consonant,
+e.g. *dír* ‘say’ to *ódíró* ‘We say’ and *àdír* ‘to be said’. The exception to this is that \s{2pl} *b’h(y)-*
+drops the *y* if followed by a glide, e.g. *y’ír* ‘to hear’ to *b’hy’íré* ‘you (\s{pl}) hear’ (not \**b’hyy’íré*).
+
+The *y’* in the suffix parts of the \s{1pl, 2pl act} are dropped if the verb ends with a consonant, e.g. *ad’hór*
+to *b’hád’hóré*, or if it ends with a vowel that is a variant of ‘o’ in the case of the \s{1pl} and ‘e’ in the case
+of the \s{2pl}, in which cases the vowels are contracted and a level of nasalisation is added, e.g. *vvóríhe*
+‘to remember’ to *b’hyvvóríhé* ‘you (\s{pl}) remember’ (not \**b’hyvvóríhy’é*). In all other cases, the *y’* is retained,
+e.g. *óvvóríhey’ó* ‘we remember’.
 
 When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive prefixes
-always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (pl) love him/her’,
-but *d\e{}vad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (pl)’. Recall that at most one infinitive prefix
+always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (\s{pl}) love him/her’,
+but *dẹvad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (\s{pl})’. Recall that at most one infinitive prefix
 may be used.
 
 By way of illustration, consider the paradigm of the verb *ad’hór* as shown in Table~\ref{tab:adhor-paradigm} below.
@@ -268,7 +272,7 @@ and the *à-* prefix coalesces with the initial ‘a’ of the stem to form *á*
 3rd n&ý’ad’hór&lad’hór&&3rd n&ý’ad’hór&lýad’hór\\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it dad’hór}&&Infinitive&\multicolumn{2}{c|}{\it ád’hór}\\\cline{1-3}\cline{5-7}
 \end{tabular}
-\caption{Paradigm of the verb \emph{ad’hór}.}\label{tab:adhor-paradigm}
+\caption{Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm}
 \end{table}
 
 \noindent For comparison, the paradigm of the verb *vvóríhe* ‘remember’ is shown in Table~\ref{tab:vvorihe-paradigm} below.
@@ -279,16 +283,82 @@ prefixes that end with a vowel remain unchanged.
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 \nf Active&\nf Sg&\nf Pl&\nf &\nf Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-1st&jvvóríhe&óvvóríhy’ó&&1st&vvvóríhe&óvvóríhe\\\cline{1-3}\cline{5-7}
-2nd&ḍẹvvóríhe&b’hyvvóríhê&&2nd&ḍẹvvóríhe&b’hyvvóríhe\\\cline{1-3}\cline{5-7}
+1st&jvvóríhe&óvvóríhey’ó&&1st&vvvóríhe&óvvóríhe\\\cline{1-3}\cline{5-7}
+2nd&ḍẹvvóríhe&b’hyvvóríhé&&2nd&ḍẹvvóríhe&b’hyvvóríhe\\\cline{1-3}\cline{5-7}
 3rd m&lẹvvóríhe&lẹvvóríhe&&3rd m&y’vvóríhe&lývvóríhe\\\cline{1-3}\cline{5-7}
 3rd f&llavvóríhe&llẹvvóríhe&&3rd f&y’vvóríhe&lývvóríhe\\\cline{1-3}\cline{5-7}
 3rd n&ý’vvóríhe&lavvóríhe&&3rd n&ý’vvóríhe&lývvóríhe\\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it dẹvvóríhe}&&Infinitive&\multicolumn{2}{c|}{\it àvvóríhe}\\\cline{1-3}\cline{5-7}
 \end{tabular}
-\caption{Paradigm of the verb \emph{vvóríhe}.}\label{tab:vvorihe-paradigm}
+\caption{Paradigm of the Verb \emph{vvóríhe}.}\label{tab:vvorihe-paradigm}
 \end{table}
 
+\subsection{Tense and Aspect Marking}\label{subsec:tense-and-aspect-marking}
+Tense in PF is marked by additional sets of affixes that are appended to the verb in addition to the active/passive affixes.
+There are two broad groups of such affixes: suffixes, which are appended to the end of the verb and replace the \s{act 1pl, 2pl} suffixes
+in those persons, as well as circumfixes and prefixes, which are inserted before the active/passive markers and replace the
+replace the \s{act 1pl, 2pl} suffixes in some cases.
+
+
+\subsubsection{Suffixed Tenses}
+The present anterior and preterite are formed by appending a set of suffixes to the verb. Table~\ref{tab:present-anterior-and-preterite-suffixes}
+below lists the suffixes for those tenses. The present anterior has a perfective aspect, while the preterite has an imperfective aspect. The
+former is commonly used to describe events that are completed—particularly events that occurred recently, hence the name—while the latter
+is used to describe events that are ongoing or habitual.
+
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+\nf Present Anterior&\nf Sg&\nf Pl&\nf &\nf Preterite&\nf Sg&\nf Pl \\\cline{1-3}\cline{5-7}
+1st       & -\L é & -\L â &&1st    & -\L á  & -y’ô  \\\cline{1-3}\cline{5-7}
+2nd       & -\L á & -\L áḍ &&2nd   & -\L é  & -y’ẹ́  \\\cline{1-3}\cline{5-7}
+3rd       & -\L á & -\L ér &&3rd m & -\L é  & -\L é   \\\cline{1-3}\cline{5-7}
+Infinitive& \multicolumn{2}{c|}{\it -á }  && Infinitive & \multicolumn{2}{c|}{\it -é } \\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Present Anterior and Preterite Affixes.}\label{tab:present-anterior-and-preterite-suffixes}
+\end{table}
+
+Neither tense distinguishes gender in the third person. All suffixes, except for the infinitive and \s{1pl, 2pl pret},
+lenite any consonant *before* them, e.g. *ḅárḍáḍ* ‘to be willing’ to *jḅárḍát’hé* ‘I was willing’ but *dẹḅárḍáḍá*
+‘to have been willing’.
+
+\noindent Diachronically, the \s{1sg pret} is an interesting case; in EUF, it was originally \**-é*, but it later changed to *-á*
+to distinguish it from the \s{2sg, 3sg pres ant}. The remaining forms—save the infinitives, which are derived from the
+tenses’ definite endings by analogy—originated from the PF simple past tenses.
+
+The table below lists the example paradigm of the verb *ad’hór* in the present anterior and preterite tenses.
+Observe that there is no difference between the \s{1pl, 2pl} active and passive.
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+\nf Active & \nf Sg   & \nf Pl     & \nf & \nf Passive & \nf Sg   & \nf Pl    \\\cline{1-3}\cline{5-7}
+1st        & jad’hórá  & rad’hóry’ô     &     & 1st     & vad’hórá  & rad’hóry’ô   \\\cline{1-3}\cline{5-7}
+2nd        & ḍad’hóré  & b’had’hóry’ẹ́  &     & 2nd      & ḍad’hóré  & b’had’hóry’ẹ́ \\\cline{1-3}\cline{5-7}
+3rd m      & lad’hóré  & lad’hóré    &     & 3rd m      & y’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
+3rd f      & llad’hóré & llad’hóré   &     & 3rd f      & y’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
+3rd n      & ý’ad’hóré & lad’hóré   &     & 3rd n       & ý’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
+Infinitive & \multicolumn{2}{c|}{\it dad’hórá} & & Infinitive & \multicolumn{2}{c|}{\it ád’hóré} \\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Present Anterior Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pres}
+\end{table}
+
+\begin{table}[h]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+\nf Active & \nf Sg   & \nf Pl     & \nf & \nf Passive & \nf Sg   & \nf Pl    \\\cline{1-3}\cline{5-7}
+1st        & jad’hóré  & rad’hórâ     &     & 1st         & vad’hóré  & rad’hórâ   \\\cline{1-3}\cline{5-7}
+2nd        & ḍad’hórá  & b’had’hóráḍ  &     & 2nd         & ḍad’hóré  & b’had’hóráḍ \\\cline{1-3}\cline{5-7}
+3rd m      & lad’hórá  & lad’hórér    &     & 3rd m       & y’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
+3rd f      & llad’hórá & llad’hórér   &     & 3rd f       & y’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
+3rd n      & ý’ad’hórá & lad’hórér    &     & 3rd n       & ý’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
+Infinitive & \multicolumn{2}{c|}{\it dad’hórá} & & Infinitive & \multicolumn{2}{c|}{\it ád’hórá} \\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Preterite Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pret}
+\end{table}
+
+\subsection{Irregular Verbs}\label{subsec:irregular-verbs}
 \subsubsection{The Conjugation of \textit{eḍ} ‘to be’}
 
 \begin{table}[h]
@@ -343,7 +413,8 @@ does not exist, as that would make little sense. As lenition, nasalisation too i
 *dáhŷnḍalẹ* ‘on a table’.
 
 The diachrony of these forms is mostly from the PF definite and indefinite pronouns, though some forms, such as the
-accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite partitive forms are from the PF partitive article, and
+accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite
+partitive forms are from the PF partitive article, and
 the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
 of the articles and PF prepositions.
 
@@ -365,8 +436,8 @@ Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáh�
 
 
 \section{Examples}
-As an example, the sentence below is the UF translation of ‘Charles, you bought a fish on the mountain?’.
-
+As an example, the UF translation of ‘Charles, you bought a fish on the mountain?’ would be
+‘Ç̇ár,
 
 
 

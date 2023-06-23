@@ -27,7 +27,7 @@ NF < 2 { next }
 {
     # If the third field contains no spaces, assume it is a PF word.
     third = $3
-    if ($3 !~ / /) third = "\\pfabbr " third
+    if ($3 !~ / / && length($3) > 0) third = "\\pfabbr " third
 
     # Main fields.
     printf "%s", "\\entry" "{" $1 "}{" $2 "}{" third "}{" $4 "}{" $5 "}"

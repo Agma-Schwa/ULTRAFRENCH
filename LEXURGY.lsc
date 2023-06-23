@@ -47,7 +47,8 @@ Prelim:
 GNS:
   $$ => * / @vn _ l
   Then: @vn l => ɰ̃
-  Then: 
+  Then:
+    @vo => @vnn / @gnsnasal _ @n $
     @vo => @vn / _ @gnsnasal
     @vn => @vnn / _ @gnsnasal
     @vo => @vn / @gnsnasal _
