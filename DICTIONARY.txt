@@ -36,7 +36,7 @@ ob’heír|v. (in)tr.|obéir|To obey
 dír|v. tr.|dire|To say, tell
 vvóríhe|v. (in)tr.|mémoriser|To remember
 y’ír|v. (in)tr.|ouïr|To hear, understand, listen
-Çár|n.|Charles|Charles (name)
+Çár|n.||*male given name, equivalent to English ‘Charles’*
 ráhó|n.|poisson|Fish
 aç̇t’he|v. tr.|acheter|To buy
 vôt’há|n.|montagne|Mountain
@@ -45,8 +45,20 @@ ehyó|n.|écusson|Shield
 rvá|interj.||Alas, woe, oh. *Exclamation of distress, surprise, sadness, or regret*
 ḅárḍáḍ|v.|partante| (+ \s{aci}) To be interested in, willing to, ready to, prepared for
 c’hes|part.|\pfabbr qu'est-ce que|*interrogative particle*
+Dóvníc’h|n.||*male or female given name, equivalent to English ‘Dominic’*
+Já|n.||*male or female given name, equivalent to English ‘John’ or ‘Joan’*
 
-b2ɑ̃ɰd2ɑ̃d2
+rá|adj.|grand|Big, large, great
+ló|adj.|long|Long
+lár|adj.|large|Wide, broad
+ebhẹ|adj.|épais|Thick
+lúr|adj.|lourd|Bulky, oversized, heavy
+ḅẹt’hẹ|adj.|petit|Small, little
+c’húr|v.|court|To shrink, reduce in size, narrow
+eḍrrá|adj.|étroit|Pointy
+
+# From Étienne.
+Eḍy’ê|n.||*male given name, equivalent to English ‘Stephen’*
 
 # To be is a rather complicated entry.
 eḍ|v. intr. irreg.|être|To be|*active only*              \
