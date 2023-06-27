@@ -42,7 +42,8 @@ aç̇t’he|v. tr.|acheter|To buy
 vôt’há|n.|montagne|Mountain
 ḍalẹ|n.|tableau|Table
 ehyó|n.|écusson|Shield
-rvá|interj.||Alas, woe, oh. *Exclamation of distress, surprise, sadness, or regret*
+rvá|interj.|of unknown origin|Alas, woe, oh. *Exclamation of distress, surprise, sadness, or regret*| \
+    *after words that end with ‘r’, this is spelt ‘-vá’ instead*
 ḅárḍáḍ|v.|partante| (+ \s{aci}) To be interested in, willing to, ready to, prepared for
 c’hes|part.|\pfabbr qu'est-ce que|*interrogative particle*
 Dóvníc’h|n.||*male or female given name, equivalent to English ‘Dominic’*
@@ -65,5 +66,7 @@ eḍ|v. intr. irreg.|être|To be|*active only*              \
     \textsc{sg} *vy’í*, *ḍe*, *le*, *lle*, *ý’e*;        \
     \textsc{pl} *ósó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*; \
     \textsc{inf} *éḍ*
+
+vá > rvá
 
 vy’í, ḍe, le, lle, ý’e, ósó, b’heḍ, lẹsó, llẹsó, lasó, éḍ > eḍ

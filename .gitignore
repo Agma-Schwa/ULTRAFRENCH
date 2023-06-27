@@ -2,4 +2,5 @@
 .~lock*
 *.aux
 *.log
+*.toc
 *.synctex.gz
