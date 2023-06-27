@@ -36,7 +36,7 @@ ob’heír|v. (in)tr.|obéir|To obey
 dír|v. tr.|dire|To say, tell
 vvóríhe|v. (in)tr.|mémoriser|To remember
 y’ír|v. (in)tr.|ouïr|To hear, understand, listen
-Çár|n.||*male given name, equivalent to English ‘Charles’*
+Çár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
 ráhó|n.|poisson|Fish
 aç̇t’he|v. tr.|acheter|To buy
 vôt’há|n.|montagne|Mountain
@@ -62,11 +62,20 @@ eḍrrá|adj.|étroit|Pointy
 Eḍy’ê|n.||*male given name, equivalent to English ‘Stephen’*
 
 # To be is a rather complicated entry.
-eḍ|v. intr. irreg.|être|To be|*active only*              \
-    \textsc{sg} *vy’í*, *ḍe*, *le*, *lle*, *ý’e*;        \
-    \textsc{pl} *ósó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*; \
-    \textsc{inf} *éḍ*
+eḍ|v. irreg. |être|To be|*active only*.                         \
+    \s{pres: sg} *vy’í*, *ḍe*, *le*, *lle*, *s*;                \
+    \s{pl} *ósó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*;             \
+    \s{inf} *éḍ*.                                               \
+    \s{pres ant: sg} *vẹ*, *ḍyf*, *leb’h*, *lleb’h*, *seb’h*;   \
+    \s{pl} *ófý*, *b’hu*, *lẹfýr*, *llẹfýr*, *lafýr*;           \
+    \s{inf} *éfyḍ*                                              \
+    \s{pret: sg} *vet’h*, *ḍet’h*, *let’h*, *llet’h*, *set’h*;  \
+    \s{pl} *weḍy’ó*, *b’heḍy’é*, *let’he*, *llet’he*, *laet’h*; \
+    \s{inf} *ét’hẹd*
+
 
 vá > rvá
 
-vy’í, ḍe, le, lle, ý’e, ósó, b’heḍ, lẹsó, llẹsó, lasó, éḍ > eḍ
+vy’í, ḍe, le, lle, s, ósó, b’heḍ, lẹsó, llẹsó, lasó, éḍ, \
+    vẹ, ḍyf, leb’h, lleb’h, seb’h, ófý, b’hu, lẹfýr, llẹfýr, lafýr, éfyḍ \
+    vet’h, ḍet’h, let’h, llet’h, set’h, weḍy’ó, b’heḍy’é, let’he, llet’he, laet’h, ét’hẹd > eḍ
