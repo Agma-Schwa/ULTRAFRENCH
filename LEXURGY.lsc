@@ -64,6 +64,7 @@ Lenition:
   Then: {ɕ, ɮ̃, ʎ̝̃} => {ȷ̊, ɥ̃, ɰ̃} / @v _ @v
   Then: nθ => n / @v _ @v
   Then: {d, d2, b, b2} => {ð, θ, β, bʱ} / @v _ @v
+  Then: ɸ => β / @v _ @v
 
 Late:
   @pk @c$1 => $1
