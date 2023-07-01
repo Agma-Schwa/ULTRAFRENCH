@@ -62,20 +62,20 @@ eḍrrá|adj.|étroit|Pointy
 Eḍy’ê|n.||*male given name, equivalent to English ‘Stephen’*
 
 # To be is a rather complicated entry.
-eḍ|v. irreg. |être|To be|*active only*.                         \
-    \s{pres: sg} *vy’í*, *ḍe*, *le*, *lle*, *s*;                \
-    \s{pl} *aúsó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*;             \
-    \s{inf} *éḍ*.                                               \
-    \s{pres ant: sg} *vẹ*, *ḍyf*, *leb’h*, *lleb’h*, *seb’h*;   \
-    \s{pl} *aúfý*, *b’hu*, *lẹfýr*, *llẹfýr*, *lafýr*;           \
-    \s{inf} *éfyḍ*                                              \
-    \s{pret: sg} *vet’h*, *ḍet’h*, *let’h*, *llet’h*, *set’h*;  \
-    \s{pl} *weḍy’ó*, *b’heḍy’é*, *let’he*, *llet’he*, *laet’h*; \
+eḍ|v. irreg. |être|To be|*active only*.                                  \
+    \s{\textbf{pres:} sg} *vy’í*, *ḍe*, *le*, *lle*, *s*;                \
+    \s{pl} *aúsó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*;                     \
+    \s{inf} *éḍ*.                                                        \
+    \s{\textbf{pres ant:} sg} *vẹ*, *ḍyf*, *leb’h*, *lleb’h*, *seb’h*;   \
+    \s{pl} *aúfý*, *b’hu*, *lẹfýr*, *llẹfýr*, *lafýr*;                   \
+    \s{inf} *éfyḍ*.                                                      \
+    \s{\textbf{pret:} sg} *vet’h*, *ḍet’h*, *let’h*, *llet’h*, *set’h*;  \
+    \s{pl} *weḍy’ó*, *b’heḍy’é*, *let’he*, *llet’he*, *laet’h*;          \
     \s{inf} *ét’hẹd*
 
 
 vá > rvá
 
 vy’í, ḍe, le, lle, s, aúsó, b’heḍ, lẹsó, llẹsó, lasó, éḍ, \
-    vẹ, ḍyf, leb’h, lleb’h, seb’h, aúfý, b’hu, lẹfýr, llẹfýr, lafýr, éfyḍ \
+    vẹ, ḍyf, leb’h, lleb’h, seb’h, aúfý, b’hu, lẹfýr, llẹfýr, lafýr, éfyḍ, \
     vet’h, ḍet’h, let’h, llet’h, set’h, weḍy’ó, b’heḍy’é, let’he, llet’he, laet’h, ét’hẹd > eḍ
