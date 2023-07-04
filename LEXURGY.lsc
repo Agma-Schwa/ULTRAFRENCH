@@ -63,7 +63,7 @@ GNS:
   Then: {ɲ, ŋ} => n
   Then: {@vo, @vn} => * / @n _ @n
   Then: {m, l, ʎ} => {ʋ̃, ɮ̃, ʎ̝̃}
-  Then: ɮ̃ɰ => ɮ̃ʶ
+  Then: {ɮ̃ɰ, ɰɮ̃} => ɮ̃ʶ
 
 Lenition:
   {x, s, z} => h / @v _ @v

@@ -51,6 +51,7 @@ Já|n.||*male or female given name, equivalent to English ‘John’ or ‘Joan�
 ráy’é|v.|noyer|To drown
 ráý’ẹ|v.|râler|To complain, grumble
 ḍèr|v.|taire|To silence, shut up|\s{fut} *ḍérẹ́*
+ḅáł|v.|parler|To speak, talk, say|\s{fut} *báłérẹ́*
 
 rá|adj.|grand|Big, large, great
 laú|adj.|long|Long
