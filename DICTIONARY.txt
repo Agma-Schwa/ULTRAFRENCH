@@ -30,11 +30,11 @@
 ## point.
 ##
 
-ad’hór|v. tr.|adore|To love, adore
+ad’hór|v. tr.|adore|To love, adore|\s{fut} *ad’hórérẹ́*
 aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
-dír|v. tr.|dire|To say, tell
-vvaúríhe|v. (in)tr.|mémoriser|To remember
+dír|v. tr.|dire|To say, tell|\s{fut} *dírẹ́*
+vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*
 y’ír|v. (in)tr.|ouïr|To hear, understand, listen
 Çár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
 ráhó|n.|poisson|Fish
@@ -48,11 +48,14 @@ ḅárḍáḍ|v.|partante| (+ \s{aci}) To be interested in, willing to, ready t
 c’hes|part.|\pfabbr qu'est-ce que|*interrogative particle*
 Daúvníc’h|n.||*male or female given name, equivalent to English ‘Dominic’*
 Já|n.||*male or female given name, equivalent to English ‘John’ or ‘Joan’*
+ráy’é|v.|noyer|To drown
+ráý’ẹ|v.|râler|To complain, grumble
+ḍèr|v.|taire|To silence, shut up|\s{fut} *ḍérẹ́*
 
 rá|adj.|grand|Big, large, great
 laú|adj.|long|Long
 lár|adj.|large|Wide, broad
-ebhẹ|adj.|épais|Thick
+ebhẹ|adj.|épais|Thick
 lúr|adj.|lourd|Bulky, oversized, heavy
 ḅẹt’hẹ|adj.|petit|Small, little
 c’húr|v.|court|To shrink, reduce in size, narrow

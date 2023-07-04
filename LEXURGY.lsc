@@ -8,13 +8,13 @@
 ##       make sure we’re not using both e.g. ‘y + combining tilde’, and
 ##       the actual unicode character ‘y with tilde above’.
 
-Symbol d2, b2, bʱ, ȷ̊, ʎ̝
+Symbol d2, b2, bʱ, ȷ̊, ʎ̝, ʑʶ, ɕʶ, sʶ, zʶ, vʶ, βʶ, ʃʶ, ʒʶ, ɮ̃ʶ
 
-Class cn  {ɰ̃, ɥ̃, ʋ̃, ɮ̃, ʎ̝̃}
+Class cn  {ɰ̃, ɥ̃, ʋ̃, ɮ̃, ʎ̝̃, ɮ̃ʶ}
 Class n   {m, n, ɲ, ŋ}
 Class pk  {p, k, b, g}
 Class cpf {@n, @pk, t, d, f, s, ʃ, ʁ, v, z, ʒ, l, j, ɥ, w}
-Class cuf {ɰ, ʎ, x, ɕ, ʑ, θ, ð, ɸ, β, ȷ̊, bʱ}
+Class cuf {ɰ, ʎ, x, ɕ, ʑ, θ, ð, ɸ, β, ȷ̊, bʱ, sʶ, ɕʶ, zʶ, ʑʶ, vʶ, βʶ, ʀ}
 Class c   {@cn, @cpf, @cuf}
 Class vn  {ĩ, ỹ, ẽ, ɔ̃, õ, ɛ̃, ã, ɑ̃, ũ, ə̃}
 Class vnn {ĩ̃, ỹ̃, ẽ̃, ɔ̃̃, õ̃, ɛ̃̃, ã̃, ɑ̃̃, ũ̃, ə̃̃}
@@ -24,10 +24,11 @@ Class v   {@vn, @vnn, @vq, @vo}
 
 Class gnsnasal {@n, @cn, ɥ, ɰ}
 
-Prelim: 
-  {ɡ, g, ʁ, w} => ɰ
+Prelim:
+  {ɡ, g, w} => ɰ
   Then: {œ, œ̃, ø} => {y, ỹ, ỹ}
   Then: ɔ => o
+  Then: uo => vo
   Then: $$ => * / y _ @v
   Then: y => j / _ @v
   Then: $$ => * / @v$1 _ $1
@@ -35,14 +36,18 @@ Prelim:
   Then: {lj, lɥ} => ʎ
   Then: j => ɥ
   Then: ɰ => ɥ / _ i
+  Then: ʁʁ => ʀ
+  Then: {sʁ, ʃʁ, zʁ, ʒʁ} => {sʶ, ʃʶ, zʶ, ʒʶ}
+  Then: vʁ => vʶ
+  Then: ʁ => ɰ
   Then: @c => * / $ _ @c
   Then: @c => * / @c _ $
   Then: k => x
-  Then: {ʃ, ʒ} => {ɕ, ʑ}
+  Then: {ʃ, ʃʶ, ʒ, ʒʶ} => {ɕ, ɕʶ, ʑ, ʑʶ}
   Then: nt => nθ
   Then: t => d2
   Then: p => b2
-  Then: {f, v} => {ɸ, β}
+  Then: {f, v, vʶ} => {ɸ, β, βʶ}
 
 GNS:
   $$ => * / @vn _ l
@@ -58,6 +63,7 @@ GNS:
   Then: {ɲ, ŋ} => n
   Then: {@vo, @vn} => * / @n _ @n
   Then: {m, l, ʎ} => {ʋ̃, ɮ̃, ʎ̝̃}
+  Then: ɮ̃ɰ => ɮ̃ʶ
 
 Lenition:
   {x, s, z} => h / @v _ @v
