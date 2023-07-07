@@ -52,18 +52,37 @@ ráy’é|v.|noyer|To drown
 ráý’ẹ|v.|râler|To complain, grumble
 ḍèr|v.|taire|To silence, shut up|\s{fut} *ḍérẹ́*
 ḅáł|v.|parler|To speak, talk, say|\s{fut} *báłérẹ́*
+ab’hásy’ô|n.|aviation|Aviation
+rá|n.|loi|Law, rule, regulation
+ḍẹ|adj.|tout|All, every, whole, entire
+c’hóný|adj.|connu|Known, familiar, well-known
+y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no, there is none
+ý’aúhý|inconj., postpos.|\pfabbr il y a aucun|There is, there are
+ráy’ê|n.|moyen|Way, means, method. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
+ub’hrá|v.|pouvoir|To be able to, can. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} ís
+ab’héy’|n.|abeille|Bee
+b’hóy’ẹ|v.|voler|To fly. Flight
+ez-|pron.|ses|Its, her, his.
+el|n.|ailles|Wing, blade, fin.
+Láç|n.||*female given name, equivalent to English ‘Bianca’*
+auḍé|v.|obtenir|To obtain, get, acquire. +\s{abl} To gain purchase on or height or distance from|\s{fut} *auḍy’édrẹ́*
+sol|n.|sol|Ground, floor, earth, soil
+c’hór|n.|corps|Body
+c’hýr|n.|corps|Heart
 
-rá|adj.|grand|Big, large, great
-laú|adj.|long|Long
-lár|adj.|large|Wide, broad
-ebhẹ|adj.|épais|Thick
-lúr|adj.|lourd|Bulky, oversized, heavy
-ḅẹt’hẹ|adj.|petit|Small, little
+
+
+rá|v.|grand|Big, large, great
+laú|v.|long|Long
+lár|v.|large|Wide, broad
+ebhẹ|v.|épais|Thick
+lúr|v.|lourd|Bulky, oversized, heavy
+ḅẹt’hẹ|v.|petit|To be small, little
 c’húr|v.|court|To shrink, reduce in size, narrow
-eḍrrá|adj.|étroit|Pointy
+eḍrrá|v.|étroit|Pointy
 
 # From Étienne.
-Eḍy’ê|n.||*male given name, equivalent to English ‘Stephen’*
+Eḍy’ê|n.||*male given name, equivalent to English ‘Ste\-phen’*
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|*active only*.                                  \

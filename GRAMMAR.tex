@@ -7,43 +7,18 @@
 \usepackage{array, tabularx, multirow}
 \usepackage{longtable}
 \usepackage{float}
+\usepackage{tabularray}
 
 \setmainfont[Numbers=OldStyle]{Minion 3}
 \setmathfont{latinmodern-math.otf}
 \setmathfont[range=\mathit]{Minion 3 Italic}
-\frenchspacing
 
-\AtBeginDocument{
-    \def\today{
-        \number\day\space
-        \ifcase\month\or
-        January\or February\or March\or April\or May\or June\or
-        July\or August\or September\or October\or November\or December\fi\space
-        \number\year
-    }
-}
-
-\makeatletter
-\def\footnoterule{%
-    \kern-3\p@
-    \hrule\@width.4\columnwidth
-    \kern2.6\p@
-}
-
-\def\@makefntext#1{%
-    \setlength\parindent{1em}%
-    \noindent
-    {%
-    \mbox{\llap{{}\textsuperscript{\@thefnmark}\kern.5pt}}{#1}%1
-    }%
-}
-\makeatother
-
-\title{A Comprehensive Diachronic Grammar of Modern ULTRAFRENCH}
-\author{Agma Schwa \& Ætérnal}
-\date{\today}
-
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Environment and Layout
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ExplSyntaxOn
+\makeatletter
+
 \cs_new:Npn \__two_cols:nnnnn #1 #2 #3 #4 #5 {
     \ifvmode\else\unskip\par\fi
     \noindent\leavevmode
@@ -64,6 +39,154 @@
     \__two_cols:nnnnn{#4}{#5}{#1}{#3}{#2}
 }
 
+\cs_new:Npn \__gloss_insert_table_header: {
+    %% Generating columns doesn’t seem to work, so this hack will do. If you
+    %% need a gloss with more columns than this, I suggest you pause and take
+    %% a moment to reflect on your life choices.
+    \begin {tabular} { @{} *{100}l }
+}
+
+\cs_new:Npn \__gloss_table_start: {
+    \ifvmode\else\unskip\par\fi
+    \addvspace{\medskipamount}
+    \noindent
+}
+
+\cs_new:Npn \__gloss_table_end: {
+    \end {tabular}
+    \ifvmode\else\par\fi
+    \addvspace{\medskipamount}
+}
+
+%% Format a single line of a gloss.
+%%
+%% The line number must be stored in \g_tempb_int.
+%%
+%% This takes the line #1 and formats it, inserting the contents of #2
+%% at the start of each line, and #3 at the beginning of each column.
+%% #3 can be a macro that takes one argument, in which case it will be
+%% passed the contents of the column.
+\cs_new:Npn \__gloss_format_line:nnn #1 #2 #3 {
+    #2
+
+    \seq_set_split:Nnn \l_tmpa_seq { | } { #1 }
+    \bool_set_true:N \l_tmpa_bool
+
+    \seq_map_inline:Nn \l_tmpa_seq {
+        \bool_if:NF \l_tmpa_bool { & }
+        \bool_set_false:N \l_tmpa_bool
+        #3 { \tl_rescan:nn {} { ##1 } }
+    }
+}
+
+%% Format a gloss.
+%%
+%% This iterates over all lines in #1 and calls #2 on it.
+\cs_new:Npn \__gloss_format:nn #1 #2 {
+    \int_gset:Nn \g_tmpb_int { 1 }
+    \tl_map_inline:nn { #1 } {
+        \tl_if_blank:nF { ##1 } {
+            %% Insert \cr or table header if this is the first line. We
+            %% need to emit this here, as otherwise, TeX will encounter
+            %% unexpandable tokens before the formatter (#2) is executed,
+            %% which will start the cell before any actual content has
+            %% been inserted; this means we can no longer tell TeX to
+            %% \omit the cell header, which causes \multicolumn to break
+            %% horribly.
+            %%
+            %% By emitting the table header here, we ensure that instead,
+            %% the formatter is the first thing TeX gets to see after the
+            %% initial table header and after every \cr.
+            \int_compare:nNnTF { \g_tmpb_int } > { 1 } { \\ } { \__gloss_insert_table_header: }
+            #2 { ##1 }
+            \int_gincr:N \g_tmpb_int
+        }
+    }
+}
+
+%% Two lines means object language + gloss.
+\cs_new:Npn \__gloss_two_lines:n #1 {
+    \cs_gset:Npn \__formatter:n ##1 {
+        \__gloss_format_line:nnn { ##1 } {} {
+            \int_compare:nNnT { \g_tmpb_int } = { 1 } { \itshape }
+        }
+    }
+
+    \__gloss_format:nn { #1 } { \__formatter:n }
+}
+
+%% Full gloss (text, object language, pronunciation, gloss, and translation).
+\cs_new:Npn \__gloss_five_lines:n #1 {
+    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries##1} }
+    \cs_gset:Npn \__formatter_ii:n ##1 { \__gloss_format_line:nnn {##1} {} {\itshape} }
+    \cs_gset:Npn \__formatter_iii:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
+    \cs_gset:Npn \__formatter_iv:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
+    \cs_gset:Npn \__formatter_v:n ##1 { \multicolumn {100} {@{}l} {‘##1’} }
+
+    \__gloss_format:nn { #1 } {
+        \cs:w __formatter_ \int_to_roman:n \g_tmpb_int :n \cs_end:
+    }
+}
+
+\NewDocumentCommand {\gloss} {
+    > { \exp_args:Nx \SplitList { \iow_char:N \^^M } } +v
+} {
+    \__gloss_table_start:
+
+    %% Count lines.
+    \int_gset:Nn \g_tmpa_int { 0 }
+    \tl_map_inline:nn { #1 } {
+        \tl_if_blank:nF { ##1 } {
+            \int_gincr:N \g_tmpa_int
+        }
+    }
+
+    %% Dispatch the appropriate number of lines.
+    \int_case:nnF { \g_tmpa_int } {
+        2 { \__gloss_two_lines:n { #1 } }
+        5 { \__gloss_five_lines:n { #1 } }
+    }
+
+    %% Any other line count is an error.
+    {
+        \msg_new:nnn { gloss } { too-many-lines } {
+            Too~many~lines~in~gloss:~expected~2,~got~\int_use:N \g_tmpa_int
+        }
+
+        \msg_error:nn { gloss } { too-many-lines }
+    }
+
+    %% Close the table.
+    \__gloss_table_end:
+}
+
+\frenchspacing
+
+\AtBeginDocument{
+    \def\today{
+        \number\day\space
+        \ifcase\month\or
+        January\or February\or March\or April\or May\or June\or
+        July\or August\or September\or October\or November\or December\fi\space
+        \number\year
+    }
+}
+
+\def\footnoterule{%
+    \kern-3\p@
+    \hrule\@width.4\columnwidth
+    \kern2.6\p@
+}
+
+\def\@makefntext#1{%
+    \setlength\parindent{1em}%
+    \noindent
+    {%
+    \mbox{\llap{{}\textsuperscript{\@thefnmark}\kern.5pt}}{#1}%1
+    }%
+}
+
+
 \def \UF { \bfseries \itshape }
 \let \nf \normalfont
 
@@ -71,7 +194,7 @@
 \def \D {Ḍ}
 \def \b {ḅ}
 \def \B {Ḅ}
-\let \s \textsc
+\long\def \s #1 {{\normalfont\scshape #1 }}
 
 \def \L {\textsuperscript{L}}
 \def \N {\textsuperscript{N}}
@@ -84,7 +207,7 @@
 \cs_new:Npn \items { \itemize\itemsep6pt }
 \cs_new:Npn \enditems { \enditemize }
 
-\ExplSyntaxOff
+
 
 \newlength{\EnumItemSep} \EnumItemSep-3pt
 
@@ -100,6 +223,16 @@
 \def\parheading#1{\noindent\textbf{#1}}
 
 \let\Sub\textsubscript
+
+\makeatother
+\ExplSyntaxOff
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Document
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{A Comprehensive Diachronic Grammar of Modern ULTRAFRENCH}
+\author{Agma Schwa \& Ætérnal}
+\date{\today}
 
 \begin{document}
 \maketitle
@@ -182,6 +315,7 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
 \parheading{Late Changes}
 \begin{enum}[25]
     \item C[+stop, -alveolar]C\scalpha > C\scalpha
+    \item C[+stop]C\scalpha[+stop] > C\scalpha
     \item h > $\emptyset$ / hV\_
     \item ə > $\emptyset$ / C\_C
     \item V[-nasalised, -nasal] > ə̥ / \_\#
@@ -223,7 +357,8 @@ Several fricatives are spelt with an apostrophe followed by a ‘h’, viz. /x/ 
 and /β/ ⟨b’h⟩. Conventional letters are used for rather unconventional sounds, mostly for diachronic reasons:
 /l/ does not exist in UF, so ⟨l⟩ is either /ɮ̃/ or /ʎ̝̃/, ⟨v⟩ is /ʋ̃/, ⟨j⟩ is /ʑ/, ⟨r⟩ is /ɰ/, ⟨w⟩ is /ɰ̃/. The vowel
 /y/ is spelt ⟨y⟩, and its consonantal equivalent /ɥ/ as well as nasalised /ɥ̃/ are spelt with an apostrophe, that is
-⟨y’⟩ and ⟨ý’⟩. The ʁ-fricated fricatives /βʶ, ɮ̃ʶ, sʶ, ɕʶ, zʶ, ʑʶ/ are spelt ⟨v́, ł, ś, ḉ, ȷ́, ź⟩, respectively.
+⟨y’⟩ (or sometimes just ⟨’⟩, especially word-initially) and ⟨ý’⟩. The ʁ-fricated fricatives /βʶ, ɮ̃ʶ, sʶ, ɕʶ, zʶ, ʑʶ/
+are spelt ⟨v́, ł, ś, ḉ, ȷ́, ź⟩, respectively.
 
 Double consonant letters indicate a lengthened consonant; these are rare, but they can occur in any position. The only
 exception to this is ⟨rr⟩, which is not /ɰː/, but rather /ʀ/. UF does not have phonemic vowel length (though recall
@@ -235,7 +370,7 @@ indicated by adding a dot below the ⟨e⟩; the vowel /o/ is spelt ⟨au⟩ or 
 case in cases like this, hypercorrection is frequent, and ⟨au⟩ is often preferred word-initially, even if the
 PF root was spelt with ⟨o⟩. In general, UF speakers seem to prefer ⟨au⟩ over ⟨o⟩, except word-finally and after ⟨w⟩, except
 that in verb affixes, *au* is quite common word-finally. The sequence ⟨wau⟩ does not exist in UF.} in the case of
-⟨au⟩, the acute and circumflex are added to the ⟨u⟩. The diphthong /au/ is spelt ⟨a’u⟩. Oral
+⟨au⟩, the acute and circumflex are added to the ⟨u⟩. The diphthong /au/ is spelt ⟨äu⟩, ⟨aü⟩, or with accents on both vowels. Oral
 /ɛ/ is rare and is spelt ⟨è⟩. Word-initially and word-finally, a grave instead indicates that the vowel is voiceless. Word-final
 voiceless /e/ is always /ə̥/, but confusingly, it is also just spelt ⟨e⟩, since ⟨è⟩ is already /ɛ/.\footnote{Thus, a word-final ⟨e⟩
 can be /e/, such as in *vvaúríhe* /ʋ̃ːɔ̃ɰĩˈhe/ ‘to remember’, or /ə̥/, such as in *dale* /daɮ̃ə̥/ ‘table’. As a rule of thumb, it is
@@ -290,6 +425,7 @@ below lists those prefixes, two of which are actually circumfixes.
 3rd f&ll(a)-&ll(ẹ)-&&3rd f&y’- &lý-\\\cline{1-3}\cline{5-7}
 3rd n&s- &l(a)-&&3rd n&sy-&lý-\\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it d(ẹ)-}&&Infinitive&\multicolumn{2}{c|}{\it à-/h-}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it -â}&&Participle&\multicolumn{2}{c|}{\it â-}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Active (left) and passive (right) verbal affixes.}\label{tab:active-passive-prefixes}
 \end{table}
@@ -327,10 +463,15 @@ of the \s{2pl}, in which cases the vowels are contracted and a level of nasalisa
 ‘to remember’ to *b’hyvvaúríhé* ‘you (\s{pl}) remember’ (not \**b’hyvvaúríhy’é*). In all other cases, the *y’* is retained,
 e.g. *aúvvaúríhey’ó* ‘we remember’.
 
-When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive prefixes
+When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive and participle prefixes
 always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (\s{pl}) love him/her’,
 but *dẹvad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (\s{pl})’. Recall that at most one infinitive prefix
-may be used.
+and at most one participle affix may be used.
+
+The participle affixes are commonly used to form adjectives since the vast majority of adjectives in UF are actually ‘adjective verbs’
+with a meaning of ‘to be X’. The participle can be used to convert such a verb back into a regular adjective, e.g. *lár* ‘to be wide’
+to *lárâ* ‘wide’. Like the passive infinitive affix, the participle affixes coalesce with vowels and always form a maximally
+nasal vowel, e.g. *vvaúríhe* ‘to remember’ forms *vvaúríhê* ‘remembering’, and *ad’hór* forms *âd’hór* ‘being loved’.
 
 By way of illustration, consider the paradigm of the verb *ad’hór* as shown in Table~\ref{tab:adhor-paradigm} below.
 Since this word starts with a vowel, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} above
@@ -358,6 +499,7 @@ and the *à-* prefix coalesces with the initial ‘a’ of the stem to form *á*
 3rd f&llad’hór&llad’hór&&3rd f&y’ad’hór &lýad’hór\\\cline{1-3}\cline{5-7}
 3rd n&ý’ad’hór&lad’hór&&3rd n&ý’ad’hór&lýad’hór\\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it dad’hór}&&Infinitive&\multicolumn{2}{c|}{\it ád’hór}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it ad’hórâ}&&Participle&\multicolumn{2}{c|}{\it âd’hór}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm}
 \end{table}
@@ -376,6 +518,7 @@ prefixes that end with a vowel remain unchanged.
 3rd f&llavvaúríhe&llẹvvaúríhe&&3rd f&y’vvaúríhe&lývvaúríhe\\\cline{1-3}\cline{5-7}
 3rd n&ý’vvaúríhe&lavvaúríhe&&3rd n&ý’vvaúríhe&lývvaúríhe\\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it dẹvvaúríhe}&&Infinitive&\multicolumn{2}{c|}{\it àvvaúríhe}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it vvaúríhê}&&Participle&\multicolumn{2}{c|}{\it âvvaúríhe}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Paradigm of the Verb \emph{vvaúríhe}.}\label{tab:vvorihe-paradigm}
 \end{table}
@@ -402,6 +545,7 @@ is used to describe events that are ongoing or habitual.
 2nd       & -\L á & -\L áḍ &&2nd   & -\L é  & -y’ẹ́  \\\cline{1-3}\cline{5-7}
 3rd       & -\L á & -\L ér &&3rd m & -\L é  & -\L é   \\\cline{1-3}\cline{5-7}
 Infinitive& \multicolumn{2}{c|}{\it -á }  && Infinitive & \multicolumn{2}{c|}{\it -é } \\\cline{1-3}\cline{5-7}
+Participle& \multicolumn{2}{c|}{\it -ér }  && Participle & \multicolumn{2}{c|}{\it -ár } \\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Present Anterior and Preterite Affixes.}\label{tab:present-anterior-and-preterite-suffixes}
 \end{table}
@@ -417,6 +561,9 @@ tenses’ definite endings by analogy—originated from the PF simple past tense
 The table below lists the example paradigm of the verb *ad’hór* in the present anterior and preterite tenses.
 Observe that there is no difference between the \s{1pl, 2pl} active and passive.
 
+The participle suffixes coalesce with present participle affixes to form *êr* in the present anterior and *âr* in the preterite,
+where applicable, e.g. present *ad’hórâ* ‘loving’ becomes *ad’hórêr* ‘having loved’.
+
 \begin{table}[H]
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
@@ -427,6 +574,7 @@ Observe that there is no difference between the \s{1pl, 2pl} active and passive.
 3rd f      & llad’hórá & llad’hórér   &     & 3rd f       & y’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
 3rd n      & ý’ad’hórá & lad’hórér    &     & 3rd n       & ý’ad’hórá & lýad’hórér  \\\cline{1-3}\cline{5-7}
 Infinitive & \multicolumn{2}{c|}{\it dad’hórá} & & Infinitive & \multicolumn{2}{c|}{\it ád’hórá} \\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it ad’hórêr}&&Participle&\multicolumn{2}{c|}{\it âd’hórér}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Present Anterior Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pres-ant}
 \end{table}
@@ -441,6 +589,7 @@ Infinitive & \multicolumn{2}{c|}{\it dad’hórá} & & Infinitive & \multicolumn
 3rd f      & llad’hóré & llad’hóré   &     & 3rd f      & y’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
 3rd n      & ý’ad’hóré & lad’hóré   &     & 3rd n       & ý’ad’hóré & lýad’hóré  \\\cline{1-3}\cline{5-7}
 Infinitive & \multicolumn{2}{c|}{\it dad’hóré} & & Infinitive & \multicolumn{2}{c|}{\it ád’hóré} \\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it ad’hórâr}&&Participle&\multicolumn{2}{c|}{\it âd’hórár}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Preterite Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pret}
 \end{table}
@@ -474,6 +623,7 @@ of the verb \emph{ad’hór}.
 3rd f&aúllad’hór&aúllad’hór&&3rd f&aúry’ad’hór &aúlýad’hór\\\cline{1-3}\cline{5-7}
 3rd n&aúrý’ad’hór&aúlad’hór&&3rd n&aúrý’ad’hór&aúlýad’hór\\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it aúdad’hór}&&Infinitive&\multicolumn{2}{c|}{\it aûd’hór}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it aúrad’hórâ}&&Participle&\multicolumn{2}{c|}{\it aúrâd’hór}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Future I Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-future-1}
 \end{table}
@@ -484,7 +634,7 @@ vary a lot more, but they are different depending on whether verb form following
 not a problem in the Future I, since the prefix is never adjacent to the stem.}
 The vocalic and consonantal Future II affixes are shown in Tables~\ref{tab:future-2-vocalic}~and~\ref{tab:future-2-consonantal} below, respectively.
 
-The diachrony of these forms is somewhat unclear. It would appear, however, that they result from a coalescence
+The diachrony of these forms is somewhat unclear—especially that of the participles. It would appear, however, that they result from a coalescence
 of the personal pronouns with forms of some auxiliary (likely PF *avoir* and *aller*) as well as the PF future. It appears that
 the \s{2sg} is derived from the formal PF \s{2pl} pronoun, which is in line with the fact that the Future II is generally
 considered more formal than the almost colloquial Future I. The *v́* in the \s{2pl act} seems to be the result of metathesis.
@@ -499,6 +649,7 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 3rd f &èł-  -(ẹ)  &lb’h- -aú      &&3rd f  &l-       &lb’h- -(r)e \\\cline{1-3}\cline{5-7}
 3rd n &aúł-  -(ẹ) &lb’h- -aú      &&3rd n  &s-       &lb’h- -(r)e \\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it d- -è}&&Infinitive&\multicolumn{2}{c|}{\it h-}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it -ŷr}&&Participle&\multicolumn{2}{c|}{\it á- -ýr}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Vocalic Future II Affixes.}\label{tab:future-2-vocalic}
 \end{table}
@@ -513,6 +664,7 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 3rd f &aúr-  -(ẹ) &laú- -aú    &&3rd f &y’aúr-  &laú- -(r)e \\\cline{1-3}\cline{5-7}
 3rd n &aúr-  -(ẹ) &laú- -aú    &&3rd n &saúr-   &laú- -(r)e \\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it dẹ- -è}&&Infinitive&\multicolumn{2}{c|}{\it haú-}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it -(r)ŷ}&&Participle&\multicolumn{2}{c|}{\it á- -(r)ý}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Consonantal Future II Affixes.}\label{tab:future-2-consonantal}
 \end{table}
@@ -566,12 +718,13 @@ that the future stems of these verbs are *ad’hórérẹ́* and *vvaúríźe*.
 \centering
 \noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-1st   &b’had’hórérẹ́  &náý’ad’hóréraû      &&1st    &vad’hórérệ       &náý’ad’hórérẹ́       \\\cline{1-3}\cline{5-7}
-2nd   &ḍírad’hórérẹ́  &b’haý’ad’hórérrẹ́    &&2nd    &ḍírad’hórérẹ́     &b’haý’ad’hórérẹ́     \\\cline{1-3}\cline{5-7}
-3rd m &ład’hórérẹ́    &lb’had’hóréraû      &&3rd m  &lad’hórérẹ́       &lb’had’hórérre \\\cline{1-3}\cline{5-7}
-3rd f &èład’hórérẹ́   &lb’had’hóréraû      &&3rd f  &lad’hórérẹ́       &lb’had’hórérre \\\cline{1-3}\cline{5-7}
-3rd n &aúład’hórérẹ́  &lb’had’hóréraû      &&3rd n  &sad’hórérẹ́       &lb’had’hórérre \\\cline{1-3}\cline{5-7}
+1st   &b’had’hórérẹ́  &náý’ad’hóréraû      &&1st    &vad’hórérệ    &náý’ad’hórérẹ́   \\\cline{1-3}\cline{5-7}
+2nd   &ḍírad’hórérẹ́  &b’haý’ad’hórérrẹ́    &&2nd    &ḍírad’hórérẹ́  &b’haý’ad’hórérẹ́ \\\cline{1-3}\cline{5-7}
+3rd m &ład’hórérẹ́    &lb’had’hóréraû      &&3rd m  &lad’hórérẹ́    &lb’had’hórérre  \\\cline{1-3}\cline{5-7}
+3rd f &èład’hórérẹ́   &lb’had’hóréraû      &&3rd f  &lad’hórérẹ́    &lb’had’hórérre  \\\cline{1-3}\cline{5-7}
+3rd n &aúład’hórérẹ́  &lb’had’hóréraû      &&3rd n  &sad’hórérẹ́    &lb’had’hórérre  \\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it dad’hóréré}&&Infinitive&\multicolumn{2}{c|}{\it had’hórérẹ́}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it ad’hórérŷr}&&Participle&\multicolumn{2}{c|}{\it ád’hórérýr}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Vocalic Future II Paradigm of *ad’hór*.}\label{tab:future-2-adhor}
 \end{table}
@@ -586,9 +739,19 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 3rd f &aúrvvaúríźẹ  &laúvvaúríźaú    &&3rd f &y’aúrvvaúríźe  &laúvvaúríźe \\\cline{1-3}\cline{5-7}
 3rd n &aúrvvaúríźẹ  &laúvvaúríźaú    &&3rd n &saúrvvaúríźe   &laúvvaúríźe \\\cline{1-3}\cline{5-7}
 Infinitive&\multicolumn{2}{c|}{\it dẹvvaúríźè}&&Infinitive&\multicolumn{2}{c|}{\it haúvvaúríźe}\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷ}&&Infinitive&\multicolumn{2}{c|}{\it ávvaúríźý}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Consonantal Future II Paradigm of *vvaúríhe*.}\label{tab:future-2-vvaurihe}
 \end{table}
+
+\subsubsection{Future Anterior}
+The Future Anterior is
+
+\subsection{Subjunctive}
+The UF subjunctive forms are fortunately fairly simple: they use the same affixes as the present, past, and future
+forms, except that each verb has a different subjunctive stem as well as a future subjunctive stem; the subjunctive
+stem is typically formed by adding an *-s* to the end of the corresponding indicative stem, e.g. *ad’hór*
+‘to love’ to *ad’hórs*; thus we have, e.g. *jad’hórs* ‘I would love’, and *rád’hórsó* ‘We would love’.
 
 \subsection{Irregular Verbs}\label{subsec:irregular-verbs}
 \subsubsection{The Conjugation of \textit{eḍ} ‘to be’}
@@ -635,12 +798,16 @@ parentheses), which are not present in the vocalic declension.
 \noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 
-Nominative  & lá-\L & lé-\L                    &&Nominative &ŷn-\N & ý-\L         \\\cline{1-3}\cline{5-7}
-Vocative    & $\emptyset$-\L & $\emptyset$-\L  &&Vocative   & / & /                     \\\cline{1-3}\cline{5-7}
-Partitive   & dy-\L  & dẹ-\L                   &&Partitive  &dŷn-\N & dý-\L                      \\\cline{1-3}\cline{5-7}
-Accusative  & y’i-\L  & sý-\L                  &&Accusative & s-\L & s-                       \\\cline{1-3}\cline{5-7}
-...         &  &                               &&           & &              \\\cline{1-3}\cline{5-7}
-Inessive    & dwá- & dwé-                      &&Inessive   & dáhŷn- & dáhŷ-                    \\\cline{1-3}\cline{5-7}
+Absolutive    & $\emptyset$  & l- &&Absolutive    & $\emptyset$-\N & $\emptyset$-\L      \\\cline{1-3}\cline{5-7}
+Nominative    & lá-\L   & lé-\L   &&Nominative    & ŷn-\N & ý-\L      \\\cline{1-3}\cline{5-7}
+Vocative      & $\emptyset$-\L  & $\emptyset$-\L  &&Vocative      & / & /             \\\cline{1-3}\cline{5-7}
+Partitive     & dy-\L   & dẹ-\L   &&Partitive     & dŷn-\N & dý-\L    \\\cline{1-3}\cline{5-7}
+Accusative    & i-\L    & sý-\L   &&Accusative    & s-\L & s-         \\\cline{1-3}\cline{5-7}
+Genitive      & á-\L    & abh-\L  &&Genitive      & sý-\N & sý-\L     \\\cline{1-3}\cline{5-7}
+Considerative & słá-    & słé-    &&Considerative & sý’óýn- & sý’óý-  \\\cline{1-3}\cline{5-7}
+Inessive      & dwá-    & dwé-    &&Inessive      & dáhŷn- & dáhŷ-    \\\cline{1-3}\cline{5-7}
+Ablative      & rê(d)-  & rês-    &&Ablative      & rêdýn- & rêdý-    \\\cline{1-3}\cline{5-7}
+...           &         &         &&              & &                 \\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{UF Declension.}\label{tab:table-uf-declension}
 \end{table}
@@ -656,11 +823,21 @@ it causes nasalisation in words that start with a vowel e.g. *ehyó* ‘shield�
 does not exist, as that would make little sense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef} inessive
 *dáhŷnḍalẹ* ‘on a table’.
 
+The absolutive case is used for the predicate noun of predicative sentences, e.g. *Aúsó ḍe ráhó* ‘We are all fish’.
+
+The considerative case can be translated as ‘according to’, or ‘in the opinion of’, and is used to express the opinion of
+the speaker or point out something as an opinion, belief, or hypothesis of someone or something.
+
+The *d* in the \s{def abl sg} is omitted if the noun starts with a consonant, e.g. *rêḍalẹ* ‘from the table’; be careful
+especially with words that start with *s*, whose \s{abl sg} is often mistaken for a plural, e.g. *rêsol* ‘from the floor’,
+but *rêssol* ‘from the floors’.
+
 The diachrony of these forms is mostly from the PF definite and indefinite pronouns, though some forms, such as the
 accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite
 partitive forms are from the PF partitive article, and
 the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
-of the articles and PF prepositions.
+of the articles and PF prepositions. The ablative is from PF \**loin de* ‘away from’. The diachrony of the genitive singular
+is unclear.
 
 \begin{table}[H]
 \centering
@@ -670,7 +847,7 @@ Definite    &\nf Sg&\nf Pl && Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 Nominative  & lát’halẹ  & lét’halẹ   &&Nominative & ŷnalẹ & ýt’halẹ         \\\cline{1-3}\cline{5-7}
 Vocative    & t’halẹ    & t’halẹ    &&Vocative   & / & /                      \\\cline{1-3}\cline{5-7}
 Partitive   & dyt’halẹ  & dẹt’halẹ &&Partitive   & dŷnalẹ & dýt’halẹ                     \\\cline{1-3}\cline{5-7}
-Accusative  & y’it’halẹ & sýt’halẹ  &&Accusative & st’halẹ & sḍalẹ                       \\\cline{1-3}\cline{5-7}
+Accusative  & it’halẹ & sýt’halẹ  &&Accusative & st’halẹ & sḍalẹ                       \\\cline{1-3}\cline{5-7}
 ...         &  &  &&           & &              \\\cline{1-3}\cline{5-7}
 Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáhýḍalẹ                    \\\cline{1-3}\cline{5-7}
 \end{tabular}
@@ -680,13 +857,58 @@ Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáh�
 
 
 \section{Examples}
-\noindent\begin{tabular}{@{}lllll}
-\multicolumn{5}{@{}l}{\it Çár-vá, sráhó dwávaût’há daçt’heá?}\\
-Ç̇ár &-vá &s-ráhó &dwá-vaût’há &ḍ-aç̇t’he-á\\
-ˈj̊ɑ̃ːˠ&ʋ̃ɑ̃&ˌsɰɑ̃ˈhɔ̃&dɰɑ̃ˌʋ̃ɔ̃̃ˈθɑ̃&da̯j̊ˈθe.ɑ̃\\
-Charles.\s{voc}&\s{particle}&\s{indef.acc}-fish&\s{def.iness}-mountain&\s{2sg.act}-buy-\s{pres.ant.2sg}\\
-\multicolumn{5}{@{}l}{‘Charles, you bought a fish on the mountain?’}\\
-\end{tabular}
+\subsubsection{Simple Glossing Example}
+
+\gloss {
+    Çár-vá, sráhó dwávaût’há daçt’heá?
+    Ç̇ár |-vá |s-ráhó |dwá-vaût’há |ḍ-aç̇t’he-á
+    ˈj̊ɑ̃ːˠ|ʋ̃ɑ̃|ˌsɰɑ̃ˈhɔ̃|dɰɑ̃ˌʋ̃ɔ̃̃ˈθɑ̃|da̯j̊ˈθe.ɑ̃
+    Charles.\s{voc}|\s{particle}|\s{indef.acc}-fish|\s{def.iness}-mountain|\s{2sg.act}-buy-\s{pres.ant.2sg}
+    Charles, you bought a fish on the mountain?
+}
+
+
+\subsubsection{I Don’t Think This Warrants Explaining}
+{\itshape
+Słérá de c’hóný áb’hás’ô, ráy’ê y’aúhý dís dyb’hóy’e sab’héy’. Ez lé-el lalebet’he z’ihór bet’hê rêsol daudé.
+
+}
+
+\gloss {
+    słé-rá| ḍẹ| c’hóný| áb’hás’ô| ráy’ê| y’aúhý| ḍ-ís
+    \s{cons.pl.def}-law|all|well.known|\s{gen.sg.def}\textbackslash aviation|way|there.is.no|\s{inf.act-subj}\textbackslash can
+}
+
+\gloss {
+    dy-b’hóy’ẹ | s-ab’héy’ |ez |lé-el |z’| ihór
+    \s{part.sg.def}-to.fly|\s{acc.sg.indef}-bee|its|\s{nom.pl.def}-wing|its|\s{acc.sg.def}\textbackslash body
+}
+
+\gloss {
+    bet’hê | rê-sol | ḍ-auḍé
+    be.small\textbackslash\s{part.act}|\s{abl.sg.def}-soil|\s{inf.act}-obtain
+}
+
+%% NOTES:
+%% ‘ez’: its, her, his. Before a word that starts w/ a vowel, this becomes *z* (e.g. **ez ihór* > *z’ihór*).
+%%       No, the apostrophe doesn’t make sense in that position.
+%%       Otherwise, after a word ending w/ a vowel, it becomes *’z*
+%% ‘lẹ-’: from PF ‘plus’. Comparative prefix.
+%% Tous les 36 du mois -> Include the ‘36’ in the word!
+%% Comparative + ACI: ‘too X to...’. With negation ‘Not X enough to ...’.
+%% The PF infinitive endings -ir, -er, etc. are often dropped to form the base form (e.g. auḍé < auḅḍénír).
+%% Adjectives are not declined and follow the noun they modify.
+%% Word order for ACIs puts the infinitive at the very beginning and the accusative at the very end, or vice versa,
+%%   and everything that belongs to that phrase inbetween.
+
+\medskip\noindent
+‘According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too
+small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care
+what humans think is impossible.’
+
+\medskip\noindent
+Literal translation: ‘According to all known laws of aviation, there is no way that a bee should be capable of flight.
+Its wings are too small for its little body to obtain [distance] from the ground.
 
 
 
@@ -706,7 +928,7 @@ Charles.\s{voc}&\s{particle}&\s{indef.acc}-fish&\s{def.iness}-mountain&\s{2sg.ac
     \noindent
 }
 
-\def \pfabbr { \textsc { pf \space } }
+\def \pfabbr {{\normalfont\scshape  pf \space }}
 
 %% Word, part of speech, etymology, definition, (forms)
 \long \def \entry #1 #2 #3 #4 #5 {
@@ -759,4 +981,3 @@ Charles.\s{voc}&\s{particle}&\s{indef.acc}-fish&\s{def.iness}-mountain&\s{2sg.ac
 
 
 \end{document}
-
