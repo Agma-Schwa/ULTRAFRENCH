@@ -26,7 +26,7 @@
         \hbox to #3 { \vtop {#1} }
         \hskip   #4
         \hbox to #5 { \vtop {#2} }
-    }\par
+    } \par
 }
 
 \NewDocumentCommand \TwoCols {
@@ -128,7 +128,7 @@
     }
 }
 
-\NewDocumentCommand {\gloss} {
+\NewDocumentCommand \gloss {
     > { \exp_args:Nx \SplitList { \iow_char:N \^^M } } +v
 } {
     \__gloss_table_start:
@@ -183,7 +183,7 @@
     \begin { enumerate }
     \item \setcounter { enumi } { #1 }
     \item \itemsep \EnumItemSep
-}{
+} {
     \end { enumerate }
     \vspace { -.5em }
 }
@@ -371,7 +371,7 @@ Several fricatives are spelt with an apostrophe followed by a ‘h’, viz. /x/ 
 and /β/ ⟨b’h⟩. Conventional letters are used for rather unconventional sounds, mostly for diachronic reasons:
 /l/ does not exist in UF, so ⟨l⟩ is either /ɮ̃/ or /ʎ̝̃/, ⟨v⟩ is /ʋ̃/, ⟨j⟩ is /ʑ/, ⟨r⟩ is /ɰ/, ⟨w⟩ is /ɰ̃/. The vowel
 /y/ is spelt ⟨y⟩, and its consonantal equivalent /ɥ/ as well as nasalised /ɥ̃/ are spelt with an apostrophe, that is
-⟨y’⟩ (or sometimes just ⟨’⟩, especially word-initially) and ⟨ý’⟩. The ʁ-fricated fricatives /βʶ, ɮ̃ʶ, sʶ, ɕʶ, zʶ, ʑʶ/
+⟨y’⟩ and ⟨ý’⟩. The ʁ-fricated fricatives /βʶ, ɮ̃ʶ, sʶ, ɕʶ, zʶ, ʑʶ/
 are spelt ⟨v́, ł, ś, ḉ, ȷ́, ź⟩, respectively.
 
 Double consonant letters indicate a lengthened consonant; these are rare, but they can occur in any position. The only
@@ -883,24 +883,24 @@ Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáh�
 
 
 \subsubsection{I Don’t Think This Warrants Explaining}
-{\itshape
-Słérá de c’hóný áb’hás’ô, ráy’ê y’aúhý dís dyb’hóy’e sab’héy’. Ez lé-el lalebet’he z’ihór bet’hê rêsol daudé.
+{\itshape\bfseries
+Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’e sab’héy’. Ez lé-el lalebet’he z’ihór bet’hê rêsol daudé.
 
 }
 
 \gloss {
-    słé-rá| ḍẹ| c’hóný| áb’hás’ô| ráy’ê| y’aúhý| ḍ-ís
+    słé-rá| ḍẹ| c’hóný| áb’hásy’ô| ráy’ê| y’aúhý| ḍ-ís
     \s{cons.pl.def}-law|all|well.known|\s{gen.sg.def}\textbackslash aviation|way|there.is.no|\s{inf.act-subj}\textbackslash can
 }
 
 \gloss {
-    dy-b’hóy’ẹ | s-ab’héy’ |ez |lé-el |z’| ihór
-    \s{part.sg.def}-to.fly|\s{acc.sg.indef}-bee|its|\s{nom.pl.def}-wing|its|\s{acc.sg.def}\textbackslash body
+    dy-b’hóy’ẹ | s-ab’héy’ |ez |lé-el | la-lẹ-bet’hẹ|z’
+    \s{part.sg.def}-to.fly|\s{acc.sg.indef}-bee|its|\s{nom.pl.def}-wing|\s{3pl.act-comp}-be.small|its
 }
 
 \gloss {
-    bet’hê | rê-sol | ḍ-auḍé
-    be.small\textbackslash\s{part.act}|\s{abl.sg.def}-soil|\s{inf.act}-obtain
+    ihór | bet’hê | rê-sol | ḍ-auḍé
+    \s{acc.sg.def}\textbackslash body| be.small\textbackslash\s{part.act}|\s{abl.sg.def}-soil|\s{inf.act}-obtain
 }
 
 %% NOTES:
