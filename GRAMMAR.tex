@@ -160,45 +160,35 @@
     \__gloss_table_end:
 }
 
-\frenchspacing
+\def \footnoterule {
+    \kern -3\p@
+    \hrule \@width .4\columnwidth
+    \kern 2.6\p@
+}
 
-\AtBeginDocument{
-    \def\today{
-        \number\day\space
-        \ifcase\month\or
-        January\or February\or March\or April\or May\or June\or
-        July\or August\or September\or October\or November\or December\fi\space
-        \number\year
+\def \@makefntext #1 {
+    \setlength \parindent { 1em }
+    \noindent {
+        \mbox {
+            \llap { {}\textsuperscript{\@thefnmark} \kern.5pt }
+        } { #1 }
     }
 }
 
-\def\footnoterule{%
-    \kern-3\p@
-    \hrule\@width.4\columnwidth
-    \kern2.6\p@
+\newlength{\EnumItemSep} \EnumItemSep-3pt
+
+\newenvironment { enum } [1] [0] {
+    \vspace { -.5em }
+    \settowidth \leftmargini { 99.\hskip\labelsep }
+    \begin { enumerate }
+    \item \setcounter { enumi } { #1 }
+    \item \itemsep \EnumItemSep
+}{
+    \end { enumerate }
+    \vspace { -.5em }
 }
 
-\def\@makefntext#1{%
-    \setlength\parindent{1em}%
-    \noindent
-    {%
-    \mbox{\llap{{}\textsuperscript{\@thefnmark}\kern.5pt}}{#1}%1
-    }%
-}
-
-
-\def \UF { \bfseries \itshape }
-\let \nf \normalfont
-
-\def \d {ḍ}
-\def \D {Ḍ}
-\def \b {ḅ}
-\def \B {Ḅ}
-\long\def \s #1 {{\normalfont\scshape #1 }}
-
-\def \L {\textsuperscript{L}}
-\def \N {\textsuperscript{N}}
-
+%% Make it so *...* works just like in Markdown.
 \char_set_catcode_active:N \*
 \cs_set_protected:Npn \__md_star:w #1*{ \textit{#1} }
 \def\* { \detokenize{*} }
@@ -208,21 +198,45 @@
 \cs_new:Npn \enditems { \enditemize }
 
 
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Settings and Utility
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def \UF { \bfseries \itshape }
+\let \nf \normalfont
 
-\newlength{\EnumItemSep} \EnumItemSep-3pt
+\def \d {ḍ}
+\def \D {Ḍ}
+\def \b {ḅ}
+\def \B {Ḅ}
+\def \L {\textsuperscript{L}}
+\def \N {\textsuperscript{N}}
+\long \def \s #1 {{\normalfont\scshape #1 }}
 
-\newenvironment{enum}[1][0]{%
-    \vspace{-.5em}%
-    \settowidth{\leftmargini}{99.\hskip\labelsep}%
-    \begin{enumerate}\setcounter{enumi}{#1}\itemsep\EnumItemSep
-}{%
-    \end{enumerate}%
-    \vspace{-.5em}%
+\let \Sub \textsubscript
+\def \parheading #1 { \noindent \textbf{#1} }
+
+\frenchspacing
+
+\AtBeginDocument {
+    \def \today {
+        \int_value:w \day \space
+        \int_case:nn { \month } {
+             1 { January }
+             2 { February }
+             3 { March }
+             4 { April }
+             5 { May }
+             6 { June }
+             7 { July }
+             8 { August }
+             9 { September }
+            10 { October }
+            11 { November }
+            12 { December }
+        } \space
+        \int_value:w \year
+    }
 }
-
-\def\parheading#1{\noindent\textbf{#1}}
-
-\let\Sub\textsubscript
 
 \makeatother
 \ExplSyntaxOff
