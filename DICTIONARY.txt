@@ -69,6 +69,9 @@ auḍé|v.|obtenir|To obtain, get, acquire. +\s{abl} To gain purchase on or heig
 sol|n.|sol|Ground, floor, earth, soil
 c’hór|n.|corps|Body
 c’hýr|n.|corps|Heart
+ab’haḍ|v.|abattre|To cut down, butcher, fell, knock down, shoot down|\s{fut} *ab’haḍrẹ́*
+árb|n.|arbre|Tree
+aç|n.|hache|Axe, hatchet
 
 
 

@@ -48,14 +48,17 @@
 
 \cs_new:Npn \__gloss_table_start: {
     \ifvmode\else\unskip\par\fi
-    \addvspace{\medskipamount}
+    \addvspace { 8pt }
+    %\vtop{\iffalse}\fi
     \noindent
 }
 
 \cs_new:Npn \__gloss_table_end: {
     \end {tabular}
     \ifvmode\else\par\fi
-    \addvspace{\medskipamount}
+    \addvspace { 8pt }
+    %\iffalse{\fi}
+    \everypar { \setbox\z@\lastbox \everypar{} }
 }
 
 %% Format a single line of a gloss.
@@ -128,6 +131,18 @@
     }
 }
 
+%% Full gloss w/o IPA (text, object language, gloss, and translation).
+\cs_new:Npn \__gloss_four_lines:n #1 {
+    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries##1} }
+    \cs_gset:Npn \__formatter_ii:n ##1 { \__gloss_format_line:nnn {##1} {} {\itshape} }
+    \cs_gset:Npn \__formatter_iii:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
+    \cs_gset:Npn \__formatter_iv:n ##1 { \multicolumn {100} {@{}l} {‘##1’} }
+
+    \__gloss_format:nn { #1 } {
+        \cs:w __formatter_ \int_to_roman:n \g_tmpb_int :n \cs_end:
+    }
+}
+
 \NewDocumentCommand \gloss {
     > { \exp_args:Nx \SplitList { \iow_char:N \^^M } } +v
 } {
@@ -144,6 +159,7 @@
     %% Dispatch the appropriate number of lines.
     \int_case:nnF { \g_tmpa_int } {
         2 { \__gloss_two_lines:n { #1 } }
+        4 { \__gloss_four_lines:n { #1 } }
         5 { \__gloss_five_lines:n { #1 } }
     }
 
@@ -212,6 +228,7 @@
 \def \N {\textsuperscript{N}}
 \long \def \s #1 {{\normalfont\scshape #1 }}
 
+\let \Sl \textbackslash
 \let \Sub \textsubscript
 \def \parheading #1 { \noindent \textbf{#1} }
 
@@ -761,6 +778,11 @@ Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷ}&&Infinitive&\multicolumn{2}{c|}
 \subsubsection{Future Anterior}
 The Future Anterior is
 
+\subsection{Miscellaneous Tenses}
+\subsubsection{The Gnomic}
+The gnomic tense is marked by the infix *-j(ú)-* after the stem: *ad’hór* ‘to love’ to *rad’hórjô* ‘We love (for ever)’.
+The *ú* is omitted if the infix is followed by the vowel, in which case it causes nasalisation.
+
 \subsection{Subjunctive}
 The UF subjunctive forms are fortunately fairly simple: they use the same affixes as the present, past, and future
 forms, except that each verb has a different subjunctive stem as well as a future subjunctive stem; the subjunctive
@@ -812,15 +834,16 @@ parentheses), which are not present in the vocalic declension.
 \noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
 Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 
-Absolutive    & $\emptyset$  & l- &&Absolutive    & $\emptyset$-\N & $\emptyset$-\L      \\\cline{1-3}\cline{5-7}
+Absolutive    & $\emptyset$     & l-      &&Absolutive    & $\emptyset$-\N & $\emptyset$-\L   \\\cline{1-3}\cline{5-7}
 Nominative    & lá-\L   & lé-\L   &&Nominative    & ŷn-\N & ý-\L      \\\cline{1-3}\cline{5-7}
 Vocative      & $\emptyset$-\L  & $\emptyset$-\L  &&Vocative      & / & /             \\\cline{1-3}\cline{5-7}
 Partitive     & dy-\L   & dẹ-\L   &&Partitive     & dŷn-\N & dý-\L    \\\cline{1-3}\cline{5-7}
 Accusative    & i-\L    & sý-\L   &&Accusative    & s-\L & s-         \\\cline{1-3}\cline{5-7}
 Genitive      & á-\L    & abh-\L  &&Genitive      & sý-\N & sý-\L     \\\cline{1-3}\cline{5-7}
-Considerative & słá-    & słé-    &&Considerative & sý’óýn- & sý’óý-  \\\cline{1-3}\cline{5-7}
 Inessive      & dwá-    & dwé-    &&Inessive      & dáhŷn- & dáhŷ-    \\\cline{1-3}\cline{5-7}
 Ablative      & rê(d)-  & rês-    &&Ablative      & rêdýn- & rêdý-    \\\cline{1-3}\cline{5-7}
+Considerative & słá-    & słé-    &&Considerative & sý’óýn- & sý’óý-  \\\cline{1-3}\cline{5-7}
+Instrumental  & b’hel-  & b’he-   &&Instrumental  & b’hehý(n)- & b’heh-  \\\cline{1-3}\cline{5-7}
 ...           &         &         &&              & &                 \\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{UF Declension.}\label{tab:table-uf-declension}
@@ -868,9 +891,55 @@ Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáh�
 \caption{Consonantal declension of *ḍalẹ*.}\label{tab:vocalic-declension}
 \end{table}
 
+\section{Syntax}\label{sec:syntax}
+UF syntax is unfortunately complicated in what morphological constructs are used in what situations, and
+the rules are not always clear. The following is a list of the most common constructions.
+
+\subsection{Independent Clauses}
+The UF independent clause typically consists of a finite verb together with a subject perhaps several
+objects. The verb is conjugated to agree with the subject in person, number, and gender in some cases.
+
+\gloss {
+    Rab’hadó iárb.
+    r-ab’haḍ-ó| i-árb
+    \s{1pl.act}-fell-\s{1pl.act}| \s{acc.def.sg}-tree
+    We are felling the tree.
+}
+
+The unmarked tense in UF is the present tense, which can generally be translated as either a present or
+present continuous tense in English. For general truths and facts, the gnomic tense is generally used
+instead.
+
+\gloss {
+    Rab’hadjô sárb.
+    r-ab’haḍ-jô| s-árb
+    \s{1pl.act}-fell-\s{gnomic}\Sl\s{1pl.act}| \s{acc.indef.pl}-tree
+    We fell trees.
+}
+
+The object is incorporated into the verb if it is a personal pronoun, in which case there are rules for
+the order in which these affixes occur (see Section~\ref{subsec:verbal-morphology}).
+
+\gloss {
+    Lerab’hat’há.
+    lẹ-r-ab’ha\Sl t’há.
+    \s{3sgm.act}-\s{1pl.pass}-fell\Sl\s{3sg.pres.ant}
+    He felled us.
+}
+
+Word order is rather lax due to the presence of case marking, and any constituent can be fronted for
+emphasis, but the default word order is SVO or SOV.
+
+\gloss {
+    B’hehýnáç aúlýab’hat’hâ.
+    b’hehýn-áç| aú-lý-ab’ha\Sl t’hâ.
+    \s{instr.sg.indef}-axe|\s{1pl.act}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}
+    With an axe, we have felled them.
+}
 
 
-\section{Examples}
+
+\section{Examples}\label{sec:examples}
 \subsubsection{Simple Glossing Example}
 
 \gloss {
@@ -890,7 +959,7 @@ Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’
 
 \gloss {
     słé-rá| ḍẹ| c’hóný| áb’hásy’ô| ráy’ê| y’aúhý| ḍ-ís
-    \s{cons.pl.def}-law|all|well.known|\s{gen.sg.def}\textbackslash aviation|way|there.is.no|\s{inf.act-subj}\textbackslash can
+    \s{cons.pl.def}-law|all|well.known|\s{gen.sg.def}\Sl aviation|way|there.is.no|\s{inf.act-subj}\Sl can
 }
 
 \gloss {
@@ -900,7 +969,7 @@ Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’
 
 \gloss {
     ihór | bet’hê | rê-sol | ḍ-auḍé
-    \s{acc.sg.def}\textbackslash body| be.small\textbackslash\s{part.act}|\s{abl.sg.def}-soil|\s{inf.act}-obtain
+    \s{acc.sg.def}\Sl body| be.small\Sl\s{part.act}|\s{abl.sg.def}-soil|\s{inf.act}-obtain
 }
 
 %% NOTES:
