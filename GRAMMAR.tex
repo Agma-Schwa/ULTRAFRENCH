@@ -61,6 +61,11 @@
     \everypar { \setbox\z@\lastbox \everypar{} }
 }
 
+%% Rescan a token list.
+\cs_new:Npn \__gloss_rescan:n #1 {
+    { \tl_rescan:nn {} { #1 } }
+}
+
 %% Format a single line of a gloss.
 %%
 %% The line number must be stored in \g_tempb_int.
@@ -78,7 +83,7 @@
     \seq_map_inline:Nn \l_tmpa_seq {
         \bool_if:NF \l_tmpa_bool { & }
         \bool_set_false:N \l_tmpa_bool
-        #3 { \tl_rescan:nn {} { ##1 } }
+        #3 { \__gloss_rescan:n {##1} }
     }
 }
 
@@ -120,11 +125,11 @@
 
 %% Full gloss (text, object language, pronunciation, gloss, and translation).
 \cs_new:Npn \__gloss_five_lines:n #1 {
-    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries##1} }
+    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries\__gloss_rescan:n {##1}} }
     \cs_gset:Npn \__formatter_ii:n ##1 { \__gloss_format_line:nnn {##1} {} {\itshape} }
     \cs_gset:Npn \__formatter_iii:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
     \cs_gset:Npn \__formatter_iv:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
-    \cs_gset:Npn \__formatter_v:n ##1 { \multicolumn {100} {@{}l} {‘##1’} }
+    \cs_gset:Npn \__formatter_v:n ##1 { \multicolumn {100} {@{}l} {\__gloss_rescan:n {##1}} }
 
     \__gloss_format:nn { #1 } {
         \cs:w __formatter_ \int_to_roman:n \g_tmpb_int :n \cs_end:
@@ -133,10 +138,10 @@
 
 %% Full gloss w/o IPA (text, object language, gloss, and translation).
 \cs_new:Npn \__gloss_four_lines:n #1 {
-    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries##1} }
+    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries \__gloss_rescan:n {##1} } }
     \cs_gset:Npn \__formatter_ii:n ##1 { \__gloss_format_line:nnn {##1} {} {\itshape} }
     \cs_gset:Npn \__formatter_iii:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
-    \cs_gset:Npn \__formatter_iv:n ##1 { \multicolumn {100} {@{}l} {‘##1’} }
+    \cs_gset:Npn \__formatter_iv:n ##1 { \multicolumn {100} {@{}l} {\__gloss_rescan:n {##1}} }
 
     \__gloss_format:nn { #1 } {
         \cs:w __formatter_ \int_to_roman:n \g_tmpb_int :n \cs_end:
@@ -206,12 +211,31 @@
 
 %% Make it so *...* works just like in Markdown.
 \char_set_catcode_active:N \*
-\cs_set_protected:Npn \__md_star:w #1*{ \textit{#1} }
 \def\* { \detokenize{*} }
 \cs_new:Npn * { \__md_star:w }
 
-\cs_new:Npn \items { \itemize\itemsep6pt }
-\cs_new:Npn \enditems { \enditemize }
+\cs_set_protected:Npn \__md_star:w {
+    \peek_charcode_remove:NTF * { \__md_starstar:w } { \__md_singlestar:w }
+}
+
+\cs_set_protected:Npn \__md_starstar:w {
+    \peek_charcode_remove:NTF * { \__md_triplestar:w } { \__md_doublestar:w }
+}
+
+\cs_set_protected:Npn \__md_singlestar:w #1*   { \textit{#1} }
+\cs_set_protected:Npn \__md_doublestar:w #1**  { \textbf{#1} }
+\cs_set_protected:Npn \__md_triplestar:w #1*** { \textbf{\textit{#1}} }
+
+\cs_new:Npn \items {
+    \begingroup
+    \itemize\kern-\topsep
+    \itemsep0pt
+}
+
+\cs_new:Npn \enditems {
+    \enditemize\kern-\topsep
+    \endgroup
+}
 
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -231,6 +255,18 @@
 \let \Sl \textbackslash
 \let \Sub \textsubscript
 \def \parheading #1 { \noindent \textbf{#1} }
+
+\def \Item #1 {
+    \item [ \textsc{\textbf{#1}} ]
+}
+
+\def \Paragraph #1 {
+    \ifvmode\else\unskip\par\fi
+    \addvspace \bigskipamount
+    \noindent \leavevmode \ignorespaces \textbf{#1} \par
+    \everypar { \setbox 0 \lastbox \everypar {} }
+    \nobreak
+}
 
 \frenchspacing
 
@@ -470,6 +506,9 @@ The \s{act 1pl, 2pl} forms are only distinguished from their passive counterpart
 the presence of additional suffixes in the former. The \s{3sg n} in the active and passive is derived from the PF
 demonstrative \**ce* and its variants; the \s{3pl n} is derived from the other \s{3pl} forms.
 
+\Paragraph{Usage Notes}
+\begin{items}
+\Item{1pl}
 The \s{1pl} prefix varies if there is a vowel following it: if it is
 any vowel that is not a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
 *rad’hóró* ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as *w-* instead, e.g. *aub’heír* ‘obey’
@@ -477,33 +516,43 @@ to *wob’heíró* ‘we obey’.\footnote{Diachronically, the base form of this
 \**oad’hóró* > *rad’hóró* and \**oob’heíró* > *wob’heíró*.} Note that this also leads to a change in spelling: stem-initial
 ⟨au⟩ is changed to ⟨o⟩.
 
-The \s{inf pass} prefix *à-* coalesces with any vowel following it: it becomes *á* if it
-is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â* if it is
-followed by a nasal variant of ‘a’, e.g. *ánvé* ‘give life to’ to *ânvé* ‘to be animated’; and *h-* if it is
-followed by any other vowel, e.g. *aub’heír* to *haub’heír* ‘to be obeyed’.
-
-The parenthesised vowels are used if the prefix is followed by a consonant, e.g. *dír* ‘say’ to *llẹ{}dír*
-‘they (\s{f}) say’ and *b’hydíré* ‘you (\s{pl}) say’, but *ad’hór* to *llad’hór* ‘they (\s{f}) love’ and *b’had’hóré* ‘you
-(\s{pl}) love’. The prefixes *aú-* and *à-* retain their main forms if followed by a consonant,
-e.g. *dír* ‘say’ to *aúdíró* ‘We say’ and *àdír* ‘to be said’. The exception to this is that \s{2pl} *b’h(y)-*
-drops the *y* if followed by a glide, e.g. *y’ír* ‘to hear’ to *b’hy’íré* ‘you (\s{pl}) hear’ (not \**b’hyy’íré*).
-
+\Item{1,2 pl}
 The *y’* in the suffix parts of the \s{1pl, 2pl act} are dropped if the verb ends with a consonant, e.g. *ad’hór*
 to *b’hád’hóré*, or if it ends with a vowel that is a variant of ‘o’ in the case of the \s{1pl} and ‘e’ in the case
 of the \s{2pl}, in which cases the vowels are contracted and a level of nasalisation is added, e.g. *vvaúríhe*
 ‘to remember’ to *b’hyvvaúríhé* ‘you (\s{pl}) remember’ (not \**b’hyvvaúríhy’é*). In all other cases, the *y’* is retained,
 e.g. *aúvvaúríhey’ó* ‘we remember’.
 
-When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive and participle prefixes
-always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (\s{pl}) love him/her’,
-but *dẹvad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (\s{pl})’. Recall that at most one infinitive prefix
-and at most one participle affix may be used.
+\Item{inf}
+The \s{inf pass} prefix *à-* coalesces with any vowel following it: it becomes *á* if it
+is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â* if it is
+followed by a nasal variant of ‘a’, e.g. *ánvé* ‘give life to’ to *ânvé* ‘to be animated’; and *h-* if it is
+followed by any other vowel, e.g. *aub’heír* to *haub’heír* ‘to be obeyed’.
 
+\Item{part}
 The participle affixes are commonly used to form adjectives since the vast majority of adjectives in UF are actually ‘adjective verbs’
 with a meaning of ‘to be X’. The participle can be used to convert such a verb back into a regular adjective, e.g. *lár* ‘to be wide’
 to *lárâ* ‘wide’. Like the passive infinitive affix, the participle affixes coalesce with vowels and always form a maximally
 nasal vowel, e.g. *vvaúríhe* ‘to remember’ forms *vvaúríhê* ‘remembering’, and *ad’hór* forms *âd’hór* ‘being loved’.
 
+\Item{{\upshape\textit{-ẹ-}}}
+The parenthesised vowels are used if the prefix is followed by a consonant, e.g. *dír* ‘say’ to *llẹ{}dír*
+‘they (\s{f}) say’ and *b’hydíré* ‘you (\s{pl}) say’, but *ad’hór* to *llad’hór* ‘they (\s{f}) love’ and *b’had’hóré* ‘you
+(\s{pl}) love’. The prefixes *aú-* and *à-* retain their main forms if followed by a consonant,
+e.g. *dír* ‘say’ to *aúdíró* ‘We say’ and *àdír* ‘to be said’.
+
+\Item{{\upshape\textit{-y-}}}
+The exception to this is that \s{2pl} *b’h(y)-*
+drops the *y* if followed by a glide, e.g. *y’ír* ‘to hear’ to *b’hy’íré* ‘you (\s{pl}) hear’ (not \**b’hyy’íré*).
+\end{items}
+
+\Paragraph{Combining Prefixes}
+When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive and participle prefixes
+always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (\s{pl}) love him/her’,
+but *dẹvad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (\s{pl})’. Recall that at most one infinitive prefix
+and at most one participle affix may be used.
+
+\Paragraph{Example Paradigms}
 By way of illustration, consider the paradigm of the verb *ad’hór* as shown in Table~\ref{tab:adhor-paradigm} below.
 Since this word starts with a vowel, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} above
 are not used. Furthermore, since it starts with a non-nasal ‘a’-like vowel, the *aú-* prefix is realised as *r-*
@@ -700,7 +749,7 @@ Participle&\multicolumn{2}{c|}{\it -(r)ŷ}&&Participle&\multicolumn{2}{c|}{\it �
 \caption{Consonantal Future II Affixes.}\label{tab:future-2-consonantal}
 \end{table}
 
-\noindent
+\Paragraph{Future Stem}
 Many verbs have a different future stem that is used in all future tenses (except the Future I); for example, the future
 stem of *vvaúríhe* ‘to remember’, is *vvaúríźe*; thus, we have
 *jvvaúríhe* ‘to remember’ but *jaúvvaúríźẹ́* ‘I shall remember’. Note also that these forms already include the
@@ -714,19 +763,21 @@ The future stem usually ends with a vowel, which is dropped if any future suffix
 with a consonant cause the vowel to be dropped. The only exception to this is the suffix *-ẹ*, which is dropped instead,
 e.g. *aúrvvaúríźe* ‘she will remember’, not \**aúrvvaúríźẹ*.
 
-At the same time, initial *r* in Future II suffixes is dropped if the
-last consonant before the final vowel of the future stem is *w*, or an ʁ-coloured consonant such as *ź*, e.g.
-*laúvvaúríźe* ‘they will be remembered’, not \**laúvvaúríźre*. If the last consonant of the future stem is *r*, since
-any following vowel (whether nasalised or not) is deleted when a Future II suffix is added, the final *r* of the stem and
-the initial *-r* of the Future II suffixes that have one coalesce to *rr*, e.g. *b’haý’ad’hórérre* ‘you (\s{pl}) will
-love’.
-
 Some future stems are nasalising, which is the case if the final vowel is a nasal vowel; in such cases, the vowel
 is still dropped if a suffix is added, but if that suffix starts with a vowel, nasalisation is applied to it, e.g.
 in the case of *dír*, whose future stem is *dírẹ́*, we have *aúnraûdíraû* ‘we shall say’: the *-aú* suffix is merges
 with the nasalisation of the final vowel to become *aû*. The Future II *-ẹ* desinence becomes *-ẹ́* for such verbs,
 e.g. *aúrdírẹ́* ‘he will say’, and \s{1sg fut pass} vocalic *-é* becomes *-ê*.
 
+\Paragraph{*r-* Dropping}
+Initial *r* in Future II suffixes is dropped if the
+last consonant before the final vowel of the future stem is *w*, or an ʁ-coloured consonant such as *ź*, e.g.
+*laúvvaúríźe* ‘they will be remembered’, not \**laúvvaúríźre*. If the last consonant of the future stem is *r*, since
+any following vowel (whether nasalised or not) is deleted when a Future II suffix is added, the final *r* of the stem and
+the initial *-r* of the Future II suffixes that have one coalesce to *rr*, e.g. *b’haý’ad’hórérre* ‘you (\s{pl}) will
+love’.
+
+\Paragraph{Affix Stacking}
 Note that when more than one affix is used, at most one can be a future affix, e.g. *jaúsyvvaúríźẹ́* ‘I shall remember it’
 and not \**jaúsaúrvvaúríźẹ́*. Generally, the active prefix will be the future affix, but it is possible to use the
 passive future affixes instead for emphasis e.g. *jy’aúrvvaúríźe* roughly ‘him, I shall remember’; often, this is
@@ -741,6 +792,7 @@ Finally, as always, infinitive prefixes come first. If combined with other affix
 e.g. *haúlývvaúríźe* roughly ‘to be about to remember them’ but, as with passive affixes, variations are possible for emphasis
 or contrastive power, e.g. *dẹlaúvvaúríźe*, which puts more emphasis on ‘them’.
 
+\Paragraph{Examples}
 Table~\ref{tab:future-2-adhor} below shows the complete (vocalic) Future II paradigm of the verb *ad’hór* ‘to love’, and
 Table~\ref{tab:future-2-vvaurihe} the complete (consonantal) Future II paradigm of II *vvaúríhe* ‘to remember’; recall
 that the future stems of these verbs are *ad’hórérẹ́* and *vvaúríźe*.
@@ -776,7 +828,106 @@ Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷ}&&Infinitive&\multicolumn{2}{c|}
 \end{table}
 
 \subsubsection{Future Anterior}
-The Future Anterior is
+The Future Anterior tense is formed by combining the Future II and the Present Anterior affixes. The \s{pres ant} suffixes
+are applied after the \s{fut ii} affixes. The vocalic and consonantal affixes are shown in
+Tables~\ref{tab:future-anterior-vocalic}~and~\ref{tab:future-anterior-consonantal}.
+
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st   &b’h- -\L é  &náý’- -aúrâ      &&1st    &v- -\L ê    &náý’- -\L â      \\\cline{1-3}\cline{5-7}
+2nd   &ḍír- -\L á  &b’haý’- -(r)ệḍ   &&2nd    &ḍír- -\L á  &b’haý’- -\L áḍ    \\\cline{1-3}\cline{5-7}
+3rd m &ł-   -\L á  &lb’h- -aûr       &&3rd m  &l- -\L á    &lb’h- -(r)ér \\\cline{1-3}\cline{5-7}
+3rd f &èł-  -\L á  &lb’h- -aûr       &&3rd f  &l- -\L á    &lb’h- -(r)ér \\\cline{1-3}\cline{5-7}
+3rd n &aúł- -\L á  &lb’h- -aûr       &&3rd n  &s- -\L á    &lb’h- -(r)ér \\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it d- -á}&&Infinitive&\multicolumn{2}{c|}{\it h- -á}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it -ŷrér}&&Participle&\multicolumn{2}{c|}{\it á- -ýrér}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Vocalic Future Anterior Affixes.}\label{tab:future-anterior-vocalic}
+\end{table}
+
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st   &jaú-  -\L ệ  &aúnraû- -aúrâ  &&1st   &vaú- -\L ê    &naú- -\L â      \\\cline{1-3}\cline{5-7}
+2nd   &b’há- -\L á  &v́aú- -éḍ       &&2nd   &\d{}á- -\L á  &b’haú- -\L áḍ    \\\cline{1-3}\cline{5-7}
+3rd m &aúr-  -\L á  &laú- -aûr      &&3rd m &y’aúr- -\L á  &laú- -(r)ér \\\cline{1-3}\cline{5-7}
+3rd f &aúr-  -\L á  &laú- -aûr      &&3rd f &y’aúr- -\L á  &laú- -(r)ér \\\cline{1-3}\cline{5-7}
+3rd n &aúr-  -\L á  &laú- -aûr      &&3rd n &saúr-  -\L á  &laú- -(r)ér \\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it dẹ- -á}&&Infinitive&\multicolumn{2}{c|}{\it haú- -á}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it -(r)ŷr}&&Participle&\multicolumn{2}{c|}{\it á- -(r)ýr}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Consonantal Future Anterior Affixes.}\label{tab:future-anterior-consonantal}
+\end{table}
+
+\noindent
+Note that again, nasalised stems add another level of nasalisation, and vowel-dropping still applies, but
+this time, there is no *-ẹ* dropping, since none of the affixes end with *ẹ* anymore.
+
+\Paragraph{Coalescence}
+All vowel suffixes coalesce with the final vowel of the stem; if the suffix vowel is nasal, a level of nasalisation is
+added, e.g. *aúrvvaúrízá* ‘he will have remembered’ from the future stem *vvaúríźe*. Note also that the *ź* is lenited
+to *z*; the quality of the suffix vowel overrides that of the stem vowel. *r* contraction still happens as in the
+Future II.
+
+Tables~\ref{tab:future-ant-adhor}~and~\ref{tab:future-ant-vvaurihe} below show
+the paradigm of the verbs *ad’hór* ‘to love’ and *vvaúríhe* ‘to remember’ in the Future Anterior tense. Note that
+both the rules for the Future Anterior tense as well as the Present Anterior tense apply here.
+
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st   &b’had’hórérệ  &náý’ad’hóréraûrâ     &&1st    &vad’hórérệ    &náý’ad’hórérậ   \\\cline{1-3}\cline{5-7}
+2nd   &ḍírad’hórérậ  &b’haý’ad’hórérrệḍ    &&2nd    &ḍírad’hórérậ  &b’haý’ad’hórérậḍ \\\cline{1-3}\cline{5-7}
+3rd m &ład’hórérậ    &lb’had’hóréraûr      &&3rd m  &lad’hórérậ    &lb’had’hórérrér  \\\cline{1-3}\cline{5-7}
+3rd f &èład’hórérậ   &lb’had’hóréraûr      &&3rd f  &lad’hórérậ    &lb’had’hórérrér  \\\cline{1-3}\cline{5-7}
+3rd n &aúład’hórérậ  &lb’had’hóréraûr      &&3rd n  &sad’hórérậ    &lb’had’hórérrér  \\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it dad’hórérâ}&&Infinitive&\multicolumn{2}{c|}{\it had’hórérậ}\\\cline{1-3}\cline{5-7}
+Participle&\multicolumn{2}{c|}{\it ad’hórérŷrér}&&Participle&\multicolumn{2}{c|}{\it ád’hórérýrér}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Vocalic Future Anterior Paradigm of *ad’hór*.}\label{tab:future-ant-adhor}
+\end{table}
+
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st   &jaúvvaúrízệ  &aúnraûvvaúríźaúrâ &&1st   &vaúvvaúrízê    &naúvvaúrízâ       \\\cline{1-3}\cline{5-7}
+2nd   &b’hávvaúrízá &v́aúvvaúríźéḍ     &&2nd   &\d{}ávvaúrízá  &b’haúvvaúrízáḍ     \\\cline{1-3}\cline{5-7}
+3rd m &aúrvvaúrízá  &laúvvaúríźaûr    &&3rd m &y’aúrvvaúrízá  &laúvvaúríźér \\\cline{1-3}\cline{5-7}
+3rd f &aúrvvaúrízá  &laúvvaúríźaûr    &&3rd f &y’aúrvvaúrízá  &laúvvaúríźér \\\cline{1-3}\cline{5-7}
+3rd n &aúrvvaúrízá  &laúvvaúríźaûr    &&3rd n &saúrvvaúrízá   &laúvvaúríźér \\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it dẹvvaúríźá}&&Infinitive&\multicolumn{2}{c|}{\it haúvvaúríźe}\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷr}&&Infinitive&\multicolumn{2}{c|}{\it ávvaúríźý}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Consonantal Future Anterior Paradigm of *vvaúríhe*.}\label{tab:future-ant-vvaurihe}
+\end{table}
+
+\subsubsection{Conditional I and II}
+The Conditional tenses are fairly simple—so long as you know the Future II and Future Anterior, that is. Both Conditionals
+are formed by adding the *-ss(a)-* infix between the Future II stem and any suffixes. As always, the vowel is omitted if
+the suffix after the infix starts with a vowel. For instance, Table~\ref{tab:cond-ii-vvaurihe}
+below shows the consonantal Conditional II paradigm vor *vvaúríhe* ‘to be able to’. Note that the *ss* in this form
+are *never* lenited:
+
+\begin{table}[H]
+\tabcolsep4pt
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+1st   &jaúvvaúríźessệ  &aúnraûvvaúríźessaúrâ &&1st   &vaúvvaúríźessê    &naúvvaúríźessâ       \\\cline{1-3}\cline{5-7}
+2nd   &b’hávvaúríźessá &v́aúvvaúríźesséḍ      &&2nd   &\d{}ávvaúríźessá  &b’haúvvaúríźessáḍ     \\\cline{1-3}\cline{5-7}
+3rd m &aúrvvaúríźessá  &laúvvaúríźessaûr     &&3rd m &y’aúrvvaúríźessá  &laúvvaúríźessrér \\\cline{1-3}\cline{5-7}
+3rd f &aúrvvaúríźessá  &laúvvaúríźessaûr     &&3rd f &y’aúrvvaúríźessá  &laúvvaúríźessrér \\\cline{1-3}\cline{5-7}
+3rd n &aúrvvaúríźessá  &laúvvaúríźessaûr     &&3rd n &saúrvvaúríźessá   &laúvvaúríźessrér \\\cline{1-3}\cline{5-7}
+Inf&\multicolumn{2}{c|}{\it dẹvvaúríźessá}&&Inf&\multicolumn{2}{c|}{\it haúvvaúríźesse}\\\cline{1-3}\cline{5-7}
+Inf&\multicolumn{2}{c|}{\it vvaúríźessŷr}&&Inf&\multicolumn{2}{c|}{\it ávvaúríźessý}\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Consonantal Conditional II Paradigm of *vvaúríhe*.}\label{tab:cond-ii-vvaurihe}
+\end{table}
 
 \subsection{Miscellaneous Tenses}
 \subsubsection{The Gnomic}
@@ -903,7 +1054,7 @@ objects. The verb is conjugated to agree with the subject in person, number, and
     Rab’hadó iárb.
     r-ab’haḍ-ó| i-árb
     \s{1pl.act}-fell-\s{1pl.act}| \s{acc.def.sg}-tree
-    We are felling the tree.
+    ‘We are felling the tree.’
 }
 
 The unmarked tense in UF is the present tense, which can generally be translated as either a present or
@@ -914,7 +1065,7 @@ instead.
     Rab’hadjô sárb.
     r-ab’haḍ-jô| s-árb
     \s{1pl.act}-fell-\s{gnomic}\Sl\s{1pl.act}| \s{acc.indef.pl}-tree
-    We fell trees.
+    ‘We fell trees.’
 }
 
 The object is incorporated into the verb if it is a personal pronoun, in which case there are rules for
@@ -924,7 +1075,7 @@ the order in which these affixes occur (see Section~\ref{subsec:verbal-morpholog
     Lerab’hat’há.
     lẹ-r-ab’ha\Sl t’há.
     \s{3sgm.act}-\s{1pl.pass}-fell\Sl\s{3sg.pres.ant}
-    He felled us.
+    ‘He felled us.’
 }
 
 Word order is rather lax due to the presence of case marking, and any constituent can be fronted for
@@ -934,10 +1085,36 @@ emphasis, but the default word order is SVO or SOV.
     B’hehýnáç aúlýab’hat’hâ.
     b’hehýn-áç| aú-lý-ab’ha\Sl t’hâ.
     \s{instr.sg.indef}-axe|\s{1pl.act}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}
-    With an axe, we have felled them.
+    ‘With an axe, we have felled them.’
 }
 
+\subsection{Negated Clauses}
+Negation is expressed using the particle **asý’ýâ**, which is often appended to verbs as *’sý’ýâ*.
+By default, the particle is placed right after the verb:
+\gloss {
+    Aúlýab’hat’hâ’sý’ýâ b’hehýnáç
+    aú-lý-ab’ha\Sl t’hâ-’sý’ýâ|b’hehýn-áç.
+    \s{1pl.act}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}-not|\s{instr.sg.indef}-axe
+    ‘We have not felled them with an axe’
+}
 
+In case of a fronted constituent, the particle is placed after that constituent:
+\gloss {
+    B’hehýnáç asý’ýâ aúlýab’hat’hâ
+    b’hehýn-áç|asý’ýâ|aú-lý-ab’ha\Sl t’hâ.
+    \s{instr.sg.indef}-axe|not|\s{1pl.act}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}
+    ‘It is not with an axe that we have felled them’
+}
+
+Note that it is not valid to both front a constituent and not move the negation. For example,
+the following sentence sounds very awkward and no UF speaker would ever say or write this,
+save perhaps to sound extremely ironic.
+\gloss {
+    \*B’hehýnáç aúlýab’hat’hâ’sý’ýâ
+    b’hehýn-áç|aú-lý-ab’ha\Sl t’hâ-sý’ýâ.
+    \s{instr.sg.indef}-axe|\s{1pl.act}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}-not
+    *Roughly:* ‘With an axe, we have not-felled them’
+}
 
 \section{Examples}\label{sec:examples}
 \subsubsection{Simple Glossing Example}
@@ -947,7 +1124,7 @@ emphasis, but the default word order is SVO or SOV.
     Ç̇ár |-vá |s-ráhó |dwá-vaût’há |ḍ-aç̇t’he-á
     ˈj̊ɑ̃ːˠ|ʋ̃ɑ̃|ˌsɰɑ̃ˈhɔ̃|dɰɑ̃ˌʋ̃ɔ̃̃ˈθɑ̃|da̯j̊ˈθe.ɑ̃
     Charles.\s{voc}|\s{particle}|\s{indef.acc}-fish|\s{def.iness}-mountain|\s{2sg.act}-buy-\s{pres.ant.2sg}
-    Charles, you bought a fish on the mountain?
+    ‘Charles, you bought a fish on the mountain?’
 }
 
 

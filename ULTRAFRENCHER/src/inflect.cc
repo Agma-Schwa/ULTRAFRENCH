@@ -369,6 +369,41 @@ using act_inf = affix<
 >;
 using act_part = suffix<U"â">;
 
+/// Passive singular.
+using pass_1sg = prefix<U"v">;
+using pass_2sg = affix<
+    when<starts_with<is_consonant>,
+         prefix<U"ẹ">>,
+    prefix<U"ḍ">
+>;
+
+using pass_3msg = prefix<U"y'">;
+using pass_3fsg = pass_3msg;
+using pass_3nsg = prefix<U"sy">;
+
+/// Passive plural.
+using pass_1pl = affix<
+    cond<
+        starts_with<is_o>, prefix<U"w">,
+        starts_with<is_vowel>, prefix<U"r">,
+        otherwise, prefix<U"aú">
+    >
+>;
+using pass_2pl = affix<
+    when<all<is_consonant, inv<starts_with<is<U"y'", U"ý'">>>>,
+         suffix<U"y">>,
+    prefix<U"b'h">
+>;
+
+/// Passive non-finite.
+using pass_3pl = prefix<U"lý">;
+using pass_inf = cond<
+    starts_with<is<U"a", U"à">>, prefix<U"á">,
+    starts_with<is<U"á", U"â">>, prefix<U"â">,
+    starts_with<is_vowel>, prefix<U"h">,
+    otherwise, prefix<U"a">
+>;
+
 } // clang-format on
 
 /// Helper that holds state for a single inflection.
@@ -450,18 +485,18 @@ struct inflexion {
         } else {
             switch (p) {
                 case person::none: break;
-                case person::_1sg: break;
-                case person::_2sg: break;
-                case person::_3msg: break;
-                case person::_3fsg: break;
-                case person::_3nsg: break;
-                case person::_1pl: break;
-                case person::_2pl: break;
-                case person::_3mpl: break;
-                case person::_3fpl: break;
-                case person::_3npl: break;
-                case person::inf: break;
-                case person::part: break;
+                case person::_1sg: pass_1sg::apply(form); break;
+                case person::_2sg: pass_2sg::apply(form); break;
+                case person::_3msg: pass_3msg::apply(form); break;
+                case person::_3fsg: pass_3fsg::apply(form); break;
+                case person::_3nsg: pass_3nsg::apply(form); break;
+                case person::_1pl: pass_1pl::apply(form); break;
+                case person::_2pl: pass_2pl::apply(form); break;
+                case person::_3mpl: pass_3pl::apply(form); break;
+                case person::_3fpl: pass_3pl::apply(form); break;
+                case person::_3npl: pass_3pl::apply(form); break;
+                case person::inf: pass_inf::apply(form); break;
+                case person::part: pass_inf::apply(form); break;
             }
         }
     }

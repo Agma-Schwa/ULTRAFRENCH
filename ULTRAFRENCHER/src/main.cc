@@ -117,7 +117,7 @@ COMMAND (list_words) {
     /// Select all words.
     while (stmt.executeStep()) {
         fmt::print("\033[33m{}\033[32m", stmt.getColumn(0).getText());
-        if (not stmt.isColumnNull(1)) fmt::print(" {}", stmt.getColumn(1).getText());
+        if (not stmt.isColumnNull(1)) fmt::print(" \033[36m{}\033[32m", stmt.getColumn(1).getText());
         if (not stmt.isColumnNull(2)) fmt::print(" {}", stmt.getColumn(2).getText());
         if (not stmt.isColumnNull(3)) fmt::print(" [{}]", stmt.getColumn(3).getText());
         if (not stmt.isColumnNull(4)) fmt::print(" F: {}", stmt.getColumn(4).getText());
@@ -125,7 +125,7 @@ COMMAND (list_words) {
         fmt::print("\033[m\n");
 
         /// Select all definitions for the word.
-        SQLite::Statement stmt2(*db, "SELECT definition FROM definitions WHERE word = ? ORDER BY definition ASC");
+        SQLite::Statement stmt2(*db, "SELECT definition FROM definitions WHERE word = ? ORDER BY ROWID ASC");
         usz i = 1;
         stmt2.bind(1, stmt.getColumn(0).getText());
         while (stmt2.executeStep()) fmt::print("    \033[34m{:>2}. {}\033[m\n", i++, stmt2.getColumn(0).getText());
@@ -183,6 +183,28 @@ COMMAND (inflect) {
     }
 }
 
+/// Search for a word.
+COMMAND (search) {
+    /// Must have one arg.
+    if (args.size() != 1) {
+        fmt::print("Incorrect number of arguments. See `help s` for usage.\n");
+        return;
+    }
+
+    /// Normalise the word.
+    args[0] = word{args[0]}.string();
+
+    /// Search for the word.
+    SQLite::Statement stmt(*db, "SELECT DISTINCT word FROM definitions WHERE definition LIKE ?");
+    stmt.bind(1, "%" + args[0] + "%");
+
+    /// Print out all matching words.
+    usz i = 1;
+    while (stmt.executeStep()) fmt::print("\033[33m{:>2}.\033[32m {}\033[m\n", i++, stmt.getColumn(0).getText());
+}
+
+
+/// Print help message.
 COMMAND (print_help) {
     /// Takes at most one arg.
     if (args.size() > 1) {
@@ -259,6 +281,7 @@ COMMAND (print_help) {
         "    \033[33ml       \033[32mList all words\n"
         "    \033[33mhelp    \033[32mPrint this help message\n"
         "    \033[33mq       \033[32mQuit\n"
+        "    \033[33ms       \033[32mSearch for a word\n"
         "    \033[33mu       \033[32mUpdate a word\n"
         "    \033[33mx       \033[32mDelete a word\n"
         "\033[m"
@@ -322,6 +345,7 @@ void dispatch_command(std::string_view line) {
     else if (command == "i") inflect(std::move(args));
     else if (command == "help") print_help(std::move(args));
     else if (command == "q") std::exit(0);
+    else if (command == "s") search(std::move(args));
     else if (command == "x") delete_word(std::move(args));
     else fmt::print("Unknown command: {}. Run `help` for a list of all commands.\n", command);
 }
