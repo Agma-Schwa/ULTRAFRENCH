@@ -182,6 +182,7 @@ endif()
 
 ## Add the executable.
 add_executable(ULTRAFRENCHER ${sources})
+set_target_properties(ULTRAFRENCHER PROPERTIES INTERPROCEDURAL_OPTIMIZATION TRUE)
 
 ## Apply our options.
-target_link_libraries(ULTRAFRENCHER PRIVATE options SQLiteCpp sqlite3 pthread dl)
+target_link_libraries(ULTRAFRENCHER PRIVATE options SQLiteCpp sqlite3 pthread dl icuio icui18n icuuc icudata)

@@ -2,6 +2,7 @@
 #define ULTRAFRENCHER_UTILS_HH
 
 #include <fmt/format.h>
+#include <unordered_map>
 
 using u8 = uint8_t;
 using u16 = uint16_t;
@@ -17,6 +18,8 @@ using i64 = int64_t;
 using isz = ptrdiff_t;
 using iptr = intptr_t;
 
+using c32 = char32_t;
+
 #define STR_(X) #X
 #define STR(X) STR_(X)
 
@@ -29,5 +32,15 @@ template <typename ...arguments>
     fmt::print(stderr, "\n");
     std::exit(1);
 }
+
+struct str_hash {
+    using is_transparent = void;
+    [[nodiscard]] size_t operator()(std::string_view txt) const { return std::hash<std::string_view>{}(txt); }
+    [[nodiscard]] size_t operator()(const std::string& txt) const { return std::hash<std::string>{}(txt); }
+};
+
+/// Map with heterogeneous lookup.
+template <typename value_type>
+using map = std::unordered_map<std::string, value_type, str_hash, std::equal_to<>>;
 
 #endif // ULTRAFRENCHER_UTILS_HH

@@ -1,8 +1,11 @@
 #include <csignal>
+#include <inflect.hh>
 #include <iostream>
+#include <span>
 #include <SQLiteCpp/SQLiteCpp.h>
 #include <utils.hh>
 #include <vector>
+#include <word.hh>
 
 #define COMMAND(name) void name(std::vector<std::string>&& args)
 
@@ -15,9 +18,9 @@ void init_db() try {
     db->exec(R"sql(
         CREATE TABLE IF NOT EXISTS words (
             word TEXT PRIMARY KEY,
-            etymology TEXT,
             part_of_speech TEXT,
             comment TEXT,
+            etymology TEXT,
             future_stem TEXT,
             subjunctive_stem TEXT
         ) STRICT
@@ -37,9 +40,12 @@ void init_db() try {
 COMMAND (add_word) {
     /// Must have at least one arg and at most six.
     if (args.empty() or args.size() > 6) {
-        fmt::print("Usage: a <word> [part of speech] [comment] [etymology] [future stem] [subjunctive stem]\n");
+        fmt::print("Incorrect number of arguments. See `help a` for usage.\n");
         return;
     }
+
+    /// Normalise the word.
+    args[0] = word{args[0]}.string();
 
     /// Check if the word already exists.
     SQLite::Statement stmt(*db, "SELECT 1 FROM words WHERE word = ?");
@@ -51,27 +57,29 @@ COMMAND (add_word) {
 
     /// Add the word.
     SQLite::Statement stmt2(*db, "INSERT INTO words VALUES (?, ?, ?, ?, ?, ?)");
-    usz i = 1;
     stmt2.bind(1, args[0]);
-    for (; i < args.size(); ++i) stmt2.bind(int(i + 1), args[i]);
-    for (; i < 6; ++i) stmt2.bind(int(i + 1));
+
+    /// Bind the other args.
+    if (args.size() >= 2) stmt2.bind(2, args[1]);                /// Part of speech.
+    if (args.size() >= 3) stmt2.bind(3, args[2]);                /// Comment.
+    if (args.size() >= 4) stmt2.bind(4, args[3]);                /// Etymology.
+    if (args.size() >= 5) stmt2.bind(5, word{args[4]}.string()); /// Future stem.
+    if (args.size() >= 6) stmt2.bind(6, word{args[5]}.string()); /// Subjunctive stem.
 
     /// Execute the statement.
-    try {
-        stmt2.exec();
-    } catch (const std::exception& e) {
-        fmt::print("Failed to add word '{}': {}\n", args[0], e.what());
-        return;
-    }
+    stmt2.exec();
 }
 
 /// Add a definition to a word.
 COMMAND (add_definition) {
     /// Must have two args.
     if (args.size() != 2) {
-        fmt::print("Usage: d <word> <definition>\n");
+        fmt::print("Incorrect number of arguments. See `help d` for usage.\n");
         return;
     }
+
+    /// Normalise the word.
+    args[0] = word{args[0]}.string();
 
     /// Check if the word exists.
     SQLite::Statement stmt(*db, "SELECT 1 FROM words WHERE word = ?");
@@ -81,35 +89,32 @@ COMMAND (add_definition) {
         return;
     }
 
-    /// Check if the definition already exists.
-    SQLite::Statement stmt2(*db, "SELECT 1 FROM definitions WHERE word = ? AND definition = ?");
+    /// Add the definition.
+    SQLite::Statement stmt2(*db, "INSERT OR IGNORE INTO definitions VALUES (?, ?)");
     stmt2.bind(1, args[0]);
     stmt2.bind(2, args[1]);
-    if (stmt2.executeStep()) {
-        fmt::print("Definition '{}' already exists for word '{}'.\n", args[1], args[0]);
-        return;
-    }
-
-    /// Add the definition.
-    SQLite::Statement stmt3(*db, "INSERT INTO definitions VALUES (?, ?)");
-    stmt3.bind(1, args[0]);
-    stmt3.bind(2, args[1]);
 
     /// Execute the statement.
-    try {
-        stmt3.exec();
-    } catch (const std::exception& e) {
-        fmt::print("Failed to add definition '{}': {}\n", args[1], e.what());
-        return;
-    }
-
+    stmt2.exec();
 }
-
 
 /// List all words in the database.
 COMMAND (list_words) {
+    if (args.size() > 1) {
+        fmt::print("Incorrect number of arguments. See `help l` for usage.\n");
+        return;
+    }
+
+    /// Normalise the word.
+    if (args.size() == 1) args[0] = word{args[0]}.string();
+
+    /// Get all words.
+    std::string query_string = "SELECT * FROM words ORDER BY word";
+    if (args.size() == 1) query_string = "SELECT * FROM words WHERE word LIKE ? || '%' ORDER BY word ASC";
+    SQLite::Statement stmt(*db, query_string);
+    if (args.size() == 1) stmt.bind(1, args[0]);
+
     /// Select all words.
-    SQLite::Statement stmt(*db, "SELECT * FROM words ORDER BY word");
     while (stmt.executeStep()) {
         fmt::print("\033[33m{}\033[32m", stmt.getColumn(0).getText());
         if (not stmt.isColumnNull(1)) fmt::print(" {}", stmt.getColumn(1).getText());
@@ -120,13 +125,144 @@ COMMAND (list_words) {
         fmt::print("\033[m\n");
 
         /// Select all definitions for the word.
-        SQLite::Statement stmt2(*db, "SELECT definition FROM definitions WHERE word = ? ORDER BY definition");
+        SQLite::Statement stmt2(*db, "SELECT definition FROM definitions WHERE word = ? ORDER BY definition ASC");
         usz i = 1;
         stmt2.bind(1, stmt.getColumn(0).getText());
-        while (stmt2.executeStep()) {
-            fmt::print("    \033[34m{:<2}. {}\033[m\n", i++, stmt2.getColumn(0).getText());
-        }
+        while (stmt2.executeStep()) fmt::print("    \033[34m{:>2}. {}\033[m\n", i++, stmt2.getColumn(0).getText());
     }
+}
+
+COMMAND (delete_word) {
+    /// Must have one arg.
+    if (args.size() != 1) {
+        fmt::print("Incorrect number of arguments. See `help d` for usage.\n");
+        return;
+    }
+
+    /// Normalise the word.
+    args[0] = word{args[0]}.string();
+
+    /// Delete the word.
+    SQLite::Statement stmt2(*db, "DELETE FROM words WHERE word = ?");
+    stmt2.bind(1, args[0]);
+    if (stmt2.exec()) fmt::print("Deleted word '{}'.\n", args[0]);
+    else fmt::print("Word '{}' does not exist.\n", args[0]);
+}
+
+/// Inflect an UF word.
+COMMAND (inflect) {
+    /// Get word.
+    if (args.size() < 2) {
+        fmt::print("Usage: i <word> <person> [voice] [tense] [mood]\n");
+        return;
+    }
+
+    /// Normalise the word.
+    args[0] = word{args[0]}.string();
+
+    /// Check if the word exists.
+    SQLite::Statement stmt(*db, "SELECT * FROM words WHERE word = ?");
+    stmt.bind(1, args[0]);
+    if (not stmt.executeStep()) {
+        fmt::print("Word '{}' does not exist.\n", args[0]);
+        return;
+    }
+
+    /// Get word data.
+    std::string_view part_of_speech = stmt.getColumn(1).getText();
+
+    /// Inflect the word.
+    if (part_of_speech == "v.") {
+        std::string_view future_stem = stmt.getColumn(4).getText();
+        std::string_view subjunctive_stem = stmt.getColumn(5).getText();
+        auto res = inflect_verb(args[0], future_stem, subjunctive_stem, std::span{args}.subspan(1));
+        if (res) fmt::print("{}\n", *res);
+    } else {
+        fmt::print("Sorry, don’t know how to inflect word w/ part of speech '{}'.\n", part_of_speech);
+        return;
+    }
+}
+
+COMMAND (print_help) {
+    /// Takes at most one arg.
+    if (args.size() > 1) {
+        fmt::print("Usage: help [command]\n");
+        return;
+    }
+
+    /// Print help for a specific command.
+    if (not args.empty()) {
+        if (args[0] == "a") {
+            fmt::print(
+                "Command `a`: Add a word to the dictionary.\n"
+                "Usage:\n"
+                "    a <word> [part of speech] [comment]\n"
+                "            [etymology] [future stem]\n"
+                "            [subjunctive stem]\n"
+            );
+        } else if (args[0] == "d") {
+            fmt::print(
+                "Command `d`: Add a definition to a word.\n"
+                "Usage:\n"
+                "    d <word> <definition>\n"
+            );
+        } else if (args[0] == "l") {
+            fmt::print(
+                "Command `l`: List all words in the dictionary. If the `letters`\n"
+                "    argument is provided, only words starting with those letters\n"
+                "    will be listed.\n"
+                "Usage:\n"
+                "    l [letters]\n"
+            );
+        } else if (args[0] == "i") {
+            fmt::print(
+                "Command `i`: Inflect a word.\n"
+                "Usage:\n"
+                "    i <word> <person> [voice] [tense] [mood]\n"
+            );
+        } else if (args[0] == "u") {
+            fmt::print(
+                "Command `u`: Update a word.\n"
+                "Usage:\n"
+                "    u <word> [part of speech] [comment]\n"
+                "            [etymology] [future stem]\n"
+                "            [subjunctive stem]\n"
+            );
+        } else if (args[0] == "help") {
+            fmt::print(
+                "Command `help`: Print help information about a command or all commands.\n"
+                "Usage:\n"
+                "    help [command]\n"
+            );
+        } else if (args[0] == "q") {
+            fmt::print(
+                "Command `q`: Quit the program.\n"
+                "Usage:\n"
+                "    q\n"
+            );
+        } else if (args[0] == "x") {
+            fmt::print(
+                "Command `x`: Delete a word.\n"
+                "Usage:\n"
+                "    x <word>\n"
+            );
+        } else fmt::print("Unknown command: {}. Run `help` for a list of all commands.\n", args[0]);
+        return;
+    }
+
+    /// Default message.
+    fmt::print(
+        "Commands:\n"
+        "    \033[33ma       \033[32mAdd a word\n"
+        "    \033[33md       \033[32mAdd a definition to a word\n"
+        "    \033[33mi       \033[32mInflect a word\n"
+        "    \033[33ml       \033[32mList all words\n"
+        "    \033[33mhelp    \033[32mPrint this help message\n"
+        "    \033[33mq       \033[32mQuit\n"
+        "    \033[33mu       \033[32mUpdate a word\n"
+        "    \033[33mx       \033[32mDelete a word\n"
+        "\033[m"
+    );
 }
 
 void dispatch_command(std::string_view line) {
@@ -151,7 +287,6 @@ void dispatch_command(std::string_view line) {
 
             case ' ': {
                 if (in_single_quotes or in_double_quotes) goto default_;
-                if (append_to->empty()) continue;
                 append_to = &args.emplace_back();
             } break;
 
@@ -162,16 +297,33 @@ void dispatch_command(std::string_view line) {
         }
     }
 
-    /// Remove empty arguments.
-    std::erase_if(args, [](std::string_view arg) { return arg.empty(); });
+    /// Make sure we don’t have any dangling quotes.
+    if (in_single_quotes or in_double_quotes) {
+        fmt::print(
+            "Unpaired quote. Try using typographic quotes ’ or surrounding\n"
+            "the argument containing the quote with single or double quotes.\n"
+        );
+        return;
+    }
+
+    /// Replace typographic quotes with regular ones.
+    for (auto& arg : args) {
+        for (;;) {
+            auto pos = arg.find("’");
+            if (pos == std::string::npos) break;
+            arg.replace(pos, sizeof("’") - 1, "'");
+        }
+    }
 
     /// Handle the command.
     if (command == "a") add_word(std::move(args));
     else if (command == "d") add_definition(std::move(args));
     else if (command == "l") list_words(std::move(args));
-    else if (command == "help") fmt::print("Commands: a, d, l, help, exit\n");
-    else if (command == "exit") std::exit(0);
-    else fmt::print("Unknown command: {}\n", command);
+    else if (command == "i") inflect(std::move(args));
+    else if (command == "help") print_help(std::move(args));
+    else if (command == "q") std::exit(0);
+    else if (command == "x") delete_word(std::move(args));
+    else fmt::print("Unknown command: {}. Run `help` for a list of all commands.\n", command);
 }
 
 int main() {
@@ -187,6 +339,11 @@ int main() {
         std::string line;
         std::getline(std::cin, line);
         if (line.empty()) continue;
-        dispatch_command(line);
+
+        try {
+            dispatch_command(line);
+        } catch (const std::exception& e) {
+            fmt::print("Error: {}\n", e.what());
+        }
     }
 }
