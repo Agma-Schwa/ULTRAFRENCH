@@ -30,7 +30,10 @@
 ## point.
 ##
 
-ad’hór|v. tr.|adore|To love, adore|\s{fut} *ad’hórérẹ́*
+ad’hór|v. tr.|adore|1. To love, adore.\
+    2. +\s{part} To be in love with, have a crush on.\
+    3. +\s{gen} To desire (someone)|\s{fut} *ad’hórérẹ́*, \s{subj} *ad’hórs*
+
 aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
 dír|v. tr.|dire|To say, tell|\s{fut} *dírẹ́*
@@ -38,7 +41,15 @@ vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*
 y’ír|v. (in)tr.|ouïr|To hear, understand, listen
 Çár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
 ráhó|n.|poisson|Fish
-aç̇t’he|v. tr.|acheter|To buy
+açt’he|v. tr.|\nf from *aç*|1. To cut or cleave with an axe. \
+    2. +\s{acc} To bring an end to. \
+    3. +\s{acc def} *of* ***árb*** *intr. (other than literal)* To get to the point, cut to the chase. \
+    4. +\s{acc def} *of* ***árb*** *and* \s{acc} \
+    To bring to light, reveal *(originally, this idiom did not take a double \s{acc}, but \
+    was instead formed with the \s{acc} of ‘tree’ and the \s{ill} of the object, meaning something along \
+    the lines of ‘to bring down the tree(s) on sth’—the image here being that of cutting down trees in \
+    a wood until only a clearing remains or is ‘brought to light’)*|\s{fut} *açḍe*, \s{subj} *açt’hes*
+aç̇t’he|v. tr.|acheter|To buy|\s{fut} *aç̇ḍrẹ́*, \s{subj} *aç̇t’hes*
 vaût’há|n.|montagne|Mountain
 ḍalẹ|n.|tableau|Table
 ehyó|n.|écusson|Shield
@@ -58,24 +69,32 @@ rá|n.|loi|Law, rule, regulation
 c’hóný|adj.|connu|Known, familiar, well-known
 y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pfabbr il y a aucun|There is, there are
-ráy’ê|n.|moyen|Way, means, method. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
-ub’hrá|v.|pouvoir|To be able to, can. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} ís
+ráy’ê|n.|moyen|1. Way, means, method. 2. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
+ub’hrá|v.|pouvoir|1. To be able to, can. 2. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} ís
 ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
-ez-|pron.|ses|Its, her, his.
+ez-|pron.|ses|Its, her, his, their
+lýr|pron.|leur|Their
 el|n.|ailles|Wing, blade, fin.
 Láç|n.||*female given name, equivalent to English ‘Bianca’*
-auḍé|v.|obtenir|To obtain, get, acquire. +\s{abl} To gain purchase on or height or distance from|\s{fut} *auḍy’édrẹ́*
+auḍé|v.|obtenir|1. To obtain, get, acquire. 2. +\s{abl} To gain purchase on or height or distance from|\s{fut} *auḍy’édrẹ́*
 sol|n.|sol|Ground, floor, earth, soil
 c’hór|n.|corps|Body
 c’hýr|n.|corps|Heart
-ab’haḍ|v.|abattre|To cut down, butcher, fell, knock down, shoot down|\s{fut} *ab’haḍrẹ́*
+ab’haḍ|v.|abattre|1. To cut down, fell, knock down, shoot down. 2. To butcher, cut apart violently|\s{fut} *ab’haḍrẹ́*, \s{subj} *ab’has*
 árb|n.|arbre|Tree
 aç|n.|hache|Axe, hatchet
-asý’ýâ|particle|pas absolument|Not, no.
+asý’ýâ|negation particle|\pfabbr pas absolument|Not, no. *Commonly* ***’sý’ýâ*** *after vowels*
+c’hd’hal|adv.|\pfabbr que dalle|Naught, absolutely nothing
+jávé|adv.|jamais|Never, at no time
+ráv́â|adv.|rarement|Seldom, rarely (ever)
+y’é|adv.|rien|Nothing
+au|conj.|aussi|And, also, as well, too
+eç̇|n.|péché|Sin, transgression, wrongdoing
+vaûd|n.|monde|World
+ânb’hé|adv.|\pfabbr en effet\nf, via metathesis from \**ânéb’he*|Verily, indeed, in fact
 
 ’sý’ýâ > asý’ýâ
-
 
 
 rá|v.|grand|Big, large, great
