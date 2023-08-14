@@ -41,15 +41,15 @@ vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*
 y’ír|v. (in)tr.|ouïr|To hear, understand, listen
 Çár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
 ráhó|n.|poisson|Fish
-açt’he|v. tr.|\nf from *aç*|1. To cut or cleave with an axe. \
+act’he|v. tr.|\nf from *ac*|1. To cut or cleave with an axe. \
     2. +\s{acc} To bring an end to. \
     3. +\s{acc def} *of* ***árb*** *intr. (other than literal)* To get to the point, cut to the chase. \
     4. +\s{acc def} *of* ***árb*** *and* \s{acc} \
     To bring to light, reveal *(originally, this idiom did not take a double \s{acc}, but \
     was instead formed with the \s{acc} of ‘tree’ and the \s{ill} of the object, meaning something along \
     the lines of ‘to bring down the tree(s) on sth’—the image here being that of cutting down trees in \
-    a wood until only a clearing remains or is ‘brought to light’)*|\s{fut} *açḍe*, \s{subj} *açt’hes*
-aç̇t’he|v. tr.|acheter|To buy|\s{fut} *aç̇ḍrẹ́*, \s{subj} *aç̇t’hes*
+    a wood until only a clearing remains or is ‘brought to light’)*|\s{fut} *acḍe*, \s{subj} *act’hes*
+aċt’he|v. tr.|acheter|To buy|\s{fut} *aċḍrẹ́*, \s{subj} *aċt’hes*
 vaût’há|n.|montagne|Mountain
 ḍalẹ|n.|tableau|Table
 ehyó|n.|écusson|Shield
@@ -70,31 +70,29 @@ c’hóný|adj.|connu|Known, familiar, well-known
 y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pfabbr il y a aucun|There is, there are
 ráy’ê|n.|moyen|1. Way, means, method. 2. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
-ub’hrá|v.|pouvoir|1. To be able to, can. 2. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} ís
+ub’hrá|v.|pouvoir|1. To be able to, can. 2. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} *ís*
 ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
 ez-|pron.|ses|Its, her, his, their
 lýr|pron.|leur|Their
 el|n.|ailles|Wing, blade, fin.
-Láç|n.||*female given name, equivalent to English ‘Bianca’*
+Lác|n.||*female given name, equivalent to English ‘Bi\-anca’*
 auḍé|v.|obtenir|1. To obtain, get, acquire. 2. +\s{abl} To gain purchase on or height or distance from|\s{fut} *auḍy’édrẹ́*
 sol|n.|sol|Ground, floor, earth, soil
 c’hór|n.|corps|Body
 c’hýr|n.|corps|Heart
 ab’haḍ|v.|abattre|1. To cut down, fell, knock down, shoot down. 2. To butcher, cut apart violently|\s{fut} *ab’haḍrẹ́*, \s{subj} *ab’has*
 árb|n.|arbre|Tree
-aç|n.|hache|Axe, hatchet
+ac|n.|hache|Axe, hatchet
 asý’ýâ|negation particle|\pfabbr pas absolument|Not, no. *Commonly* ***’sý’ýâ*** *after vowels*
 c’hd’hal|adv.|\pfabbr que dalle|Naught, absolutely nothing
 jávé|adv.|jamais|Never, at no time
 ráv́â|adv.|rarement|Seldom, rarely (ever)
 y’é|adv.|rien|Nothing
 au|conj.|aussi|And, also, as well, too
-eç̇|n.|péché|Sin, transgression, wrongdoing
+eċ|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
 ânb’hé|adv.|\pfabbr en effet\nf, via metathesis from \**ânéb’he*|Verily, indeed, in fact
-
-’sý’ýâ > asý’ýâ
 
 
 rá|v.|grand|Big, large, great
@@ -105,9 +103,48 @@ lúr|v.|lourd|Bulky, oversized, heavy
 ḅẹt’hẹ|v.|petit|To be small, little
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
+c’hánár|n.|canard|Ship, boat
+ráhe|n.|oiseau|Bird
+ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
+raúl|n.|parole|1. Language, speech, word 2. **Rául** *definite only* Short for *T’hebhaú Rául*
 
 # From Étienne.
 Eḍy’ê|n.||*male given name, equivalent to English ‘Ste\-phen’*
+
+# Expressions.
+lẹhuvud|n.|\pfabbr coup de foudre|Love at first sight
+c’háraúciḍ|v.|\pfabbr les carrotes sont cuites|To end for good, put to a permanent end\
+    |\s{fut} *c’háraúcre*, \s{subj} *c’háraúc*
+ḅauheŷnlabhé|v.|\pfabbr poser un lapin|To forsake, abandon|\s{fut} *ḅauheŷnlabhére*, \s{subj} *ḅauheŷnlabhés*
+férrrásvát’h|n.|\pfabbr fer la grasse matinée|A long, deep sleep
+rác’hsaý’ad|v.|\pfabbr raconter des salades|To lie, tell tall tales, overexaggerate|\s{fut}\
+    *rác’hsa\-ý’e*, \s{subj} *rác’hsaýs*
+férḍufraú|v.|\pfabbr en faire tout un fromage|To make a big fuss about something|\s{fut}\
+    *férḍu\-fraúrẹ́*, \s{subj} *férḍufraús*
+daúb’hedwébhó|v.|\pfabbr tomber dans les pommes|To faint|\s{fut} *daúb’hedwébhóre*, \s{subj}\
+    *daúb’hedwébhós*
+rádrénẹ́|v. + \s{aci}|\pfabbr les doigts dans le nez|To put no effort into|\s{fut} *rádrénrẹ́*,\
+    \s{subj} *rádrénẹ́s*
+uy’ed’háb’hrí|v.|\pfabbr rouler dans la farine|To scam, swindle, cheat|\s{fut} *uy’e\-d’háv́e*,\
+    \s{subj} *uy’ed’háb’hrís*
+ab’hínéb’heḅaý’évrâ|v.|\pfabbr habit ne fait pas le moine|To judge based on appearances|\s{fut}\
+    *ab’hínéb’heḅaý’év́ẹ́*, \s{subj} *ab’hínéb’heḅaý’év́ás*
+rrád’hahánár|n.|\pfabbr froid de canard|Coldness
+y’ŷvéłáfrí|n. pl. archaic|yeux de merlan frit|Eyes
+y’ŷ|n.|{\nf from} y’ŷvéłáfrí|Eye
+lârdávrá|n.|\pfabbr langue de bois|Evasive, unclear, or overly formal speech
+urdálbhaúrḍ|n.|\pfabbr avoir un oursin dans le portefeuille|A very rich person; billionaire
+vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pfabbr vendre la peau de ours avant de avoir tué|\
+    To depend on predictions of the future *(of disputed origin; first attested in the \
+    works of the Early UF comedian J. A. B. Smyth)*| \s{fut} *vádłabhaud’hávúrsab’hád’háváb’hrárḍure*,\
+    \s{s} *vádłabhaud’hávúrsab’hád’háváb’hrárḍus*
+râdrásôn|v.|\pfabbr prendre ses jambe à son cou|To run|\s{fut} *râdrásônre*, \s{subj} *râdrásôns*
+t’hebhaúz|v.|\pfabbr jeter l’éponge|To be French| \s{fut} *t’hebhaúźe*, \s{subj} *t’hebhaúś*
+T’hebhaú|n. or adj.|{\nf from} t’hebhaúz|France, French
+T’hebhaú Rául|n. def. sg. (only {\nf T’hebhaú} is declined as though the entire phrase were one word)\
+    |{\nf from} t’hebhaúz + rául|The Ultrafrench language *(in informal speech and writing, this is\
+    typically shortened to* **Raúl***)*|\s{nom sg} *T’hebhaú Rául* *(regular in all other cases)*
+
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|*active only*.                                  \
@@ -121,6 +158,11 @@ eḍ|v. irreg. |être|To be|*active only*.                                  \
     \s{pl} *weḍy’ó*, *b’heḍy’é*, *let’he*, *llet’he*, *laet’h*;          \
     \s{inf} *ét’hẹd*
 
+
+
+’sý’ýâ > asý’ýâ
+
+úrẹ́, ís > ub’hrá
 
 vá > rvá
 

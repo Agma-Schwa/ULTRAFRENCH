@@ -44,6 +44,7 @@ Prelim:
   Then: @c => * / $ _ @c
   Then: @c => * / @c _ $
   Then: k => x
+  Then: xɥ => ɕ
   Then: {ʃ, ʃʶ, ʒ, ʒʶ} => {ɕ, ɕʶ, ʑ, ʑʶ}
   Then: nt => nθ
   Then: t => d2
