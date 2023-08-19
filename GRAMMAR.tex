@@ -19,6 +19,10 @@
 \ExplSyntaxOn
 \makeatletter
 
+\def \dlabelstyle #1 {
+    \def\descriptionlabel ##1 {\hspace\labelsep \normalfont #1 ##1}
+}
+
 \cs_new:Npn \__two_cols:nnnnn #1 #2 #3 #4 #5 {
     \ifvmode\else\unskip\par\fi
     \noindent\leavevmode
@@ -445,7 +449,7 @@ that in verb affixes, *au* is quite common word-finally. The sequence ⟨wau⟩ 
 voiceless /e/ is always /ə̥/, but confusingly, it is also just spelt ⟨e⟩, since ⟨è⟩ is already /ɛ/.\footnote{Thus, a word-final ⟨e⟩
 can be /e/, such as in *vvaúríhe* /ʋ̃ːɔ̃ɰĩˈhe/ ‘to remember’, or /ə̥/, such as in *dale* /daɮ̃ə̥/ ‘table’. As a rule of thumb, it is
 usually /e/ at the end of verb stems—but not verb forms in general—and /ə̥/ elsewhere. Fortunately they are differentiated by a
-dot below in dictionaries: *vvaúríhe* and *ḍalẹ*.}
+dot below in dictionaries and in this grammar: *vvaúríhe* vs *ḍalẹ*.}
 
 The ‘hard’ voiced *ḅ*, *ḍ* which are pronounced exactly like their regular counterparts, are normally also spelt ⟨b⟩ and
 ⟨d⟩. However, the dot is commonly used in dictionaries and grammatical material to distinguish between the two
@@ -475,6 +479,26 @@ UF seldom uses hyphens to separate or join words and instead prefers to spell th
 to this is that affixes that end with a vowel are typically separated from the word they are attached to with a hyphen
 if that word starts with (a variant of) the same vowel. For example, the \s{def nom sg} of *el* ‘wing’
 is *láel*, but the plural is *lé-el*.
+
+\subsubsection{Lenition and Nasalisation}
+Certain morphological elements subject surrounding context to lenition or nasalisation. Nasalisation affects vowels,
+which become more nasal (that is, (voiceless) oral vowels become nasalised, and nasalised vowels become nasal; nasal
+vowels are unaffected), as well as *ḍ*, which becomes *n*.
+
+Lenition is more complicated; it affects only consonants and causes a softening similar to what happened diachronically
+between vowels. All ʁ-fricated consonants simply lose their ʁ-frication. Furthermore, the
+following consonants are also affected by lenition:
+
+\begin{table}[H]
+\centering
+\itshape
+\begin{tabular}{l|lll|l|l|l|ll|l|l|l|}
+\bf Consonant & x & s & z       & c & l  & ḷ & b & f          & ḅ   & d   & ḍ    \\\hline
+\bf Lenited & \multicolumn{3}{c|}{h} & ċ & ý’ & w & \multicolumn{2}{c|}{b’h} & bh  & d’h & t’h  \\
+\end{tabular}
+\nf
+\caption{Consonants Affected by Lenition}\label{tab:lenition}
+\end{table}
 
 \subsubsection{Glossing}
 To simplify glosses, cases are assumed to be definite and singular unless otherwise stated, and verb forms are
@@ -622,7 +646,6 @@ There are two broad groups of such affixes: suffixes, which are appended to the 
 in those persons, as well as circumfixes and prefixes, which are inserted before the active/passive markers and replace the
 replace the \s{act 1pl, 2pl} suffixes in some cases.
 
-
 \subsubsection{Suffixed Tenses}
 The present anterior and preterite are formed by appending a set of suffixes to the verb. Table~\ref{tab:present-anterior-and-preterite-suffixes}
 below lists the suffixes for those tenses. The present anterior has a perfect or perfective aspect, while the preterite has an imperfective aspect. The
@@ -659,6 +682,9 @@ where applicable, e.g. present *ad’hórâ* ‘loving’ becomes *ad’hórêr*
 
 In both tenses, the suffixes coalesce with vowels before them, replacing them and nasalising them if
 they are already nasal, e.g. *jvvaúríé* ‘I remembered’.
+
+If a verb takes both and active and a passive person affix, the suffix aligns with the active affix; thus
+‘she loved me’ is *llavad’hórá* and not \**llavád’hóré*.
 
 \begin{table}[H]
 \centering
@@ -950,11 +976,63 @@ Inf&\multicolumn{2}{c|}{\it vvaúríźessŷr}&&Inf&\multicolumn{2}{c|}{\it ávva
 The gnomic tense is marked by the infix *-j(ú)-* after the stem: *ad’hór* ‘to love’ to *rad’hórjô* ‘We love (for ever)’.
 The *ú* is omitted if the infix is followed by the vowel, in which case it causes nasalisation.
 
-\subsection{Subjunctive}
+\subsection{Subjunctive}\label{subsec:subjunctive}
 The UF subjunctive forms are fortunately fairly simple: they use the same affixes as the present, past, and future
 forms, except that each verb has a different subjunctive stem as well as a future subjunctive stem; the subjunctive
 stem is typically formed by adding an *-s* to the end of the corresponding indicative stem, e.g. *ad’hór*
 ‘to love’ to *ad’hórs*; thus we have, e.g. *jad’hórs* ‘I would love’, and *rád’hórsó* ‘We would love’.
+
+The future subjunctive stem is formed by adding the desinence *-śe* to the end of the future stem. For example,
+the future stem of *ad’hór* is *ad’hórérẹ́*, so the future subjunctive stem is *ad’hórérẹ́śe*; similarly, the future
+stem of *vvaúríhe* is *vvaúríźe*, so the future subjunctive stem is *vvaúríźeśe*.
+There are several main uses of the UF subjunctive, each of which we shall examine in more detail below:
+\begin{enumerate}\itemsep0pt
+\item in reported speech, e.g. *lladírá vad’hórhé* ‘she said she loved me’;
+\item with certain subordinating conjunctions, such as *b’he* ‘so that’;
+\item to express potential modality, e.g. *ḍẹḅars* ‘you may leave’;
+\item in the first person, as a jussive, e.g. *rad’hesó* ‘let’s go’;
+\item as a negative imperative, e.g. *sá ḍẹḅars* ‘don’t leave’;
+\item irrealis conditionals (see §\ref{subsec:conditionals}).
+\end{enumerate}
+
+\subsubsection{Reported Speech}
+UF does not use backshifting in reported speech, but rather, the corresponding subjunctive form is used. For instance,
+*jḍad’hór* ‘I love you’ becomes *jdíré jḍad’hórs* ‘I said I love you’. Note that the tense stays the same in this
+example: present indicative becomes present subjunctive. Accordingly, *jḍad’hóré* ‘I loved you’ becomes *jdíré
+jḍad’hórsé* ‘I said I loved you’.
+
+Consequently, the tense of the verb in reported speech is independent of the tense of the matrix clause, e.g.
+*b’had’hrệ* ‘I shall go’ becomes *jdíré b’had’hrẹ́sé* ‘I said I would go’,\footnote{Note the lenition here because
+of the present anterior suffix: *b’had’hrẹ́sé*, not \**b’had’hrẹ́śé*.} with *b’had’hrẹ́sé* being the Future II
+subjunctive form of *b’had’hrẹ́*.
+
+\subsubsection{Dependent Clauses}
+The following subordinating conjunctions take the subjunctive:
+\dlabelstyle{\bfseries\itshape} %% TODO: Create a two-column description list environment.
+\TwoCols[.45\hsize][.45\hsize] {
+\begin{description}\itemsep0pt
+    \item[áhaúr] ‘even though’
+    \item[ḅas] ‘because’
+    \item[b’he] ‘so that’
+    \item[c’haúr] ‘as’
+    \item[daúc’h] ‘therefore’
+    \item[de] ‘once’
+\end{description}
+} {
+\begin{description}\itemsep0pt
+    \item[ráhẹ] ‘though’
+    \item[rê] ‘although’
+    \item[s] ‘if’ (see §\ref{subsec:conditionals})
+    \item[sá] ‘without’
+    \item[sauc’h] ‘except that’
+    \item[váłé] ‘despite that’
+\end{description}
+}
+
+\noindent Note that not all subordinating conjunctions take the subjunctive. For instance, the conjunction *y’is*
+‘because’ takes the indicative: *jḍad’hórs c’haúr* ‘as I love you’, but *jḍad’hór y’ís* ‘because I love you’.
+
+\subsection{Optative}\label{subsec:optative}
 
 \subsection{Irregular Verbs}\label{subsec:irregular-verbs}
 \subsubsection{The Conjugation of \textit{eḍ} ‘to be’}
@@ -1071,7 +1149,7 @@ There is no established order of adjectives.
 
 %% ‘lẹ-’: from PF ‘plus’. Comparative prefix.
 \subsubsection{Comparison}
-Unlike in many other languages, there are 3 kinds of comparatives in UF: The affirming comparative, so called
+Unlike in many other languages, there are 3 comparatives in UF: The affirming comparative, so called
 because it affirms the positive (‘better, and also good’); the denying comparative, which denies the positive
 (‘better, but not good’), and the neutral comparative, which does not make any statement about the positive
 (‘better’).
@@ -1185,7 +1263,9 @@ down the trees upon their sins, to (= for the benefit of) the world’.}
 
 
 \subsection{Negated Clauses}
-Negation is expressed using the particle *asý’ýâ* ‘not’, which is often appended to verbs as *’sý’ýâ*.
+Negation in the indicative is expressed using the particle *asý’ýâ* ‘not’, which is often appended to verbs
+as *’sý’ýâ*. For a discussion of negation in the subjunctive and optative, see
+Sections~\ref{subsec:subjunctive}~and~\ref{subsec:optative}.
 By default, the particle is placed right after the verb:
 \gloss {
     Aúlýab’hat’hâ’sý’ýâ b’hehýnác.
@@ -1322,6 +1402,22 @@ The same applies to the negated version of such a question:
 
 Note the order of particles: negation precedes the question particle. Placing them the other way around
 makes it sound like you’re trying to correct yourself from *Jaċt'hévá* to *Jaċt'hé’sý’ýâ*.
+
+\subsection{Conditionals}\label{subsec:conditionals}
+Notes:
+- Simple indicative conditional use the indicative ‘If X, then Y’, ‘If it rains, the ground is wet’;
+  ‘If A is 2 and B is 3, then A + B is 5’.
+
+- Irrealis conditionals (conditionals that describe a situation that is not true, and could never be true)
+  use the subjunctive ‘If it were raining right now, we would be wet’.
+
+- Potential conditionals, which describe a situation that could happen, and which the
+  speaker considers plausible use the optative ‘If we were to go left now, we’d fall off a cliff’. These
+  conditionals are only possible in the present and future.
+
+- Counterfactual conditionals, which describe a situation that could be true, but isn’t. These conditionals
+  exist only in the present and past and also use the optative ‘If we had gone left, we would have fallen off
+  a cliff’.
 
 \section{Examples}\label{sec:examples}
 \subsubsection{Simple Glossing Example}
