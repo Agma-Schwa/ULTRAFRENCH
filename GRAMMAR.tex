@@ -206,10 +206,23 @@
     \vspace { -.5em }
     \settowidth \leftmargini { 99.\hskip\labelsep }
     \begin { enumerate }
-    \item \setcounter { enumi } { #1 }
-    \item \itemsep \EnumItemSep
+    \setcounter { enumi } { #1 }
+    \itemsep \EnumItemSep
 } {
     \end { enumerate }
+    \vspace { -.5em }
+}
+
+\newenvironment { dlist } [1] [{}] {
+    \vspace { -.5em }
+    \begingroup
+    \def\descriptionlabel ##1 {\hspace\labelsep \normalfont #1 ##1}
+    \settowidth \leftmargini { 99.\hskip\labelsep }
+    \begin { description }
+    \itemsep \EnumItemSep
+} {
+    \end { description }
+    \endgroup
     \vspace { -.5em }
 }
 
@@ -499,6 +512,9 @@ following consonants are also affected by lenition:
 \nf
 \caption{Consonants Affected by Lenition}\label{tab:lenition}
 \end{table}
+
+\noindent Note that double consonants are typically unaffected by morphological lenition, e.g. *dír* ‘to say’,
+whose subjunctive stem is *díss*, forms *aúdíssâ* (rougly ‘we should have said’), not \**aúdíhhâ*.
 
 \subsubsection{Glossing}
 To simplify glosses, cases are assumed to be definite and singular unless otherwise stated, and verb forms are
@@ -976,6 +992,29 @@ Inf&\multicolumn{2}{c|}{\it vvaúríźessŷr}&&Inf&\multicolumn{2}{c|}{\it ávva
 The gnomic tense is marked by the infix *-j(ú)-* after the stem: *ad’hór* ‘to love’ to *rad’hórjô* ‘We love (for ever)’.
 The *ú* is omitted if the infix is followed by the vowel, in which case it causes nasalisation.
 
+\subsection{Imperative}
+The imperative mood exists only in the present tense, and only in the second and third person. It is formed by
+affixing the following suffixes to the stem.
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+2nd &c’h(e)-     &c’heb’h(y)- &&2nd& -rá   &-nú\\\cline{1-3}\cline{5-7}
+3rd &\multicolumn{2}{c|}{\it c’hel(ẹ)-} &&3rd& -ḷẹ   &-b’hẹ\\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Imperative affixes.}\label{tab:imperative-affixes}
+\end{table}
+
+\noindent The diachrony of these forms is likely from subjunctive constructions w/ \s{pf} \**que* in the active
+and from suffixed pronouns in the passive. Note that imperative affixes are added *in place* of
+present active/passive affixes, e.g. *c’hedír!* ‘speak!’, not \**c’heḍẹdír*. As usual, the parenthesised
+vowels are omitted if the verb form starts with a vowel, e.g. *c’had’hór!* ‘love!’.
+
+Imperative affixes can be combined with active/passive affixes, though, as usual, an active imperative prefix
+can only be paired with a passive present affix, and vice versa. Active imperative prefixes are always placed
+first, e.g. *c’hevad’hór!* ‘love me!’, and passive affixes are placed last, e.g. *b’had’hórérá* ‘be loved by
+us!’. The negation of the imperative uses the subjunctive and is explained in §~\ref{subsubsec:negated-subjunctive}.
+
 \subsection{Subjunctive}\label{subsec:subjunctive}
 The UF subjunctive forms are fortunately fairly simple: they use the same affixes as the present, past, and future
 forms, except that each verb has a different subjunctive stem as well as a future subjunctive stem; the subjunctive
@@ -986,14 +1025,14 @@ The future subjunctive stem is formed by adding the desinence *-śe* to the end 
 the future stem of *ad’hór* is *ad’hórérẹ́*, so the future subjunctive stem is *ad’hórérẹ́śe*; similarly, the future
 stem of *vvaúríhe* is *vvaúríźe*, so the future subjunctive stem is *vvaúríźeśe*.
 There are several main uses of the UF subjunctive, each of which we shall examine in more detail below:
-\begin{enumerate}\itemsep0pt
+\begin{enum}
 \item in reported speech, e.g. *lladírá vad’hórhé* ‘she said she loved me’;
 \item with certain subordinating conjunctions, such as *b’he* ‘so that’;
-\item to express potential modality, e.g. *ḍẹḅars* ‘you may leave’;
-\item in the first person, as a jussive, e.g. *rad’hesó* ‘let’s go’;
+\item to express deontic modality, e.g. *ḍẹḅars* ‘you may leave’;
+\item as a jussive, e.g. *rad’hesó* ‘let’s go’;
 \item as a negative imperative, e.g. *sá ḍẹḅars* ‘don’t leave’;
-\item irrealis conditionals (see §\ref{subsec:conditionals}).
-\end{enumerate}
+\item irrealis conditionals (see §~\ref{subsec:conditionals}).
+\end{enum}
 
 \subsubsection{Reported Speech}
 UF does not use backshifting in reported speech, but rather, the corresponding subjunctive form is used. For instance,
@@ -1008,29 +1047,47 @@ subjunctive form of *b’had’hrẹ́*.
 
 \subsubsection{Dependent Clauses}
 The following subordinating conjunctions take the subjunctive:
-\dlabelstyle{\bfseries\itshape} %% TODO: Create a two-column description list environment.
 \TwoCols[.45\hsize][.45\hsize] {
-\begin{description}\itemsep0pt
+\begin{dlist}[\bfseries\itshape]
     \item[áhaúr] ‘even though’
     \item[ḅas] ‘because’
     \item[b’he] ‘so that’
-    \item[c’haúr] ‘as’
+    \item[c’haúr] ‘as’ (viz. ‘because’)
     \item[daúc’h] ‘therefore’
     \item[de] ‘once’
-\end{description}
+\end{dlist}
 } {
-\begin{description}\itemsep0pt
+\begin{dlist}[\bfseries\itshape]
     \item[ráhẹ] ‘though’
     \item[rê] ‘although’
-    \item[s] ‘if’ (see §\ref{subsec:conditionals})
+    \item[s] ‘if’ (see §~\ref{subsec:conditionals})
     \item[sá] ‘without’
     \item[sauc’h] ‘except that’
     \item[váłé] ‘despite that’
-\end{description}
+\end{dlist}
 }
 
 \noindent Note that not all subordinating conjunctions take the subjunctive. For instance, the conjunction *y’is*
 ‘because’ takes the indicative: *jḍad’hórs c’haúr* ‘as I love you’, but *jḍad’hór y’ís* ‘because I love you’.
+
+\subsubsection{Deontic Modality}
+The subjunctive can also be used on its own, in which case it assumes a deontic or jussive meaning;
+in the first person, it is generally a jussive, e.g. *rad’hesó* ‘let’s go’, but the jussive sense is not restricted
+to the first person, e.g. *lẹsyrét’hes* ‘he take care of it’ (in the sense of ‘let him take care of it’).
+
+The deontic sense is also apparent from that last example: *lẹsyrét’hes* can also be interpreted to mean ‘he
+may take care of it’, which can either be a statement of permission or a condescending order. Note that even
+though UF also has a word for ‘let’ (namely *le*), it is mostly used in questions or commands, while the
+deontic subjunctive is used to grant permission.
+
+\subsubsection{Negation}\label{subsubsec:negated-subjunctive}
+The subjunctive is negated with the particle *sá*, rather than with *asý’ýâ*. The particle *sá* is placed
+immediately before the verb form it negates, e.g. *sá jḍad’hórs c’haúr* ‘as I don’t love you’. It is reduced
+to *s’* before vowels, but interestingly, it does not cause nasalisation in that case, e.g. *s’aúsydíssâ c’haúr*
+‘as we didn’t say it’.
+
+On its own, the negated subjunctive is used to express a negative imperative in the second and third person,
+e.g. *sá ḍẹḅars* ‘don’t leave’, and a negative jussive in the first person e.g. *sá rad’hesó*, ‘let’s not go’.
 
 \subsection{Optative}\label{subsec:optative}
 

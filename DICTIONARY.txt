@@ -36,7 +36,7 @@ ad’hór|v. tr.|adore|1. To love, adore.\
 
 aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
-dír|v. tr.|dire|To say, tell|\s{fut} *dírẹ́*
+dír|v. tr.|dire|To say, tell|\s{fut} *dírẹ́*, \s{subj} *díss*
 vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*
 y’ír|v. (in)tr.|ouïr|To hear, understand, listen
 Cár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
@@ -106,7 +106,7 @@ b’he|conj.|envers|+\s{subj} To, so as to, in order to, so that. *Commonly encl
     ***’b’h*** *after vowels*
 ḅarḍ|v.|partir| To leave, go away, depart|\s{fut} *ḅarẹ́*, \s{subj} *ḅars*
 ad’he|v.|vader|To go|\s{fut} *ad’hrẹ́*, \s{subj} *ad’hes*
-sá|particle|sans|Not, no. *Commonly s’\N before words starting with a variant of ‘a’ or ‘e’. \
+sá|particle|sans|Not, no. *Always s’\N before vowels. \
     This particle is used only in the subjunctive; see also* ***asý’ýâ***
 s|conj.|si|If, when, whenever
 c’haúr|conj.|\pfabbr car + comme|+\s{subj} As, because, since
@@ -125,7 +125,8 @@ rê|conj.|\pfabbr bien que|+\s{subj} Although, though
 daúc’h|conj.|donc|+\s{subj} So, therefore, thus
 ḅas|conj.|parce que|+\s{subj} Because *(often used to explain motivation rather than cause as in \
     ‘We did that because\ldots’)*
-
+le|v.|\pfabbr laisser {\nf (> \**lehe*)}|*(chiefly in questions or imperative)* To let, allow, permit|\
+    \s{fut} *lere*, \s{subj} *les*
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long
@@ -140,6 +141,8 @@ ráhe|n.|oiseau|Bird
 ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
 raúl|n.|parole|1. Language, speech, word 2. **Rául** *definite only* Short for *T’hebhaú Rául* *(\s{nom\
     sg} irreg.* **Rául***; all other forms are regular)*
+rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
+
 
 # From Étienne.
 Eḍy’ê|n.||*male given name, equivalent to English ‘Ste\-phen’*
@@ -192,6 +195,8 @@ eḍ|v. irreg. |être|To be|*active only*.                                  \
     \s{inf} *ét’hẹd*
 
 
+
+s’ > sá
 
 ’sý’ýâ > asý’ýâ
 
