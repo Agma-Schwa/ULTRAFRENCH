@@ -85,7 +85,7 @@ ab’haḍ|v.|abattre|1. To cut down, fell, knock down, shoot down. 2. To butche
 árb|n.|arbre|Tree
 ac|n.|hache|Axe, hatchet
 asý’ýâ|particle|\pfabbr pas absolument|Not, no. *Commonly* ***’sý’ýâ*** *after vowels. This \
-    particle is used only in the indicative; see also* ***sá***
+    particle is used only in the indicative; see also* ***sá****, ****t’hé***
 c’hd’hal|adv.|\pfabbr que dalle|Naught, absolutely nothing
 jávé|adv.|jamais|Never, at no time
 ráv́â|adv.|rarement|Seldom, rarely (ever)
@@ -107,7 +107,7 @@ b’he|conj.|envers|+\s{subj} To, so as to, in order to, so that. *Commonly encl
 ḅarḍ|v.|partir| To leave, go away, depart|\s{fut} *ḅarẹ́*, \s{subj} *ḅars*
 ad’he|v.|vader|To go|\s{fut} *ad’hrẹ́*, \s{subj} *ad’hes*
 sá|particle|sans|Not, no. *Always s’\N before vowels. \
-    This particle is used only in the subjunctive; see also* ***asý’ýâ***
+    This particle is used only in the subjunctive; see also* ***asý’ýâ****, ****t’hé***
 s|conj.|si|If, when, whenever
 c’haúr|conj.|\pfabbr car + comme|+\s{subj} As, because, since
 y’ís|conj.|puisque|Considering that, since, because *(unlike* **c’haúr***, this does not take \
@@ -125,8 +125,21 @@ rê|conj.|\pfabbr bien que|+\s{subj} Although, though
 daúc’h|conj.|donc|+\s{subj} So, therefore, thus
 ḅas|conj.|parce que|+\s{subj} Because *(often used to explain motivation rather than cause as in \
     ‘We did that because\ldots’)*
-le|v.|\pfabbr laisser {\nf (> \**lehe*)}|*(chiefly in questions or imperative)* To let, allow, permit|\
+le|v.|\pfabbr laisser {\nf > \**lehe*}|*(chiefly in questions or imperative)* To let, allow, permit|\
     \s{fut} *lere*, \s{subj} *les*
+auha|conj.|\pfabbr au cas où|+\s{opt} In case
+ab’há|conj.|\pfabbr avant que|+\s{opt} Before
+ḅré|conj.|\pfabbr après que|+\s{opt} After
+t’hé|conj.|\pfabbr de peur que {\nf > \**dbhýrc’h* > \**dýrc’h* > \**dc’hý* > \**t’hé*}|Not, no. \
+    *Always t’h’\N before vowels. \
+    This particle is used only in the optative; see also* ***asý’ýâ****, ****sá***
+jys|conj.|\pfabbr jusqu'à ce que|+\s{opt} Until
+ávrê|conj.|\pfabbr à moins que|+\s{opt} Unless
+úrbh|conj.|\pfabbr pour peu que|+\s{opt} Provided that, so long as
+sit’há|conj.|\pfabbr si tant est que|+\s{opt} Supposing that; if, assuming that
+fahaú|conj.|\pfabbr de façon que|+\s{opt} In such a way that
+véhýr|conj.|\pfabbr dans la mesure où|Insofar as
+
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long
