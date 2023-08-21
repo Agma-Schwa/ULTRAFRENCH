@@ -106,7 +106,7 @@ b’he|conj.|envers|+\s{subj} To, so as to, in order to, so that. *Commonly encl
     ***’b’h*** *after vowels*
 ḅarḍ|v.|partir| To leave, go away, depart|\s{fut} *ḅarẹ́*, \s{subj} *ḅars*
 ad’he|v.|vader|To go|\s{fut} *ad’hrẹ́*, \s{subj} *ad’hes*
-sá|particle|sans|Not, no. *Always s’\N before vowels. \
+sá|particle|sans|Not, no. *Always s’ before vowels. \
     This particle is used only in the subjunctive; see also* ***asý’ýâ****, ****t’hé***
 s|conj.|si|If, when, whenever
 c’haúr|conj.|\pfabbr car + comme|+\s{subj} As, because, since
@@ -139,6 +139,10 @@ jys|conj.|\pfabbr jusqu'à ce que|+\s{opt} Until
 sit’há|conj.|\pfabbr si tant est que|+\s{opt} Supposing that; if, assuming that
 fahaú|conj.|\pfabbr de façon que|+\s{opt} In such a way that
 véhýr|conj.|\pfabbr dans la mesure où|Insofar as
+sḅé|v.|espérer|+\s{opt} To wish, want, desire|\s{fut} *sḅérẹ́*, \s{subj} *sḅés*
+rêd|v.|craindre|+s{opt} To fear, lest \ldots *(construed with the negated optative)*|\s{fut} \
+    *rêdrẹ́*, \s{subj} *rês*
+
 
 
 rá|v.|grand|Big, large, great

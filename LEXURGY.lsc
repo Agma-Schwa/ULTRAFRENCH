@@ -43,6 +43,7 @@ Prelim:
   Then: ʁ => ɰ
   Then: @c => * / $ _ @c
   Then: @c => * / @c _ $
+  Then: {e, ẽ, ɛ, ɛ̃} => * / $ _ @c
   Then: k => x
   Then: xɥ => ɕ
   Then: {ʃ, ʃʶ, ʒ, ʒʶ} => {ɕ, ɕʶ, ʑ, ʑʶ}
