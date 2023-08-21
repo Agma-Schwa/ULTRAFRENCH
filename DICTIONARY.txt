@@ -93,7 +93,7 @@ y’é|adv.|rien|Nothing
 au|conj.|aussi|And, also, as well, too
 eċ|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
-ânb’hé|adv.|\pfabbr en effet\nf, via metathesis from \**ânéb’he*|Verily, indeed, in fact
+ânb’hé|adv.|\pfabbr en effet\nf, via metathesis from \**âné\-b’he*|Verily, indeed, in fact
 y’ŷ|prefix|mieux|*Affirming comparative prefix. See grammar*
 lẹ|prefix|plus|*Denying comparative prefix. See grammar*
 rê|prefix|moins|*Neutral comparative prefix. See grammar*

@@ -102,9 +102,15 @@ struct entry {
         if (std::holds_alternative<std::u32string>(data)) {
             fmt::print("\\refentry{{{}}}{{{}}}\n", s, to_utf8(std::get<std::u32string>(data)));
         } else {
+            auto& parts = std::get<std::vector<std::u32string>>(data);
+            usz i = 0;
             fmt::print("\\entry{{{}}}", s);
-            for (const auto& part : std::get<std::vector<std::u32string>>(data)) fmt::print("{{{}}}", to_utf8(part));
-            for (usz i = std::get<std::vector<std::u32string>>(data).size() + 1; i < 5; i++) fmt::print("{{}}");
+            for (; i < parts.size(); i++) {
+                /// If the first part contains no spaces, insert \pfabbr.
+                if (i == 1 and not parts[i].contains(U' ')) fmt::print("{{\\pfabbr {}}}", to_utf8(parts[i]));
+                else fmt::print("{{{}}}", to_utf8(parts[i]));
+            }
+            for (; i < 5; i++) fmt::print("{{}}");
             fmt::print("\n");
         }
     }
