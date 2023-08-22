@@ -9,6 +9,7 @@
 \usepackage{float}
 \usepackage{tabularray}
 \usepackage{graphicx}
+\usepackage{wasysym}
 
 \setmainfont[Numbers=OldStyle]{Minion 3}
 \setmathfont{latinmodern-math.otf}
@@ -1043,6 +1044,7 @@ There are several main uses of the UF subjunctive, each of which we shall examin
 \item as a jussive, e.g. *rad’hesó* ‘let’s go’;
 \item as a negative imperative, e.g. *sá ḍẹḅars* ‘don’t leave’;
 \item irrealis conditionals (see §~\ref{subsec:conditionals}).
+\item in ACIs and PCIs.
 \end{enum}
 
 \subsubsection{Reported Speech}
@@ -1099,6 +1101,14 @@ to *s’* before vowels, but interestingly, it does not cause nasalisation in th
 
 On its own, the negated subjunctive is used to express a negative imperative in the second and third person,
 e.g. *sá ḍẹḅars* ‘don’t leave’, and a negative jussive in the first person e.g. *sá rad’hesó*, ‘let’s not go’.
+
+\subsubsection{Infinitive}
+Most curiously, UF has a *subjunctive infinitive*. This form is almost exclusively used to express deontic modality
+in ACIs and PCIs. For example, the form *dad’hórs*, the subjunctive infinitive of *ad’hór*, while defying any attempt
+at translation on its own,\footnote{The best attempt one could make to translate this would be something along the
+lines of ‘to should love’, but that is not exactly grammatical in English.} can be translated as ‘should’ when combined
+with an \s{acc} or \s{part}, e.g. *sráhó dad’hórs* roughly means ‘that fish should love’, though this form can only
+occur as the complement of a verb.
 
 \subsection{Optative}\label{subsec:optative}
 The UF optative is used to express wishes, hopes, as well as in certain conditional constructions. It is formed
@@ -1392,7 +1402,8 @@ By default, the particle is placed right after the verb:
     ‘We have not felled them with an axe.’
 }
 
-In case of a fronted constituent, the particle is placed after that constituent:
+In case of a fronted constituent in an independent clause (but not in dependent clauses), the particle is
+placed after that constituent:
 \gloss {
     B’hehýnác asý’ýâ aúlýab’hat’hâ.
     b’hehýn-ác|asý’ýâ|aú-lý-ab’ha\Sl t’hâ.
@@ -1552,23 +1563,40 @@ Notes:
 \subsubsection{I Don’t Think This Warrants Explaining}
 {\itshape\bfseries
 Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’e sab’héy’. Ez lé-el lalebet’he z’ihór bet’hê rêsol daudé.
-
+Ýab’héy’ rêd’hes lab’hóy’ejú, dŷna c’haúr debauhib sá lasusy’és ýrâhe lasyrrájú.
 }
 
 \gloss {
-    słé-rá| ḍẹ| c’hóný| áb’hásy’ô| ráy’ê| y’aúhý| ḍ-ís
-    \s{cons.pl}-law|all|well.known|\s{gen}\Sl aviation|way|there.is.no|\s{inf-subj}\Sl can
+    słé-rá| ḍẹ| c’hóný| áb’hásy’ô| ráy’ê| y’aúhý| ḍ-ís | dy-b’hóy’ẹ
+    \s{cons.pl}-law|all|well.known|\s{gen}\Sl aviation|way|there.is.no|\s{inf-subj}\Sl can| \s{part}-to.fly
 }
 
 \gloss {
-    dy-b’hóy’ẹ | s-ab’héy’ |ez |lé-el | la-lẹ-bet’hẹ|z’
-    \s{part}-to.fly|\s{acc.indef}-bee|its|\s{nom.pl}-wing|\s{3pl-aff.comp}-be.small|its
+   s-ab’héy’ |ez |lé-el | la-lẹ-bet’hẹ|z’ | ihór | bet’hê
+   \s{acc.indef}-bee|its|\s{nom.pl}-wing|\s{3pl-aff.comp}-be.small|its| \s{acc}\Sl body| be.small\Sl\s{part}
 }
 
 \gloss {
-    ihór | bet’hê | rê-sol | ḍ-auḍé
-    \s{acc}\Sl body| be.small\Sl\s{part}|\s{abl}-soil|\s{inf}-obtain
+    rê-sol | ḍ-auḍé |ý-ab’héy’|rêd’hes|la-b’hóy’ẹ-jú|dŷn-a|c’haúr
+    \s{abl}-soil|\s{inf}-obtain |\s{nom.pl.indef}-bee|of.course|\s{3n.pl}-fly-\s{gn}|\s{part}-what|as
 }
+
+\gloss {
+    dẹ-ḅauhib|sá|la-susy’é\Sl s|ý-râhẹ|la-sy-rrá-jú
+    \s{inf}-be.impossible|not|\s{3n.pl}-care.about\Sl \s{subj}|\s{nom.pl.indef}-human|\s{3n.pl}-\s{3n.pass}-believe-\s{gn}
+}
+
+
+\medskip\noindent
+‘According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too
+small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care
+what humans think is impossible.’
+
+\medskip\noindent
+Literal translation: ‘According to all known laws of aviation, there is no way that a bee should be capable of flight.\footnote{
+Note that UF here uses the verbal noun *b’hóy’ẹ* ‘to fly’ as a noun to mean ‘flight’.}
+Its wings are too small for its little body to obtain [distance] from the ground. Of course, bees fly [anyway], as
+they do not care about what humans believe to be impossible.
 
 %% NOTES:
 %% ‘ez’: its, her, his. Before a word that starts w/ a vowel, this becomes *z* (e.g. **ez ihór* > *z’ihór*).
@@ -1590,15 +1618,6 @@ Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’
 %% ‘-t’he’, FUT ‘-ḍe’, SUBJ ‘t’hes’ is a productive word formation suffix that can be used to
 %% turn a noun into a verb that roughly means ‘to use that thing’. E.g. ac ‘axe’ -> act’he  ‘roughly: to use
 %% an axe’.
-
-\medskip\noindent
-‘According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too
-small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care
-what humans think is impossible.’
-
-\medskip\noindent
-Literal translation: ‘According to all known laws of aviation, there is no way that a bee should be capable of flight.
-Its wings are too small for its little body to obtain [distance] from the ground.
 
 
 

@@ -10,6 +10,7 @@
 #include <vector>
 
 namespace rgs = std::ranges;
+namespace vws = std::ranges::views;
 
 #define DICT_FILE "DICTIONARY.txt"
 

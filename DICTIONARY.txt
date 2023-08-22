@@ -142,8 +142,12 @@ véhýr|conj.|\pfabbr dans la mesure où|Insofar as
 sḅé|v.|espérer|+\s{opt} To wish, want, desire|\s{fut} *sḅérẹ́*, \s{subj} *sḅés*
 rêd|v.|craindre|+s{opt} To fear, lest \ldots *(construed with the negated optative)*|\s{fut} \
     *rêdrẹ́*, \s{subj} *rês*
-
-
+rêd’hes|particle|\pfabbr bien sûr|Of course, certainly, surely
+râhẹ|n.|Français|Human, person
+fẹhab|v.|faisable|To be possible, feasible|\s{fut} *fẹhabre*, \s{subj} *fẹhas*
+sauz|n.|chose|Thing, object
+rrá|v.|croire|Believe (something or someone)|\s{fut} *rrẹ́*, \s{subj} *rrás*
+ḅauhib|v.|impossible|To be impossible, unfeasible|\s{fut} *ḅauhibre*, \s{subj} *ḅauhibes*
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long
@@ -159,7 +163,8 @@ ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
 raúl|n.|parole|1. Language, speech, word 2. **Rául** *definite only* Short for *T’hebhaú Rául* *(\s{nom\
     sg} irreg.* **Rául***; all other forms are regular)*
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
-
+susy’é|v.|soucier|+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
+a|pron. indef.|quoi|What, which, that *(relative pronoun)*
 
 # From Étienne.
 Eḍy’ê|n.||*male given name, equivalent to English ‘Ste\-phen’*
