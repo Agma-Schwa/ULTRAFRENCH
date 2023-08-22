@@ -2,8 +2,8 @@
 #include <clopts.hh>
 #include <ranges>
 #include <string>
-#include <unicode/translit.h>
 #include <unicode/stringoptions.h>
+#include <unicode/translit.h>
 #include <unicode/unistr.h>
 #include <utils.hh>
 #include <variant>
@@ -13,8 +13,6 @@ namespace rgs = std::ranges;
 namespace vws = std::ranges::views;
 
 #define DICT_FILE "DICTIONARY.txt"
-
-static icu::Transliterator* normaliser;
 
 void trim(std::u32string& s) {
     while (s.back() == ' ') { s.pop_back(); }
@@ -52,34 +50,18 @@ auto to_utf8(std::u32string_view sv) -> std::string {
     return result;
 }
 
-class line_buffer {
-    std::u32string_view text;
-    usz pos;
+namespace detail {
+using namespace command_line_options;
+using options = clopts< // clang-format off
+    option<"--dict", "The file to process", file<>>,
+    option<"-i", "Convert text to IPA">,
+    help<>
+>; // clang-format on
+}
+using detail::options;
 
-public:
-    line_buffer(std::u32string_view text)
-        : text{text}
-        , pos{0} {}
-    void operator()(std::u32string& line) {
-        /// Return empty line if we’re at the end.
-        if (pos == std::u32string::npos) return;
-
-        /// Find next line break. If there is none, return the rest.
-        auto line_break = text.find('\n', pos);
-        if (line_break == std::u32string::npos) {
-            line += text.substr(pos);
-            pos = std::u32string::npos;
-        }
-
-        /// Otherwise, return the line and advance the position.
-        else {
-            line += text.substr(pos, line_break - pos);
-            pos = line_break + 1;
-        }
-    }
-
-    explicit operator bool() const { return pos != std::u32string::npos; }
-};
+namespace dictionary {
+static icu::Transliterator* normaliser;
 
 struct entry {
     /// Headword.
@@ -123,17 +105,38 @@ private:
     }
 };
 
-int main(int argc, char** argv) {
-    using namespace command_line_options;
-    using options = clopts< // clang-format off
-        positional<"file", "The file to process", file<>, true>,
-        help<>
-    >; // clang-format on
+class line_buffer {
+    std::u32string_view text;
+    usz pos;
 
-    /// Read file.
-    options::parse(argc, argv);
+public:
+    line_buffer(std::u32string_view text)
+        : text{text}
+        , pos{0} {}
+    void operator()(std::u32string& line) {
+        /// Return empty line if we’re at the end.
+        if (pos == std::u32string::npos) return;
 
-    /// Get NFKD normaliser.
+        /// Find next line break. If there is none, return the rest.
+        auto line_break = text.find('\n', pos);
+        if (line_break == std::u32string::npos) {
+            line += text.substr(pos);
+            pos = std::u32string::npos;
+        }
+
+        /// Otherwise, return the line and advance the position.
+        else {
+            line += text.substr(pos, line_break - pos);
+            pos = line_break + 1;
+        }
+    }
+
+    explicit operator bool() const { return pos != std::u32string::npos; }
+};
+
+void generate() {
+    fmt::print(stderr, "[ULTRAFRENCHER] Generating dictionary...\n");
+
     UErrorCode err{U_ZERO_ERROR};
     normaliser = icu::Transliterator::createInstance(
         "NFKD; [:M:] Remove; NFC; Lower;",
@@ -144,7 +147,7 @@ int main(int argc, char** argv) {
 
     /// Convert text to u32.
     std::u32string text;
-    auto us = icu::UnicodeString::fromUTF8(options::get<"file">()->contents);
+    auto us = icu::UnicodeString::fromUTF8(options::get<"--dict">()->contents);
     text.resize(usz(us.length()));
     auto sz = us.toUTF32(reinterpret_cast<UChar32*>(text.data()), i32(text.size()), err);
     if (U_FAILURE(err)) die("Failed to convert text to UTF-32: {}", u_errorName(err));
@@ -219,4 +222,17 @@ int main(int argc, char** argv) {
         return a.nfkd == b.nfkd ? a.word < b.word : a.nfkd < b.nfkd;
     });
     for (auto&& entry : entries) entry.print();
+}
+} // namespace dictionary
+
+namespace ipa {
+void translate() {
+    std::string_view text = *options::get<"-i">();
+}
+}
+
+int main(int argc, char** argv) {
+    options::parse(argc, argv);
+    if (options::get<"--dict">()) dictionary::generate();
+    else if (options::get<"-i">()) ipa::translate();
 }

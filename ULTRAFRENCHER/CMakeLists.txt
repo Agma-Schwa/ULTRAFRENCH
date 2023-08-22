@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(gendict VERSION 0.1.0 LANGUAGES CXX)
+project(ULTRAFRENCHER VERSION 0.1.0 LANGUAGES CXX)
 
 ## ============================================================================
 ##  Global CMake Variables.
@@ -196,7 +196,7 @@ if (EXISTS ${PROJECT_SOURCE_DIR}/include)
 endif()
 
 ## Add the executable.
-add_executable(gendict ${sources})
+add_executable(ULTRAFRENCHER ${sources})
 
 ## Link ICU.
-target_link_libraries(gendict PRIVATE options icui18n icuuc icudata)
+target_link_libraries(ULTRAFRENCHER PRIVATE options icui18n icuuc icudata)

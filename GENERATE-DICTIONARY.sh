@@ -2,4 +2,4 @@
 
 set -eu
 
-./gendict/gendict DICTIONARY.txt > DICTIONARY.tex
+./ULTRAFRENCHER/ULTRAFRENCHER --dict DICTIONARY.txt > DICTIONARY.tex
