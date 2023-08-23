@@ -38,14 +38,13 @@ Prelim:
   Then: j => ɥ
   Then: ɰ => ɥ / _ i
   Then: ʁʁ => ʀ
-  Then: {sʁ, ʃʁ, zʁ, ʒʁ} => {sʶ, ʃʶ, zʶ, ʒʶ}
-  Then: vʁ => vʶ
   Then: ʁ => ɰ
   Then: @c => * / $ _ @c
   Then: @c => * / @c _ $
   Then: {e, ẽ, ɛ, ɛ̃} => * / $ _ @c
   Then: k => x
   Then: xɥ => ɕ
+  Then: {sɰ, ʃɰ, zɰ, ʒɰ, vɰ} => {sʶ, ʃʶ, zʶ, ʒʶ, vʶ}
   Then: {ʃ, ʃʶ, ʒ, ʒʶ} => {ɕ, ɕʶ, ʑ, ʑʶ}
   Then: nt => nθ
   Then: t => d2

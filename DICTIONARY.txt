@@ -149,6 +149,10 @@ sauz|n.|chose|Thing, object
 rrá|v.|croire|Believe (something or someone)|\s{fut} *rrẹ́*, \s{subj} *rrás*
 ḅauhib|v.|impossible|To be impossible, unfeasible|\s{fut} *ḅauhibre*, \s{subj} *ḅauhibes*
 C’hebèc’h|n.|Québec|The Promised Land
+ḅaú|n.|pont|Bridge
+áȷ́éd|v.|enjoindre|To order, enjoin, command
+fér|v.|faire|To do, make, build, construct, erect|\s{fut} *fẹ́*, \s{subj} *fés*
+sav́á|v.|savoir|To know|\s{fut} *saúr*, \s{subj} *sac*
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long
