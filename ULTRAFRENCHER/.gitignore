@@ -5,8 +5,7 @@
 
 ## Build files.
 out/
-gendict
-gendict.exe
+ULTRAFRENCHER
 
 ## Valgrind.
 callgrind.out.*

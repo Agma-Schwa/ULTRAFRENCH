@@ -148,6 +148,7 @@ fẹhab|v.|faisable|To be possible, feasible|\s{fut} *fẹhabre*, \s{subj} *fẹ
 sauz|n.|chose|Thing, object
 rrá|v.|croire|Believe (something or someone)|\s{fut} *rrẹ́*, \s{subj} *rrás*
 ḅauhib|v.|impossible|To be impossible, unfeasible|\s{fut} *ḅauhibre*, \s{subj} *ḅauhibes*
+C’hebèc’h|n.|Québec|The Promised Land
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long
