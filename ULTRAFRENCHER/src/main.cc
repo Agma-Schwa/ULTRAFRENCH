@@ -383,13 +383,15 @@ void translate() {
             case U'x':
                 break;
 
-            /// Collapse whitespace.
+            /// Collapse whitespace and convert '|' to a space as well
+            /// since we use it to separate words in glosses.
             case U' ':
             case U'\t':
             case U'\v':
             case U'\f':
             case U'\n':
             case U'\r':
+            case U'|':
                 while (it.is_any(ws)) it++;
                 ipa += U' ';
                 break;

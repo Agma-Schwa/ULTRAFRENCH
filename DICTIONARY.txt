@@ -70,7 +70,7 @@ c’hóný|adj.|connu|Known, familiar, well-known
 y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pfabbr il y a aucun|There is, there are
 ráy’ê|n.|moyen|1. Way, means, method. 2. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
-ub’hrá|v.|pouvoir|1. To be able to, can. 2. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} *ís*
+ub’hrá|v.|pouvoir|1. +\s{inf} To be able to, can. 2. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} *ís*
 ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
 ez-|pron.|ses|Its, her, his, their
@@ -90,7 +90,7 @@ c’hd’hal|adv.|\pfabbr que dalle|Naught, absolutely nothing
 jávé|adv.|jamais|Never, at no time
 ráv́â|adv.|rarement|Seldom, rarely (ever)
 y’é|adv.|rien|Nothing
-au|conj.|aussi|And, also, as well, too
+au|conj.|aussi|1. And, also, as well, too 2. *au* ... *au* ... ‘both ... and ...’
 eċ|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
 ânb’hé|adv.|\pfabbr en effet\nf, via metathesis from \**âné\-b’he*|Verily, indeed, in fact
@@ -153,9 +153,42 @@ C’hebèc’h|n.|Québec|The Promised Land
 áȷ́éd|v.|enjoindre|To order, enjoin, command
 fér|v.|faire|To do, make, build, construct, erect|\s{fut} *fẹ́*, \s{subj} *fés*
 sav́á|v.|savoir|To know|\s{fut} *saúr*, \s{subj} *sac*
+ré|v.|vrai|To be true, correct, right|\s{fut} *rẹ́*, \s{subj} *rés*
+aû|particle|non|Not- *(used to negate nouns)*
+fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} *faure*, \s{subj} *faus*
+R|adj.|{\nf from} ré|*(logic)* True, $\top$
+F|adj.|{\nf from} fẹ|*(logic)* False, $\bot$
+rár|v.|voir|To see|\s{fut} *b’hérẹ́*, \s{subj} *rárs*
+rát’hẹ|particle|vois-tu|You see, you know
+ré|n.|rai|Ray, beam
+fèhẹ|n.|faisceau|1. Bundle, bunch, cluster. 2. Beam, ray
+laut’h|v.|flotter|Float, hover, levitate|\s{fut} *laut’hre*, \s{subj} *laut’hes*
+ḅáłýr|n.|parleur|Speaker, interlocutor
+deslẹ|v.|déceler|To detect, discover, uncover, reveal|\s{fut} *deslẹre*, \s{subj} *deslẹs*
+yt’hiy’ihẹ|v.|utiliser|+\s{part} *(archaic)* To use, make use of|\s{fut} *yt’hiy’iźe*, \
+    \s{subj} *yt’hiy’ihẹs*
+t’hiy’e|v.|{\nf from} yt’hiy’ihẹ|+\s{part} To use, make use of|\s{fut} *t’hiźe*, \s{subj} \
+    *(via back-formation from the \s{fut})* \s{t’hizes}
+ulíy’ẹ́|v.|oublier|To forget|\s{fut} *ulíy’ẹ́rẹ́*, \s{subj} *ulíy’ẹ́s*
+y’ẹ́|v.|nier|To forbid, deny|\s{fut} *y’ẹ́rẹ́*, \s{subj} *y’ẹ́s*
+sérḍé|det.|certain|Certain, particular but not specified
+sisḍé|n.|système|System
+véhýr|v/n.|mesure|1. To measure, 2. Measurement|\s{fut} *véhýrẹ́*, \s{subj} *véhýrs*
+vé|conj.|mais|But, however, although
+c’haúḅrâd|v.|+\s{part} To comprehend, understand, grasp|\s{fut} *c’haúḅrâdrẹ́*, \s{subj} *c’haúḅrâs*
+ḍúr|adv.|toujours|1. *(in positive context)* Always. 2. *(in negative context)* Still
+c’haúbhausy’ô|n.|composition|Composition, arrangement, structure
+vísy’ô|n.|émission|1. Emission. 2. Programme, broadcast, show
+swi|det.|celui|The one, that one, this one
+sẹh|pro.|ceci|+\s{def} *noun* This, these *(precedes and is attached to nouns)*
+sý’ẹ|pro.|cela|+\s{def} *noun* That, those *(precedes and is attached to nouns; generally*\
+    **sý’** *before vowels, with one apostrophe, not two)*
+
+
+
 
 rá|v.|grand|Big, large, great
-laú|v.|long|Long
+laú|v.|long|Long *(often in compounds* **laú-** *‘long-’)*
 lár|v.|large|Wide, broad
 ebhẹ|v.|épais|To be thick|\s{fut} ebhrẹ, \s{subj} ebhes
 lúr|v.|lourd|To be bulky, oversized, heavy
