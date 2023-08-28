@@ -183,6 +183,23 @@ swi|det.|celui|The one, that one, this one
 sẹh|pro.|ceci|+\s{def} *noun* This, these *(precedes and is attached to nouns)*
 sý’ẹ|pro.|cela|+\s{def} *noun* That, those *(precedes and is attached to nouns; generally*\
     **sý’** *before vowels, with one apostrophe, not two)*
+lývy’ér|n.|lumière|Light
+saúr|n.|sorte|1. Kind, sort, type 2. \s{def + gen} (some) kind(s) of
+lec’hḍraúvnẹ́t’hic’h|v.|électromagnétique|To be electromagnetic|\s{fut} *lec’hḍraúvnẹ́t’hic’hre*, \
+    \s{subj} *lec’hḍraúvnẹ́t’hic’hes*
+nérjẹ|n.|énergie|Energy
+árḍihyl|n.|particule|Particle
+c’hesse|||*contraction of* **c’hes** *+* **se** Is it? *(Also substituted for other forms of to \
+    be in questions, particularly for the plural neuter)*
+aud|adj.|autre|Other, another
+sauz-aud|adj.|\pfabbr autre chose|Something else, another thing
+rét’hád|v.|prétendre|To claim, allege|\s{fut} *rét’hádrẹ́*, \s{subj} *rét’hádes*
+dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used when talking about\
+    concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts\
+    or parts of objects)*|\s{fut} *dónrẹ́*, \s{subj} *dónés*
+ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebhat’hic’hre*, \s{subj} \
+    *ḍeý’ebhat’hic’hes*
+c’habhahit’hẹ|n.|capacité|Skill, capacity, ability
 
 
 
@@ -244,7 +261,7 @@ T’hebhaú Rául|n. def. sg. (only {\nf T’hebhaú} is declined as though the 
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|*active only*.                                  \
-    \s{\textbf{pres:} sg} *vy’í*, *ḍe*, *le*, *lle*, *s*;                \
+    \s{\textbf{pres:} sg} *vy’í*, *ḍe*, *le*, *lle*, *se*;               \
     \s{pl} *aúsó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*;                     \
     \s{inf} *éḍ*.                                                        \
     \s{\textbf{pres ant:} sg} *vẹ*, *ḍyf*, *leb’h*, *lleb’h*, *seb’h*;   \
@@ -255,6 +272,7 @@ eḍ|v. irreg. |être|To be|*active only*.                                  \
     \s{inf} *ét’hẹd*
 
 
+sauzaud > sauz-aud
 
 s’ > sá
 
@@ -264,6 +282,6 @@ s’ > sá
 
 vá > rvá
 
-vy’í, ḍe, le, lle, s, aúsó, b’heḍ, lẹsó, llẹsó, lasó, éḍ, \
+vy’í, ḍe, le, lle, se, aúsó, b’heḍ, lẹsó, llẹsó, lasó, éḍ, \
     vẹ, ḍyf, leb’h, lleb’h, seb’h, aúfý, b’hu, lẹfýr, llẹfýr, lafýr, éfyḍ, \
     vet’h, ḍet’h, let’h, llet’h, set’h, weḍy’ó, b’heḍy’é, let’he, llet’he, laet’h, ét’hẹd > eḍ
