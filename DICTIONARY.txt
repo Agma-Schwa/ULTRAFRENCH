@@ -200,6 +200,7 @@ dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used 
 ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebhat’hic’hre*, \s{subj} \
     *ḍeý’ebhat’hic’hes*
 c’habhahit’hẹ|n.|capacité|Skill, capacity, ability
+sáhẹ|v.|insensé|To be preposterous, absurd, nonsensical|\s{fut} *sáhere*, \s{subj} *sáhes*
 
 
 
@@ -215,8 +216,8 @@ eḍrrá|v.|étroit|Pointy
 c’hánár|n.|canard|Ship, boat
 ráhe|n.|oiseau|Bird
 ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
-raúl|n.|parole|1. Language, speech, word 2. **Rául** *definite only* Short for *T’hebhaú Rául* *(\s{nom\
-    sg} irreg.* **Rául***; all other forms are regular)*
+raúl|n.|parole|1. Language, speech, word 2. **Raúl** *definite only* Short for *T’hebhaú Raúl* *(\s{nom\
+    sg} irreg.* **Raúl***; all other forms are regular)*
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
 susy’é|v.|soucier|+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
 a|pron. indef.|quoi|What, which, that *(relative pronoun)*
@@ -254,9 +255,9 @@ vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pfabbr ve
 râdrásôn|v.|\pfabbr prendre ses jambe à son cou|To run|\s{fut} *râdrásônre*, \s{subj} *râdrásôns*
 t’hebhaúz|v.|\pfabbr jeter l’éponge|To be French| \s{fut} *t’hebhaúźe*, \s{subj} *t’hebhaúś*
 T’hebhaú|n. or adj.|{\nf from} t’hebhaúz|France, French
-T’hebhaú Rául|n. def. sg. (only {\nf T’hebhaú} is declined as though the entire phrase were one word)\
-    |{\nf from} t’hebhaúz + rául|The Ultrafrench language *(in informal speech and writing, this is\
-    typically shortened to* **Raúl***)*|\s{nom sg} *T’hebhaú Rául* *(regular in all other cases)*
+T’hebhaú Raúl|n. def. sg. (only {\nf T’hebhaú} is declined as though the entire phrase were one word)\
+    |{\nf from} t’hebhaúz + raúl|The Ultrafrench language *(in informal speech and writing, this is\
+    typically shortened to* **Raúl***)*|\s{nom sg} *T’hebhaú Raúl* *(regular in all other cases)*
 
 
 # To be is a rather complicated entry.
