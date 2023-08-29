@@ -250,7 +250,7 @@ static constexpr char32_t Diaeresis = U'̈';
 static constexpr char32_t DotBelow = U'̣';
 
 static constexpr std::u32string_view apos = U"'`’";
-static constexpr std::u32string_view ws = U" \t\v\f\n\r";
+static constexpr std::u32string_view ws = U" \t\v\f\n\r|";
 
 class iterator {
     const char32_t* it;
