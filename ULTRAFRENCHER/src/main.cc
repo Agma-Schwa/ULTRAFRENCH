@@ -377,6 +377,12 @@ void translate() {
             case U'\\':
                 break;
 
+            /// Skip these in the middle of words.
+            case U'\'':
+            case U'`':
+            case U'’':
+                break;
+
             /// Skip letters that are not part of the language.
             case U'g':
             case U'm':
@@ -629,14 +635,16 @@ void translate() {
                 if (it.consume(Acute)) ipa += U'ʶ';
                 break;
 
-            default:
+            default: {
+                std::u32string s;
+                s += c;
                 fmt::print(
                     stderr,
                     "[ULTRAFRENCHER] Warning: unsupported character U+{:04X}: {}\n",
                     u32(c),
-                    u32(c)
+                    to_utf8(s)
                 );
-                break;
+            } break;
         }
     }
 
