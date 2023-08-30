@@ -6,9 +6,13 @@
     ///
     /// $r = red
     /// $u = blue (MTG moment, I know)
+    /// $g = green
+    /// $y = yellow
+    /// $v = purple
+    /// $n = navy (blue)
+    /// $o = orange
     /// $a = active ($r + $s)
     /// $p = passive ($u + $s)
-    /// $n = reset all
     /// $b = bold
     /// $i = italic
     /// $s = small-caps
@@ -47,14 +51,6 @@
                     break;
                 }
 
-                if (v[i + 1] == 'n') {
-                    while (spans_to_close) {
-                        output_text += '</span>';
-                        spans_to_close--;
-                    }
-                    break;
-                }
-
                 output_text += '<span class="';
                 switch (v[++i]) {
                     case 'r':
@@ -63,6 +59,26 @@
 
                     case 'u':
                         output_text += 'blue';
+                        break;
+
+                    case 'g':
+                        output_text += 'green';
+                        break;
+
+                    case 'y':
+                        output_text += 'yellow';
+                        break;
+
+                    case 'v':
+                        output_text += 'purple';
+                        break;
+
+                    case 'o':
+                        output_text += 'orange';
+                        break;
+
+                    case 'n':
+                        output_text += 'navy';
                         break;
 
                     case 'b':

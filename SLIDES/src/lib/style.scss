@@ -30,6 +30,26 @@ html {
     color: royalblue;
 }
 
+.green {
+    color: forestgreen;
+}
+
+.yellow {
+    color: goldenrod;
+}
+
+.purple {
+    color: indigo;
+}
+
+.orange {
+    color: lighten(saddlebrown, 25%);
+}
+
+.navy {
+    color: navy;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -81,8 +101,16 @@ html {
     font-size: 1.5rem;
 }
 
+.font25 {
+    font-size: 1.375rem;
+}
+
 .font2 {
     font-size: 1.25rem;
+}
+
+.font15 {
+    font-size: 1.125rem;
 }
 
 .font1 {
