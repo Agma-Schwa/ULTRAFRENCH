@@ -211,6 +211,18 @@ cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, on
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pfabbr livre + bouquin|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} *áv́áy’érẹ́*, \s{subj} *áv́áy’és*
+Sásc’hríḍ|n.|Sanskrit|The Sanskrit language
+baú|v. irreg.|bon|1. To be good, well. 2. To be right, correct, appropriate|\s{fut} *baúrẹ́*, \
+    \s{subj} *véy’ýrs*; \s{comp} *lẹvéy’ýr*, *y’ŷvéy’ýr*, *rêvéy’ýr*; \s{sup} *révéy’ýr*, \
+    *râdvâvéy’ýr*
+vaúb’hẹ|v. irreg.|mauvais|1. To be bad 2. To be wrong, incorrect, inappropriate|\s{fut} \
+    *bíré*, \s{subj} *bíres*; \s{comp} *lẹbír*, *y’ŷbír*, *rêbír*; \
+    \s{sup} *réb’hír*, *râdvâbír*
+
+# One of the ';' here requires a manual italic correction.
+ḅẹt’hẹ|v. irreg.|petit|To be small, little|\s{fut} *rêdẹ́*, \s{subj} *ḅẹt’hes*; \s{comp} \
+    *lẹrêd*, *y’ŷrêd*, *rêrêd*; \s{sup} *rérêd*, *râdvârêd*
+
 
 
 
@@ -219,7 +231,6 @@ laú|v.|long|Long *(often in compounds* **laú-** *‘long-’)*
 lár|v.|large|Wide, broad
 ebhẹ|v.|épais|To be thick|\s{fut} ebhrẹ, \s{subj} ebhes
 lúr|v.|lourd|To be bulky, oversized, heavy
-ḅẹt’hẹ|v.|petit|To be small, little
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
 c’hánár|n.|canard|Ship, boat
@@ -282,14 +293,14 @@ eḍ|v. irreg. |être|To be|*active only*.                                  \
     \s{inf} *ét’hẹd*
 
 
+véy’ýr > baú
+bír > vaúb’hẹ
+rêd > ḅẹt’hẹ
+
 sauzaud > sauz-aud
-
 s’ > sá
-
 ’sý’ýâ > asý’ýâ
-
 úrẹ́, ís > ub’hrá
-
 vá > rvá
 
 vy’í, ḍe, le, lle, se, aúsó, b’heḍ, lẹsó, llẹsó, lasó, éḍ, \

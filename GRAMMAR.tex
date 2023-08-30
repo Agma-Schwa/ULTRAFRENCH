@@ -22,7 +22,7 @@
 \setmathfont[range=\mathit]{Minion 3 Italic}
 
 %% TODO: Remove this and fix overfull boxes.
-%\hfuzz=10000pt
+\hfuzz=10000pt
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Environment and Layout
@@ -210,9 +210,8 @@
         \end{tabular}
     }
 
-    \quad
+    \space
 }
-
 
 %% Process two lines. Used by \multigloss.
 \cs_new:Npn \__uf_multigloss:NN #1 #2 {
@@ -1565,8 +1564,17 @@ is, after the first *constituent*, not after the first word):
 \gloss {
     St’halẹ c’hes jaċt'hé?
     s\Sl t’halẹ |c’hes |j-aċt'h\Sl é
-    \s{acc.indef}\Sl table|Q|\s{1sg}-buy\Sl\s{3sg.pres.ant}
+    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy\Sl\s{3sg.pres.ant}
     ‘Did I buy a table?’
+}
+
+The exception to this is with forms of *eḍ* ‘to be’, which are typically immediately preceded by
+the question particle, the two forming a single word, placed at the very end of the sentence:
+\gloss {
+    Raúl baú c’hesse?
+    raúl|baú|c’hes|se
+    \s{abs}-language|good|\s{q}|\s{3n}.be
+    ‘Is it a good language?’
 }
 
 Negation is placed in the usual position. A negated question is marked by the negation particle *sý’ýâ*,
@@ -1574,7 +1582,7 @@ and the expected answer is ‘yes’:
 \gloss {
     St’halẹ c’hes jaċt'hé’sý’ýâ?
     s\Sl t’halẹ |c’hes |j-aċt'h\Sl é|’sý’ýâ
-    \s{acc.indef}\Sl table|Q|\s{1sg}-buy\Sl\s{3sg.pres.ant}|not
+    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy\Sl\s{3sg.pres.ant}|not
     ‘Did I not buy a table?’
 }
 
@@ -1585,15 +1593,23 @@ stuttering.
 \gloss {
     St’halẹvá jaċt'hé?
     s\Sl t’halẹ |vá |j-aċt'h\Sl é
-    \s{acc.indef}\Sl table|Q|\s{1sg}-buy\Sl\s{3sg.pres.ant}
+    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy\Sl\s{3sg.pres.ant}
     ‘I bought a table?’
+}
+
+Unlike *c’hes*, this particle remains there even if the verb is *eḍ* ‘to be’:
+\gloss {
+    Raúlvá baú se?
+    raúl|vá|baú|se
+    \s{abs}-language|\s{q}|good|\s{3n}.be
+    ‘It is a good language?’
 }
 
 Of course, these questions can also be negated:
 \gloss {
     St’halẹvá jaċt'hé’sý’ýâ?
     s\Sl t’halẹ |vá |j-aċt'h\Sl é|’sý’ýâ
-    \s{acc.indef}\Sl table|Q|\s{1sg}-buy\Sl\s{3sg.pres.ant}|not
+    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy\Sl\s{3sg.pres.ant}|not
     ‘I didn’t buy a table?’
 }
 
@@ -1615,7 +1631,7 @@ is most commonly used in response to someone else’s statement so as to ask for
 \gloss {
     Jaċt'hévá st’halẹ?
     j-aċt'h\Sl é |vá|s\Sl t’halẹ
-    \s{acc.indef}\Sl table|Q|\s{1sg}-buy\Sl\s{3sg.pres.ant}
+    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy\Sl\s{3sg.pres.ant}
     ‘I \textit{bought} a \textit{table}?!’
 }
 
@@ -1623,7 +1639,7 @@ The same applies to the negated version of such a question:
 \gloss {
     Jaċt'hé’sý’ýâvá st’halẹ?
     j-aċt'h\Sl é |’sý’ýâ|vá|s\Sl t’halẹ
-    \s{acc.indef}\Sl table|not|Q|\s{1sg}-buy\Sl\s{3sg.pres.ant}
+    \s{acc.indef}\Sl table|not|\s{q}|\s{1sg}-buy\Sl\s{3sg.pres.ant}
     ‘I \textit{didn’t} buy a \textit{table}?!’
 }
 
@@ -1793,6 +1809,8 @@ Rub’hráy’ó rát’he au sré au sfèhe laut’hâ adŷbáłýr Áraúl ded
 aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse? Lec’hdraúv\-nét’hic’hâ nérje c’hesse?
 Árdihyl c’hesse? Sauz-aud de c’hesse? Jávé’sý’ýâ jrét’hádé dedónéle dýha\-bha\-hit’he deý’ebhat’hic’hâ Áraúl dybháł.
 Aúrsáheressá. Jdír jys dub’hrá au dylí sýcahý dýbháhe au dylýáv́áy’é b’hýcahý sbáłýr Áraúl.
+
+Lásásc’hríd raúl révéy’ýr c’hesse?
 }
 
 %{\centering\Large
@@ -1830,6 +1848,9 @@ Aúrsáheressá. Jdír jys dub’hrá au dylí sýcahý dýbháhe au dylýáv́�
 
     b’hý\Sl ċahý|s-ḅáłýr|á-raúl
     \s{dat.pl.indef}-each.other|\s{acc.pl.indef}-speaker|\s{gen}-language
+
+    lá-sásc’hríḍ|raúl|ré-véy’ýr|c’hes|se
+    \s{nom}-Sanskrit|\s{abs}.language|\s{sup}-better|\s{q}|\s{3n}.be
 }
 
 
@@ -1839,7 +1860,7 @@ measurement systems, but we still don’t understand the composition of these em
 Electromagnetic energy? A particle? Something else entirely?
 
 ‘I’ve never claimed that speaking ULTRAFRENCH endows you with telepathic abilities. That would be preposterous. I’m just
-saying that ULTRAFRENCH speakers can read each others minds and send thoughts to each other.
+saying that ULTRAFRENCH speakers can read each others minds and send thoughts to each other.{\color{teal}
 
 ‘Is Sanskrit the best language? The robots tell me so. But they are missing out on an essential part of ULTRAFRENCH.
 It’s not racist to say robots are immune to most forms of not-telepathy and the Force. I have several android friends
@@ -1849,7 +1870,7 @@ unfair to compare them because Sanskrit started out as a written language until 
 to “speak” it.
 
 ‘But when you consider the triune nature of ULTRAFRENCH, I think it’s clear that, at least in spoken communication with
-non-android participants, ULTRAFRENCH is the best earth-based language.’
+non-android participants, ULTRAFRENCH is the best earth-based language.’}
 
 \medskip\noindent
 Literal translation: We can, you see, detect both rays and beams of energy floating between speakers of The Language (= UF)
