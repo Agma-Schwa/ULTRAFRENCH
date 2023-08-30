@@ -70,7 +70,10 @@ c’hóný|adj.|connu|Known, familiar, well-known
 y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pfabbr il y a aucun|There is, there are
 ráy’ê|n.|moyen|1. Way, means, method. 2. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
-ub’hrá|v.|pouvoir|1. +\s{inf} To be able to, can. 2. +\s{part} Capable of ..|\s{fut} *úrẹ́*, \s{subj} *ís*
+ub’hrá|v.|pouvoir|1. +\s{inf} To be able to, can. 2. +\s{part} Capable of .. *(***ub’hrá** *is \
+    never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
+    \s{pci}, in which case the variant with the \s{part} is used instead)*\
+    |\s{fut} *úrẹ́*, \s{subj} *ís*
 ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
 ez-|pron.|ses|Its, her, his, their
@@ -180,8 +183,8 @@ c’haúḅrâd|v.|+\s{part} To comprehend, understand, grasp|\s{fut} *c’haú�
 c’haúbhausy’ô|n.|composition|Composition, arrangement, structure
 vísy’ô|n.|émission|1. Emission. 2. Programme, broadcast, show
 swi|det.|celui|The one, that one, this one
-sẹh|pro.|ceci|+\s{def} *noun* This, these *(precedes and is attached to nouns)*
-sý’ẹ|pro.|cela|+\s{def} *noun* That, those *(precedes and is attached to nouns; generally*\
+sẹh|det.|ceci|+\s{def} *noun* This, these *(precedes and is attached to nouns)*
+sý’ẹ|det.|cela|+\s{def} *noun* That, those *(precedes and is attached to nouns; generally*\
     **sý’** *before vowels, with one apostrophe, not two)*
 lývy’ér|n.|lumière|Light
 saúr|n.|sorte|1. Kind, sort, type 2. \s{def + gen} (some) kind(s) of
@@ -201,7 +204,13 @@ dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used 
     *ḍeý’ebhat’hic’hes*
 c’habhahit’hẹ|n.|capacité|Skill, capacity, ability
 sáhẹ|v.|insensé|To be preposterous, absurd, nonsensical|\s{fut} *sáhere*, \s{subj} *sáhes*
-
+jys|adv.|juste|Just, only, merely
+lí|v.|lire|1. +\s{part} To read from. 2. +\s{acc} To peruse, read entirely \
+    |\s{fut} *lírẹ́*, \s{subj} *lís*
+cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, one another
+ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
+liv́uhé|n.|\pfabbr livre + bouquin|Book
+áv́áy’é|v.|envoyer|To send|\s{fut} *áv́áy’érẹ́*, \s{subj} *áv́áy’és*
 
 
 

@@ -21,11 +21,16 @@
 \setmathfont{latinmodern-math.otf}
 \setmathfont[range=\mathit]{Minion 3 Italic}
 
+%% TODO: Remove this and fix overfull boxes.
+%\hfuzz=10000pt
+
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Environment and Layout
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ExplSyntaxOn
 \makeatletter
+
+\cs_generate_variant:Nn \seq_set_split_keep_spaces:Nnn { Nnx }
 
 \def \dlabelstyle #1 {
     \def\descriptionlabel ##1 {\hspace\labelsep \normalfont #1 ##1}
@@ -191,6 +196,65 @@
 
     %% Close the table.
     \__gloss_table_end:
+}
+
+%% Process two words. Used by \multigloss.
+\cs_new:Npn \__uf_multigloss_word:nn #1 #2 {
+    \allowbreak
+
+    \hbox {
+        \begin{tabular}{@{}l}
+            \itshape \tl_rescan:nn {} {#1} \\
+            \noalign{\vskip-6pt}
+            \tl_rescan:nn {} {#2}          \\
+        \end{tabular}
+    }
+
+    \quad
+}
+
+
+%% Process two lines. Used by \multigloss.
+\cs_new:Npn \__uf_multigloss:NN #1 #2 {
+    \ifvmode\noindent\leavevmode\fi
+
+    %% Split the lines into words.
+    \seq_set_split_keep_spaces:Nnx \l_tmpa_seq { | } { #1 }
+    \seq_set_split_keep_spaces:Nnx \l_tmpb_seq { | } { #2 }
+
+    %% Iterate over each word in the two lines.
+    \seq_mapthread_function:NNN \l_tmpa_seq \l_tmpb_seq \__uf_multigloss_word:nn
+}
+
+%% Typeset two-line glosses across multiple lines.
+\NewDocumentCommand \multigloss {
+    > { \exp_args:Nx \SplitList { \iow_char:N \^^M } } +v
+} {
+    \ifvmode\else\unskip\par\fi
+    \begingroup
+    \linespread { 1.5 } \selectfont
+    \raggedright
+    \begin{sloppypar}
+
+    %% Iterate over each line, two lines at a time.
+    \bool_gset_true:N \g_tmpa_bool
+    \tl_map_inline:nn { #1 } {
+        %% Ignore empty lines entirely.
+        \tl_if_blank:nF { ##1 } {
+            \bool_if:NTF \g_tmpa_bool {
+                \tl_gset:Nn \g_tmpa_tl { ##1 }
+            } {
+                \tl_gset:Nn \g_tmpb_tl { ##1 }
+                \__uf_multigloss:NN \g_tmpa_tl \g_tmpb_tl
+            }
+
+            %% Flip.
+            \bool_gset_inverse:N \g_tmpa_bool
+        }
+    }
+
+    \end{sloppypar}
+    \endgroup
 }
 
 \def \footnoterule {
@@ -977,8 +1041,8 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 3rd m &aúrvvaúrízá  &laúvvaúríźaûr    &&3rd m &y’aúrvvaúrízá  &laúvvaúríźér \\\cline{1-3}\cline{5-7}
 3rd f &aúrvvaúrízá  &laúvvaúríźaûr    &&3rd f &y’aúrvvaúrízá  &laúvvaúríźér \\\cline{1-3}\cline{5-7}
 3rd n &aúrvvaúrízá  &laúvvaúríźaûr    &&3rd n &saúrvvaúrízá   &laúvvaúríźér \\\cline{1-3}\cline{5-7}
-Infinitive&\multicolumn{2}{c|}{\it dẹvvaúríźá}&&Infinitive&\multicolumn{2}{c|}{\it haúvvaúríźe}\\\cline{1-3}\cline{5-7}
-Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷr}&&Infinitive&\multicolumn{2}{c|}{\it ávvaúríźý}\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it dẹvvaúríźá}&&Infinitive&\multicolumn{2}{c|}{\it haúvvaúríźá}\\\cline{1-3}\cline{5-7}
+Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷr}&&Infinitive&\multicolumn{2}{c|}{\it ávvaúríźýr}\\\cline{1-3}\cline{5-7}
 \end{tabular}
 \caption{Consonantal Future Anterior Paradigm of *vvaúríhe*.}\label{tab:future-ant-vvaurihe}
 \end{table}
@@ -987,7 +1051,7 @@ Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷr}&&Infinitive&\multicolumn{2}{c|
 The Conditional tenses are fairly simple—so long as you know the Future II and Future Anterior, that is. Both Conditionals
 are formed by adding the *-ss(a)-* infix between the Future II stem and any suffixes. The Conditional I is formed from
 the Future II, and the Conditional II from the Future Anterior. As always, the vowel is omitted if
-the suffix after the infix starts with a vowel. For instance, Table~\ref{tab:cond-ii-vvaurihe}
+the suffix after the infix starts with a vowel, except for *ẹ*, which it replaces. For instance, Table~\ref{tab:cond-ii-vvaurihe}
 below shows the consonantal Conditional II paradigm of *vvaúríhe* ‘to remember’. Note that the *ss* in this form
 are *never* lenited:
 
@@ -1037,7 +1101,7 @@ affixing the following suffixes to the stem.
 \caption{Imperative affixes.}\label{tab:imperative-affixes}
 \end{table}
 
-\noindent The diachrony of these forms is likely from subjunctive constructions w/ \s{pf} \**que* in the active
+\noindent The diachrony of these forms is likely from subjunctive constructions with \s{pf} \**que* in the active
 and from suffixed pronouns in the passive. Note that imperative affixes are added *in place* of
 present active/passive affixes, e.g. *c’hedír!* ‘speak!’, not \**c’heḍẹdír*. As usual, the parenthesised
 vowels are omitted if the verb form starts with a vowel, e.g. *c’had’hór!* ‘love!’.
@@ -1064,7 +1128,7 @@ There are several main uses of the UF subjunctive, each of which we shall examin
 \item as a jussive, e.g. *rad’hesó* ‘let’s go’;
 \item as a negative imperative, e.g. *sá ḍẹḅars* ‘don’t leave’;
 \item irrealis conditionals (see §~\ref{subsec:conditionals}).
-\item in ACIs and PCIs.
+\item in \s{aci}s and \s{pci}s.
 \end{enum}
 
 \subsubsection{Reported Speech}
@@ -1124,7 +1188,7 @@ e.g. *sá ḍẹḅars* ‘don’t leave’, and a negative jussive in the first
 
 \subsubsection{Infinitive}
 Most curiously, UF has a *subjunctive infinitive*. This form is almost exclusively used to express deontic modality
-in ACIs and PCIs. For example, the form *dad’hórs*, the subjunctive infinitive of *ad’hór*, while defying any attempt
+in \s{aci}s and \s{pci}s. For example, the form *dad’hórs*, the subjunctive infinitive of *ad’hór*, while defying any attempt
 at translation on its own,\footnote{The best attempt one could make to translate this would be something along the
 lines of ‘to should love’, but that is not exactly grammatical in English.} can be translated as ‘should’ when combined
 with an \s{acc} or \s{part}, e.g. *sráhó dad’hórs* roughly means ‘that fish should love’, though this form can only
@@ -1218,7 +1282,7 @@ As their names might suggest, the former two are used for nouns that start with 
 that start with a consonant. UF has no morphologically separate articles; rather, the old PF articles have been incorporated
 into the declensions. Furthermore, UF no longer has a gender distinction in nouns.
 
-\subsubsection{Declension}
+\subsubsection{Declension}\label{subsubsec:declension}
 The table below shows the affixes of the definite and indefinite declensions. The declensions are mostly identical,
 except that, as with the conjugation of verbs, the consonantal prefixes often end in a vowel (marked below with
 parentheses), which are not present in the vocalic declension.
@@ -1249,24 +1313,32 @@ Instrumental  & b’hel-  & b’he-   &&Instrumental  & b’hehý(n)- & b’heh-
 \noindent Most of these forms cause lenition in the initial consonant of the noun, e.g. *ḍalẹ* ‘table’ to
 \s{def acc sg} *s’thalẹ*; this lenition is blocked in the \s{indef acc pl} due to the presence of a hypercorrected ‘s’
 in PF \**ces*, e.g. *s’ḍalẹ* ‘the tables (\s{acc})’ (not *s’thalẹ*, which is the singular), as well as in
-less commonly used forms such as the \s{def} inessive *dwáḍalẹ* ‘on the table’.
+less commonly used forms such as the \s{def iness} *dwáḍalẹ* ‘on the table’.
 
 The \s{indef nom sg} *ŷn-* prefix and some other forms nasalise nouns; as a reminder, this means that in
 nouns starting with *ḍ*, the *ḍ* is deleted, e.g. *ŷnalẹ* ‘a table’;
-it causes nasalisation in words that start with a vowel e.g. *ehyó* ‘shield’ to *ŷnéhyó* ‘a shield’. The indefinite vocative
-does not exist, as that would make little sense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef} inessive
+it causes nasalisation in words that start with a vowel e.g. *ehyó* ‘shield’ to *ŷnéhyó* ‘a shield’. The indefinite \s{voc}
+does not exist, as that would make little sense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef iness}
 *dáhŷnḍalẹ* ‘on a table’.
 
-The absolutive case is used for the predicate noun of predicative sentences, e.g. *Aúsó ḍe ráhó* ‘We are all fish’.
-
-The considerative case can be translated as ‘according to’, or ‘in the opinion of’, and is used to express the opinion of
+The \s{abw} case is used for the predicate noun of predicative sentences, e.g. *Aúsó ḍe ráhó* ‘We are all fish’.
+The \s{cons} case can be translated as ‘according to’, or ‘in the opinion of’, and is used to express the opinion of
 the speaker or point out something as an opinion, belief, or hypothesis of someone or something.
+
+Both the \s{part} and the \s{acc} can be used to mark the direct object of a verb; some verbs, e.g. *ub’hrá* ‘to be
+able to’ always take a \s{part}, and some always take an \s{acc}, but for most verbs, the difference is semantic: the
+\s{acc} indicates that an action is being or has been performed in its entirety or to completion, e.g. *jlí sliv́uhé* ‘I peruse
+a book’ vs *jlí dŷnliv́uhé* ‘I read from a book’ or ‘I am reading a book’. Consequently, \s{pres ant}
+forms, which are mainly perfective, generally take the \s{acc}, e.g. *jlíé iliv́uhé* ‘I’ve read the book’, whereas \s{pret} forms,
+which are mainly imperfective, generally take the \s{part}, e.g. *jlíá dyliv́uhé* ‘I was reading (from) the book’.
+
 
 The *d* in the \s{def abl sg} is omitted if the noun starts with a consonant, e.g. *rêḍalẹ* ‘from the table’; be careful
 especially with words that start with *s*, whose \s{abl sg} is often mistaken for a plural, e.g. *rêsol* ‘from the floor’,
 but *rêssol* ‘from the floors’.
 
-The diachrony of these forms is mostly from the PF definite and indefinite pronouns, though some forms, such as the
+The diachrony of these forms is mostly from the PF definite and indefinite pronouns as well as from PF prepositions, though
+some forms, such as the
 accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite
 partitive forms are from the PF partitive article, and
 the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
@@ -1334,7 +1406,7 @@ neutral comparative. Note that *ré* lenites, whereas *râdvâ* does not. Thus, 
 *râdvâḅẹt’hâ* ‘smallest’.
 
 \subsubsection{Constructions}
-The comparative can be used together with an infinitive, ACI, or PCI. The affirming comparative here has the meaning
+The comparative can be used together with an infinitive, \s{aci}, or \s{pci}. The affirming comparative here has the meaning
 of ‘too X to \ldots’, and the denying comparative has the meaning of ‘not X enough to \ldots’. A good illustrative
 example of this is the following UF proverb:
 
@@ -1348,6 +1420,9 @@ example of this is the following UF proverb:
 \footnotetext{This is a very common proverb (often also just \textit{láráhó slẹlúr} ‘The fish is too bulky’)
 and roughly means that something has gone too far or gone on for too long (‘Now you’ve done it’ or ‘Now
 it’s too late’). Variations of it exists; in the optative, for instance, this proverb means ‘Let’s not overdo this’.}
+
+\subsection{Summary of Coalescence Rules}
+TODO
 
 \section{Syntax}\label{sec:syntax}
 UF syntax is unfortunately complicated in what morphological constructs are used in what situations, and
@@ -1556,8 +1631,8 @@ Note the order of particles: negation precedes the question particle. Placing th
 makes it sound like you’re trying to correct yourself from *Jaċt'hévá* to *Jaċt'hé’sý’ýâ*.
 
 \subsection{ACI and PCI}
-The term ACI is Latin for *accūsātīvus cum īnfīnītīvō* ‘accusative with infinitive’. As the name would suggest, this
-grammatical construction consists of a dependent clause formed by an accusative noun together with an infinitive; the
+The term \s{aci} is Latin for *accūsātīvus cum īnfīnītīvō* ‘accusative with infinitive’. As the name would suggest, this
+grammatical construction consists of a dependent clause formed by an \s{acc} noun together with an infinitive; the
 noun is the subject or object of the clause, and the infinitive the predicate. This construction is most well-known
 from Classical languages such as Latin or Ancient Greek, but it is also found in various other languages, including
 English and, of course, UF:
@@ -1569,12 +1644,12 @@ English and, of course, UF:
 }
 
 In this sentence, the matrix clause is *Lácár láȷ́éd’há* ‘Charles ordered’, and the dependent clause is formed by
-the ACI *sbhaú àfér* ‘a bridge to be built’. Since ‘a bridge’ is the object in this case, the passive infinitive
-is used. Observe how this sentence’s translation also uses an ACI with a passive infinitive in both English (‘Charles
+the \s{aci} *sbhaú àfér* ‘a bridge to be built’. Since ‘a bridge’ is the object in this case, the passive infinitive
+is used. Observe how this sentence’s translation also uses an \s{aci} with a passive infinitive in both English (‘Charles
 ordered a bridge to be built’) as well as Latin (*Carolus pontem fierī iussit*).
 
 UF does not have a word for ‘that’ as in ‘I think that \ldots’ or ‘I know that \ldots’; instead, it uses
-ACIs in these cases. Just how multiple ‘that’ clauses can be chained in English, so can multiple ACIs in UF.
+\s{aci}s in these cases. Just how multiple ‘that’ clauses can be chained in English, so can multiple \s{aci}s in UF.
 \gloss {
     Icár sbhaú àfér dáȷ́édá jsav́á.
     i\Sl c̣ár| s\Sl bhaú| à-fér| d-áȷ́éd-á |j-sav́á
@@ -1582,19 +1657,20 @@ ACIs in these cases. Just how multiple ‘that’ clauses can be chained in Engl
     ‘I know that Charles ordered a bridge to be built.’
 }
 
-When multiple ACIs are chained together, they are nested such that accusative comes first and the infinitive
-last or vice versa, and any nested ACIs are placed inbetween; observe that, in the sentence above, the ACI
+When multiple \s{aci}s are chained together, they are nested such that \s{acc} comes first and the infinitive
+last or vice versa, and any nested \s{aci}s are placed inbetween; observe that, in the sentence above, the \s{aci}
 *sbhaú àfér* ‘a bridge to be built’ is nested inside *Icár dáȷ́édá* ‘Charles to have ordered’. The literal
 translation of this sentence would thus be ‘I know Charles to have ordered a bridge to be built’.
 
-Furthermore, note that the finite verb of the matrix clause of an ACI receives only a subject marker if the
-ACI is the object and vice versa. Thus, we have *jsav́á* ‘I know’ in the example above instead of e.g.
+Furthermore, note that the finite verb of the matrix clause of an \s{aci} receives only a subject marker if the
+\s{aci} is the object and vice versa. Thus, we have *jsav́á* ‘I know’ in the example above instead of e.g.
 *jssav́á* ‘I know it’. It *would* be possible to add the object marker in the example above, but it would
 sound a bit strange, roughly ‘I know it: that Charles ordered a bridge to be built’, and the verb would
 probably have to be fronted for the sentence to make sense that way.
 
-In addition to ACIs, UF also has PCIs, which use the *partitive* case instead. The partitive generally indicates
-that an action is incomplete, and thus PCIs can be used to express something similar; for instance:
+In addition to \s{aci}s, UF also has \s{pci}s, which use the *\s{part}* case instead. The \s{part} generally indicates
+that an action is incomplete (see §~\ref{subsubsec:declension}), and thus \s{pci}s can be used to express something similar;
+for instance:
 \gloss {
     Lácár dŷnbaú àfér láȷ́éd’há.
     lá\Sl c̣ár| dŷn-ḅaú| à-fér| l-áȷ́éd’h\Sl á
@@ -1603,12 +1679,31 @@ that an action is incomplete, and thus PCIs can be used to express something sim
 }
 
 The translation of the sentence above isn’t the best, but we start to run into a problem here, since UF uses
-ACIs and PCIs much more prolifically than English does. A somewhat literal translation of this sentence would be
+\s{aci}s and \s{pci}s much more prolifically than English does. A somewhat literal translation of this sentence would be
 something along the lines of ‘Charles ordered the building of a bridge to be started’, but it isn’t perfect
 either since ‘building’ is a gerund but in the sentence above, it’s an infinitive. In modern English, there simply
 is no good literal translation for this sentence that preserves the passive infinitive.
 
-Finally, note that ‘that’ is not always expressed with an ACI or PCI. Certain verbs, e.g. verbs of fearing, may
+When dealing with \s{aci}s and \s{pci}s that involve verbs that also take \s{acc} and \s{part} arguments, respectively, or
+other infinitives which do, one must be careful not to construct garden-path sentences. For instance, take *\textbf{sḅáłýr}
+sýċahý dýbháhẹ dylí \textbf{dub’hrá}*. Here, the \s{pci} is marked in bold, and the intended meaning is ‘for speakers to be
+able to read each other’s thoughts’. Unfortunately, however, ‘read’ also takes a \s{part} here, and thus, it is
+possible to construct a different \s{pci}, namely *\textbf{sḅáłýr} sýċahý dýbháhẹ \textbf{dylí} dub’hrá* ‘for speakers
+to read each other’s thoughts’, and *dub’hrá* ‘to be able to’ is awkwardly left hanging at the end of the sentence.
+
+To fix this problem, rearrange the sentence so the infinitive of the \s{aci} or \s{pci} is placed first and put the verbs of any
+enclosed verb phrases first in those phrases to indicate that any immediately following \s{acc} or \s{part} nouns are part
+of that verb rather than of the \s{aci} or \s{pci}: *\textbf{dub’hrá} dylí sýċahý dýbháhẹ \textbf{sḅáłýr}*.
+This rule is sometimes intentionally subverted in cases where the double meaning is desirable, or in poetry, where word order
+is a lot looser, but it would be very awkward to do so in prose.
+
+In speech, this problem is more readily solved via intonation by placing emphasis and separating the ‘contents’ of the
+\s{aci} or \s{pci} from the infinitive and noun with short pauses, e.g. *\textbf{sḅáłýr} {\nf ‖} sýċahý dýbháhẹ dylí
+{\nf ‖} \textbf{dub’hrá}*.
+
+Whenever a word is marked as taking an \s{aci} in the dictionary, it may also take a \s{pci} instead if
+that makes sense semantically; there are no words that syntactically may take an \s{aci}, but not a \s{pci}.
+Finally, note that ‘that’ is not always expressed with an \s{aci} or \s{pci}. Certain verbs, e.g. verbs of fearing, may
 take a dependent clause in the subjunctive or optative instead (see §§~\ref{subsec:subjunctive},~\ref{subsec:optative}).
 
 \subsection{Conditionals}\label{subsec:conditionals}
@@ -1622,7 +1717,7 @@ and apodosis, in the appropriate tense. The protasis is generally introduced by 
     ‘If *r* is true, then not-*r* is false.’\footnotemark
 }
 
-\footnotetext{UF does not use the letters *p* and *q*, and thus, discussions of propositional logic in UF tend to
+\footnotetext{UF does not use the letters *p* or *q*, and thus, discussions of propositional logic in UF tend to
 use *r* and *t* instead. *s* is not used either so as to not confuse it with *s* ‘if’.}
 
 Potential conditionals indicate that something is possible or could happen in the present or future (but *not* in
@@ -1697,6 +1792,7 @@ they do not care about what humans believe to be impossible.
 Rub’hráy’ó rát’he au sré au sfèhe laut’hâ adŷbáłýr Áraúl dedesle, s aút’hiy’ey’ó sývéhýr dýhisdé sérdé laúây’êr;
 aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse? Lec’hdraúv\-nét’hic’hâ nérje c’hesse?
 Árdihyl c’hesse? Sauz-aud de c’hesse? Jávé’sý’ýâ jrét’hádé dedónéle dýha\-bha\-hit’he deý’ebhat’hic’hâ Áraúl dybháł.
+Aúrsáheressá. Jdír jys dub’hrá au dylí sýcahý dýbháhe au dylýáv́áy’é b’hýcahý sbáłýr Áraúl.
 }
 
 %{\centering\Large
@@ -1704,41 +1800,38 @@ aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô.
 %\par
 %}
 
+\multigloss {
+    r-ub’hrá-y’ó|rát’hẹ|au|s-ré|au|s-fèhẹ|laut’h-â
+    \s{1pl}-can-\s{1pl}|you.see|and|\s{acc.pl.indef}-ray|\s{and}|\s{acc.pl.indef}-beam|float-\s{ptcp}
 
-\gloss {
-   r-ub’hrá-y’ó|rát’hẹ|au|s-ré|au|s-fèhẹ|laut’h-â
-   \s{1pl}-can-\s{1pl}|you.see|and|\s{acc.pl.indef}-ray|\s{and}|\s{acc.pl.indef}-beam|float-\s{ptcp}
-}
-
-\gloss {
     aḍŷ-ḅáłýr|á-raúl|dẹ-deslẹ|s|aú-t’hiy’e-y’ó|sý-véhýr
     \s{interess.pl.indef}-speaker|\s{gen}-language|\s{inf}-detect|if|\s{1pl}-use-\s{1pl}|\s{gen.pl.indef}-measure
-}
 
-\gloss {
     dý\Sl hisḍé|sérḍé|laú|â-y’\Sl ệr|aú-c’haúḅrâd-y’ó
     \s{part.pl.indef}\Sl system|certain|long|\s{ptcp.pass}-forbid\Sl \s{ptcp.pres.ant}|\s{1pl}-understand-\s{1pl}
-}
 
-\gloss {
     ’sý’ýâ|vé|ḍúr|dy\Sl haúbhausy’ô|sẹh|abh-vísy’ô|sý-lývy’ér|saúr|c’hes
     not|but|still|\s{part}\Sl composition|this|\s{gen.pl}-emission|\s{gen.indef}-light|\s{abs}.kind|\s{q}
-}
 
-\gloss {
     se|lec’hḍraúvnẹ́t’hic’h-â|nérjẹ|c’hes|se|árḍihyl|c’hes|se|sauz
     \s{3n}.be|electromagnetic-\s{ptcp}|\s{energy}.\s{abs}|\s{q}|\s{3n}.be|particle.\s{abs}|\s{q}|\s{3n}.be|\s{abs}.thing
-}
 
-\gloss {
     aud|ḍẹ|c’hes|se|jávé|’sý’ýâ|j-rét’hád-é|dẹ-dónẹ́-ḷẹ
     other|entire|\s{q}|\s{3n}.be|never|not|\s{1sg}-claim-\s{pres.ant}|\s{inf}-endow-\s{3.dat}
-}
 
-\gloss {
     dý\Sl habhahit’hẹ|ḍeý’ebhat’hic’h-â|á-raúl|dy\Sl bháł
     \s{part.pl.indef}\Sl ability|be.telepathic-\s{ptcp}|\s{gen}-language|\s{part}\Sl speak
+
+    aúr-sáhere-ss\Sl a|j-dír|jys|d-ub’hrá|au|dy-lí
+    \s{3n.fut.ii}-be.preposterous.\s{fut}-\s{cond}\Sl \s{circ}|\s{1sg}-say|only|\s{inf}-can|and|\s{part}-read
+
+    sý\Sl ċahý|dý\Sl bháhẹ|au|dy-lý-áv́áy’é
+    \s{gen.pl.indef}-each.other|\s{part.pl.indef}-thought|and|\s{part}-\s{3pl.pass}-send
+
+    b’hý\Sl ċahý|s-ḅáłýr|á-raúl
+    \s{dat.pl.indef}-each.other|\s{acc.pl.indef}-speaker|\s{gen}-language
 }
+
 
 \medskip\noindent
 ‘You see, we can detect rays and beams of energy floating between ULTRAFRENCH speakers if we use certain long-forbidden
@@ -1763,10 +1856,12 @@ Literal translation: We can, you see, detect both rays and beams of energy float
 if we use certain systems of measurement long-forbidden; we still don’t understand, however, the composition of these
 emissions. Is it some kind of light? Is it electromagnetic energy? Is it a particle? Is it something else entirely?
 I’ve never claimed that [the mere act of]\footnote{The
-speaker uses a PCI (*dybháł*) instead of an ACI (*ibháł*) for ‘speaking’ here; had they used an ACI, the meaning would be closer to ‘the act
+speaker uses a \s{pci} (*dybháł*) instead of an \s{aci} (*ibháł*) for ‘speaking’ here; had they used an \s{aci}, the meaning would be closer to ‘the act
 of “fully speaking” the language’, as in, speaking and understanding it in its entirety. Thus, the speaker implicates that
 it is not the mere act of making utterances in UF (*Áraúl dybháł*), but rather speaking and comprehending it in its entirety (*Áraúl ibháł*)
 that gives rise to telepathic abilities.} the speaking of The Language endows them with telepathic abilities.
+It would be preposterous. I’m only saying that speakers of The Language can both read each other’s thoughts\footnote{In, UF ‘to
+read someone’s mind’ is expressed as ‘to read someone’s thoughts’.} and send them to each other.
 
 %% NOTES:
 %% ‘ez’: its, her, his. Before a word that starts w/ a vowel, this becomes *z* (e.g. **ez ihór* > *z’ihór*).
@@ -1785,13 +1880,13 @@ that gives rise to telepathic abilities.} the speaking of The Language endows th
 %%
 %% Tous les 36 du mois -> Include the ‘36’ in the word!
 %%
-%% Comparative + ACI: ‘too X to...’. With negation ‘Not X enough to ...’.
+%% Comparative + \s{aci}: ‘too X to...’. With negation ‘Not X enough to ...’.
 %%
 %% The PF infinitive endings -ir, -er, etc. are often dropped to form the base form (e.g. auḍé < *auḅḍénír).
 %%
 %% Adjectives are not declined and follow the noun they modify.
 %%
-%% Word order for ACIs puts the infinitive at the very beginning and the accusative at the very end, or vice versa,
+%% Word order for \s{aci}s puts the infinitive at the very beginning and the accusative at the very end, or vice versa,
 %%   and everything that belongs to that phrase inbetween.
 %%
 %% ‘-t’he’, FUT ‘-ḍe’, SUBJ ‘t’hes’ is a productive word formation suffix that can be used to

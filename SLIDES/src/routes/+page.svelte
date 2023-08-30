@@ -70,6 +70,6 @@
 <!-- Negated Optative Conditional II of a Ditransitive Verb, because that’s a thing -->
 <CentrePage>
     <Text v="$6$i<$nt’h’><$raûnraû><$usy><$yy’ẹ>dón<$gr>ẹ́$<$oss><$raúrâ><$vb’hẹ>"/>
-    <Text v="<$s$nneg&bsol;><$a1pl.fut.ant-><$p3n.pass-><$y$sopt->endow$s$g.fut<$o-cond.ii><$a-circ><$v-2.dat>" classes="closer font25"/>
+    <Text v="<$s$nneg&bsol;><$a1pl.fut.ant-><$p3n.pass-><$y$sopt->endow$s$g.fut<$o-cond><$a-circ><$v-2.dat>" classes="closer font25"/>
     <Text v="<$iroughly:> ‘If only we had not endowed you with it’" classes="font15" />
 </CentrePage>
