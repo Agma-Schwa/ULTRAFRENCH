@@ -87,8 +87,8 @@ c’hýr|n.|corps|Heart
 ab’haḍ|v.|abattre|1. To cut down, fell, knock down, shoot down. 2. To butcher, cut apart violently|\s{fut} *ab’haḍrẹ́*, \s{subj} *ab’has*
 árb|n.|arbre|Tree
 ac|n.|hache|Axe, hatchet
-asý’ýâ|particle|\pfabbr pas absolument|Not, no. *Commonly* ***’sý’ýâ*** *after vowels. This \
-    particle is used only in the indicative; see also* ***sá****, ****t’hé***
+asý’ýâ|particle|\pfabbr pas absolument|Not, no. *Commonly* ***’sý’ýâ*** *after vowels and \
+    verbs This particle is used only in the indicative; see also* ***sá****, ****t’hé***
 c’hd’hal|adv.|\pfabbr que dalle|Naught, absolutely nothing
 jávé|adv.|jamais|Never, at no time
 ráv́â|adv.|rarement|Seldom, rarely (ever)
@@ -187,7 +187,7 @@ sẹh|det.|ceci|+\s{def} *noun* This, these *(precedes and is attached to nouns)
 sý’ẹ|det.|cela|+\s{def} *noun* That, those *(precedes and is attached to nouns; generally*\
     **sý’** *before vowels, with one apostrophe, not two)*
 lývy’ér|n.|lumière|Light
-saúr|n.|sorte|1. Kind, sort, type 2. \s{def + gen} (some) kind(s) of
+saúr|n.|sorte|1. Kind, sort, type, form 2. \s{def + gen} (some) kind(s) of
 lec’hḍraúvnẹ́t’hic’h|v.|électromagnétique|To be electromagnetic|\s{fut} *lec’hḍraúvnẹ́t’hic’hre*, \
     \s{subj} *lec’hḍraúvnẹ́t’hic’hes*
 nérjẹ|n.|énergie|Energy
@@ -202,6 +202,7 @@ dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used 
     or parts of objects)*|\s{fut} *dónrẹ́*, \s{subj} *dónés*
 ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebhat’hic’hre*, \s{subj} \
     *ḍeý’ebhat’hic’hes*
+ḍeý’ebhat’hẹ|n.|télépathie|Telepathy
 c’habhahit’hẹ|n.|capacité|Skill, capacity, ability
 sáhẹ|v.|insensé|To be preposterous, absurd, nonsensical|\s{fut} *sáhere*, \s{subj} *sáhes*
 jys|adv.|juste|Just, only, merely
@@ -223,7 +224,24 @@ vaúb’hẹ|v. irreg.|mauvais|1. To be bad 2. To be wrong, incorrect, inappropr
 ḅẹt’hẹ|v. irreg.|petit|To be small, little|\s{fut} *rêdẹ́*, \s{subj} *ḅẹt’hes*; \s{comp} \
     *lẹrêd*, *y’ŷrêd*, *rêrêd*; \s{sup} *rérêd*, *râdvârêd*
 
-
+raúb’hẹ|n.|robot|Robot
+vâhẹ|v.|manquer|1. +\s{gen} To lack, want. 2. +\s{part} *or* \s{pass} To miss *(the object and \
+    subject of this verb are \
+    swapped compared to English ‘to miss’, e.g.* **b’hývvâhé** *(\s{2pl.act} + \s{1sg.pass}) \
+    ‘I miss you (\s{pl})’, lit. roughly ‘you (\s{pl}) are wanting to me’)*. 3. +\s{acc} To \
+    miss out on|\s{fut} *vâhérẹ́*, \s{subj} *vâhés*
+ḅárḍẹ|n.|partie|Part, portion, piece, faction of a whole
+sásy’él|v.|essentiel|To be essential|\s{fut} *sásy’élẹ́*, \s{subj} *sásy’éls*
+ráhis|v.|raciste|To be racist|\s{fut} *ráhise*, \s{subj} *ráhiss*
+ab’hèc’h|v.|affecter|+\s{acc} To affect, influence|\s{fut} *ab’hèc’hre*, \s{subj} *ab’hèc’hes*
+vú|adj.|moult|Many, much, a lot of
+faúr|n.|force|1. Force, strength, power. 2. \s{def} *(science fiction)* The Force
+b’hýlnẹ́r|v.|invulnérable|+\s{instr} To be incapable of being affected by, \
+    invulnerable to|\s{fut} *b’hýlnẹ́rẹ́*, \s{subj} *b’hýlnẹ́rs*
+u|conj.|ou|1. Or *(inclusive, see also* **ra***)*. 2. **u** \ldots\ **u** \ldots\ ‘\ldots\ or \
+    \ldots’ *(inclusive)*
+ra|conj.|\pfabbr swa (> \**rá*)|1. Or *(exclusive, see also*~**u***)*. 2. **u**/**ra** \
+    \ldots\ **ra** \ldots\ ‘either \ldots\ or \ldots’ *(exclusive)*
 
 
 rá|v.|grand|Big, large, great
