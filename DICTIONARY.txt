@@ -178,7 +178,8 @@ sérḍé|det.|certain|Certain, particular but not specified
 sisḍé|n.|système|System
 véhýr|v/n.|mesure|1. To measure, 2. Measurement|\s{fut} *véhýrẹ́*, \s{subj} *véhýrs*
 vé|conj.|mais|But, however, although
-c’haúḅrâd|v.|+\s{part} To comprehend, understand, grasp|\s{fut} *c’haúḅrâdrẹ́*, \s{subj} *c’haúḅrâs*
+c’haúḅrâd|v.|comprendre|+\s{part} To comprehend, understand, grasp|\s{fut} *c’haúḅrâdrẹ́*, \
+    \s{subj} *c’haúḅrâs*
 ḍúr|adv.|toujours|1. *(in positive context)* Always. 2. *(in negative context)* Still
 c’haúbhausy’ô|n.|composition|Composition, arrangement, structure
 vísy’ô|n.|émission|1. Emission. 2. Programme, broadcast, show
@@ -200,9 +201,9 @@ rét’hád|v.|prétendre|To claim, allege|\s{fut} *rét’hádrẹ́*, \s{subj} 
 dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used when talking about\
     concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts\
     or parts of objects)*|\s{fut} *dónrẹ́*, \s{subj} *dónés*
-ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebhat’hic’hre*, \s{subj} \
+ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebhat’hic’hre*, \s{subj} \
     *ḍeý’ebhat’hic’hes*
-ḍeý’ebhat’hẹ|n.|télépathie|Telepathy
+ḍeý’ebhat’hẹ|n.|télépathie|Telepathy
 c’habhahit’hẹ|n.|capacité|Skill, capacity, ability
 sáhẹ|v.|insensé|To be preposterous, absurd, nonsensical|\s{fut} *sáhere*, \s{subj} *sáhes*
 jys|adv.|juste|Just, only, merely

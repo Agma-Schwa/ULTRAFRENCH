@@ -17,19 +17,19 @@
     /// $i = italic
     /// $s = small-caps
     /// q = Close span.
-    /// $X<...> = $X applied to ... only.
-    /// $1-$9 = font size 1-9vw
+    /// <$X...> = $X applied to ... only.
+    /// $1-$9 = font size 1-9
     let output_text = '';
     let spans_to_close = 0;
     let groups: number[] = [];
     for (let i = 0; i < v.length; i++) {
         switch (v[i]) {
-            case 'q':
+/*            case 'q':
                 if (spans_to_close) {
                     output_text += '</span>';
                     spans_to_close--;
                 }
-                break;
+                break;*/
 
             case '<':
                 groups.push(spans_to_close);

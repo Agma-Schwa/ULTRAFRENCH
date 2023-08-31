@@ -1,8 +1,9 @@
 <script>
     import Page from "./Page.svelte";
+    export let classes = '';
 </script>
 
-<Page>
+<Page classes={classes}>
     <div class="centred vcenter">
         <slot />
     </div>

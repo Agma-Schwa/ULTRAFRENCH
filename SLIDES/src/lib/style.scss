@@ -12,6 +12,7 @@
     --frenchblue: #5252ea;
     --frenchwhite: white;
     --frenchred: #f16767;
+    --frenchred-dark: #B32F38;
     --font: "Minion 3", serif
 }
 
@@ -139,4 +140,8 @@ html {
         var(--frenchred) 66.6666%,
         var(--frenchred) 100%
     );
+}
+
+.no-box-shadow {
+    box-shadow: none !important;
 }

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg" gradientTransform="rotate(35 .5 .5)">
+            <stop offset="0%" stop-color="#5252ea" />
+            <stop offset="33.33333%" stop-color="#5252ea" />
+            <stop offset="33.33333%" stop-color="white" />
+            <stop offset="66.66666%" stop-color="white" />
+            <stop offset="66.66666%" stop-color="#f16767" />
+            <stop offset="100%" stop-color="#f16767" />
+        </linearGradient>
+    </defs>
+
+    <!-- using my linear gradient -->
+    <rect width="16" height="9" fill="url(#bg)" />
+</svg>
