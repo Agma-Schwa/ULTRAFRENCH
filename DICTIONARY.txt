@@ -264,6 +264,24 @@ vás|n. \s{pl def}|masses|The masses, the people
 nór|adj.|\nf{back-formation from} \**nórâ* \s{from} \pfabbr *ignorant*|To be ignorant, \
     unaware, oblivious
 séy’ẹ́|v.|essayer|+\s{part} *or* \s{inf} To try, attempt|\s{fut} *séy’ẹ́rẹ́*, \s{subj} *séy’ẹ́s*
+c’hóhid’hẹ́|v.|considérer|1. +\s{part} To consider, think about, ponder. 2. +\s{acc} To think \
+    through|\s{fut} *c’hóhid’hẹ́rẹ́*, \s{subj} *c’hóhid’hés*
+nát’hýr|n.|nature|1. *(chiefly)* \s{indef} Nature, the natural world. 2. \s{def} The way \
+    something is
+rê|v.|trine|To be composed of three parts or people; triune|\s{fut} *rêrẹ́*, \s{subj} *rês*
+laúrvé|conj.|{\nf from} *laúrs* + *vé*|*(contraction)* But when *(stressed on the first \
+    syllable)*
+râsír|v.|transpirer|+\s{aci} 1. To come to light, become known, transpire. \
+    2. \s{pres ant} For it to be clear, apparent, evident that \ldots\ *(lit. \
+    ‘it has come to light that \ldots’)*|\s{fut} *râsírẹ́*, \s{subj} *râsírs*
+c’hóvníc’h|v.|communiquer|1. To communicate (+\s{instr} with \ldots). 2. Communication|\s{fut} \
+    *c’hóvníc’hre*, \s{subj} *c’hóvníc’hes*
+ḅárḍihibhá|n.|participant|Participant
+dývrê|particle|du moins|At least *(as in e.g. ‘At least, I think that...’)*
+fic’h|v.|{\nf back-formation from} \**fic’hs*{\nf, reinterpreted as a subjunctive stem; \
+    from} \pfabbr fixer|To fix, set, establish|\s{fut} *fic’hre*, \s{subj} *fic’hs*
+ba|v.|baser|To base on, found on|\s{fut} *bare*, \s{subj} *bas*
+ḍérésḍ|v.|terrestre|To be terrestrial, earth-based|\s{fut} *ḍérésḍrẹ́*, \s{subj} *ḍérésḍs*
 
 
 rá|v.|grand|Big, large, great
