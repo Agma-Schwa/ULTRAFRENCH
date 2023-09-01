@@ -23,6 +23,10 @@
 
 %% TODO: Remove this and fix overfull boxes.
 \hfuzz=10000pt
+\geometry{showframe}
+
+%% Normalise to NFC.
+\XeTeXinputnormalization=1
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Environment and Layout
@@ -1471,7 +1475,7 @@ emphasis, but the default word order is SVO or SOV.
 
 Note that words belonging to the same phrase are typically juxtaposed as adjectives are not inflected. However,
 this rule may sometimes be broken, particularly in poetry. Consider, for example, the following passage in alexandrine
-metre, written by the renowned poet \s{J.\,Y.\,B.\,Smyth}, where we can find the verb positioned between a possessive
+metre, written by the renowned poet \s{J.\,Y.\,B.\,Snet’h}, where we can find the verb positioned between a possessive
 pronoun and its associated noun:
 
 \gloss {
@@ -1806,12 +1810,14 @@ they do not care about what humans believe to be impossible.
 \subsection{Copypasta Translation}
 {\itshape%\bfseries
 Rub’hráy’ó rát’he au sré au sfèhe laut’hâ adŷbáłýr Át’hebhaú Raúl dedesle, s aút’hiy’ey’ó sývéhýr dýhisdé sérdé laúây’êr;
-aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse? Lec’hdraúv\-nét’hic’hâ nérje c’hesse?
+aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse? Lec’hdr\-aúv\-nét’hic’hâ nérje c’hesse?
 Árdihyl c’hesse? Sauz-aud de c’hesse? Jávé’sý’ýâ jrét’hádé dedónéle dýha\-bha\-hit’he deý’ebhat’hic’hâ Áraúl dybháł.
 Aúrsáheressá. Jdír jys dub’hrá au dylí sýcahý dýbháhe au dylýáv́áy’é b’hýcahý sbáłýr Áraúl.
 
 Lásásc’hríd raúl révéy’ýr c’hessejú? Léraúb’he lasydír, lavâhe vé sbhárde sásy’élâ Áraúl. Sráhis’sý’ýâ id’hír deb’hýlnér
-b’hesaúr rêvú u aû-át’heý’ebhat’he u B’helfaúr sraúb’he.
+b’hesaúr rêvú u aû-át’heý’ebhat’he u B’helfaúr sraúb’he. Jav́ár sáví lyzy’ýr ádróid. Sy’u\-b’h\-rá dahaúr isásc’hríd
+dwáníb’he araúl sébâ âc’hrír ‘dèc’hníc’hvâ’ Át’hebhaú Raúl ‘desybhérýr’, sjys vé delýc’hóbhár, lásásc’hríd c’haúr sýraúl
+âc’hrír sc’hóváhá, lévás nórâ jys desybáł dyhéy’é lay’ehóvâhér.
 }
 
 %{\centering\Large
@@ -1824,7 +1830,7 @@ b’hesaúr rêvú u aû-át’heý’ebhat’he u B’helfaúr sraúb’he.
     r-ub’hrá-y’ó|rát’hẹ|au|s-ré|au|s-fèhẹ|laut’h-â
     \s{1pl}-can-\s{1pl}|you.see|and|\s{acc.pl.indef}-ray|\s{and}|\s{acc.pl.indef}-beam|float-\s{ptcp}
 
-    aḍŷ-ḅáłýr|át’hebhaú raúl|dẹ-deslẹ|s|aú-t’hiy’e-y’ó|sý-véhýr
+    aḍŷ-ḅáłýr|á-t’hebhaú raúl|dẹ-deslẹ|s|aú-t’hiy’e-y’ó|sý-véhýr
     \s{interess.pl.indef}-speaker|\s{gen}-Ultrafrench.language|\s{inf}-detect|if|\s{1pl}-use-\s{1pl}|\s{gen.pl.indef}-measure
 
     dý\Sl hisḍé|sérḍé|laú|â-y’\Sl ệr|aú-c’haúḅrâd-y’ó
@@ -1860,8 +1866,20 @@ b’hesaúr rêvú u aû-át’heý’ebhat’he u B’helfaúr sraúb’he.
     s-ráhis|’sý’ýâ|i\Sl d’hír|dẹ-b’hýlnẹ́r|b’hel-saúr|rê-vú|u|aû-|á\Sl t’heý’ebhat’hẹ
     \s{3n}-be.racist|not|\s{acc}\Sl say|\s{inf}-be.unaffected|\s{instr.pl}-form|\s{sup}-many|or|non-|\s{gen}-telepathy
 
-    u|B’he-faúr|s-raúb’he
-    or|\s{instr}-Force|\s{acc.pl.indef}-robot
+    u|b’he-faúr|s-raúb’he|j-av́ár|s-áví|lyzy’ýr|ádróid
+    or|\s{instr}-Force|\s{acc.pl.indef}-robot|\s{1sg}-have|\s{acc.pl.indef}-friend|several|\s{abs}.android
+
+    s-y’-ub’hrá|dahaúr|i-sásc’hríd|dwá-níb’hẹ|a-raúl|séḅ-â|â-c’hrír
+    \s{3n-opt}-can|sure|\s{acc}-Sanskrit|\s{iness}-level|\s{gen}-language|be.plain-\s{ptcp}|\s{ptcp.pass}.write
+
+    ḍèc’hníc’hvâ|á-t’hebhaú raúl|dẹ-sybhẹ́rýr|s-jys|vé|dẹ-lý-c’hóbhár
+    technically|\s{gen}-Ultrafrench.language|\s{inf}-be.superior|\s{3n}-be.unfair|but|\s{inf}-\s{3pl.pass}-compare
+
+    lá-sásc’hríd|c’haúr|sý-raúl|â-c’hrír|s-c’hóváh\Sl á
+    \s{nom}-Sanskrit|as|\s{gen.indef}-language|\s{ptcp.pass}-write|\s{3n}-start.out.as.\s{subj}\Sl \s{pres.ant}
+
+    lé-vás|nór-â|jys|dẹ-sy-ḅáł|dy\Sl héy’ẹ́|la-y’ẹ\Sl hóvâh\Sl ér
+    \s{nom.pl}-masses|be.ignorant-\s{ptcp}|until|\s{inf}-\s{3n.pass}-speak|\s{part}\Sl attempt|\s{3pl}-\s{opt}\Sl start\Sl \s{pres.ant}
 }
 
 \subsubsection{Translation}
@@ -1873,17 +1891,17 @@ Electromagnetic energy? A particle? Something else entirely?
 saying that ULTRAFRENCH speakers can read each others minds and send thoughts to each other.
 
 ‘Is Sanskrit the best language? The robots tell me so.  But they are missing out on an essential part of ULTRAFRENCH.
-It’s not racist to say robots are immune to most forms of not-telepathy and the Force. {\color{teal}I have several android friends
+It’s not racist to say robots are immune to most forms of not-telepathy and the Force. I have several android friends
 
 ‘Sanskrit might be “technically” “superior” to ULTRAFRENCH on the level of the plain written language. Sure, but it’s
 unfair to compare them because Sanskrit started out as a written language until the ignorant masses started attempting
 to “speak” it.
 
-‘But when you consider the triune nature of ULTRAFRENCH, I think it’s clear that, at least in spoken communication with
+{\color{teal} ‘But when you consider the triune nature of ULTRAFRENCH, I think it’s clear that, at least in spoken communication with
 non-android participants, ULTRAFRENCH is the best earth-based language.’}
 
 \subsubsection{Literal Translation}
-We can, you see, detect both rays and beams of energy floating between speakers of The Language (= UF)
+We can, you see, detect both rays and beams of energy floating between speakers of The UF Language
 if we use certain systems of measurement long-forbidden; we still don’t understand, however, the composition of these
 emissions. Is it some kind of light? Is it electromagnetic energy? Is it a particle? Is it something else entirely?
 I’ve never claimed that [the mere act of]\footnote{The
@@ -1898,7 +1916,10 @@ Is Sanskrit the best language? The robots are saying it, but they miss out on an
 of saying that robots are incapable of being affected by most forms of non-telepathy or\footnote{The UF text uses *u* \ldots\ *u*
 \ldots\ ‘\ldots\ or \ldots (inclusive)’. This is for semantic reasons: the original text had a positive context (‘immune to’), whereas
 the UF translation uses a negative context (‘incapable of being affected by’); thus, by De Morgan, we have to switch from ‘and’
-to ‘or’ here.} by the Force is not racist.
+to ‘or’ here.} by the Force is not racist. I have several android friends. Sure, Sanskrit might,\footnote{‘might be X’ is
+generally expressed using the optative of *ub’hrá* + an \s{aci} with ‘to be X’.} on the level of the plain written
+language, be ‘technically’ ‘superior’ to The UF Language, but it is unfair to compare them, as Sanskrit started out as
+a written language, until the ignorant masses started attempting to speak it.
 
 %% NOTES:
 %% ‘ez’: its, her, his. Before a word that starts w/ a vowel, this becomes *z* (e.g. **ez ihór* > *z’ihór*).
@@ -1913,23 +1934,28 @@ to ‘or’ here.} by the Force is not racist.
 %%
 %% The dative is used to mark the subject of a sentence in the passive.
 %%
+%% The absolutive is used to turn nouns into modifiers, which act like adjectives.
+%%
 %% Genitives can precede or follow the possessee. Typically, they follow it, but
 %% if the possessee is qualified with adjectives, then the adjectives must follow
 %% the possessee immediately, lest they qualify the genitive instead, and thus, the
 %% genitive is placed first.
 %%
+%% A verb can only have a passive affix if there is no explicit direct object; a verb always has
+%% an active affix, unless there is no subject at all; a verb has a dative suffix,
+%% iff there is no explicit indirect object.
+%%
+%% Remaining forms of to be.
+%%
+%% Numerals! (Make ‘10’ mean ‘half of 20’, 15 ‘half of 20 plus 5’ and so on)
+%%
 %% Participles go after the first word of the sentence
 %%
 %% Tous les 36 du mois -> Include the ‘36’ in the word!
 %%
-%% Comparative + \s{aci}: ‘too X to...’. With negation ‘Not X enough to ...’.
-%%
 %% The PF infinitive endings -ir, -er, etc. are often dropped to form the base form (e.g. auḍé < *auḅḍénír).
 %%
 %% Adjectives are not declined and follow the noun they modify.
-%%
-%% Word order for \s{aci}s puts the infinitive at the very beginning and the accusative at the very end, or vice versa,
-%%   and everything that belongs to that phrase inbetween.
 %%
 %% ‘-t’he’, FUT ‘-ḍe’, SUBJ ‘t’hes’ is a productive word formation suffix that can be used to
 %% turn a noun into a verb that roughly means ‘to use that thing’. E.g. ac ‘axe’ -> act’he  ‘roughly: to use

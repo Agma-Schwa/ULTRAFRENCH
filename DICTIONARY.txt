@@ -72,8 +72,9 @@ y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no,
 ráy’ê|n.|moyen|1. Way, means, method. 2. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
 ub’hrá|v.|pouvoir|1. +\s{inf} To be able to, can. 2. +\s{part} Capable of .. *(***ub’hrá** *is \
     never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
-    \s{pci}, in which case the variant with the \s{part} is used instead)*\
-    |\s{fut} *úrẹ́*, \s{subj} *ís*
+    \s{pci}, in which case the variant with the \s{part} is used instead)*. 3. \s{opt cond i + \
+    aci} to be possible; may *(dynamic or epistemic, never deontic)*. 4. \s{opt cond ii + \
+    aci} might *(dynamic or epistemic, never deontic)*|\s{fut} *úrẹ́*, \s{subj} *ís*
 ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
 ez-|pron.|ses|Its, her, his, their
@@ -200,7 +201,7 @@ sauz-aud|adj.|\pfabbr autre chose|Something else, another thing
 rét’hád|v.|prétendre|To claim, allege|\s{fut} *rét’hádrẹ́*, \s{subj} *rét’hádes*
 dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used when talking about\
     concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts\
-    or parts of objects)*|\s{fut} *dónrẹ́*, \s{subj} *dónés*
+    or parts of objects; the \s{dat} is the person being endowed with)*|\s{fut} *dónrẹ́*, \s{subj} *dónés*
 ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebhat’hic’hre*, \s{subj} \
     *ḍeý’ebhat’hic’hes*
 ḍeý’ebhat’hẹ|n.|télépathie|Telepathy
@@ -213,7 +214,7 @@ cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, on
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pfabbr livre + bouquin|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} *áv́áy’érẹ́*, \s{subj} *áv́áy’és*
-Sásc’hríḍ|n.|Sanskrit|The Sanskrit language
+Sásc’hríḍ|n. *(never lenited)*|Sanskrit|The Sanskrit language
 baú|v. irreg.|bon|1. To be good, well. 2. To be right, correct, appropriate|\s{fut} *baúrẹ́*, \
     \s{subj} *véy’ýrs*; \s{comp} *lẹvéy’ýr*, *y’ŷvéy’ýr*, *rêvéy’ýr*; \s{sup} *révéy’ýr*, \
     *râdvâvéy’ýr*
@@ -234,7 +235,7 @@ vâhẹ|v.|manquer|1. +\s{gen} To lack, want. 2. +\s{part} *or* \s{pass} To miss
 ḅárḍẹ|n.|partie|Part, portion, piece, faction of a whole
 sásy’él|v.|essentiel|To be essential|\s{fut} *sásy’élẹ́*, \s{subj} *sásy’éls*
 ráhis|v.|raciste|To be racist|\s{fut} *ráhise*, \s{subj} *ráhiss*
-ab’hèc’h|v.|affecter|+\s{acc} To affect, influence|\s{fut} *ab’hèc’hre*, \s{subj} *ab’hèc’hes*
+ab’hèc’h|v.|affecter|+\s{acc} To affect, influence|\s{fut} *ab’hèc’hre*, \s{subj} *ab’hè\-c’hes*
 vú|adj.|moult|Many, much, a lot of
 faúr|n.|force|1. Force, strength, power. 2. \s{def} *(science fiction)* The Force
 b’hýlnẹ́r|v.|invulnérable|+\s{instr} To be incapable of being affected by, \
@@ -243,6 +244,26 @@ u|conj.|ou|1. Or *(inclusive, see also* **ra***)*. 2. **u** \ldots\ **u** \ldots
     \ldots’ *(inclusive)*
 ra|conj.|\pfabbr swa (> \**rá*)|1. Or *(exclusive, see also*~**u***)*. 2. **u**/**ra** \
     \ldots\ **ra** \ldots\ ‘either \ldots\ or \ldots’ *(exclusive)*
+ádróid|n.|androïde|Android
+áví|n.|ami|Friend
+lyzy’ýr|adj.|plusieurs|Several
+av́ár|v. irreg.|avoir|+\s{acc} To have, possess|*(stems irreg.)* \s{pres ant} *y*, \s{pret} \
+    *ab’hẹ*, \s{fut} *aúrẹ́*, \s{subj} *ès*
+sybhẹ́rýr|v.|supérieur|*intr. or* +\s{gen} To be superior to, better than, higher than|\s{fut} \
+    *sybhẹ́rýrẹ́*, \s{subj} *sybhẹ́rýrs*
+ḍèc’hníc’hvâ|adv.|techniquement|Technically
+níb’hẹ|n.|niveau|1. Level, degree 2. \s{def iness + gen} On the level of
+séḅ|v.|simple|To be plain, simple|\s{fut} *séḅrẹ́*, \s{subj} *séḅs*
+c’hrír|v.|écrire|To write|\s{fut} *c’hrírẹ́*, \s{subj} *c’hrís*
+dahaúr|particle|d’accord|Sure, ok, agreed, fine
+jys|v.|injuste|To be unjust, unfair|\s{fut} *jysre*, \s{subj} *jyss*
+c’hóbhár|v.|comparer|To compare|\s{fut} *c’hóbhárre*, \s{subj} *c’hóbhárs*
+c’hóvâ|v.|commencer|1. (\s{+ part}) To start, commence, begin. 2. \s{+ gen} To start out as|\
+    \s{fut} *c’hóvârẹ́*, \s{subj} *c’hóvás*
+vás|n. \s{pl def}|masses|The masses, the people
+nór|adj.|\nf{back-formation from} \**nórâ* \s{from} \pfabbr *ignorant*|To be ignorant, \
+    unaware, oblivious
+séy’ẹ́|v.|essayer|+\s{part} *or* \s{inf} To try, attempt|\s{fut} *séy’ẹ́rẹ́*, \s{subj} *séy’ẹ́s*
 
 
 rá|v.|grand|Big, large, great
@@ -289,7 +310,7 @@ lârdávrá|n.|\pfabbr langue de bois|Evasive, unclear, or overly formal speech
 urdálbhaúrḍ|n.|\pfabbr avoir un oursin dans le portefeuille|A very rich person; billionaire
 vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pfabbr vendre la peau de ours avant de avoir tué|\
     To depend on predictions of the future *(of disputed origin; first attested in the \
-    works of the Early UF comedian J. A. B. Smyth)*| \s{fut} *vádłabhaud’hávúrsab’hád’háváb’hrárḍure*,\
+    works of the Early UF comedian \s{J. A. B. Snet’h})*| \s{fut} *vádłabhaud’hávúrsab’hád’háváb’hrárḍure*,\
     \s{s} *vádłabhaud’hávúrsab’hád’háváb’hrárḍus*
 râdrásôn|v.|\pfabbr prendre ses jambe à son cou|To run|\s{fut} *râdrásônre*, \s{subj} *râdrásôns*
 t’hebhaúz|v.|\pfabbr jeter l’éponge|To be French| \s{fut} *t’hebhaúźe*, \s{subj} *t’hebhaúś*

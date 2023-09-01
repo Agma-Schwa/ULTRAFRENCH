@@ -24,15 +24,12 @@
             }
         }
 
-        colgroup col:first-child {
-            background: var(--frenchred-dark);
-        }
-
         tr td:first-child {
             text-align: left;
             padding: 0 0 0 .5rem;
             width: 7.5rem;
             color: white;
+            background: var(--frenchred-dark);
         }
 
         tr:nth-child(2n) {
@@ -40,6 +37,12 @@
 
             td:not(:first-child) {
                 box-shadow: inset 0 0 0 10000px rgb(255 255 255 / 50%);
+            }
+        }
+
+        tbody {
+            tr:nth-child(2n + 1) {
+                background: white;
             }
         }
     }
@@ -328,8 +331,63 @@
 
 <!-- Negated Optative Conditional II of a Ditransitive Verb, because that’s a thing -->
 <CentrePage>
-    <Text v="$6$i<$nt’h’><$raûnraû><$usy><$yy’ẹ>dón<$gr>ẹ́$<$oss><$raúrâ><$vb’hẹ>"/>
+    <Text v="$6$idónẹ́"/>
+    <Text v="endow" classes="closer font25"/>
+    <Text v="$2[dɔ̃ˈnẽˑ]" />
+</CentrePage>
+
+<CentrePage>
+    <Text v="$6$i<$raú>dónẹ́<$ry’ó>"/>
+    <Text v="<$a1pl.fut.ant->endow$s<$a-circ>"
+          classes="closer font25"/>
+    <Text v="$2[ɔ̃.dɔ̃ˈnẽˑ.ɥɔ̃]" />
+    <Text v="‘We endow’" classes="font15"/>
+</CentrePage>
+
+<CentrePage>
+    <Text v="$6$i<$raú>dónẹ́<$ry’ó><$vb’hẹ>"/>
+    <Text v="<$a1pl.fut.ant->endow$s<$a-circ><$v-2.dat>"
+          classes="closer font25"/>
+    <Text v="$2[ɔ̃.dɔ̃ˈnẽˑ.ɥɔ̃.βə̥]" />
+    <Text v="‘We endow you’" classes="font15"/>
+</CentrePage>
+
+<CentrePage>
+    <Text v="$6$i<$raú><$usy>dónẹ́<$ry’ó><$vb’hẹ>"/>
+    <Text v="<$a1pl.fut.ant-><$p3n.pass->endow$s<$a-circ><$v-2.dat>"
+          classes="closer font25"/>
+    <Text v="$2[ɔ̃.sy.dɔ̃ˈnẽˑ.ɥɔ̃.βə̥]" />
+    <Text v="‘We endow you with it’" classes="font15"/>
+</CentrePage>
+
+<CentrePage>
+    <Text v="$6$i<$raûnraû><$usy>dón<$gr><$raûrâ><$vb’hẹ>"/>
+    <Text v="<$a1pl.fut.ant-><$p3n.pass->endow$s$g.fut<$a&bsol;circ><$v-2.dat>"
+          classes="closer font25"/>
+    <Text v="$2[ɔ̃̃n.ɰɔ̃̃.sy.dɔ̃nˈɰɔ̃̃ˑ.ɰɑ̃̃.βə̥]" />
+    <Text v="‘We shall have endowed you with it’" classes="font15"/>
+</CentrePage>
+
+<CentrePage>
+    <Text v="$6$i<$raûnraû><$usy>dón<$gr>ẹ́<$oss><$raúrâ><$vb’hẹ>"/>
+    <Text v="<$a1pl.fut.ant-><$p3n.pass->endow$s$g.fut<$o-cond><$a-circ><$v-2.dat>"
+          classes="closer font25"/>
+    <Text v="$2[ɔ̃̃n.ɰɔ̃̃.sy.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]" />
+    <Text v="‘We would have endowed you with it’" classes="font15"/>
+</CentrePage>
+
+<CentrePage>
+    <Text v="$6$i<$raûnraû><$usy><$yy’ẹ>dón<$gr>ẹ́<$oss><$raúrâ><$vb’hẹ>"/>
+    <Text v="<$a1pl.fut.ant-><$p3n.pass-><$y$sopt->endow$s$g.fut<$o-cond><$a-circ><$v-2.dat>"
+          classes="closer font25"/>
+    <Text v="$2[ɔ̃̃n.ɰɔ̃̃.sy.ɥə.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]" />
+    <Text v="<$iroughly:> ‘If only we had endowed you with it’" classes="font15"/>
+</CentrePage>
+
+<CentrePage>
+    <Text v="$6$i<$nt’h’><$raûnraû><$usy><$yy’ẹ>dón<$gr>ẹ́<$oss><$raúrâ><$vb’hẹ>"/>
     <Text v="<$s$nneg&bsol;><$a1pl.fut.ant-><$p3n.pass-><$y$sopt->endow$s$g.fut<$o-cond><$a-circ><$v-2.dat>"
           classes="closer font25"/>
+    <Text v="$2[θɔ̃̃n.ɰɔ̃̃.sy.ɥə.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]" />
     <Text v="<$iroughly:> ‘If only we had not endowed you with it’" classes="font15"/>
 </CentrePage>
