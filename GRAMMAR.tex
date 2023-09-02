@@ -23,7 +23,7 @@
 
 %% TODO: Remove this and fix overfull boxes.
 \hfuzz=10000pt
-\geometry{showframe}
+%\geometry{showframe}
 
 %% Normalise to NFC.
 \XeTeXinputnormalization=1
@@ -319,6 +319,8 @@
 \cs_set_protected:Npn \__md_triplestar:w #1*** { \textbf{\textit{#1}} }
 
 \cs_new:Npn \items {
+    \ifvmode\else\unskip\par\fi
+    \addvspace\medskipamount
     \begingroup
     \itemize\kern-\topsep
     \itemsep0pt
@@ -327,6 +329,7 @@
 \cs_new:Npn \enditems {
     \enditemize\kern-\topsep
     \endgroup
+    \addvspace\medskipamount
 }
 
 
@@ -604,6 +607,152 @@ To simplify glosses, cases are assumed to be definite and singular unless otherw
 assumed to be indicative, present tense, and active, unless otherwise stated.
 
 \section{Accidence}\label{sec:accidence}
+
+\subsection{Noun Morphology}\label{subsec:noun-morphology}
+UF has 4 declensions. A definite and indefinite vocalic declension, and a definite and indefinite consonantal declension.
+As their names might suggest, the former two are used for nouns that start with a vowel, and the latter two for nouns
+that start with a consonant. UF has no morphologically separate articles; rather, the old PF articles have been incorporated
+into the declensions. Furthermore, UF no longer has a gender distinction in nouns.
+
+\subsubsection{Declension}\label{subsubsec:declension}
+The table below shows the affixes of the definite and indefinite declensions. The declensions are mostly identical,
+except that, as with the conjugation of verbs, the consonantal prefixes often end in a vowel (marked below with
+parentheses), which are not present in the vocalic declension.
+
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+
+Absolutive    & $\emptyset$     & l-      &&Absolutive    & $\emptyset$-\N & $\emptyset$-\L   \\\cline{1-3}\cline{5-7}
+Nominative    & lá-\L   & lé-\L   &&Nominative    & ŷn-\N & ý-\L      \\\cline{1-3}\cline{5-7}
+Vocative      & $\emptyset$-\L  & $\emptyset$-\L  &&Vocative      & / & /             \\\cline{1-3}\cline{5-7}
+Partitive     & dy-\L   & dẹ-\L   &&Partitive     & dŷn-\N & dý-\L    \\\cline{1-3}\cline{5-7}
+Accusative    & i-\L    & sý-\L   &&Accusative    & s-\L & s-         \\\cline{1-3}\cline{5-7}
+Genitive      & á-\L    & abh-\L  &&Genitive      & sý-\N & sý-\L     \\\cline{1-3}\cline{5-7}
+Dative        & as-\L   & a-\L    &&Dative        & an-\N & an-\L     \\\cline{1-3}\cline{5-7}
+Inessive      & dwá-    & dwé-    &&Inessive      & dáhŷn- & dáhŷ-    \\\cline{1-3}\cline{5-7}
+Interessive   & aḍá-    & aḍé-    &&Inessive      & aḍŷn- & aḍŷ-    \\\cline{1-3}\cline{5-7}
+Ablative      & rê(d)-  & rês-    &&Ablative      & rêdýn- & rêdý-    \\\cline{1-3}\cline{5-7}
+Allative      & b’hé-\L & b’hér-  &&Allative      & b’hŷn-\N & b’hý-\L  \\\cline{1-3}\cline{5-7}
+Considerative & słá-    & słé-    &&Considerative & sý’óýn- & sý’óý-  \\\cline{1-3}\cline{5-7}
+Instrumental  & b’hel-  & b’he-   &&Instrumental  & b’hehý(n)- & b’heh-  \\\cline{1-3}\cline{5-7}
+...           &         &         &&              & &                 \\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{UF Declension.}\label{tab:table-uf-declension}
+\end{table}
+
+\noindent Most of these forms cause lenition in the initial consonant of the noun, e.g. *ḍalẹ* ‘table’ to
+\s{def acc sg} *s’thalẹ*; this lenition is blocked in the \s{indef acc pl} due to the presence of a hypercorrected ‘s’
+in PF \**ces*, e.g. *s’ḍalẹ* ‘the tables (\s{acc})’ (not *s’thalẹ*, which is the singular), as well as in
+less commonly used forms such as the \s{def iness} *dwáḍalẹ* ‘on the table’.
+
+The \s{indef nom sg} *ŷn-* prefix and some other forms nasalise nouns; as a reminder, this means that in
+nouns starting with *ḍ*, the *ḍ* is deleted, e.g. *ŷnalẹ* ‘a table’;
+it causes nasalisation in words that start with a vowel e.g. *ehyó* ‘shield’ to *ŷnéhyó* ‘a shield’. The indefinite \s{voc}
+does not exist, as that would make little sense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef iness}
+*dáhŷnḍalẹ* ‘on a table’.
+
+The \s{abs} case is used for the predicate noun of predicative sentences, e.g. *Aúsó ḍe ráhó* ‘We are all fish’.
+The \s{cons} case can be translated as ‘according to’, or ‘in the opinion of’, and is used to express the opinion of
+the speaker or point out something as an opinion, belief, or hypothesis of someone or something.
+
+Both the \s{part} and the \s{acc} can be used to mark the direct object of a verb; some verbs, e.g. *ub’hrá* ‘to be
+able to’ always take a \s{part}, and some always take an \s{acc}, but for most verbs, the difference is semantic: the
+\s{acc} indicates that an action is being or has been performed in its entirety or to completion, e.g. *jlí sliv́uhé* ‘I peruse
+a book’ vs *jlí dŷnliv́uhé* ‘I read (\s{pres}) from a book’ or ‘I am reading a book’. Consequently, \s{pres ant}
+forms, which are mainly perfective, generally take the \s{acc}, e.g. *jlíé iliv́uhé* ‘I’ve read the book’, whereas \s{pret} forms,
+which are mainly imperfective, generally take the \s{part}, e.g. *jlíá dyliv́uhé* ‘I was reading (from) the book’.
+
+
+The *d* in the \s{def abl sg} is omitted if the noun starts with a consonant, e.g. *rêḍalẹ* ‘from the table’; be careful
+especially with words that start with *s*, whose \s{abl sg} is often mistaken for a plural, e.g. *rêsol* ‘from the floor’,
+but *rêssol* ‘from the floors’.
+
+The diachrony of these forms is mostly from the PF definite and indefinite pronouns as well as from PF prepositions, though
+some forms, such as the
+accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite
+partitive forms are from the PF partitive article, and
+the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
+of the articles and PF prepositions. The ablative is from PF \**loin de* ‘away from’. The diachrony of the genitive singular
+is unclear.
+
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
+Definite    &\nf Sg&\nf Pl && Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
+
+Nominative  & lát’halẹ  & lét’halẹ   &&Nominative & ŷnalẹ & ýt’halẹ         \\\cline{1-3}\cline{5-7}
+Vocative    & t’halẹ    & t’halẹ    &&Vocative   & / & /                      \\\cline{1-3}\cline{5-7}
+Partitive   & dyt’halẹ  & dẹt’halẹ &&Partitive   & dŷnalẹ & dýt’halẹ                     \\\cline{1-3}\cline{5-7}
+Accusative  & it’halẹ & sýt’halẹ  &&Accusative & st’halẹ & sḍalẹ                       \\\cline{1-3}\cline{5-7}
+...         &  &  &&           & &              \\\cline{1-3}\cline{5-7}
+Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáhýḍalẹ                    \\\cline{1-3}\cline{5-7}
+\end{tabular}
+\caption{Consonantal declension of *ḍalẹ*.}\label{tab:vocalic-declension}
+\end{table}
+
+\subsection{Adjectives}
+UF does not have many actual adjectives. Most words in UF are either nouns or verbs, and most ‘adjectives’ are just
+participles, which can always be used like adjectives. Indeed, there are a lot of verbs whose meaning is something
+along the lines of ‘to be X’, whose present participle behaves like the adjective ‘X’, e.\,g. *ḅẹt’hẹ* ‘to be small’
+to *ḅẹt’hâ* ‘small’ (literally ‘being small’).
+
+Adjectives generally follow the noun they modify and are never inflected, e.g. *át’halẹ ḅẹt’hâ* ‘of a small table’.
+There is no established order of adjectives.
+
+%% ‘lẹ-’: from PF ‘plus’. Comparative prefix.
+\subsubsection{Comparison}\label{subsubsec:comparison}
+Unlike in many other languages, there are 3 comparatives in UF: The affirming comparative, so called
+because it affirms the positive (‘better, and also good’); the denying comparative, which denies the positive
+(‘better, but not good’), and the neutral comparative, which does not make any statement about the positive
+(‘better’).
+
+To illustrate the difference between the three: We might say that an ant is ‘bigger’ than a grain of sand, but
+an ant is still not big, all things considered. By contrast, an elephant may be ‘smaller’ than a mountain,
+but that doesn’t mean that an elephant is small.
+
+In UF, the comparatives are expressed by three infixes, which are prefixed directly to the stem. The affirming
+comparative prefix is *lẹ*, the denying comparative prefix is *y’ŷ*, and the neutral comparative prefix is *rê*.
+Thus, we have *ḅẹt’hâ* ‘small’, *lẹḅẹt’hâ* ‘smaller, and also small’, *y’ŷḅẹt’hâ* ‘smaller, but not small’, and
+*rêḅẹt’hâ* ‘smaller’.
+
+The comparative prefixes can also be applied to verbs, though they usually only make sense for the aforementioned
+‘adjective verbs’, e.g. *jy’ŷḅẹt’hẹ* ‘I am smaller, but still big’. Note that these prefixes
+might cause a verb’s forms to change from vocalic to consonantal, e.g. *ebhẹ* ‘to be thick’ (future stem *ebhrẹ*)
+is vocalic *náy’ebhraú* ‘we shall be thick’ in the positive, but consonantal *aúnraûy’ŷebhraû* ‘we shall be
+thicker, but not thick’ in the negative comparative.
+
+The affirming comparative can also be used absolutely, with the meaning of ‘to a large degree’. Thus,
+we have *ḅẹt’hâ* ‘small’, and *lẹḅẹt’hâ* ‘tiny’; sometimes, this also leads to a slight change in meaning
+or perception, e.g. *ebhâ* ‘thick’, but *lẹ-ebhâ* ‘thicc’.
+
+The affirming and denying comparative can also mean ‘too X’ and ‘not X enough’, respectively; thus, *lẹḅẹt’hâ*
+can also mean ‘too small’, and *y’ŷḅẹt’hâ* can also mean ‘not small enough’, though this meaning is somewhat
+uncommon in isolation and most commonly found in constructions (see below).
+
+The superlative is formed with one of two prefixes: *ré\L* and *râdvâ*. Be careful not to confuse the former
+with the neutral comparative *rê*! The two prefixes are largely interchangeable, however, the former is more
+literary and also older. The latter is a more recent development to reduce potential ambiguity with the
+neutral comparative. Note that *ré* lenites, whereas *râdvâ* does not. Thus, we have *rébhẹt’hâ* or
+*râdvâḅẹt’hâ* ‘smallest’.
+
+\subsubsection{Constructions}
+The comparative can be used together with an infinitive, \s{aci}, or \s{pci}. The affirming comparative here has the meaning
+of ‘too X to \ldots’, and the denying comparative has the meaning of ‘not X enough to \ldots’. A good illustrative
+example of this is the following UF proverb:
+
+\gloss {
+    Láráhó slẹlúrá b’héd’hẹhẹ dẹnájẹ.
+    Lá-ráhó|s-lẹ-lúr-á|b’hé\Sl d’hẹhẹ|dẹ-nájẹ
+    \s{nom}-fish|\s{3n}-\s{aff.comp}-bulky-\s{3sg.pres.ant}|\s{all}\Sl surface|\s{inf}-swim
+    ‘The fish was too bulky to swim to the surface’\footnotemark
+}
+
+\footnotetext{This is a very common proverb (often also just \textit{láráhó slẹlúr} ‘The fish is too bulky’)
+and roughly means that something has gone too far or gone on for too long (‘Now you’ve done it’ or ‘Now
+it’s too late’). Variations of it exists; in the optative, for instance, this proverb means ‘Let’s not overdo this’.}
+
 \subsection{Verbal Morphology}\label{subsec:verbal-morphology}
 Verbs in UF are inflected for person, number, tense, aspect, mood, and voice. Verbal inflexion is mainly done
 by means of concatenating a vast set of prefixes onto a verb, with the occasional suffix and circumfix making
@@ -645,7 +794,7 @@ demonstrative \**ce* and its variants; the \s{3pl n} is derived from the other \
 \begin{items}
 \Item{1pl}
 The \s{1pl} prefix varies if there is a vowel following it: if it is
-any vowel that is not a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
+any vowel that is *not* a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
 *rad’hóró* ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as *w-* instead, e.g. *aub’heír* ‘obey’
 to *wob’heíró* ‘we obey’.\footnote{Diachronically, the base form of this prefix is \**o-*, whence e.g.
 \**oad’hóró* > *rad’hóró* and \**oob’heíró* > *wob’heíró*.} Note that this also leads to a change in spelling: stem-initial
@@ -669,7 +818,7 @@ The participle affixes are commonly used to form adjectives since the vast major
 with a meaning of ‘to be X’. The participle can be used to convert such a verb back into a regular adjective, e.g. *lár* ‘to be wide’
 to *lárâ* ‘wide’. Like the passive infinitive affix, the participle affixes coalesce with vowels and always form a maximally
 nasal vowel, e.g. *vvaúríhe* ‘to remember’ forms *vvaúríhê* ‘remembering’, and *ad’hór* forms *âd’hór* ‘being loved’. As with other
-coalescence rules, the *-â* instead *replaces* a word-final *ẹ*, and *ẹ* only: e.g. *ḅẹt’hẹ* ‘to be small’ becomes *ḅẹt’hâ* ‘being
+coalescence rules, the *-â* instead *replaces* final or initial *ẹ*, and *ẹ* only: e.g. *ḅẹt’hẹ* ‘to be small’ becomes *ḅẹt’hâ* ‘being
 small’. Note that if the word already ends with a maximally nasal vowel, no coalescence occurs, e.g. *rê* ‘to be triune’ becomes
 *rêâ* ‘triune’.
 
@@ -747,7 +896,7 @@ There are two broad groups of such affixes: suffixes, which are appended to the 
 in those persons, as well as circumfixes and prefixes, which are inserted before the active/passive markers and replace the
 replace the \s{act 1pl, 2pl} suffixes in some cases.
 
-\subsubsection{Suffixed Tenses}
+\subsubsection{Suffixed Tenses}\label{subsubsec:suffixed-tenses}
 The present anterior and preterite are formed by appending a set of suffixes to the verb. Table~\ref{tab:present-anterior-and-preterite-suffixes}
 below lists the suffixes for those tenses. The present anterior has a perfect or perfective aspect, while the preterite has an imperfective aspect. The
 former is commonly used to describe events that are completed or extend to the present—particularly events that occurred recently, hence the name—while the latter
@@ -817,7 +966,7 @@ Participle&\multicolumn{2}{c|}{\it ad’hórâr}&&Participle&\multicolumn{2}{c|}
 \caption{Preterite Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-pret}
 \end{table}
 
-\subsubsection{Future I}
+\subsubsection{Future I}\label{subsubsec:future-i}
 The future tenses, that is, the Future, Future Anterior (a tense similar to the future perfect), as well
 as the Conditional, are formed by adding prefixes to the present forms. The prefix is the same in all persons and numbers,
 except that there is a separate prefix for the infinitive.
@@ -830,7 +979,7 @@ will still not be enough to get by, as the Conditional, a *very* common tense, i
 First, let us examine the former, simpler case, commonly called the Future I. The prefix is *aú-* if the verb form
 after it starts with a consonant (except glides), *aúr-* in all other cases; e.g. *aújad’hór* ‘I shall love’, but
 *aúrý’ad’hór* ‘it will love’. In the infinitive passive, it
-contracts with the initial *à-* or *á-* to *áu* or *aû*, e.g. *aûd’hór* ‘to be about to be loved’.\footnote{This form
+contracts with the initial *à-* or *á-* to *aú* or *aû*, e.g. *aûd’hór* ‘to be about to be loved’.\footnote{This form
 has no direct equivalent in English and is fairly hard to translate on its own.} No contraction happens
 if the infinitive starts with *â*, e.g. *aúrânvé* ‘to be about to be animated’. Since
 there is little point in writing a table for just the prefixes, Table~\ref{tab:adhor-paradigm-future-1} instead shows the Future I paradigm
@@ -851,7 +1000,7 @@ Participle&\multicolumn{2}{c|}{\it aúrad’hórâ}&&Participle&\multicolumn{2}{
 \caption{Future I Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm-future-1}
 \end{table}
 
-\subsubsection{Future II}
+\subsubsection{Future II}\label{subsubsec:future-ii}
 The Future I paradigm is fairly straight-forward; unfortunately, the Future II is a lot worse: not only do the affixes
 vary a lot more, but they are different depending on whether verb form following them starts with a vowel or a consonant.\footnote{This is
 not a problem in the Future I, since the prefix is never adjacent to the stem.}
@@ -1052,7 +1201,7 @@ Infinitive&\multicolumn{2}{c|}{\it vvaúríźŷr}&&Infinitive&\multicolumn{2}{c|
 \caption{Consonantal Future Anterior Paradigm of *vvaúríhe*.}\label{tab:future-ant-vvaurihe}
 \end{table}
 
-\subsubsection{Conditional I and II}
+\subsubsection{Conditional I and II}\label{subsubsec:conditional}
 The Conditional tenses are fairly simple—so long as you know the Future II and Future Anterior, that is. Both Conditionals
 are formed by adding the *-ss(a)-* infix between the Future II stem and any suffixes. The Conditional I is formed from
 the Future II, and the Conditional II from the Future Anterior. As always, the vowel is omitted if
@@ -1082,7 +1231,7 @@ even though it is morphologically a future tense, is used to express a hypotheti
 ‘I would have loved’.
 
 \subsection{Miscellaneous Forms}
-\subsubsection{The Gnomic}
+\subsubsection{The Gnomic}\label{subsubsec:gnomic}
 The gnomic tense is marked by the infix *-j(ú)-* after the stem: *ad’hór* ‘to love’ to *rad’hórjô* ‘We love (for ever)’.
 The *ú* is omitted if the infix is followed by the vowel, in which case it causes nasalisation.
 
@@ -1093,7 +1242,7 @@ tense, gender, number, and mood. A verb can only have one dative affix, and the 
 affixes and does not coalesce, lenite, or otherwise modify the rest of the verb, e.g. *dedónẹ́* ‘to bestow’ to
 *dedónẹ́ḷẹ* ‘to bestow upon him’.
 
-\subsection{Imperative}
+\subsubsection{Imperative}
 The imperative mood exists only in the present tense, and only in the second and third person. It is formed by
 affixing the following suffixes to the stem.
 \begin{table}[H]
@@ -1281,153 +1430,79 @@ derived from the first person passive pronoun, for unknown reasons.
 Unlike nearly every other word in the language, all forms of the copula are summarily stressed on the first
 syllable.
 
-\subsection{Noun Morphology}\label{subsec:noun-morphology}
-UF has 4 declensions. A definite and indefinite vocalic declension, and a definite and indefinite consonantal declension.
-As their names might suggest, the former two are used for nouns that start with a vowel, and the latter two for nouns
-that start with a consonant. UF has no morphologically separate articles; rather, the old PF articles have been incorporated
-into the declensions. Furthermore, UF no longer has a gender distinction in nouns.
-
-\subsubsection{Declension}\label{subsubsec:declension}
-The table below shows the affixes of the definite and indefinite declensions. The declensions are mostly identical,
-except that, as with the conjugation of verbs, the consonantal prefixes often end in a vowel (marked below with
-parentheses), which are not present in the vocalic declension.
-
-\begin{table}[H]
-\centering
-\noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
-Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-
-Absolutive    & $\emptyset$     & l-      &&Absolutive    & $\emptyset$-\N & $\emptyset$-\L   \\\cline{1-3}\cline{5-7}
-Nominative    & lá-\L   & lé-\L   &&Nominative    & ŷn-\N & ý-\L      \\\cline{1-3}\cline{5-7}
-Vocative      & $\emptyset$-\L  & $\emptyset$-\L  &&Vocative      & / & /             \\\cline{1-3}\cline{5-7}
-Partitive     & dy-\L   & dẹ-\L   &&Partitive     & dŷn-\N & dý-\L    \\\cline{1-3}\cline{5-7}
-Accusative    & i-\L    & sý-\L   &&Accusative    & s-\L & s-         \\\cline{1-3}\cline{5-7}
-Genitive      & á-\L    & abh-\L  &&Genitive      & sý-\N & sý-\L     \\\cline{1-3}\cline{5-7}
-Dative        & as-\L   & a-\L    &&Dative        & an-\N & an-\L     \\\cline{1-3}\cline{5-7}
-Inessive      & dwá-    & dwé-    &&Inessive      & dáhŷn- & dáhŷ-    \\\cline{1-3}\cline{5-7}
-Interessive   & aḍá-    & aḍé-    &&Inessive      & aḍŷn- & aḍŷ-    \\\cline{1-3}\cline{5-7}
-Ablative      & rê(d)-  & rês-    &&Ablative      & rêdýn- & rêdý-    \\\cline{1-3}\cline{5-7}
-Allative      & b’hé-\L & b’hér-  &&Allative      & b’hŷn-\N & b’hý-\L  \\\cline{1-3}\cline{5-7}
-Considerative & słá-    & słé-    &&Considerative & sý’óýn- & sý’óý-  \\\cline{1-3}\cline{5-7}
-Instrumental  & b’hel-  & b’he-   &&Instrumental  & b’hehý(n)- & b’heh-  \\\cline{1-3}\cline{5-7}
-...           &         &         &&              & &                 \\\cline{1-3}\cline{5-7}
-\end{tabular}
-\caption{UF Declension.}\label{tab:table-uf-declension}
-\end{table}
-
-\noindent Most of these forms cause lenition in the initial consonant of the noun, e.g. *ḍalẹ* ‘table’ to
-\s{def acc sg} *s’thalẹ*; this lenition is blocked in the \s{indef acc pl} due to the presence of a hypercorrected ‘s’
-in PF \**ces*, e.g. *s’ḍalẹ* ‘the tables (\s{acc})’ (not *s’thalẹ*, which is the singular), as well as in
-less commonly used forms such as the \s{def iness} *dwáḍalẹ* ‘on the table’.
-
-The \s{indef nom sg} *ŷn-* prefix and some other forms nasalise nouns; as a reminder, this means that in
-nouns starting with *ḍ*, the *ḍ* is deleted, e.g. *ŷnalẹ* ‘a table’;
-it causes nasalisation in words that start with a vowel e.g. *ehyó* ‘shield’ to *ŷnéhyó* ‘a shield’. The indefinite \s{voc}
-does not exist, as that would make little sense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef iness}
-*dáhŷnḍalẹ* ‘on a table’.
-
-The \s{abs} case is used for the predicate noun of predicative sentences, e.g. *Aúsó ḍe ráhó* ‘We are all fish’.
-The \s{cons} case can be translated as ‘according to’, or ‘in the opinion of’, and is used to express the opinion of
-the speaker or point out something as an opinion, belief, or hypothesis of someone or something.
-
-Both the \s{part} and the \s{acc} can be used to mark the direct object of a verb; some verbs, e.g. *ub’hrá* ‘to be
-able to’ always take a \s{part}, and some always take an \s{acc}, but for most verbs, the difference is semantic: the
-\s{acc} indicates that an action is being or has been performed in its entirety or to completion, e.g. *jlí sliv́uhé* ‘I peruse
-a book’ vs *jlí dŷnliv́uhé* ‘I read (\s{pres}) from a book’ or ‘I am reading a book’. Consequently, \s{pres ant}
-forms, which are mainly perfective, generally take the \s{acc}, e.g. *jlíé iliv́uhé* ‘I’ve read the book’, whereas \s{pret} forms,
-which are mainly imperfective, generally take the \s{part}, e.g. *jlíá dyliv́uhé* ‘I was reading (from) the book’.
-
-
-The *d* in the \s{def abl sg} is omitted if the noun starts with a consonant, e.g. *rêḍalẹ* ‘from the table’; be careful
-especially with words that start with *s*, whose \s{abl sg} is often mistaken for a plural, e.g. *rêsol* ‘from the floor’,
-but *rêssol* ‘from the floors’.
-
-The diachrony of these forms is mostly from the PF definite and indefinite pronouns as well as from PF prepositions, though
-some forms, such as the
-accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite
-partitive forms are from the PF partitive article, and
-the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
-of the articles and PF prepositions. The ablative is from PF \**loin de* ‘away from’. The diachrony of the genitive singular
-is unclear.
-
-\begin{table}[H]
-\centering
-\noindent\begin{tabular}{@{}|l|>{\it}l|>{\it}l|l|l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
-Definite    &\nf Sg&\nf Pl && Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-
-Nominative  & lát’halẹ  & lét’halẹ   &&Nominative & ŷnalẹ & ýt’halẹ         \\\cline{1-3}\cline{5-7}
-Vocative    & t’halẹ    & t’halẹ    &&Vocative   & / & /                      \\\cline{1-3}\cline{5-7}
-Partitive   & dyt’halẹ  & dẹt’halẹ &&Partitive   & dŷnalẹ & dýt’halẹ                     \\\cline{1-3}\cline{5-7}
-Accusative  & it’halẹ & sýt’halẹ  &&Accusative & st’halẹ & sḍalẹ                       \\\cline{1-3}\cline{5-7}
-...         &  &  &&           & &              \\\cline{1-3}\cline{5-7}
-Inessive    & dwáḍalẹ & dwéḍalẹ &&Inessive   & dáhŷnḍalẹ & dáhýḍalẹ                    \\\cline{1-3}\cline{5-7}
-\end{tabular}
-\caption{Consonantal declension of *ḍalẹ*.}\label{tab:vocalic-declension}
-\end{table}
-
-\subsection{Adjectives}
-UF does not have many actual adjectives. Most words in UF are either nouns or verbs, and most ‘adjectives’ are just
-participles, which can always be used like adjectives. Indeed, there are a lot of verbs whose meaning is something
-along the lines of ‘to be X’, whose present participle behaves like the adjective ‘X’, e.\,g. *ḅẹt’hẹ* ‘to be small’
-to *ḅẹt’hâ* ‘small’ (literally ‘being small’).
-
-Adjectives generally follow the noun they modify and are never inflected, e.g. *át’halẹ ḅẹt’hâ* ‘of a small table’.
-There is no established order of adjectives.
-
-%% ‘lẹ-’: from PF ‘plus’. Comparative prefix.
-\subsubsection{Comparison}
-Unlike in many other languages, there are 3 comparatives in UF: The affirming comparative, so called
-because it affirms the positive (‘better, and also good’); the denying comparative, which denies the positive
-(‘better, but not good’), and the neutral comparative, which does not make any statement about the positive
-(‘better’).
-
-To illustrate the difference between the three: We might say that an ant is ‘bigger’ than a grain of sand, but
-an ant is still not big, all things considered. By contrast, an elephant may be ‘smaller’ than a mountain,
-but that doesn’t mean that an elephant is small.
-
-In UF, the comparatives are expressed by three infixes, which are prefixed directly to the stem. The affirming
-comparative prefix is *lẹ*, the denying comparative prefix is *y’ŷ*, and the neutral comparative prefix is *rê*.
-Thus, we have *ḅẹt’hâ* ‘small’, *lẹḅẹt’hâ* ‘smaller, and also small’, *y’ŷḅẹt’hâ* ‘smaller, but not small’, and
-*rêḅẹt’hâ* ‘smaller’.
-
-The comparative prefixes can also be applied to verbs, though they usually only make sense for the aforementioned
-‘adjective verbs’, e.g. *jy’ŷḅẹt’hẹ* ‘I am smaller, but still big’. Note that these prefixes
-might cause a verb’s forms to change from vocalic to consonantal, e.g. *ebhẹ* ‘to be thick’ (future stem *ebhrẹ*)
-is vocalic *náy’ebhraú* ‘we shall be thick’ in the positive, but consonantal *aúnraûy’ŷebhraû* ‘we shall be
-thicker, but not thick’ in the negative comparative.
-
-The affirming comparative can also be used absolutely, with the meaning of ‘to a large degree’. Thus,
-we have *ḅẹt’hâ* ‘small’, and *lẹḅẹt’hâ* ‘tiny’; sometimes, this also leads to a slight change in meaning
-or perception, e.g. *ebhâ* ‘thick’, but *lẹ-ebhâ* ‘thicc’.
-
-The affirming and denying comparative can also mean ‘too X’ and ‘not X enough’, respectively; thus, *lẹḅẹt’hâ*
-can also mean ‘too small’, and *y’ŷḅẹt’hâ* can also mean ‘not small enough’, though this meaning is somewhat
-uncommon in isolation and most commonly found in constructions (see below).
-
-The superlative is formed with one of two prefixes: *ré\L* and *râdvâ*. Be careful not to confuse the former
-with the neutral comparative *rê*! The two prefixes are largely interchangeable, however, the former is more
-literary and also older. The latter is a more recent development to reduce potential ambiguity with the
-neutral comparative. Note that *ré* lenites, whereas *râdvâ* does not. Thus, we have *rébhẹt’hâ* or
-*râdvâḅẹt’hâ* ‘smallest’.
-
-\subsubsection{Constructions}
-The comparative can be used together with an infinitive, \s{aci}, or \s{pci}. The affirming comparative here has the meaning
-of ‘too X to \ldots’, and the denying comparative has the meaning of ‘not X enough to \ldots’. A good illustrative
-example of this is the following UF proverb:
-
-\gloss {
-    Láráhó slẹlúrá b’héd’hẹhẹ dẹnájẹ.
-    Lá-ráhó|s-lẹ-lúr-á|b’hé\Sl d’hẹhẹ|dẹ-nájẹ
-    \s{nom}-fish|\s{3n}-\s{aff.comp}-bulky-\s{3sg.pres.ant}|\s{all}\Sl surface|\s{inf}-swim
-    ‘The fish was too bulky to swim to the surface’\footnotemark
-}
-
-\footnotetext{This is a very common proverb (often also just \textit{láráhó slẹlúr} ‘The fish is too bulky’)
-and roughly means that something has gone too far or gone on for too long (‘Now you’ve done it’ or ‘Now
-it’s too late’). Variations of it exists; in the optative, for instance, this proverb means ‘Let’s not overdo this’.}
 
 \subsection{Summary of Coalescence Rules}
-TODO
+When vowels collide at morpheme boundaries, though chiefly in suffixes, they often coalesce into a
+single vowel that depends on the qualities and nasality of the two vowels. How exactly this coalescence
+works depends on the morphemes in question, but generally, there are 4 overarching principles to be
+aware of:
+\begin{enumerate}
+\item Vowels at the end of a suffix or at the beginning of a prefix may simply be omitted instead;
+      this is particularly common in verb forms.
+\item If one of the vowels is *ẹ*, it is dropped; the resulting vowel is the other vowel.
+\item If one of the vowels is nasalised, the resulting vowel is generally also nasalised; if both
+      vowels are nasalised or nasal, the resulting vowel will be nasal.
+\item If the first vowel is part of a verb stem, it is often simply deleted or at least overridden
+      by the second vowel in terms of quality.
+\end{enumerate}
+
+\noindent The following table lists all coalescence rules in the language. For more information, see the corresponding
+sections in which the forms in question are introduced. Note that trivial cases of vowels being dropped entirely
+are not listed in this table.
+
+Unless otherwise indicated, vowel letters, e.g. *o*, represent any variant of that vowel, whether oral, nasalised, or nasal.
+*o* also includes variants of *au* (e.g. *aú*, but not *áu*, of course, as those are two vowels and not a digraph).
+Subscripts may be used to track nasalisation, and a + sign indicates a level of nasalisation is added. Since glides also
+influence contractions in some cases, they are included in this table. In the case of the abbreviations V and G, if there
+is no +, nasalisation is preserved.
+
+Rules are matched top-down: the first matching rule is applied, all others are ignored. The affix in the 2nd column next to the
+vowel(s) in the 3rd column in the same row are replaced with the letters of the 4th column in the indicated forms at the
+indicated morpheme boundary in the 1st column. The position in the hyphen in the 2nd column indicates whether it coalesces
+with vowels before or after it. The letters V (as well as V′) stands for ‘any vowel’. The letter G stands for
+‘any glide’. Abbreviations may be used where applicable (e.g. *-e(r)* for *-e* and *-er* if there is no single *-e(r)*
+suffix in the paradigm in question). The abbreviation -? means ‘any other suffix in this paradigm, even if they
+start with a consonant’.
+
+\medskip
+{\centering
+\noindent
+\begin{tabular}{@{}>{\scshape}l|>{\it}p{5em}|>{\it}l|>{\it}l|l}
+\nf Form    & \nf Affix & \nf Phonemes & \nf Result & Reference \\\hline\hline
+pres 1pl          & aú-     & o\Sub α  & wo\Sub α & §~\ref{subsubsec:active-passive-affixes} \\
+                  &         &\nf V & r\nf V \\\hline
+pres 1pl act      & -y’ó    & o\Sub α  & o\Sub{α+} &ibid. \\\hline
+pres 2pl          & b’h(y)- &\nf V & b’h\nf V &ibid. \\
+                  &         &\nf G & b’h\nf G \\\hline
+pres 2pl act      & -y’é    & e\Sub α  & e\Sub{α+} &ibid.\\\hline
+pres inf pass     & à-      & a\Sub α& a\Sub {α+}&ibid. \\
+                  &         &\nf V & h\nf V \\\hline
+pres part         & -â, â-  & ẹ & â &ibid. \\
+                  &         &\nf V̂ & {\nf V̂}â, â{\nf V̂} \\
+                  &         &\nf V &\nf V̂ \\\hline\hline
+pres ant, pret    & -é(r)   & ẹ & é(r) &§~\ref{subsubsec:suffixed-tenses}\\
+                  &         &{\nf V}\Sub α & e\Sub{α+}(r) \\
+                  & -á(r), -áḍ  & ẹ & á(r), áḍ &ibid. \\
+                  &         &{\nf V}\Sub α & a\Sub{α+}(r), a\Sub{α+}ḍ \\\hline
+pres ant 1pl act  & -â      &\nf V & â & ibid.\\\hline\hline
+fut i inf pass    & aú(r)-  & â & aúrâ & §~\ref{subsubsec:future-i} \\
+                  &         &\nf G & aúr\kern1pt\nf G \\
+                  &         & à & aú \\
+                  &         & á & aû \\\hline
+fut ii, fut ant,  & -ẹ      &\nf V &\nf V &§§~\ref{subsubsec:future-ii}–\ref{subsubsec:conditional}\\
+cond i, cond ii   &{\nf -V}\Sub α\nf & ẹ & {\nf -V}\Sub α\nf \\
+                  &         & {\nf V′}\Sub{β} & {\nf -V}\Sub{α+β} \\
+                  &\nf -?   &{\nf stem} ẹ, ẹ́ &\nf -? \\
+gnomic            & j(ú)-   & {\nf V}\Sub α& j\kern1pt{\nf V}\Sub{α+} &§~\ref{subsubsec:gnomic} \\\hline
+\end{tabular}\par}
+\medskip
+
+\noindent Lastly, note that the 4 principles mentioned earlier are guidelines, not rules. There are cases of affixes that do not coalesce
+at all, e.g. the comparative prefix *lẹ* (see §~\ref{subsubsec:comparison}). If a form is not listed in this table, then,
+unless explicitly stated where that form is introduced (in which case case we simply forgot to include it in the table),
+it does not coalesce at all. Furthermore, this table only handles coalescence rules between vowels and some vowel elision rules; other
+elision rules are either very regular or have nothing to do with adjacent vowels. This table exists only because coalescence rules are
+very similar, but sometimes subtly different.
 
 \section{Syntax}\label{sec:syntax}
 UF syntax is unfortunately complicated in what morphological constructs are used in what situations, and
@@ -1808,7 +1883,6 @@ Note that UF here uses the verbal noun *b’hóy’ẹ* ‘to fly’ as a noun t
 Its wings are too small for its little body to obtain [distance] from the ground. Of course, bees fly [anyway], as
 they do not care about what humans believe to be impossible.
 
-\clearpage
 \subsection{Copypasta Translation}
 {\itshape%\bfseries
 Rub’hráy’ó rát’he au sré au sfèhe laut’hâ adŷbáłýr Át’hebhaú Raúl dedesle, s aút’hiy’ey’ó sývéhýr dýhisdé sérdé laúây’êr;
@@ -1909,8 +1983,8 @@ It’s not racist to say robots are immune to most forms of not-telepathy and th
 unfair to compare them because Sanskrit started out as a written language until the ignorant masses started attempting
 to “speak” it.
 
-{\color{teal} ‘But when you consider the triune nature of ULTRAFRENCH, I think it’s clear that, at least in spoken communication with
-non-android participants, ULTRAFRENCH is the best earth-based language.’}
+‘But when you consider the triune nature of ULTRAFRENCH, I think it’s clear that, at least in spoken communication with
+non-android participants, ULTRAFRENCH is the best earth-based language.’
 
 \subsubsection{Literal Translation}
 We can, you see, detect both rays and beams of energy floating between speakers of The UF Language
@@ -1932,7 +2006,7 @@ to ‘or’ here.} by the Force is not racist. I have several android friends. S
 generally expressed using the optative of *ub’hrá* + an \s{aci} with ‘to be X’.} on the level of the plain written
 language, be ‘technically’ ‘superior’ to The UF Language, but it is unfair to compare them, as Sanskrit started out as
 a written language, until the ignorant masses started attempting to ‘speak’ it. But when we consider the triune nature
-of The Language, it has transpired that, \footnote{‘To become clear’ is expressed with the \s{pres ant} form of ‘transpire’.}
+of The Language, it has transpired that,\footnote{‘To become clear’ is expressed with the \s{pres ant} form of ‘transpire’.}
 at least in spoken communication with non-android participants, UF is the best of the terrestrial languages.
 
 %% NOTES:
