@@ -204,14 +204,30 @@ occur at the very beginning and end of the word.
     </div>
 </Page>
 
-<CentrePage title='Orthography — Ambiguity'>
-    <BasicTable format='$2' data={[
-        ['$ie', '$ →$ ', '/e/ or /ə/'],
-        ['$ié', '$ →$ ', '/ɛ̃/ or /ẽ/'],
-        ['$iè', '$ →$ ', '/e̥/ or /ɛ/'],
-        ['$il', '$ →$ ', '/ɮ̃/ or /ʎ̝̃/'],
-        ['$ic', '$ →$ ', '/ɕ/ or /ȷ̊/'],
-    ]} />
+<CentrePage title='Orthography — Ambiguity'  vcenter={false}>
+    <BasicTable style='margin-top: 3rem' format='$2' colsep='1rem' data={[
+        ['$ie', '→', '/e/', 'or', '/ə/'],
+        ['$ié', '→', '/ɛ̃/', 'or', '/ẽ/'],
+        ['$iè', '→', '/ɛ/', 'or', '/e̥/'],
+        ['$il', '→', '/ɮ̃/', 'or', '/ʎ̝̃/'],
+        ['$ic', '→', '/ɕ/', 'or', '/ȷ̊/'],
+    ]}/>
+</CentrePage>
+
+<CentrePage title='Orthography — Ambiguity cont’d' vcenter={false}>
+    <BasicTable style='margin-top: 3rem' format='$2' colsep='1rem' data={[
+        ['$ie', '→', '<$ie> /e/', 'vs', '$ <$iẹ> /ə/$1*'],
+        ['$ié', '→', '<$ié> /ɛ̃/', 'vs', '<$iẹ́> /ẽ/'],
+        ['$iè', '→', '<$iè> /ɛ/', 'vs', '$ <$iẹ̀> /e̥/$1*'],
+        ['$il', '→', '<$il> /ɮ̃/', 'vs', '<$iḷ> /ʎ̝̃/'],
+        ['$ic', '→', '<$ic> /ɕ/', 'vs', '<$ic̣> /ȷ̊/'],
+    ]}/>
+
+    <div class='content' style='margin-top: 1rem'>
+        <Text classes='font05' v='*Word-final /e̥/ and /ə/ are actually /ə̥/ and thus both spelt
+            <$iẹ>. Furthermore, /ɛ/ can never occur word-initially, so word-initial /e̥/ is also
+            just spelt $iè.'/>
+    </div>
 </CentrePage>
 
 <!-- Base Form -->
