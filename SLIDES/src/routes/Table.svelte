@@ -33,8 +33,9 @@
             /// First column.
             tr td:first-child {
                 text-align: left;
-                padding: 0 0 0 .5rem;
-                width: 7.5rem;
+                padding: 0 .5rem;
+                width: 1px;
+                white-space: nowrap;
                 color: white;
                 background: var(--bg-colour);
             }
@@ -66,6 +67,7 @@
                 <col>
             {/each}
         </colgroup>
+
         <thead>
         <tr>
             <td></td>
