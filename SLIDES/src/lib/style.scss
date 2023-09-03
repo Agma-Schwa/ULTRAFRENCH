@@ -1,3 +1,6 @@
+/// ===========================================================================
+///  Basic Setup
+/// ===========================================================================
 * {
     margin: 0;
     padding: 0;
@@ -12,143 +15,79 @@
     --frenchblue: #5252ea;
     --frenchwhite: white;
     --frenchred: #f16767;
-    --frenchred-dark: #B32F38;
-    --frenchblue-dark: #2E2E8A;
-    --font: "Minion 3", serif
+    --frenchred-dark: #b32f38;
+    --frenchblue-dark: #2e2e8a;
+    --font: 'Minion 3', serif;
+
+    --h2-height: 2rem;
+    --h2-padding-top: 1rem;
 }
 
 html {
     scroll-snap-type: both mandatory;
     //user-select: none;
     font-family: var(--font);
-    font-feature-settings: "onum" on;
+    font-feature-settings: 'onum' on;
 }
 
-.red {
-    color: darken(crimson, 5%);
-}
-
-.blue {
-    color: royalblue;
-}
-
-.green {
-    color: forestgreen;
-}
-
-.yellow {
-    color: goldenrod;
-}
-
-.purple {
-    color: lighten(indigo, 15%);
-}
-
-.orange {
-    color: lighten(saddlebrown, 25%);
-}
-
-.navy {
-    color: navy;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.small-caps {
-    font-variant: small-caps;
-}
-
-.centred {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
     text-align: center;
 }
 
-.vcenter {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+h2 {
+    padding-top: var(--h2-padding-top);
+    height: var(--h2-height);
+    line-height: var(--h2-height);
 }
 
-.font9 {
-    font-size: 4.5rem;
-}
-
-.font8 {
-    font-size: 4rem;
-}
-
-.font7 {
-    font-size: 3.5rem;
-}
-
-.font6 {
-    font-size: 3rem;
-}
-
-.font5 {
-    font-size: 2.5rem;
-}
-
-.font4 {
-    font-size: 2rem;
-}
-
-.font3 {
-    font-size: 1.5rem;
-}
-
-.font25 {
-    font-size: 1.375rem;
-}
-
-.font2 {
-    font-size: 1.25rem;
-}
-
-.font15 {
-    font-size: 1.125rem;
-}
-
-.font1 {
-    font-size: 1rem;
-}
-
-.closer {
-    margin-top: -.5rem;
-}
-
-.page {
-    position: relative;
-    scroll-snap-align: start;
-    aspect-ratio: 16 / 9;
-    width: 16cm;
-    height: 9cm;
-    margin: 0;
-    box-shadow: inset 0 0 0 1000px rgb(255 255 255 / 90%);
-    break-after: page;
-    background: linear-gradient(
-        -225deg,
-        var(--frenchblue) 0%,
-        var(--frenchblue) 33.3333%,
-        var(--frenchwhite) 33.3333%,
-        var(--frenchwhite) 66.6666%,
-        var(--frenchred) 66.6666%,
-        var(--frenchred) 100%
-    );
-}
-
-.no-box-shadow {
-    box-shadow: none !important;
-}
-
-.cons-orth-table {
+/// ===========================================================================
+///  Longer Rules
+/// ===========================================================================
+.table-row2-italic {
     tbody td:not(:first-child) {
         font-style: italic;
     }
+}
+
+div.content {
+    padding: 1rem 2rem 0;
+}
+
+/// ===========================================================================
+///  Short Helpers
+/// ===========================================================================
+.red { color: darken(crimson, 5%); }
+.blue { color: royalblue; }
+.green { color: forestgreen; }
+.yellow { color: goldenrod; }
+.purple { color: lighten(indigo, 15%); }
+.orange { color: lighten(saddlebrown, 25%); }
+.navy { color: navy; }
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.small-caps { font-variant: small-caps;}
+.centred { text-align: center; }
+.font9 { font-size: 4.5rem; }
+.font8 { font-size: 4rem; }
+.font7 { font-size: 3.5rem; }
+.font6 { font-size: 3rem; }
+.font5 { font-size: 2.5rem; }
+.font4 { font-size: 2rem; }
+.font3 { font-size: 1.5rem; }
+.font25 { font-size: 1.375rem; }
+.font2 { font-size: 1.25rem; }
+.font15 { font-size: 1.125rem; }
+.font1 { font-size: 1rem; }
+.closer { margin-top: -.5rem; }
+.no-box-shadow { box-shadow: none !important; }
+
+/// ===========================================================================
+///  Printing
+/// ===========================================================================
+.printonly { display: none; }
+@media print {
+    .noprint { display: none; }
+    .printonly { display: block; }
+    table.printonly { display: table; }
 }

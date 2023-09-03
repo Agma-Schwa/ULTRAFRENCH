@@ -87,11 +87,10 @@
         }
     }
 </script>
-{#each slides as slide}
-    <CentrePage>
+{#each slides as slide, i}
+    <CentrePage classes="{i !== (slides.length - 1) ? 'printonly' : ''}" {title}>
         <Table
-                {classes}
-                {title}
+                classes="{classes}"
                 {colnames}
                 {rownames}
                 data={slide}

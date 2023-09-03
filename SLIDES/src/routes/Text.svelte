@@ -1,4 +1,6 @@
-<script lang="ts">
+<script lang='ts'>
+    import {TextFormat} from '$lib/text';
+
     export let v: string;
     export let classes = '';
     export let style = '';
@@ -17,6 +19,7 @@
     /// $b = bold
     /// $i = italic
     /// $s = small-caps
+    /// $ <space> = nbsp
     /// q = Close span.
     /// <$X...> = $X applied to ... only.
     /// $1-$9 = font size 1-9
@@ -25,13 +28,6 @@
     let groups: number[] = [];
     for (let i = 0; i < v.length; i++) {
         switch (v[i]) {
-/*            case 'q':
-                if (spans_to_close) {
-                    output_text += '</span>';
-                    spans_to_close--;
-                }
-                break;*/
-
             case '<':
                 groups.push(spans_to_close);
                 break;
@@ -52,73 +48,14 @@
                     break;
                 }
 
-                output_text += '<span class="';
-                switch (v[++i]) {
-                    case 'r':
-                        output_text += 'red';
-                        break;
-
-                    case 'u':
-                        output_text += 'blue';
-                        break;
-
-                    case 'g':
-                        output_text += 'green';
-                        break;
-
-                    case 'y':
-                        output_text += 'yellow';
-                        break;
-
-                    case 'v':
-                        output_text += 'purple';
-                        break;
-
-                    case 'o':
-                        output_text += 'orange';
-                        break;
-
-                    case 'n':
-                        output_text += 'navy';
-                        break;
-
-                    case 'b':
-                        output_text += 'bold';
-                        break;
-
-                    case 'i':
-                        output_text += 'italic';
-                        break;
-
-                    case 's':
-                        output_text += 'small-caps';
-                        break;
-
-                    case 'a':
-                        output_text += 'red small-caps';
-                        break;
-
-                    case 'p':
-                        output_text += 'blue small-caps';
-                        break;
-
-                    case '1':
-                    case '2':
-                    case '3':
-                    case '4':
-                    case '5':
-                    case '6':
-                    case '7':
-                    case '8':
-                    case '9':
-                        output_text += `font${v[i]}`;
-                        break;
-
-                    default:
-                        output_text += `$${v[i]}`;
-                        break;
+                if (v[i + 1] == ' ') {
+                    output_text += '&nbsp;';
+                    i++;
+                    break;
                 }
 
+                output_text += '<span class="';
+                output_text += TextFormat.ActOnFormatSpecifier(v[++i], true);
                 output_text += '">';
                 spans_to_close++;
                 break;
