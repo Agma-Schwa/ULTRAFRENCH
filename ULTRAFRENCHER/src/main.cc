@@ -315,12 +315,16 @@ public:
 constexpr char32_t
 Nasal(char32_t c) {
     switch (c) {
-        case 'a': return U'ɑ';
-        case 'e': return U'ɛ';
-        case 'i': return U'i';
-        case 'o': return U'ɔ';
-        case 'u': return U'u';
-        case 'y': return U'ʏ';
+        case U'e': return U'ɛ';
+        case U'i': return U'i';
+        case U'o': return U'ɔ';
+        case U'u': return U'u';
+        case U'y': return U'ʏ';
+
+        case U'a':
+        case U'ɐ':
+            return U'ɑ';
+
         default: return c;
     }
 }
@@ -442,12 +446,15 @@ void translate() {
             case U'a': {
                 if (it.consume(U'u')) {
                     if (it.consume(Diaeresis)) {
-                        ipa += U'a';
+                        ipa += U'ɐ';
                         c = U'u';
                     } else {
                         c = 'o';
                     }
+                } else {
+                    c = U'ɐ';
                 }
+
                 goto simple_vowel;
             }
 

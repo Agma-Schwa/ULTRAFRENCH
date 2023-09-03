@@ -1,6 +1,7 @@
 <script lang="ts">
     export let v: string;
     export let classes = '';
+    export let style = '';
 
     /// Syntax of text:
     ///
@@ -134,4 +135,4 @@
     }
 </script>
 
-<p class={classes}>{@html output_text}</p>
+<p class={classes} {style}>{@html output_text}</p>

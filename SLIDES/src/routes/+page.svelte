@@ -4,16 +4,21 @@
     import CentrePage from "./CentrePage.svelte";
     import "$lib/style.scss";
     import Table from "./Table.svelte";
+    import SeqTablePages from "./SeqTablePages.svelte";
 </script>
 
 <style lang="scss">
     @media print {
-        .noprint {
+        :global(.noprint) {
             display: none;
         }
     }
 </style>
 
+
+<!-----------------------------------------------------------------------------
+  PRELUDE
+------------------------------------------------------------------------------>
 <CentrePage>
     <div class="noprint">(This page is intentionally left blank)</div>
 </CentrePage>
@@ -62,7 +67,11 @@
     <Text v="$2ULTRAFRENCH"/>
 </CentrePage>
 
+<!-----------------------------------------------------------------------------
+  Consonants
+------------------------------------------------------------------------------>
 <CentrePage>
+    <Text v="$3Consonants" style="margin-bottom: 1rem"/>
     <Table
             bgcolour="var(--frenchred-dark)"
             colnames={['Labial', 'Coronal', 'Palatal', 'Velar', 'Glottal']}
@@ -79,6 +88,7 @@
 </CentrePage>
 
 <CentrePage>
+    <Text v="$3Consonants" style="margin-bottom: 1rem"/>
     <Table
             bgcolour="var(--frenchred-dark)"
             colnames={['Labial', 'Coronal', 'Palatal', 'Velar', 'Glottal']}
@@ -91,6 +101,103 @@
                 ['', '', '', 'ʀ'],
                 ['', '', 'ɥ ɥ̃, ȷ̊', 'ɰ ɰ̃'],
                 ['', 'ɮ̃', 'ʎ̝̃']
+            ]}
+    />
+</CentrePage>
+
+<SeqTablePages
+    classes='cons-orth-table'
+    title="Consonants — Orthography"
+    bgcolour="var(--frenchred-dark)"
+    colnames={['Phoneme(s)', 'Orthography']}
+    data={[
+        ['b, d, n, s, z, h', 'b, d, n, s, z, h'],
+        ['\0x, θ, ð, β', 'c’h, t’h, d’h, b’h'],
+        ['\0ɸ', 'f'],
+        ['\0ɮ̃, ʎ̝̃', 'l, ḷ'],
+        ['\0ɰ, ɰ̃', 'r, w'],
+        ['\0ɥ, ɥ̃', 'y’, ý’'],
+        ['\0ʋ̃', 'v'],
+        ['\0ʑ', 'j']
+    ]}
+/>
+
+<!-----------------------------------------------------------------------------
+  Vowels
+------------------------------------------------------------------------------>
+<CentrePage>
+    <Text v="$3Vowels" style="margin-bottom: 1rem"/>
+    <Table
+            bgcolour="var(--frenchblue-dark)"
+            colnames={['Front', 'Central', 'Back']}
+            rownames={['Close', 'Near-close', 'Close-mid', 'Mid', 'Open-mid', 'Near-open', 'Open']}
+            data={[
+                ['i ĩ', 'y', 'u ũ'],
+                ['ʏ̃'],
+                ['e ẽ', '', 'o'],
+                ['', 'ə'],
+                ['ɛ ɛ̃', '', 'ɔ̃'],
+                ['', 'ɐ'],
+                ['', '', 'ɑ̃']
+            ]}
+    />
+</CentrePage>
+
+<CentrePage>
+    <Text v="$3Vowels" style="margin-bottom: 1rem"/>
+    <Table
+            bgcolour="var(--frenchblue-dark)"
+            colnames={['Front', 'Central', 'Back']}
+            rownames={['Close', 'Near-close', 'Close-mid', 'Mid', 'Open-mid', 'Near-open', 'Open']}
+            data={[
+                ['i ĩ ĩ̃', 'y', 'u ũ ũ̃'],
+                ['ʏ̃ ʏ̃̃'],
+                ['e ẽ ẽ̃', '', 'o'],
+                ['', 'ə'],
+                ['ɛ ɛ̃ ɛ̃̃', '', 'ɔ̃ ɔ̃̃'],
+                ['', 'ɐ'],
+                ['', '', 'ɑ̃ ɑ̃̃']
+            ]}
+    />
+</CentrePage>
+
+<CentrePage>
+    <Text v="$3Vowels" style="margin-bottom: 1rem"/>
+    <Table
+            bgcolour="var(--frenchblue-dark)"
+            colnames={['Front', 'Central', 'Back']}
+            rownames={['Close', 'Near-close', 'Close-mid', 'Mid', 'Open-mid', 'Near-open', 'Open']}
+            data={[
+                ['i ĩ ı̃̃ i̥ y ẙ', '', 'u ũ ũ̃ u̥'],
+                ['ʏ̃ ʏ̃̃'],
+                ['e ẽ ẽ̃ e̥', '', 'o o̥'],
+                ['', 'ə ə̥'],
+                ['ɛ ɛ̃ ɛ̃̃ ɛ̥', '', 'ɔ̃ ɔ̃̃'],
+                ['', 'ɐ ɐ̥'],
+                ['', '', 'ɑ̃ ɑ̃̃']
+            ]}
+    />
+</CentrePage>
+
+<!--
+Note: There are not centred voiceless vowels since centering only
+affects vowels before *r* and *w*, and voiceless vowels can only
+occur at the very beginning and end of the word.
+-->
+<CentrePage>
+    <Text v="$3Vowel Allophones" style="margin-bottom: 1rem"/>
+    <Table
+            bgcolour="var(--frenchblue-dark)"
+            colnames={['Front', 'Central', 'Back']}
+            rownames={['Close', 'Near-close', 'Close-mid', 'Mid', 'Open-mid', 'Near-open', 'Open']}
+            data={[
+                ['i ĩ ı̃̃ i̥ y ẙ', 'ɨ̃ ɨ̃̃ ʉ', 'u ũ ũ̃ u̥'],
+                ['ʏ̃ ʏ̃̃', 'ʏ̠̃ ʏ̠̃̃'],
+                ['e ẽ ẽ̃ e̥', 'ɘ ɘ̃ ɘ̃̃', 'o o̥'],
+                ['', 'ə ə̥'],
+                ['ɛ ɛ̃ ɛ̃̃ ɛ̥', 'ɜ ɜ̃ ɜ̃̃', 'ɔ̃ ɔ̃̃'],
+                ['', 'ɐ ɐ̥'],
+                ['', '', 'ɑ̃ ɑ̃̃']
             ]}
     />
 </CentrePage>
