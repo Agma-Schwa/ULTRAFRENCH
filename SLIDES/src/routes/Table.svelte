@@ -16,6 +16,24 @@
 
     $: parsed_format = TextFormat.ParseTextFormat(format);
 
+    /// Compute cell spans.
+    let spans: number[][] = Array(data.length).fill(0).map(_ => Array(colnames.length).fill(1));
+
+    /// If a cell contains the text '#span', then the cell to the left
+    /// of it is extended by 1; multiple occurrences of '#span' extend
+    /// the cell by the number of occurrences.
+    for (let i = 0; i < data.length; i++) {
+        for (let j = 0; j < data[i].length; j++) {
+            if (j === 0) continue;
+            const idx = j - 1;
+
+            /// Note: It’s ok to skip over an extra element here after a
+            /// series of '#span's since that element can’t be a '#span'
+            /// anyway and can thus just be ignored.
+            while (j < data.length && data[i][j++] === '#span') spans[i][idx]++;
+        }
+    }
+
     onMount(() => {
         table.style.setProperty('--bg-colour', bgcolour);
         if (!rownames) table.classList.add('notitlecol');
@@ -111,9 +129,11 @@
                 <tr>
                     <td>{name}</td>
                     {#each colnames as _, j}
-                        <td class='{parsed_format}'>
-                            <Text v='{data[i]?.[j] ?? ""}'/>
-                        </td>
+                        {#if data[i]?.[j] !== '#span'}
+                            <td class='{parsed_format}' colspan='{spans[i][j]}'>
+                                <Text v='{data[i]?.[j] ?? ""}'/>
+                            </td>
+                        {/if}
                     {/each}
                 </tr>
             {/each}
@@ -121,9 +141,11 @@
             {#each data as row, i}
                 <tr>
                     {#each row as _, j}
-                        <td class='{parsed_format}'>
-                            <Text v='{data[i]?.[j] ?? ""}'/>
-                        </td>
+                        {#if data[i]?.[j] !== '#span'}
+                            <td class='{parsed_format}' colspan='{spans[i][j]}'>
+                                <Text v='{data[i]?.[j] ?? ""}'/>
+                            </td>
+                        {/if}
                     {/each}
                 </tr>
             {/each}

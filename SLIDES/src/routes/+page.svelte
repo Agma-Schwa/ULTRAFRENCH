@@ -264,38 +264,9 @@ occur at the very beginning and end of the word.
     ]}/>
 </CentrePage>
 
-<CentrePage title='Abbreviated Glosses' vcenter={false}>
-    <div class='content' style='text-align: left;'>
-        <ul>
-            <li>Verbs are active, present, and indicative by default.</li>
-            <li>Nouns are singular and definite by default.</li>
-        </ul>
-    </div>
-</CentrePage>
-
-<CentrePage>
-    <Text v='$7$ijad’hór it’halẹ'/>
-    <Text v='$4‘I love the table’'/>
-</CentrePage>
-
-<CentrePage>
-    <BasicTable colsep='2rem' align={AlignmentSpec.Left}
-                data={[
-            ['$i$6<$5$ >j-ad’hór', '$i$6i\\t’halẹ'],
-            ['$4<$s1sg.act.pres.ind>-love', '$4<$sacc.sg.def>\\table']
-        ]}
-    />
-</CentrePage>
-
-<CentrePage>
-    <BasicTable colsep='2rem' align={AlignmentSpec.Left}
-                data={[
-            ['$i$6<$4$ >j-ad’hór', '$i$6i\\t’halẹ'],
-            ['$4<$s1sg>-love', '$4<$sacc>\\table']
-        ]}
-    />
-</CentrePage>
-
+<!-----------------------------------------------------------------------------
+  Nouns
+------------------------------------------------------------------------------>
 <CentrePage>
     <div style='display: flex; flex-direction: row; gap: 1rem;'>
         <Table
@@ -370,6 +341,156 @@ occur at the very beginning and end of the word.
 </CentrePage>
 
 <!-----------------------------------------------------------------------------
+  Abbreviated Glosses
+------------------------------------------------------------------------------>
+<CentrePage title='Abbreviated Glosses' vcenter={false}>
+    <div class='content' style='text-align: left;'>
+        <ul>
+            <li>Verbs are active, present, and indicative by default.</li>
+            <li>Nouns are singular and definite by default.</li>
+        </ul>
+    </div>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$ijad’hór it’halẹ'/>
+    <Text v='$4‘I love the table’'/>
+</CentrePage>
+
+<CentrePage>
+    <BasicTable colsep='2rem' align={AlignmentSpec.Left}
+                data={[
+            ['$i$6<$5$ >j-ad’hór', '$i$6i\\t’halẹ'],
+            ['$4<$s1sg.act.pres.ind>-love', '$4<$sacc.sg.def>\\table']
+        ]}
+    />
+</CentrePage>
+
+<CentrePage>
+    <BasicTable colsep='2rem' align={AlignmentSpec.Left}
+                data={[
+            ['$i$6<$4$ >j-ad’hór', '$i$6i\\t’halẹ'],
+            ['$4<$s1sg>-love', '$4<$sacc>\\table']
+        ]}
+    />
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$iḍalẹ'/>
+    <Text v='$3‘table’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$i<$rsý>nalẹ'/>
+    <Text v='$4<$s$rgen.indef\>table' classes='closer'/>
+    <Text v='$3‘of a table’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$i<$rsý>t’halẹ'/>
+    <Text v='$4<$s$rgen.indef.pl\>table' classes='closer'/>
+    <Text v='$3‘of tables’'/>
+</CentrePage>
+
+<!-----------------------------------------------------------------------------
+  Adjectives
+------------------------------------------------------------------------------>
+<CentrePage title='Adjectives' vcenter={false}>
+    <div class='content' style='text-align: left;'>
+        <ul>
+            <li>Most ‘adjectives’ are adjective verbs.</li>
+            <li>Adjectives are not declined and follow the noun they qualify.</li>
+        </ul>
+    </div>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$iḅẹt’hẹ'/>
+    <Text v='$3‘to be small’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$iḅẹt’h$râ'/>
+    <Text v='$4be.small$r$s\ptcp'/>
+    <Text v='$3‘small’ (lit. ‘being small’)'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$i<$usý>nalẹ ḅẹt’h$râ'/>
+    <Text v='$4<$s$ugen.indef\>table be.small$r$s\ptcp'/>
+    <Text v='$3‘of a small (lit. “small-being”) table’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$i<$ulẹ>ḅẹt’h$râ'/>
+    <Text v='$4<$pcomp->be.small$a\ptcp'/>
+    <Text v='$3‘smaller (and also small)’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$i<$uy’ŷ>ḅẹt’h$râ'/>
+    <Text v='$4<$pcomp->be.small$a\ptcp'/>
+    <Text v='$3‘smaller (but not small)’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$i<$urê>ḅẹt’h$râ'/>
+    <Text v='$4<$pcomp->be.small$a\ptcp'/>
+    <Text v='$3‘smaller’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$i<$raú><$uy’ŷ>ḅẹt’hẹ$ry’ó'/>
+    <Text v='$4<$a1pl-><$pcomp->be.small<$a-1pl>'/>
+    <Text v='$3‘we are smaller, but not small’'/>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$5$iLáráhó <$rs><$ulẹ><$olúr><$rá> b’héd’hẹhẹ dẹnájẹ.'/>
+    <Text v='$3‘The fish <$rwas> <$utoo> <$obulky> to swim to the surface.’'/>
+</CentrePage>
+
+<CentrePage title='Active/Passive Affixes'>
+    <div style='display: flex; gap: 1rem;'>
+        <Table
+                name='Active'
+                format='$i'
+                colnames={['Sg', 'Pl']}
+                rownames={['1st', '2nd', '3rd m', '3rd f', '3rd n', 'Infinitive', 'Participle']}
+                align={AlignmentSpec.Left}
+                bgcolour='var(--frenchred-dark)'
+                data={[
+                ['j-', 'aú-/r-/w- -(y’)ó'],
+                ['ḍ(ẹ)-', 'b’h(y)- -(y’)é'],
+                ['l(ẹ)-', 'l(ẹ)-'],
+                ['ll(a)-', 'll(ẹ)-'],
+                ['s- ', 'l(a)-'],
+                ['$Cd(ẹ)-', '#span'],
+                ['$C-â', '#span']
+            ]}
+        />
+
+        <Table
+                name='Passive'
+                format='$i'
+                colnames={['Sg', 'Pl']}
+                rownames={['1st', '2nd', '3rd m', '3rd f', '3rd n', 'Infinitive', 'Participle']}
+                align={AlignmentSpec.Left}
+                bgcolour='var(--frenchblue-dark)'
+                data={[
+                    ['v-', 'aú-/r-/w-'],
+                    ['ḍ(ẹ)-', 'b’h(y)-'],
+                    ['y’-', 'lý-'],
+                    ['y’- ', 'lý-'],
+                    ['sy-', 'lý-'],
+                    ['$Cà-/h-', '#span'],
+                    ['$Câ-', '#span'],
+                ]}
+        />
+    </div>
+</CentrePage>
+
+<!-----------------------------------------------------------------------------
   Verb Examples
 ------------------------------------------------------------------------------>
 <!-- Base Form -->
@@ -413,6 +534,18 @@ occur at the very beginning and end of the word.
     <Text v='$i$3(Invalid: active prefix should be on the outside)'/>
 </CentrePage>
 
+<!-- Passive Form vs Active form-->
+<CentrePage>
+    <BasicTable
+        colsep='5rem'
+        data={[
+            ['$6$i<$rb’h>ad’hór<$ré>', '$6$i<$ub’h>ad’hór'],
+            ['$4<$a2pl->love$a-2pl', '$4<$p2pl.pass->love'],
+            ['$3‘you (<$spl>) love’', '$3‘you (<$spl>) are loved’']
+        ]}
+    />
+</CentrePage>
+
 <!-- Active + Corresponding Passive Form -->
 <CentrePage>
     <Text v='$7$i<$rb’hy><$ub’h>ad’hór$ré'/>
@@ -437,13 +570,13 @@ occur at the very beginning and end of the word.
 <!-- Negated Optative Conditional II of a Ditransitive Verb, because that’s a thing -->
 <CentrePage>
     <Text v='$6$idónẹ́'/>
-    <Text v='endow' classes='closer font25'/>
     <Text v='$2[dɔ̃ˈnẽˑ]'/>
+    <Text v='endow' classes='font25'/>
 </CentrePage>
 
 <CentrePage>
     <Text v='$6$i<$raú>dónẹ́<$ry’ó>'/>
-    <Text v='<$a1pl.fut.ant->endow$s<$a-circ>'
+    <Text v='<$a1pl->endow$s<$a-1pl>'
           classes='closer font25'/>
     <Text v='$2[ɔ̃.dɔ̃ˈnẽˑ.ɥɔ̃]'/>
     <Text v='‘We endow’' classes='font15'/>
@@ -451,7 +584,7 @@ occur at the very beginning and end of the word.
 
 <CentrePage>
     <Text v='$6$i<$raú>dónẹ́<$ry’ó><$vb’hẹ>'/>
-    <Text v='<$a1pl.fut.ant->endow$s<$a-circ><$v-2.dat>'
+    <Text v='<$a1pl->endow$s<$a-1pl><$v-2.dat>'
           classes='closer font25'/>
     <Text v='$2[ɔ̃.dɔ̃ˈnẽˑ.ɥɔ̃.βə̥]'/>
     <Text v='‘We endow you’' classes='font15'/>
@@ -459,30 +592,30 @@ occur at the very beginning and end of the word.
 
 <CentrePage>
     <Text v='$6$i<$raú><$usy>dónẹ́<$ry’ó><$vb’hẹ>'/>
-    <Text v='<$a1pl.fut.ant-><$p3n.pass->endow$s<$a-circ><$v-2.dat>'
+    <Text v='<$a1pl-><$p3n.pass->endow$s<$a-1pl><$v-2.dat>'
           classes='closer font25'/>
     <Text v='$2[ɔ̃.sy.dɔ̃ˈnẽˑ.ɥɔ̃.βə̥]'/>
     <Text v='‘We endow you with it’' classes='font15'/>
 </CentrePage>
 
 <CentrePage>
-    <Text v='$6$i<$raûnraû><$usy>dón<$gr><$raûrâ><$vb’hẹ>'/>
+    <Text v='$6$i<$raúnraû><$usy>dón<$gr><$raûrâ><$vb’hẹ>'/>
     <Text v='<$a1pl.fut.ant-><$p3n.pass->endow$s$g.fut<$a&bsol;circ><$v-2.dat>'
           classes='closer font25'/>
-    <Text v='$2[ɔ̃̃n.ɰɔ̃̃.sy.dɔ̃nˈɰɔ̃̃ˑ.ɰɑ̃̃.βə̥]'/>
+    <Text v='$2[ɔ̃n.ɰɔ̃̃.sy.dɔ̃nˈɰɔ̃̃ˑ.ɰɑ̃̃.βə̥]'/>
     <Text v='‘We shall have endowed you with it’' classes='font15'/>
 </CentrePage>
 
 <CentrePage>
-    <Text v='$6$i<$raûnraû><$usy>dón<$gr>ẹ́<$oss><$raúrâ><$vb’hẹ>'/>
+    <Text v='$6$i<$raúnraû><$usy>dón<$grẹ́><$oss><$raúrâ><$vb’hẹ>'/>
     <Text v='<$a1pl.fut.ant-><$p3n.pass->endow$s$g.fut<$o-cond><$a-circ><$v-2.dat>'
           classes='closer font25'/>
-    <Text v='$2[ɔ̃̃n.ɰɔ̃̃.sy.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]'/>
+    <Text v='$2[ɔ̃n.ɰɔ̃̃.sy.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]'/>
     <Text v='‘We would have endowed you with it’' classes='font15'/>
 </CentrePage>
 
 <CentrePage>
-    <Text v='$6$i<$raûnraû><$usy><$yy’ẹ>dón<$gr>ẹ́<$oss><$raúrâ><$vb’hẹ>'/>
+    <Text v='$6$i<$raúnraû><$usy><$yy’ẹ>dón<$grẹ́><$oss><$raúrâ><$vb’hẹ>'/>
     <Text v='<$a1pl.fut.ant-><$p3n.pass-><$y$sopt->endow$s$g.fut<$o-cond><$a-circ><$v-2.dat>'
           classes='closer font25'/>
     <Text v='$2[ɔ̃̃n.ɰɔ̃̃.sy.ɥə.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]'/>
@@ -490,7 +623,7 @@ occur at the very beginning and end of the word.
 </CentrePage>
 
 <CentrePage>
-    <Text v='$6$i<$nt’h’><$raûnraû><$usy><$yy’ẹ>dón<$gr>ẹ́<$oss><$raúrâ><$vb’hẹ>'/>
+    <Text v='$6$i<$nt’h’><$raûnraû><$usy><$yy’ẹ>dón<$grẹ́><$oss><$raúrâ><$vb’hẹ>'/>
     <Text v='<$s$nneg&bsol;><$a1pl.fut.ant-><$p3n.pass-><$y$sopt->endow$s$g.fut<$o-cond><$a-circ><$v-2.dat>'
           classes='closer font25'/>
     <Text v='$2[θɔ̃̃n.ɰɔ̃̃.sy.ɥə.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]'/>

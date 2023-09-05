@@ -7,8 +7,8 @@ export const enum AlignmentSpec {
     Right = 'align-right',
 }
 
-/// Transpose 2d array.
 /*
+/// Transpose 2d array.
 function Transpose(arr) {
     let ret = [];
     for (let i = 0; i < arr[0].length; i++) ret.push([]);
@@ -17,7 +17,13 @@ function Transpose(arr) {
             ret[i].push(arr[j][i]);
     return ret;
 }
+
+/// Split LaTeX table.
+function S(s) {
+    return s.split('\n').map(line => line.slice(0, line.indexOf('\\\\')).split('&'))
+}
 */
+
 
 /// Supported format specifiers:
 ///
@@ -43,6 +49,9 @@ function Transpose(arr) {
 ///
 /// $U = superscript
 /// $D = subscript
+/// %L = left-align
+/// %C = center-align
+/// %R = right-align
 namespace TextFormat {
     export function ParseTextFormat(format: string): string {
         let classes = '';

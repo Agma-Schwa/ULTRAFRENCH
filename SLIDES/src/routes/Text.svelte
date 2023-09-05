@@ -5,6 +5,9 @@
     export let classes = '';
     export let style = '';
 
+    /// Mutating 'classes' apparently breaks Svelte, so we do this instead.
+    let class_list = classes;
+
     /// See text.ts for a list of text format specifiers.
     let output_text = '';
     let closing_tags: string[] = [];
@@ -42,6 +45,27 @@
                         i++;
                         break;
 
+                    case 'D':
+                        output_text += '<sub>';
+                        closing_tags.push('</sub>');
+                        i++;
+                        break;
+
+                    case 'L':
+                        class_list += ' align-left';
+                        i++;
+                        break;
+
+                    case 'C':
+                        class_list += ' align-center';
+                        i++;
+                        break;
+
+                    case 'R':
+                        class_list += ' align-right';
+                        i++;
+                        break;
+
                     default:
                         output_text += '<span class="';
                         output_text += TextFormat.ActOnFormatSpecifier(v[++i], true);
@@ -61,4 +85,4 @@
     while (closing_tags.length) output_text += closing_tags.pop() as string;
 </script>
 
-<p class={classes} {style}>{@html output_text}</p>
+<p class={class_list} {style}>{@html output_text}</p>
