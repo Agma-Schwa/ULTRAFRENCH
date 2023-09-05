@@ -6,11 +6,31 @@ namespace TextFormat {
         let classes = '';
         for (let i = 0; i < format.length; i++) {
             if (format[i] != '$') continue;
+            classes += ' ';
             classes += ActOnFormatSpecifier(format[++i], false);
         }
         return classes;
     }
 
+    /// Supported format specifiers:
+    ///
+    /// $r = red
+    /// $u = blue (MTG moment, I know)
+    /// $g = green
+    /// $y = yellow
+    /// $v = purple
+    /// $n = navy (blue)
+    /// $o = orange
+    /// $a = active ($r + $s)
+    /// $p = passive ($u + $s)
+    /// $b = bold
+    /// $i = italic
+    /// $s = small-caps
+    /// $m = roman (normal)
+    /// $ <space> = nbsp
+    /// q = Close span.
+    /// <$X...> = $X applied to ... only.
+    /// $1-$9 = font size 1-9
     export function ActOnFormatSpecifier(spec: string, escape_invalid: boolean): string {
         switch (spec) { /// @formatter:off
             default: return escape_invalid ? '$${spec}' : '';
@@ -26,6 +46,7 @@ namespace TextFormat {
             case 's': return 'small-caps';
             case 'a': return 'red small-caps';
             case 'p': return 'blue small-caps'
+            case 'm': return 'roman';
             /// @formatter:on
 
             case '1':

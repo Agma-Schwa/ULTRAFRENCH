@@ -5,24 +5,7 @@
     export let classes = '';
     export let style = '';
 
-    /// Syntax of text:
-    ///
-    /// $r = red
-    /// $u = blue (MTG moment, I know)
-    /// $g = green
-    /// $y = yellow
-    /// $v = purple
-    /// $n = navy (blue)
-    /// $o = orange
-    /// $a = active ($r + $s)
-    /// $p = passive ($u + $s)
-    /// $b = bold
-    /// $i = italic
-    /// $s = small-caps
-    /// $ <space> = nbsp
-    /// q = Close span.
-    /// <$X...> = $X applied to ... only.
-    /// $1-$9 = font size 1-9
+    /// See text.ts for a list of text format specifiers.
     let output_text = '';
     let spans_to_close = 0;
     let groups: number[] = [];

@@ -6,6 +6,7 @@
     import Table from './Table.svelte';
     import SeqTablePages from './SeqTablePages.svelte';
     import BasicTable from './BasicTable.svelte';
+    import SeqListPages from './SeqListPages.svelte';
 </script>
 
 <style lang='scss'>
@@ -190,21 +191,24 @@ occur at the very beginning and end of the word.
     />
 </CentrePage>
 
-<Page title='Vowels — Orthography'>
-    <div class='content'>
-        <ul>
-            <li>/i, y, u, e, o/ are spelt <em>i, y, u, e, o</em></li>
-            <li>/ɐ/ is spelt <em>a</em>.</li>
-            <li>When nasal(ised), /y, e, o, ɐ/ change quality to /ʏ, ɛ, ɔ, ɑ/.</li>
-            <li>Nasalised: <em>í, ý, ...</em>, nasal: <em>î, ŷ, ...</em>, voiceless: <em>ì, ỳ, ...</em></li>
-            <li>Oral /ɛ/ is spelt <em>è</em>.</li>
-            <li>Nasal(ised) /ẽ, ẽ̃/ are spelt <em>é, ê</em>.</li>
-            <li>Oral and voiceless are spelt <em>e</em>.</li>
-        </ul>
-    </div>
-</Page>
+<SeqListPages
+    title='Vowels — Orthography'
+    data={[
+        '/i, y, u, e, o/ are spelt $ii, y, u, e, o.',
+        '/ɐ/ is spelt $ia.',
+        'When nasal(ised), /y, e, o, ɐ/ change quality to /ʏ, ɛ, ɔ, ɑ/.',
+        'Nasalised: <$ií, ý, ...>, nasal: <$iî, ŷ, ...>, voiceless: <$iì, ỳ, ...>',
+        '/o, ɔ̃, ɔ̃̃/ are frequently also spelt $iau, aú, aû.',
+        'Oral /ɛ/ is spelt $iè.',
+        'Nasal(ised) /ẽ, ẽ̃/ are spelt $ié, ê.',
+        'Oral and voiceless are spelt $ie.',
+    ]}
+/>
 
-<CentrePage title='Orthography — Ambiguity'  vcenter={false}>
+<!-----------------------------------------------------------------------------
+  Orthography
+------------------------------------------------------------------------------>
+<CentrePage title='Orthography — Ambiguity' vcenter={false}>
     <BasicTable style='margin-top: 3rem' format='$2' colsep='1rem' data={[
         ['$ie', '→', '/e/', 'or', '/ə/'],
         ['$ié', '→', '/ɛ̃/', 'or', '/ẽ/'],
@@ -228,6 +232,35 @@ occur at the very beginning and end of the word.
             <$iẹ>. Furthermore, /ɛ/ can never occur word-initially, so word-initial /e̥/ is also
             just spelt $iè.'/>
     </div>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$2$i(just slowly pan down over all the sound changes in the grammar)'/>
+</CentrePage>
+
+<!-----------------------------------------------------------------------------
+  Nasalisation and Lenition
+------------------------------------------------------------------------------>
+<CentrePage title='Lenition' vcenter={false}>
+    <BasicTable style='margin-top: 3rem' classes='lenition-table' format='$2$i' data={[
+        ['$m$bConsonant', 'x, s, z', 'c', 'b, f', 'ḅ$1*', 'd', 'ḍ$1*'],
+        ['$m$bLenited', 'h', 'c̣', 'b’h', 'bh', 'd’h', 't’h']
+    ]}/>
+
+    <div class='content' style='margin-top: 5rem'>
+        <Text classes='font05' v='*For diachronic reasons, <$id> and <$ib> can be lenited
+            in 2 different ways. Which lenition is used depends on the word; in grammatical
+            material, a dot below is used for ‘hard’ <$id> and <$ib>, which diachronically
+            derive from <$it> and <$ip>.'/>
+    </div>
+</CentrePage>
+
+<CentrePage title='Nasalisation'>
+    <BasicTable format='$2$i' colsep='1rem' data={[
+        ['à, a', '→', 'á'],
+        ['á', '→', 'â'],
+        ['ḍ$1*', '→', 'n'],
+    ]}/>
 </CentrePage>
 
 <!-- Base Form -->

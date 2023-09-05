@@ -4,6 +4,7 @@
     import {onMount} from 'svelte';
 
 
+    export let classes: string = '';
     export let colsep: string = '';
     export let format: string = '';
     export let data: string[][];
@@ -30,7 +31,7 @@
     }
 </style>
 
-<table class={TextFormat.ParseTextFormat(format)} bind:this={table} {style}>
+<table class='{TextFormat.ParseTextFormat(format)} {classes}' bind:this={table} {style}>
     <tbody>
     {#each data as row}
         <tr>
