@@ -1,22 +1,28 @@
-<script lang="ts">
-    import {onMount} from "svelte";
-    import Text from "./Text.svelte";
+<script lang='ts'>
+    import {onMount} from 'svelte';
+    import Text from './Text.svelte';
+    import {AlignmentSpec, TextFormat} from '$lib/text';
 
     export let classes: string = '';
     export let title: string | undefined = undefined;
-    export let colnames: string[]
+    export let colnames: string[];
     export let rownames: string[] | undefined = undefined;
     export let data: string[][];
     export let bgcolour: string = 'black';
+    export let format: string = '';
+    export let name: string = '';
+    export let align: AlignmentSpec = AlignmentSpec.Center;
     let table: HTMLTableElement;
+
+    $: parsed_format = TextFormat.ParseTextFormat(format);
 
     onMount(() => {
         table.style.setProperty('--bg-colour', bgcolour);
         if (!rownames) table.classList.add('notitlecol');
-    })
+    });
 </script>
 
-<style lang="scss">
+<style lang='scss'>
     .table-wrapper {
         display: flex;
         align-items: center;
@@ -77,11 +83,11 @@
 </style>
 
 {#if title}
-    <Text v="$3{title}" style="margin-bottom: 1rem"/>
+    <Text v='$3{title}' style='margin-bottom: 1rem'/>
 {/if}
 
-<div class="table-wrapper">
-    <table bind:this={table} class={classes}>
+<div class='table-wrapper'>
+    <table bind:this={table} class='{classes} {align}'>
         <colgroup>
             {#each data as _}
                 <col>
@@ -91,7 +97,7 @@
         <thead>
         <tr>
             {#if rownames}
-                <td></td>
+                <td>{name}</td>
             {/if}
             {#each colnames as title}
                 <td>{title}</td>
@@ -105,7 +111,9 @@
                 <tr>
                     <td>{name}</td>
                     {#each colnames as _, j}
-                        <td>{@html data[i]?.[j] ?? ''}</td>
+                        <td class='{parsed_format}'>
+                            <Text v='{data[i]?.[j] ?? ""}'/>
+                        </td>
                     {/each}
                 </tr>
             {/each}
@@ -113,7 +121,9 @@
             {#each data as row, i}
                 <tr>
                     {#each row as _, j}
-                        <td>{@html data[i]?.[j] ?? ''}</td>
+                        <td class='{parsed_format}'>
+                            <Text v='{data[i]?.[j] ?? ""}'/>
+                        </td>
                     {/each}
                 </tr>
             {/each}

@@ -1,6 +1,48 @@
 /// Parses a format specifier list and returns a list of classes
 /// to be applied to get the desired format. Unexpected characters
 /// are ignored.
+export const enum AlignmentSpec {
+    Left = 'align-left',
+    Center = 'align-center',
+    Right = 'align-right',
+}
+
+/// Transpose 2d array.
+/*
+function Transpose(arr) {
+    let ret = [];
+    for (let i = 0; i < arr[0].length; i++) ret.push([]);
+    for (let i = 0; i < arr[0].length; i++)
+        for (let j = 0; j < arr.length; j++)
+            ret[i].push(arr[j][i]);
+    return ret;
+}
+*/
+
+/// Supported format specifiers:
+///
+/// $r = red
+/// $u = blue (MTG moment, I know)
+/// $g = green
+/// $y = yellow
+/// $v = purple
+/// $n = navy (blue)
+/// $o = orange
+/// $a = active ($r + $s)
+/// $p = passive ($u + $s)
+/// $b = bold
+/// $i = italic
+/// $s = small-caps
+/// $m = roman (normal)
+/// $ <space> = nbsp
+/// q = Close span.
+/// <$X...> = $X applied to ... only.
+/// $1-$9 = font size 1-9
+///
+/// Only supported by <Text> tags:
+///
+/// $U = superscript
+/// $D = subscript
 namespace TextFormat {
     export function ParseTextFormat(format: string): string {
         let classes = '';
@@ -12,25 +54,6 @@ namespace TextFormat {
         return classes;
     }
 
-    /// Supported format specifiers:
-    ///
-    /// $r = red
-    /// $u = blue (MTG moment, I know)
-    /// $g = green
-    /// $y = yellow
-    /// $v = purple
-    /// $n = navy (blue)
-    /// $o = orange
-    /// $a = active ($r + $s)
-    /// $p = passive ($u + $s)
-    /// $b = bold
-    /// $i = italic
-    /// $s = small-caps
-    /// $m = roman (normal)
-    /// $ <space> = nbsp
-    /// q = Close span.
-    /// <$X...> = $X applied to ... only.
-    /// $1-$9 = font size 1-9
     export function ActOnFormatSpecifier(spec: string, escape_invalid: boolean): string {
         switch (spec) { /// @formatter:off
             default: return escape_invalid ? '$${spec}' : '';

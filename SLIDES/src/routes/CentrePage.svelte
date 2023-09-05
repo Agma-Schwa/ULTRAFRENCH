@@ -18,7 +18,7 @@
 
 <style lang='scss'>
     div {
-        --vcenter-margin-top: 1rem;
+        --vcenter-margin-top: 0;
         height: 100%;
         width: 100%;
         display: flex;

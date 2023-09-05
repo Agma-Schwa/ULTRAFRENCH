@@ -1,9 +1,9 @@
 <script lang='ts'>
     import Text from './Text.svelte';
-    import {TextFormat} from '$lib/text';
+    import {AlignmentSpec, TextFormat} from '$lib/text';
     import {onMount} from 'svelte';
 
-
+    export let align : AlignmentSpec = AlignmentSpec.Center;
     export let classes: string = '';
     export let colsep: string = '';
     export let format: string = '';
@@ -31,7 +31,7 @@
     }
 </style>
 
-<table class='{TextFormat.ParseTextFormat(format)} {classes}' bind:this={table} {style}>
+<table class='{TextFormat.ParseTextFormat(format)} {align} {classes}' bind:this={table} {style}>
     <tbody>
     {#each data as row}
         <tr>

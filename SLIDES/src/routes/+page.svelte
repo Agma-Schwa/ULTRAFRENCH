@@ -7,6 +7,7 @@
     import SeqTablePages from './SeqTablePages.svelte';
     import BasicTable from './BasicTable.svelte';
     import SeqListPages from './SeqListPages.svelte';
+    import {AlignmentSpec} from '$lib/text';
 </script>
 
 <style lang='scss'>
@@ -192,8 +193,8 @@ occur at the very beginning and end of the word.
 </CentrePage>
 
 <SeqListPages
-    title='Vowels — Orthography'
-    data={[
+        title='Vowels — Orthography'
+        data={[
         '/i, y, u, e, o/ are spelt $ii, y, u, e, o.',
         '/ɐ/ is spelt $ia.',
         'When nasal(ised), /y, e, o, ɐ/ change quality to /ʏ, ɛ, ɔ, ɑ/.',
@@ -263,6 +264,114 @@ occur at the very beginning and end of the word.
     ]}/>
 </CentrePage>
 
+<CentrePage title='Abbreviated Glosses' vcenter={false}>
+    <div class='content' style='text-align: left;'>
+        <ul>
+            <li>Verbs are active, present, and indicative by default.</li>
+            <li>Nouns are singular and definite by default.</li>
+        </ul>
+    </div>
+</CentrePage>
+
+<CentrePage>
+    <Text v='$7$ijad’hór it’halẹ'/>
+    <Text v='$4‘I love the table’'/>
+</CentrePage>
+
+<CentrePage>
+    <BasicTable colsep='2rem' align={AlignmentSpec.Left}
+                data={[
+            ['$i$6<$5$ >j-ad’hór', '$i$6i\\t’halẹ'],
+            ['$4<$s1sg.act.pres.ind>-love', '$4<$sacc.sg.def>\\table']
+        ]}
+    />
+</CentrePage>
+
+<CentrePage>
+    <BasicTable colsep='2rem' align={AlignmentSpec.Left}
+                data={[
+            ['$i$6<$4$ >j-ad’hór', '$i$6i\\t’halẹ'],
+            ['$4<$s1sg>-love', '$4<$sacc>\\table']
+        ]}
+    />
+</CentrePage>
+
+<CentrePage>
+    <div style='display: flex; flex-direction: row; gap: 1rem;'>
+        <Table
+                classes='font05'
+                format='$i'
+                bgcolour='var(--frenchred-dark)'
+                colnames={['Sg', 'Pl']}
+                name='DEFINITE'
+                align={AlignmentSpec.Left}
+
+                rownames={[
+                    'Absolutive',
+                    'Nominative',    'Vocative',
+                    'Partitive',     'Accusative',
+                    'Genitive',      'Dative',
+                    'Inessive',      'Interessive',
+                    'Ablative',      'Allative',
+                    'Considerative', 'Instrumental'
+                ]}
+
+                data={[
+                    ['$mØ', 'l-'],
+                    ['lá-$UL', 'lé-$UL'],
+                    ['<$mØ>-$UL', '<$mØ>-$UN'],
+                    ['dy-$UL', 'dẹ-$UL'],
+                    ['i-$UL', 'sý-$UL'],
+                    ['á-$UL', 'abh-$UL'],
+                    ['as-$UL', 'a-$UL'],
+                    ['dwá-', 'dwé-'],
+                    ['aḍá-', 'aḍé-'],
+                    ['rê(d)-', 'rês-'],
+                    ['b’hé-$UL', 'b’hér-'],
+                    ['słá-', 'słé-'],
+                    ['b’hel-', 'b’he-']
+                ]}
+        />
+        <Table
+                classes='font05'
+                format='$i'
+                bgcolour='var(--frenchblue-dark)'
+                colnames={['Sg', 'Pl']}
+                name='INDEFINITE'
+                align={AlignmentSpec.Left}
+
+                rownames={[
+                    'Absolutive',
+                    'Nominative',    'Vocative',
+                    'Partitive',     'Accusative',
+                    'Genitive',      'Dative',
+                    'Inessive',      'Interessive',
+                    'Ablative',      'Allative',
+                    'Considerative', 'Instrumental'
+                ]}
+
+                data={[
+                    ['<$mØ>-$UN', '<$mØ>-$UL'],
+                    ['ŷn-$UN', 'ý-$UL'],
+                    ['/', '/'],
+                    ['dŷn-$UN', 'dý-$UL'],
+                    ['s-$UL', 's-'],
+                    ['sý-$UN', 'sý-$UL'],
+                    ['an-$UN', 'an-$UL'],
+                    ['dáhŷn-', 'dáhŷ-'],
+                    ['aḍŷn-', 'aḍŷ-'],
+                    ['rêdýn-', 'rêdý-'],
+                    ['b’hŷn-$UN', 'b’hý-$UL'],
+                    ['sý’óýn-', 'sý’óý-'],
+                    ['b’hehý(n)-', 'b’heh-']
+                ]}
+        />
+    </div>
+</CentrePage>
+
+<!-----------------------------------------------------------------------------
+  Verb Examples
+------------------------------------------------------------------------------>
 <!-- Base Form -->
 <CentrePage>
     <Text v='$7$iad’hór'/>

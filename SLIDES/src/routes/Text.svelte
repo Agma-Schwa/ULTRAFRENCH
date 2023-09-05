@@ -7,22 +7,19 @@
 
     /// See text.ts for a list of text format specifiers.
     let output_text = '';
-    let spans_to_close = 0;
+    let closing_tags: string[] = [];
     let groups: number[] = [];
     for (let i = 0; i < v.length; i++) {
         switch (v[i]) {
             case '<':
-                groups.push(spans_to_close);
+                groups.push(closing_tags.length);
                 break;
 
             case '>':
                 const last = groups.pop();
-                if (last !== undefined) {
-                    while (spans_to_close > last) {
-                        output_text += '</span>';
-                        spans_to_close--;
-                    }
-                }
+                if (last !== undefined)
+                    while (closing_tags.length > last)
+                        output_text += closing_tags.pop() as string;
                 break;
 
             case '$':
@@ -37,10 +34,22 @@
                     break;
                 }
 
-                output_text += '<span class="';
-                output_text += TextFormat.ActOnFormatSpecifier(v[++i], true);
-                output_text += '">';
-                spans_to_close++;
+                /// Also handle extended specifiers that require HTML.
+                switch (v[i + 1]) {
+                    case 'U':
+                        output_text += '<sup>';
+                        closing_tags.push('</sup>');
+                        i++;
+                        break;
+
+                    default:
+                        output_text += '<span class="';
+                        output_text += TextFormat.ActOnFormatSpecifier(v[++i], true);
+                        output_text += '">';
+                        closing_tags.push('</span>');
+                        break;
+                }
+
                 break;
 
             default:
@@ -49,10 +58,7 @@
         }
     }
 
-    while (spans_to_close) {
-        output_text += '</span>';
-        spans_to_close--;
-    }
+    while (closing_tags.length) output_text += closing_tags.pop() as string;
 </script>
 
 <p class={classes} {style}>{@html output_text}</p>
