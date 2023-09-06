@@ -290,6 +290,13 @@ naúḍ|v.|nôtre|To be ours|\s{fut} *naúḍre*, \s{subj} *naús*
 b’hauḍ|v.|vôtre|To be yours (\s{pl})|\s{fut} *b’hauḍre*, \s{subj} *b’haus*
 lýrḍ|v.|\nf from \s{pf} *leur*; the *ḍ* was added in analogy with \
     *naúḍ* and *b’hauḍ*|To be theirs|\s{fut} *lýrḍre*, \s{subj} *lýrs*
+rzaúsḍ|v.|exhaustif|To be exhaustive, comprehensive, complete|\s{fut} *rzaúsḍre*, \s{subj} *rzaúsḍs*
+y’ác’hraúníc’h|v.|To be diachronic|\s{fut} *y’ác’hraúníc’hre*, \s{subj} *y’ác’hraúníc’hes*
+rávér|n.|1. Grammar *(the grammatical rules of a language)*. 2. A textbook describing the grammar \
+    of a language
+lýv́á|v. \s{3rd} person only|pleuvoir|To rain|\s{fut} *lýv́áre*, \s{subj} *lýv́ás*
+
+
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long *(often in compounds* **laú-** *‘long-’)*

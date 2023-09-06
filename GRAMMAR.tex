@@ -397,9 +397,26 @@
 \date{\today}
 
 \begin{document}
-\maketitle
+\makeatletter
 \thispagestyle{empty}
+\begin{titlepage}
+    \null\vfil
+    \vskip 60\p@
+    \centering
+    \large
+    {\LARGE \@title \par}%
+    \vskip1em
+    {\LARGE *Ŷrávér Réy’ác’hraúníc’hâ Rzaúsdâ Át’hebhaú Raúl* \par}%
+    \vskip 1em
+    {\Large \@author \par}%
+    \vskip .5em
+    \@date \par
+    \vfil\null
+\end{titlepage}
 \clearpage
+\makeatother
+
+
 \setcounter{page}{1}
 
 \tableofcontents
@@ -602,6 +619,15 @@ whose subjunctive stem is *díss*, forms *aúdíssâ* (rougly ‘we should have 
 To simplify glosses, cases are assumed to be definite and singular unless otherwise stated, and verb forms are
 assumed to be indicative, present tense, and active, unless otherwise stated.
 
+\subsection{Diachrony and Derivation}
+The PF infinitive endings (*-ir* etc.) became progressively more vestigial in Middle UF and were eventually
+often dropped completely in derivation, e.g. *auḍé* ‘obtain’ from earlier \**auḅḍénír*, later resulting in
+a need for new infinitive affixes to be formed to distinguish infinitives from the base form, thus giving
+rise to e.g. *dauḍé* ‘to obtain’.
+
+The suffix *-t’he*, \s{fut} *-ḍe*, \s{subj} *-t’hes*, is a productive derivational suffix that can be used to turn a
+noun ‘X’ into a verb that roughly means ‘to use X’, e.g. *ac* ‘axe’ $\to$ *act’he* ‘to cut with an axe’.
+
 \section{Accidence}\label{sec:accidence}
 
 \subsection{Noun Morphology}\label{subsec:noun-morphology}
@@ -647,7 +673,9 @@ definite, so the indefinite \s{voc}
 does not exist, as that would be nonsense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef iness}
 *dáhŷnḍalẹ* ‘on a table’.
 
-The \s{abs} case is used for the predicate noun of predicative sentences, e.g. *Aúsó ḍe ráhó* ‘We are all fish’.
+The \s{abs} case is used for the predicate noun of predicative sentences, e.g. *Aúsó ḍe ráhó* ‘We are all fish’ and
+to turn nouns into modifier nouns, e.g. *árḍihyl lývy’ér* ‘light particle (as in, a particle of light)’.
+
 The \s{cons} case can be translated as ‘according to’, or ‘in the opinion of’, and is used to express the opinion of
 the speaker or point out something as an opinion, belief, or hypothesis of someone or something.
 
@@ -658,6 +686,10 @@ a book’ vs *jlí dŷnliv́uhé* ‘I read (\s{pres}) from a book’ or ‘I am
 forms, which are mainly perfective, generally take the \s{acc}, e.g. *jlíé iliv́uhé* ‘I’ve read the book’, whereas \s{pret} forms,
 which are mainly imperfective, generally take the \s{part}, e.g. *jlíá dyliv́uhé* ‘I was reading (from) the book’.
 
+
+A \s{gen} can precede or follow their possessee. Typically, the \s{gen} follow the possessee, but
+if the possessee is qualified with adjectives, then the adjectives must follow the possessee immediately,
+lest they end up qualify the genitive instead, and thus, the genitive is placed first.
 
 The *d* in the \s{def abl sg} and the *n* in the \s{indef instr sg} are omitted if the noun starts with a consonant, e.g. *rêḍalẹ* ‘from the table’; be careful
 especially with words that start with *s*, whose \s{abl sg} is often mistaken for a plural, e.g. *rêsol* ‘from the floor’,
@@ -756,16 +788,29 @@ it’s too late’). Variations of it exists; in the optative, for instance, thi
 
 \subsection{Verbal Morphology}\label{subsec:verbal-morphology}
 Verbs in UF are inflected for person, number, tense, aspect, mood, and voice. Verbal inflexion is mainly done
-by means of concatenating a vast set of prefixes onto a verb, with the occasional suffix and circumfix making
-its appearance. This chapter details these affixes, their meanings, uses, forms, and restrictions.
-
+by means of concatenating a vast set of affixes. This chapter details these affixes, their meanings, uses,
+forms, and restrictions in their use.
 
 \subsubsection{Active/Passive Affixes}\label{subsubsec:active-passive-affixes}
-UF has a set of active/subject as well as passive/object prefixes which can be used on their own or in combination
-with one another, though at most one active and one passive prefix may be combined with a verb.\footnote{Irrespective
-of whether they are personal or infinitive prefixes. For instance, it would also be illegal to combine e.g. the active
-infinitive prefix with the first person active singular prefix.} Table~\ref{tab:active-passive-prefixes}
-below lists those prefixes, two of which are actually circumfixes.
+The most fundamental affixes in UF are a set of active/subject and passive/object affixes (often referred to as the
+‘active/passive affixes’) which can be used on their own or in combination
+with one another, though at most one active and one passive affix may be combined with any one verb form.\footnote{Irrespective
+of whether they are personal or infinitive affix. For instance, it would also be illegal to combine e.g. the active
+infinitive affix with the first person active singular affix.} Table~\ref{tab:active-passive-prefixes}
+below lists those affixes.
+
+A verb can have a passive affix only if there is no other explicit direct object in the clause. However,
+a verb always has an active affix, unless there is no subject at all. Ditransitive verbs and verbs governing
+the dative case take a dative affix (see §~\ref{subsubsec:dative-affixes}) iff there is no explicit indirect object.
+
+Every finite verb form requires at least
+one finite affix. A verb form without any active, passive, or dative affix whatsoever would not be a finite verb form
+and could thus never be the predicate of a sentence.\footnote{Excluding of course the fact that infinitives could
+be considered to function as predicates of \s{aci}s and \s{pci}s (see §~\ref{subsec:aci-pci}).} Thus, if
+the active affix is omitted, the verb has to have at least
+a passive or dative marker. Such a construction would be the closest equivalent to a passive in UF, since there is
+no true distinct syntactical or morphological passive, and it is impossible to express the agent in the ‘passive’ by any
+means other than reintroducing an active affix, which would render the form no longer a passive.
 
 \begin{table}[H]
 \centering
@@ -839,6 +884,11 @@ When multiple prefixes are used together, active prefixes precede passive prefix
 always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (\s{pl}) love him/her’,
 but *dẹvad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (\s{pl})’. Recall that at most one infinitive prefix
 and at most one participle affix may be used.
+
+\Paragraph{Impersonal Forms}
+UF does not use the \s{2nd} person in sentences such as ‘when *you* consider that\ldots’, instead preferring the \s{1pl} (lit.
+‘when *we* consider that\ldots’) to express such impersonal constructions. The \s{3n} is used as an expletive for verbs
+that do not really have a subject, such as *lýv́á* ‘rain’, which forms *slýv́á* ‘it rains’.
 
 \Paragraph{Example Paradigms}
 By way of illustration, consider the paradigm of the verb *ad’hór* as shown in Table~\ref{tab:adhor-paradigm} below.
@@ -1236,7 +1286,7 @@ even though it is morphologically a future tense, is used to express a hypotheti
 The gnomic tense is marked by the infix *-j(ú)-* after the stem: *ad’hór* ‘to love’ to *rad’hórjô* ‘We love (for ever)’.
 The *ú* is omitted if the infix is followed by the vowel, in which case it causes nasalisation.
 
-\subsubsection{Dative Affixes}
+\subsubsection{Dative Affixes}\label{subsubsec:dative-affixes}
 The dative affixes *-vé* ‘me, us’, *-b’hẹ* ‘you’, and *-ḷẹ* ‘him, her, it, them’ are only used in conjunction with
 ditransitive verbs and invariant to
 tense, gender, number, and mood. A verb can only have one dative affix, and the dative affix is always placed last after all other
@@ -1792,15 +1842,15 @@ Fronting of the verb in the last two cases generally indicates confusion rather 
 is most commonly used in response to someone else’s statement so as to ask for clarification (‘What do you mean
 “I bought a table”; what are you talking about?’).
 \gloss {
-    Jac̣t'hévá st’halẹ?
+    Jac̣t'heává st’halẹ?
     j-ac̣t'he-á |vá|s\Sl t’halẹ
-    \s{1sg}-buy-\s{3sg.pres.ant}|\s{q}||\s{acc.indef}\Sl table
+    \s{1sg}-buy-\s{3sg.pres.ant}|\s{q}|\s{acc.indef}\Sl table
     ‘I \textit{bought} a \textit{table}?!’
 }
 
 The same applies to the negated version of such a question:
 \gloss {
-    Jac̣t'hé’sý’ýâvá st’halẹ?
+    Jac̣t'heá’sý’ýâvá st’halẹ?
     j-ac̣t'he-á |’sý’ýâ|vá|s\Sl t’halẹ
     \s{1sg}-buy-\s{3sg.pres.ant}|not|\s{q}|\s{acc.indef}\Sl table
     ‘I \textit{didn’t} buy a \textit{table}?!’
@@ -1809,7 +1859,28 @@ The same applies to the negated version of such a question:
 Note the order of particles: negation precedes the question particle. Placing them the other way around
 makes it sound like you’re trying to correct yourself from *Jac̣t'hévá* to *Jac̣t'hé’sý’ýâ*.
 
-\subsection{ACI and PCI}
+\subsection{Subordination and Coordination}
+Subordinate dependent clauses clauses as well as coordinate independent clauses are typically introduced by conjunctions
+or sentential particles; usually, these particles are placed in second position in the clause (i.e. after some other
+constituent), e.g. observe the position of *vé* ‘but’ in the following sentence:
+\gloss {
+    St’halẹ vé jad’hór.
+    s\Sl t’halẹ|vé|j-ad’hór
+    \s{acc.indef}\Sl table|but|\s{1sg}-love
+    ‘But I love a table.’
+}
+
+Note that particles may sometimes alsoo be placed after the first word of a clause instead if the first constituent
+is too long; this is particularly common with conjunctions that come in pairs such as *u \ldots\ u \ldots* ‘\ldots\
+or \ldots (inclusive)’:
+\gloss {
+    U vé st’halẹ u sárb jad’hór.
+    u|vé|s\Sl t’halẹ|u|s-árb|j-ad’hór
+    or|but|\s{acc.indef}\Sl table|or|\s{acc.indef}-tree|\s{1sg}-love
+    ‘But I love a table or a tree.’
+}
+
+\subsection{ACI and PCI}\label{subsec:aci-pci}
 The term \s{aci} is Latin for *accūsātīvus cum īnfīnītīvō* ‘accusative with infinitive’. As the name would suggest, this
 grammatical construction consists of a dependent clause formed by an \s{acc} noun together with an infinitive; the
 noun is the subject or object of the clause, and the infinitive the predicate. This construction is most well-known
@@ -1899,20 +1970,17 @@ and apodosis, in the appropriate tense. The protasis is generally introduced by 
 \footnotetext{UF does not use the letters *p* or *q*, and thus, discussions of propositional logic in UF tend to
 use *r* and *t* instead. *s* is not used either so as to not confuse it with *s* ‘if’.}
 
-Potential conditionals indicate that something is possible or could happen in the present or future (but *not* in
-the past), provided some condition is met. These conditionals use the optative in the protasis and the Conditional
-I in the apodosis:
-
-- Irrealis conditionals (conditionals that describe a situation that is not true, and could never be true)
-  use the subjunctive ‘If it were raining right now, we would be wet’.
-
-- Potential conditionals, which describe a situation that could happen, and which the
-  speaker considers plausible use the optative ‘If we were to go left now, we’d fall off a cliff’. These
-  conditionals are only possible in the present and future.
-
-- Counterfactual conditionals, which describe a situation that could be true, but isn’t. These conditionals
-  exist only in the present and past and also use the optative ‘If we had gone left, we would have fallen off
-  a cliff’.
+%Potential conditionals indicate that something is possible or could happen in the present or future (but *not* in
+%the past), provided some condition is met. These conditionals use the optative in the protasis and the Conditional
+%I in the apodosis.
+%
+%Irrealis conditionals (conditionals that describe a situation that is not true, and could never be true)
+%use the subjunctive ‘If it were raining right now, we would be wet’. These conditionals use the subjunctive in
+%the protasis and the Conditional II in the apodosis.
+%
+%Counterfactual conditionals, which describe a situation that could be true, but isn’t. These conditionals
+%exist only in the present and past and also use the optative in the protasis and the Conditional II in the
+%apodosis.
 
 \section{Examples}\label{sec:examples}
 \subsection{Simple Examples}
@@ -2093,40 +2161,11 @@ at least in spoken communication with non-android participants, UF is the best o
 
 %% NOTES:
 %%
-%% Translate the title into UF and put it below the English title similar
-%% to the Arodjun book.
-%%
-%% UF does not use the 2nd person for things like ‘when you consider that...’,
-%% instead preferring the 1pl (lit ‘when we consider that...’).
-%%
-%% The dative is used to mark the subject of a sentence in the passive.
-%%
-%% The absolutive is used to turn nouns into modifiers, which act like adjectives.
-%%
-%% Genitives can precede or follow the possessee. Typically, they follow it, but
-%% if the possessee is qualified with adjectives, then the adjectives must follow
-%% the possessee immediately, lest they qualify the genitive instead, and thus, the
-%% genitive is placed first.
-%%
-%% A verb can only have a passive affix if there is no explicit direct object; a verb always has
-%% an active affix, unless there is no subject at all; a verb has a dative suffix,
-%% iff there is no explicit indirect object.
-%%
 %% Remaining forms of to be.
 %%
 %% Numerals! (Make ‘10’ mean ‘half of 20’, 15 ‘half of 20 plus 5’ and so on)
 %%
-%% Participles go after the first word of the sentence
 %%
-%% Tous les 36 du mois -> Include the ‘36’ in the word!
-%%
-%% The PF infinitive endings -ir, -er, etc. are often dropped to form the base form (e.g. auḍé < *auḅḍénír).
-%%
-%% Adjectives are not declined and follow the noun they modify.
-%%
-%% ‘-t’he’, FUT ‘-ḍe’, SUBJ ‘t’hes’ is a productive word formation suffix that can be used to
-%% turn a noun into a verb that roughly means ‘to use that thing’. E.g. ac ‘axe’ -> act’he  ‘roughly: to use
-%% an axe’.
 
 
 
