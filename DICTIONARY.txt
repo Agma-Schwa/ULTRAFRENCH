@@ -49,7 +49,7 @@ act’he|v. tr.|\nf from *ac*|1. To cut or cleave with an axe. \
     was instead formed with the \s{acc} of ‘tree’ and the \s{ill} of the object, meaning something along \
     the lines of ‘to bring down the tree(s) on sth’—the image here being that of cutting down trees in \
     a wood until only a clearing remains or is ‘brought to light’)*|\s{fut} *acḍe*, \s{subj} *act’hes*
-aċt’he|v. tr.|acheter|To buy|\s{fut} *aċḍrẹ́*, \s{subj} *aċt’hes*
+ac̣t’he|v. tr.|acheter|To buy|\s{fut} *ac̣ḍrẹ́*, \s{subj} *ac̣t’hes*
 vaût’há|n.|montagne|Mountain
 ḍalẹ|n.|tableau|Table
 ehyó|n.|écusson|Shield
@@ -95,7 +95,7 @@ jávé|adv.|jamais|Never, at no time
 ráv́â|adv.|rarement|Seldom, rarely (ever)
 y’é|adv.|rien|Nothing
 au|conj.|aussi|1. And, also, as well, too 2. *au* ... *au* ... ‘both ... and ...’
-eċ|n.|péché|Sin, transgression, wrongdoing
+ec̣|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
 ânb’hé|adv.|\pfabbr en effet\nf, via metathesis from \**âné\-b’he*|Verily, indeed, in fact
 y’ŷ|prefix|mieux|*Affirming comparative prefix. See grammar*
@@ -283,6 +283,13 @@ fic’h|v.|{\nf back-formation from} \**fic’hs*{\nf, reinterpreted as a subjun
 ba|v.|baser|To base on, found on|\s{fut} *bare*, \s{subj} *bas*
 ḍérésḍ|v.|terrestre|To be terrestrial, earth-based|\s{fut} *ḍérésḍrẹ́*, \s{subj} *ḍérésḍs*
 
+y’ê|v.|mien|To be mine|\s{fut} *y’êrẹ́*, \s{subj} *y’ês*
+dy’ê|v.|tien|To be yours (\s{sg})|\s{fut} *dy’êrẹ́*, \s{subj} *dy’ês*
+sy’ê|v.|sien|To be his, hers, its|\s{fut} *sy’êrẹ́*, \s{subj} *sy’ês*
+naúḍ|v.|nôtre|To be ours|\s{fut} *naúḍre*, \s{subj} *naús*
+b’hauḍ|v.|vôtre|To be yours (\s{pl})|\s{fut} *b’hauḍre*, \s{subj} *b’haus*
+lýrḍ|v.|\nf from \s{pf} *leur*; the *ḍ* was added in analogy with \
+    *naúḍ* and *b’hauḍ*|To be theirs|\s{fut} *lýrḍre*, \s{subj} *lýrs*
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long *(often in compounds* **laú-** *‘long-’)*
