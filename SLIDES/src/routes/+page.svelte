@@ -260,7 +260,7 @@ occur at the very beginning and end of the word.
     <BasicTable format='$2$i' colsep='1rem' data={[
         ['à, a', '→', 'á'],
         ['á', '→', 'â'],
-        ['ḍ$1*', '→', 'n'],
+        ['ḍ', '→', 'n/$mØ'],
     ]}/>
 </CentrePage>
 

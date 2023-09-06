@@ -155,7 +155,7 @@ rrá|v.|croire|Believe (something or someone)|\s{fut} *rrẹ́*, \s{subj} *rrás*
 C’hebèc’h|n.|Québec|The Promised Land
 ḅaú|n.|pont|Bridge
 áȷ́éd|v.|enjoindre|To order, enjoin, command
-fér|v.|faire|To do, make, build, construct, erect|\s{fut} *fẹ́*, \s{subj} *fés*
+fér|v.|faire|1. To do, make, build, construct, erect 2. *(expletive, see §~\ref{subsubsec:personal-pronouns})*|\s{fut} *fẹ́*, \s{subj} *fés*
 sav́á|v.|savoir|To know|\s{fut} *saúr*, \s{subj} *sac*
 ré|v.|vrai|To be true, correct, right|\s{fut} *rẹ́*, \s{subj} *rés*
 aû|particle|non|Not- *(used to negate nouns)*
