@@ -353,16 +353,7 @@ T’hebhaú Raúl|n. def. sg. (only {\nf T’hebhaú} is declined as though the 
 
 
 # To be is a rather complicated entry.
-eḍ|v. irreg. |être|To be|*active only*.                                  \
-    \s{\textbf{pres:} sg} *vy’í*, *ḍe*, *le*, *lle*, *se*;               \
-    \s{pl} *aúsó*, *b’heḍ*, *lẹsó*, *llẹsó*, *lasó*;                     \
-    \s{inf} *éḍ*.                                                        \
-    \s{\textbf{pres ant:} sg} *vẹ*, *ḍyf*, *leb’h*, *lleb’h*, *seb’h*;   \
-    \s{pl} *aúfý*, *b’hu*, *lẹfýr*, *llẹfýr*, *lafýr*;                   \
-    \s{inf} *éfyḍ*.                                                      \
-    \s{\textbf{pret:} sg} *vet’h*, *ḍet’h*, *let’h*, *llet’h*, *set’h*;  \
-    \s{pl} *weḍy’ó*, *b’heḍy’é*, *let’he*, *llet’he*, *laet’h*;          \
-    \s{inf} *ét’hẹd*
+eḍ|v. irreg. |être|To be|\s{forms} *active only, see §~\ref{subsec:ed-paradigm}*
 
 
 véy’ýr > baú
@@ -374,7 +365,3 @@ s’ > sá
 ’sý’ýâ > asý’ýâ
 úrẹ́, ís > ub’hrá
 vá > rvá
-
-vy’í, ḍe, le, lle, se, aúsó, b’heḍ, lẹsó, llẹsó, lasó, éḍ, \
-    vẹ, ḍyf, leb’h, lleb’h, seb’h, aúfý, b’hu, lẹfýr, llẹfýr, lafýr, éfyḍ, \
-    vet’h, ḍet’h, let’h, llet’h, set’h, weḍy’ó, b’heḍy’é, let’he, llet’he, laet’h, ét’hẹd > eḍ
