@@ -140,7 +140,7 @@ endif()
 ## Find ICU.
 set(ICU_FIND_COMPONENTS uc i18n data)
 include(FindICU)
-if (NOT DEFINED ICU_FOUND)
+if (NOT ICU_FOUND)
     message(WARNING "ICU not found, disabling dictionary generation...")
 endif()
 
@@ -168,8 +168,8 @@ if (NOT has_libclopts)
         GIT_TAG master
         SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/clopts"
     )
-    include_directories(${clopts_SOURCE_DIR}/include)
     FetchContent_MakeAvailable(clopts)
+    target_include_directories(options INTERFACE ${clopts_SOURCE_DIR}/include)
 endif()
 
 ## Link against libfmt.
