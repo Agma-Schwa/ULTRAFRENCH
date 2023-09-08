@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <clopts.hh>
 #include <fmt/format.h>
+#include <fmt/xchar.h>
 #include <ranges>
 #include <string>
 #include <unicode/schriter.h>
@@ -91,16 +92,6 @@ auto utf8(char32_t c) -> std::string {
     return to_utf8(sv);
 }
 
-namespace detail {
-using namespace command_line_options;
-using options = clopts< // clang-format off
-    option<"--dict", "The file to process", file<>>,
-    option<"-i", "Convert text to IPA">,
-    help<>
->; // clang-format on
-}
-using detail::options;
-
 namespace dictionary {
 static icu::Transliterator* normaliser;
 
@@ -178,7 +169,7 @@ public:
     explicit operator bool() const { return pos != std::u32string::npos; }
 };
 
-void generate() {
+void generate(std::string_view input_text) {
     fmt::print(stderr, "[ULTRAFRENCHER] Generating dictionary...\n");
 
     UErrorCode err{U_ZERO_ERROR};
@@ -190,7 +181,7 @@ void generate() {
     if (U_FAILURE(err)) die("Failed to get NFKD normalizer: {}", u_errorName(err));
 
     /// Convert text to u32.
-    std::u32string text = to_utf32(icu::UnicodeString::fromUTF8(options::get<"--dict">()->contents));
+    std::u32string text = to_utf32(icu::UnicodeString::fromUTF8(input_text));
 
     /// Process the text.
     line_buffer buf{text};
@@ -354,9 +345,7 @@ Nasal(char32_t c) {
     }
 }
 
-void translate() {
-    std::string_view text = *options::get<"-i">();
-
+void translate(std::string_view text, bool show_unsupported) {
     /// Normalise the text before IPA conversion so we have
     /// to deal with fewer cases. Also convert to lowercase
     /// and convert ASCII apostrophes to '’'.
@@ -566,6 +555,7 @@ void translate() {
 
             case U'c':
                 if (it.consume(Acute)) ipa += U"ɕʶ";
+                else if (it.consume(DotBelow)) ipa += U"ȷ̊";
                 else HandleApostropheH(U'ɕ', U'x');
                 break;
 
@@ -670,12 +660,15 @@ void translate() {
             default: {
                 std::u32string s;
                 s += c;
+                auto u8char = to_utf8(s);
                 fmt::print(
                     stderr,
                     "[ULTRAFRENCHER] Warning: unsupported character U+{:04X}: {}\n",
                     u32(c),
-                    to_utf8(s)
+                    u8char
                 );
+
+                if (show_unsupported) ipa += fmt::format(U"\033[33m<U+{:04X}>\033[m", u32(c));
             } break;
         }
     }
@@ -685,7 +678,19 @@ void translate() {
 } // namespace ipa
 
 int main(int argc, char** argv) {
+    using namespace command_line_options;
+    using options = clopts< // clang-format off
+        option<"--dict", "The file to process", file<>>,
+        option<"-i", "Convert text to IPA">,
+        option<"-f", "Convert a text file to IPA", file<>>,
+        flag<"--show-unsupported", "Print <U+XXXX> for unsupported characters">,
+        help<>
+    >; // clang-format on
+
     options::parse(argc, argv);
-    if (options::get<"--dict">()) dictionary::generate();
-    else if (options::get<"-i">()) ipa::translate();
+    const bool show_unsupp = options::get<"--show-unsupported">();
+    if (auto d = options::get<"--dict">()) dictionary::generate(d->contents);
+    else if (auto i = options::get<"-i">()) ipa::translate(*i, show_unsupp);
+    else if (auto f = options::get<"-f">()) ipa::translate(f->contents, show_unsupp);
+    else fmt::print("{} {}", argv[0], options::help());
 }
