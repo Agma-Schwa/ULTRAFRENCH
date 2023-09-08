@@ -202,7 +202,7 @@ occur at the very beginning and end of the word.
         '/o, ɔ̃, ɔ̃̃/ are frequently also spelt $iau, aú, aû.',
         'Oral /ɛ/ is spelt $iè.',
         'Nasal(ised) /ẽ, ẽ̃/ are spelt $ié, ê.',
-        'Oral and voiceless are spelt $ie.',
+        'Oral and voiceless /ə/ are spelt $ie.',
     ]}
 />
 
@@ -629,3 +629,5 @@ occur at the very beginning and end of the word.
     <Text v='$2[θɔ̃̃n.ɰɔ̃̃.sy.ɥə.dɔ̃nˈɰẽˑ.sːɔ̃.ɰɑ̃̃.βə̥]'/>
     <Text v='<$iroughly:> ‘If only we had not endowed you with it’' classes='font15'/>
 </CentrePage>
+
+<!--TODO: ‘Thanks for watching’ in UF-->

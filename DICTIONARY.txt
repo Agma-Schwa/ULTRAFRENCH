@@ -66,7 +66,7 @@ ráý’ẹ|v.|râler|To complain, grumble
 ab’hásy’ô|n.|aviation|Aviation
 rá|n.|loi|Law, rule, regulation
 ḍẹ|adj.|tout|All, every, whole, entire
-c’hóný|adj.|connu|Known, familiar, well-known
+c’hóný|adj.|connu|Known, familiar, well-kn\-own
 y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pfabbr il y a aucun|There is, there are
 ráy’ê|n.|moyen|1. Way, means, method. 2. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
@@ -81,7 +81,7 @@ ez-|pron.|ses|Its, her, his, their
 lýr|pron.|leur|Their
 el|n.|ailles|Wing, blade, fin.
 Lác|n.||*female given name, equivalent to English ‘Bi\-anca’*
-auḍé|v.|obtenir|1. To obtain, get, acquire. 2. +\s{abl} To gain purchase on or height or distance from|\s{fut} *auḍy’édrẹ́*
+auḍé|v.|obtenir|1. To obtain, get, acquire. 2. +\s{abl} To gain purchase on or hei\-ght or distance from|\s{fut} *auḍy’édrẹ́*
 sol|n.|sol|Ground, floor, earth, soil
 c’hór|n.|corps|Body
 c’hýr|n.|corps|Heart
@@ -90,7 +90,7 @@ ab’haḍ|v.|abattre|1. To cut down, fell, knock down, shoot down. 2. To butche
 ac|n.|hache|Axe, hatchet
 asý’ýâ|particle|\pfabbr pas absolument|Not, no. *Commonly* ***’sý’ýâ*** *after vowels and \
     verbs This particle is used only in the indicative; see also* ***sá****, ****t’hé***
-c’hd’hal|adv.|\pfabbr que dalle|Naught, absolutely nothing
+c’hd’hal|adv.|\pfabbr que dalle|Naught, absolutely no\-thing
 jávé|adv.|jamais|Never, at no time
 ráv́â|adv.|rarement|Seldom, rarely (ever)
 y’é|adv.|rien|Nothing
@@ -100,9 +100,9 @@ vaûd|n.|monde|World
 ânb’hé|adv.|\pfabbr en effet\nf, via metathesis from \**âné\-b’he*|Verily, indeed, in fact
 y’ŷ|prefix|mieux|*Affirming comparative prefix. See grammar*
 lẹ|prefix|plus|*Denying comparative prefix. See grammar*
-rê|prefix|moins|*Neutral comparative prefix. See grammar*
+rê|prefix|moins|*Neutral comparative prefix.\linebreak See grammar*
 ré|prefix|très|*Superlative prefix. See grammar*
-râdvâ|prefix|grandement|*Superlative prefix. See grammar*
+râdvâ|prefix|grandement|*Superlative prefix.\linebreak See grammar*
 nájẹ|v.|nager|To swim|\s{fut} náȷ́ẹ, \s{subj} nájes
 e|n.|eau|Water
 dẹhẹ|n.|dessus|1. Top, upper side. 2. Surface of a body of water
@@ -140,7 +140,7 @@ t’hé|conj.|\pfabbr de peur que {\nf > \**dbhýrc’h* > \**dýrc’h* > \**dc
 jys|conj.|\pfabbr jusqu'à ce que|+\s{opt} Until
 ávrê|conj.|\pfabbr à moins que|+\s{opt} Unless
 úrbh|conj.|\pfabbr pour peu que|+\s{opt} Provided that, so long as
-sit’há|conj.|\pfabbr si tant est que|+\s{opt} Supposing that; if, assuming that
+sit’há|conj.|\pfabbr si tant est que|+\s{opt} Supposing\linebreak that; if, assuming that
 fahaú|conj.|\pfabbr de façon que|+\s{opt} In such a way that
 véhýr|conj.|\pfabbr dans la mesure où|Insofar as
 sḅé|v.|espérer|+\s{opt} To wish, want, desire|\s{fut} *sḅérẹ́*, \s{subj} *sḅés*
@@ -151,7 +151,7 @@ râhẹ|n.|Français|Human, person
 fẹhab|v.|faisable|To be possible, feasible|\s{fut} *fẹhabre*, \s{subj} *fẹhas*
 sauz|n.|chose|Thing, object
 rrá|v.|croire|Believe (something or someone)|\s{fut} *rrẹ́*, \s{subj} *rrás*
-ḅauhib|v.|impossible|To be impossible, unfeasible|\s{fut} *ḅauhibre*, \s{subj} *ḅauhibes*
+ḅauhib|v.|impossible|To be impossible, unfeasible|\s{fut} *ḅauhibre*, \s{subj} *ḅauh\-ibes*
 C’hebèc’h|n.|Québec|The Promised Land
 ḅaú|n.|pont|Bridge
 áȷ́éd|v.|enjoindre|To order, enjoin, command
@@ -166,21 +166,21 @@ rár|v.|voir|To see|\s{fut} *b’hérẹ́*, \s{subj} *rárs*
 rát’hẹ|particle|vois-tu|You see, you know
 ré|n.|rai|Ray, beam
 fèhẹ|n.|faisceau|1. Bundle, bunch, cluster. 2. Beam, ray
-laut’h|v.|flotter|Float, hover, levitate|\s{fut} *laut’hre*, \s{subj} *laut’hes*
+laut’h|v.|flotter|Fl\-oat, hover, levitate|\s{fut} *laut’hre*, \s{subj} *laut’hes*
 ḅáłýr|n.|parleur|Speaker, interlocutor
 deslẹ|v.|déceler|To detect, discover, uncover, reveal|\s{fut} *deslẹre*, \s{subj} *deslẹs*
 yt’hiy’ihẹ|v.|utiliser|+\s{part} *(archaic)* To use, make use of|\s{fut} *yt’hiy’iźe*, \
-    \s{subj} *yt’hiy’ihẹs*
-t’hiy’e|v.|{\nf from} yt’hiy’ihẹ|+\s{part} To use, make use of|\s{fut} *t’hiźe*, \s{subj} \
-    *(via back-formation from the \s{fut})* \s{t’hizes}
+    \s{subj} *yt’hiy’\-ihẹs*
+t’hiy’e|v.|{\nf from} yt’hiy’ihẹ|+\s{part} To\linebreak use, make use of|\s{fut} *t’hiźe*, \s{subj} \
+    *(via ba\-ck-formation from the \s{fut})* \s{t’hizes}
 ulíy’ẹ́|v.|oublier|To forget|\s{fut} *ulíy’ẹ́rẹ́*, \s{subj} *ulíy’ẹ́s*
 y’ẹ́|v.|nier|To forbid, deny|\s{fut} *y’ẹ́rẹ́*, \s{subj} *y’ẹ́s*
 sérḍé|det.|certain|Certain, particular but not specified
 sisḍé|n.|système|System
 véhýr|v/n.|mesure|1. To measure, 2. Measurement|\s{fut} *véhýrẹ́*, \s{subj} *véhýrs*
 vé|conj.|mais|But, however, although
-c’haúḅrâd|v.|comprendre|+\s{part} To comprehend, understand, grasp|\s{fut} *c’haúḅrâdrẹ́*, \
-    \s{subj} *c’haúḅrâs*
+c’haúḅrâd|v.|comprendre|+\s{part} To comprehend, underst\-and, grasp|\s{fut} *c’haúḅrâdrẹ́*, \
+    \linebreak\s{subj} *c’haúḅrâs*
 ḍúr|adv.|toujours|1. *(in positive context)* Always. 2. *(in negative context)* Still
 c’haúbhausy’ô|n.|composition|Composition, arrangement, structure
 vísy’ô|n.|émission|1. Emission. 2. Programme, broadcast, show
@@ -198,11 +198,11 @@ c’hesse|||*contraction of* **c’hes** *+* **se** Is it? *(Also substituted fo
     be in questions, particularly for the plural neuter)*
 aud|adj.|autre|Other, another
 sauz-aud|adj.|\pfabbr autre chose|Something else, another thing
-rét’hád|v.|prétendre|To claim, allege|\s{fut} *rét’hádrẹ́*, \s{subj} *rét’hádes*
+rét’hád|v.|prétendre|To claim, allege|\s{fut} *rét’hádrẹ́*, \s{subj} *rét’h\-ádes*
 dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used when talking about\
     concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts\
     or parts of objects; the \s{dat} is the person being endowed with)*|\s{fut} *dónrẹ́*, \s{subj} *dónés*
-ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebhat’hic’hre*, \s{subj} \
+ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} *ḍeý’ebh\-at’hic’hre*, \s{subj} \
     *ḍeý’ebhat’hic’hes*
 ḍeý’ebhat’hẹ|n.|télépathie|Telepathy
 c’habhahit’hẹ|n.|capacité|Skill, capacity, ability
@@ -210,20 +210,20 @@ sáhẹ|v.|insensé|To be preposterous, absurd, nonsensical|\s{fut} *sáhere*, \
 jys|adv.|juste|Just, only, merely
 lí|v.|lire|1. +\s{part} To read from. 2. +\s{acc} To peruse, read entirely \
     |\s{fut} *lírẹ́*, \s{subj} *lís*
-cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, one another
+cahý|pro. \s{pl indef} only; declined like a regular\linebreak noun|chacun|Each other, one another
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pfabbr livre + bouquin|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} *áv́áy’érẹ́*, \s{subj} *áv́áy’és*
 Sásc’hríḍ|n. *(never lenited)*|Sanskrit|The Sanskrit language
 baú|v. irreg.|bon|1. To be good, well. 2. To be right, correct, appropriate|\s{fut} *baúrẹ́*, \
     \s{subj} *véy’ýrs*; \s{comp} *lẹvéy’ýr*, *y’ŷvéy’ýr*, *rêvéy’ýr*; \s{sup} *révéy’ýr*, \
-    *râdvâvéy’ýr*
+    *râdvâv\-éy’\-ýr*
 vaúb’hẹ|v. irreg.|mauvais|1. To be bad 2. To be wrong, incorrect, inappropriate|\s{fut} \
     *bíré*, \s{subj} *bíres*; \s{comp} *lẹbír*, *y’ŷbír*, *rêbír*; \
     \s{sup} *réb’hír*, *râdvâbír*
 
 # One of the ';' here requires a manual italic correction.
-ḅẹt’hẹ|v. irreg.|petit|To be small, little|\s{fut} *rêdẹ́*, \s{subj} *ḅẹt’hes*; \s{comp} \
+ḅẹt’hẹ|v. irreg.|petit|To be small, little|\s{fut} *rêdẹ́*, \s{subj} *ḅẹt’hes*;\linebreak \s{comp} \
     *lẹrêd*, *y’ŷrêd*, *rêrêd*; \s{sup} *rérêd*, *râdvârêd*
 
 raúb’hẹ|n.|robot|Robot
@@ -238,7 +238,7 @@ ráhis|v.|raciste|To be racist|\s{fut} *ráhise*, \s{subj} *ráhiss*
 ab’hèc’h|v.|affecter|+\s{acc} To affect, influence|\s{fut} *ab’hèc’hre*, \s{subj} *ab’hè\-c’hes*
 vú|adj.|moult|Many, much, a lot of
 faúr|n.|force|1. Force, strength, power. 2. \s{def} *(science fiction)* The Force
-b’hýlnẹ́r|v.|invulnérable|+\s{instr} To be incapable of being affected by, \
+b’hýlnẹ́r|v.|invulnérable|+\s{instr} To be incapable of being af\-fec\-ted by, \
     invulnerable to|\s{fut} *b’hýlnẹ́rẹ́*, \s{subj} *b’hýlnẹ́rs*
 u|conj.|ou|1. Or *(inclusive, see also* **ra***)*. 2. **u** \ldots\ **u** \ldots\ ‘\ldots\ or \
     \ldots’ *(inclusive)*
@@ -249,7 +249,7 @@ ra|conj.|\pfabbr swa (> \**rá*)|1. Or *(exclusive, see also*~**u***)*. 2. **u**
 lyzy’ýr|adj.|plusieurs|Several
 av́ár|v. irreg.|avoir|+\s{acc} To have, possess|*(stems irreg.)* \s{pres ant} *y*, \s{pret} \
     *ab’hẹ*, \s{fut} *aúrẹ́*, \s{subj} *ès*
-sybhẹ́rýr|v.|supérieur|*intr. or* +\s{gen} To be superior to, better than, higher than|\s{fut} \
+sybhẹ́rýr|v.|supérieur|*intr. or* +\s{gen} To be superior to, better\linebreak than, higher than|\s{fut} \
     *sybhẹ́rýrẹ́*, \s{subj} *sybhẹ́rýrs*
 ḍèc’hníc’hvâ|adv.|techniquement|Technically
 níb’hẹ|n.|niveau|1. Level, degree 2. \s{def iness + gen} On the level of
@@ -257,24 +257,24 @@ séḅ|v.|simple|To be plain, simple|\s{fut} *séḅrẹ́*, \s{subj} *séḅs*
 c’hrír|v.|écrire|To write|\s{fut} *c’hrírẹ́*, \s{subj} *c’hrís*
 dahaúr|particle|d’accord|Sure, ok, agreed, fine
 jys|v.|injuste|To be unjust, unfair|\s{fut} *jysre*, \s{subj} *jyss*
-c’hóbhár|v.|comparer|To compare|\s{fut} *c’hóbhárre*, \s{subj} *c’hóbhárs*
+c’hóbhár|v.|comparer|To compare|\s{fut} *c’hóbhárre*, \s{subj}\linebreak *c’hóbhárs*
 c’hóvâ|v.|commencer|1. (\s{+ part}) To start, commence, begin. 2. \s{+ gen} To start out as|\
-    \s{fut} *c’hóvârẹ́*, \s{subj} *c’hóvás*
+    \s{fut} *c’hóvârẹ́*, \s{subj} *c’hóv\-ás*
 vás|n. \s{pl def}|masses|The masses, the people
 nór|adj.|\nf{back-formation from} \**nórâ* \s{from} \pfabbr *ignorant*|To be ignorant, \
     unaware, oblivious
 séy’ẹ́|v.|essayer|+\s{part} *or* \s{inf} To try, attempt|\s{fut} *séy’ẹ́rẹ́*, \s{subj} *séy’ẹ́s*
-c’hóhid’hẹ́|v.|considérer|1. +\s{part} To consider, think about, ponder. 2. +\s{acc} To think \
-    through|\s{fut} *c’hóhid’hẹ́rẹ́*, \s{subj} *c’hóhid’hés*
+c’hóhid’hẹ́|v.|considérer|1. +\s{part} To consider, think ab\-out, ponder. 2. +\s{acc} To think \
+    through|\s{fut} *c’hóhid’hẹ́rẹ́*, \linebreak\s{subj} *c’hóhid’hés*
 nát’hýr|n.|nature|1. *(chiefly)* \s{indef} Nature, the natural world. 2. \s{def} The way \
     something is
 rê|v.|trine|To be composed of three parts or people; triune|\s{fut} *rêrẹ́*, \s{subj} *rês*
-laúrvé|conj.|{\nf from} *laúrs* + *vé*|*(contraction)* But when *(stressed on the first \
+laúrvé|conj.|{\nf from} *laúrs* + *vé*|*(contraction)* But\linebreak when *(stressed on the first \
     syllable)*
 râsír|v.|transpirer|+\s{aci} 1. To come to light, become known, transpire. \
     2. \s{pres ant} For it to be clear, apparent, evident that \ldots\ *(lit. \
     ‘it has come to light that \ldots’)*|\s{fut} *râsírẹ́*, \s{subj} *râsírs*
-c’hóvníc’h|v.|communiquer|1. To communicate (+\s{instr} with \ldots). 2. Communication|\s{fut} \
+c’hóvníc’h|v.|communiquer|1. To communicate (+\s{instr}\linebreak with \ldots). 2. Communication|\s{fut} \
     *c’hóvníc’hre*, \s{subj} *c’hóvníc’hes*
 ḅárḍihibhá|n.|participant|Participant
 dývrê|particle|du moins|At least *(as in e.g. ‘At least, I think that...’)*
@@ -291,7 +291,7 @@ b’hauḍ|v.|vôtre|To be yours (\s{pl})|\s{fut} *b’hauḍre*, \s{subj} *b’
 lýrḍ|v.|\nf from \s{pf} *leur*; the *ḍ* was added in analogy with \
     *naúḍ* and *b’hauḍ*|To be theirs|\s{fut} *lýrḍre*, \s{subj} *lýrs*
 rzaúsḍ|v.|exhaustif|To be exhaustive, comprehensive, complete|\s{fut} *rzaúsḍre*, \s{subj} *rzaúsḍs*
-y’ác’hraúníc’h|v.|To be diachronic|\s{fut} *y’ác’hraúníc’hre*, \s{subj} *y’ác’hraúníc’hes*
+y’ác’hraúníc’h|v.|diachronique|To be diachronic|\s{fut} *y’ác’hraú-níc’hre*, \s{subj} *y’ác’hraúníc’hes*
 rávér|n.|1. Grammar *(the grammatical rules of a language)*. 2. A textbook describing the grammar \
     of a language
 lýv́á|v. \s{3rd} person only|pleuvoir|To rain|\s{fut} *lýv́áre*, \s{subj} *lýv́ás*
@@ -299,9 +299,9 @@ ed|particle|et|*used in numbers, see §~\ref{subsec:numerals})*
 biwaú|n.|billion|*(obsolete, replaced with modern* **dýwaú***)* Billion
 
 rá|v.|grand|Big, large, great
-laú|v.|long|Long *(often in compounds* **laú-** *‘long-’)*
+laú|v.|long|Long *(often in compounds* **laú-**\linebreak *‘long-’)*
 lár|v.|large|Wide, broad
-ebhẹ|v.|épais|To be thick|\s{fut} ebhrẹ, \s{subj} ebhes
+ebhẹ|v.|épais|To be \linebreak thick|\s{fut} ebhrẹ, \s{subj} ebhes
 lúr|v.|lourd|To be bulky, oversized, heavy
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
@@ -311,30 +311,30 @@ ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
 raúl|n.|parole|1. Language, speech, word 2. **Raúl** *definite only* Short for *T’hebhaú Raúl* *(\s{nom\
     sg} irreg.* **Raúl***; all other forms are regular)*
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
-susy’é|v.|soucier|+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
+susy’é|v.|soucier|\linebreak+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
 a|pron. indef.|quoi|What, which, that *(relative pronoun)*
 
 # From Étienne.
-Eḍy’ê|n.||*male given name, equivalent to English ‘Ste\-phen’*
+Eḍy’ê|n.||*male given name, equivalent to English\linebreak ‘Stephen’*
 
 # Expressions.
 lẹhuvud|n.|\pfabbr coup de foudre|Love at first sight
 c’háraúciḍ|v.|\pfabbr les carrotes sont cuites|To end for good, put to a permanent end\
-    |\s{fut} *c’háraúcre*, \s{subj} *c’háraúc*
+    |\s{fut} *c’hár\-aúc\-re*, \s{subj} *c’háraúc*
 ḅauheŷnlabhé|v.|\pfabbr poser un lapin|To forsake, abandon|\s{fut} *ḅauheŷnlabhére*, \s{subj} *ḅauheŷnlabhés*
 férrrásvát’h|n.|\pfabbr fer la grasse matinée|A long, deep sleep
 rác’hsaý’ad|v.|\pfabbr raconter des salades|To lie, tell tall tales, overexaggerate|\s{fut}\
-    *rác’hsa\-ý’e*, \s{subj} *rác’hsaýs*
-férḍufraú|v.|\pfabbr en faire tout un fromage|To make a big fuss about something|\s{fut}\
-    *férḍu\-fraúrẹ́*, \s{subj} *férḍufraús*
+    *rác’h\-sa\-ý’e*, \s{subj} *rác’hsaýs*
+férḍufraú|v.|\pfabbr en faire tout un fromage|To make a big fuss a\-bout something|\s{fut}\
+    *fér\-ḍu\-fraúrẹ́*, \s{subj} *férḍufraús*
 daúb’hedwébhó|v.|\pfabbr tomber dans les pommes|To faint|\s{fut} *daúb’hedwébhóre*, \s{subj}\
     *daúb’hedwébhós*
 rádrénẹ́|v. + \s{aci}|\pfabbr les doigts dans le nez|To put no effort into|\s{fut} *rádrénrẹ́*,\
     \s{subj} *rádrénẹ́s*
-uy’ed’háb’hrí|v.|\pfabbr rouler dans la farine|To scam, swindle, cheat|\s{fut} *uy’e\-d’háv́e*,\
+uy’ed’háb’hrí|v.|\pfabbr rouler dans la farine|To scam, swindle,\linebreak cheat|\s{fut} *uy’e\-d’háv́e*,\
     \s{subj} *uy’ed’háb’hrís*
-ab’hínéb’heḅaý’évrâ|v.|\pfabbr habit ne fait pas le moine|To judge based on appearances|\s{fut}\
-    *ab’hínéb’heḅaý’év́ẹ́*, \s{subj} *ab’hínéb’heḅaý’év́ás*
+ab’hínéb’heḅaý’évrâ|v.|\pfabbr habit ne fait pas le moi\-ne|To judge based on appearances|\s{fut}\
+    *ab’hínéb’heḅaý’év́ẹ́*, \s{subj} *ab’hínéb’heḅaý’\-év́\-ás*
 rrád’hahánár|n.|\pfabbr froid de canard|Coldness
 y’ŷvéłáfrí|n. pl. archaic|yeux de merlan frit|Eyes
 y’ŷ|n.|{\nf from} y’ŷvéłáfrí|Eye
@@ -345,11 +345,11 @@ vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pfabbr ve
     works of the Early UF comedian \s{J. A. B. Snet’h})*| \s{fut} *vádłabhaud’hávúrsab’hád’háváb’hrárḍure*,\
     \s{s} *vádłabhaud’hávúrsab’hád’háváb’hrárḍus*
 râdrásôn|v.|\pfabbr prendre ses jambe à son cou|To run|\s{fut} *râdrásônre*, \s{subj} *râdrásôns*
-t’hebhaúz|v.|\pfabbr jeter l’éponge|To be French| \s{fut} *t’hebhaúźe*, \s{subj} *t’hebhaúś*
-T’hebhaú|n. or adj.|{\nf from} t’hebhaúz|France, French
-T’hebhaú Raúl|n. def. sg. (only {\nf T’hebhaú} is declined as though the entire phrase were one word)\
-    |{\nf from} t’hebhaúz + raúl|The Ultrafrench language *(in informal speech and writing, this is\
-    typically shortened to* **Raúl***)*|\s{nom sg} *T’hebhaú Raúl* *(regular in all other cases)*
+t’hebhaúz|v.|\pfabbr jeter l’éponge|To be French| \s{fut} *t’hebhaúźe*,\linebreak \s{subj} *t’hebhaúś*
+T’hebhaú|n. or adj.|{\nf from} t’hebhaúz|France, Fren\-ch
+T’hebhaú Raúl|n. def. sg. (only {\nf T’hebhaú} is declin\-ed as though the entire phrase were one word)\
+    |{\nf fr\-om} t’hebhaúz + raúl|The Ultrafrench language *(in informal speech and writing, this is\
+    typically shortened to* **Raúl***)*|\s{nom sg} *T’hebhaú Raúl* *(re\-gular in all other cases)*
 
 
 # To be is a rather complicated entry.
