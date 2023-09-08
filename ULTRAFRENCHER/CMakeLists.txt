@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(ULTRAFRENCHER VERSION 0.1.0 LANGUAGES CXX)
+project(ULTRAFRENCH VERSION 0.1.0 LANGUAGES CXX)
 
 ## ============================================================================
 ##  Global CMake Variables.
@@ -81,7 +81,7 @@ endif()
 
 ## Additional flags for GCC.
 if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    target_compile_options(options INTERFACE 
+    target_compile_options(options INTERFACE
         -Wlogical-op      # Duplicate or unintended logical operators.
         -Werror=invalid-memory-model # For atomics.
         -Werror=maybe-uninitialized
@@ -92,8 +92,8 @@ endif()
 
 ## Additional flags for Clang.
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    target_compile_options(options INTERFACE 
-        -Werror=dangling 
+    target_compile_options(options INTERFACE
+        -Werror=dangling
         -Werror=return-stack-address
     )
 endif()
@@ -137,6 +137,13 @@ endif()
 ## ============================================================================
 ##  Submodules and include dirs.
 ## ============================================================================
+## Find ICU.
+set(ICU_FIND_COMPONENTS uc i18n data)
+include(FindICU)
+if (NOT DEFINED ICU_FOUND)
+    message(WARNING "ICU not found, disabling dictionary generation...")
+endif()
+
 ## Find libfmt.
 find_package(fmt CONFIG)
 if (NOT DEFINED fmt_FOUND)
@@ -168,36 +175,6 @@ endif()
 ## Link against libfmt.
 target_link_libraries(options INTERFACE fmt)
 
-## ‘src’ should be an include directory.
-target_include_directories(options INTERFACE src)
-
-## ‘include’ too, if it exists.
-if (EXISTS ${PROJECT_SOURCE_DIR}/include)
-    target_include_directories(options INTERFACE include)
-endif()
-
-## As well as everything in ‘libs’.
-if (EXISTS ${PROJECT_SOURCE_DIR}/libs)
-    file(GLOB libs ${PROJECT_SOURCE_DIR}/libs/*)
-
-    ## Add the include directory to the include path, or the root
-    ## directory if there is no include directory.
-    foreach(lib ${libs})
-        if (IS_DIRECTORY ${lib}/include)
-            target_include_directories(options INTERFACE ${lib}/include)
-        else()
-            target_include_directories(options INTERFACE ${lib})
-        endif()
-    endforeach()
-
-    ## Also add all of them as subdirectories if they have a CMakeLists.txt.
-    foreach (lib ${libs})
-        if (EXISTS ${lib}/CMakeLists.txt)
-            add_subdirectory(${lib})
-        endif()
-    endforeach()
-endif()
-
 ## ============================================================================
 ##  Executables and libraries.
 ## ============================================================================
@@ -214,4 +191,4 @@ endif()
 add_executable(ULTRAFRENCHER ${sources})
 
 ## Link ICU.
-target_link_libraries(ULTRAFRENCHER PRIVATE options icui18n icuuc icudata)
+target_link_libraries(ULTRAFRENCHER PRIVATE options ICU::i18n ICU::uc ICU::data)
