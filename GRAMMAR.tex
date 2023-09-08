@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \usepackage{wasysym}
 \usepackage{xcolor}
+\usepackage{amsmath}
 
 %\definecolor{bgcolor}{HTML}{2D2A2E}
 %\definecolor{fgcolor}{HTML}{FAFCFC}
@@ -349,6 +350,7 @@
 
 \let \Sl \textbackslash
 \let \Sub \textsubscript
+\let \Sup \textsuperscript
 \def \parheading #1 { \noindent \textbf{#1} }
 
 \def \Item #1 {
@@ -1513,12 +1515,96 @@ Future II and Future Anterior forms, respectively.
 
 \noindent Unlike nearly every other word in the language, mono- and disyllabic forms of the copula are stressed on
 the first syllable, and trisyllabic forms are stressed on the second syllable—except for *hérarâ*, *férarâ*, *héráâ*,
-and *féráâ*, which are stressed on the first syllable. Lastly, all participle forms are stressed on the last syllable.
+and *féráâ*, which are stressed on the first syllable. All other participle forms are stressed on the last syllable.
+In forms of the copula, *ae* is pronounced /ai̯/.
 
 The etymology of these forms is mostly from a gradual simplification of coalesced forms of the personal
 pronouns with the PF copula. To compensate for the fact that PF lacks certain forms that are present in UF, some
 of the forms were coined by analogy. For instance, the \s{pres ant inf} *éfyḍ* is derived from the \s{pres ant}
 stem \**fy* and the \s{pres inf} *éḍ*, and the same is true for the \s{pret inf} *ét’hẹd*.
+
+\subsection{Numerals}\label{subsec:numerals}
+UF has four sets of numerals: cardinals, e.g. *dý* ‘two’; ordinals, e.g. *dýzy’ê* ‘second’; multipliers, e.g. *dub*
+‘twice’; and fractions, e.g. *déví* ‘half’. The numerals are shown in the table below.
+
+{
+\itshape
+\begin{longtable}{>{\nf}l|l|l|l|l}
+    \nf № & \nf Cardinal & \nf Ordinal & \nf Multiplier & \nf Fractional \\\hline
+    1      & ý               & révy’ẹ́             & séḅ               & áḍy’ẹ́           \\
+    2      & dý              & dýzy’ê             & dub               & déví            \\
+    3      & rrá             & rrázy’ê            & ríḅ               & y’ér            \\
+    4      & c’haḍ           & c’haḍríy’ê         & c’hadrýḅ          & c’hár           \\
+    5      & séc’h           & séc̣é               & c’hét’hyḅ         & c’hé            \\
+    6      & sis             & sizy’ê             & sec’hsḍyḅ         & sic’hs          \\
+    7      & sèḍ             & sèḍy’ê             & sèḍyḅ             & sè              \\
+    8      & y’íḍ            & y’íḍy’ê            & auc’hḍyḅ          & auc’h           \\
+    9      & nýt’h           & nýb’hy’ê           & nýḅ               & ny              \\\hline
+    10     & dis             & dizy’ê             & dehyḅ             & deh             \\
+    11     & aúz             & aúzy’ê             & aúzyḅ             & auz             \\
+    12     & duz             & duzy’ê             & duzyḅ             & duz             \\
+    13     & réz             & rézy’ê             & rézyḅ             & rez             \\
+    14     & c’hat’haúr      & c’hat’haúrzy’ê     & c’hat’haúrzyḅ     & c’hat’haurz     \\
+    15     & c’héz           & c’hézy’ê           & c’hézyḅ           & c’hez           \\
+    16     & sez             & sezy’ê             & sezyḅ             & sez             \\
+    17     & dihèḍ           & dihèḍy’ê           & dihèḍyḅ           & dihè            \\
+    18     & dizy’íḍ         & dizy’íḍy’ê         & dizy’íḍyḅ         & dizy’i          \\
+    19     & diznýt’h        & diznýb’hy’ê        & diznýt’hyḅ        & diznyb’h        \\\hline
+    20     & b’hé            & b’héy’ê            & b’héḍyḅ           & b’he            \\
+    21     & b’hé’d ý        & b’hé’d rév’yẹ́      & b’hé’d séḅ        & b’hé’d áḍy’ẹ́    \\
+    30     & b’hé’d dis      & b’hé’d dizy’ê      & b’hé’d dehyḅ      & b’hé’d deh      \\
+    31     & b’hé’d aúz      & b’hé’d aúzy’ê      & b’hé’d aúzyḅ      & b’hé’d auz      \\
+    40     & dýb’hé          & dýb’héy’ê          & dýb’héḍyḅ         & dýb’he          \\
+    50     & dýb’hé’d dis    & dýb’hé’d dizy’ê    & dýb’hé’d dehyḅ    & dýb’hé’d deh    \\
+    60     & rráb’hé         & rráb’héy’ê         & rráb’héḍyḅ        & rráb’he         \\
+    70     & rráb’hé’d dis   & rráb’hé’d dizy’ê   & rráb’hé’d dehyḅ   & rráb’hé’d deh   \\
+    80     & c’haḍb’hé       & c’haḍb’héy’ê       & c’haḍb’héḍyḅ      & c’haḍb’he       \\
+    90     & c’haḍb’hé’d dis & c’haḍb’hé’d dizy’ê & c’haḍb’hé’d dehyḅ & c’haḍb’hé’d deh \\\hline
+    100    & sá              & sáḍy’ê             & sáḍyḅ             & sáḍ             \\
+    101    & sá’d ý          & sá’d rév’yẹ́        & sá’d séḅ          & sá’d áḍy’ẹ́      \\
+    200    & dýsá            & dýsáḍy’ê           & dýsáḍyḅ           & dýsáḍ           \\
+    300    & rásá            & rásáḍy’ê           & rásáḍyḅ           & rásáḍ           \\
+    400    & c’hasá          & c’hasáḍy’ê         & c’hasáḍyḅ         & c’hasáḍ         \\
+    500    & sésá            & sésáḍy’ê           & sésáḍyḅ           & sésáḍ           \\
+    600    & sisá            & sisáḍy’ê           & sisáḍyḅ           & sisáḍ           \\
+    700    & sèsá            & sèsáḍy’ê           & sèsáḍyḅ           & sèsáḍ           \\
+    800    & y’ísá           & y’ísáḍy’ê          & y’ísáḍyḅ          & y’ísáḍ          \\
+    900    & nýsá            & nýsáḍy’ê           & nýsáḍyḅ           & nýsáḍ           \\\hline
+    1~000  & víl             & víly’ê             & vílḍyḅ            & víláḍ           \\
+    1~001  & víl ed ý        & víl ed rév’yẹ́      & víl ed séb        & vil ed áḍy’ẹ́    \\
+    2~000  & dý víl          & dý víly’ê          & dý vílḍyḅ         & dý víláḍ        \\
+    10~000 & dis víl         & dis víly’ê         & dis vílḍyḅ        & dis víláḍ       \\
+    10$^6$ & víwaú           & víwaúy’ê           & víwaúḍyḅ          & víwaúḍ          \\
+    10$^9$ & dýwaú           & dýwaúy’ê           & dýwaúḍyḅ          & dýwaúḍ          \\
+    10$^12$& ráwaú           & ráwaúy’ê           & ráwaúḍyḅ          & ráwaúḍ          \\
+\end{longtable}
+}
+
+\noindent
+The numbers 1–20 are irregular;
+after that, ordinals are formed by adding *-y’ê* to the cardinal and multipliers by adding *-ḍyḅ* to the cardinal;
+fractionals are more irregular: the tens lose nasalisation of the final vowel, e.g. *dýb’hé* ‘forty’ vs *dýb’he*
+‘(a) fortieth’; in the hundreds and after, a final *-(á)ḍ* is added instead.
+
+After 20, numbers of different orders of magnitude are combined with the particle *ed*, which is solely used for this
+exact purpose. After a vowel, it is reduced to *’d*, e.g. *sá’d ý* ‘101’ or *sá’d b’hé’d ý* ‘121’ from *sá* ‘100’,
+*b’hé* ‘20’ and *ý* ‘one’. In non-cardinals, only the last part is of ordinal, multiplier,
+or fractional form, e.g. *sá’d b’hé’d séḅ* ‘121 times’.
+
+In writing, non-cardinals are frequently abbreviated, preferably with superscripts if possible. Ordinals are abbreviated
+with *\Sup{y’ê}*, e.g. *27\Sup{y’ê}* ‘27th’, except for numbers ending
+with *révy’ẹ́* ‘first’, which are abbreviated with *\Sup{y’ẹ́}* instead, e.g. *21\Sup{y’ẹ́}* ‘21st’, as
+well as numbers ending with *séc̣é* ‘fifth’, which are abbreviated with *\Sup{c̣é}* instead, e.g. *25\Sup{c̣é}*
+‘25th’.
+
+Multipliers are abbreviated with subscripts if possible; those ending with *séḅ* ‘once’ to *nýḅ* ‘nine times’ are
+abbreviated with the last two letters of that
+word, e.g. *23\Sub{íḅ}* ‘23 times’. All other multipliers are abbreviated with *\Sub{yḅ}*, e.g. *31\Sub{yḅ}*
+‘31 times’.\footnote{Note that ‘31’ in UF is not really ‘thirty-one’, but rather ‘twenty-eleven’ and thus doesn’t
+end with ‘one’.}
+
+Fractions are typically abbreviated with the usual notation, e.g. *½*, *¼*, etc.
+
 
 \subsection{Pronouns}
 Pronouns in UF are a rather complicated subject matter since they are becoming increasingly vestigial. UF has
@@ -2196,15 +2282,6 @@ language, be ‘technically’ ‘superior’ to The UF Language, but it is unfa
 a written language, until the ignorant masses started attempting to ‘speak’ it. But when we consider the triune nature
 of The Language, it has transpired that,\footnote{‘To become clear’ is expressed with the \s{pres ant} form of ‘transpire’.}
 at least in spoken communication with non-android participants, UF is the best of the terrestrial languages.
-
-%% NOTES:
-%%
-%% Numerals! (Make ‘10’ mean ‘half of 20’, 15 ‘half of 20 plus 5’ and so on)
-%%
-%%
-
-
-
 
 %% Dictionary.
 \clearpage

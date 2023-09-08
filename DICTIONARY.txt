@@ -295,8 +295,8 @@ y’ác’hraúníc’h|v.|To be diachronic|\s{fut} *y’ác’hraúníc’hre*,
 rávér|n.|1. Grammar *(the grammatical rules of a language)*. 2. A textbook describing the grammar \
     of a language
 lýv́á|v. \s{3rd} person only|pleuvoir|To rain|\s{fut} *lýv́áre*, \s{subj} *lýv́ás*
-
-
+ed|particle|et|*used in numbers, see §~\ref{subsec:numerals})*
+biwaú|n.|billion|*(obsolete, replaced with modern* **dýwaú***)* Billion
 
 rá|v.|grand|Big, large, great
 laú|v.|long|Long *(often in compounds* **laú-** *‘long-’)*
