@@ -150,6 +150,21 @@ if (NOT DEFINED fmt_FOUND)
 	FetchContent_MakeAvailable(fmtlib)
 endif()
 
+## Add libclopts.
+include(CheckIncludeFileCXX)
+check_include_file_cxx(clopts.hh has_libclopts)
+if (NOT has_libclopts)
+    include(FetchContent)
+    message(STATUS "clopts.hh not found, downloading ...")
+    FetchContent_Declare(clopts
+        GIT_REPOSITORY https://github.com/Sirraide/clopts.git
+        GIT_TAG master
+        SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/clopts"
+    )
+    include_directories(${clopts_SOURCE_DIR}/include)
+    FetchContent_MakeAvailable(clopts)
+endif()
+
 ## Link against libfmt.
 target_link_libraries(options INTERFACE fmt)
 
