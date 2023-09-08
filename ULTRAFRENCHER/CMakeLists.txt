@@ -172,7 +172,7 @@ if (NOT has_libclopts)
         SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/clopts"
     )
     FetchContent_MakeAvailable(clopts)
-    target_include_directories(options INTERFACE ${clopts_SOURCE_DIR}/include)
+    target_include_directories(options INTERFACE "${CMAKE_CURRENT_BINARY_DIR}/libs/clopts/include")
 endif()
 
 ## Link against libfmt.
