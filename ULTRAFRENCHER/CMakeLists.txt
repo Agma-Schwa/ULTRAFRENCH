@@ -105,6 +105,9 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
 
         # Allow unnamed structs/unions.
         /wd4201
+
+        # Source code is UTF-8.
+        /utf-8
     )
 endif()
 
