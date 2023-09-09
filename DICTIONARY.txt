@@ -313,6 +313,10 @@ raúl|n.|parole|1. Language, speech, word 2. **Raúl** *definite only* Short for
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
 susy’é|v.|soucier|\linebreak+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
 a|pron. indef.|quoi|What, which, that *(relative pronoun)*
+vérs|interj.|merci|1. Thank you. (+\s{gen} for sth.). 2. **dyvérs fér** To thank \
+    (+\s{dat} sbd.) (+\s{gen} for sth.)
+rárd|v.|regarder|1. To watch. 2. To look at|\s{fut} rárdre, \s{subj} rárds
+
 
 # From Étienne.
 Eḍy’ê|n.||*male given name, equivalent to English\linebreak ‘Stephen’*

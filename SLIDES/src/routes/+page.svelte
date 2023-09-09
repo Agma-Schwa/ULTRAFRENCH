@@ -630,4 +630,6 @@ occur at the very beginning and end of the word.
     <Text v='<$iroughly:> ‘If only we had not endowed you with it’' classes='font15'/>
 </CentrePage>
 
-<!--TODO: ‘Thanks for watching’ in UF-->
+<CentrePage>
+    <Text v='$9$iVérs ád’herárdá!' />
+</CentrePage>
