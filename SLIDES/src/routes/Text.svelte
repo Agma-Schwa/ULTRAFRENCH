@@ -66,6 +66,16 @@
                         i++;
                         break;
 
+                    case 'W':
+                        class_list = ' width100';
+                        i++;
+                        break;
+
+                    case 'B':
+                        output_text += '<br>';
+                        i++;
+                        break;
+
                     default:
                         output_text += '<span class="';
                         output_text += TextFormat.ActOnFormatSpecifier(v[++i], true);

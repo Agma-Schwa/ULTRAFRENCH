@@ -52,6 +52,8 @@ function S(s) {
 /// %L = left-align
 /// %C = center-align
 /// %R = right-align
+/// %W = 100% width
+/// %B = <br>
 namespace TextFormat {
     export function ParseTextFormat(format: string): string {
         let classes = '';

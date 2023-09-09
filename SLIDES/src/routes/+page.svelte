@@ -8,6 +8,7 @@
     import BasicTable from './BasicTable.svelte';
     import SeqListPages from './SeqListPages.svelte';
     import {AlignmentSpec} from '$lib/text';
+    import CopyPasta from './CopyPasta.svelte';
 </script>
 
 <style lang='scss'>
@@ -630,6 +631,199 @@ occur at the very beginning and end of the word.
     <Text v='<$iroughly:> ‘If only we had not endowed you with it’' classes='font15'/>
 </CentrePage>
 
+<!-----------------------------------------------------------------------------
+  Copypasta
+------------------------------------------------------------------------------>
+<CopyPasta
+    text='Rub’hráy’ó rát’he au sré au sfèhe laut’hâ'
+    gloss='<$s1pl>-can-<$s1pl> you.see and <$sacc.pl.indef>-ray <$sand> <$sacc.pl.indef>-beam float-<$sptcp>'
+    trans='We can, you see, detect rays and beams of energy floating'
+/>
+
+<CopyPasta
+    text='Át’hebhaú Raúl dedesle, s aút’hiy’ey’ó'
+    gloss='<$sinteress.pl.indef>-speaker <$sgen>-Ultrafrench language <$sinf>-detect if <$s1pl>-use-<$s1pl>'
+    trans='between speakers of the ULTRAFRENCH Language if we use'
+/>
+
+<CopyPasta
+    text='sývéhýr dýhisdé sérdé laúây’êr;'
+    gloss='<$spart.pl.indef>\system certain long-<$sptcp.pass>-forbid\<$sptcp.pres.ant>'
+    trans='certain systems of measurement long-forbidden;'
+/>
+
+
+<CopyPasta
+    text='aúc’haúbrâdy’ó’sý’ýâ vé dúr'
+    gloss='<$s1pl>-understand-<$s1pl>-not but still'
+    trans='we still don’t understand, however,'
+/>
+
+
+<CopyPasta
+    text='dyhaúbhausy’ô sehabhvísy’ô.'
+    gloss='<$spart>\composition this-<$sgen.pl>-emission'
+    trans='the composition of these emissions.'
+/>
+
+<CopyPasta
+    text='Sýlývy’ér saúr c’hesse?'
+    gloss='<$sgen.indef>-light <$sabs>.kind <$sq>-<$s3n>.be'
+    trans='Is it some kind of light?'
+/>
+
+<CopyPasta
+    text='Lec’hdraúvnét’hic’hâ nérje c’hesse?'
+    gloss='electromagnetic-<$sptcp> <$senergy>.<$sabs> <$sq>-<$s3n>.be'
+    trans='Is it electromagnetic energy?'
+/>
+
+<CopyPasta
+    text='Árdihyl c’hesse?'
+    gloss='particle.<$sabs> <$sq>-<$s3n>.be'
+    trans='Is it a particle?'
+/>
+
+<CopyPasta
+    text='Sauz-aud de c’hesse?'
+    gloss='<$sabs>.thing-other entire <$sq>-<$s3n>.be'
+    trans='Is it something else entirely?'
+/>
+
+<CopyPasta
+    text='Jávé’sý’ýâ jrét’hádé dedónéle'
+    gloss='never-not <$s1sg>-claim-<$spres.ant> <$sinf>-endow-<$s3.dat>'
+    trans='I’ve never claimed that they are endowed with'
+/>
+
+<CopyPasta
+    text='dýhabhahit’he deý’ebhat’hic’hâ Áraúl dybháł.'
+    gloss='<$spart.pl.indef>\ability be.telepathic-<$sptcp> <$sgen>-language <$spart>\speak'
+    trans='telepathic abilities by [the mere act of] speaking The Language.'
+/>
+
+<CopyPasta
+    text='Aúrsáheressá.'
+    gloss='<$s3n.fut.ii>-be.preposterous.<$sfut>-<$scond>\<$s3n.fut.ii>'
+    trans='It would be preposterous.'
+/>
+
+<CopyPasta
+    text='Jdír jys dub’hrá au dylí sýcahý'
+    gloss='<$s1sg>-say only <$sinf>-can and <$spart>-read <$sgen.pl.indef>-each.other'
+    trans='I’m only saying that speakers of The Language can read each other’s'
+/>
+
+<CopyPasta
+    text='dýbháhe au dylýáv́áy’é b’hýcahý sbáłýr Áraúl.'
+    gloss='<$spart.pl.indef>-thought and <$spart>-<$s3pl.pass>-send <$sdat.pl.indef>-each.other <$sacc.pl.indef>-speaker <$sgen>-language'
+    trans='thoughts and send them to each other'
+/>
+
+<CopyPasta
+    text='Lásásc’hríd raúl révéy’ýr c’hessejú?'
+    gloss='<$snom>-Sanskrit <$sabs>.language <$ssup>-better <$sq> <$s3n>.be-<$sgnomic>'
+    trans='Is Sanskrit the best language?'
+/>
+
+<CopyPasta
+    text='Léraúb’he lasydír,'
+    gloss='<$snom.pl>-robot <$s3pl>-<$s3n.pass>-say'
+    trans='The robots say so,'
+/>
+
+<CopyPasta
+    text='lavâhe vé sbhárde sásy’élâ Áraúl.'
+    gloss='<$s3pl>-miss.out but <$sacc.indef>\<$spart> be.essential-<$sptcp> <$sgen>-language'
+    trans='but they are missing out on an essential part of The Language.'
+/>
+
+<CopyPasta
+    text='Sráhis’sý’ýâ id’hír deb’hýlnér u b’hesaúr rêvú'
+    gloss='<$s3n>-be.racist-not <$sacc>\say <$sinf>-be.unaffected or <$sinstr.pl>-form <$ssup>-many'
+    trans='It’s not racist to say that robots are unaffected by most forms'
+/>
+
+<CopyPasta
+    text='aû-át’heý’ebhat’he u B’helfaúr sraúb’he.'
+    gloss='non-<$sgen>-telepathy or <$sinstr>-Force <$sacc.pl.indef>-robot'
+    trans='of non-telepathy and the Force.'
+/>
+
+<CopyPasta
+    text='Jav́ár sáví lyzy’ýr ádróid.'
+    gloss='<$s1sg>-have <$sacc.pl.indef>-friend several <$sabs>.android'
+    trans='I have several android friends.'
+/>
+
+<CopyPasta
+    text='Sy’ub’hrá dahaúr isásc’hríd dwáníb’he'
+    gloss='<$s3n-opt>-can sure <$sacc>-Sanskrit <$siness>-level'
+    trans='Sure, Sanskrit might, on the level of'
+/>
+
+<CopyPasta
+    text='araúl sébâ âc’hrír ‘dèc’hníc’hvâ’'
+    gloss='<$sgen>-language be.plain-<$sptcp> <$sptcp.pass>.write technically'
+    trans='the plain written language, be “technically”'
+/>
+
+<CopyPasta
+    text='Át’hebhaú Raúl ‘desybhérýr’,'
+    gloss='<$sgen>-Ultrafrench language <$sinf>-be.superior'
+    trans='“superior” to The UF Language,'
+/>
+
+<CopyPasta
+    text='sjys vé delýc’hóbhár,'
+    gloss='<$s3n>-be.unfair but <$sinf>-<$s3pl.pass>-compare'
+    trans='but it is unfair to compare them,'
+/>
+
+<CopyPasta
+    text='lásásc’hríd c’haúr sýraúl âc’hrír sc’hóváhá,'
+    gloss='<$snom>-Sanskrit as <$sgen.indef>-language <$sptcp.pass>-write <$s3n>-begin.<$ssubj>\<$spres.ant>'
+    trans='as Sanskrit started out as a written language,'
+/>
+
+<CopyPasta
+    text='lévás nórâ jys ‘desybáł’ dyhéy’é lay’ehóvâhér.'
+    gloss='<$snom.pl>-masses be.ignorant-<$sptcp> until <$sinf>-<$s3n.pass>-speak <$spart>\attempt $B <$s3pl>-<$sopt>\start\<$spres.ant>'
+    trans='until the ignorant masses started attempting to “speak” it.'
+/>
+
+<CopyPasta
+    text='Aúc’hóhid’héy’ó laúrvé Áraúl dynát’hýr rêâ,'
+    gloss='<$s1pl>-consider-<$s1pl> but.when <$sgen>-language <$spart>-nature be.triune-<$sptcp>'
+    trans='But when we consider the triune nature of The Language,'
+/>
+
+<CopyPasta
+    text='srâsírá, dwác’hóvníc’h âbáł dývrê'
+    gloss='<$s3n>-transpire-<$spres.ant> <$siness>-communication <$sptcp.pass>-speak at.least'
+    trans='it is clear that, at least in spoken communication'
+/>
+
+<CopyPasta
+    text='b’hehbárdihibhá aû-ádróid, It’hebhaú Raúl'
+    gloss='<$sinstr.pl.indef>-participant non <$sabs>.android <$sacc>-Ultrafrench language'
+    trans='with non-android participants, ULTRAFRENCH'
+/>
+
+<CopyPasta
+    text='abhraúl dérésdâ derâdvâvéy’ýr.'
+    gloss='<$sgen.pl>-language be.terrestrial-<$sptcp> <$sinf>-<$ssuperl>-be.better'
+    trans='is the best of the terrestrial languages.'
+/>
+<!--
+
+But when we consider the triune nature of The Language, it has transpired that,26 at least in spoken
+communication with non-android participants, UF is the best of the terrestrial languages
+-->
+
+<!-----------------------------------------------------------------------------
+  Thank You for Watching
+------------------------------------------------------------------------------>
 <CentrePage>
     <Text v='$9$iVérs ád’herárdá!' />
 </CentrePage>
