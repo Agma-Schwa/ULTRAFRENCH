@@ -687,10 +687,10 @@ int main(int argc, char** argv) {
         help<>
     >; // clang-format on
 
-    options::parse(argc, argv);
-    const bool show_unsupp = options::get<"--show-unsupported">();
-    if (auto d = options::get<"--dict">()) dictionary::generate(d->contents);
-    else if (auto i = options::get<"-i">()) ipa::translate(*i, show_unsupp);
-    else if (auto f = options::get<"-f">()) ipa::translate(f->contents, show_unsupp);
+    auto opts = options::parse(argc, argv);
+    const bool show_unsupp = opts.get<"--show-unsupported">();
+    if (auto d = opts.get<"--dict">()) dictionary::generate(d->contents);
+    else if (auto i = opts.get<"-i">()) ipa::translate(*i, show_unsupp);
+    else if (auto f = opts.get<"-f">()) ipa::translate(f->contents, show_unsupp);
     else fmt::print("{} {}", argv[0], options::help());
 }

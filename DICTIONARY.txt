@@ -261,7 +261,7 @@ c’hóbhár|v.|comparer|To compare|\s{fut} *c’hóbhárre*, \s{subj}\linebreak
 c’hóvâ|v.|commencer|1. (\s{+ part}) To start, commence, begin. 2. \s{+ gen} To start out as|\
     \s{fut} *c’hóvârẹ́*, \s{subj} *c’hóv\-ás*
 vás|n. \s{pl def}|masses|The masses, the people
-nór|adj.|\nf{back-formation from} \**nórâ* \s{from} \pfabbr *ignorant*|To be ignorant, \
+nór|v.|\nf{back-formation from} \**nórâ* \s{from} \pfabbr *ignorant*|To be ignorant, \
     unaware, oblivious
 séy’ẹ́|v.|essayer|+\s{part} *or* \s{inf} To try, attempt|\s{fut} *séy’ẹ́rẹ́*, \s{subj} *séy’ẹ́s*
 c’hóhid’hẹ́|v.|considérer|1. +\s{part} To consider, think ab\-out, ponder. 2. +\s{acc} To think \
