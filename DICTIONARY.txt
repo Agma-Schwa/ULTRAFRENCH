@@ -56,7 +56,7 @@ ehyó|n.|écusson|Shield
 rvá|interj.|of unknown origin|Alas, woe, oh. *Exclamation of distress, surprise, sadness, or regret*| \
     *after words that end with ‘r’, this is spelt ‘-vá’ instead*
 ḅárḍáḍ|v.|partante| (+ \s{aci}) To be interested in, willing to, ready to, prepared for
-c’hes|part.|\pfabbr qu'est-ce que|*interrogative particle*
+c’hes|quest. part.|\pfabbr qu'est-ce que|*see grammar; often* **c’h’s** *in older texts*
 Daúvníc’h|n.||*male or female given name, equivalent to English ‘Dominic’*
 Já|n.||*male or female given name, equivalent to English ‘John’ or ‘Joan’*
 ráy’é|v.|noyer|To drown
@@ -194,8 +194,8 @@ lec’hḍraúvnẹ́t’hic’h|v.|électromagnétique|To be electromagnetic|\s{
     \s{subj} *lec’hḍraúvnẹ́t’hic’hes*
 nérjẹ|n.|énergie|Energy
 árḍihyl|n.|particule|Particle
-c’hesse|||*contraction of* **c’hes** *+* **se** Is it? *(Also substituted for other forms of to \
-    be in questions, particularly for the plural neuter; stressed on the first syllable)*
+c’hesse|||*contraction of* **c’hes** *+* **se** Is it? *(Also substituted for other forms of ‘to \
+    be’ in questions, particularly for the plural neuter; stressed on the first syllable)*
 aud|adj.|autre|Other, another
 sauz-aud|adj.|\pfabbr autre chose|Something else, another thing
 rét’hád|v.|prétendre|To claim, allege|\s{fut} *rét’hádrẹ́*, \s{subj} *rét’h\-ádes*
@@ -253,7 +253,7 @@ sybhẹ́rýr|v.|supérieur|*intr. or* +\s{gen} To be superior to, better\linebre
     *sybhẹ́rýrẹ́*, \s{subj} *sybhẹ́rýrs*
 
 ḍèc’hníc’hvâ|adv.|techniquement|Technically
-níb’hẹ|n.|niveau|1. Level, degree 2. \s{def iness + gen} On the level of
+níb’hẹ|n.|niveau|1. Level, degree. 2. \s{def iness + gen} On the level of
 séḅ|v.|simple|To be plain, simple|\s{fut} *séḅrẹ́*, \s{subj} *séḅs*
 c’hrír|v.|écrire|To write|\s{fut} *c’hrírẹ́*, \s{subj} *c’hrís*
 dahaúr|particle|d’accord|Sure, ok, agreed, fine
@@ -309,15 +309,15 @@ eḍrrá|v.|étroit|Pointy
 c’hánár|n.|canard|Ship, boat
 ráhe|n.|oiseau|Bird
 ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
-raúl|n.|parole|1. Language, speech, word 2. **Raúl** *definite only* Short for *T’hebhaú Raúl* *(\s{nom\
+raúl|n.|parole|1. Language, speech, word. 2. **Raúl** *definite only* Short for *T’hebhaú Raúl* *(\s{nom\
     sg} irreg.* **Raúl***; all other forms are regular)*
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
 susy’é|v.|soucier|\linebreak+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
-a|pron. indef.|quoi|What, which, that *(relative pronoun)*
+a|pron. indef.|quoi|What, which, that *(interrogative and relative pronoun)*
 vérs|interj.|merci|1. Thank you. (+\s{gen} for sth.). 2. **dyvérs fér** To thank \
     (+\s{dat} sbd.) (+\s{gen} for sth.)
 rárd|v.|regarder|1. To watch. 2. To look at|\s{fut} rárdre, \s{subj} rárds
-
+ḍẹ́ríb|adj.|terrible|To be terrible *(all senses)*|\s{fut} ḍẹ́ríre, \s{subj} ḍẹ́rís
 
 # From Étienne.
 Eḍy’ê|n.||*male given name, equivalent to English\linebreak ‘Stephen’*
@@ -356,8 +356,19 @@ T’hebhaú Raúl|n. def. sg. (only {\nf T’hebhaú} is declin\-ed as though th
     |{\nf fr\-om} t’hebhaúz + raúl|The Ultrafrench language *(in informal speech and writing, this is\
     typically shortened to* **Raúl***)*|\s{nom sg} *T’hebhaú Raúl* *(re\-gular in all other cases)*
 
+c’hèlc’hý|pron.|quelqu'un|Someone, somebody, anyone, anybody
+ach’es|||*contraction of* **a** *(rel. pron.)* + **c’h’es** *(quest. part.)*
+rá|n.|mois|Month
+dérny’é|adj.|dernier|Last, final, ultimate
+rád’hérn|n.|{\nf from} rá + dérny’é|*always definite* Last month
+rẹ́b’h|v.|rêver|To dream (+\s{gen} of sth.)|\s{fut} *rẹ́v́e*, \s{subj} *rẹ́b’hs*
+aúráj|n.|orage|1. Storm, tempest, thunderstorm. 2. *fig.* Upheaval, turmoil, crisis
+dec̣ír|v.|déchirer|1. +\s{part} To tear, rip, rend. 2. +\s{acc} To rend asunder, tear to pieces\
+    |\s{fut} *dec̣irrẹ*, \s{subj} *dec̣írs*
+ḅéy’í|n.|pays|Country, land, region, nation
 
-c’hèlch’ý|pron.|quelqu'un|Someone, somebody, anyone, anybody
+
+
 
 
 # To be is a rather complicated entry.
@@ -367,6 +378,7 @@ eḍ|v. irreg. |être|To be|\s{forms} *active only, see §~\ref{subsec:ed-paradi
 véy’ýr > baú
 bír > vaúb’hẹ
 rêd > ḅẹt’hẹ
+c’h’s > c’hes
 
 sauzaud > sauz-aud
 s’ > sá

@@ -412,7 +412,7 @@
     \vskip 1em
     {\Large \@author \par}%
     \vskip .5em
-    September 2023 \par
+    \today \par
     \vfil\null
 \end{titlepage}
 \clearpage
@@ -606,9 +606,9 @@ following consonants are also affected by lenition:
 \begin{table}[H]
 \centering
 \itshape
-\begin{tabular}{l|lll|l|ll|l|l|l|}
-\bf Consonant & x & s & z       & c & b & f          & ḅ   & d   & ḍ    \\\hline
-\bf Lenited & \multicolumn{3}{c|}{h} & c̣ & \multicolumn{2}{c|}{b’h} & bh  & d’h & t’h  \\
+\begin{tabular}{l|lll|l|l|ll|l|l|l|}
+\bf Consonant & x & s & z & sw     & c & b & f          & ḅ   & d   & ḍ    \\\hline
+\bf Lenited & \multicolumn{3}{c|}{h} & ź & c̣ & \multicolumn{2}{c|}{b’h} & bh  & d’h & t’h  \\
 \end{tabular}
 \nf
 \caption{Consonants Affected by Lenition}\label{tab:lenition}
@@ -1284,9 +1284,9 @@ shows the consonantal Conditional II paradigm of *vvaúríhe* ‘to remember’.
 is *never* lenited.
 
 The conditional tenses are mainly used in the apodoses of conditional clauses. On its own, their meaning
-is similar to that of the English ‘would’ or ‘could’, e.g. *jaúvvaúríźessẹ́* ‘I would love’; the Conditional II,
-even though it is morphologically a future tense, is used to express a hypothetical past, e.g. *jaúvvaúríźessệ*
-‘I would have loved’.
+is similar to that of the English ‘would’ or ‘could’, e.g. *jaúvvaúríźessẹ́* ‘I would love’. As such, the Conditional I is
+used to express a future-in-the-past, whereas the Conditional II, even though it is morphologically a future tense,
+is used to express a hypothetical past, e.g. *jaúvvaúríźessệ* ‘I would have loved’.
 
 \subsection{Miscellaneous Forms}
 \subsubsection{The Gnomic}\label{subsubsec:gnomic}
@@ -1683,8 +1683,9 @@ corresponding possessive pronoun is used instead, as indicated above.
 
 \subsubsection{Demonstrative Pronouns}
 UF has three main demonstrative pronouns: *swi* ‘the one, that one, this one’, *sẹh* ‘this’, and *sý’ẹ* ‘that’. All
-three are indeclinable and precede whatever they qualify: the first generally occurs in isolation or with an adjective,
-e.g. *swi ḅẹt’hâ* ‘the small one’, the latter two always precede a definite noun, e.g. *sẹh lát’halẹ* ‘this table’. It
+three are normally indeclinable and precede whatever they qualify: the first generally occurs in isolation, in which
+case it is declined as a definite noun, or indeclinably with an adjective, e.g. *swi ḅẹt’hâ* ‘the small one’, the
+latter two always precede a definite noun, e.g. *sẹh lát’halẹ* ‘this table’, and are themselves never declined. It
 is not possible to combine demonstratives with one another.
 
 \subsubsection{Relative Pronoun}
@@ -1695,7 +1696,21 @@ table that I love’ or *ŷnalẹ, sa jad’hór* ‘a table that I love’.
 If the antecedent is too far away from the relative clause, it may be repeated in the relative clause,
 typically at the very beginning, in which case the relative pronoun follows it and is not inflected at
 all, e.g. *lát’halẹ, it’halẹ a jad’hór* ‘the table, which table I love’. In literary language, this
-construction is generally preferred over inflecting the relative pronoun.
+construction is generally preferred over inflecting the relative pronoun if the two are far apart.
+
+\subsubsection{Interrogative Pronoun}
+The interrogative pronoun is the same as the relative pronoun, except that it is also followed by the
+question particle *c’hes*. Unlike the relative pronoun, it is always declined. On its own, it takes
+indefinite case, e.g. *Sa c’hes ḍad’hór?* ‘Whom/what do you love?’.
+
+If the subject of the question is a noun phrase that contains more than just the interrogative pronoun,
+pronoun and question particle are added after the entire phrase, and the pronoun is not declined, e.g.
+*Ŷnalẹ a c’hes ḍad’hór?* ‘Which table do you love?’. In informal speech, the *a* is even omitted
+sometimes.
+
+A common variant spelling in older literature is to write the pronoun and question particle as one
+word, e.g. *sac’hes* instead of *sa c’hes* or to contract the ‘e’, e.g. *sac’h’s*.
+
 
 \subsection{Summary of Coalescence Rules}
 When vowels collide at morpheme boundaries, though chiefly in suffixes, they often coalesce into a
@@ -2341,7 +2356,7 @@ at least in spoken communication with non-android participants, UF is the best o
 
     \textbf { \ignorespaces #1 } \space
     \(\to\) \space
-    \textit { \ignorespaces #2 }
+    \textbf { \ignorespaces #2 }
     .
     \par
 }
