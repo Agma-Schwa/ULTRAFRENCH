@@ -41,17 +41,21 @@ template <typename... arguments>
     std::exit(1);
 }
 
+constexpr bool isspace(char32_t c) {
+    return c == ' ' or c == '\t' or c == '\n' or c == '\r' or c == '\f' or c == '\v';
+}
+
 void trim(std::u32string& s) {
     while (s.back() == ' ') { s.pop_back(); }
     auto it = s.begin();
-    while (it != s.end() and std::isspace(u8(*it))) it++;
+    while (it != s.end() and isspace(*it)) it++;
     s.erase(s.begin(), it);
 }
 
 [[nodiscard]] auto trim(std::u32string_view s) -> std::u32string_view {
     while (s.back() == ' ') { s.remove_suffix(1); }
     auto it = s.begin();
-    while (it != s.end() and std::isspace(u8(*it))) it++;
+    while (it != s.end() and isspace(*it)) it++;
     return s.substr(usz(it - s.begin()));
 }
 

@@ -79,7 +79,7 @@ ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
 ez-|pron.|ses|Its, her, his, their
 lýr|pron.|leur|Their
-el|n.|ailles|Wing, blade, fin.
+el|n.|ailles|Wing, blade, fin
 Lác|n.||*female given name, equivalent to English ‘Bi\-anca’*
 auḍé|v.|obtenir|1. To obtain, get, acquire. 2. +\s{abl} To gain purchase on or hei\-ght or distance from|\s{fut} *auḍy’édrẹ́*
 sol|n.|sol|Ground, floor, earth, soil
@@ -251,6 +251,7 @@ av́ár|v. irreg.|avoir|+\s{acc} To have, possess|*(stems irreg.)* \s{pres ant} 
     *ab’hẹ*, \s{fut} *aúrẹ́*, \s{subj} *ès*
 sybhẹ́rýr|v.|supérieur|*intr. or* +\s{gen} To be superior to, better\linebreak than, higher than|\s{fut} \
     *sybhẹ́rýrẹ́*, \s{subj} *sybhẹ́rýrs*
+
 ḍèc’hníc’hvâ|adv.|techniquement|Technically
 níb’hẹ|n.|niveau|1. Level, degree 2. \s{def iness + gen} On the level of
 séḅ|v.|simple|To be plain, simple|\s{fut} *séḅrẹ́*, \s{subj} *séḅs*
@@ -354,6 +355,9 @@ T’hebhaú|n. or adj.|{\nf from} t’hebhaúz|France, Fren\-ch
 T’hebhaú Raúl|n. def. sg. (only {\nf T’hebhaú} is declin\-ed as though the entire phrase were one word)\
     |{\nf fr\-om} t’hebhaúz + raúl|The Ultrafrench language *(in informal speech and writing, this is\
     typically shortened to* **Raúl***)*|\s{nom sg} *T’hebhaú Raúl* *(re\-gular in all other cases)*
+
+
+c’hèlch’ý|pron.|quelqu'un|Someone, somebody, anyone, anybody
 
 
 # To be is a rather complicated entry.
