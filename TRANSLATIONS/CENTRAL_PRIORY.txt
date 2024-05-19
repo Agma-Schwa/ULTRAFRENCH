@@ -1,7 +1,7 @@
 To anyone who reads this:
 
-Last month, I had a dream of a terrible storm that would rend this land asunder. Brothers, it is with
-a heavy heart that I must inform you that that was no dream: Our Lord Rabo sent me a vision, and I was
+Last month, I had a dream of a terrible storm that would rend this land asunder. Brethren, it is with
+a heavy heart that I must inform you that that was no dream: Lord Rabo had sent me a vision, and I was
 too foolish to understand. And today, it has come to pass: the plateau has been shattered; our
 great priory still stands, but who knows for how much longer. Brother Smyth is leading our people north,
 to find shelter as the storm still rages. I shall venture to the Four Priories and consult with the
@@ -15,7 +15,8 @@ Praise be Lord Rabo.
 ========================================================================================================
 Anc’hèlc’hý a dyźi lelí:
 
-Dwárád’hérn, sýnaúráj déríbâ jréb’hé ŷna aúrdecirressa seh ibhéy’í.
+Dwárád’hérn, sýnaúráj déríbâ jréb’hé ŷna aúrdecirressa seh ibhéy’í. C’haúfrér, b’henc’hýr sérê vv́ár
+t’h’éfyd sréb’h deb’hyfórvé:
 
 ========================================================================================================
 To anyone who reads this:
@@ -33,5 +34,12 @@ aúrdecirressa seh ibhéy’í.
 aúr-dec̣irrẹ-ssa               sẹh  i/bhéy’í
 3N.FUT.II-tear.apart.FUT-COND this ACC.DEF/land
 
-Brothers, it is with a heavy heart that I must inform you that that was no dream:
+Brethren, it is with a heavy heart that I must inform you that that was no dream:
+C’haúfrér, b’henc’hýr sérê vv́ár t’h’éfyd sréb’h deb’hyfórvé:
+c’haúfrér      b’hen-c’hýr       sér/ệ      v-v́ár         t’h’-éfyḍ           s-rẹ́b’h   dẹ-b’hy-fórvẹ́
+brother.VOC.PL INSTR.INDEF-heart tight/PART 1SG.PASS-must not-be.INF.PRES.ANT ACC.dream INF-2PL.PASS-inform
 
+Lord Rabo had sent me a vision
+Ráb’h Sénýr
+Ráb’h    sénýr
+Rabo.NOM lord.NOM

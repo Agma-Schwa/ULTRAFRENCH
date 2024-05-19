@@ -84,7 +84,6 @@ Lác|n.||*female given name, equivalent to English ‘Bi\-anca’*
 auḍé|v.|obtenir|1. To obtain, get, acquire. 2. +\s{abl} To gain purchase on or hei\-ght or distance from|\s{fut} *auḍy’édrẹ́*
 sol|n.|sol|Ground, floor, earth, soil
 c’hór|n.|corps|Body
-c’hýr|n.|corps|Heart
 ab’haḍ|v.|abattre|1. To cut down, fell, knock down, shoot down. 2. To butcher, cut apart violently|\s{fut} *ab’haḍrẹ́*, \s{subj} *ab’has*
 árb|n.|arbre|Tree
 ac|n.|hache|Axe, hatchet
@@ -247,7 +246,7 @@ ra|conj.|\pfabbr swa (> \**rá*)|1. Or *(exclusive, see also*~**u***)*. 2. **u**
 ádróid|n.|androïde|Android
 áví|n.|ami|Friend
 lyzy’ýr|adj.|plusieurs|Several
-av́ár|v. irreg.|avoir|+\s{acc} To have, possess|*(stems irreg.)* \s{pres ant} *y*, \s{pret} \
+av́ár|v. irreg.|avoir|+\s{acc} To have, possess|*(stems irreg.)* \s{pres ant} and \s{pret} *y*, obsolete \s{pret} \
     *ab’hẹ*, \s{fut} *aúrẹ́*, \s{subj} *ès*
 sybhẹ́rýr|v.|supérieur|*intr. or* +\s{gen} To be superior to, better\linebreak than, higher than|\s{fut} \
     *sybhẹ́rýrẹ́*, \s{subj} *sybhẹ́rýrs*
@@ -306,7 +305,7 @@ ebhẹ|v.|épais|To be \linebreak thick|\s{fut} ebhrẹ, \s{subj} ebhes
 lúr|v.|lourd|To be bulky, oversized, heavy
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
-c’hánár|n.|canard|Ship, boat
+c’hánár|n.|canard|1. Ship, boat. 2. \s{instr indef} By boat
 ráhe|n.|oiseau|Bird
 ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
 raúl|n.|parole|1. Language, speech, word. 2. **Raúl** *definite only* Short for *T’hebhaú Raúl* *(\s{nom\
@@ -361,24 +360,40 @@ ach’es|||*contraction of* **a** *(rel. pron.)* + **c’h’es** *(quest. part.
 rá|n.|mois|Month
 dérny’é|adj.|dernier|Last, final, ultimate
 rád’hérn|n.|{\nf from} rá + dérny’é|*always definite* Last month
-rẹ́b’h|v.|rêver|To dream (+\s{gen} of sth.)|\s{fut} *rẹ́v́e*, \s{subj} *rẹ́b’hs*
+rẹ́b’h|v. or n.|rêver|1. To dream (+\s{gen} of sth.). 2. Dream, a dreaming|\s{fut} *rẹ́v́e*, \
+    \s{subj} *rẹ́b’hs*
 aúráj|n.|orage|1. Storm, tempest, thunderstorm. 2. *fig.* Upheaval, turmoil, crisis
 dec̣ír|v.|déchirer|1. +\s{part} To tear, rip, rend. 2. +\s{acc} To rend asunder, tear to pieces\
     |\s{fut} *dec̣irrẹ*, \s{subj} *dec̣írs*
 ḅéy’í|n.|pays|Country, land, region, nation
 
 
+c’haúfrér|n.|confrère|Brother (religious), collegue *(masculine or plural only, see also* \
+    **c’haúhýr** *)*
+c’haúhýr|n.|consœur|Sister (religious), collegue *(feminine only, see also* \
+    **c’haúfrér** *)*
+fórvẹ́|v.|informer|To inform (+\s{acc} sbd.) (+\s{aci} of sth.)|\s{fut} *fórv́ẹ́*, \s{subj} *fórvẹ́s*
+sérẹ́|v.|serré|1. To be tight, close-fitting, snug. 2. *indef* **c’hýr sérệ** \
+    A heavy heart *(usually \s{instr})*|\s{fut} *sérrẹ́*, \s{subj} *sérẹ́s*
+c’hýr|n.|cœur|Heart
+će|v.|échouer|1. +\s{part} To stumble, do a bad job at. 2. +\s{acc} *or* \s{aci} To \
+    fail, flunk, not pass|\s{fut} *ćere*, \s{subj} *ćes*
+v́ár|v. irreg.|devoir|1. *pass.* +\s{aci} Must, have to, be obliged to *(the* subject *is always in the passive in this \
+    sense only)*. 2. +\s{dat} To owe sbd. (+\s{acc} sth.). 3. \s{cond i + aci} Even if; *e.g.* **aúrdyssa dẹće** \
+    ‘even if he should fail’|\s{cond i, ii} *dy*, \s{fut} *dv́e*, \s{subj} *ráb’h*
+Snet’h|n.||*family name, equivalent to English ‘Smyth’*
+sénýr|n.|seigneur|Lord
 
 
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} *active only, see §~\ref{subsec:ed-paradigm}*
 
-
 véy’ýr > baú
 bír > vaúb’hẹ
 rêd > ḅẹt’hẹ
 c’h’s > c’hes
+ráb’h > v́ár
 
 sauzaud > sauz-aud
 s’ > sá
