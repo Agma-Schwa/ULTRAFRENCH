@@ -362,7 +362,7 @@ dérny’é|adj.|dernier|Last, final, ultimate
 rád’hérn|n.|{\nf from} rá + dérny’é|*always definite* Last month
 rẹ́b’h|v. or n.|rêver|1. To dream (+\s{gen} of sth.). 2. Dream, a dreaming|\s{fut} *rẹ́v́e*, \
     \s{subj} *rẹ́b’hs*
-aúráj|n.|orage|1. Storm, tempest, thunderstorm. 2. *fig.* Upheaval, turmoil, crisis
+aúráj|n.|orage|1. *often pl.* Storm, tempest, thunderstorm. 2. *fig.* Upheaval, turmoil, crisis
 dec̣ír|v.|déchirer|1. +\s{part} To tear, rip, rend. 2. +\s{acc} To rend asunder, tear to pieces\
     |\s{fut} *dec̣irrẹ*, \s{subj} *dec̣írs*
 ḅéy’í|n.|pays|Country, land, region, nation
@@ -383,8 +383,11 @@ v́ár|v. irreg.|devoir|1. *pass.* +\s{aci} Must, have to, be obliged to *(the* 
     ‘even if he should fail’|\s{cond i, ii} *dy*, \s{fut} *dv́e*, \s{subj} *ráb’h*
 Snet’h|n.||*family name, equivalent to English ‘Smyth’*
 sénýr|n.|seigneur|Lord
-
-
+abhérś|v.|apercevoir|To behold, descry
+sáḍy’ér|n.|sanctuaire|Sanctuary, shrine
+ḅusy’ér|n.|poussière|Dust
+rẹ́dy’í|v.|réduire|To reduce (+\s{acc} *or pass.* sbd./sth.) (+\s{all} to sth.)|\s{fut} *rẹ́dy’ré*, \s{subj} *rẹ́dy’ís*
+râhaúḍ|v.|recontrer|To meet, encounter, come face to face (+\s{all} with sbd.)|\s{fut} *râhaúḍre*, \s{subj} *râhaús*
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} *active only, see §~\ref{subsec:ed-paradigm}*
