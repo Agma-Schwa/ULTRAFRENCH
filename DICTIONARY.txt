@@ -146,7 +146,7 @@ sḅé|v.|espérer|+\s{opt} To wish, want, desire|\s{fut} *sḅérẹ́*, \s{subj
 rêd|v.|craindre|+s{opt} To fear, lest \ldots *(construed with the negated optative)*|\s{fut} \
     *rêdrẹ́*, \s{subj} *rês*
 rêd’hes|particle|\pfabbr bien sûr|Of course, certainly, surely
-râhẹ|n.|Français|Human, person
+râhẹ|n.|français|Human, person
 fẹhab|v.|faisable|To be possible, feasible|\s{fut} *fẹhabre*, \s{subj} *fẹhas*
 sauz|n.|chose|Thing, object
 rrá|v.|croire|Believe (something or someone)|\s{fut} *rrẹ́*, \s{subj} *rrás*
@@ -213,7 +213,7 @@ cahý|pro. \s{pl indef} only; declined like a regular\linebreak noun|chacun|Each
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pfabbr livre + bouquin|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} *áv́áy’érẹ́*, \s{subj} *áv́áy’és*
-Sásc’hríḍ|n. *(never lenited)*|Sanskrit|The Sanskrit language
+Sásc’hríḍ|n. *(never lenited)*|sanskrit|The Sanskrit language
 baú|v. irreg.|bon|1. To be good, well. 2. To be right, correct, appropriate|\s{fut} *baúrẹ́*, \
     \s{subj} *véy’ýrs*; \s{comp} *lẹvéy’ýr*, *y’ŷvéy’ýr*, *rêvéy’ýr*; \s{sup} *révéy’ýr*, \
     *râdvâv\-éy’\-ýr*
@@ -292,7 +292,7 @@ lýrḍ|v.|\nf from \s{pf} *leur*; the *ḍ* was added in analogy with \
     *naúḍ* and *b’hauḍ*|To be theirs|\s{fut} *lýrḍre*, \s{subj} *lýrs*
 rzaúsḍ|v.|exhaustif|To be exhaustive, comprehensive, complete|\s{fut} *rzaúsḍre*, \s{subj} *rzaúsḍs*
 y’ác’hraúníc’h|v.|diachronique|To be diachronic|\s{fut} *y’ác’hraú-níc’hre*, \s{subj} *y’ác’hraúníc’hes*
-rávér|n.|1. Grammar *(the grammatical rules of a language)*. 2. A textbook describing the grammar \
+rávér|n.|grammaire|1. Grammar *(the grammatical rules of a language)*. 2. A textbook describing the grammar \
     of a language
 lýv́á|v. \s{3rd} person only|pleuvoir|To rain|\s{fut} *lýv́áre*, \s{subj} *lýv́ás*
 ed|particle|et|*used in numbers, see §~\ref{subsec:numerals})*
