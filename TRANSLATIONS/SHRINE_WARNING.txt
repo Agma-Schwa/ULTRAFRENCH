@@ -1,8 +1,0 @@
-Those who have beholden the shrine of our Lord shall meet His storm and be reduced unto dust.
-Léhwi a labhérsér ihády’ér naúd Áhénýr au laúrâhaúdraú’z b’héraúráj au laúy’erédy’rre b’hŷnbusy’ér.
-
-lé-hwi             a     l-abhérs/ér         i/háḍy’ér      naúḍ   á/hénýr      au  laú-râhaúḍr-aú          ’z
-NOM.DEF.PL-the.one which 3pl-behold-PRES.ANT ACC.DEF/shrine GEN.we GEN.DEF.lord and FUT.II-reduce.FUT.II.3PL his
-
-b’hér-aúráj    au  laú-y’ẹ-rẹ́dy’r/re       b’hŷn-ḅusy’ér
-ALL.DEF.PL-storm and 3PL.FUT.II-OPT-reduce/PASS ALL.INDEF-dust
