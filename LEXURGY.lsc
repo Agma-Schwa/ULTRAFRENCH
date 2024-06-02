@@ -80,3 +80,4 @@ Late:
   Then: h @v$1 h => h $1
   Then: ə => * / @c _ @c
   Then: @vo => ə̥ / _ $
+  Then: ɰ ɰ => ʀ *

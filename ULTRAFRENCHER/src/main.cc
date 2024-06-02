@@ -255,6 +255,14 @@ void generate(std::string_view input_text) {
     rgs::sort(entries, [](const auto& a, const auto& b) {
         return a.nfkd == b.nfkd ? a.word < b.word : a.nfkd < b.nfkd;
     });
+
+    /// Emit it.
+    fmt::print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
+    fmt::print("%%            This file was generated from DICTIONARY.txt             %%\n");
+    fmt::print("%%                                                                    %%\n");
+    fmt::print("%%                         DO NOT EDIT                                %%\n");
+    fmt::print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
+    fmt::print("\n");
     for (auto&& entry : entries) entry.print();
 }
 } // namespace dictionary
