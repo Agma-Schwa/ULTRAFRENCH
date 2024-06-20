@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt, oneside, final]{article}
+\documentclass[a4paper, 12pt, twoside, final]{article}
 \usepackage[margin=2cm]{geometry}
 \usepackage{fontspec}
 \usepackage{unicode-math}
@@ -34,6 +34,15 @@
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ExplSyntaxOn
 \makeatletter
+
+\edef \tableofcontents {
+    \noexpand \section \noexpand* {
+        Contents
+        \noexpand\@mkboth { Contents } { Contents }
+    }
+
+    \noexpand\@starttoc{toc}
+}
 
 \cs_generate_variant:Nn \seq_set_split_keep_spaces:Nnn { Nnx }
 
@@ -387,6 +396,35 @@
     }
 }
 
+\def \ps@ultrafrench {
+    \let \@oddfoot \@empty
+    \let \@evenfoot \@empty
+    \let \@mkboth \markboth
+
+    \def \@evenhead { \thepage   \hfil \leftmark }
+    \def \@oddhead  { \rightmark \hfil \thepage  }
+
+    \def \sectionmark ##1 {
+        \markboth {
+            \ifnum \c@secnumdepth > \z@
+                \thesection\quad
+            \fi
+            ##1
+        } { }
+    }
+
+    \def \subsectionmark ##1 {
+        \markright {
+            \ifnum \c@secnumdepth > \@ne
+                \thesubsection\quad
+            \fi
+            ##1
+        }
+    }
+}
+
+\pagestyle{ultrafrench}
+
 \makeatother
 \ExplSyntaxOff
 
@@ -419,11 +457,13 @@
 
 
 \setcounter{page}{1}
-
+\thispagestyle{empty}
 \tableofcontents
 \clearpage
 
-\section{Phonology and Evolution from Modern Pseudo-French}\label{sec:phonology}{\def\arraystretch{1.25}\setlength{\tabcolsep}{.4em}
+\section{Phonology and Evolution from Modern Pseudo-French}\label{sec:phonology}
+\thispagestyle{empty}
+{\def\arraystretch{1.25}\setlength{\tabcolsep}{.4em}
 \noindent\begin{tabular}{@{}|l|l|l|l|l|l|l@{\quad}|l|l|l|}                                                   \cline{1-6} \cline{8-10}
                        & Labial & Coronal  & Palatal  & Velar & Glottal &&            & Front        & Back        \\ \cline{1-6} \cline{8-10}
     Stop               & b, bʱ  & d        &          &       &         && Close      & i ĩ ĩ̃ i̥ y ẙ  & u ũ ũ̃ u̥ \\ \cline{1-6} \cline{8-10}
@@ -2400,10 +2440,10 @@ at least in spoken communication with non-android participants, UF is the best o
 
 %% Dictionary.
 \clearpage
-\def\leftmark{\firstmark\ | \botmark}
+\def\leftmark{\textbf{\firstmark}\ | \textbf{\botmark}}
 \let\rightmark\leftmark
 
-\twocolumn[\section{Dictionary}]
+\twocolumn[\section{Dictionary}\thispagestyle{empty}]
 
 \ExplSyntaxOn
 
@@ -2450,6 +2490,7 @@ at least in spoken communication with non-android participants, UF is the best o
 %% Reference to another entry.
 \long \def \refentry #1 #2 {
     \start_entry:
+    \mark { #1 }
 
     \textbf { \ignorespaces #1 } \space
     \(\to\) \space
