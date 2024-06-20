@@ -404,7 +404,7 @@ rêdrsýrśẹ|v.|\pfabbr prendre sur soi|\
   1. +\s{aci} To take upon onself to do sth.\
   2. +\s{pci} To take upon oneself to start doing sth.
 c'haúḍrêd'hẹ|n.|compte-rendu|Account, record
-c'haú|adj.|see sense 2|1. Holy. 2. **c'haú**\L{} *‘religious prefix’, prepended in derivation to nouns that\
+c'haú|adj.|\nf see sense 2|1. Holy. 2. **c'haú**\L{} *‘religious prefix’, prepended in derivation to nouns that\
   have a religous connotation; this is historically a back-formation from* **c’haúfrér** *and* **c’haúhýr**\
   *which happen to both start with this ‘prefix’*
 ḷý|n.|lieu|*base of the spatial correlatives* \
@@ -413,11 +413,11 @@ ḷý|n.|lieu|*base of the spatial correlatives* \
   3. **sý'**\L \this [*sý'ẹ*] There, thither, thence, \&c. *distal demonstrative (all cases, always definite)* \
   4. \this **hes** [*c'hes*] Where, whither, whence, \&c. *interrogative (only locative cases, always indefinite)* \
   5. **s'**/**sá**\L \this [*sá*] No\-where, from no\-where, \&c. *negative (only locative cases, always indefinite)*
-c'haúbhárrás|n.|\pfabbr *paroisse* + *c'haú-*|parish
-c'aúhaúvnaút'hẹ|n.|*c'haú-* + \pfabbr *com\-mu\-nau\-té*|mo\-nastery
-c'haúvnaút'hẹ|n.|communauté|community
-vnásḍér|n.|monastère|castle
-c'haúbhèłínáj|n.|*c'haú* + \pfabbr *pèlerinage*|pilgrimage
+c'haúbhárrás|n.|c'haú- + \pfabbr paroisse|Parish
+c'haúhaúvnaút'hẹ|n.|c'haú- + \pfabbr com\-mu\-nau\-té|Mo\-nastery
+c'haúvnaút'hẹ|n.|communauté|Community
+vnásḍér|n.|monastère|Castle
+c'haúbhèłínáj|n.|c'haú- + \pfabbr pèlerinage|Pilgrimage
 vŷ|v.|mener|To lead|fut. menre, subj. mens
 áł|v.|\**ḅał* < \pfabbr *parler*]|To speak, say
 c'haúáł|n.|c'haú- + áł|Prophecy
@@ -427,12 +427,12 @@ ḍérsèd|v.|intercéder|To intercede
 rébhós|n.|réponse|Answer, response, reply
 fé|n.|fin|End
 ráy'á|n.|voyage|Travel, voyage, journey
-vêt'hnâ|adv.|From \pfabbr *maintenant*, lenited for unknown reasons|Now
+vêt'hnâ|adv.|\nf From \pfabbr *maintenant*, lenited for unknown reasons|Now
 áríb'h|v.|arriver|To arrive
 lys|adv.|\pfabbr plus (pronounced \textup{[plys]})|No longer, not any more *(the meaning of this verb and\
   *lẹ* swapped at some point for unknown reasons)*
 
-ḍédv́ér|interj.|\pfabbr *putain de merde*|Fuck *(generic expletive)*
+ḍédv́ér|interj.|\pfabbr putain de merde|Fuck *(generic expletive)*
 
 
 
