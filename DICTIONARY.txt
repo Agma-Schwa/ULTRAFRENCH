@@ -108,7 +108,7 @@ dẹhẹ|n.|dessus|1. Top, upper side. 2. Surface of a body of water
 b’he|conj.|envers|+\s{subj} To, so as to, in order to, so that. *Commonly enclitic* \
     ***’b’h*** *after vowels*
 ḅarḍ|v.|partir| To leave, go away, depart|\s{fut} *ḅarẹ́*, \s{subj} *ḅars*
-ad’he|v.|vader|To go|\s{fut} *ad’hrẹ́*, \s{subj} *ad’hes*
+ad’he|v.|vader|To go|\s{fut} *í*, \s{subj} *al*
 sá|particle|sans|Not, no. *Always s’ before vowels. \
     This particle is used only in the subjunctive; see also* ***asý’ýâ****, ****t’hé***
 s|conj.|si|If, when, whenever
@@ -390,53 +390,47 @@ rẹ́dy’í|v.|réduire|To reduce (+\s{acc} *or pass.* sbd./sth.) (+\s{all} to 
 râhaúḍ|v.|recontrer|To meet, encounter, come face to face (+\s{all} with sbd.)|\s{fut} *râhaúḍre*, \s{subj} *râhaús*
 
 
-## FIXME: Something in one of these causes LaTeX to error; figure out what.
 ## TODO: Refactor ALL OF THIS to be a Smyth dictionary instead.
 
-## rád'hsy'ô|n.|traditon|Tradition, custom
-## ásy'ê|v.|ancien|To be ancient|\s{fut} *ásy'êr*, \s{subj} *ásy'ês*
-## ub'h|v.|ouvrir|To open|\s{fut} *uv́*
-## ḅaj|n.|page|Page
-## ráb'háy'|v.|\pfabbr travailler, bosser|To work|\s{fut} *bohér*, \s{subj} *bos*
-## ýr|v.|heurter|To hit, strike|\s{fut} *ýrḍ*, \s{subj} *ýrs*
-## rúb'h|v.|trouver|To find, discover
-## b'hid|v.|vide|To be empty
-## rêdrsýrśẹ|v.|\pfabbr prendre sur soi|\
-##   1. +\s{aci} To take upon onself to do sth.
-##   2. +\s{pci} To take upon oneself to start doing sth.
-## c'haúḍrêd'hẹ|n.|compte-rendu|Account, record
-## ḷý|n.|lieu|*base of the spatial correlatives*
-##   1. Place, location
-##   2. **sẹ** + \this → proximal demonstrative (all cases, always definite)     [from sẹh]
-##   3. sý' +L \this → distal demonstrative (all cases, always definite)     [from sý'ẹ]
-##   4. _ + hes → interrogative (only locative cases, always indefinite) [from c'hes]
-##   5. s'/sá +L _ → negative  (only locative cases, always indefinite)  [from subjunctive negation]
-
-## TODO: Convert to the proper format.
-# ////////////////  /////////////////
-# *c'haúbhárrás* [PF. paroisse + religious analogy with c'haúfrér and c'haúhýr] n. parish
-# *c'aúhaúvnaút'hẹ* [religious prefix + PF. communauté] n. monastery
-# *c'haúvnaút'hẹ* [PF. communauté] n. community
-# *vnásḍér* [PF. monastère] n. TBD (castle?)
-# [CHANGE STEMS] *ad’he* Fut. í Sub. al
-# *c'haú-L* 1. adj. ‘holy’. 2. Religious prefix
-# *c'haúbhèłínáj* [c'haú + PF. pèlerinage]. pilgrimage
-# *vŷ* [PF. mener] v. to lead
-# *áł* [*ḅał ← PF. parler] v. to speak, to say
-# *c'haúáł* [c'haú + áł] n. prophecy
-# *rýc̣ér* [PF. requerir] v. to ask, to question
-# *ḍéraúj* [PF. interroger] v. to demand
-# *ḍérsèd* [PF. intercéder] v. to intercede
-# *rébhós* [PF. réponse] n. answer
-# *fé* [PF. fin] n. end
-# *ráy'á* [PF. voyage] n. travel, voyage, journey
-# *vêt'hnâ* [PF. maintenant + [+fnuuy] lenition] adv. now
-# *áríb'h* [PF. arriver] v. to arrive
-# *lys* [PF. plu/s/] adverb. no longer, not any more (Note: the meanings got inverted with lẹ at some point and no-one is really sure as to why)
-# ////////////////  /////////////////
-
-
-
+rád'hsy'ô|n.|traditon|Tradition, custom
+ásy'ê|v.|ancien|To be ancient|\s{fut} *ásy'êr*, \s{subj} *ásy'ês*
+ub'h|v.|ouvrir|To open|\s{fut} *uv́*
+ḅaj|n.|page|Page
+ráb'háy'|v.|\pfabbr travailler, bosser|To work|\s{fut} *bohér*, \s{subj} *bos*
+ýr|v.|heurter|To hit, strike|\s{fut} *ýrḍ*, \s{subj} *ýrs*
+rúb'h|v.|trouver|To find, discover
+b'hid|v.|vide|To be empty
+rêdrsýrśẹ|v.|\pfabbr prendre sur soi|\
+  1. +\s{aci} To take upon onself to do sth.\
+  2. +\s{pci} To take upon oneself to start doing sth.
+c'haúḍrêd'hẹ|n.|compte-rendu|Account, record
+c'haú|adj.|see sense 2|1. Holy. 2. **c'haú**\L{} *‘religious prefix’, prepended in derivation to nouns that\
+  have a religous connotation; this is historically a back-formation from* **c’haúfrér** *and* **c’haúhýr**\
+  *which happen to both start with this ‘prefix’*
+ḷý|n.|lieu|*base of the spatial correlatives* \
+  1. Place, location \
+  2. **sẹ** \this [*sẹh*] Here, hither, hence, \&c. *proximal demonstrative (all cases, always definite)* \
+  3. **sý'**\L \this [*sý'ẹ*] There, thither, thence, \&c. *distal demonstrative (all cases, always definite)* \
+  4. \this **hes** [*c'hes*] Where, whither, whence, \&c. *interrogative (only locative cases, always indefinite)* \
+  5. **s'**/**sá**\L \this [*sá*] No\-where, from no\-where, \&c. *negative (only locative cases, always indefinite)*
+c'haúbhárrás|n.|\pfabbr *paroisse* + *c'haú-*|parish
+c'aúhaúvnaút'hẹ|n.|*c'haú-* + \pfabbr *com\-mu\-nau\-té*|mo\-nastery
+c'haúvnaút'hẹ|n.|communauté|community
+vnásḍér|n.|monastère|castle
+c'haúbhèłínáj|n.|*c'haú* + \pfabbr *pèlerinage*|pilgrimage
+vŷ|v.|mener|To lead|fut. menre, subj. mens
+áł|v.|\**ḅał* < \pfabbr *parler*]|To speak, say
+c'haúáł|n.|c'haú- + áł|Prophecy
+rýc̣ér|v.|requerir|To ask, question
+ḍéraúj|v.|interroger|To demand
+ḍérsèd|v.|intercéder|To intercede
+rébhós|n.|réponse|Answer, response, reply
+fé|n.|fin|End
+ráy'á|n.|voyage|Travel, voyage, journey
+vêt'hnâ|adv.|From \pfabbr *maintenant*, lenited for unknown reasons|Now
+áríb'h|v.|arriver|To arrive
+lys|adv.|\pfabbr plus (pronounced \textup{[plys]})|No longer, not any more *(the meaning of this verb and\
+  *lẹ* swapped at some point for unknown reasons)*
 
 ḍédv́ér|interj.|\pfabbr *putain de merde*|Generic expletive
 
