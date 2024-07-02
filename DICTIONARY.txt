@@ -429,10 +429,11 @@ fé|n.|fin|End
 ráy’á|n.|voyage|Travel, voyage, journey
 vêt’hnâ|adv.|\nf From \pfabbr *maintenant*, lenited for unknown reasons|Now
 áríb’h|v.|arriver|To arrive
-lys|adv.|\pfabbr plus (pronounced \textup{[plys]})|No longer, not any more *(the meaning of this verb and\
+lys|adv.|\pfabbr plus (pronounced \textup{[plys]})|No longer, not any more *(the meaning of this and\
   *lẹ* swapped at some point for unknown reasons)*
 
 ḍédv́ér|interj.|\pfabbr putain de merde|Fuck *(generic expletive)*
+y’éjúré|n.|\pfabbr siège + \pfabbr tabouret|Chair, seat
 
 
 
