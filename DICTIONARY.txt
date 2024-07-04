@@ -290,7 +290,7 @@ naúḍ|v.|nôtre|To be ours|\s{fut} *naúḍre*, \s{subj} *naús*
 b’hauḍ|v.|vôtre|To be yours (\s{pl})|\s{fut} *b’hauḍre*, \s{subj} *b’haus*
 lýrḍ|v.|\nf from \s{pf} *leur*; the *ḍ* was added in analogy with \
     *naúḍ* and *b’hauḍ*|To be theirs|\s{fut} *lýrḍre*, \s{subj} *lýrs*
-rzaúsḍ|v.|exhaustif|To be exhaustive, comprehensive, complete|\s{fut} *rzaúsḍre*, \s{subj} *rzaúsḍs*
+rzaúsḍ|v.|exhaustif|1. To be exhaustive, comprehensive, complete. 2. To be finished, completed|\s{fut} *rzaúsḍre*, \s{subj} *rzaúsḍs*
 y’ác’hraúníc’h|v.|diachronique|To be diachronic|\s{fut} *y’ác’hraú-níc’hre*, \s{subj} *y’ác’hraúníc’hes*
 rávér|n.|grammaire|1. Grammar *(the grammatical rules of a language)*. 2. A textbook describing the grammar \
     of a language
@@ -418,7 +418,7 @@ c’haúhaúvnaút’hẹ|n.|c’haú- + \pfabbr com\-mu\-nau\-té|Mo\-nastery
 c’haúvnaút’hẹ|n.|communauté|Community
 vnásḍér|n.|monastère|Castle
 c’haúbhèłínáj|n.|c’haú- + \pfabbr pèlerinage|Pilgrimage
-vŷ|v.|mener|To lead|fut. menre, subj. mens
+vŷ|v.|mener|To lead|\s{fut} *menre*, \s{subj} *mens*
 áł|v.|\**ḅał* < \pfabbr *parler*]|To speak, say
 c’haúáł|n.|c’haú- + áł|Prophecy
 rýc̣ér|v.|requerir|To ask, question
@@ -427,7 +427,7 @@ ḍérsèd|v.|intercéder|To intercede
 rébhós|n.|réponse|Answer, response, reply
 fé|n.|fin|End
 ráy’á|n.|voyage|Travel, voyage, journey
-vêt’hnâ|adv.|\nf From \pfabbr *maintenant*, lenited for unknown reasons|Now
+vêt’hnâ|adv.|\nf from \pfabbr *maintenant*, lenited for unknown reasons|Now
 áríb’h|v.|arriver|To arrive
 lys|adv.|\pfabbr plus (pronounced \textup{[plys]})|No longer, not any more *(the meaning of this and\
   *lẹ* swapped at some point for unknown reasons)*
@@ -435,6 +435,15 @@ lys|adv.|\pfabbr plus (pronounced \textup{[plys]})|No longer, not any more *(the
 ḍédv́ér|interj.|\pfabbr putain de merde|Fuck *(generic expletive)*
 y’éjúré|n.|\pfabbr siège + \pfabbr tabouret|Chair, seat
 
+sẹhúr|v.|secourir|To help, succour, give aid (+ \s{dat} to sb.) (+ \s{aci}/\s{acc} with sth.)|\s{fut} sẹhúrre, \s{subj} sẹhús
+aujúrdy’í|adv.|aujourd’hui|Today *(archaic, see also {\bf júrdy’í})*
+júrdy’í|adv.|\nf from earlier *aujúrdy’í*|Today
+vê|adv.|demain|Tomorrow
+y’ér|adv.|hier|Yesterday.
+b’hây’ér|adv.|avant-hier|The day before yesterday *(the prefix {\bf b’hâ} can be prepended as often as necessary, e.g. \
+    {\bf b’hâb’hâb’hây’ér} would be ‘four days ago’)*
+aḅrdvê|adv.|après-demain|The day after tomorrow *(the prefix {\bf aḅr} can be prepended as often as necessary, e.g. \
+    {\bf aḅraḅraḅrdvê} would be ‘in four days’)*
 
 
 # To be is a rather complicated entry.
