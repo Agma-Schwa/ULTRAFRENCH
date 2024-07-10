@@ -36,7 +36,7 @@ ad’hór|v. tr.|adore|1. To love, adore.\
 
 aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
-dír|v. tr.|dire|To say, tell|\s{fut} *dírẹ́*, \s{subj} *díss*
+dír|v. tr.|dire|+\s{acc} To say, tell (+\s{dat} someone) |\s{fut} *dírẹ́*, \s{subj} *díss*
 vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*
 y’ír|v. (in)tr.|ouïr|To understand, listen, *(rarely)* hear
 Cár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
@@ -62,7 +62,7 @@ Já|n.||*male or female given name, equivalent to English ‘John’ or ‘Joan�
 ráy’é|v.|noyer|To drown
 ráý’ẹ|v.|râler|To complain, grumble
 ḍèr|v.|taire|To silence, shut up|\s{fut} *ḍérẹ́*
-ḅáł|v.|parler|To speak, talk, say|\s{fut} *báłérẹ́*
+ḅáł|v.|parler|To speak, talk|\s{fut} *báłérẹ́*
 ab’hásy’ô|n.|aviation|Aviation
 rá|n.|loi|Law, rule, regulation
 ḍẹ|adj.|tout|All, every, whole, entire
@@ -107,7 +107,7 @@ râdvâ|prefix|grandement|*Superlative prefix.\linebreak See grammar*
 nájẹ|v.|nager|To swim|\s{fut} náȷ́ẹ, \s{subj} nájes
 e|n.|eau|Water
 dẹhẹ|n.|dessus|1. Top, upper side. 2. Surface of a body of water
-b’he|conj.|envers|+\s{subj} To, so as to, in order to, so that. *Commonly enclitic* \
+b’he|conj.|envers|+\s{subj} So that, so as to, to, in order to. *Commonly enclitic* \
     ***’b’h*** *after vowels*
 ḅarḍ|v.|partir| To leave, go away, depart|\s{fut} *ḅarẹ́*, \s{subj} *ḅars*
 ad’he|v.|vader|To go|\s{fut} *í*, \s{subj} *al*
@@ -127,7 +127,7 @@ sá|conj.|\pfabbr sans que|+\s{subj} Without (doing sth.)
 sauc’h|conj.|\pfabbr sauf que|+\s{subj} Except that
 váłé|conj.|\pfabbr malgré que|+\s{subj} Despite that, in spite of
 rê|conj.|\pfabbr bien que|+\s{subj} Although, though
-daúc’h|conj.|donc|+\s{subj} So, therefore, thus
+daú(c’h)|particle|donc|So, therefore, thus
 ḅas|conj.|parce que|+\s{subj} Because *(often used to explain motivation rather than cause as in \
     ‘We did that because\ldots’)*
 le|v.|\pfabbr laisser {\nf > \**lehe*}|*(chiefly in questions or imperative)* To let, allow, permit|\
@@ -144,7 +144,7 @@ jys|conj.|\pfabbr jusqu’à ce que|+\s{opt} Until
 sit’há|conj.|\pfabbr si tant est que|+\s{opt} Supposing\linebreak that; if, assuming that
 fahaú|conj.|\pfabbr de façon que|+\s{opt} In such a way that
 véhýr|conj.|\pfabbr dans la mesure où|Insofar as
-sḅé|v.|espérer|+\s{opt} To wish, want, desire|\s{fut} *sḅérẹ́*, \s{subj} *sḅés*
+sḅé|v.|espérer|1. To want (+\s{acc} sth.) 2. +\s{opt} To wish, want, desire|\s{fut} *sḅérẹ́*, \s{subj} *sḅés*
 rêd|v.|craindre|+s{opt} To fear, lest \ldots *(construed with the negated optative)*|\s{fut} \
     *rêdrẹ́*, \s{subj} *rês*
 rêd’hes|particle|\pfabbr bien sûr|Of course, certainly, surely
@@ -163,7 +163,7 @@ aû|particle|non|Not- *(used to negate nouns)*
 fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} *faure*, \s{subj} *faus*
 R|adj.|{\nf from} ré|*(logic)* True, $\top$
 F|adj.|{\nf from} fẹ|*(logic)* False, $\bot$
-rár|v.|voir|To see|\s{fut} *b’hérẹ́*, \s{subj} *rárs*
+rár|v.|voir|To see (+\s{part} sbd./sth.)|\s{fut} *b’hérẹ́*, \s{subj} *rárs*
 rát’hẹ|particle|vois-tu|You see, you know
 ré|n.|rai|Ray, beam
 fèhẹ|n.|faisceau|1. Bundle, bunch, cluster. 2. Beam, ray
@@ -320,7 +320,7 @@ a|pron.|quoi| *(interrog. and rel.)* 1. \s{indef} What? 2. \s{def} Who? Whom? \
 vérs|interj.|merci|1. Thank you. (+\s{gen} for sth.). 2. **dyvérs fér** To thank \
     (+\s{dat} sbd.) (+\s{gen} for sth.)
 rárd|v.|regarder|1. To watch. 2. To look at|\s{fut} rárdre, \s{subj} rárds
-ḍẹ́ríb|adj.|terrible|To be terrible *(all senses)*|\s{fut} ḍẹ́ríre, \s{subj} ḍẹ́rís
+ḍẹ́ríb|v.|terrible|To be terrible *(all senses)*|\s{fut} ḍẹ́ríre, \s{subj} ḍẹ́rís
 
 # From Étienne.
 Eḍy’ê|n.||*male given name, equivalent to English\linebreak ‘Stephen’*
@@ -423,7 +423,7 @@ c’haúvnaút’hẹ|n.|communauté|Community
 vnásḍér|n.|monastère|Castle
 c’haúbhèłínáj|n.|c’haú- + \pfabbr pèlerinage|Pilgrimage
 vŷ|v.|mener|To lead|\s{fut} *menre*, \s{subj} *mens*
-áł|v.|\**ḅał* < \pfabbr *parler*]|To speak, say
+áł|v.|\**ḅał* < \pfabbr *parler*]|To speak
 c’haúáł|n.|c’haú- + áł|Prophecy
 rýc̣ér|v.|requerir|To ask, question
 ḍéraúj|v.|interroger|To demand
@@ -452,7 +452,7 @@ aḅrdvê|adv.|après-demain|The day after tomorrow *(the prefix {\bf aḅr} can
 c’haúv́ájẹ|n.|c’haú + \pfabbr magie|Magic
 siḍ|n.|site|Facility, site
 c’haúfí|v.|confiner|To contain
-vvâ₂|n.|maman|Mum, mom
+vvâ|n.|maman|Mum, mom
 vér|n.|mère|Mother
 rjẹ|n.|Hergé|Comic book
 
@@ -472,20 +472,41 @@ ḅáréḍ|v.|\pfabbr parraitre, future from \pfabbr sembler|To seem, appear|\s
 c’hlýr|v.|1. +\s{part} To include. 2. +\s{acc} To possess *(alienably)*|\s{fut} *c’hlýré*, \s{subj} *c’hlýrs*
 rá|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
-ḅá nórávíc’h|n. archaic|Panoramix|Druid
+ḅá nórávíc’h|n. archaic|Panoramix|Druid *({\bf nórávíc’h} takes all the marking; the \
+    {\bf ḅá} is not inflected)*
 nóráv|n.|from archaic {\bf ḅá nórávíc’h}|Druid
 ahúr|v.|assurer|To ensure|\s{fut} ahúré, \s{subj} ahúrs
-fúr|v.|fournir|To deliver, provide
+fúr|v.|fournir|To deliver, provide (+\s{dat} sbd.) (+ \s{acc} with sth.)
 c’hulvâ|n.|écoulement|Flow
-sehul|v.|s'écouler|To flow
+sehul|v.|s’écouler|To flow
 c’húr|v.|courrir|To run
 rób’hoc’h|v.|\pfabbr provoquer, fut. from \pfabbr infliger|\s{+acc} To cause, make happen|\
-    \s{fut} flijé, \s{subj} rób’hoc’hs
-aḅrâ|v.|apprendre|To learn|\s{fut} aḅrâdé, \s{subj} aḅrâs
+    \s{fut} *flijé*, \s{subj} *rób’hoc’hs*
+aḅrâ|v.|apprendre|To learn|\s{fut} *aḅrâdé*, \s{subj} *aḅrâs*
+ábhec|v.|empêcher|+\s{acc} To prevent, stop (sth. from happening)|\s{fut} *ábhece*, \s{subj} ábhecs
+válvê|v.|malmener|To mistreat, torture
+válḍrét’hás|n.|maltraitance|Torture
+duý’ýr|v.|douleur|To suffer, be in pain
+suf|n.|souffre|Pain
+válv́áy’|v.|malvoyant|To be blind
+av́árḷý|v.|\pfabbr avoir lieu|To take place, happen|\s{fut} *lav́árḷýé*, \s{subj} *lav́árḷýs*
+c’haúbhýríf|n.|{\bf c’haú} + \pfabbr purifier|To purify (+\s{acc} sbd./sth.)
+râd|v.|prendre|+\s{acc} *or* \s{part} To grab
+aḍrá|v.|attraper|+\s{acc} *or* \s{part} To take
+ḅelbec|n.|\pfabbr pelle + \pfabbr bêche|Shovel
+raû|n. archaic|tronc|Log (of a tree)
+raûd’hárb|n.|\pfabbr tronc d’arbre|Log (of a tree)
+át’hér|v.|enterrer|+\s{acc} To bury, inter
+vúslihé|n.|\pfabbr mousse + \pfabbr lichen|Moss
+b’heý’o|v.|\nf back-formation from {\bf b’heý’os}, reanalysed as a subjunctive; from \pfabbr *véloce*\
+    |To be quick, fast|\s{fut} *b’heý’o\-se*, \s{subj} *b’heý’os*
+b’heý’auhic’h|n. archaic|vélo-cycle|Bicycle
+b’heý’au|n.|\nf from archaic {\bf b’heý’auhic’h}|Bicycle
+bźé|v.|besoin|+\s{acc} *or* \s{part} To need, require
 
-vvâ₁|n.|moment|Moment, instant
-át’hád|n.|entendre|Hear, perceive (+\s{part} sbd./sth.)|\s{fut} át’hádé, \s{subj} át’hás
-núb’h|v.|nouveau|To be new|\s{fut} núb’he, \s{subj} núb’hs
+vvâ|n.|moment|Moment, instant
+át’hád|n.|entendre|Hear, perceive (+\s{part} sbd./sth.)|\s{fut} *át’hádé*, \s{subj} *át’hás*
+núb’h|v.|nouveau|To be new|\s{fut} *núb’he*, \s{subj} *núb’hs*
 b’hŷnnúb’hâ|adv.|Old \s{all} of {\bf núb’hâ}|Anew
 vê|n.|main|Hand
 
@@ -498,6 +519,7 @@ bír > vaúb’hẹ
 rêd > ḅẹt’hẹ
 c’h’s > c’hes
 ráb’h > v́ár
+daú’b’h > daú(c’h) {\nf +} b’he
 
 sauzaud > sauz-aud
 s’ > sá
