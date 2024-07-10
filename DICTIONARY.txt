@@ -38,7 +38,7 @@ aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
 dír|v. tr.|dire|To say, tell|\s{fut} *dírẹ́*, \s{subj} *díss*
 vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*
-y’ír|v. (in)tr.|ouïr|To hear, understand, listen
+y’ír|v. (in)tr.|ouïr|To understand, listen, *(rarely)* hear
 Cár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
 ráhó|n.|poisson|Fish
 act’he|v. tr.|\nf from *ac*|1. To cut or cleave with an axe. \
@@ -69,8 +69,10 @@ rá|n.|loi|Law, rule, regulation
 c’hóný|adj.|connu|Known, familiar, well-kn\-own
 y’aúhý|inconj., postpos.|\pfabbr il n’y a aucun|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pfabbr il y a aucun|There is, there are
-ráy’ê|n.|moyen|1. Way, means, method. 2. *ráy’ê y’aúhý* + \s{aci} There is no way, that..
-ub’hrá|v.|pouvoir|1. +\s{inf} To be able to, can. 2. +\s{part} Capable of .. *(***ub’hrá** *is \
+ráy’ê|n.|moyen|1. Way, means, method. 2. {\bf ráy’ê y’aúhý} + \s{aci} There is no way, that... \
+    3. \s{instr pl} {\bf b’hehráy’ê} How, by what means
+
+ub’hrá|v.|pouvoir|1. +\s{inf/aci} To be able to, can. 2. +\s{part} Capable of .. *(***ub’hrá** *is \
     never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
     \s{pci}, in which case the variant with the \s{part} is used instead)*. 3. \s{opt cond i + \
     aci} to be possible; may *(dynamic or epistemic, never deontic)*. 4. \s{opt cond ii + \
@@ -246,7 +248,8 @@ ra|conj.|\pfabbr swa (> \**rá*)|1. Or *(exclusive, see also*~**u***)*. 2. **u**
 ádróid|n.|androïde|Android
 áví|n.|ami|Friend
 lyzy’ýr|adj.|plusieurs|Several
-av́ár|v. irreg.|avoir|+\s{acc} To have, possess|*(stems irreg.)* \s{pres ant} and \s{pret} *y*, obsolete \s{pret} \
+av́ár|v. irreg.|avoir|+\s{acc} To have *(inalienably)*|*(stems irreg.)* \s{pres ant} and \s{pret} \
+    *y*, obsolete \s{pret} \
     *ab’hẹ*, \s{fut} *aúrẹ́*, \s{subj} *ès*
 sybhẹ́rýr|v.|supérieur|*intr. or* +\s{gen} To be superior to, better\linebreak than, higher than|\s{fut} \
     *sybhẹ́rýrẹ́*, \s{subj} *sybhẹ́rýrs*
@@ -312,7 +315,8 @@ raúl|n.|parole|1. Language, speech, word. 2. **Raúl** *definite only* Short fo
     sg} irreg.* **Raúl***; all other forms are regular)*
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
 susy’é|v.|soucier|\linebreak+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
-a|pron. indef.|quoi|What, which, that *(interrogative and relative pronoun)*
+a|pron.|quoi| *(interrog. and rel.)* 1. \s{indef} What? 2. \s{def} Who? Whom? \
+    3. \s{indef} *or* \s{def} *(see grammar)* Which, who, that
 vérs|interj.|merci|1. Thank you. (+\s{gen} for sth.). 2. **dyvérs fér** To thank \
     (+\s{dat} sbd.) (+\s{gen} for sth.)
 rárd|v.|regarder|1. To watch. 2. To look at|\s{fut} rárdre, \s{subj} rárds
@@ -435,7 +439,7 @@ lys|adv.|\pfabbr plus (pronounced \textup{[plys]})|No longer, not any more *(the
 ḍédv́ér|interj.|\pfabbr putain de merde|Fuck *(generic expletive)*
 y’éjúré|n.|\pfabbr siège + \pfabbr tabouret|Chair, seat
 
-sẹhúr|v.|secourir|To help, succour, give aid (+ \s{dat} to sb.) (+ \s{aci}/\s{acc} with sth.)|\s{fut} sẹhúrre, \s{subj} sẹhús
+sẹhúr|v.|secourir|To help, succour, give aid (+ \s{dat} to sb.) (+ \s{aci}/\s{acc} with sth.)|\s{fut} *sẹhúrre*, \s{subj} *sẹhús*
 aujúrdy’í|adv.|aujourd’hui|Today *(archaic, see also {\bf júrdy’í})*
 júrdy’í|adv.|\nf from earlier *aujúrdy’í*|Today
 vê|adv.|demain|Tomorrow
@@ -444,6 +448,46 @@ b’hây’ér|adv.|avant-hier|The day before yesterday *(the prefix {\bf b’h�
     {\bf b’hâb’hâb’hây’ér} would be ‘four days ago’)*
 aḅrdvê|adv.|après-demain|The day after tomorrow *(the prefix {\bf aḅr} can be prepended as often as necessary, e.g. \
     {\bf aḅraḅraḅrdvê} would be ‘in four days’)*
+
+c’haúv́ájẹ|n.|c’haú + \pfabbr magie|Magic
+siḍ|n.|site|Facility, site
+c’haúfí|v.|confiner|To contain
+vvâ₂|n.|maman|Mum, mom
+vér|n.|mère|Mother
+rjẹ|n.|Hergé|Comic book
+
+sud’hénvâ|adv.|soudainement|Suddenly
+réhẹv́|v.|recevoir|To receive|\s{fut} *réhẹv́é*, \s{subj} *rẹsy*
+b’hizy’ô|n.|vision|Vision
+sèt’h|v.|sentir|To feel|\s{fut} *sèt’he*, \s{subj} *sès*
+cah|v.|chasser|To hunt|\s{fut} *cahe*, \s{subj} *cas*
+áb’há|n.|enfant|Child
+ríb’hy’ér|n.|rivière|River
+syl|v.|seul|1. *(chiefly)* To be the only one *(often as the adjective {\bf sylâ} ‘only’)*. \
+    2. To be alone|\s{fut} *syle*, \s{subj} syls
+dá|n.|dent|Tooth
+ḅará|n.|parent|Parent
+
+ḅáréḍ|v.|\pfabbr parraitre, future from \pfabbr sembler|To seem, appear|\s{fut} *sáb*
+c’hlýr|v.|1. +\s{part} To include. 2. +\s{acc} To possess *(alienably)*|\s{fut} *c’hlýré*, \s{subj} *c’hlýrs*
+rá|n.|voix|Voice
+b’hénvâ|n.|évènement|Event, occurrence
+ḅá nórávíc’h|n. archaic|Panoramix|Druid
+nóráv|n.|from archaic {\bf ḅá nórávíc’h}|Druid
+ahúr|v.|assurer|To ensure|\s{fut} ahúré, \s{subj} ahúrs
+fúr|v.|fournir|To deliver, provide
+c’hulvâ|n.|écoulement|Flow
+sehul|v.|s'écouler|To flow
+c’húr|v.|courrir|To run
+rób’hoc’h|v.|\pfabbr provoquer, fut. from \pfabbr infliger|\s{+acc} To cause, make happen|\
+    \s{fut} flijé, \s{subj} rób’hoc’hs
+aḅrâ|v.|apprendre|To learn|\s{fut} aḅrâdé, \s{subj} aḅrâs
+
+vvâ₁|n.|moment|Moment, instant
+át’hád|n.|entendre|Hear, perceive (+\s{part} sbd./sth.)|\s{fut} át’hádé, \s{subj} át’hás
+núb’h|v.|nouveau|To be new|\s{fut} núb’he, \s{subj} núb’hs
+b’hŷnnúb’hâ|adv.|Old \s{all} of {\bf núb’hâ}|Anew
+vê|n.|main|Hand
 
 
 # To be is a rather complicated entry.
