@@ -92,7 +92,7 @@
                 ]
             ]
         },
-        "input.text": "ki",
+        "input.text": "wa",
         "notes": {
             "files": [
                 {
@@ -102,7 +102,7 @@
             ],
             "splitter.sizes": "AAAA/wAAAAEAAAACAAAAswAABI0B/////wEAAAABAA=="
         },
-        "output.text": "xə̥\n",
+        "output.text": "ɰɑ̃\n",
         "sca": {
             "cbox.changes.norm.choice": 1,
             "cbox.input.norm.choice": 1,

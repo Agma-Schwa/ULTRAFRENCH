@@ -37,8 +37,8 @@ ad’hór|v. tr.|adore|1. To love, adore.\
 aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
 dír|v. tr.|dire|+\s{acc} To say, tell (+\s{dat} someone) |\s{fut} *dírẹ́*, \s{subj} *díss*
-vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*
-y’ír|v. (in)tr.|ouïr|To understand, listen, *(rarely)* hear
+vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} *vvaúríźe*, \s{subj} *vvaúríhes*
+y’ír|v. (in)tr.|ouïr|To understand, listen, *(rarely)* hear|\s{fut} aúré, \s{subj} rás
 Cár|n.||*male given name, equivalent to English ‘Kyle’ or ‘Charles’*
 ráhó|n.|poisson|Fish
 act’he|v. tr.|\nf from *ac*|1. To cut or cleave with an axe. \
@@ -75,8 +75,8 @@ ráy’ê|n.|moyen|1. Way, means, method. 2. {\bf ráy’ê y’aúhý} + \s{aci
 ub’hrá|v.|pouvoir|1. +\s{inf/aci} To be able to, can. 2. +\s{part} Capable of .. *(***ub’hrá** *is \
     never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
     \s{pci}, in which case the variant with the \s{part} is used instead)*. 3. \s{opt cond i + \
-    aci} to be possible; may *(dynamic or epistemic, never deontic)*. 4. \s{opt cond ii + \
-    aci} might *(dynamic or epistemic, never deontic)*|\s{fut} *úrẹ́*, \s{subj} *ís*
+    aci} to be possible; may *(dynamic or epistemic, never deontic; this and sense 4 are essentially a \
+    more emphatic optative)*. 4. \s{opt cond ii + aci} might *(dynamic or epistemic, never deontic)*|\s{fut} *úrẹ́*, \s{subj} *ís*
 ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
 ez-|pron.|ses|Its, her, his, their
@@ -313,8 +313,8 @@ ráhe|n.|oiseau|Bird
 ráhé|n.|{\nf from} ráhe + ráhó|Flying fish
 raúl|n.|parole|1. Language, speech, word. 2. **Raúl** *definite only* Short for *T’hebhaú Raúl* *(\s{nom\
     sg} irreg.* **Raúl***; all other forms are regular)*
-rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
-susy’é|v.|soucier|\linebreak+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
+rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} *rét’hẹre*, \s{subj} *rét’hes*
+susy’é|v.|soucier|\linebreak+\s{part, pci} To care about, worry about|\s{fut} *susy’ére*, \s{subj} *susy’és*
 a|pron.|quoi| *(interrog. and rel.)* 1. \s{indef} What? 2. \s{def} Who? Whom? \
     3. \s{indef} *or* \s{def} *(see grammar)* Which, who, that
 vérs|interj.|merci|1. Thank you. (+\s{gen} for sth.). 2. **dyvérs fér** To thank \
@@ -452,8 +452,8 @@ aḅrdvê|adv.|après-demain|The day after tomorrow *(the prefix {\bf aḅr} can
 c’haúv́ájẹ|n.|c’haú + \pfabbr magie|Magic
 siḍ|n.|site|Facility, site
 c’haúfí|v.|confiner|To contain
-vvâ|n.|maman|Mum, mom
-vér|n.|mère|Mother
+vvâ|n.|maman|Mother
+vér|n.|mère|Mum, mom
 rjẹ|n.|Hergé|Comic book
 
 sud’hénvâ|adv.|soudainement|Suddenly
@@ -472,8 +472,9 @@ ḅáréḍ|v.|\pfabbr parraitre, future from \pfabbr sembler|To seem, appear|\s
 c’hlýr|v.|1. +\s{part} To include. 2. +\s{acc} To possess *(alienably)*|\s{fut} *c’hlýré*, \s{subj} *c’hlýrs*
 rá|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
-ḅá nórávíc’h|n. archaic|Panoramix|Druid *({\bf nórávíc’h} takes all the marking; the \
-    {\bf ḅá} is not inflected)*
+ḅá nórávíc’h|n. archaic|Panoramix|Druid. *Only the {\bf nórávíc’h} is inflected; infixing of adj. is \
+    attested, ex: {\nf \s{Snet’h}, III.2:} {\bf\itshape \
+    derúb’h bá ráinórávíc’h} ‘to find the great (= {\bf rá}) druid’*
 nóráv|n.|from archaic {\bf ḅá nórávíc’h}|Druid
 ahúr|v.|assurer|To ensure|\s{fut} ahúré, \s{subj} ahúrs
 fúr|v.|fournir|To deliver, provide (+\s{dat} sbd.) (+ \s{acc} with sth.)
@@ -484,7 +485,7 @@ rób’hoc’h|v.|\pfabbr provoquer, fut. from \pfabbr infliger|\s{+acc} To caus
     \s{fut} *flijé*, \s{subj} *rób’hoc’hs*
 aḅrâ|v.|apprendre|To learn|\s{fut} *aḅrâdé*, \s{subj} *aḅrâs*
 ábhec|v.|empêcher|+\s{acc} To prevent, stop (sth. from happening)|\s{fut} *ábhece*, \s{subj} ábhecs
-válvê|v.|malmener|To mistreat, torture
+válvê|v.|malmener|To mistreat, torture|\s{fut} válv́e, \s{subj} válvês
 válḍrét’hás|n.|maltraitance|Torture
 duý’ýr|v.|douleur|To suffer, be in pain
 suf|n.|souffre|Pain
