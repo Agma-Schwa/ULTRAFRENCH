@@ -79,8 +79,8 @@ rá|n.|loi|Law, rule, regulation
 c’hóný|adj.|connu|Known, familiar, well-kn\-own
 y’aúhý|inconj., postpos.|\pf{il n’y a aucun}|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pf{il y a aucun}|There is, there are
-ráy’ê|n.|moyen|1. Way, means, method. 2. {\bf ráy’ê y’aúhý} + \s{aci} There is no way, that... \
-    3. \s{instr pl} {\bf b’hehráy’ê} How, by what means
+ráy’ê|n.|moyen|1. Way, means, method. 2. \w{ráy’ê y’aúhý} + \s{aci} There is no way, that... \
+    3. \s{instr pl} \w{b’hehráy’ê} How, by what means
 
 ub’hrá|v.|pouvoir|1. +\s{inf/aci} To be able to, can. 2. +\s{part} Capable of \ldots \
     \textit{Never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
@@ -211,9 +211,9 @@ c’hesse||contraction of \w{c’hes} + \w{se}| Is it? \textit{Also substituted 
 aud|adj.|autre|Other, another
 sauz-aud|adj.|\pf{autre chose}|Something else, another thing
 rét’hád|v.|prétendre|To claim, allege|\s{fut} rét’hádrẹ́, \s{subj} rét’h\-ádes
-dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow *(the \s{acc} is used when talking about\
+dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow. \textit{The \s{acc} is used when talking about\
     concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts\
-    or parts of objects; the \s{dat} is the person being endowed with)*|\s{fut} dónrẹ́, \s{subj} dónés
+    or parts of objects; the \s{dat} is the person being endowed with}|\s{fut} dónrẹ́, \s{subj} dónés
 ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} ḍeý’ebh\-at’hic’hre, \s{subj} \
     ḍeý’ebhat’hic’hes
 ḍeý’ebhat’hẹ|n.|télépathie|Telepathy
@@ -227,7 +227,7 @@ cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, on
 liv́uhé|n.|\pf{livre} + \pf{bouquin}|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} áv́áy’érẹ́, \s{subj} áv́áy’és
 Sásc’hríḍ|n. never lenited|sanskrit|The Sanskrit language
-baú|v. irreg.|bon|1. To be good, well. 2. To be right, correct, appropriate|\s{fut} baúré*, \
+baú|v. irreg.|bon|1. To be good, well. 2. To be right, correct, appropriate|\s{fut} baúré, \
     \s{subj} véy’ýrs; \s{comp} lẹvéy’ýr, y’ŷvéy’ýr, rêvéy’ýr; \s{sup} révéy’ýr, \
     râdvâv\-éy’\-ýr
 vaúb’hẹ|v. irreg.|mauvais|1. To be bad 2. To be wrong, incorrect, inappropriate|\s{fut} \
@@ -449,7 +449,7 @@ lys|adv.|\pf{plus} pronounced [plys])|No longer, not any more. \textit{The meani
 y’éjúré|n.|\pf{siège} + \pf{tabouret}|Chair, seat
 
 sẹhúr|v.|secourir|To help, succour, give aid (+\s{dat} to sb.) (+\s{aci}/\s{acc} with sth.)|\s{fut} sẹhúrre, \s{subj} sẹhús
-aujúrdy’í|adv.|aujourd’hui|Today *(archaic, see also {\bf júrdy’í})*
+aujúrdy’í|adv.|aujourd’hui|Today. \textit{Archaic, see also \w{júrdy’í}}
 júrdy’í|adv.|from archaic \pf{aujúrdy’í}|Today
 vê|adv.|demain|Tomorrow
 y’ér|adv.|hier|Yesterday.
@@ -478,7 +478,7 @@ dá|n.|dent|Tooth
 ḅará|n.|parent|Parent
 
 ḅáréḍ|v.|\pf{parraitre}; future stem from \pf{sembler}|To seem, appear|\s{fut} sáb
-c’hlýr|v.|inclure|1. +\s{part} To include. 2. +\s{acc} To possess *(alienably)*|\s{fut} c’hlýré, \s{subj} c’hlýrs
+c’hlýr|v.|inclure|1. +\s{part} To include. 2. +\s{acc} To possess \textit{(alienably)}|\s{fut} c’hlýré, \s{subj} c’hlýrs
 rá|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
 ḅá nórávíc’h|n. archaic|Panoramix|Druid. \textit{Only the \w{nórávíc’h} is inflected; infixing of adj. is \
