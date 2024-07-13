@@ -312,21 +312,9 @@
 }
 
 %% Make it so *...* works just like in Markdown.
-\char_set_catcode_active:N \*
 \def\* { \detokenize{*} }
-\cs_new:Npn * { \__md_star:w }
-
-\cs_set_protected:Npn \__md_star:w {
-    \peek_charcode_remove:NTF * { \__md_starstar:w } { \__md_singlestar:w }
-}
-
-\cs_set_protected:Npn \__md_starstar:w {
-    \peek_charcode_remove:NTF * { \__md_triplestar:w } { \__md_doublestar:w }
-}
-
-\cs_set_protected:Npn \__md_singlestar:w #1*   { \textit{#1} }
-\cs_set_protected:Npn \__md_doublestar:w #1**  { \textbf{#1} }
-\cs_set_protected:Npn \__md_triplestar:w #1*** { \textbf{\textit{#1}} }
+\def\pfabbr{{\normalfont\scshape pf\space}}
+\def\pf#1{\pfabbr\textit{#1}}
 
 \cs_new:Npn \items {
     \ifvmode\else\unskip\par\fi
@@ -356,6 +344,7 @@
 \def \N {\textsuperscript{N}}
 \long \def \s #1 {{\normalfont\scshape #1 }}
 
+\let \w \textit
 \let \Sl \textbackslash
 \let \Sub \textsubscript
 \let \Sup \textsuperscript
@@ -446,7 +435,7 @@
     \large
     {\LARGE \@title \par}%
     \vskip1em
-    {\LARGE *Ŷrávér Réy’ác’hraúníc’hâ Rzaúsdâ Át’hebhaú Raúl* \par}%
+    {\LARGE \w{Ŷrávér Réy’ác’hraúníc’hâ Rzaúsdâ Át’hebhaú Raúl} \par}%
     \vskip 1em
     {\Large \@author \par}%
     \vskip .5em
@@ -545,22 +534,22 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
 
 \subsection{Pronunciation, Allophony, and Stress}\label{subsec:pronunciation-allophony-and-stress}
 There is not a lot of allophony in UF, save that /x/ is realised as [χ] around back vowels and [ɕ] elsewhere, e.g.
-*c’húr* /xũɰ/ ‘to shrink’ is pronounced [χũˑˠ]. Furthermore, /h/ is [ç] before variants of /i/ and /y/, and [h] elsewhere.
+\w{c’húr} /xũɰ/ ‘to shrink’ is pronounced [χũˑˠ]. Furthermore, /h/ is [ç] before variants of /i/ and /y/, and [h] elsewhere.
 
-The vast majority PF words are stressed on the last syllable of the root, e.g. *ad’hór* ‘to love’ /aˈðɔ̃ɰ/, but *b’had’hóré*
+The vast majority PF words are stressed on the last syllable of the root, e.g. \w{ad’hór} ‘to love’ /aˈðɔ̃ɰ/, but \w{b’had’hóré}
 ‘you (\s{pl}) love’ /βaˈðɔ̃.ɰɛ̃/. The stress is not indicated in writing, neither in actual texts, nor in this
 grammar or in dictionaries. The main exception to this are names, which are generally stressed on the first syllable,
 and receive secondary stress on the last syllable,\footnote{That is, unless the name ends in an obvious suffix, in which case the last
-syllable before any such suffixes receives secondary stress; however, this is generally quite rare.} e.g. *Daúvníc’h* /ˈdɔ̃ʋ̃ˌnĩx/.
+syllable before any such suffixes receives secondary stress; however, this is generally quite rare.} e.g. \w{Daúvníc’h} /ˈdɔ̃ʋ̃ˌnĩx/.
 
 The only exception to this rule are certain particles and irregular verbs, some of which have irregular stress; for instance,
-the forms of *eḍ* ‘to be’ are all stressed on the first syllable. Any such words that deviate from the norm will be pointed
+the forms of \w{eḍ} ‘to be’ are all stressed on the first syllable. Any such words that deviate from the norm will be pointed
 out in this grammar and in dictionaries.
 
 Oral vowels before the stressed syllable are often somewhat muted or reduced, albeit still audible, and stressed vowels are lengthened if they
-are nasalised, e.g. the pronunciation of *ad’hór*, which we just transcribed as /aˈðɔ̃ɰ/, is actually closer to [ɐ̯ˈðɔ̃ˑɰ].
-Word-final voiceless *ẹ* is always /ə̥/. Finally, non-back vowels that are followed by /ɰ/ or /ɰ̃/ are retracted, e.g. *y’ẹ́rẹ́*, the future
-stem of *y’ẹ́* ‘forbid’, is phonemically /ɥẽˈɰẽ/, but pronounced [ɥɘ̃ˈɰẽ].
+are nasalised, e.g. the pronunciation of \w{ad’hór}, which we just transcribed as /aˈðɔ̃ɰ/, is actually closer to [ɐ̯ˈðɔ̃ˑɰ].
+Word-final voiceless \w{ẹ} is always /ə̥/. Finally, non-back vowels that are followed by /ɰ/ or /ɰ̃/ are retracted, e.g. \w{y’ẹ́rẹ́}, the future
+stem of \w{y’ẹ́} ‘forbid’, is phonemically /ɥẽˈɰẽ/, but pronounced [ɥɘ̃ˈɰẽ].
 
 Oral vowels have a nasalised and nasal counterpart. /i/ and /u/ do not vary in quality when na\-sa\-lis\-ed.
 /a/ is normally [ɐ], but becomes [ɑ] when nasalised or nasal. Similarly, /e/ becomes [ɛ],
@@ -569,7 +558,7 @@ rare. The quality never changes when going from nasalised to nasal. The schwa ha
 also have voiceless counterparts, whose quality is the same as that of the base vowel.
 
 The difference between nasalised vowels and nasal vowels is that the former are merely coarticulated with nasalisation, whereas
-the latter are completely and utterly *in the nose*—no air escapes through the mouth when a nasal vowel is articulated, and all
+the latter are completely and utterly \textit{in the nose}—no air escapes through the mouth when a nasal vowel is articulated, and all
 the air flows just through the nose. Middle UF and some modern dialects also distinguish between sinistral and dextral nasal
 vowels,\footnote{Sinistral nasal vowels are articulated with the left nostril, and dextral nasal vowels with the right nostril.}
 but this distinction is no longer present in the modern standard language.
@@ -580,8 +569,11 @@ Initial /ɰ/ is sometimes elided after words that end with /ɰ/.
 The spelling of most UF sounds is indicated above; the less exotic consonants are spelt as
 one might expect. That is, /b, d, n, ɸ, s, z, h/ are spelt ⟨b, d, n, f, s, z, h⟩, respectively.
 
-Several fricatives are spelt with an apostrophe followed by a ‘h’, viz. /x/ ⟨c’h⟩, /θ/ ⟨t’h⟩, /ð/ ⟨d’h⟩,
-and /β/ ⟨b’h⟩. Conventional letters are used for rather unconventional sounds, mostly for diachronic reasons:
+Several fricatives are spelt with an apostrophe followed by a ⟨h⟩, viz. /x/ ⟨c’h⟩, /θ/ ⟨t’h⟩, /ð/ ⟨d’h⟩,
+and /β/ ⟨b’h⟩. Apostrophes are also often used to mark shortened forms, e.g. \w{t’hé},
+the optative negation particle, is shortened to \w{t’h’} before vowels.
+
+Conventional letters are used for rather unconventional sounds, mostly for diachronic reasons:
 /l/ does not exist in UF, so ⟨l⟩ is either /ɮ̃/ or /ʎ̝̃/, ⟨v⟩ is /ʋ̃/, ⟨j⟩ is /ʑ/, ⟨c⟩ is /ɕ/, ⟨r⟩ is /ɰ/, ⟨w⟩ is /ɰ̃/. The vowel
 /y/ is spelt ⟨y⟩, and its consonantal equivalent /ɥ/ as well as nasalised /ɥ̃/ are spelt with an apostrophe, that is
 ⟨y’⟩ and ⟨ý’⟩. The ʁ-fricated fricatives /βʶ, ɮ̃ʶ, sʶ, ɕʶ, ʑʶ, zʶ/
@@ -596,52 +588,52 @@ The variants of /i, y, u, a, e/ are spelt with ⟨i, y, u, a, e⟩ as their base
 indicated by adding a dot below the ⟨e⟩ in grammars and dictionaries only; the vowel /o/ is spelt ⟨au⟩ or ⟨o⟩ for diachronic reasons;\footnote{As is always the
 case in cases like this, hypercorrection is frequent, and ⟨au⟩ is often preferred word-initially, even if the
 PF root was spelt with ⟨o⟩. In general, UF speakers seem to prefer ⟨au⟩ over ⟨o⟩, except word-finally and after ⟨w⟩, except
-that in verb affixes, *au* is quite common word-finally. The sequence ⟨wau⟩ does not exist in UF.} in the case of
+that in verb affixes, \w{au} is quite common word-finally. The sequence ⟨wau⟩ does not exist in UF.} in the case of
 ⟨au⟩, the acute and circumflex are added to the ⟨u⟩. The diphthong /au/ is spelt ⟨äu⟩, ⟨aü⟩, or with accents on both vowels. Oral
 /ɛ/ is rare and is spelt ⟨è⟩. Word-initially and word-finally, a grave indicates that the vowel is voiceless. Word-final
 voiceless /ə/ is always voiceless.\footnote{Thus, a word-final ⟨e⟩
-can be /e/, such as in *vvaúríhe* /ʋ̃ːɔ̃ɰĩˈhe/ ‘to remember’, or /ə̥/, such as in *dale* /daɮ̃ə̥/ ‘table’. As a rule of thumb, it is
+can be /e/, such as in \w{vvaúríhe} /ʋ̃ːɔ̃ɰĩˈhe/ ‘to remember’, or /ə̥/, such as in \w{dale} /daɮ̃ə̥/ ‘table’. As a rule of thumb, it is
 usually /e/ at the end of verb stems—but not verb forms in general—and /ə̥/ elsewhere. Fortunately they are differentiated by a
-dot below in dictionaries and in this grammar: *vvaúríhe* vs *ḍalẹ*.}
+dot below in dictionaries and in this grammar: \w{vvaúríhe} vs \w{ḍalẹ}.}
 
-The ‘hard’ voiced *ḅ*, *ḍ* which are pronounced exactly like their regular counterparts, are normally also spelt ⟨b⟩ and
+The ‘hard’ voiced \w{ḅ}, \w{ḍ} which are pronounced exactly like their regular counterparts, are normally also spelt ⟨b⟩ and
 ⟨d⟩. However, the dot is commonly used in dictionaries and grammatical material to distinguish between the two
 as they differ from one another in how they are lenited. Furthermore, a dot below or above a letter is commonly to indicate
 a variety of different things, depending on the letter:
 \begin{items}\itemsep .5ex plus .1ex minus .1ex\relax
-\item a dot below in *ḅ*, *ḍ* indicates that they are the ‘hard’ variants of the letter, which are pronounced
+\item a dot below in \w{ḅ}, \w{ḍ} indicates that they are the ‘hard’ variants of the letter, which are pronounced
       the same, but lenited differently;
-\item a dot below in *ḷ* indicates that it is palatal /ʎ̝̃/ instead of alveolar /ɮ̃/;
-\item a dot below in *ẹ* indicates that it is a schwa;
-\item a dot below nasalised *ẹ́*, *ệ* indicates that they are /ẽ/, /ẽ̃/ instead of /ɛ̃/, /ɛ̃̃/;
-\item a dot below in *c̣* indicates that it is lenited /j̊/.
+\item a dot below in \w{ḷ} indicates that it is palatal /ʎ̝̃/ instead of alveolar /ɮ̃/;
+\item a dot below in \w{ẹ} indicates that it is a schwa;
+\item a dot below nasalised \w{ẹ́}, \w{ệ} indicates that they are /ẽ/, /ẽ̃/ instead of /ɛ̃/, /ɛ̃̃/;
+\item a dot below in \w{c̣} indicates that it is lenited /j̊/.
 \end{items}
 
 \noindent Thus, in non-grammatical writing, the following are indistinguishable:
 \begin{items}\itemsep .5ex plus .1ex minus .1ex\relax
-\item *l* can be palatal /ʎ̝̃/ or alveolar /ɮ̃/;
-\item *e* can be a schwa, or /e/;
-\item *é*, *ê* can be /ɛ̃/, /ɛ̃̃/ or /ẽ/, /ẽ̃/;
-\item *c* can be /ɕ/ or /j̊/.
+\item \w{l} can be palatal /ʎ̝̃/ or alveolar /ɮ̃/;
+\item \w{e} can be a schwa, or /e/;
+\item \w{é}, \w{ê} can be /ɛ̃/, /ɛ̃̃/ or /ẽ/, /ẽ̃/;
+\item \w{c} can be /ɕ/ or /j̊/.
 \end{items}
 
-\noindent Elided initial /ɰ/ is indicated by omitting the *r* in writing and attaching the word to the previous one with a hyphen,
-e.g. *-vá* ‘alas’.
+\noindent Elided initial /ɰ/ is indicated by omitting the \w{r} in writing and attaching the word to the previous one with a hyphen,
+e.g. \w{-vá} ‘alas’.
 
 UF seldom uses hyphens to separate or join words and instead prefers to spell them as one word instead; an exception
 to this is that affixes that end with a vowel are typically separated from the word they are attached to with a hyphen
-if that word starts with (a variant of) the same vowel. For example, the \s{def nom sg} of *el* ‘wing’
-is *láel*, but the plural is *lé-el*.
+if that word starts with (a variant of) the same vowel. For example, the \s{def nom sg} of \w{el} ‘wing’
+is \w{láel}, but the plural is \w{lé-el}.
 
 \subsubsection{Lenition and Nasalisation}
 Certain morphological elements subject surrounding context to lenition or nasalisation. Nasalisation affects vowels,
 which become more nasal (that is, (voiceless) oral vowels become nasalised, and nasalised vowels become nasal; nasal
-vowels are unaffected), as well as *ḍ*, which becomes *n*, unless it would directly be preceded by another *n*, in
+vowels are unaffected), as well as \w{ḍ}, which becomes \w{n}, unless it would directly be preceded by another \w{n}, in
 which case it is simply deleted.
 
 Lenition is more complicated; it affects only consonants and causes a softening similar to what happened diachronically
 between vowels. All ʁ-fricated consonants simply lose their ʁ-frication, and a number of other consonants are also
-affected by lenition (note the difference between *ḅ, ḍ* and *b, d* here):
+affected by lenition (note the difference between \w{ḅ, ḍ} and \w{b, d} here):
 
 \begin{table}[H]
 \centering
@@ -654,21 +646,21 @@ affected by lenition (note the difference between *ḅ, ḍ* and *b, d* here):
 \caption{Consonants Affected by Lenition}\label{tab:lenition}
 \end{table}
 
-\noindent Note that double consonants are typically unaffected by morphological lenition, e.g. *dír* ‘to say’,
-whose subjunctive stem is *díss*, forms *aúdíssâ* (rougly ‘we should have said’), not \**aúdíhhâ*.
+\noindent Note that double consonants are typically unaffected by morphological lenition, e.g. \w{dír} ‘to say’,
+whose subjunctive stem is \w{díss}, forms \w{aúdíssâ} (rougly ‘we should have said’), not *\w{aúdíhhâ}.
 
 \subsubsection{Glossing}
 To simplify glosses, cases are assumed to be definite and singular unless otherwise stated, and verb forms are
 assumed to be indicative, present tense, and active, unless otherwise stated.
 
 \subsection{Diachrony and Derivation}
-The PF infinitive endings (*-ir* etc.) became progressively more vestigial in Middle UF and were eventually
-often dropped completely in derivation, e.g. *auḍé* ‘obtain’ from earlier \**auḅḍénír*, later resulting in
+The PF infinitive endings (\w{-ir} etc.) became progressively more vestigial in Middle UF and were eventually
+often dropped completely in derivation, e.g. \w{auḍé} ‘obtain’ from earlier *\w{auḅḍénír}, later resulting in
 a need for new infinitive affixes to be formed to distinguish infinitives from the base form, thus giving
-rise to e.g. *dauḍé* ‘to obtain’.
+rise to e.g. \w{dauḍé} ‘to obtain’.
 
-The suffix *-t’he*, \s{fut} *-ḍe*, \s{subj} *-t’hes*, is a productive derivational suffix that can be used to turn a
-noun ‘X’ into a verb that roughly means ‘to use X’, e.g. *ac* ‘axe’ $\to$ *act’he* ‘to cut with an axe’.
+The suffix \w{-t’he}, \s{fut} \w{-ḍe}, \s{subj} \w{-t’hes}, is a productive derivational suffix that can be used to turn a
+noun ‘X’ into a verb that roughly means ‘to use X’, e.g. \w{ac} ‘axe’ $\to$ \w{act’he} ‘to cut with an axe’.
 
 \section{Accidence}\label{sec:accidence}
 
@@ -681,17 +673,17 @@ into the declensions. Furthermore, UF no longer has a gender distinction in noun
 The table below shows the most common cases of the definite and indefinite declensions. UF pretty much has no
 adpositions and instead uses cases instead.
 
-Many of the case prefixes cause lenition in the initial consonant of the noun, e.g. *ḍalẹ* ‘table’ to
-\s{def acc sg} *s’thalẹ*; this lenition is blocked in the \s{indef acc pl} due to the presence of a hypercorrected ‘s’
-in PF \**ces*, e.g. *s’ḍalẹ* ‘the tables (\s{acc})’ (not *s’thalẹ*, which is the singular), as well as in
-less commonly used forms such as the \s{def iness} *dwáḍalẹ* ‘on the table’.
+Many of the case prefixes cause lenition in the initial consonant of the noun, e.g. \w{ḍalẹ} ‘table’ to
+\s{def acc sg} \w{s’thalẹ}; this lenition is blocked in the \s{indef acc pl} due to the presence of a hypercorrected ‘s’
+in PF *\w{ces}, e.g. \w{s’ḍalẹ} ‘the tables (\s{acc})’ (not \w{s’thalẹ}, which is the singular), as well as in
+less commonly used forms such as the \s{def iness} \w{dwáḍalẹ} ‘on the table’.
 
-The \s{indef nom sg} *ŷn-* prefix and some other forms nasalise nouns; as a reminder, this means that in
-nouns starting with *ḍ*, the *ḍ* is deleted, e.g. *ŷnalẹ* ‘a table’;
-it causes nasalisation in words that start with a vowel e.g. *ehyó* ‘shield’ to *ŷnéhyó* ‘a shield’. Names in UF are always
+The \s{indef nom sg} \w{ŷn-} prefix and some other forms nasalise nouns; as a reminder, this means that in
+nouns starting with \w{ḍ}, the \w{ḍ} is deleted, e.g. \w{ŷnalẹ} ‘a table’;
+it causes nasalisation in words that start with a vowel e.g. \w{ehyó} ‘shield’ to \w{ŷnéhyó} ‘a shield’. Names in UF are always
 definite, so the indefinite \s{voc}
 does not exist, as that would be nonsense. As lenition, nasalisation too is blocked in rarer forms, e.g. \s{indef iness}
-*dáhŷnḍalẹ* ‘on a table’.
+\w{dáhŷnḍalẹ} ‘on a table’.
 
 \begin{table}[H]
 \centering
@@ -716,8 +708,8 @@ Instrumental  & b’hel-  & b’he-   && Instrumental  & b’he(hý)(n)- & b’h
 \caption{UF Declension.}\label{tab:table-uf-declension}
 \end{table}
 
-\noindent The table below shows the paradigm of *ḍale* ‘table’ in its definite and indefinite forms; this, of course,
-is a rather extreme example, as the initial *ḍ* means that it is subject to both lenition and nasalisation.
+\noindent The table below shows the paradigm of \w{ḍale} ‘table’ in its definite and indefinite forms; this, of course,
+is a rather extreme example, as the initial \w{ḍ} means that it is subject to both lenition and nasalisation.
 
 \begin{table}[H]
 \centering
@@ -739,45 +731,45 @@ Allative      & b’hét’halẹ  & b’hérḍalẹ  && Allative      & b’h�
 Considerative & słáḍalẹ     & słéḍalẹ    && Considerative & sý’óýnḍalẹ & sý’óýḍalẹ  \\
 Instrumental  & b’helḍalẹ   & b’heḍalẹ   && Instrumental  & b’hehýḍalẹ & b’hehḍalẹ  \\
 \end{tabular}
-\caption{Paradigm of *ḍalẹ*.}\label{tab:vocalic-declension}
+\caption{Paradigm of \w{ḍalẹ}.}\label{tab:vocalic-declension}
 \end{table}
 
 \subsubsection{Absolutive}
 The absolutive case has two main uses: First, it is used for the predicate noun of predicative sentences, i.e.
-‘X’ in ‘to be X’, e.g. *Aúsó ḍe ráhó* ‘We are all fish’.
+‘X’ in ‘to be X’, e.g. \w{Aúsó ḍe ráhó} ‘We are all fish’.
 
 Secondly, it turns nouns into modifier nouns, e.g.
-*árḍihyl lývy’ér* ‘light particle (as in, a particle of light)’. In this second use, the modifier is generally
+\w{árḍihyl lývy’ér} ‘light particle (as in, a particle of light)’. In this second use, the modifier is generally
 placed second, after the noun it modifies, though this is only mandatory if ambiguity would arise otherwise.
 
 Lastly, the \s{abs sg} is also used as the citation form of a noun.
 
 \subsubsection{Nominative}
 The nominative is one of the most common cases in UF and marks the subject of an active sentence, e.g.
-*Seb’h dwásẹ láraúb’hẹ* ‘The robot was here’. Apart from this, the \s{nom} isn’t really used in UF.
+\w{Seb’h dwásẹ láraúb’hẹ} ‘The robot was here’. Apart from this, the \s{nom} isn’t really used in UF.
 
 \subsubsection{Vocative}
-The vocative is a rare case that is used to address someone or something, e.g. *C̣ár!* ‘O Charles!’. The vocative
+The vocative is a rare case that is used to address someone or something, e.g. \w{C̣ár!} ‘O Charles!’. The vocative
 only occurs in the definite and usually with proper nouns. Note that the vocative is not marked by an affix, but
-rather by mutation only, e.g. *C̣ár* from *Cár*.
+rather by mutation only, e.g. \w{C̣ár} from \w{Cár}.
 
 \subsubsection{Accusative and Partitive}
 These two cases, while often different in meaning, are almost identical in grammatical purpose: Their main use is to
-mark the direct object of a verb. While some verbs, e.g. *ub’hrá* ‘to be
+mark the direct object of a verb. While some verbs, e.g. \w{ub’hrá} ‘to be
 able to’ always take a \s{part}, and others always take an \s{acc}, the difference between the two, in most contexts,
 is one of semantics. There is hardly a grammatical construction that admits the \s{acc} in which the \s{part} would be
 ungrammatical, and vice versa.
 
 To elaborate, the \s{acc} indicates that an action is being or has been performed in its entirety or to completion, e.g.
-*jlí sliv́uhé* ‘I peruse a book’ vs *jlí dŷnliv́uhé* ‘I read (\s{pres}) from a book’ or ‘I am reading a book’. Consequently,
-\s{pres ant} forms, which are mainly perfective, generally take the \s{acc}, e.g. *jlíé iliv́uhé* ‘I’ve read the book’,
-whereas \s{pret} forms, which are mainly imperfective, generally take the \s{part}, e.g. *jlíá dyliv́uhé* ‘I was reading
+\w{jlí sliv́uhé} ‘I peruse a book’ vs \w{jlí dŷnliv́uhé} ‘I read (\s{pres}) from a book’ or ‘I am reading a book’. Consequently,
+\s{pres ant} forms, which are mainly perfective, generally take the \s{acc}, e.g. \w{jlíé iliv́uhé} ‘I’ve read the book’,
+whereas \s{pret} forms, which are mainly imperfective, generally take the \s{part}, e.g. \w{jlíá dyliv́uhé} ‘I was reading
 (from) the book’. As most conversations generally concern matters that are relevant to the present and thus still incomplete,
 the \s{part} ends up being the commoner of the two cases.
 
 Both cases are also used to express a ‘passive’, as UF has no traditional morphological passive in that the so-called
 ‘active’ and ‘passive’ affixes are really ‘agent’ and ‘patient’ affixes. As such, a ‘passive’ form is construed by
-omitting the agent affix; the ‘subject’, if there is any, will then be in the \s{acc} or \s{part}, e.g. *sylí dýliv́uhé*
+omitting the agent affix; the ‘subject’, if there is any, will then be in the \s{acc} or \s{part}, e.g. \w{sylí dýliv́uhé}
 ‘the book is being read’.
 
 Lastly, the they are also used in a construction known as the \s{aci/pci} (see §~\ref{subsec:aci-pci}).
@@ -788,46 +780,46 @@ the \s{gen} follow the possessee, but if the possessee is qualified with adjecti
 possessee immediately, lest they end up qualify the genitive instead, and thus, the genitive is placed first.
 
 \subsubsection{Dative}
-The \s{dat} case is used to indicate the indirect object of some verbs, *jdónẹ́ḷẹ* ‘I bestow upon him’. Note that some
+The \s{dat} case is used to indicate the indirect object of some verbs, \w{jdónẹ́ḷẹ} ‘I bestow upon him’. Note that some
 verbs, however, may govern a different case instead, such as the allative. Unlike most other cases, there actually is
 a dative affix (see §~\ref{subsubsec:dative-affixes}) that can be added to a verb in some cases.
 
-Another use of the dative is to indicate a beneficiary or recipient in a more general sense, e.g. *jsyfér asvẹ* ‘I did
+Another use of the dative is to indicate a beneficiary or recipient in a more general sense, e.g. \w{jsyfér asvẹ} ‘I did
 it for me/us’.
 
 \subsubsection{Essive}
-The \s{ess} case is used to mean ‘as X’ or ‘in the form of X’ or ‘in the role of X’, e.g. *lẹt’hiy’e dyt’halẹ ḅárýny’éjúré*
+The \s{ess} case is used to mean ‘as X’ or ‘in the form of X’ or ‘in the role of X’, e.g. \w{lẹt’hiy’e dyt’halẹ ḅárýny’éjúré}
 ‘he uses the table as a chair’.
 
 \subsubsection{Locatives}
 The inessive, interessive, ablative, and allative are collectively called ‘locatives’ and indicate the position of an object
-or movement towards or away from an object, e.g. *B’hét’hebhaú* ‘to France’.
+or movement towards or away from an object, e.g. \w{B’hét’hebhaú} ‘to France’.
 
-The *d* in the \s{def abl sg} and is omitted if the noun starts with a consonant,
-e.g. *rêḍalẹ* ‘from the table’; be careful especially with words that start with *s*, whose \s{abl sg} is often mistaken
-for a plural, e.g. *rêsol* ‘from the floor’, but *rêssol* ‘from the floors’.
+The \w{d} in the \s{def abl sg} and is omitted if the noun starts with a consonant,
+e.g. \w{rêḍalẹ} ‘from the table’; be careful especially with words that start with \w{s}, whose \s{abl sg} is often mistaken
+for a plural, e.g. \w{rêsol} ‘from the floor’, but \w{rêssol} ‘from the floors’.
 
 \subsubsection{Considerative}
 The \s{cons} case is a bit of a weird on and can be translated as ‘according to’, or ‘in the opinion of’, and is used to
 express the opinion of the speaker or point out something as an opinion, belief, or hypothesis of someone or something.
 
 \subsubsection{Instrumental}
-The \s{instr} case is used to indicate the instrument or means using or by which an action is performed, e.g. *b’heac*
+The \s{instr} case is used to indicate the instrument or means using or by which an action is performed, e.g. \w{b’heac}
 ‘with an axe’.
 
-The *hý* in the \s{indef instr sg} may be omitted arbitrarily, particularly in literary language; there
-isn’t really any rule as to when this happens, but it is most common in words that start with a fricative. However, the *n*
-is always retained if the *hý* is omitted, e.g. we have *b’henc’hánár* or sometimes *b’hehýc’hánár* ‘by boat’, but never
-\**b’hehýnc’hánár* or \**b’hec’hánár*.
+The \w{hý} in the \s{indef instr sg} may be omitted arbitrarily, particularly in literary language; there
+isn’t really any rule as to when this happens, but it is most common in words that start with a fricative. However, the \w{n}
+is always retained if the \w{hý} is omitted, e.g. we have \w{b’henc’hánár} or sometimes \w{b’hehýc’hánár} ‘by boat’, but never
+*\w{b’hehýnc’hánár} or *\w{b’hec’hánár}.
 
-The *n* in the \s{indef instr sg} is omitted according to the same rules as the *d* in the \s{def abl sg}.
+The \w{n} in the \s{indef instr sg} is omitted according to the same rules as the \w{d} in the \s{def abl sg}.
 
 \subsubsection{Diachronic Comments}
 The diachrony of these forms is mostly from the PF definite and indefinite pronouns as well as from PF prepositions, though
 some forms, such as the
-accusative, are borrowed from demonstratives instead (\s{def} from PF \**celui* and \s{indef} from PF \**ce*); the definite
+accusative, are borrowed from demonstratives instead (\s{def} from PF *\pf{celui} and \s{indef} from PF \pf{ce}); the definite
 partitive forms are from the PF partitive article, and
-the indefinite forms are formed with an additional *d-* by analogy to the definite forms. The locative cases are combinations
+the indefinite forms are formed with an additional \w{d-} by analogy to the definite forms. The locative cases are combinations
 of the articles and PF prepositions. The ablative is from PF \**loin de* ‘away from’. The diachrony of the genitive singular
 is unclear.
 
@@ -835,17 +827,17 @@ is unclear.
 \subsection{Adjectives}
 UF does not have many actual adjectives. Most words in UF are either nouns or verbs, and most ‘adjectives’ are just
 participles, which can always be used like adjectives. Indeed, there are a lot of verbs whose meaning is something
-along the lines of ‘to be X’, whose present participle behaves like the adjective ‘X’, e.\,g. *ḅẹt’hẹ* ‘to be small’
-to *ḅẹt’hâ* ‘small’ (literally ‘being small’).
+along the lines of ‘to be X’, whose present participle behaves like the adjective ‘X’, e.\,g. \w{ḅẹt’hẹ} ‘to be small’
+to \w{ḅẹt’hâ} ‘small’ (literally ‘being small’).
 
-Adjectives generally—but not always—follow the noun they modify and are never inflected, e.g. *át’halẹ ḅẹt’hâ* ‘of the small table’.
+Adjectives generally—but not always—follow the noun they modify and are never inflected, e.g. \w{át’halẹ ḅẹt’hâ} ‘of the small table’.
 There is no established order of adjectives.
 
 \subsubsection{Adverbs}
-Adverbs are formed from adjectives in one of two ways. For adjectives that are not adjective verbs, *-(é)vâ* is added,
-e.g. *c’haú* ‘holy’ becomes *c’haúvâ* ‘holily’; the *e* is only present if the adjective ends with a consonant. Adjectives that
-are derived from adjective verbs instead replace the *-â* affix with *-vâ*, e.g. *réâ* ‘true’ becomes *révâ* ‘truly’. This
-form *never* inserts an *e*.
+Adverbs are formed from adjectives in one of two ways. For adjectives that are not adjective verbs, \w{-(é)vâ} is added,
+e.g. \w{c’haú} ‘holy’ becomes \w{c’haúvâ} ‘holily’; the \w{e} is only present if the adjective ends with a consonant. Adjectives that
+are derived from adjective verbs instead replace the \w{-â} affix with \w{-vâ}, e.g. \w{réâ} ‘true’ becomes \w{révâ} ‘truly’. This
+form \textit{never} inserts an \textit{e}.
 
 %% ‘lẹ-’: from PF ‘plus’. Comparative prefix.
 \subsubsection{Comparison}\label{subsubsec:comparison}
@@ -859,29 +851,29 @@ an ant is still not big, all things considered. By contrast, an elephant may be 
 but that doesn’t mean that an elephant is small.
 
 In UF, the comparatives are expressed by three infixes, which are prefixed directly to the stem. The affirming
-comparative prefix is *lẹ*, the denying comparative prefix is *y’ŷ*, and the neutral comparative prefix is *rê*.
-Thus, we have *ḅẹt’hâ* ‘small’, *lẹḅẹt’hâ* ‘smaller, and also small’, *y’ŷḅẹt’hâ* ‘smaller, but not small’, and
-*rêḅẹt’hâ* ‘smaller’.
+comparative prefix is \w{lẹ}, the denying comparative prefix is \w{y’ŷ}, and the neutral comparative prefix is \w{rê}.
+Thus, we have \w{ḅẹt’hâ} ‘small’, \w{lẹḅẹt’hâ} ‘smaller, and also small’, \w{y’ŷḅẹt’hâ} ‘smaller, but not small’, and
+\w{rêḅẹt’hâ} ‘smaller’.
 
 The comparative prefixes can also be applied to verbs, though they usually only make sense for the aforementioned
-‘adjective verbs’, e.g. *jy’ŷḅẹt’hẹ* ‘I am smaller, but still big’. Note that these prefixes
-might cause a verb’s forms to change from vocalic to consonantal, e.g. *ebhẹ* ‘to be thick’ (future stem *ebhrẹ*)
-is vocalic *náy’ebhraú* ‘we shall be thick’ in the positive, but consonantal *aúnraûy’ŷebhraû* ‘we shall be
+‘adjective verbs’, e.g. \w{jy’ŷḅẹt’hẹ} ‘I am smaller, but still big’. Note that these prefixes
+might cause a verb’s forms to change from vocalic to consonantal, e.g. \w{ebhẹ} ‘to be thick’ (future stem \w{ebhrẹ})
+is vocalic \w{náy’ebhraú} ‘we shall be thick’ in the positive, but consonantal \w{aúnraûy’ŷebhraû} ‘we shall be
 thicker, but not thick’ in the negative comparative.
 
 The affirming comparative can also be used absolutely, with the meaning of ‘to a large degree’. Thus,
-we have *ḅẹt’hâ* ‘small’, and *lẹḅẹt’hâ* ‘tiny’; sometimes, this also leads to a slight change in meaning
-or perception, e.g. *ebhâ* ‘thick’, but *lẹ-ebhâ* ‘thicc’.
+we have \w{ḅẹt’hâ} ‘small’, and \w{lẹḅẹt’hâ} ‘tiny’; sometimes, this also leads to a slight change in meaning
+or perception, e.g. \w{ebhâ} ‘thick’, but \w{lẹ-ebhâ} ‘thicc’.
 
-The affirming and denying comparative can also mean ‘too X’ and ‘not X enough’, respectively; thus, *lẹḅẹt’hâ*
-can also mean ‘too small’, and *y’ŷḅẹt’hâ* can also mean ‘not small enough’, though this meaning is somewhat
+The affirming and denying comparative can also mean ‘too X’ and ‘not X enough’, respectively; thus, \w{lẹḅẹt’hâ}
+can also mean ‘too small’, and \w{y’ŷḅẹt’hâ} can also mean ‘not small enough’, though this meaning is somewhat
 uncommon in isolation and most commonly found in constructions (see below).
 
-The superlative is formed with one of two prefixes: *ré\L* and *râdvâ*. Be careful not to confuse the former
-with the neutral comparative *rê*! The two prefixes are largely interchangeable, however, the former is more
+The superlative is formed with one of two prefixes: \w{ré\L} and \w{râdvâ}. Be careful not to confuse the former
+with the neutral comparative \w{rê}! The two prefixes are largely interchangeable, however, the former is more
 literary and also older. The latter is a more recent development to reduce potential ambiguity with the
-neutral comparative. Note that *ré* lenites, whereas *râdvâ* does not. Thus, we have *rébhẹt’hâ* or
-*râdvâḅẹt’hâ* ‘smallest’.
+neutral comparative. Note that \w{ré} lenites, whereas \w{râdvâ} does not. Thus, we have \w{rébhẹt’hâ} or
+\w{râdvâḅẹt’hâ} ‘smallest’.
 
 \subsubsection{Constructions}
 The comparative can be used together with an infinitive, \s{aci}, or \s{pci}. The affirming comparative here has the meaning
@@ -936,10 +928,10 @@ the presence of additional suffixes in the former. The \s{3sg n} in the active a
 demonstrative \**ce* and its variants; the \s{3pl n} is derived from the other \s{3pl} forms.
 
 A verb can have a passive affix only if there is no other explicit direct object in the clause. In other words, while verbs
-*do* take active person marking even if there is an explicit subject e.g. *lávvâ llad’hór* ‘the mother loves’, they do
-*not* take passive person marking if there is an explicit object (unless there is no subject), e.g. *lávvâ llvad’hór* ‘the
-mother loves me’, vs *lávvâ llad’hór iáb’há* ‘the mother loves the child’, which has *llad’hór* ‘she loves’ instead of
-*llsyad’hór* ‘she loves it’.
+\textit{do} take active person marking even if there is an explicit subject e.g. \w{lávvâ llad’hór} ‘the mother loves’, they do
+\w{not} take passive person marking if there is an explicit object (unless there is no subject), e.g. \w{lávvâ llvad’hór} ‘the
+mother loves me’, vs \w{lávvâ llad’hór iáb’há} ‘the mother loves the child’, which has \w{llad’hór} ‘she loves’ instead of
+\w{llsyad’hór} ‘she loves it’.
 
 Every finite verb form requires at least one finite affix. A verb form without any active, passive, or dative affix whatsoever
 would not be a finite verb form and could thus never be the predicate of a sentence.\footnote{Excluding of course the fact
@@ -947,7 +939,7 @@ that infinitives could be considered to function as predicates of \s{aci}s and \
 
 Thus, if the active affix is omitted, the verb has to have at least a passive or dative marker.
 Such a construction would be the closest equivalent to a passive in UF, since there is
-no true distinct syntactical or morphological passive, e.g. *y’ad’hór ivvâ* ‘the mother is loved’.\footnote{Note the accusative
+no true distinct syntactical or morphological passive, e.g. \w{y’ad’hór ivvâ} ‘the mother is loved’.\footnote{Note the accusative
 \textit{ivvâ} here, and recall also that, as mentioned above, the verb takes passive marking even though there is an explicit
 object, simply because there is no subject at all.} Furthermore, it is impossible to express the agent
 in the ‘passive’ by any
@@ -961,8 +953,8 @@ Lastly, ditransitive verbs and verbs governing the dative case generally take a 
 \begin{items}
 \Item{2sg}
 Watch out for the \s{2sg act}, which in verbs that start with a vowel is indistinguishable from the \s{inf act} in
-actual writing, e.g. *ḍad’hór* ‘you love’ vs *dad’hór* ‘to love’; since the dot is omitted in writing, both forms
-look the same: *dad’hór*. Moreover, the \s{2sg pass} is identical to the \s{2sg act} in any case.
+actual writing, e.g. \w{ḍad’hór} ‘you love’ vs \w{dad’hór} ‘to love’; since the dot is omitted in writing, both forms
+look the same: \w{dad’hór}. Moreover, the \s{2sg pass} is identical to the \s{2sg act} in any case.
 
 Which form is intended can often be inferred from context: if the clause already has a finite verb, especially one
 that takes an infinitive or ACI, it is more likely to be an infinitive; by contrast, if it is the only (possibly finite)
@@ -971,64 +963,64 @@ the verb is transitive and whether there is an explicit object in the clause.
 
 \Item{1pl}
 The \s{1pl} prefix varies if there is a vowel following it: if it is
-any vowel that is *not* a variant of ‘o’, the prefix is realised as *r-* instead, e.g. *ad’hór* ‘love’ to
-*rad’hóró* ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as *w-* instead, e.g. *aub’heír* ‘obey’
-to *wob’heíró* ‘we obey’.\footnote{Diachronically, the base form of this prefix is \**o-*, whence e.g.
-\**oad’hóró* > *rad’hóró* and \**oob’heíró* > *wob’heíró*.} Note that this also leads to a change in spelling: stem-initial
+any vowel that is \textit{not} a variant of ‘o’, the prefix is realised as \w{r-} instead, e.g. \w{ad’hór} ‘love’ to
+\w{rad’hóró} ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as \w{w-} instead, e.g. \w{aub’heír} ‘obey’
+to \w{wob’heíró} ‘we obey’.\footnote{Diachronically, the base form of this prefix is *\w{o-}, whence e.g.
+*\w{oad’hóró} > \w{rad’hóró} and *\w{oob’heíró} > \w{wob’heíró}.} Note that this also leads to a change in spelling: stem-initial
 ⟨au⟩ is changed to ⟨o⟩.
 
 \Item{1,2 pl}
-The *y’* in the suffix parts of the \s{1pl, 2pl act} are dropped if the verb ends with a consonant, e.g. *ad’hór*
-to *b’hád’hóré*, or if it ends with a vowel that is a variant of ‘o’ in the case of the \s{1pl} and ‘e’ in the case
-of the \s{2pl}, in which cases the vowels are contracted and a level of nasalisation is added, e.g. *vvaúríhe*
-‘to remember’ to *b’hyvvaúríhé* ‘you (\s{pl}) remember’ (not \**b’hyvvaúríhy’é*). In all other cases, the *y’* is retained,
-e.g. *aúvvaúríhey’ó* ‘we remember’.
+The \w{y’} in the suffix parts of the \s{1pl, 2pl act} are dropped if the verb ends with a consonant, e.g. \w{ad’hór}
+to \w{b’hád’hóré}, or if it ends with a vowel that is a variant of ‘o’ in the case of the \s{1pl} and ‘e’ in the case
+of the \s{2pl}, in which cases the vowels are contracted and a level of nasalisation is added, e.g. \w{vvaúríhe}
+‘to remember’ to \w{b’hyvvaúríhé} ‘you (\s{pl}) remember’ (not *\w{b’hyvvaúríhy’é}). In all other cases, the \w{y’} is retained,
+e.g. \w{aúvvaúríhey’ó} ‘we remember’.
 
 \Item{inf}
-The \s{inf pass} prefix *à-* coalesces with any vowel following it: it becomes *á* if it
-is followed by a non-nasal variant of ‘a’, e.g. *ad’hór* to *ád’hór* ‘to be loved’; *â* if it is
-followed by a nasal variant of ‘a’, e.g. *ánvé* ‘give life to’ to *ânvé* ‘to be animated’; and *h-* if it is
-followed by any other vowel, e.g. *aub’heír* to *haub’heír* ‘to be obeyed’.
+The \s{inf pass} prefix \w{à-} coalesces with any vowel following it: it becomes \w{á} if it
+is followed by a non-nasal variant of ‘a’, e.g. \w{ad’hór} to \w{ád’hór} ‘to be loved’; \w{â} if it is
+followed by a nasal variant of ‘a’, e.g. \w{ánvé} ‘give life to’ to \w{ânvé} ‘to be animated’; and \w{h-} if it is
+followed by any other vowel, e.g. \w{aub’heír} to \w{haub’heír} ‘to be obeyed’.
 
-In the present tense, the base form—and not the \s{inf}—of the verb is inflected to form gerunds, e.g. *ŷnád’hór* ‘a
-loving’, not \**ŷndad’hór*. However, the \s{inf} *is* used as the base form for gerunds in other tenses, e.g. *ŷndad’hórá* ‘a having loved’.
+In the present tense, the base form—and not the \s{inf}—of the verb is inflected to form gerunds, e.g. \w{ŷnád’hór} ‘a
+loving’, not *\w{ŷndad’hór}. However, the \s{inf} \textit{is} used as the base form for gerunds in other tenses, e.g. \w{ŷndad’hórá} ‘a having loved’.
 
 \Item{part}
 The participle affixes are commonly used to form adjectives since the vast majority of adjectives in UF are actually ‘adjective verbs’
-with a meaning of ‘to be X’. The participle can be used to convert such a verb back into a regular adjective, e.g. *lár* ‘to be wide’
-to *lárâ* ‘wide’. Like the passive infinitive affix, the participle affixes coalesce with vowels and always form a maximally
-nasal vowel, e.g. *vvaúríhe* ‘to remember’ forms *vvaúríhê* ‘remembering’, and *ad’hór* forms *âd’hór* ‘being loved’. As with other
-coalescence rules, the *-â* instead *replaces* final or initial *ẹ*, and *ẹ* only: e.g. *ḅẹt’hẹ* ‘to be small’ becomes *ḅẹt’hâ* ‘being
-small’. Note that if the word already ends with a maximally nasal vowel, no coalescence occurs, e.g. *rê* ‘to be triune’ becomes
-*rêâ* ‘triune’.
+with a meaning of ‘to be X’. The participle can be used to convert such a verb back into a regular adjective, e.g. \w{lár} ‘to be wide’
+to \w{lárâ} ‘wide’. Like the passive infinitive affix, the participle affixes coalesce with vowels and always form a maximally
+nasal vowel, e.g. \w{vvaúríhe} ‘to remember’ forms \w{vvaúríhê} ‘remembering’, and \w{ad’hór} forms \w{âd’hór} ‘being loved’. As with other
+coalescence rules, the \w{-â} instead \textit{replaces} final or initial \w{ẹ}, and \w{ẹ} only: e.g. \w{ḅẹt’hẹ} ‘to be small’ becomes \w{ḅẹt’hâ} ‘being
+small’. Note that if the word already ends with a maximally nasal vowel, no coalescence occurs, e.g. \w{rê} ‘to be triune’ becomes
+\w{rêâ} ‘triune’.
 
 \Item{{\upshape\textit{-ẹ-}}}
-The parenthesised vowels are used if the prefix is followed by a consonant, e.g. *dír* ‘say’ to *llẹ{}dír*
-‘they (\s{f}) say’ and *b’hydíré* ‘you (\s{pl}) say’, but *ad’hór* to *llad’hór* ‘they (\s{f}) love’ and *b’had’hóré* ‘you
-(\s{pl}) love’. The prefixes *aú-* and *à-* retain their main forms if followed by a consonant,
-e.g. *dír* ‘say’ to *aúdíró* ‘We say’ and *àdír* ‘to be said’.
+The parenthesised vowels are used if the prefix is followed by a consonant, e.g. \w{dír} ‘say’ to \w{llẹ{}dír}
+‘they (\s{f}) say’ and \w{b’hydíré} ‘you (\s{pl}) say’, but \w{ad’hór} to \w{llad’hór} ‘they (\s{f}) love’ and \w{b’had’hóré} ‘you
+(\s{pl}) love’. The prefixes \w{aú-} and \w{à-} retain their main forms if followed by a consonant,
+e.g. \w{dír} ‘say’ to \w{aúdíró} ‘We say’ and \w{àdír} ‘to be said’.
 
 \Item{{\upshape\textit{-y-}}}
-The exception to this is that \s{2pl} *b’h(y)-*
-drops the *y* if followed by a glide, e.g. *y’ír* ‘to hear’ to *b’hy’íré* ‘you (\s{pl}) hear’ (not \**b’hyy’íré*).
+The exception to this is that \s{2pl} \w{b’h(y)-}
+drops the \w{y} if followed by a glide, e.g. \w{y’ír} ‘to hear’ to \w{b’hy’íré} ‘you (\s{pl}) hear’ (not *\w{b’hyy’íré}).
 \end{items}
 
 \Paragraph{Combining Prefixes}
 When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive and participle prefixes
-always come first, e.g. *ad’hór* ‘love’ to *jvad’hór* ‘I love myself’ (not \**vjad’hór*) and *b’hy’ad’hóré* ‘you (\s{pl}) love him/her’,
-but *dẹvad’hór* ‘to love me’ and *àb’had’hóré* ‘to be loved by you (\s{pl})’. Recall that at most one infinitive prefix
+always come first, e.g. \w{ad’hór} ‘love’ to \w{jvad’hór} ‘I love myself’ (not *\w{vjad’hór}) and \w{b’hy’ad’hóré} ‘you (\s{pl}) love him/her’,
+but \w{dẹvad’hór} ‘to love me’ and \w{àb’had’hóré} ‘to be loved by you (\s{pl})’. Recall that at most one infinitive prefix
 and at most one participle affix may be used.
 
 \Paragraph{Impersonal Forms}
-UF does not use the \s{2nd} person in sentences such as ‘when *you* consider that\ldots’, instead preferring the \s{1pl} (lit.
-‘when *we* consider that\ldots’) to express such impersonal constructions. The \s{3n} is used as an expletive for verbs
-that do not really have a subject, such as *lýv́á* ‘rain’, which forms *slýv́á* ‘it rains’.
+UF does not use the \s{2nd} person in sentences such as ‘when \textit{you} consider that\ldots’, instead preferring the \s{1pl} (lit.
+‘when \textit{we} consider that\ldots’) to express such impersonal constructions. The \s{3n} is used as an expletive for verbs
+that do not really have a subject, such as \w{lýv́á} ‘rain’, which forms \w{slýv́á} ‘it rains’.
 
 \Paragraph{Example Paradigms}
-By way of illustration, consider the paradigm of the verb *ad’hór* as shown in Table~\ref{tab:adhor-paradigm} below.
+By way of illustration, consider the paradigm of the verb \w{ad’hór} as shown in Table~\ref{tab:adhor-paradigm} below.
 Since this word starts with a vowel, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} above
-are not used. Furthermore, since it starts with a non-nasal ‘a’-like vowel, the *aú-* prefix is realised as *r-*
-and the *à-* prefix coalesces with the initial ‘a’ of the stem to form *á*.
+are not used. Furthermore, since it starts with a non-nasal ‘a’-like vowel, the \w{aú-} prefix is realised as \w{r-}
+and the \w{à-} prefix coalesces with the initial ‘a’ of the stem to form \w{á}.
 
 % TEMPLATE:
 %\noindent\begin{tabular}{@{}|>{}l|>{\it}l|>{\it}l|>{}l|>{}l|>{\it}l|>{\it}l|}\cline{1-3}\cline{5-7}
@@ -1056,7 +1048,7 @@ and the *à-* prefix coalesces with the initial ‘a’ of the stem to form *á*
 \caption{Paradigm of the Verb \emph{ad’hór}.}\label{tab:adhor-paradigm}
 \end{table}
 
-\noindent For comparison, the paradigm of the verb *vvaúríhe* ‘remember’ is shown in Table~\ref{tab:vvorihe-paradigm} below.
+\noindent For comparison, the paradigm of the verb \w{vvaúríhe} ‘remember’ is shown in Table~\ref{tab:vvorihe-paradigm} below.
 Since it starts with a consonant, the parenthesised vowels in Table~\ref{tab:active-passive-prefixes} are used, and any
 prefixes that end with a vowel remain unchanged.
 
@@ -1102,25 +1094,25 @@ is used to describe events that are ongoing or habitual.
 \end{table}
 
 \noindent Neither tense distinguishes gender in the third person. All suffixes, except for the infinitive and \s{1pl, 2pl pret},
-lenite any consonant *before* them, e.g. *ḅárḍáḍ* ‘to be willing’ to *jḅárḍát’hé* ‘I was willing’ but *dẹḅárḍáḍá*
+lenite any consonant \textit{before} them, e.g. \w{ḅárḍáḍ} ‘to be willing’ to \w{jḅárḍát’hé} ‘I was willing’ but \w{dẹḅárḍáḍá}
 ‘to have been willing’.
 
-Diachronically, the \s{1sg pret} is an interesting case; in EUF, it was originally \**-é*, but it later changed to *-á*
+Diachronically, the \s{1sg pret} is an interesting case; in EUF, it was originally *\w{-é}, but it later changed to \w{-á}
 to distinguish it from the \s{2sg, 3sg pres ant}. The remaining forms—save the infinitives, which are derived from the
 tenses’ definite endings by analogy—originated from the PF simple past tenses.
 
-The table below lists the example paradigm of the verb *ad’hór* in the present anterior and preterite tenses.
+The table below lists the example paradigm of the verb \w{ad’hór} in the present anterior and preterite tenses.
 Observe that there is no difference between the \s{1pl, 2pl} active and passive.
 
-The participle suffixes coalesce with present participle affixes to form *êr*/*ệr* in the present anterior and *âr* in the preterite,
-where applicable, e.g. present *ad’hórâ* ‘loving’ becomes *ad’hórêr* ‘having loved’.
+The participle suffixes coalesce with present participle affixes to form \w{êr}/\w{ệr} in the present anterior and \w{âr} in the preterite,
+where applicable, e.g. present \w{ad’hórâ} ‘loving’ becomes \w{ad’hórêr} ‘having loved’.
 
 In both tenses, the suffixes coalesce with vowels before them, replacing them and nasalising them if
-they are already nasalised, e.g. *jvvaúríé* ‘I remembered’. If the verb form ends with a *nasal* vowel,
-the suffixes are simply appended, *jvŷ* ‘I lead’ to *jvŷé* ‘I led’.
+they are already nasalised, e.g. \w{jvvaúríé} ‘I remembered’. If the verb form ends with a \textit{nasal} vowel,
+the suffixes are simply appended, \w{jvŷ} ‘I lead’ to \w{jvŷé} ‘I led’.
 
 If a verb takes both and active and a passive person affix, the suffix aligns with the active affix; thus
-‘she loved me’ is *llavad’hórá* and not \**llavád’hóré*.
+‘she loved me’ is \w{llavad’hórá} and not *\w{llavád’hóré}.
 
 \begin{table}[H]
 \centering
@@ -1154,22 +1146,22 @@ If a verb takes both and active and a passive person affix, the suffix aligns wi
 
 \subsubsection{Preterite Anterior}
 The preterite anterior tense, sometimes also called the ‘pluperfect’, is used to describe events that happened before
-another event in the past, e.g. *jyá ad’hórâr* ‘I had loved’; it is formed using coalesced forms of the preterite participle and the preterite
-form of the verb *av́ár* ‘to have’.\footnote{Note that the modern preterite stem of *av́ár* is *y*.}
-The following table illustrates the underlying construction using *ad’hór*, though it is worth noting that these
+another event in the past, e.g. \w{jyá ad’hórâr} ‘I had loved’; it is formed using coalesced forms of the preterite participle and the preterite
+form of the verb \w{av́ár} ‘to have’.\footnote{Note that the modern preterite stem of \w{av́ár} is \w{y}.}
+The following table illustrates the underlying construction using \w{ad’hór}, though it is worth noting that these
 forms are not actually grammatical:
 
 \begin{table}[H]
 \centering
 \noindent\begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
 Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-\s{1st} &\*jyá ad’hórâr  &\*ryy’aû ad’hórâr   &&\s{1st} &\*vyá âd’hórár  &\*ryy’aû âd’hórár\\
-\s{2nd} &\*ḍyé ad’hórâr  &\*b’hyy’ẹ́ ad’hórâr  &&\s{2nd} &\*ḍyé âd’hórár  &\*b’hyy’ẹ́ âd’hórár\\
-\s{3m}  &\*lyé ad’hórâr  &\*lyé ad’hórâr      &&\s{3m}  &\*y’yé âd’hórár &\*lýÿé âd’hórár\\
-\s{3f}  &\*llyé ad’hórâr &\*llyé ad’hórâr     &&\s{3f}  &\*y’yé âd’hórár &\*lýÿé âd’hórár\\
-\s{3n}  &\*syé ad’hórâr  &\*lyé ad’hórâr      &&\s{3n}  &\*syÿé âd’hórár &\*lýÿé âd’hórár\\\cline{1-3}\cline{5-7}
-\s{inf}&\multicolumn{2}{c}{\it \*dyé ad’hórâr}&&\scshape inf&\multicolumn{2}{c}{\it \*hyé âd’hórár}\\
-\s{ptcp}&\multicolumn{2}{c}{\it \*yâr ad’hórâr}&&\s{ptcp}&\multicolumn{2}{c}{\it \*âyár âd’hórár}\\
+\s{1st} &*jyá ad’hórâr  &*ryy’aû ad’hórâr   &&\s{1st} &*vyá âd’hórár  &*ryy’aû âd’hórár\\
+\s{2nd} &*ḍyé ad’hórâr  &*b’hyy’ẹ́ ad’hórâr  &&\s{2nd} &*ḍyé âd’hórár  &*b’hyy’ẹ́ âd’hórár\\
+\s{3m}  &*lyé ad’hórâr  &*lyé ad’hórâr      &&\s{3m}  &*y’yé âd’hórár &*lýÿé âd’hórár\\
+\s{3f}  &*llyé ad’hórâr &*llyé ad’hórâr     &&\s{3f}  &*y’yé âd’hórár &*lýÿé âd’hórár\\
+\s{3n}  &*syé ad’hórâr  &*lyé ad’hórâr      &&\s{3n}  &*syÿé âd’hórár &*lýÿé âd’hórár\\\cline{1-3}\cline{5-7}
+\s{inf}&\multicolumn{2}{c}{\it *dyé ad’hórâr}&&\scshape inf&\multicolumn{2}{c}{\it *hyé âd’hórár}\\
+\s{ptcp}&\multicolumn{2}{c}{\it *yâr ad’hórâr}&&\s{ptcp}&\multicolumn{2}{c}{\it *âyár âd’hórár}\\
 \end{tabular}
 \caption{Preterite Anterior Construction.}\label{tab:preterite-ant}
 \end{table}
@@ -1177,13 +1169,13 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \noindent
 Based on this underlying principle, the actual preterite anterior forms can be constructed using a series of coalescence
 rules: first, if the participle starts with a consonant (which is only possible in the active as the passive will always have
-the passive participle prefix *â-* prepended to it), or the form of *av́ár* ends with a consonant (which is only the case
-in the participle) the two verbs forms are simply written as one word, e.g. *jyávvaúríhê* ‘I had remembered’.
+the passive participle prefix \w{â-} prepended to it), or the form of \w{av́ár} ends with a consonant (which is only the case
+in the participle) the two verbs forms are simply written as one word, e.g. \w{jyávvaúríhê} ‘I had remembered’.
 
 Otherwise, we have a collision of two vowels. The first vowel of the participle is erased. If it was nasal(ised),
-a level of nasalisation is added to the last vowel of the form of *av́ár*, then, the two forms concatenated as
-by the first rule, e.g. *ḍyéd’hórâr* ‘you had loved’, and *ḍyêd’hórár* ‘you had been loved’. Thus, the actual paradigm
-of *ad’hór* in the preterite anterior is as shown in Table~\ref{tab:adhor-paradigm-pret-ant} below.
+a level of nasalisation is added to the last vowel of the form of \w{av́ár}, then, the two forms concatenated as
+by the first rule, e.g. \w{ḍyéd’hórâr} ‘you had loved’, and \w{ḍyêd’hórár} ‘you had been loved’. Thus, the actual paradigm
+of \w{ad’hór} in the preterite anterior is as shown in Table~\ref{tab:adhor-paradigm-pret-ant} below.
 
 \begin{table}[H]
 \centering
@@ -1205,12 +1197,12 @@ are present, either may be used, depending on the dialect; for example, the pass
 literary language, whereas the active participle is more common in speech.
 
 The subjunctive and optative paradigms can be obtained using the same construction and follow the same coalescence
-rules: first, construct the appropriate form of *av́ár*, and the perform the merging with the appropriate indicative
-participle, e.g. \**jèsá ad’hórâr* > *jèsád’hórâr* (roughly ‘I should have had loved’\footnote{This is another of
+rules: first, construct the appropriate form of \w{av́ár}, and the perform the merging with the appropriate indicative
+participle, e.g. *\w{jèsá ad’hórâr} > \w{jèsád’hórâr} (roughly ‘I should have had loved’\footnote{This is another of
 those forms that has no real equivalent in English and is fairly untranslatable.}).
 
 Finally, as always, these forms are stressed on the last syllable of the stem of the actual verb; the coalesced form
-of *av́ár* is unstressed.
+of \w{av́ár} is unstressed.
 
 \subsubsection{Future I}\label{subsubsec:future-i}
 The future tenses, i.e. the Future I and II, Future Anterior (a tense similar to the future perfect), as well
@@ -1220,14 +1212,14 @@ except that there is a separate prefix for the infinitive.
 In the Future, much to the UF learner’s dismay, this prefix can go in two separate positions: either before the person marker(s) or
 inbetween the person marker(s) and the stem. The former case is more common in speech, while the later is more literary
 and strongly preferred in writing and poetry as well as in formal speech. But even in informal speech, the Future I alone
-will still not be enough to get by, as the Conditional, a *very* common tense, is formed using the Future II.
+will still not be enough to get by, as the Conditional, a \textit{very} common tense, is formed using the Future II.
 
-First, let us examine the former, simpler case, commonly called the Future I. The prefix is *aú-* if the verb form
-after it starts with a consonant (except glides), *aúr-* in all other cases; e.g. *aújad’hór* ‘I shall love’, but
-*aúrý’ad’hór* ‘it will love’. In the infinitive passive, it
-contracts with the initial *à-* or *á-* to *aú* or *aû*, e.g. *aûd’hór* ‘to be about to be loved’.\footnote{This too is
+First, let us examine the former, simpler case, commonly called the Future I. The prefix is \w{aú-} if the verb form
+after it starts with a consonant (except glides), \w{aúr-} in all other cases; e.g. \w{aújad’hór} ‘I shall love’, but
+\w{aúrý’ad’hór} ‘it will love’. In the infinitive passive, it
+contracts with the initial \w{à-} or \w{á-} to \w{aú} or \w{aû}, e.g. \w{aûd’hór} ‘to be about to be loved’.\footnote{This too is
 hard to translate literally.} No contraction happens
-if the infinitive starts with *â*, e.g. *aúrânvé* ‘to be about to be animated’. Since
+if the infinitive starts with \w{â}, e.g. \w{aúrânvé} ‘to be about to be animated’. Since
 there is little point in writing a table for just the prefixes, Table~\ref{tab:adhor-paradigm-future-1} instead shows the Future I paradigm
 of the verb \emph{ad’hór}.
 
@@ -1253,9 +1245,9 @@ not a problem in the Future I, since the prefix is never adjacent to the stem.}
 The vocalic and consonantal Future II affixes are shown in Tables~\ref{tab:future-2-vocalic}~and~\ref{tab:future-2-consonantal} below, respectively.
 
 The diachrony of these forms is somewhat unclear—especially that of the participles. It would appear, however, that they result from a coalescence
-of the personal pronouns with forms of some auxiliary (likely PF *avoir* and *aller*) as well as the PF future. It appears that
+of the personal pronouns with forms of some auxiliary (likely PF \pf{avoir} and \pf{aller}) as well as the PF future. It appears that
 the \s{2sg} is derived from the formal PF \s{2pl} pronoun, which is in line with the fact that the Future II is generally
-considered more formal than the almost colloquial Future I. The *v́* in the \s{2pl act} seems to be the result of metathesis.
+considered more formal than the almost colloquial Future I. The \w{v́} in the \s{2pl act} seems to be the result of metathesis.
 
 \begin{table}[H]
 \centering
@@ -1289,58 +1281,58 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 
 \Paragraph{Future Stem}
 Many verbs have a different future stem that is used in all future tenses (except the Future I); for example, the future
-stem of *vvaúríhe* ‘to remember’, is *vvaúríźe*; thus, we have
-*jvvaúríhe* ‘to remember’ but *jaúvvaúríźẹ́* ‘I shall remember’.
+stem of \w{vvaúríhe} ‘to remember’, is \w{vvaúríźe}; thus, we have
+\w{jvvaúríhe} ‘to remember’ but \w{jaúvvaúríźẹ́} ‘I shall remember’.
 
 Note also that these forms already include the
-active/passive affixes, which is why it’s *jaúvvaúríźẹ́* and not \**jaújvvaúríźẹ́* or \**jjaúvvaúríźẹ́*.
+active/passive affixes, which is why it’s \w{jaúvvaúríźẹ́} and not *\w{jaújvvaúríźẹ́} or *\w{jjaúvvaúríźẹ́}.
 As in the present, the dictionary form of the future
-stem is a verbal noun; thus, *vvaúríźe* roughly means ‘the act of being about to remember’.\footnote{As noted before, infinitive
+stem is a verbal noun; thus, \w{vvaúríźe} roughly means ‘the act of being about to remember’.\footnote{As noted before, infinitive
 and gerund forms of future tenses are difficult to translate into English.}
 
-The future *subjunctive* uses a different stem; for that, see §~\ref{subsec:subjunctive}.
+The future \textit{subjunctive} uses a different stem; for that, see §~\ref{subsec:subjunctive}.
 
-\Paragraph{Stem-final vowel elision and *-(ẹ)*}
+\Paragraph{Stem-final vowel elision and \w{-(ẹ)}}
 The future stem usually ends with a vowel, which is dropped if any future suffix or a suffix that starts with a vowel is added, e.g.
-*laúvvaúríźaú* ‘they will remember’, not \**laúvvaúríźeaú*. Note that in the case of future suffixes, even those that start
-with a consonant cause the vowel to be dropped. The only exception to this is the suffix *-(ẹ)*, which is found in a number of
-Future II forms; that suffix is dropped instead, e.g. *aúrvvaúríźe* ‘she will remember’, not \**aúrvvaúríźẹ*.
+\w{laúvvaúríźaú} ‘they will remember’, not *\w{laúvvaúríźeaú}. Note that in the case of future suffixes, even those that start
+with a consonant cause the vowel to be dropped. The only exception to this is the suffix \w{-(ẹ)}, which is found in a number of
+Future II forms; that suffix is dropped instead, e.g. \w{aúrvvaúríźe} ‘she will remember’, not *\w{aúrvvaúríźẹ}.
 
 \Paragraph{Nasal Stems}
 Some future stems are nasalising, which is the case if the final vowel is a nasal vowel; in such cases, that vowel
 is still dropped if a suffix is added, but if that suffix starts with a vowel, nasalisation is applied to it, e.g.
-in the case of *dír*, whose future stem is *dírẹ́*, we have *aúnraûdíraû* ‘we shall say’: the *-aú* suffix merges
-with the nasalisation of the final vowel to become *aû*. Unlike with regular stems, the Future II *-(ẹ)* *does*
-replace the final vowel and becomes *-ẹ́* for such verbs, e.g. *aúrdírẹ́* ‘he will say’, and \s{1sg fut pass}
-vocalic *-é* becomes *-ê*.
+in the case of \w{dír}, whose future stem is \w{dírẹ́}, we have \w{aúnraûdíraû} ‘we shall say’: the \w{-aú} suffix merges
+with the nasalisation of the final vowel to become \w{aû}. Unlike with regular stems, the Future II \w{-(ẹ)} \textit{does}
+replace the final vowel and becomes \w{-ẹ́} for such verbs, e.g. \w{aúrdírẹ́} ‘he will say’, and \s{1sg fut pass}
+vocalic \w{-é} becomes \w{-ê}.
 
-\Paragraph{*r-* Dropping}
-Initial *r* in Future II suffixes is dropped if the
-last consonant before the final vowel of the future stem is *w*, or an ʁ-coloured consonant such as *ź*, e.g.
-*laúvvaúríźe* ‘they will be remembered’, not \**laúvvaúríźre*. If the last consonant of the future stem is *r*, since
-any following vowel (whether nasalised or not) is deleted when a Future II suffix is added, the final *r* of the stem and
-the initial *-r* of the Future II suffixes that have one coalesce to *rr*, e.g. *b’haý’ad’hórérre* ‘you (\s{pl}) will
+\Paragraph{\w{r-} Dropping}
+Initial \w{r} in Future II suffixes is dropped if the
+last consonant before the final vowel of the future stem is \w{w}, or an ʁ-coloured consonant such as \w{ź}, e.g.
+\w{laúvvaúríźe} ‘they will be remembered’, not *\w{laúvvaúríźre}. If the last consonant of the future stem is \w{r}, since
+any following vowel (whether nasalised or not) is deleted when a Future II suffix is added, the final \w{r} of the stem and
+the initial \w{-r} of the Future II suffixes that have one coalesce to \w{rr}, e.g. \w{b’haý’ad’hórérre} ‘you (\s{pl}) will
 love’.
 
 \Paragraph{Affix Stacking}
-Note that when more than one affix is used, at most one can be a future affix, e.g. *jaúsyvvaúríźẹ́* ‘I shall remember it’
-and not \**jaúsaúrvvaúríźẹ́*. Generally, the active prefix will be the future affix, but it is possible to use the
-passive future affixes instead for emphasis e.g. *jy’aúrvvaúríźe* roughly ‘him, I shall remember’; often, this is
+Note that when more than one affix is used, at most one can be a future affix, e.g. \w{jaúsyvvaúríźẹ́} ‘I shall remember it’
+and not *\w{jaúsaúrvvaúríźẹ́}. Generally, the active prefix will be the future affix, but it is possible to use the
+passive future affixes instead for emphasis e.g. \w{jy’aúrvvaúríźe} roughly ‘him, I shall remember’; often, this is
 also used to aid in establishing a contrast to some other part of the sentence that does not have this inversion.
 
 Since some of the passive future affixes also have suffix parts—unlike the present affixes, where the passive forms are
 all prefixes—we can end up with multiple suffixes in addition to multiple prefixes, in which case active prefixes, instead
-of simply preceding the passive ones, can be thought of as effectively ‘wrapping’ them, e.g. *aúlaúvvaúríźey’ó* ‘we shall
-remember them’, which contains *laúvvaúríźe* ‘they will be remembered’.
+of simply preceding the passive ones, can be thought of as effectively ‘wrapping’ them, e.g. \w{aúlaúvvaúríźey’ó} ‘we shall
+remember them’, which contains \w{laúvvaúríźe} ‘they will be remembered’.
 
 Finally, as always, infinitive prefixes come first. If combined with other affixes, it will generally be the future affix,
-e.g. *haúlývvaúríźe* roughly ‘to be about to remember them’ but, as with passive affixes, variations are possible for emphasis
-or contrastive power, e.g. *dẹlaúvvaúríźe*, which puts more emphasis on ‘them’.
+e.g. \w{haúlývvaúríźe} roughly ‘to be about to remember them’ but, as with passive affixes, variations are possible for emphasis
+or contrastive power, e.g. \w{dẹlaúvvaúríźe}, which puts more emphasis on ‘them’.
 
 \Paragraph{Examples}
-Table~\ref{tab:future-2-adhor} below shows the complete (vocalic) Future II paradigm of the verb *ad’hór* ‘to love’, and
-Table~\ref{tab:future-2-vvaurihe} the complete (consonantal) Future II paradigm of II *vvaúríhe* ‘to remember’; recall
-that the future stems of these verbs are *ad’hórérẹ́* and *vvaúríźe*.
+Table~\ref{tab:future-2-adhor} below shows the complete (vocalic) Future II paradigm of the verb \w{ad’hór} ‘to love’, and
+Table~\ref{tab:future-2-vvaurihe} the complete (consonantal) Future II paradigm of II \w{vvaúríhe} ‘to remember’; recall
+that the future stems of these verbs are \w{ad’hórérẹ́} and \w{vvaúríźe}.
 
 \begin{table}[H]
 \centering
@@ -1354,7 +1346,7 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \s{inf}&\multicolumn{2}{c}{\it dad’hóréré}&&\scshape inf&\multicolumn{2}{c}{\it had’hórérẹ́}\\
 \s{ptcp}&\multicolumn{2}{c}{\it ad’hórérŷr}&&\s{ptcp}&\multicolumn{2}{c}{\it ád’hórérýr}\\
 \end{tabular}
-\caption{Vocalic Future II Paradigm of *ad’hór*.}\label{tab:future-2-adhor}
+\caption{Vocalic Future II Paradigm of \w{ad’hór}.}\label{tab:future-2-adhor}
 \end{table}
 
 \begin{table}[H]
@@ -1369,7 +1361,7 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \s{inf}&\multicolumn{2}{c}{\it dẹvvaúríźè}&&\scshape inf&\multicolumn{2}{c}{\it haúvvaúríźe}\\
 \s{ptcp}&\multicolumn{2}{c}{\it vvaúríźŷ}&&\scshape ptcp&\multicolumn{2}{c}{\it ávvaúríźý}\\
 \end{tabular}
-\caption{Consonantal Future II Paradigm of *vvaúríhe*.}\label{tab:future-2-vvaurihe}
+\caption{Consonantal Future II Paradigm of \w{vvaúríhe}.}\label{tab:future-2-vvaurihe}
 \end{table}
 
 \subsubsection{Future Anterior}
@@ -1409,16 +1401,16 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 
 \noindent
 Note that again, nasalised stems add another level of nasalisation, and vowel-dropping still applies, but
-this time, there is no *-ẹ* dropping, since none of the affixes end with *ẹ* anymore.
+this time, there is no \w{-ẹ} dropping, since none of the affixes end with \w{ẹ} anymore.
 
 \Paragraph{Coalescence}
 All vowel suffixes coalesce with the final vowel of the stem; if the suffix vowel is nasal, a level of nasalisation is
-added, e.g. *aúrvvaúrízá* ‘he will have remembered’ from the future stem *vvaúríźe*. Note also that the *ź* is lenited
-to *z*; the quality of the suffix vowel overrides that of the stem vowel. *r* contraction still happens as in the
+added, e.g. \w{aúrvvaúrízá} ‘he will have remembered’ from the future stem \w{vvaúríźe}. Note also that the \w{ź} is lenited
+to \w{z}; the quality of the suffix vowel overrides that of the stem vowel. \w{r} contraction still happens as in the
 Future II.
 
 Tables~\ref{tab:future-ant-adhor}~and~\ref{tab:future-ant-vvaurihe} below show
-the paradigm of the verbs *ad’hór* ‘to love’ and *vvaúríhe* ‘to remember’ in the Future Anterior tense. Note that
+the paradigm of the verbs \w{ad’hór} ‘to love’ and \w{vvaúríhe} ‘to remember’ in the Future Anterior tense. Note that
 both the rules for the Future Anterior tense as well as the Present Anterior tense apply here.
 
 \begin{table}[H]
@@ -1433,7 +1425,7 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \s{inf}&\multicolumn{2}{c}{\it dad’hórérâ}&&\scshape inf&\multicolumn{2}{c}{\it had’hórérậ}\\
 \s{ptcp}&\multicolumn{2}{c}{\it ad’hórérŷrér}&&\s{ptcp}&\multicolumn{2}{c}{\it ád’hórérýrér}\\
 \end{tabular}
-\caption{Vocalic Future Anterior Paradigm of *ad’hór*.}\label{tab:future-ant-adhor}
+\caption{Vocalic Future Anterior Paradigm of \w{ad’hór}.}\label{tab:future-ant-adhor}
 \end{table}
 
 \begin{table}[H]
@@ -1448,12 +1440,12 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \s{inf}&\multicolumn{2}{c}{\it dẹvvaúríźá}&&\scshape inf&\multicolumn{2}{c}{\it haúvvaúríźá}\\
 \s{ptcp}&\multicolumn{2}{c}{\it vvaúríźŷr}&&\scshape ptcp&\multicolumn{2}{c}{\it ávvaúríźýr}\\
 \end{tabular}
-\caption{Consonantal Future Anterior Paradigm of *vvaúríhe*.}\label{tab:future-ant-vvaurihe}
+\caption{Consonantal Future Anterior Paradigm of \w{vvaúríhe}.}\label{tab:future-ant-vvaurihe}
 \end{table}
 
 \subsubsection{Conditional I and II}\label{subsubsec:conditional}
 The Conditional tenses are fairly simple—so long as you know the Future II and Future Anterior, that is. Both Conditionals
-are formed by adding the *-ss(a)-* infix between the Future II stem and any suffixes.
+are formed by adding the \w{-ss(a)-} infix between the Future II stem and any suffixes.
 
 \begin{table}[H]
 \tabcolsep4pt
@@ -1468,25 +1460,25 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \s{inf}&\multicolumn{2}{c}{\it dẹvvaúríźessá}&& \s{inf}&\multicolumn{2}{c}{\it haúvvaúríźesse}\\
 \s{ptcp}&\multicolumn{2}{c}{\it vvaúríźessŷr}&&\s{ptcp}&\multicolumn{2}{c}{\it ávvaúríźessý}\\
 \end{tabular}
-\caption{Consonantal Conditional II Paradigm of *vvaúríhe*.}\label{tab:cond-ii-vvaurihe}
+\caption{Consonantal Conditional II Paradigm of \w{vvaúríhe}.}\label{tab:cond-ii-vvaurihe}
 \end{table}
 
 \noindent The Conditional I is formed from
-the Future II, and the Conditional II from the Future Anterior. The *a* in *-ss(a)-* is omitted if
-the suffix after the infix starts with a vowel, except for *ẹ*, which it replaces. Table~\ref{tab:cond-ii-vvaurihe}
-shows the consonantal Conditional II paradigm of *vvaúríhe* ‘to remember’. Note that the *ss* in this form
-is *never* lenited.
+the Future II, and the Conditional II from the Future Anterior. The \w{a} in \w{-ss(a)-} is omitted if
+the suffix after the infix starts with a vowel, except for \w{ẹ}, which it replaces. Table~\ref{tab:cond-ii-vvaurihe}
+shows the consonantal Conditional II paradigm of \w{vvaúríhe} ‘to remember’. Note that the \w{ss} in this form
+is \textit{never} lenited.
 
 The conditional tenses are mainly used in the apodoses of conditional clauses. On their own, their meaning
-is similar to that of the English ‘would’ or ‘could’, e.g. *jaúvvaúríźessẹ́* ‘I would love’. As such, the Conditional I is
+is similar to that of the English ‘would’ or ‘could’, e.g. \w{jaúvvaúríźessẹ́} ‘I would love’. As such, the Conditional I is
 used to express a future-in-the-past, whereas the Conditional II, even though it is morphologically a future tense,
-is used to express a hypothetical past, e.g. *jaúvvaúríźessệ* ‘I could have loved’. In reported speech, this can lead
+is used to express a hypothetical past, e.g. \w{jaúvvaúríźessệ} ‘I could have loved’. In reported speech, this can lead
 to a subjunctive conditional construction.
 
 \subsection{Miscellaneous Forms}
 \subsubsection{The Gnomic}\label{subsubsec:gnomic}
-The gnomic tense is marked by the infix *-j(ú)-* after the stem: *ad’hór* ‘to love’ to *rad’hórjô* ‘We love (for ever)’.
-The *ú* is omitted if the infix is followed by the vowel, in which case it causes nasalisation. The presence of the gnomic
+The gnomic tense is marked by the infix \w{-j(ú)-} after the stem: \w{ad’hór} ‘to love’ to \w{rad’hórjô} ‘We love (for ever)’.
+The \w{ú} is omitted if the infix is followed by the vowel, in which case it causes nasalisation. The presence of the gnomic
 is does not affect how verbs are negated.
 
 The gnomic is used to express general truths, habitual actions, or timeless statements. It is more common in
@@ -1494,19 +1486,19 @@ literary language than in speech, which prefers to substitute the present tense 
 of UF also tend to not make use of the gnomic at all.
 
 \subsubsection{Dative Affixes}\label{subsubsec:dative-affixes}
-The dative affixes *-vé* ‘me, us’, *-b’hẹ* ‘you’, and *-ḷẹ* ‘him, her, it, them’ are used in conjunction with
+The dative affixes \w{-vé} ‘me, us’, \w{-b’hẹ} ‘you’, and \w{-ḷẹ} ‘him, her, it, them’ are used in conjunction with
 ditransitive verbs and are invariant to tense, gender, number, and mood. A verb can only have one dative affix, and
 the dative affix is always placed last after all other affixes and does not coalesce, lenite, or otherwise modify
-the rest of the verb, e.g. *dedónẹ́* ‘to bestow’ to *dedónẹ́ḷẹ* ‘to bestow upon him’.
+the rest of the verb, e.g. \w{dedónẹ́} ‘to bestow’ to \w{dedónẹ́ḷẹ} ‘to bestow upon him’.
 
 These affixes are generally not used if the \s{dat} assumes the sense of ‘for someone’, or ‘to someone’; for instance, while
-*fúr* ‘to provide’ takes a \s{dat} as its indirect object, e.g. *jfúrb’hẹ* ‘I provide you (with something)’, the verb
-*fér* ‘to do, make’ does not, and thus, it is not e.g. \**jsyférvé*, but rather *jsyfér asvẹ* ‘I did it for me/us’, where
-*asvè* is the \s{dat} inflexion of the \s{1sg} pronoun.
+\w{fúr} ‘to provide’ takes a \s{dat} as its indirect object, e.g. \w{jfúrb’hẹ} ‘I provide you (with something)’, the verb
+\w{fér} ‘to do, make’ does not, and thus, it is not e.g. *\w{jsyférvé}, but rather \w{jsyfér asvẹ} ‘I did it for me/us’, where
+\w{asvè} is the \s{dat} inflexion of the \s{1sg} pronoun.
 
 Lastly, which one—the \s{dat} affixes or a \s{dat} pronoun—is ultimately used often depends on the verb in question. Some speakers prefer
-one over the other with certain verbs, and some verbs regularly admit both, albeit with different meanings, e.g. *jsydíréḷẹ*
-‘I said it to him’ vs *jsydíré aslẹ* ‘I said it for his sake’.
+one over the other with certain verbs, and some verbs regularly admit both, albeit with different meanings, e.g. \w{jsydíréḷẹ}
+‘I said it to him’ vs \w{jsydíré aslẹ} ‘I said it for his sake’.
 
 \subsubsection{Imperative}
 The imperative mood exists only in the present tense, and only in the second and third person. It is formed by
@@ -1521,34 +1513,34 @@ affixing the following suffixes to the stem.
 \caption{Imperative Affixes.}\label{tab:imperative-affixes}
 \end{table}
 
-\noindent The diachrony of these forms is likely from subjunctive constructions with \s{pf} \**que* in the active
-and from suffixed pronouns in the passive. Note that imperative affixes are added *in place* of
-present active/passive affixes, e.g. *c’hedír!* ‘speak!’, not \**c’heḍẹdír*. As usual, the parenthesised
-vowels are omitted if the verb form starts with a vowel, e.g. *c’had’hór!* ‘love!’.
+\noindent The diachrony of these forms is likely from subjunctive constructions with \s{pf} *\pf{que} in the active
+and from suffixed pronouns in the passive. Note that imperative affixes are added \textit{in place} of
+present active/passive affixes, e.g. \w{c’hedír!} ‘speak!’, not *\w{c’heḍẹdír}. As usual, the parenthesised
+vowels are omitted if the verb form starts with a vowel, e.g. \w{c’had’hór!} ‘love!’.
 
 Imperative affixes can be combined with active/passive affixes, though, as usual, an active imperative prefix
 can only be paired with a passive present affix, and vice versa. Active imperative prefixes are always placed
-first, e.g. *c’hevad’hór!* ‘love me!’, and passive affixes are placed last, e.g. *b’had’hórérá* ‘be loved by
+first, e.g. \w{c’hevad’hór!} ‘love me!’, and passive affixes are placed last, e.g. \w{b’had’hórérá} ‘be loved by
 us!’. The negation of the imperative uses the subjunctive and is explained in §~\ref{subsubsec:negated-subjunctive}.
 
 \subsection{Subjunctive}\label{subsec:subjunctive}
 The UF subjunctive forms are fortunately fairly simple: they use the same affixes as the present, past, and future
 forms, except that each verb has a different, often irregular, subjunctive stem, which is generally formed
-by adding an *-s* to the end of the corresponding indicative stem, e.g. *ad’hór* ‘to love’ to *ad’hórs*;
-thus we have, e.g. *jad’hórs* ‘I may love’, and *rád’hórsó* ‘We may love’.
+by adding an \w{-s} to the end of the corresponding indicative stem, e.g. \w{ad’hór} ‘to love’ to \w{ad’hórs};
+thus we have, e.g. \w{jad’hórs} ‘I may love’, and \w{rád’hórsó} ‘We may love’.
 
-The future subjunctive stem is always regular and formed by adding the desinence *-śe* to the end of the future stem. For example,
-the future stem of *ad’hór* is *ad’hórérẹ́*, so the future subjunctive stem is *ad’hórérẹ́śe*; similarly, the future
-stem of *vvaúríhe* is *vvaúríźe*, so the future subjunctive stem is *vvaúríźeśe*. The subjunctive stem coalesces like
+The future subjunctive stem is always regular and formed by adding the desinence \w{-śe} to the end of the future stem. For example,
+the future stem of \w{ad’hór} is \w{ad’hórérẹ́}, so the future subjunctive stem is \w{ad’hórérẹ́śe}; similarly, the future
+stem of \w{vvaúríhe} is \w{vvaúríźe}, so the future subjunctive stem is \w{vvaúríźeśe}. The subjunctive stem coalesces like
 a regular non-nasal future stem.
 
 There are several main uses of the UF subjunctive, each of which we shall examine in more detail below:
 \begin{enum}
-\item in reported speech, e.g. *lladírá vad’hórhé* ‘she said she loved me’;
-\item with certain subordinating conjunctions, such as *b’he* ‘so that’;
-\item to express deontic modality, e.g. *ḍẹḅars* ‘you may leave’;
-\item as a jussive, e.g. *rad’hesó* ‘let’s go’;
-\item as a negative imperative, e.g. *sá ḍẹḅars* ‘don’t leave’;
+\item in reported speech, e.g. \w{lladírá vad’hórhé} ‘she said she loved me’;
+\item with certain subordinating conjunctions, such as \w{b’he} ‘so that’;
+\item to express deontic modality, e.g. \w{ḍẹḅars} ‘you may leave’;
+\item as a jussive, e.g. \w{rad’hesó} ‘let’s go’;
+\item as a negative imperative, e.g. \w{sá ḍẹḅars} ‘don’t leave’;
 \item irrealis conditionals (see §~\ref{subsec:conditionals});
 \item in a serial verb construction in the future, expressing purpose;
 \item in \s{aci}s and \s{pci}s.
@@ -1556,14 +1548,14 @@ There are several main uses of the UF subjunctive, each of which we shall examin
 
 \subsubsection{Reported Speech}
 UF does not use backshifting in reported speech, but rather, the corresponding subjunctive form is used. For instance,
-*jḍad’hór* ‘I love you’ becomes *jdíré jḍad’hórs* ‘I said I love you’. Note that the tense stays the same in this
-example: present indicative becomes present subjunctive. Accordingly, *jḍad’hóré* ‘I loved you’ becomes *jdíré
-jḍad’hórsé* ‘I said I loved you’.
+\w{jḍad’hór} ‘I love you’ becomes \w{jdíré jḍad’hórs} ‘I said I love you’. Note that the tense stays the same in this
+example: present indicative becomes present subjunctive. Accordingly, \w{jḍad’hóré} ‘I loved you’ becomes \w{jdíré
+jḍad’hórsé} ‘I said I loved you’.
 
 Consequently, the tense of the verb in reported speech is independent of the tense of the matrix clause, e.g.
-*b’had’hrệ* ‘I shall go’ becomes *jdíré b’had’hrẹ́sé* ‘I said I would go’,\footnote{Note the lenition here because
-of the present anterior suffix: *b’had’hrẹ́sé*, not \**b’had’hrẹ́śé*.} with *b’had’hrẹ́sé* being the Future II
-subjunctive form of *b’had’hrẹ́*.
+\w{b’had’hrệ} ‘I shall go’ becomes \w{jdíré b’had’hrẹ́sé} ‘I said I would go’,\footnote{Note the lenition here because
+of the present anterior suffix: \w{b’had’hrẹ́sé}, not *\w{b’had’hrẹ́śé}.} with \w{b’had’hrẹ́sé} being the Future II
+subjunctive form of \w{b’had’hrẹ́}.
 
 \subsubsection{Dependent Clauses}
 The following subordinating conjunctions take the subjunctive:
@@ -1586,81 +1578,81 @@ The following subordinating conjunctions take the subjunctive:
 \end{dlist}
 }
 
-\noindent Note that not all subordinating conjunctions take the subjunctive. For instance, the conjunction *y’is*
-‘because’ takes the indicative: *jḍad’hórs c’haúr* ‘as I love you’, but *jḍad’hór y’ís* ‘because I love you’.
+\noindent Note that not all subordinating conjunctions take the subjunctive. For instance, the conjunction \w{y’is}
+‘because’ takes the indicative: \w{jḍad’hórs c’haúr} ‘as I love you’, but \w{jḍad’hór y’ís} ‘because I love you’.
 
 \subsubsection{Deontic Modality}
 The subjunctive can also be used on its own, in which case it assumes a deontic or jussive meaning;
-in the first person, it is generally a jussive, e.g. *rad’hesó* ‘let’s go’, but the jussive sense is not restricted
-to the first person, e.g. *lẹsyrét’hes* ‘he take care of it’ (in the sense of ‘let him take care of it’).
+in the first person, it is generally a jussive, e.g. \w{rad’hesó} ‘let’s go’, but the jussive sense is not restricted
+to the first person, e.g. \w{lẹsyrét’hes} ‘he take care of it’ (in the sense of ‘let him take care of it’).
 
-The deontic sense is also apparent from that last example: *lẹsyrét’hes* can also be interpreted to mean ‘he
+The deontic sense is also apparent from that last example: \w{lẹsyrét’hes} can also be interpreted to mean ‘he
 may take care of it’, which can either be a statement of permission or a condescending order. Note that even
-though UF also has a word for ‘let’ (namely *le*), it is mostly used in questions or commands, while the
+though UF also has a word for ‘let’ (namely \w{le}), it is mostly used in questions or commands, while the
 deontic subjunctive is used to grant permission.
 
 \subsubsection{Negation}\label{subsubsec:negated-subjunctive}
-The subjunctive is negated with the particle *sá*, rather than with *asý’ýâ*. The particle *sá* is placed
-immediately before the verb form it negates, e.g. *sá jḍad’hórs c’haúr* ‘as I don’t love you’. It is reduced
-to *s’* before vowels, but interestingly, it does not cause nasalisation in that case, e.g. *s’aúsydíssâ c’haúr*
+The subjunctive is negated with the particle \w{sá}, rather than with \w{asý’ýâ}. The particle \w{sá} is placed
+immediately before the verb form it negates, e.g. \w{sá jḍad’hórs c’haúr} ‘as I don’t love you’. It is reduced
+to \w{s’} before vowels, but interestingly, it does not cause nasalisation in that case, e.g. \w{s’aúsydíssâ c’haúr}
 ‘as we didn’t say it’.
 
 On its own, the negated subjunctive is used to express a negative imperative in the second and third person,
-e.g. *sá ḍẹḅars* ‘don’t leave’, and a negative jussive in the first person e.g. *sá rad’hesó*, ‘let’s not go’.
+e.g. \w{sá ḍẹḅars} ‘don’t leave’, and a negative jussive in the first person e.g. \w{sá rad’hesó}, ‘let’s not go’.
 
 \subsubsection{Infinitive}
-Most curiously, UF has a *subjunctive infinitive*. This form is almost exclusively used to express deontic modality
-in \s{aci}s and \s{pci}s. For example, the form *dad’hórs*, the subjunctive infinitive of *ad’hór*, while defying any attempt
+Most curiously, UF has a \textit{subjunctive infinitive}. This form is almost exclusively used to express deontic modality
+in \s{aci}s and \s{pci}s. For example, the form \w{dad’hórs}, the subjunctive infinitive of \w{ad’hór}, while defying any attempt
 at translation on its own,\footnote{The best attempt one could make to translate this would be something along the
 lines of ‘to should love’, but that is not exactly grammatical in English.} can be translated as ‘should’ when combined
-with an \s{acc} or \s{part}, e.g. *sráhó dad’hórs* roughly means ‘that fish should love’, though this form can only
+with an \s{acc} or \s{part}, e.g. \w{sráhó dad’hórs} roughly means ‘that fish should love’, though this form can only
 occur as the complement of a verb.
 
 \subsubsection{Future Subjunctive of Intent or Purpose}
 The future subjunctive is used in a serial verb construction with another finite verb to express purpose or intent: a
 serial verb construction is a clause with two finite verbs; in this case, one combines any finite verb with
-a finite subjunctive Future II, e.g. *jsyc’hrír jaúvvaúríźeśẹ́* ‘I’m writing
+a finite subjunctive Future II, e.g. \w{jsyc’hrír jaúvvaúríźeśẹ́} ‘I’m writing
 it down so I don’t forget’; the two needn’t agree in person, and word order, as ever with inflected forms, is not fixed,
-e.g. *náý’aúréśaú sybźâ* ‘It was needed
+e.g. \w{náý’aúréśaú sybźâ} ‘It was needed
 for us to understand’.\footnote{Lit. ‘I write it [down]; I should-will remember’ and ‘It was needed, so that we
 should-will understand’, respectively.}
 
-The main semantic difference between this construction and *b’he* is that the latter strictly means ‘in order to’ or ‘so that’,
+The main semantic difference between this construction and \w{b’he} is that the latter strictly means ‘in order to’ or ‘so that’,
 whereas this can be a bit broader in meaning; however, the future subjunctive of intent is also sometimes used to mean ‘in order to’
 or ‘so that’.
 
 \subsection{Optative}\label{subsec:optative}
 The UF optative is used to express wishes, hopes, as well as in certain conditional constructions. It is formed
-by prefixing *y’(ẹ)\L* to the indicative (or future) stem,\footnote{The use of the (future) subjunctive stem to form the optative, with
-no change in overall meaning, is fairly archaic and only encountered in poetry in modern UF.} e.g. *dẹvy’ẹvvaúríhe* ‘may
-you remember me’. As ever, the *(ẹ)* is omitted if the stem starts with a vowel.
+by prefixing \w{y’(ẹ)\L} to the indicative (or future) stem,\footnote{The use of the (future) subjunctive stem to form the optative, with
+no change in overall meaning, is fairly archaic and only encountered in poetry in modern UF.} e.g. \w{dẹvy’ẹvvaúríhe} ‘may
+you remember me’. As ever, the \w{(ẹ)} is omitted if the stem starts with a vowel.
 
-In the future, this generally does *not* change whether the consonantal or vocalic affixes are used! If the stem was
+In the future, this generally does \textit{not} change whether the consonantal or vocalic affixes are used! If the stem was
 vocalic, the vocalic affixes are also used in the optative. This is because the optative is conceptually appended to the prefix rather than
 prepended to the stem. Moreover, some prefixes in the future end with
-*ý’*, which this is dropped in the optative: e.g. *náý’ad’hóraú* ‘we shall love’ becomes *náy’ad’hóraú* ‘may we love’ (the
-difference is minor: *ý’* vs *y’*). A bare optative is difficult to translate into English; a more precise explanation of what
+\w{ý’}, which this is dropped in the optative: e.g. \w{náý’ad’hóraú} ‘we shall love’ becomes \w{náy’ad’hóraú} ‘may we love’ (the
+difference is minor: \w{ý’} vs \w{y’}). A bare optative is difficult to translate into English; a more precise explanation of what
 these forms actually mean will be given below. Uses of the optative include:
 
 \begin{enum}
 \item wishes, hopes, dreams, and aspirations;
-\item with certain subordinating conjunctions, such as *auha* ‘in case’;
+\item with certain subordinating conjunctions, such as \w{auha} ‘in case’;
 \item talking about fears;
 \item counterfactual conditionals (see §~\ref{subsec:conditionals}).
 \end{enum}
 
 \subsubsection{Wishes and Hopes}
-The most traditional use of the optative is to express wishes and hopes, e.g. *dẹvy’ẹvvaúríhe* ‘may you remember me’. In
+The most traditional use of the optative is to express wishes and hopes, e.g. \w{dẹvy’ẹvvaúríhe} ‘may you remember me’. In
 the present or future tense, this use indicates a wish for something to happen; in the present tense, its meaning is
 that of a wish for a condition to be true in the present in the face of uncertainty or lack of knowledge; thus, the
-actual meaning of *dẹvy’ẹvvaúríhe* is roughly ‘I hope that you remember me’.\footnote{The context of this could be e.g.
+actual meaning of \w{dẹvy’ẹvvaúríhe} is roughly ‘I hope that you remember me’.\footnote{The context of this could be e.g.
 meeting someone again after a long time apart and hoping that they still remember you.} In the future tense, it indicates a wish
-that a situation will be true in the future, e.g. *b’hávy’ẹvvaúríźe* ‘may you remember me’.
+that a situation will be true in the future, e.g. \w{b’hávy’ẹvvaúríźe} ‘may you remember me’.
 
 In the past tenses, the optative indicates dismay, regret, or disappointment that something did not happen, e.g.
-\s{pres ant} *dẹvy’ẹvvaúríhá* ‘if only you had remembered me’. The optative can also be combined with the Conditional I
+\s{pres ant} \w{dẹvy’ẹvvaúríhá} ‘if only you had remembered me’. The optative can also be combined with the Conditional I
 to convey uncertainty about a future wish, as well as with the Conditional II to express extreme regret over a past event;
-certain verbs, e.g. *ub’hrá* ‘can, may, might’, also have constructions with the optative.
+certain verbs, e.g. \w{ub’hrá} ‘can, may, might’, also have constructions with the optative.
 
 \subsubsection{Dependent Clauses}
 The following subordinating conjunctions take the optative:
@@ -1681,21 +1673,21 @@ The following subordinating conjunctions take the optative:
 }
 
 \subsubsection{Negation and Verbs of Fearing}\label{subsubsec:negated-optative}
-As with the negated subjunctive, the negated optative also has a separate negation particle, namely *t’hé\N{}*
-(*t’h’* with no nasalisation before vowels). Note that a negated optative indicates that the speaker wishes that something does
-or had not happened, e.g. *t’hé dẹvy’ẹvvaúríhá* ‘if only you had not remembered me’. The negation thus negates
+As with the negated subjunctive, the negated optative also has a separate negation particle, namely \w{t’hé\N{}}
+(\w{t’h’} with no nasalisation before vowels). Note that a negated optative indicates that the speaker wishes that something does
+or had not happened, e.g. \w{t’hé dẹvy’ẹvvaúríhá} ‘if only you had not remembered me’. The negation thus negates
 the wish, and not the act of wishing; for the latter, the indicative or subjunctive together with a verb such
-as *sḅé* ‘to wish’ are used instead.
+as \w{sḅé} ‘to wish’ are used instead.
 
 Verbs of fearing are typically construed with a dependent clause in the negated optative, e.g. *jréd’hé
 t’hé b’háy’ẹbharẹ́* ‘I was afraid lest you might leave’.
 
 \subsection{The Conjugation of the Copula \textit{eḍ}}\label{subsec:ed-paradigm}
-There is only one irregular verb in UF, namely the copula *eḍ*. All of its forms are highly irregular. The copula lacks
+There is only one irregular verb in UF, namely the copula \w{eḍ}. All of its forms are highly irregular. The copula lacks
 passive forms, as well as the Future I.  The preterite anterior is a periphrastic construction of the preterite participle
-of *eḍ* and its present tense,\footnote{The original morphological preterite anterior tense of \textit{eḍ} was lost in
-Late Middle UF.} e.g. *t’hẹdâ vy’í* ‘I had been’. Note that only the participle is
-inflected for mood in this case, e.g. subjunctive *t’hẹrâ vy’í* ‘I should have been’.
+of \w{eḍ} and its present tense,\footnote{The original morphological preterite anterior tense of \textit{eḍ} was lost in
+Late Middle UF.} e.g. \w{t’hẹdâ vy’í} ‘I had been’. Note that only the participle is
+inflected for mood in this case, e.g. subjunctive \w{t’hẹrâ vy’í} ‘I should have been’.
 %\footnote{At the same time, the \s{1sg} forms seem to be derived from the \s{acc} of the PF \s{1sg} pronoun,
 %for unknown reasons.}
 
@@ -1753,22 +1745,22 @@ inflected for mood in this case, e.g. subjunctive *t’hẹrâ vy’í* ‘I sho
 
 \noindent All forms of the
 copula are shown in Tables~\ref{tab:ed-paradigm-ind}–\ref{tab:ed-paradigm-opt}, except for the Conditional I and II,
-which are formed by infixing *-ss-* before the *-ér*, *-êr* desinences and *-ssa-* before the *-ra* and *-rá* desinences of the
+which are formed by infixing \w{-ss-} before the \w{-ér}, \w{-êr} desinences and \w{-ssa-} before the \w{-ra} and \w{-rá} desinences of the
 Future II and Future Anterior forms, respectively.
 
 Unlike nearly every other word in the language, disyllabic forms of the copula are stressed on
-the first syllable, and trisyllabic forms are stressed on the second syllable—except for *hérarâ*, *férarâ*, *héráâ*,
-and *féráâ*, which are stressed on the first syllable. All other participle forms are stressed on the last syllable.
-In forms of the copula, *ae* is pronounced /ai̯/.
+the first syllable, and trisyllabic forms are stressed on the second syllable—except for \w{hérarâ}, \w{férarâ}, \w{héráâ},
+and \w{féráâ}, which are stressed on the first syllable. All other participle forms are stressed on the last syllable.
+In forms of the copula, \w{ae} is pronounced /ai̯/.
 
 The etymology of these forms is mostly from a gradual simplification of coalesced forms of the personal
 pronouns with the PF copula. To compensate for the fact that PF lacks certain forms that are present in UF, some
-of the forms were coined by analogy. For instance, the \s{pres ant inf} *éfyḍ* is derived from the \s{pres ant}
-stem \**fy* and the \s{pres inf} *éḍ*, and the same is true for the \s{pret inf} *ét’hẹd*.
+of the forms were coined by analogy. For instance, the \s{pres ant inf} \w{éfyḍ} is derived from the \s{pres ant}
+stem *\w{fy} and the \s{pres inf} \w{éḍ}, and the same is true for the \s{pret inf} \w{ét’hẹd}.
 
 \subsection{Numerals}\label{subsec:numerals}
-UF has four sets of numerals: cardinals, e.g. *dý* ‘two’; ordinals, e.g. *dýzy’ê* ‘second’; multipliers, e.g. *dub*
-‘twice’; and fractions, e.g. *déví* ‘half’. The numerals are shown in the table below.
+UF has four sets of numerals: cardinals, e.g. \w{dý} ‘two’; ordinals, e.g. \w{dýzy’ê} ‘second’; multipliers, e.g. \w{dub}
+‘twice’; and fractions, e.g. \w{déví} ‘half’. The numerals are shown in the table below.
 
 {
 \itshape
@@ -1825,29 +1817,29 @@ UF has four sets of numerals: cardinals, e.g. *dý* ‘two’; ordinals, e.g. *d
 
 \noindent
 The numbers 1–20 are irregular;
-after that, ordinals are formed by adding *-y’ê* to the cardinal and multipliers by adding *-ḍyḅ* to the cardinal;
-fractionals are more irregular: the tens lose nasalisation of the final vowel, e.g. *dýb’hé* ‘forty’ vs *dýb’he*
-‘(a) fortieth’; in the hundreds and after, a final *-(á)ḍ* is added instead. Extra syllables added by non-cardinal
+after that, ordinals are formed by adding \w{-y’ê} to the cardinal and multipliers by adding \w{-ḍyḅ} to the cardinal;
+fractionals are more irregular: the tens lose nasalisation of the final vowel, e.g. \w{dýb’hé} ‘forty’ vs \w{dýb’he}
+‘(a) fortieth’; in the hundreds and after, a final \w{-(á)ḍ} is added instead. Extra syllables added by non-cardinal
 forms do not count as part of the stem for the purpose of stress.
 
-After 20, numbers of different orders of magnitude are combined with the particle *ed*, which is solely used for this
-exact purpose. After a vowel, it is reduced to *’d*, e.g. *sá’d ý* ‘101’ or *sá’d b’hé’d ý* ‘121’ from *sá* ‘100’,
-*b’hé* ‘20’ and *ý* ‘one’. In non-cardinals, only the last part is of ordinal, multiplier,
-or fractional form, e.g. *sá’d b’hé’d séḅ* ‘121 times’.
+After 20, numbers of different orders of magnitude are combined with the particle \w{ed}, which is solely used for this
+exact purpose. After a vowel, it is reduced to \w{’d}, e.g. \w{sá’d ý} ‘101’ or \w{sá’d b’hé’d ý} ‘121’ from \w{sá} ‘100’,
+\w{b’hé} ‘20’ and \w{ý} ‘one’. In non-cardinals, only the last part is of ordinal, multiplier,
+or fractional form, e.g. \w{sá’d b’hé’d séḅ} ‘121 times’.
 
 In writing, non-cardinals are frequently abbreviated, preferably with superscripts if possible. Ordinals are abbreviated
-with *\Sup{y’ê}*, e.g. *27\Sup{y’ê}* ‘27th’, except for numbers ending
-with *révy’ẹ́* ‘first’, which are abbreviated with *\Sup{y’ẹ́}* instead, e.g. *21\Sup{y’ẹ́}* ‘21st’, as
-well as numbers ending with *séc̣é* ‘fifth’, which are abbreviated with *\Sup{c̣é}* instead, e.g. *25\Sup{c̣é}*
+with \w{\Sup{y’ê}}, e.g. \w{27\Sup{y’ê}} ‘27th’, except for numbers ending
+with \w{révy’ẹ́} ‘first’, which are abbreviated with \w{\Sup{y’ẹ́}} instead, e.g. \w{21\Sup{y’ẹ́}} ‘21st’, as
+well as numbers ending with \w{séc̣é} ‘fifth’, which are abbreviated with \w{\Sup{c̣é}} instead, e.g. \w{25\Sup{c̣é}}
 ‘25th’.
 
-Multipliers are abbreviated with subscripts if possible; those ending with *séḅ* ‘once’ to *nýḅ* ‘nine times’ are
+Multipliers are abbreviated with subscripts if possible; those ending with \w{séḅ} ‘once’ to \w{nýḅ} ‘nine times’ are
 abbreviated with the last two letters of that
-word, e.g. *23\Sub{íḅ}* ‘23 times’. All other multipliers are abbreviated with *\Sub{yḅ}*, e.g. *31\Sub{yḅ}*
+word, e.g. \w{23\Sub{íḅ}} ‘23 times’. All other multipliers are abbreviated with \w{\Sub{yḅ}}, e.g. \w{31\Sub{yḅ}}
 ‘31 times’.\footnote{Note that ‘31’ in UF is not really ‘thirty-one’, but rather ‘twenty-eleven’ and thus doesn’t
 end with ‘one’.}
 
-Fractions are typically abbreviated with the usual notation, e.g. *½*, *¼*, etc.
+Fractions are typically abbreviated with the usual notation, e.g. \w{½}, \w{¼}, etc.
 
 
 \subsection{Pronouns}
@@ -1875,77 +1867,77 @@ Prepositional & vẹ  & t’hẹ  & lẹ  & sẹ                      & aun   & 
 There are a few things that need to be noted here: there are no \s{nom} and \s{acc} pronouns; those
 forms have been incorporated into the verb and cannot be used without a verb. For instance, when answering a question,
 typically, either the same verb that was used to ask the question
-is repeated or an appropriate form of the verb *fér* ‘to do’ is used, e.g. if asked *U c’hes ḍẹvad’hór ra ḍẹy’ad’hór?*
-‘Do you love me or him?’, an UF speaker might respond with *ḍad’hór* ‘I love you’ or *ḍẹfér* ‘you’ (lit. ‘I do you’).
+is repeated or an appropriate form of the verb \w{fér} ‘to do’ is used, e.g. if asked \w{U c’hes ḍẹvad’hór ra ḍẹy’ad’hór?}
+‘Do you love me or him?’, an UF speaker might respond with \w{ḍad’hór} ‘I love you’ or \w{ḍẹfér} ‘you’ (lit. ‘I do you’).
 
 On that note, there are several ways of shortening the question itself: In sentences that contain the same verb with the same
-affix twice, the second occurrence of that affix may be omitted, e.g. *U c’hes ḍẹvad’hór ra y’ad’hór?*; the verb *fér* may be used
-to avoid repetition, e.g. *U c’hes ḍẹvad’hór ra y’fér?*; and, finally, the entire first occurrence of the verb sans the person markers may
-be omitted, leaving said affixes stranded in the sentence, e.g. *U c’hes ḍẹv- ra y’ad’hór?*. This last option is generally
+affix twice, the second occurrence of that affix may be omitted, e.g. \w{U c’hes ḍẹvad’hór ra y’ad’hór?}; the verb \w{fér} may be used
+to avoid repetition, e.g. \w{U c’hes ḍẹvad’hór ra y’fér?}; and, finally, the entire first occurrence of the verb sans the person markers may
+be omitted, leaving said affixes stranded in the sentence, e.g. \w{U c’hes ḍẹv- ra y’ad’hór?}. This last option is generally
 preferred since it it is the shortest option, but, of course, it is only possible if the first verb form contains only prefixes.
 
 \Paragraph{Partitive}
 The \s{part} forms of the personal pronoun are rather strange; generally, verbs that govern the \s{part} simply take regular
 passive affixes instead. However, verbs that can be formed with both the \s{acc} and \s{part} as well as \s{pci}s employ
-special partitive forms of the passive affixes that are constructed by infixing *-dy-* after the prefix part
-of the corresponding passive affix—or before the suffix part if there is no prefix part—e.g. *jsylí* ‘I peruse it’ vs
-*jsydylí* ‘I read from it’ or *lírá* ‘be perused!’ vs *lídyrá* ‘be read from!’.\footnote{The only passive forms that do
+special partitive forms of the passive affixes that are constructed by infixing \w{-dy-} after the prefix part
+of the corresponding passive affix—or before the suffix part if there is no prefix part—e.g. \w{jsylí} ‘I peruse it’ vs
+\w{jsydylí} ‘I read from it’ or \w{lírá} ‘be perused!’ vs \w{lídyrá} ‘be read from!’.\footnote{The only passive forms that do
 not have prefix parts are imperatives.}
 
 \Paragraph{Genitive}
-The possessees of \s{gen} pronouns can be definite or indefinite, e.g. *vaú lát’halẹ* ‘my table’ vs *vaú ŷnalẹ* ‘a table
+The possessees of \s{gen} pronouns can be definite or indefinite, e.g. \w{vaú lát’halẹ} ‘my table’ vs \w{vaú ŷnalẹ} ‘a table
 of mine’. Most \s{gen} pronouns are not particularly special and behave just like regular genitives; the exception is the
-\s{3sg} pronoun that is used for all three genders: its base form is *ez*, e.g. *ez lát’halẹ* ‘his/her/its table’, but
-after a word that ends with a vowel, the *e* is dropped, and it is instead written *’z*, e.g. *ḍevvaúríhe’z st’halẹ* ‘to
-remember a table of his/hers/its’. If the following word starts with a vowel, it is somtimes written *z’*,\footnote{The
-apostrophe in *z’* makes no sense in that position,
+\s{3sg} pronoun that is used for all three genders: its base form is \w{ez}, e.g. \w{ez lát’halẹ} ‘his/her/its table’, but
+after a word that ends with a vowel, the \w{e} is dropped, and it is instead written \w{’z}, e.g. \w{ḍevvaúríhe’z st’halẹ} ‘to
+remember a table of his/hers/its’. If the following word starts with a vowel, it is somtimes written \w{z’},\footnote{The
+apostrophe in \w{z’} makes no sense in that position,
 but it probably came about in imitation of similar forms that affix to the following word, e.g. the \s{opt} negation particle
-*t’hé*, which becomes *t’h’* before vowels.} e.g. *ḍevvaúríhe z’it’halẹ* ‘to remember his/her/its table’, though
-*ḍevvaúríhe’z it’halẹ* is also common and preferred in traditional literature.
+\w{t’hé}, which becomes \w{t’h’} before vowels.} e.g. \w{ḍevvaúríhe z’it’halẹ} ‘to remember his/her/its table’, though
+\w{ḍevvaúríhe’z it’halẹ} is also common and preferred in traditional literature.
 
 \Paragraph{Prepositional}
 The ‘prepositional’ form is not a case, but rather a form that case prefixes attach to to form all the other cases, e.g.
-the \s{2sg instr} would be *b’helt’hẹ* ‘with you’. Note that personal pronouns use the *definite* case prefixes of the
+the \s{2sg instr} would be \w{b’helt’hẹ} ‘with you’. Note that personal pronouns use the \textit{definite} case prefixes of the
 appropriate number. All remaining cases can be formed this way, but of course not the \s{abs, nom, acc, part, voc}, and
 \s{gen}. The prepositional form is never used in isolation.
 
 \subsubsection{Possessive Pronouns}
 UF does not really have possessive pronouns; instead, it has a series of possessive adjectives, which—just like most other
-‘adjectives’—are really just a series of adjective verbs: *y’ê* ‘to be mine’, *dy’ê* ’to be yours (\s{sg}),
-*sy’ê* ‘to be his/hers/its’, *naúḍ* ‘to be ours’, *vauḍ* ‘to be yours (\s{pl})’, and *lýrḍ* ‘to be theirs’. These verbs
-are chiefly used as verbs, e.g. *ŷnalẹ sy’ê* ‘it is a table of mine’; for just expressing ‘my’ etc., the \s{gen} of the
+‘adjectives’—are really just a series of adjective verbs: \w{y’ê} ‘to be mine’, \w{dy’ê} ’to be yours (\s{sg}),
+\w{sy’ê} ‘to be his/hers/its’, \w{naúḍ} ‘to be ours’, \w{vauḍ} ‘to be yours (\s{pl})’, and \w{lýrḍ} ‘to be theirs’. These verbs
+are chiefly used as verbs, e.g. \w{ŷnalẹ sy’ê} ‘it is a table of mine’; for just expressing ‘my’ etc., the \s{gen} of the
 corresponding possessive pronoun is used instead, as indicated above.
 
 \subsubsection{Demonstrative Pronouns}
-UF has three main demonstrative pronouns: *swi* ‘the one, that one, this one’, *sẹh* ‘this’, and *sý’ẹ* ‘that’. All
+UF has three main demonstrative pronouns: \w{swi} ‘the one, that one, this one’, \w{sẹh} ‘this’, and \w{sý’ẹ} ‘that’. All
 three are normally indeclinable and precede whatever they qualify: the first generally occurs in isolation, in which
-case it is declined as a definite noun, or indeclinably with an adjective, e.g. *swi ḅẹt’hâ* ‘the small one’, the
-latter two always precede a definite noun, e.g. *sẹh lát’halẹ* ‘this table’, and are themselves never declined. It
+case it is declined as a definite noun, or indeclinably with an adjective, e.g. \w{swi ḅẹt’hâ} ‘the small one’, the
+latter two always precede a definite noun, e.g. \w{sẹh lát’halẹ} ‘this table’, and are themselves never declined. It
 is not possible to combine demonstratives with one another.
 
 \subsubsection{Relative Pronoun}
-The UF relative pronoun is *a* ‘which, who, that’. Its most obvious and direct use is to form relative
-clauses and agrees in definiteness and number with the noun it qualifies, e.g. *lát’halẹ, ia jad’hór* ‘the
-table that I love’ or *ŷnalẹ, sa jad’hór* ‘a table that I love’.
+The UF relative pronoun is \w{a} ‘which, who, that’. Its most obvious and direct use is to form relative
+clauses and agrees in definiteness and number with the noun it qualifies, e.g. \w{lát’halẹ, ia jad’hór} ‘the
+table that I love’ or \w{ŷnalẹ, sa jad’hór} ‘a table that I love’.
 
 If the antecedent is too far away from the relative clause, it may be repeated in the relative clause,
 typically at the very beginning, in which case the relative pronoun follows it and is not inflected at
-all, e.g. *lát’halẹ, it’halẹ a jad’hór* ‘the table, which table I love’. In literary language, this
+all, e.g. \w{lát’halẹ, it’halẹ a jad’hór} ‘the table, which table I love’. In literary language, this
 construction is generally preferred over inflecting the relative pronoun if the two are far apart.
 
 \subsubsection{Interrogative Pronoun}
 The interrogative pronoun is the same as the relative pronoun, except that it is also followed by the
-question particle *c’hes*. Unlike the relative pronoun, it is always declined. On its own, it takes
-indefinite case when it refers to a thing, e.g. *Sa c’hes ḍad’hór?* ‘What do you love?’, and definite
-case when it refers to a person, e.g. *Ia c’hes ḍad’hór?* ‘Whom do you love?’
+question particle \w{c’hes}. Unlike the relative pronoun, it is always declined. On its own, it takes
+indefinite case when it refers to a thing, e.g. \w{Sa c’hes ḍad’hór?} ‘What do you love?’, and definite
+case when it refers to a person, e.g. \w{Ia c’hes ḍad’hór?} ‘Whom do you love?’
 
 If the subject of the question is a noun phrase that contains more than just the interrogative pronoun,
 pronoun and question particle are added after the entire phrase, and the pronoun is not declined, e.g.
-*Ŷnalẹ a c’hes ḍad’hór?* ‘Which table do you love?’. In informal speech, the *a* is even omitted
+\w{Ŷnalẹ a c’hes ḍad’hór?} ‘Which table do you love?’. In informal speech, the \w{a} is even omitted
 sometimes.
 
 A common variant spelling in older literature is to write the pronoun and question particle as one
-word, e.g. *sac’hes* instead of *sa c’hes* or to contract the ‘e’, e.g. *sac’h’s*.
+word, e.g. \w{sac’hes} instead of \w{sa c’hes} or to contract the ‘e’, e.g. \w{sac’h’s}.
 
 
 \subsection{Summary of Coalescence Rules}
@@ -1956,7 +1948,7 @@ aware of:
 \begin{enumerate}
 \item Vowels at the end of a suffix or at the beginning of a prefix may simply be omitted instead;
       this is particularly common in verb forms.
-\item If one of the vowels is *ẹ*, it is dropped; the resulting vowel is the other vowel.
+\item If one of the vowels is \w{ẹ}, it is dropped; the resulting vowel is the other vowel.
 \item If one of the vowels is nasalised, the resulting vowel is generally also nasalised; if both
       vowels are nasalised or nasal, the resulting vowel will be nasal.
 \item If the first vowel is part of a verb stem, it is often simply deleted or at least overridden
@@ -1967,8 +1959,8 @@ aware of:
 sections in which the forms in question are introduced. Note that trivial cases of vowels being dropped entirely
 are not listed in this table.
 
-Unless otherwise indicated, vowel letters, e.g. *o*, represent any variant of that vowel, whether oral, nasalised, or nasal.
-*o* also includes variants of *au* (e.g. *aú*, but not *áu*, of course, as those are two vowels and not a digraph).
+Unless otherwise indicated, vowel letters, e.g. \w{o}, represent any variant of that vowel, whether oral, nasalised, or nasal.
+\w{o} also includes variants of \w{au} (e.g. \w{aú}, but not \w{áu}, of course, as those are two vowels and not a digraph).
 Subscripts may be used to track nasalisation, and a + sign indicates a level of nasalisation is added. Since glides also
 influence contractions in some cases, they are included in this table. In the case of the abbreviations V and G, if there
 is no +, nasalisation is preserved.
@@ -1977,7 +1969,7 @@ Rules are matched top-down: the first matching rule is applied, all others are i
 vowel(s) in the 3rd column in the same row are replaced with the letters of the 4th column in the indicated forms at the
 indicated morpheme boundary in the 1st column. The position in the hyphen in the 2nd column indicates whether it coalesces
 with vowels before or after it. The letters V (as well as V′) stands for ‘any vowel’. The letter G stands for
-‘any glide’. Abbreviations may be used where applicable (e.g. *-e(r)* for *-e* and *-er* if there is no single *-e(r)*
+‘any glide’. Abbreviations may be used where applicable (e.g. \w{-e(r)} for \w{-e} and \w{-er} if there is no single \w{-e(r)}
 suffix in the paradigm in question). The abbreviation -? means ‘any other suffix in this paradigm, even if they
 start with a consonant’.
 
@@ -2015,7 +2007,7 @@ gnomic            & j(ú)-   & {\nf V}\Sub α& j\kern1pt{\nf V}\Sub{α+} &§~\re
 \medskip
 
 \noindent Lastly, note that the 4 principles mentioned earlier are guidelines, not rules. There are cases of affixes that do not coalesce
-at all, e.g. the comparative prefix *lẹ* (see §~\ref{subsubsec:comparison}). If a form is not listed in this table, then,
+at all, e.g. the comparative prefix \w{lẹ} (see §~\ref{subsubsec:comparison}). If a form is not listed in this table, then,
 unless explicitly stated where that form is introduced (in which case case we simply forgot to include it in the table),
 it does not coalesce at all. Furthermore, this table only handles coalescence rules between vowels and some vowel elision rules; other
 elision rules are either very regular or have nothing to do with adjacent vowels. This table exists only because coalescence rules are
@@ -2028,10 +2020,10 @@ the rules are not always clear. The following is a list of the most common const
 \subsection{Noun Phrases}
 \subsubsection{Names and Titles}\label{subsubsec:names-and-titles}
 Proper nouns are declined in the definite form only. Unlike other nouns, the nominative is almost always
-unmarked, e.g. *Daúvníc’h* ‘Dominic’, not \**Ládaúvníc’h*. Titles always follow the noun they qualify,
-e.g. *Snet’h C’haúfrér* ‘Brother Smyth’. Titles attached to names also do not receive any marking in the
+unmarked, e.g. \w{Daúvníc’h} ‘Dominic’, not *\w{Ládaúvníc’h}. Titles always follow the noun they qualify,
+e.g. \w{Snet’h C’haúfrér} ‘Brother Smyth’. Titles attached to names also do not receive any marking in the
 nominative, and are declined instead of the name in other cases, e.g. the accusative of ‘Brother Smyth’
-would be *Snet’h Ihaúfrér*, not \**Ihnet’h Ihaúfrér*.
+would be \w{Snet’h Ihaúfrér}, not *\w{Ihnet’h Ihaúfrér}.
 
 \subsection{Independent Clauses}
 The UF independent clause typically consists of a finite verb together with a subject perhaps several
@@ -2087,14 +2079,14 @@ pronoun and its associated noun:
     ‘And we shall indeed have revealed their sins to the world’\footnotemark
 }
 
-\footnotetext{See the dictionary entry for *act’he*, sense 4, for more information about the use of this word here,
+\footnotetext{See the dictionary entry for \w{act’he}, sense 4, for more information about the use of this word here,
 which normally means ‘cleave’. The literal meaning of this sentence is roughly: ‘And we shall have brought
 down the trees upon their sins, to (= for the benefit of) the world’.}
 
 
 \subsection{Negated Clauses}
-Negation in the indicative is expressed using the particle *asý’ýâ* ‘not’, which is typically appended to verbs
-as *’sý’ýâ*. For a discussion of negation in the subjunctive, optative, and \s{aci}s/\s{pci}s see
+Negation in the indicative is expressed using the particle \w{asý’ýâ} ‘not’, which is typically appended to verbs
+as \w{’sý’ýâ}. For a discussion of negation in the subjunctive, optative, and \s{aci}s/\s{pci}s see
 Sections~\ref{subsec:subjunctive},~\ref{subsec:optative},~and~\ref{subsec:aci-pci}.
 By default, the particle is placed right after the verb:
 \gloss {
@@ -2120,11 +2112,11 @@ save perhaps to sound extremely ironic.
     \#B’hehýnác aúlýab’hat’hâ’sý’ýâ.
     b’hehýn-ác|aú-lý-ab’ha\Sl t’hâ|’sý’ýâ.
     \s{instr.indef}-axe|\s{1pl}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}|not
-    *Roughly:* ‘With an axe, we have not-felled them.’
+    \textit{Roughly:} ‘With an axe, we have not-felled them.’
 }
 
 UF makes frequent use of double negation in conjunction with words that create a negative context
-such as *jávé* ‘never’, *y’ê* ‘nothing’, or *ráv́â* ‘seldom’. Typically, such words are frontend,
+such as \w{jávé} ‘never’, \w{y’ê} ‘nothing’, or \w{ráv́â} ‘seldom’. Typically, such words are frontend,
 and consequently, the negation particle then appears appended to them, e.g.:
 \gloss {
     Ráv́â’sý’ýâ st’halẹ jac̣t'heá.
@@ -2139,7 +2131,7 @@ about that, which can lead to rather awkward constructs such as:
     \#Ráv́â st’halẹ jac̣t'heá.
     Ráv́â|s\Sl t’halẹ |j-ac̣t'he-á
     seldom|\s{acc.indef}\Sl table|\s{1sg}-buy-\s{3sg.pres.ant}
-    *Roughly:* ‘I rarely-bought a table.’
+    \textit{Roughly:} ‘I rarely-bought a table.’
 }
 
 Still, if a fronted constituent is present, the negation particle is placed after that constituent:
@@ -2151,7 +2143,7 @@ Still, if a fronted constituent is present, the negation particle is placed afte
 }
 
 Foreigners often make the mistake of assuming that the negation particle is part of a word,
-e.g. that *ráv́â’sý’ýâ* means ‘seldom’. As such, UF speakers, when imitating a foreigner, may
+e.g. that \w{ráv́â’sý’ýâ} means ‘seldom’. As such, UF speakers, when imitating a foreigner, may
 sometimes use more than one negation particle in a single sentence. Note that this is very
 much not proper language; such constructions are summarily comedic and best compared to phrases
 such as ‘it do be like that’ in English:
@@ -2159,14 +2151,14 @@ such as ‘it do be like that’ in English:
     \*Ráv́â’sý’ýâ st’halẹ jac̣t'heá’sý’ýâ
     Ráv́â|’sý’ýâ |s\Sl t’halẹ |j-ac̣t'he-á|’sý’ýâ
     seldom|not |\s{acc.indef}\Sl table|\s{1sg}-buy-\s{3sg.pres.ant}|not
-    *Roughly:* ‘Rarely-not I bought a table.’
+    \textit{Roughly:} ‘Rarely-not I bought a table.’
 }
 
 \subsection{Interrogative Clauses}
 In UF, questions are generally marked by one or more particles. Unlike in many other languages, the verb generally
 does not move, except perhaps for emphasis. The most fundamental kind of question is a yes-no question, which is
-marked by the interrogative particle *c’hes*. The particle typically occurs in second position in the sentence (that
-is, after the first *constituent*, not after the first word):
+marked by the interrogative particle \w{c’hes}. The particle typically occurs in second position in the sentence (that
+is, after the first \textit{constituent}, not after the first word):
 \gloss {
     St’halẹ c’hes jac̣t'heá?
     s\Sl t’halẹ |c’hes |j-ac̣t'he-á
@@ -2174,7 +2166,7 @@ is, after the first *constituent*, not after the first word):
     ‘Did I buy a table?’
 }
 
-The exception to this is with forms of *eḍ* ‘to be’, which are typically immediately preceded by
+The exception to this is with forms of \w{eḍ} ‘to be’, which are typically immediately preceded by
 the question particle, the two forming a single word, placed at the very end of the sentence:
 \gloss {
     Raúl baú c’hesse?
@@ -2183,7 +2175,7 @@ the question particle, the two forming a single word, placed at the very end of 
     ‘Is it a good language?’
 }
 
-Negation is placed in the usual position. A negated question is marked by the negation particle *sý’ýâ*,
+Negation is placed in the usual position. A negated question is marked by the negation particle \w{sý’ýâ},
 and the expected answer is ‘yes’:
 \gloss {
     St’halẹ c’hes jac̣t'heá’sý’ýâ?
@@ -2192,8 +2184,8 @@ and the expected answer is ‘yes’:
     ‘Did I not buy a table?’
 }
 
-Alternatively, the particle *(r)vá* can be used to indicate that the speaker expects the answer to be ‘no’
-or to indicate disbelief, surprise, or amazement. Note that this particle *replaces* the question particle.
+Alternatively, the particle \w{(r)vá} can be used to indicate that the speaker expects the answer to be ‘no’
+or to indicate disbelief, surprise, or amazement. Note that this particle \textit{replaces} the question particle.
 Attempting to use both particles in the same sentence is ungrammatical and will likely be interpreted as
 stuttering.
 \gloss {
@@ -2203,7 +2195,7 @@ stuttering.
     ‘I bought a table?’
 }
 
-Unlike *c’hes*, this particle remains there even if the verb is *eḍ* ‘to be’:
+Unlike \w{c’hes}, this particle remains there even if the verb is \w{eḍ} ‘to be’:
 \gloss {
     Raúlvá baú se?
     raúl|vá|baú|se
@@ -2219,15 +2211,15 @@ Of course, these questions can also be negated:
     ‘I didn’t buy a table?’
 }
 
-The precise meaning of these questions is as follows: In *St’halẹ c’hes jac̣t'heá?* (‘Did I buy a table?’),
+The precise meaning of these questions is as follows: In \w{St’halẹ c’hes jac̣t'heá?} (‘Did I buy a table?’),
 the speaker is asking whether they themselves bought a table; a plausible situation would be that they
-simply forgot whether they did. Its negation, *St’halẹ c’hes jac̣t'heá’sý’ýâ?* (‘Did I not buy a table?’),
+simply forgot whether they did. Its negation, \w{St’halẹ c’hes jac̣t'heá’sý’ýâ?} (‘Did I not buy a table?’),
 could be used if the speaker is sure they bought a table sometime ago, but they can’t seem to find it and
 are starting to doubt themselves (‘Did I not buy a table? I’m sure I did.’).
 
-By contrast, the question *St’halẹvá jac̣t'heá?*) would be an assertion of disbelief; maybe the speaker
+By contrast, the question \w{St’halẹvá jac̣t'heá?}) would be an assertion of disbelief; maybe the speaker
 found a table in their loft, and they can’t seem to remember buying it, but the price tag is still there.
-Finally, its negation *St’halẹvá jac̣t'heá’sý’ýâ?* would most likely be the speaker expressing their frustration
+Finally, its negation \w{St’halẹvá jac̣t'heá’sý’ýâ?} would most likely be the speaker expressing their frustration
 over the fact that they can’t seem to find their table and asserting that, in fact, they know for sure that
 they did indeed buy a table (‘Did I not buy a table? I know I did!’).
 
@@ -2250,12 +2242,12 @@ The same applies to the negated version of such a question:
 }
 
 Note the order of particles: negation precedes the question particle. Placing them the other way around
-makes it sound like you’re trying to correct yourself from *Jac̣t'hévá* to *Jac̣t'hé’sý’ýâ*.
+makes it sound like you’re trying to correct yourself from \w{Jac̣t'hévá} to \w{Jac̣t'hé’sý’ýâ}.
 
 \subsection{Subordination and Coordination}
 Subordinate dependent clauses clauses as well as coordinate independent clauses are typically introduced by conjunctions
 or sentential particles; usually, these particles are placed in second position in the clause (i.e. after some other
-constituent), e.g. observe the position of *vé* ‘but’ in the following sentence:
+constituent), e.g. observe the position of \w{vé} ‘but’ in the following sentence:
 \gloss {
     St’halẹ vé jad’hór.
     s\Sl t’halẹ|vé|j-ad’hór
@@ -2264,7 +2256,7 @@ constituent), e.g. observe the position of *vé* ‘but’ in the following sent
 }
 
 Note that particles may sometimes also be placed after the first word of a clause instead if the first constituent
-is too long; this is particularly common with conjunctions that come in pairs such as *u \ldots\ u \ldots* ‘\ldots\
+is too long; this is particularly common with conjunctions that come in pairs such as \w{u \ldots\ u \ldots} ‘\ldots\
 or \ldots (inclusive)’:
 \gloss {
     U vé st’halẹ u sárb jad’hór.
@@ -2274,7 +2266,7 @@ or \ldots (inclusive)’:
 }
 
 \subsection{ACI and PCI}\label{subsec:aci-pci}
-The term \s{aci} is Latin for *accūsātīvus cum īnfīnītīvō* ‘accusative with infinitive’. As the name would suggest, this
+The term \s{aci} is Latin for \textit{accūsātīvus cum īnfīnītīvō} ‘accusative with infinitive’. As the name would suggest, this
 grammatical construction consists of a dependent clause formed by an \s{acc} noun together with an infinitive; the
 noun is the subject or object of the clause, and the infinitive the predicate. This construction is most well-known
 from Classical languages such as Latin or Ancient Greek, but it is also found in various other languages, including
@@ -2286,10 +2278,10 @@ English and, of course, UF:
     ‘Charles ordered a bridge to be built.’
 }
 
-In this sentence, the matrix clause is *Lácár láȷ́éd’há* ‘Charles ordered’, and the dependent clause is formed by
-the \s{aci} *sbhaú àfér* ‘a bridge to be built’. Since ‘a bridge’ is the object in this case, the passive infinitive
+In this sentence, the matrix clause is \w{Lácár láȷ́éd’há} ‘Charles ordered’, and the dependent clause is formed by
+the \s{aci} \w{sbhaú àfér} ‘a bridge to be built’. Since ‘a bridge’ is the object in this case, the passive infinitive
 is used. Observe how this sentence’s translation also uses an \s{aci} with a passive infinitive in both English (‘Charles
-ordered a bridge to be built’) as well as Latin (*Carolus pontem fierī iussit*).
+ordered a bridge to be built’) as well as Latin (\textit{Carolus pontem fierī iussit}).
 
 UF does not have a word for ‘that’ as in ‘I think that \ldots’ or ‘I know that \ldots’; instead, it uses
 \s{aci}s in these cases. Just how multiple ‘that’ clauses can be chained in English, so can multiple \s{aci}s in UF.
@@ -2308,17 +2300,17 @@ take a dependent clause in the subjunctive or optative instead (see §§~\ref{su
 \subsubsection{Nested ACIs}
 When multiple \s{aci}s are chained together, they are nested such that \s{acc} comes first and the infinitive
 last or vice versa, and any nested \s{aci}s are placed inbetween; observe that, in the sentence above, the \s{aci}
-*sbhaú àfér* ‘a bridge to be built’ is nested inside *Icár dáȷ́édá* ‘Charles to have ordered’. The literal
+\w{sbhaú àfér} ‘a bridge to be built’ is nested inside \w{Icár dáȷ́édá} ‘Charles to have ordered’. The literal
 translation of this sentence would thus be ‘I know Charles to have ordered a bridge to be built’.
 
 Furthermore, note that the finite verb of the matrix clause of an \s{aci} receives only a subject marker if the
-\s{aci} is the object and vice versa. Thus, we have *jsav́á* ‘I know’ in the example above instead of e.g.
-*jsysav́á* ‘I know it’. It *would* be possible to add the object marker in the example above, but it would
+\s{aci} is the object and vice versa. Thus, we have \w{jsav́á} ‘I know’ in the example above instead of e.g.
+\w{jsysav́á} ‘I know it’. It \textit{would} be possible to add the object marker in the example above, but it would
 sound a bit strange, roughly ‘I know it: that Charles ordered a bridge to be built’, and the verb would
 probably have to be fronted for the sentence to make sense that way.
 
 The exception, of course, is if the matrix clause is in the passive, in which case, as ever, the passive affix
-is added regardless, seeing as the verb would not be finite otherwise, e.g. *sysav́á* ‘it is known that’.
+is added regardless, seeing as the verb would not be finite otherwise, e.g. \w{sysav́á} ‘it is known that’.
 
 \subsubsection{PCIs}
 In addition to \s{aci}s, UF also has \s{pci}s, which use the *\s{part}* case instead. The \s{part} generally indicates
@@ -2343,7 +2335,7 @@ other infinitives which do, one must be careful not to construct garden-path sen
 sýc̣ahý dýbháhẹ dylí \textbf{dub’hrá}*. Here, the \s{pci} is marked in bold, and the intended meaning is ‘for speakers to be
 able to read each other’s thoughts’. Unfortunately, however, ‘read’ also takes a \s{part} here, and thus, it is
 possible to construct a different \s{pci}, namely *\textbf{sḅáłýr} sýc̣ahý dýbháhẹ \textbf{dylí} dub’hrá* ‘for speakers
-to read each other’s thoughts’, and *dub’hrá* ‘to be able to’ is awkwardly left hanging at the end of the sentence.
+to read each other’s thoughts’, and \w{dub’hrá} ‘to be able to’ is awkwardly left hanging at the end of the sentence.
 
 To fix this problem, rearrange the sentence so the infinitive of the \s{aci} or \s{pci} is placed first and put the verbs of any
 enclosed verb phrases first in those phrases to indicate that any immediately following \s{acc} or \s{part} nouns are part
@@ -2356,7 +2348,7 @@ In speech, this problem is more readily solved via intonation by placing emphasi
 {\nf ‖} \textbf{dub’hrá}*.
 
 \subsubsection{Negation}
-Negation of \s{aci}s and \s{pci}s uses the same particle as negation in the optative, viz. *t’hé* (see
+Negation of \s{aci}s and \s{pci}s uses the same particle as negation in the optative, viz. \w{t’hé} (see
 Section~\ref{subsubsec:negated-optative}), attached to the verb of the \s{aci}. For example:
 \gloss {
     Lácár sbhaú t’h’àfér láȷ́éd’há.
@@ -2398,7 +2390,7 @@ the only cases where a verb can receive two markers of the same voice:
 
 Thus, the voice of a pronominal \s{aci} or \s{pci} depends on the voice of the infinitive marker, and not that of
 the finite marker. Finally, a pronominal \s{pci} is formed as expected, i.e. with the pronominal partitive infix
-*-dy-* (see §~\ref{subsubsec:personal-pronouns})
+\w{-dy-} (see §~\ref{subsubsec:personal-pronouns})
 \gloss {
     Lácár delýdybard láȷ́éd’há.
     lá\Sl c̣ár| dẹ-lý-dy-ḅarḍ| l-áȷ́éd’h\Sl á
@@ -2418,19 +2410,19 @@ would have to be a counterfactual conditional instead.
 
 \subsubsection{Simple Conditionals}
 Simple conditionals indicate basic implications and logical truths. These conditionals use the indicative in both the protasis
-and apodosis, in the appropriate tense. The protasis is generally introduced by the particle *s* ‘if’.
+and apodosis, in the appropriate tense. The protasis is generally introduced by the particle \w{s} ‘if’.
 \gloss {
     S {\bf r} sré, aû-{\bf r} sfe. \nf (\s s)
     s|{\nf r}| s-ré| aû-|{\nf r}| s-fẹ
-    if|*r*|\s{3n}-be.true|non-|*r*|\s{3n}-be.false
-    ‘If *r* is true, then not-*r* is false.’\footnotemark
+    if|\w{r}|\s{3n}-be.true|non-|\w{r}|\s{3n}-be.false
+    ‘If \w{r} is true, then not-\w{r} is false.’\footnotemark
 }
 
-\footnotetext{UF does not use the letters *p* or *q*, and thus, discussions of propositional logic in UF tend to
-use *r* and *t* instead. *s* is not used either so as to not confuse it with *s* ‘if’.}
+\footnotetext{UF does not use the letters \w{p} or \w{q}, and thus, discussions of propositional logic in UF tend to
+use \w{r} and \w{t} instead. \w{s} is not used either so as to not confuse it with \w{s} ‘if’.}
 
 \subsubsection{Potential Conditionals}
-Potential conditionals indicate that something is possible or could happen in the present or future (but *not* in
+Potential conditionals indicate that something is possible or could happen in the present or future (but \textit{not} in
 the past), provided some condition is met, but which is not currently the case. These conditionals use the present
 indicative (\s p1) or the present (spoken) or Future II (literary) optative in the future (\s p2) in the protasis, and
 the Conditional I in the apodosis.
@@ -2448,7 +2440,7 @@ the Conditional I in the apodosis.
     ‘If you were to help me tomorrow, it could be finished the day after tomorrow.’
 }
 
-This sentence indicates that the speaker believes that, if the addressee helps them, there is a *possibility* that they
+This sentence indicates that the speaker believes that, if the addressee helps them, there is a \textit{possibility} that they
 could finish the task. If, by contrast, the speaker is certain that they will get the task done, a simple conditional is used
 instead:
 \gloss {
@@ -2493,7 +2485,7 @@ optative in the protasis and the subjunctive in the apodosis.
     S vê b’háy’ehehúrrevé, aúr-rzaúsdre-śe abrdvê. \nf (\s i2)
     s|vê|b’há-y’ẹ\Sl hẹhúrre-vé|aúr-rzaúsḍre-śe|aḅrdvê
     if|tomorrow|\s{2sg.fut.ii}-\s{opt}\Sl help.\s{fut}-\s{dat.1st}|\s{3n.fut.ii}-be.complete.\s{fut}-\s{fut.subj}|overmorrow
-    *Roughly:* ‘If you had been able to help me tomorrow, it would have been finished the day after.’
+    \textit{Roughly:} ‘If you had been able to help me tomorrow, it would have been finished the day after.’
 }}
 
 The second example in particular is hard to translate since it communicates an irrealis in the future, at the same time
@@ -2541,7 +2533,7 @@ what humans think is impossible.’
 
 \medskip\noindent
 Literal translation: ‘According to all known laws of aviation, there is no way that a bee should be capable of flight.\footnote{
-Note that UF here uses the verbal noun *b’hóy’ẹ* ‘to fly’ as a noun to mean ‘flight’.}
+Note that UF here uses the verbal noun \w{b’hóy’ẹ} ‘to fly’ as a noun to mean ‘flight’.}
 Its wings are too small for its little body to obtain [distance] from the ground. Of course, bees fly [anyway], as
 they do not care about what humans believe to be impossible.
 
@@ -2652,20 +2644,20 @@ non-android participants, ULTRAFRENCH is the best earth-based language.’
 We can, you see, detect both rays and beams of energy floating between speakers of The UF Language
 if we use certain systems of measurement long-forbidden; we still don’t understand, however, the composition of these
 emissions. Is it some kind of light? Is it electromagnetic energy? Is it a particle? Is it something else entirely?
-I’ve never claimed that [the mere act of]\footnote{The
-speaker uses a \s{pci} (*dybháł*) instead of an \s{aci} (*ibháł*) for ‘speaking’ here; had they used an \s{aci}, the meaning would be closer to ‘the act
+I’ve never claimed that [the mere act of]\footnote{The speaker uses a \s{pci} (\w{dybháł}) instead of an \s{aci}
+(\w{ibháł}) for ‘speaking’ here; had they used an \s{aci}, the meaning would be closer to ‘the act
 of “fully speaking” the language’, as in, speaking and understanding it in its entirety. Thus, the speaker implicates that
-it is not the mere act of making utterances in UF (*Áraúl dybháł*), but rather speaking and comprehending it in its entirety (*Áraúl ibháł*)
+it is not the mere act of making utterances in UF (\w{Áraúl dybháł}), but rather speaking and comprehending it in its entirety (\w{Áraúl ibháł})
 that gives rise to telepathic abilities.} the speaking of The Language endows them with telepathic abilities.
 It would be preposterous. I’m only saying that speakers of The Language can both read each other’s thoughts\footnote{In UF, ‘to
 read someone’s mind’ is expressed as ‘to read someone’s thoughts’.} and send them to each other.
 
 Is Sanskrit the best language? The robots are saying it, but they miss out on an essential part of The Language. The act
-of saying that robots are incapable of being affected by most forms of non-telepathy or\footnote{The UF text uses *u* \ldots\ *u*
+of saying that robots are incapable of being affected by most forms of non-telepathy or\footnote{The UF text uses \w{u} \ldots\ \w{u}
 \ldots\ ‘\ldots\ or \ldots (inclusive)’. This is for semantic reasons: the original text had a positive context (‘immune to’), whereas
 the UF translation uses a negative context (‘incapable of being affected by’); thus, by De Morgan, we have to switch from ‘and’
 to ‘or’ here.} by the Force is not racist. I have several android friends. Sure, Sanskrit might,\footnote{‘might be X’ is
-generally expressed using the optative of *ub’hrá* + an \s{aci} with ‘to be X’.} on the level of the plain written
+generally expressed using the optative of \w{ub’hrá} + an \s{aci} with ‘to be X’.} on the level of the plain written
 language, be ‘technically’ ‘superior’ to The UF Language, but it is unfair to compare them, as Sanskrit started out as
 a written language, until the ignorant masses started attempting to ‘speak’ it. But when we consider the triune nature
 of The Language, it has transpired that,\footnote{‘To become clear’ is expressed with the \s{pres ant} form of ‘transpire’.}
@@ -2686,8 +2678,8 @@ at least in spoken communication with non-android participants, UF is the best o
     \noindent
 }
 
-\def \pfabbr {{\normalfont\scshape  pf \space }}
 \def \this {{ \bf \char`~ }}
+\def \w #1 {{\bf\ignorespaces #1}}
 
 %% Word, part of speech, etymology, definition, (forms)
 \long \def \entry #1 #2 #3 #4 #5 {
@@ -2702,7 +2694,7 @@ at least in spoken communication with non-android participants, UF is the best o
     \tl_set:Nn \l_tmpa_tl {#3}
     \tl_if_empty:NTF \l_tmpa_tl { } {
         \space [
-            \ignorespaces \textit { \tl_use:N \l_tmpa_tl }
+            \ignorespaces \tl_use:N \l_tmpa_tl
         ]
     }
 

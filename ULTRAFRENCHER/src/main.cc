@@ -125,12 +125,20 @@ struct entry {
             usz i = 0;
             fmt::print("\\entry{{{}}}", s);
             for (; i < parts.size(); i++) {
-                /// If the first part contains no spaces and is not empty, insert \pfabbr.
-                if (i == 1 and not parts[i].empty() and not parts[i].contains(U' ')) {
-                    fmt::print("{{\\pfabbr {}}}", to_utf8(parts[i]));
-                } else {
-                    fmt::print("{{{}}}", to_utf8(parts[i]));
+                // Typeset etymology.
+                if (i == 1 and not parts[i].empty()) {
+                    std::u32string_view etym{parts[1]};
+
+                    // If the etymology contains no spaces, insert \pfabbr, and
+                    // make the word italic.
+                    if (not etym.contains(U' ')) fmt::print("{{\\pf{{{}}}}}", to_utf8(etym));
+
+                    // Otherwise, pass it along as-is.
+                    else { fmt::print("{{{}}}", to_utf8(etym)); }
                 }
+
+                // All other fields are handled normally.
+                else { fmt::print("{{{}}}", to_utf8(parts[i])); }
             }
             for (; i < 5; i++) fmt::print("{{}}");
             fmt::print("\n");
