@@ -80,7 +80,7 @@ c’hóný|adj.|connu|Known, familiar, well-kn\-own
 y’aúhý|inconj., postpos.|\pf{il n’y a aucun}|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pf{il y a aucun}|There is, there are
 ráy’ê|n.|moyen|1. Way, means, method. 2. \w{ráy’ê y’aúhý} + \s{aci} There is no way, that... \
-    3. \s{instr pl} \w{b’hehráy’ê} How, by what means
+    3. \s{instr pl} \w{b’hehráy’ê} How, by what means, in this way
 
 ub’hrá|v.|pouvoir|1. +\s{inf/aci} To be able to, can. 2. +\s{part} Capable of \ldots \
     \textit{Never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
@@ -137,7 +137,7 @@ sá|conj.|\pf{sans que}|+\s{subj} Without (doing sth.)
 sauc’h|conj.|\pf{sauf que}|+\s{subj} Except that
 váłé|conj.|\pf{malgré que}|+\s{subj} Despite that, in spite of
 rê|conj.|\pf{bien que}|+\s{subj} Although, though
-daú(c’h)|particle|donc|So, therefore, thus
+daú(c’h)|particle|donc|Therefore, then, thus
 ḅas|conj.|parce que|+\s{subj} Because. \textit{Often used to explain motivation rather than cause, as in \
     e.g. ‘We did that because\ldots’}
 le|v.|\pf{laisser} > *\w{lehe}|\textit{Chiefly in questions or imperative.} To let, allow, permit|\
@@ -317,6 +317,8 @@ lúr|v.|lourd|To be bulky, oversized, heavy
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
 c’hánár|n.|canard|1. Ship, boat. 2. \s{instr indef} By boat
+c’hánaú|n.|canot|Duck (bird)
+rác’hánár|n.|from \w{ráhe} + \w{c’hánár}|Airship, dirigible
 ráhe|n.|oiseau|Bird
 ráhé|n.|from \w{ráhe} + \w{ráhó}|Flying fish
 raúl|n.|parole|1. Language, speech, word. 2. \w{Raúl} \textit{(definite only)} Short for \w{T’hebhaú Raúl}. \
@@ -478,7 +480,9 @@ dá|n.|dent|Tooth
 ḅará|n.|parent|Parent
 
 ḅáréḍ|v.|\pf{parraitre}; future stem from \pf{sembler}|To seem, appear|\s{fut} sáb
-c’hlýr|v.|inclure|1. +\s{part} To include. 2. +\s{acc} To possess \textit{(alienably)}|\s{fut} c’hlýré, \s{subj} c’hlýrs
+c’hlýr|v.|inclure|1. +\s{part} To include. 2. +\s{acc} To possess, have \
+    \textit{(alienably)}. 3. +\s{gen} \textit{usually} \s{indef} To sell, offer, \
+    have in stock|\s{fut} c’hlýré, \s{subj} c’hlýrs
 rá|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
 ḅá nórávíc’h|n. archaic|Panoramix|Druid. \textit{Only the \w{nórávíc’h} is inflected; infixing of adj. is \
@@ -519,6 +523,19 @@ núb’h|v.|nouveau|To be new|\s{fut} núb’he, \s{subj} núb’hs
 b’hŷnnúb’hâ|adv.|Old \s{all} of \w{núb’hâ}|Anew
 vê|n.|main|Hand
 
+aḅraúc̣|v.|approcher|To approach, come near, walk up to (+\s{all} sbd./sth.)|\s{fut} \
+    aḅraúc̣é, \s{subj} aḅraúc̣s
+
+lívnád|n.|limonade|Lemonade
+ḍád|n.|stand|Stand, stall, booth
+db’hid’h|n.|individu|Person, individual
+díríj|v.|diriger|+\s{acc} To direct, run, oversee, operate (a business \
+    or establishment)|\s{fut} díríje, \s{subj} díríjs
+ḍalisvâ|n.|établissement|Establishment, institution
+syhyý’á|v.|succulent|To be succulent, delicious|\s{fut} syhyý’áré, \s{subj} syhyý’ás
+b’hé|n.|vin|Grape
+b’hí|n.|vigne|Vine
+ḅínár|n.|pinard|Wine
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} \textit{active only, see §~\ref{subsec:ed-paradigm}}

@@ -1,0 +1,292 @@
+\documentclass[a4paper, oneside, 12pt, final]{article}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage[margin=2cm]{geometry}
+
+\setmainfont{Minion 3}[Numbers=OldStyle]
+\raggedbottom
+
+\let \Sl \textbackslash
+
+\ExplSyntaxOn
+\cs_generate_variant:Nn \seq_set_split_keep_spaces:Nnn { Nnx }
+
+
+\cs_new:Npn \__gloss_insert_table_header: {
+    %% Generating columns doesn’t seem to work, so this hack will do. If you
+    %% need a gloss with more columns than this, I suggest you pause and take
+    %% a moment to reflect on your life choices.
+    \begin {tabular} { @{} *{100}l }
+}
+
+\cs_new:Npn \__gloss_table_start: {
+    \ifvmode\else\unskip\par\fi
+    \addvspace { 8pt }
+    %\vtop{\iffalse}\fi
+    \noindent
+}
+
+\cs_new:Npn \__gloss_table_end: {
+    \end {tabular}
+    \ifvmode\else\par\fi
+    \addvspace { 8pt }
+    %\iffalse{\fi}
+    \everypar { \setbox\z@\lastbox \everypar{} }
+}
+
+%% Rescan a token list.
+\cs_new:Npn \__gloss_rescan:n #1 {
+    { \tl_rescan:nn {} { #1 } }
+}
+
+%% Format a single line of a gloss.
+%%
+%% The line number must be stored in \g_tempb_int.
+%%
+%% This takes the line #1 and formats it, inserting the contents of #2
+%% at the start of each line, and #3 at the beginning of each column.
+%% #3 can be a macro that takes one argument, in which case it will be
+%% passed the contents of the column.
+\cs_new:Npn \__gloss_format_line:nnn #1 #2 #3 {
+    #2
+
+    \seq_set_split:Nnn \l_tmpa_seq { | } { #1 }
+    \bool_set_true:N \l_tmpa_bool
+
+    \seq_map_inline:Nn \l_tmpa_seq {
+        \bool_if:NF \l_tmpa_bool { & }
+        \bool_set_false:N \l_tmpa_bool
+        #3 { \__gloss_rescan:n {##1} }
+    }
+}
+
+%% Format a gloss.
+%%
+%% This iterates over all lines in #1 and calls #2 on it.
+\cs_new:Npn \__gloss_format:nn #1 #2 {
+    \int_gset:Nn \g_tmpb_int { 1 }
+    \tl_map_inline:nn { #1 } {
+        \tl_if_blank:nF { ##1 } {
+            %% Insert \cr or table header if this is the first line. We
+            %% need to emit this here, as otherwise, TeX will encounter
+            %% unexpandable tokens before the formatter (#2) is executed,
+            %% which will start the cell before any actual content has
+            %% been inserted; this means we can no longer tell TeX to
+            %% \omit the cell header, which causes \multicolumn to break
+            %% horribly.
+            %%
+            %% By emitting the table header here, we ensure that instead,
+            %% the formatter is the first thing TeX gets to see after the
+            %% initial table header and after every \cr.
+            \int_compare:nNnTF { \g_tmpb_int } > { 1 } { \\ } { \__gloss_insert_table_header: }
+            #2 { ##1 }
+            \int_gincr:N \g_tmpb_int
+        }
+    }
+}
+
+%% Two lines means object language + gloss.
+\cs_new:Npn \__gloss_two_lines:n #1 {
+    \cs_gset:Npn \__formatter:n ##1 {
+        \__gloss_format_line:nnn { ##1 } {} {
+            \int_compare:nNnT { \g_tmpb_int } = { 1 } { \itshape }
+        }
+    }
+
+    \__gloss_format:nn { #1 } { \__formatter:n }
+}
+
+%% Full gloss (text, object language, pronunciation, gloss, and translation).
+\cs_new:Npn \__gloss_five_lines:n #1 {
+    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries\__gloss_rescan:n {##1}} }
+    \cs_gset:Npn \__formatter_ii:n ##1 { \__gloss_format_line:nnn {##1} {} {\itshape} }
+    \cs_gset:Npn \__formatter_iii:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
+    \cs_gset:Npn \__formatter_iv:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
+    \cs_gset:Npn \__formatter_v:n ##1 { \multicolumn {100} {@{}l} {\__gloss_rescan:n {##1}} }
+
+    \__gloss_format:nn { #1 } {
+        \cs:w __formatter_ \int_to_roman:n \g_tmpb_int :n \cs_end:
+    }
+}
+
+%% Full gloss w/o IPA (text, object language, gloss, and translation).
+\cs_new:Npn \__gloss_four_lines:n #1 {
+    \cs_gset:Npn \__formatter_i:n ##1 { \multicolumn {100} {@{}l} {\itshape\bfseries \__gloss_rescan:n {##1} } }
+    \cs_gset:Npn \__formatter_ii:n ##1 { \__gloss_format_line:nnn {##1} {} {\itshape} }
+    \cs_gset:Npn \__formatter_iii:n ##1 { \__gloss_format_line:nnn {##1} {} {} }
+    \cs_gset:Npn \__formatter_iv:n ##1 { \multicolumn {100} {@{}l} {\__gloss_rescan:n {##1}} }
+
+    \__gloss_format:nn { #1 } {
+        \cs:w __formatter_ \int_to_roman:n \g_tmpb_int :n \cs_end:
+    }
+}
+
+\NewDocumentCommand \gloss {
+    > { \exp_args:Nx \SplitList { \iow_char:N \^^M } } +v
+} {
+    \__gloss_table_start:
+
+    %% Count lines.
+    \int_gset:Nn \g_tmpa_int { 0 }
+    \tl_map_inline:nn { #1 } {
+        \tl_if_blank:nF { ##1 } {
+            \int_gincr:N \g_tmpa_int
+        }
+    }
+
+    %% Dispatch the appropriate number of lines.
+    \int_case:nnF { \g_tmpa_int } {
+        2 { \__gloss_two_lines:n { #1 } }
+        4 { \__gloss_four_lines:n { #1 } }
+        5 { \__gloss_five_lines:n { #1 } }
+    }
+
+    %% Any other line count is an error.
+    {
+        \msg_new:nnn { gloss } { too-many-lines } {
+            Too~many~lines~in~gloss:~expected~2,~got~\int_use:N \g_tmpa_int
+        }
+
+        \msg_error:nn { gloss } { too-many-lines }
+    }
+
+    %% Close the table.
+    \__gloss_table_end:
+}
+
+%% Process two words. Used by \multigloss.
+\cs_new:Npn \__uf_multigloss_word:nn #1 #2 {
+    \allowbreak
+
+    \hbox {
+        \begin{tabular}{@{}l}
+            \itshape \tl_rescan:nn {} {#1} \\
+            \noalign{\vskip-6pt}
+            \tl_rescan:nn {} {#2}          \\
+        \end{tabular}
+    }
+
+    \space
+}
+
+%% Process two lines. Used by \multigloss.
+\cs_new:Npn \__uf_multigloss:NN #1 #2 {
+    \ifvmode\noindent\leavevmode\fi
+
+    %% Split the lines into words.
+    \seq_set_split_keep_spaces:Nnx \l_tmpa_seq { | } { #1 }
+    \seq_set_split_keep_spaces:Nnx \l_tmpb_seq { | } { #2 }
+
+    %% Iterate over each word in the two lines.
+    \seq_mapthread_function:NNN \l_tmpa_seq \l_tmpb_seq \__uf_multigloss_word:nn
+}
+
+%% Typeset two-line glosses across multiple lines.
+\NewDocumentCommand \multigloss {
+    > { \exp_args:Nx \SplitList { \iow_char:N \^^M } } +v
+} {
+    \ifvmode\else\unskip\par\fi
+    \begingroup
+    \linespread { 1.5 } \selectfont
+    \raggedright
+    \begin{sloppypar}
+
+    %% Iterate over each line, two lines at a time.
+    \bool_gset_true:N \g_tmpa_bool
+    \tl_map_inline:nn { #1 } {
+        %% Ignore empty lines entirely.
+        \tl_if_blank:nF { ##1 } {
+            \bool_if:NTF \g_tmpa_bool {
+                \tl_gset:Nn \g_tmpa_tl { ##1 }
+            } {
+                \tl_gset:Nn \g_tmpb_tl { ##1 }
+                \__uf_multigloss:NN \g_tmpa_tl \g_tmpb_tl
+            }
+
+            %% Flip.
+            \bool_gset_inverse:N \g_tmpa_bool
+        }
+    }
+
+    \end{sloppypar}
+    \endgroup
+}
+\ExplSyntaxOff
+
+\XeTeXinputnormalization=1
+
+\let\w\textit
+\let\s\textsc
+
+\definecolor{bgcolour}{HTML}{2D2A2E}
+\pagecolor{bgcolour}
+\color{white}
+
+\ExplSyntaxOn
+\makeatletter
+
+\def\qemsp{\hskip.25em\relax}
+
+\def \__framed_insert: {
+    \dim_set:Nn \l_tmpa_dim { \wd0 + 2pt + 12pt }
+    \dim_set:Nn \l_tmpb_dim { \ht0 + \dp0 + 12pt + 12pt }
+    \hrule width \l_tmpa_dim height 1pt
+    \hbox {
+        \vrule width 1pt height \l_tmpb_dim
+        \hskip 6pt
+        \vbox {
+            \vskip 6pt
+            \vskip 12pt
+            \unvbox0 \par
+            \vskip 6pt
+        }
+        \hskip 6pt
+        \vrule width 1pt height \l_tmpb_dim
+    }
+    \hrule width \l_tmpa_dim height 1pt
+}
+
+\cs_new:Npn \__framed_aux: {
+    \hsize \dim_eval:n { \hsize - 2pt - 12pt }
+    \aftergroup \__framed_insert:
+}
+
+\def \framed {
+    \ifvmode\else\par\fi
+    \afterassignment \__framed_aux:
+    \setbox0\vbox
+}
+
+\makeatother
+\ExplSyntaxOff
+
+%% FIXME: Use glossing package instead of this massive code duplication
+
+\begin{document}
+\parindent0pt
+
+
+\framed {
+{\Large\centering\it
+Sabraúcá ŷnc’hánaú b’hŷnád lívnád au sdírá asd’hb’hid’h lá-a sdíríjé it’halisvâ :
+«\qemsp Dec’hlýr c’hes sýb’hé syhyý’â~?\qemsp»
+\par}
+
+\vskip 12pt
+
+\multigloss {
+    s-aḅraúc̣-á|ŷn-c’hánaú|b’hŷ\Sl nád|lívnád|au
+    \s{3n}-approach-\s{pres.ant}|\s{nom.indef}-duck|\s{all.indef}\Sl stand|lemonade.\s{abs}|and
+
+    s-dír-á|as\Sl d’hb’hid’h|lá-a|s-díríj-é|i\Sl t’halisvâ
+    \s{3n}-say-\s{pres.ant}|\s{dat}-person|\s{nom}-which|\s{3n}-operate-\s{pret}|\s{acc}\Sl establishment
+
+    ḍẹ-c’hlýr|sý-b’hé|syhyý’\Sl â
+    \s{2sg}-include|\s{gen.pl.indef}-grape|be.succulent-\s{ptcp}
+}
+}
+
+
+
+
+\end{document}

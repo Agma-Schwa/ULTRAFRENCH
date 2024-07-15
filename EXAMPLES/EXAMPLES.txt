@@ -1,0 +1,16 @@
+=== 14 Jul 2024 ===
+‘A duck did walk up to a lemonade-stand and said to the person
+ who so did operate the establishment, “Doest thou have any succulent
+ grapes?”’
+
+Sabraúcá ŷnc’hánaú b’hŷnád lívnád au sdírá asd’hb’hid’h lá-a sdíríjé it’halisvâ : «
+Dec’hlýr c’hes sýb’hé syhyý’â ? »
+
+s-aḅraúc̣-á|ŷn-c’hánaú|b’hŷ\Sl nád|lívnád|au
+\s{3n}-approach-\s{pres.ant}|\s{nom.indef}-duck|\s{all.indef}\Sl stand|lemonade.\s{abs}|and
+
+s-dír-á|as\Sl d’hb’hid’h|lá-a|s-díríj-é|i\Sl t’halisvâ
+\s{3n}-say-\s{pres.ant}|\s{dat}-person|\s{nom}-which|\s{3n}-operate-\s{pret}|\s{acc}\Sl establishment
+
+ḍẹ-c’hlýr|sý-b’hé|syhyý’\Sl â
+\s{2sg}-include|\s{gen.pl.indef}-grape|be.succulent-\s{ptcp}

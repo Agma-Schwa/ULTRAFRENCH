@@ -2,9 +2,9 @@
 .~lock*
 *.aux
 *.log
+*.pdf
 *.toc
 *.synctex.gz
 cmake-build-debug/
 /gendict/gendict
 /DICTIONARY.tex
-/GRAMMAR.pdf
