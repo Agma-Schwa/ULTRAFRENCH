@@ -5,6 +5,9 @@
 *.pdf
 *.toc
 *.out
+*.fdb_latexmk
+*.fls
+*.xdv
 *.synctex.gz
 cmake-build-debug/
 /gendict/gendict

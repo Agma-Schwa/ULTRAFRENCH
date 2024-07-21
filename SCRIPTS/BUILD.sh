@@ -6,4 +6,4 @@ cd "$(dirname "$0")"
 cd ..
 
 ./SCRIPTS/GENERATE-DICTIONARY.sh > DICTIONARY.tex
-xelatex GRAMMAR.tex
+latexmk -xelatex GRAMMAR.tex
