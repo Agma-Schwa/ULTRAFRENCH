@@ -558,7 +558,11 @@ y’úr|n.|jour|Day
 y’í|n.|nuit|Night
 vúb’hvâ|n.|movement|Movement, motion
 dévýr|v.|demeurer|1. To remain, stay. 2. To live, dwell (+\s{iness} somewhere)
-
+ḅét’hýr|v.|peinture|To paint
+rál|n.|toile|Canvas
+vérr|n.|mer|Sea, ocean
+Sávýy’él|n.|Samuel|\textit{Male given name}
+rád’hyc’hsy’ô|n.|traduction|Translation
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} \textit{active only, see §~\ref{subsec:ed-paradigm}}
