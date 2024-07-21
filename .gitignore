@@ -4,6 +4,7 @@
 *.log
 *.pdf
 *.toc
+*.out
 *.synctex.gz
 cmake-build-debug/
 /gendict/gendict
