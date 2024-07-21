@@ -109,8 +109,8 @@ au|conj.|aussi|1. And, also, as well, too 2. \w{au} ... \w{au} ... ‘both ... a
 ec̣|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
 ânb’hé|adv.|\pf{en effet}, via metathesis from *\w{âné\-b’he}|Verily, indeed, in fact
-y’ŷ|prefix|mieux|\textit{Affirming comparative prefix. See grammar}
-lẹ|prefix|plus|\textit{Denying comparative prefix. See grammar}
+y’ŷ|prefix|mieux|\textit{Denying comparative prefix. See grammar}
+lẹ|prefix|plus|\textit{Affirming comparative prefix. See grammar}
 rê|prefix|moins|\textit{Neutral comparative prefix. See grammar}
 ré|prefix|très|\textit{Superlative prefix. See grammar}
 râdvâ|prefix|grandement|\textit{Superlative prefix. See grammar}
@@ -170,7 +170,7 @@ fér|v.|faire|1. To do, make, build, construct, erect 2. \textit{Expletive; see 
     §~\ref{subsubsec:personal-pronouns}}|\s{fut} fẹ́, \s{subj} fés
 sav́á|v.|savoir|To know|\s{fut} saúr, \s{subj} sac
 ré|v.|vrai|To be true, correct, right|\s{fut} rẹ́, \s{subj} rés
-aû|particle|non|Not-. \textit{Used to negate nouns}
+aû|particle|non|Not-. \textit{Used to negate nouns, adjectives, and adverbs}
 fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} faure, \s{subj} faus
 R|adj.|{\nf from} ré|\textit{Logic.} True, $\top$
 F|adj.|{\nf from} fẹ|\textit{Logic.} False, $\bot$
@@ -486,7 +486,7 @@ c’hlýr|v.|inclure|1. +\s{part} To include. 2. +\s{acc} To possess, have \
 rá|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
 ḅá nórávíc’h|n. archaic|Panoramix|Druid. \textit{Only the \w{nórávíc’h} is inflected; infixing of adj. is \
-    attested, ex: \s{Snet’h}, III.2: \w{derúb’h bá ráinórávíc’h} ‘to find the great (= \w{rá}) druid’}
+    attested, ex: \s{Snet’h}, \s{iii.2}: \w{derúb’h bá ráinórávíc’h} ‘to find the great (= \w{rá}) druid’}
 nóráv|n.|from archaic \w{ḅá nórávíc’h}|Druid
 ahúr|v.|assurer|To ensure|\s{fut} ahúré, \s{subj} ahúrs
 fúr|v.|fournir|To deliver, provide (+\s{dat} sbd.) (+ \s{acc} with sth.)
@@ -536,6 +536,29 @@ syhyý’á|v.|succulent|To be succulent, delicious|\s{fut} syhyý’áré, \s{s
 b’hé|n.|vin|Grape
 b’hí|n.|vigne|Vine
 ḅínár|n.|pinard|Wine
+
+áẹ|n.|en-haut|Sky
+cẹ|v.|chaud|To be hot
+rýl|v.|brûler|To burn
+rê|n.|airain|Copper
+saul|n.|sol|Sun
+víd’hẹ|n.|midi|Noon, midday
+áhâłát’hẹ|v.|ensanglanté|To be (very) bloody, bloodstained
+vá|n.|mât|Mast
+ḍèl|particle|tel|\textit{Emphatic particle, used as an intensifier, often postpositive after \
+    the verb, but not so much intensifying the verb directly as it does the entire clause, ex: \
+    \s{Snet’h}, \s{ii.34}: \w{lá-árb srýlé dèl} ‘so it was that the tree was burning’ or ‘the tree \
+    was burning fiercely’, or ‘indeed, the tree was burning’}
+
+lá|v.|planer|To fly
+b’haul|v.|voler|To hover, float
+raúvá|n.|fromage|Moon
+
+y’úr|n.|jour|Day
+y’í|n.|nuit|Night
+vúb’hvâ|n.|movement|Movement, motion
+dévýr|v.|demeurer|1. To remain, stay. 2. To live, dwell (+\s{iness} somewhere)
+
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} \textit{active only, see §~\ref{subsec:ed-paradigm}}
