@@ -13,6 +13,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
 
 %\definecolor{bgcolor}{HTML}{2D2A2E}
 %\definecolor{fgcolor}{HTML}{FAFCFC}
@@ -2694,15 +2695,23 @@ at least in spoken communication with non-android participants, UF is the best o
 
 \ExplSyntaxOn
 
+\def \ex {
+    \par
+    \setbox0\hbox{\enskip $\diamond$\space}
+    \leavevmode \hangindent = \dim_eval:n { \wd0 + 3pt }
+    \box0
+}
+
 %% Allow breaking after slashes.
 \catcode `/ = 13
 \def/{\char`/\penalty0}
+
 
 %% Counter for senses.
 \newcounter {sense}
 \def \\ { %% 'Magic' macro that is recognised by the ULTRAFRENCHER. DO NOT RENAME.
     \par
-    \textbf {\arabic{sense}.} \space
+    \normalfont \textbf {\arabic{sense}.} \space
     \stepcounter {sense}
     \ignorespaces
 }
