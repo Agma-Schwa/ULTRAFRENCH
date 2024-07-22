@@ -55,10 +55,10 @@ act’he|v. tr.|from \w{ac}|1. To cut or cleave with an axe. \
     2. +\s{acc} To bring an end to. \
     3. +\s{acc def} \textit{of \w{árb} intr. (other than literal)} To get to the point, cut to the chase. \
     4. +\s{acc def} \textit{of \w{árb} and \s{acc}} \
-    To bring to light, reveal \textit{(originally, this idiom did not take a double \s{acc}, but \
+    To bring to light, reveal. \textit{Originally, this idiom did not take a double \s{acc}, but \
     was instead formed with the \s{acc} of ‘tree’ and the \s{ill} of the object, meaning something along \
     the lines of ‘to bring down the tree(s) on sth’—the image here being that of cutting down trees in \
-    a wood until only a clearing remains or is ‘brought to light’)}|\s{fut} acḍe, \s{subj} act’hes
+    a wood until only a clearing remains or is ‘brought to light’}|\s{fut} acḍe, \s{subj} act’hes
 ac̣t’he|v. tr.|acheter|To buy|\s{fut} ac̣ḍrẹ́, \s{subj} ac̣t’hes
 vaût’há|n.|montagne|Mountain
 ḍalẹ|n.|tableau|Table
@@ -138,7 +138,7 @@ sauc’h|conj.|\pf{sauf que}|+\s{subj} Except that
 váłé|conj.|\pf{malgré que}|+\s{subj} Despite that, in spite of
 rê|conj.|\pf{bien que}|+\s{subj} Although, though
 daú(c’h)|particle|donc|Therefore, then, thus
-ḅas|conj.|parce que|+\s{subj} Because. \textit{Often used to explain motivation rather than cause, as in \
+ḅas|conj.|\pf{parce que}|+\s{subj} Because. \textit{Often used to explain motivation rather than cause, as in \
     e.g. ‘We did that because\ldots’}
 le|v.|\pf{laisser} > *\w{lehe}|\textit{Chiefly in questions or imperative.} To let, allow, permit|\
     \s{fut} lere, \s{subj} les
@@ -170,10 +170,10 @@ fér|v.|faire|1. To do, make, build, construct, erect 2. \textit{Expletive; see 
     §~\ref{subsubsec:personal-pronouns}}|\s{fut} fẹ́, \s{subj} fés
 sav́á|v.|savoir|To know|\s{fut} saúr, \s{subj} sac
 ré|v.|vrai|To be true, correct, right|\s{fut} rẹ́, \s{subj} rés
-aû|particle|non|Not-. \textit{Used to negate nouns, adjectives, and adverbs}
+aû|particle|non|Not-. \textit{Used to negate nouns, adjectives, and adverbs; see §~\ref{subsubsec:noun-negation}}
 fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} faure, \s{subj} faus
-R|adj.|{\nf from} ré|\textit{Logic.} True, $\top$
-F|adj.|{\nf from} fẹ|\textit{Logic.} False, $\bot$
+R|adj.|from \pf{ré}|\textit{Logic.} True, $\top$
+F|adj.|from \pf{fẹ}|\textit{Logic.} False, $\bot$
 rár|v.|voir|To see (+\s{part} sbd./sth.)|\s{fut} b’hérẹ́, \s{subj} rárs
 rát’hẹ|particle|vois-tu|You see, you know
 ré|n.|rai|Ray, beam
@@ -191,7 +191,7 @@ sérḍé|det.|certain|Certain, particular but not specified
 sisḍé|n.|système|System
 véhýr|v/n.|mesure|1. To measure, 2. Measurement|\s{fut} véhýrẹ́, \s{subj} véhýrs
 vé|conj.|mais|But, however, although
-c’haúḅrâd|v.|comprendre|+\s{part} To comprehend, underst\-and, grasp|\s{fut} c’haúḅrâdrẹ́, \
+c’haúḅrâd|v.|comprendre|+\s{part} To comprehend, understand, gr\-asp|\s{fut} c’haúḅrâdrẹ́, \
     \s{subj} c’haúḅrâs
 ḍúr|adv.|toujours|1. \textit{(positive context)} Always. 2. \textit{(negative context)} Still
 c’haúbhausy’ô|n.|composition|Composition, arrangement, structure
@@ -289,7 +289,7 @@ râsír|v.|transpirer|+\s{aci} 1. To come to light, become known, transpire. \
 c’hóvníc’h|v.|communiquer|1. To communicate (+\s{instr} with sbd.). 2. Communication|\s{fut} \
     c’hóvníc’hre, \s{subj} c’hóvníc’hes
 ḅárḍihibhá|n.|participant|Participant
-dývrê|particle|du moins|At least. \textit{As in e.g. ‘At least, I think that...’}
+dývrê|particle|\pf{du moins}|At least. \textit{As in e.g. ‘At least, I think that...’}
 fic’h|v.|back-formation from *\w{fic’hs}, reinterpreted as a subjunctive stem; \
     from \pf{fixer}|To fix, set, establish|\s{fut} fic’hre, \s{subj} fic’hs
 ba|v.|baser|To base on, found on|\s{fut} bare, \s{subj} bas
@@ -333,39 +333,39 @@ rárd|v.|regarder|1. To watch. 2. To look at|\s{fut} rárdre, \s{subj} rárds
 ḍẹ́ríb|v.|terrible|To be terrible (all senses)|\s{fut} ḍẹ́ríre, \s{subj} ḍẹ́rís
 
 # From Étienne.
-Eḍy’ê|n.||\textit{male given name, equivalent to English ‘Stephen’}
+Eḍy’ê|n.||\textit{male given name, equivalent to English ‘Ste\-phen’}
 
 # Expressions.
 lẹhuvud|n.|\pf{coup de foudre}|Love at first sight
 c’háraúciḍ|v.|\pf{les carrotes sont cuites}|To end for good, put to a permanent end\
     |\s{fut} c’hár\-aúc\-re, \s{subj} c’háraúc
 ḅauheŷnlabhé|v.|\pf{poser un lapin}|To forsake, abandon|\s{fut} ḅauheŷnlabhére, \s{subj} ḅauheŷnlabhés
-férrrásvát’h|n.|\pfabbr fer la grasse matinée|A long, deep sleep
-rác’hsaý’ad|v.|\pfabbr raconter des salades|To lie, tell tall tales, overexaggerate|\s{fut}\
+férrrásvát’h|n.|\pf{fer la grasse matinée}|A long, deep sleep
+rác’hsaý’ad|v.|\pf{raconter des salades}|To lie, tell tall tales, overexaggerate|\s{fut}\
     rác’h\-sa\-ý’e, \s{subj} rác’hsaýs
-férḍufraú|v.|\pfabbr en faire tout un fromage|To make a big fuss a\-bout something|\s{fut}\
+férḍufraú|v.|\pf{en faire tout un fromage}|To make a big fuss a\-bout something|\s{fut}\
     fér\-ḍu\-fraúrẹ́, \s{subj} férḍufraús
-daúb’hedwébhó|v.|\pfabbr tomber dans les pommes|To faint|\s{fut} daúb’hedwébhóre, \s{subj}\
+daúb’hedwébhó|v.|\pf{tomber dans les pommes}|To faint|\s{fut} daúb’hedwébhóre, \s{subj}\
     daúb’hedwébhós
-rádrénẹ́|v. + \s{aci}|\pfabbr les doigts dans le nez|To put no effort into|\s{fut} rádrénrẹ́,\
+rádrénẹ́|v. + \s{aci}|\pf{les doigts dans le nez}|To put no effort into|\s{fut} rádrénrẹ́,\
     \s{subj} rádrénẹ́s
-uy’ed’háb’hrí|v.|\pfabbr rouler dans la farine|To scam, swindle, cheat|\s{fut} uy’e\-d’háv́e,\
+uy’ed’háb’hrí|v.|\pf{rouler dans la farine}|To scam, swindle, cheat|\s{fut} uy’e\-d’háv́e,\
     \s{subj} uy’ed’háb’hrís
-ab’hínéb’heḅaý’évrâ|v.|\pfabbr habit ne fait pas le moi\-ne|To judge based on appearances|\s{fut}\
+ab’hínéb’heḅaý’évrâ|v.|\pf{habit ne fait pas le moi\-ne}|To judge based on appearances|\s{fut}\
     ab’hínéb’heḅaý’év́ẹ́, \s{subj} ab’hínéb’heḅaý’\-év́\-ás
-rrád’hahánár|n.|\pfabbr froid de canard|Coldness
-y’ŷvéłáfrí|n. pl. archaic|yeux de merlan frit|Eyes
+rrád’hahánár|n.|\pf{froid de canard}|Coldness
+y’ŷvéłáfrí|n. pl. archaic|\pf{yeux de merlan frit}|Eyes
 y’ŷ|n.|from \w{y’ŷvéłáfrí}|Eye
-lârdávrá|n.|\pfabbr langue de bois|Evasive, unclear, or overly formal speech
-urdálbhaúrḍ|n.|\pfabbr avoir un oursin dans le portefeuille|A very rich person; billionaire
-vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pfabbr vendre la peau de ours avant de avoir tué|\
+lârdávrá|n.|\pf{langue de bois}|Evasive, unclear, or overly formal speech
+urdálbhaúrḍ|n.|\pf{avoir un oursin dans le portefeuille}|A very rich person; billionaire
+vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pf{vendre la peau de ours avant de avoir tué}|\
     To depend on predictions of the future. \textit{Of disputed origin; first attested in the \
     works of the Early UF comedian \s{J. A. B. Snet’h}}| \s{fut} vádłabhaud’hávúrsab’hád’háváb’hrárḍure,\
     \s{s} vádłabhaud’hávúrsab’hád’háváb’hrárḍus
-râdrásôn|v.|\pfabbr prendre ses jambe à son cou|To run|\s{fut} râdrásônre, \s{subj} râdrásôns
-t’hebhaúz|v.|\pfabbr jeter l’éponge|To be (ULTRA-)French| \s{fut} t’hebhaúźe, \s{subj} t’hebhaúś
-T’hebhaú|n. or adj.|{\nf from} t’hebhaúz|(ULTRA-)France, (ULTRA-)French
-T’hebhaú Raúl|n. def. sg.|from \w{t’hebhaúz} + \w{raúl}|The ULTRAFRENCH language. \
+râdrásôn|v.|\pf{prendre ses jambe à son cou}|To run|\s{fut} râdrásônre, \s{subj} râdrásôns
+t’hebhaúz|v.|\pf{jeter l’éponge}|To be (ULTRA-)French| \s{fut} t’hebhaúźe, \s{subj} t’hebhaúś
+T’hebhaú|n. or adj.|from \w{t’hebhaúz}|(ULTRA-) France, (ULTRA-)French
+T’hebhaú Raúl|n. def. sg.|from \w{t’hebhaúz} + \w{raúl}|The ULTRAFR\-ENCH language. \
     \textit{Only \w{T’hebhaú} is declined as though the entire phrase were one word. In \
     informal speech and writing, this is typically shortened to \w{Raúl}}|\s{nom sg} \
     \textit{irreg.} \w{T’hebhaú Raúl}
@@ -377,7 +377,8 @@ dérny’é|adj.|dernier|Last, final, ultimate
 rád’hérn|n.|from \w{rá} + \w{dérny’é}|\textit{(always definite)} Last month
 rẹ́b’h|v. or n.|rêver|1. To dream (+\s{gen} of sth.). 2. Dream, a dreaming|\s{fut} rẹ́v́e, \
     \s{subj} rẹ́b’hs
-aúráj|n.|orage|1. \textit{(often pl.)} Storm, tempest, thunderstorm. 2. \textit{fig.} Upheaval, turmoil, crisis
+aúráj|n.|orage|1. \textit{(usually pl.)} Storm, tempest, thunderstorm. \textit{Ex: \s{Snet’h ii.7} \w{ḅárýaúráj ḍẹ́ríbâ} \
+    ‘Like a terrible storm’.} 2. \textit{fig.} Upheaval, turmoil, crisis
 dec̣ír|v.|déchirer|1. +\s{part} To tear, rip, rend. 2. +\s{acc} To rend asunder, tear to pieces\
     |\s{fut} dec̣irrẹ, \s{subj} dec̣írs
 ḅéy’í|n.|pays|Country, land, region, nation
@@ -410,15 +411,15 @@ rád’hsy’ô|n.|traditon|Tradition, custom
 ásy’ê|v.|ancien|To be ancient|\s{fut} ásy’êr, \s{subj} ásy’ês
 ub’h|v.|ouvrir|To open|\s{fut} uv́, \s{subj} ub’hs
 ḅaj|n.|page|Page
-ráb’háy’|v.|\pf{travailler}, \s{fut} and \s{subj} from \pf{bosser}|To work|\s{fut} bohér, \s{subj} bos
+ráb’háy’|v.|\pf{travailler}, \s{fut} and \s{subj} from \pf{bos\-ser}|To work|\s{fut} bohér, \s{subj} bos
 ýr|v.|heurter|To hit, strike|\s{fut} ýrḍ, \s{subj} ýrs
 rúb’h|v.|trouver|To find, discover
 b’hid|v.|vide|To be empty
-rêdrsýrśẹ|v.|\pfabbr prendre sur soi|\
+rêdrsýrśẹ|v.|\pf{prendre sur soi}|\
   1. +\s{aci} To take upon onself to do sth.\
   2. +\s{pci} To take upon oneself to start doing sth.
 c’haúḍrêd’hẹ|n.|compte-rendu|Account, record
-c’haú|adj.|see sense 2|1. Holy. 2. \s{c’haú-}\L{} \textit{‘religious prefix’, prepended in derivation to nouns that \
+c’haú|adj.|see sense 2|1. Holy. 2. \w{c’haú-}\L{} \textit{‘religious prefix’, prepended in derivation to nouns that \
   have a religous connotation; this is historically a back-formation from \w{c’haúfrér} and \w{c’haúhýr} \
   which happen to both start with this ‘prefix’}
 ḷý|n.|lieu|\textit{Base of the spatial correlatives. In senses 2–5, case affixes are attached before \this, e.g. \
@@ -432,7 +433,7 @@ c’haúbhárrás|n.|\w{c’haú} + \pf{paroisse}|Parish
 c’haúhaúvnaút’hẹ|n.|\w{c’haú} + \pf{com\-mu\-nau\-té}|Mo\-nastery
 c’haúvnaút’hẹ|n.|communauté|Community
 vnásḍér|n.|monastère|Castle
-c’haúbhèłínáj|n.|c’haú- + \pfabbr pèlerinage|Pilgrimage
+c’haúbhèłínáj|n.|\w{c’haú} + \pf{pèlerinage}|Pilgrimage
 vŷ|v.|mener|To lead|\s{fut} menre, \s{subj} mens
 áł|v.|from earlier *\w{ḅał} < \pf{parler}]|To speak
 c’haúáł|n.|\w{c’haú} + \w{áł}|Prophecy
@@ -444,8 +445,8 @@ fé|n.|fin|End
 ráy’á|n.|voyage|Travel, voyage, journey
 vêt’hnâ|adv.|from \pf{maintenant}, lenited for unknown reasons|Now
 áríb’h|v.|arriver|To arrive
-lys|adv.|\pf{plus} pronounced [plys])|No longer, not any more. \textit{The meaning of this and \
-    \w{lẹ} swapped at some point for unknown reasons}.
+lys|adv.|\pf{plus} /plys/|No longer, not any more. \textit{The meaning of this and \
+    \w{lẹ} swapped at some point for unknown reasons}
 
 ḍédv́ér|interj.|\pf{putain de merde}|Fuck. \textit{Generic expletive}
 y’éjúré|n.|\pf{siège} + \pf{tabouret}|Chair, seat
@@ -464,7 +465,7 @@ c’haúv́ájẹ|n.|\w{c’haú} + \pf{magie}|Magic
 siḍ|n.|site|Facility, site
 c’haúfí|v.|confiner|To contain
 vvâ|n.|maman|Mother
-vér|n.|mère|Mum, mom
+vér|n.|mère|\textit{(informal)} Mum, mom
 rjẹ|n.|Hergé|Comic book
 
 sud’hénvâ|adv.|soudainement|Suddenly
@@ -520,7 +521,7 @@ bźé|v.|besoin|+\s{acc} \textit{or} \s{part} To need, require
 vvâ|n.|moment|Moment, instant
 át’hád|n.|entendre|Hear, perceive (+\s{part} sbd./sth.)|\s{fut} át’hádé, \s{subj} át’hás
 núb’h|v.|nouveau|To be new|\s{fut} núb’he, \s{subj} núb’hs
-b’hŷnnúb’hâ|adv.|Old \s{all} of \w{núb’hâ}|Anew
+b’hŷnnúb’hâ|adv.|old \s{all} of \w{núb’hâ}|Anew
 vê|n.|main|Hand
 
 aḅraúc̣|v.|approcher|To approach, come near, walk up to (+\s{all} sbd./sth.)|\s{fut} \

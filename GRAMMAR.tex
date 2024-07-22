@@ -827,7 +827,7 @@ is always retained if the \w{hý} is omitted, e.g. we have \w{b’henc’hánár
 
 The \w{n} in the \s{indef instr sg} is omitted according to the same rules as the \w{d} in the \s{def abl sg}.
 
-\subsubsection{Negation}
+\subsubsection{Negation}\label{subsubsec:noun-negation}
 Nouns, as well as proper adjectives and adverbs (i.e. those which are not formed from an adjective verb) are negated
 using the particle \w{aû}, which may be separated from the noun by a hyphen for clarity, e.g. \w{aûádróid} or \w{aû-ádróid}
 ‘non-android’.
@@ -2693,6 +2693,10 @@ at least in spoken communication with non-android participants, UF is the best o
 \twocolumn[\section{Dictionary}\thispagestyle{empty}]
 
 \ExplSyntaxOn
+
+%% Allow breaking after slashes.
+\catcode `/ = 13
+\def/{\char`/\penalty0}
 
 \cs_new:Npn \start_entry: {
     \hangindent = 6pt
