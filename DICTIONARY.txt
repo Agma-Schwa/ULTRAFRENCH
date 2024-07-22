@@ -40,9 +40,10 @@
 ##   - Do not use any markup in the ‘forms’ field (except for making ‘fut’ etc.
 ##     italic). FIXME: Do that in the ULTRAFRENCHER instead.
 
-ad’hór|v. tr.|adore|1. To love, adore.\
-    2. +\s{part} To be in love with, have a crush on.\
-    3. +\s{gen} To desire (someone)|\s{fut} ad’hórérẹ́, \s{subj} ad’hórs
+ad’hór|v. tr.|adore|\
+    \\ To love, adore.\
+    \\ +\s{part} To be in love with, have a crush on.\
+    \\ +\s{gen} To desire sbd./sth|\s{fut} ad’hórérẹ́, \s{subj} ad’hórs
 
 aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
@@ -51,10 +52,11 @@ vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} vvaúríźe, \s{subj} vvaú
 y’ír|v. (in)tr.|ouïr|To understand, listen, \textit{(rarely)} hear|\s{fut} aúré, \s{subj} rás
 Cár|n.||\textit{male given name, equivalent to English ‘Kyle’ or ‘Charles’}
 ráhó|n.|poisson|Fish
-act’he|v. tr.|from \w{ac}|1. To cut or cleave with an axe. \
-    2. +\s{acc} To bring an end to. \
-    3. +\s{acc def} \textit{of \w{árb} intr. (other than literal)} To get to the point, cut to the chase. \
-    4. +\s{acc def} \textit{of \w{árb} and \s{acc}} \
+act’he|v. tr.|from \w{ac}|\
+    \\ To cut or cleave with an axe. \
+    \\ +\s{acc} To bring an end to. \
+    \\ +\s{acc def} \textit{of \w{árb} intr. (other than literal)} To get to the point, cut to the chase. \
+    \\ +\s{acc def} \textit{of \w{árb} and \s{acc}} \
     To bring to light, reveal. \textit{Originally, this idiom did not take a double \s{acc}, but \
     was instead formed with the \s{acc} of ‘tree’ and the \s{ill} of the object, meaning something along \
     the lines of ‘to bring down the tree(s) on sth’—the image here being that of cutting down trees in \
@@ -79,24 +81,27 @@ rá|n.|loi|Law, rule, regulation
 c’hóný|adj.|connu|Known, familiar, well-kn\-own
 y’aúhý|inconj., postpos.|\pf{il n’y a aucun}|There is no, there are no, there is none
 ý’aúhý|inconj., postpos.|\pf{il y a aucun}|There is, there are
-ráy’ê|n.|moyen|1. Way, means, method. 2. \w{ráy’ê y’aúhý} + \s{aci} There is no way, that... \
-    3. \s{instr pl} \w{b’hehráy’ê} How, by what means, in this way
+ráy’ê|n.|moyen|\\ Way, means, method. \\ \w{ráy’ê y’aúhý} + \s{aci} There is no way, that \ldots{} \
+    \\ \s{instr pl} \w{b’hehráy’ê} How, by what means, in this way
 
-ub’hrá|v.|pouvoir|1. +\s{inf/aci} To be able to, can. 2. +\s{part} Capable of \ldots \
-    \textit{Never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
-    \s{pci}, in which case the variant with the \s{part} is used instead}. 3. \s{opt cond i + \
-    aci} to be possible; may. \textit{Dynamic or epistemic, never deontic; this and sense 4 are essentially a \
-    more emphatic optative}. 4. \s{opt cond ii + aci} might. \textit{Dynamic or epistemic, never deontic}|\s{fut} úrẹ́, \s{subj} ís
+ub’hrá|v.|pouvoir|\
+    \\ +\s{inf/aci} To be able to, can. \
+        \textit{Never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or \
+        \s{pci}, in which case the variant with the \s{part} (sense {\bf 2}) is used instead}. \
+    \\ +\s{part} To be capable of \ldots \
+    \\ \s{opt cond i + aci} To be possible; may. \textit{Dynamic or epistemic, never deontic; this and sense 4 are essentially a \
+        more emphatic optative}. \
+    \\ \s{opt cond ii + aci} Might. \textit{Dynamic or epistemic, never deontic}|\s{fut} úrẹ́, \s{subj} ís
 ab’héy’|n.|abeille|Bee
 b’hóy’ẹ|v.|voler|To fly. Flight
 ez-|pron.|ses|Its, her, his, their
 lýr|pron.|leur|Their
 el|n.|ailles|Wing, blade, fin
 Lác|n.||\textit{female given name, equivalent to English ‘Bi\-anca’}
-auḍé|v.|obtenir|1. To obtain, get, acquire. 2. +\s{abl} To gain purchase on or hei\-ght or distance from|\s{fut} auḍy’édrẹ́
+auḍé|v.|obtenir|\\ To obtain, get, acquire \\ +\s{abl} To gain purchase on or hei\-ght or distance from|\s{fut} auḍy’édrẹ́
 sol|n.|sol|Ground, floor, earth, soil
 c’hór|n.|corps|Body
-ab’haḍ|v.|abattre|1. To cut down, fell, knock down, shoot down. 2. To butcher, cut apart violently|\s{fut} ab’haḍrẹ́, \s{subj} ab’has
+ab’haḍ|v.|abattre|\\ To cut down, fell, knock down, shoot down. \\ To butcher, cut apart violently|\s{fut} ab’haḍrẹ́, \s{subj} ab’has
 árb|n.|arbre|Tree
 ac|n.|hache|Axe, hatchet
 asý’ýâ|particle|\pf{pas absolument}|Not, no. \textit{Commonly \w{’sý’ýâ} after vowels and \
@@ -105,7 +110,7 @@ c’hd’hal|adv.|\pf{que dalle}|Naught, absolutely no\-thing
 jávé|adv.|jamais|Never, at no time
 ráv́â|adv.|rarement|Seldom, rarely (ever)
 y’é|adv.|rien|Nothing
-au|conj.|aussi|1. And, also, as well, too 2. \w{au} ... \w{au} ... ‘both ... and ...’
+au|conj.|aussi|\\ And, also, as well, too \\ \w{au} \ldots{} \w{au} \ldots{} ‘both \ldots{} and \ldots’
 ec̣|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
 ânb’hé|adv.|\pf{en effet}, via metathesis from *\w{âné\-b’he}|Verily, indeed, in fact
@@ -116,7 +121,7 @@ ré|prefix|très|\textit{Superlative prefix. See grammar}
 râdvâ|prefix|grandement|\textit{Superlative prefix. See grammar}
 nájẹ|v.|nager|To swim|\s{fut} náȷ́ẹ, \s{subj} nájes
 e|n.|eau|Water
-dẹhẹ|n.|dessus|1. Top, upper side. 2. Surface of a body of water
+dẹhẹ|n.|dessus|\\ Top, upper side. \\ Surface of a body of water
 b’he|conj.|envers|+\s{subj} So that, so as to, to, in order to. \textit{Commonly enclitic \
     \w{’b’h} after vowels}
 ḅarḍ|v.|partir| To leave, go away, depart|\s{fut} ḅarẹ́, \s{subj} ḅars
@@ -154,7 +159,7 @@ jys|conj.|\pf{jusqu’à ce que}|+\s{opt} Until
 sit’há|conj.|\pf{si tant est que}|+\s{opt} Supposing that; if, assuming that
 fahaú|conj.|\pf{de façon que}|+\s{opt} In such a way that
 véhýr|conj.|\pf{dans la mesure où}|Insofar as
-sḅé|v.|espérer|1. To want (+\s{acc} sth.) 2. +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
+sḅé|v.|espérer|\\ To want (+\s{acc} sth.) \\ +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
 rêd|v.|craindre|+s{opt} To fear, lest \ldots \textit{Construed with the negated optative}|\s{fut} \
     rêdrẹ́, \s{subj} rês
 rêd’hes|particle|\pf{bien sûr}|Of course, certainly, surely
@@ -166,7 +171,7 @@ rrá|v.|croire|Believe (something or someone)|\s{fut} rrẹ́, \s{subj} rrás
 C’hebèc’h|n.|Québec|The Promised Land
 ḅaú|n.|pont|Bridge
 áȷ́éd|v.|enjoindre|To order, enjoin, command
-fér|v.|faire|1. To do, make, build, construct, erect 2. \textit{Expletive; see \
+fér|v.|faire|\\ To do, make, build, construct, erect \\ \textit{Expletive; see \
     §~\ref{subsubsec:personal-pronouns}}|\s{fut} fẹ́, \s{subj} fés
 sav́á|v.|savoir|To know|\s{fut} saúr, \s{subj} sac
 ré|v.|vrai|To be true, correct, right|\s{fut} rẹ́, \s{subj} rés
@@ -177,7 +182,7 @@ F|adj.|from \pf{fẹ}|\textit{Logic.} False, $\bot$
 rár|v.|voir|To see (+\s{part} sbd./sth.)|\s{fut} b’hérẹ́, \s{subj} rárs
 rát’hẹ|particle|vois-tu|You see, you know
 ré|n.|rai|Ray, beam
-fèhẹ|n.|faisceau|1. Bundle, bunch, cluster. 2. Beam, ray
+fèhẹ|n.|faisceau|\\ Bundle, bunch, cluster. \\ Beam, ray
 laut’h|v.|flotter|Fl\-oat, hover, levitate|\s{fut} laut’hre, \s{subj} laut’hes
 ḅáłýr|n.|parleur|Speaker, interlocutor
 deslẹ|v.|déceler|To detect, discover, uncover, reveal|\s{fut} deslẹre, \s{subj} deslẹs
@@ -189,19 +194,19 @@ ulíy’ẹ́|v.|oublier|To forget|\s{fut} ulíy’ẹ́rẹ́, \s{subj} ulíy’é
 y’ẹ́|v.|nier|To forbid, deny|\s{fut} y’ẹ́rẹ́, \s{subj} y’ẹ́s
 sérḍé|det.|certain|Certain, particular but not specified
 sisḍé|n.|système|System
-véhýr|v/n.|mesure|1. To measure, 2. Measurement|\s{fut} véhýrẹ́, \s{subj} véhýrs
+véhýr|v/n.|mesure|\\ To measure \\ Measurement|\s{fut} véhýrẹ́, \s{subj} véhýrs
 vé|conj.|mais|But, however, although
 c’haúḅrâd|v.|comprendre|+\s{part} To comprehend, understand, gr\-asp|\s{fut} c’haúḅrâdrẹ́, \
     \s{subj} c’haúḅrâs
-ḍúr|adv.|toujours|1. \textit{(positive context)} Always. 2. \textit{(negative context)} Still
+ḍúr|adv.|toujours|\\ \textit{(positive context)} Always. \\ \textit{(negative context)} Still
 c’haúbhausy’ô|n.|composition|Composition, arrangement, structure
-vísy’ô|n.|émission|1. Emission. 2. Programme, broadcast, show
+vísy’ô|n.|émission|\\ Emission. \\ Programme, broadcast, show
 swi|det.|celui|The one, that one, this one
 sẹh|det.|ceci|+\s{def} \textit{noun} This, these. \textit{Precedes and is attached to nouns}
 sý’ẹ|det.|cela|+\s{def} \textit{noun} That, those. \textit{Precedes and is attached to nouns; often\
     \w{sý’} before vowels, with one apostrophe, not two}
 lývy’ér|n.|lumière|Light
-saúr|n.|sorte|1. Kind, sort, type, form 2. \s{def + gen} (some) kind(s) of
+saúr|n.|sorte|\\ Kind, sort, type, form \\ \s{def + gen} (some) kind(s) of
 lec’hḍraúvnẹ́t’hic’h|v.|électromagnétique|To be electromagnetic|\s{fut} lec’hḍraúvnẹ́t’hic’hre, \
     \s{subj} lec’hḍraúvnẹ́t’hic’hes
 nérjẹ|n.|énergie|Energy
@@ -220,17 +225,17 @@ ḍeý’ebhat’hẹ|n.|télépathie|Telepathy
 c’habhahit’hẹ|n.|capacité|Skill, capacity, ability
 sáhẹ|v.|insensé|To be preposterous, absurd, nonsensical|\s{fut} sáhere, \s{subj} sáhes
 jys|adv.|juste|Just, only, merely
-lí|v.|lire|1. +\s{part} To read from. 2. +\s{acc} To peruse, read entirely \
+lí|v.|lire|\\ +\s{part} To read from. \\ +\s{acc} To peruse, read entirely \
     |\s{fut} lírẹ́, \s{subj} lís
 cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, one another
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pf{livre} + \pf{bouquin}|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} áv́áy’érẹ́, \s{subj} áv́áy’és
 Sásc’hríḍ|n. never lenited|sanskrit|The Sanskrit language
-baú|v. irreg.|bon|1. To be good, well. 2. To be right, correct, appropriate|\s{fut} baúré, \
+baú|v. irreg.|bon|\\ To be good, well. \\ To be right, correct, appropriate|\s{fut} baúré, \
     \s{subj} véy’ýrs; \s{comp} lẹvéy’ýr, y’ŷvéy’ýr, rêvéy’ýr; \s{sup} révéy’ýr, \
     râdvâv\-éy’\-ýr
-vaúb’hẹ|v. irreg.|mauvais|1. To be bad 2. To be wrong, incorrect, inappropriate|\s{fut} \
+vaúb’hẹ|v. irreg.|mauvais|\\ To be bad \\ To be wrong, incorrect, inappropriate|\s{fut} \
     bíré, \s{subj} bíres; \s{comp} lẹbír, y’ŷbír, rêbír; \
     \s{sup} réb’hír, râdvâbír
 
@@ -239,21 +244,21 @@ ḅẹt’hẹ|v. irreg.|petit|To be small, little|\s{fut} rêdẹ́, \s{subj} b�
     lẹrêd, y’ŷrêd, rêrêd; \s{sup} rérêd, râdvârêd
 
 raúb’hẹ|n.|robot|Robot
-vâhẹ|v.|manquer|1. +\s{gen} To lack, want. 2. +\s{part} \textit{or} \s{pass} To miss. \textit{The object and \
+vâhẹ|v.|manquer|\\ +\s{gen} To lack, want. \\ +\s{part} \textit{or} \s{pass} To miss. \textit{The object and \
     subject of this verb are swapped compared to English ‘to miss’, e.g. \w{b’hývvâhé} (\s{2pl.act} + \s{1sg.pass}) \
-    ‘I miss you (\s{pl})’, lit. roughly ‘you (\s{pl}) are wanting to me’)}. 3. +\s{acc} To \
+    ‘I miss you (\s{pl})’, lit. roughly ‘you (\s{pl}) are wanting to me’)}. \\ +\s{acc} To \
     miss out on|\s{fut} vâhérẹ́, \s{subj} vâhés
 ḅárḍẹ|n.|partie|Part, portion, piece, faction of a whole
 sásy’él|v.|essentiel|To be essential|\s{fut} sásy’élẹ́, \s{subj} sásy’éls
 ráhis|v.|raciste|To be racist|\s{fut} ráhise, \s{subj} ráhiss
 ab’hèc’h|v.|affecter|+\s{acc} To affect, influence|\s{fut} ab’hèc’hre, \s{subj} ab’hè\-c’hes
 vú|adj.|moult|Many, much, a lot of
-faúr|n.|force|1. Force, strength, power. 2. \w{Faúr} \s{def} \textit{(science fiction, Star Wars)} The Force
+faúr|n.|force|\\ Force, strength, power. \\ \w{Faúr} \s{def} \textit{(science fiction, Star Wars)} The Force
 b’hýlnẹ́r|v.|invulnérable|+\s{instr} To be incapable of being af\-fec\-ted by, \
     invulnerable to|\s{fut} b’hýlnẹ́rẹ́, \s{subj} b’hýlnẹ́rs
-u|conj.|ou|1. Or. \textit{Inclusive, see also \w{ra}}. 2. \w{u} \ldots\ \w{u} \ldots\ ‘\ldots\ or \
+u|conj.|ou|\\ Or. \textit{Inclusive, see also \w{ra}}. \\ \w{u} \ldots\ \w{u} \ldots\ ‘\ldots\ or \
     \ldots’ \textit{(inclusive)}
-ra|conj.|\pf{swa} > *\w{rá}|1. Or. \textit{exclusive, see also~\w{u}}. 2. \w{u}/\w{ra} \
+ra|conj.|\pf{swa} > *\w{rá}|\\ Or. \textit{exclusive, see also~\w{u}}. \\ \w{u}/\w{ra} \
     \ldots\ \w{ra} \ldots\ ‘either \ldots\ or \ldots’ \textit{(exclusive)}
 ádróid|n.|androïde|Android
 áví|n.|ami|Friend
@@ -264,32 +269,32 @@ sybhẹ́rýr|v.|supérieur|\textit{intr. or} +\s{gen} To be superior to, better 
     sybhẹ́rýrẹ́, \s{subj} sybhẹ́rýrs
 
 ḍèc’hníc’hvâ|adv.|techniquement|Technically
-níb’hẹ|n.|niveau|1. Level, degree. 2. \s{def iness + gen} On the level of
+níb’hẹ|n.|niveau|\\ Level, degree. \\ \s{def iness + gen} On the level of
 séḅ|v.|simple|To be plain, simple|\s{fut} séḅrẹ́, \s{subj} séḅs
 c’hrír|v.|écrire|To write|\s{fut} c’hrírẹ́, \s{subj} c’hrís
 dahaúr|particle|d’accord|Sure, ok, agreed, fine
 jys|v.|injuste|To be unjust, unfair|\s{fut} jysre, \s{subj} jyss
 c’hóbhár|v.|comparer|To compare|\s{fut} c’hóbhárre, \s{subj} c’hó\-bhárs
-c’hóvâ|v.|commencer|1. (\s{+ part}) To start, commence, begin. 2. \s{+ gen} To start out as|\
+c’hóvâ|v.|commencer|\\ (\s{+ part}) To start, commence, begin. \\ \s{+ gen} To start out as|\
     \s{fut} c’hóvârẹ́, \s{subj} c’hóv\-ás
 vás|n. \s{pl def}|masses|The masses, the people
 nór|v.|back-formation from *\w{nórâ} from \pf{ignorant}|To be ignorant, \
     unaware, oblivious
 séy’ẹ́|v.|essayer|+\s{part} \textit{or} \s{inf} To try, attempt|\s{fut} séy’ẹ́rẹ́, \s{subj} séy’ẹ́s
-c’hóhid’hẹ́|v.|considérer|1. +\s{part} To consider, think ab\-out, ponder. 2. +\s{acc} To think \
+c’hóhid’hẹ́|v.|considérer|\\ +\s{part} To consider, think ab\-out, ponder. \\ +\s{acc} To think \
     through|\s{fut} c’hóhid’hẹ́rẹ́, \s{subj} c’hóhid’hés
-nát’hýr|n.|nature|1. \textit{(chiefly)} \s{indef} Nature, the natural world. 2. \s{def} The way \
+nát’hýr|n.|nature|\\ \textit{(chiefly)} \s{indef} Nature, the natural world. \\ \s{def} The way \
     something is
 rê|v.|trine|To be composed of three parts or people; triune|\s{fut} rêrẹ́, \s{subj} rês
 laúrvé|conj.|from \w{laúrs} + \w{vé}|\textit{(contraction)} But, when. \textit{Stressed on the first \
     syllable}
-râsír|v.|transpirer|+\s{aci} 1. To come to light, become known, transpire. \
-    2. \s{pres ant} For it to be clear, apparent, evident that \ldots \textit{Lit. \
+râsír|v.|transpirer|+\s{aci} \\ To come to light, become known, transpire. \
+    \\ \s{pres ant} For it to be clear, apparent, evident that \ldots \textit{Lit. \
     ‘it has come to light that \ldots’}|\s{fut} râsírẹ́, \s{subj} râsírs
-c’hóvníc’h|v.|communiquer|1. To communicate (+\s{instr} with sbd.). 2. Communication|\s{fut} \
+c’hóvníc’h|v.|communiquer|\\ To communicate (+\s{instr} with sbd.). \\ Communication|\s{fut} \
     c’hóvníc’hre, \s{subj} c’hóvníc’hes
 ḅárḍihibhá|n.|participant|Participant
-dývrê|particle|\pf{du moins}|At least. \textit{As in e.g. ‘At least, I think that...’}
+dývrê|particle|\pf{du moins}|At least. \textit{As in e.g. ‘At least, I think that \ldots’}
 fic’h|v.|back-formation from *\w{fic’hs}, reinterpreted as a subjunctive stem; \
     from \pf{fixer}|To fix, set, establish|\s{fut} fic’hre, \s{subj} fic’hs
 ba|v.|baser|To base on, found on|\s{fut} bare, \s{subj} bas
@@ -302,9 +307,9 @@ naúḍ|v.|nôtre|To be ours|\s{fut} naúḍre, \s{subj} naús
 b’hauḍ|v.|vôtre|To be yours (\s{pl})|\s{fut} b’hauḍre, \s{subj} b’haus
 lýrḍ|v.|from \pf{leur}; the ‘ḍ’ was added in analogy with \
     \w{naúḍ} and \w{b’hauḍ}|To be theirs|\s{fut} lýrḍre, \s{subj} lýrs
-rzaúsḍ|v.|exhaustif|1. To be exhaustive, comprehensive, complete. 2. To be finished, completed|\s{fut} rzaúsḍre, \s{subj} rzaúsḍs
+rzaúsḍ|v.|exhaustif|\\ To be exhaustive, comprehensive, complete \\ To be finished, completed|\s{fut} rzaúsḍre, \s{subj} rzaúsḍs
 y’ác’hraúníc’h|v.|diachronique|To be diachronic|\s{fut} y’ác’hraú\-níc’hre, \s{subj} y’ác’hraúníc’hes
-rávér|n.|grammaire|1. Grammar, the grammatical rules of a language. 2. A textbook describing the grammar \
+rávér|n.|grammaire|\\ Grammar, the grammatical rules of a language \\ A textbook describing the grammar \
     of a language
 lýv́á|v. \s{3rd} person only|pleuvoir|To rain|\s{fut} lýv́áre, \s{subj} lýv́ás
 ed|particle|et|\textit{Used in numbers, see §~\ref{subsec:numerals}}
@@ -316,20 +321,20 @@ ebhẹ|v.|épais|To be  thick|\s{fut} ebhrẹ, \s{subj} ebhes
 lúr|v.|lourd|To be bulky, oversized, heavy
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
-c’hánár|n.|canard|1. Ship, boat. 2. \s{instr indef} By boat
+c’hánár|n.|canard|\\ Ship, boat. \\ \s{instr indef} By boat
 c’hánaú|n.|canot|Duck (bird)
 rác’hánár|n.|from \w{ráhe} + \w{c’hánár}|Airship, dirigible
 ráhe|n.|oiseau|Bird
 ráhé|n.|from \w{ráhe} + \w{ráhó}|Flying fish
-raúl|n.|parole|1. Language, speech, word. 2. \w{Raúl} \textit{(definite only)} Short for \w{T’hebhaú Raúl}. \
+raúl|n.|parole|\\ Language, speech, word. \\ \w{Raúl} \textit{(definite only)} Short for \w{T’hebhaú Raúl}. \
     \textit{\s{nom sg} irreg. \w{Raúl}; all other forms are regular}
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
 susy’é|v.|soucier|+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
-a|pron.|quoi|\textit{interrog. and rel.} 1. \s{indef} What? 2. \s{def} Who? Whom? \
-    3. \s{indef} \textit{or} \s{def} Which, who, that \textit{(see grammar)}
-vérs|interj.|merci|1. Thank you. (+\s{gen} for sth.). 2. \w{dyvérs fér} To thank \
+a|pron.|quoi|\textit{Interrogative and relative} \\ \s{indef} What? \\ \s{def} Who? Whom? \
+    \\ \s{indef} \textit{or} \s{def} Which, who, that \textit{(see grammar)}
+vérs|interj.|merci|\\ Thank you. (+\s{gen} for sth.). \\ \w{dyvérs fér} To thank \
     (+\s{dat} sbd.) (+\s{gen} for sth.)
-rárd|v.|regarder|1. To watch. 2. To look at|\s{fut} rárdre, \s{subj} rárds
+rárd|v.|regarder|\\ To watch. \\ To look at|\s{fut} rárdre, \s{subj} rárds
 ḍẹ́ríb|v.|terrible|To be terrible (all senses)|\s{fut} ḍẹ́ríre, \s{subj} ḍẹ́rís
 
 # From Étienne.
@@ -349,7 +354,7 @@ daúb’hedwébhó|v.|\pf{tomber dans les pommes}|To faint|\s{fut} daúb’hedw�
     daúb’hedwébhós
 rádrénẹ́|v. + \s{aci}|\pf{les doigts dans le nez}|To put no effort into|\s{fut} rádrénrẹ́,\
     \s{subj} rádrénẹ́s
-uy’ed’háb’hrí|v.|\pf{rouler dans la farine}|To scam, swindle, cheat|\s{fut} uy’e\-d’háv́e,\
+uy’ed’háb’hrí|v.|\pf{rouler dans la farine}|To scam, cheat, swindle|\s{fut} uy’e\-d’háv́e,\
     \s{subj} uy’ed’háb’hrís
 ab’hínéb’heḅaý’évrâ|v.|\pf{habit ne fait pas le moi\-ne}|To judge based on appearances|\s{fut}\
     ab’hínéb’heḅaý’év́ẹ́, \s{subj} ab’hínéb’heḅaý’\-év́\-ás
@@ -360,8 +365,8 @@ lârdávrá|n.|\pf{langue de bois}|Evasive, unclear, or overly formal speech
 urdálbhaúrḍ|n.|\pf{avoir un oursin dans le portefeuille}|A very rich person; billionaire
 vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pf{vendre la peau de ours avant de avoir tué}|\
     To depend on predictions of the future. \textit{Of disputed origin; first attested in the \
-    works of the Early UF comedian \s{J. A. B. Snet’h}}| \s{fut} vádłabhaud’hávúrsab’hád’háváb’hrárḍure,\
-    \s{s} vádłabhaud’hávúrsab’hád’háváb’hrárḍus
+    works of the Early UF comedian \s{J. A. B. Snet’h}}| \s{fut} vád\-ła\-bhau\-d’há\-vúr\-sa\-b’há\-d’há\-vá\-b’hrár\-ḍu\-re,\
+    \s{s} vád\-ła\-bhau\-d’há\-vúr\-sa\-b’há\-d’há\-vá\-b’hrár\-ḍus
 râdrásôn|v.|\pf{prendre ses jambe à son cou}|To run|\s{fut} râdrásônre, \s{subj} râdrásôns
 t’hebhaúz|v.|\pf{jeter l’éponge}|To be (ULTRA-)French| \s{fut} t’hebhaúźe, \s{subj} t’hebhaúś
 T’hebhaú|n. or adj.|from \w{t’hebhaúz}|(ULTRA-) France, (ULTRA-)French
@@ -375,11 +380,13 @@ ach’es > \w{a} + \w{c’hes}
 rá|n.|mois|Month
 dérny’é|adj.|dernier|Last, final, ultimate
 rád’hérn|n.|from \w{rá} + \w{dérny’é}|\textit{(always definite)} Last month
-rẹ́b’h|v. or n.|rêver|1. To dream (+\s{gen} of sth.). 2. Dream, a dreaming|\s{fut} rẹ́v́e, \
+rẹ́b’h|v. or n.|rêver|\\ To dream (+\s{gen} of sth.). \\ Dream, a dreaming|\s{fut} rẹ́v́e, \
     \s{subj} rẹ́b’hs
-aúráj|n.|orage|1. \textit{(usually pl.)} Storm, tempest, thunderstorm. \textit{Ex: \s{Snet’h ii.7} \w{ḅárýaúráj ḍẹ́ríbâ} \
-    ‘Like a terrible storm’.} 2. \textit{fig.} Upheaval, turmoil, crisis
-dec̣ír|v.|déchirer|1. +\s{part} To tear, rip, rend. 2. +\s{acc} To rend asunder, tear to pieces\
+aúráj|n.|orage|\
+    \\ \textit{(usually pl.)} Storm, tempest, thunderstorm. \textit{Ex: \s{Snet’h ii.7} \w{ḅárýaúráj ḍẹ́ríbâ} \
+        ‘Like a terrible storm’.} \
+    \\ \textit{fig.} Upheaval, turmoil, crisis
+dec̣ír|v.|déchirer|\\ +\s{part} To tear, rip, rend. \\ +\s{acc} To rend asunder, tear to pieces\
     |\s{fut} dec̣irrẹ, \s{subj} dec̣írs
 ḅéy’í|n.|pays|Country, land, region, nation
 
@@ -389,15 +396,17 @@ c’haúfrér|n.|confrère|Brother (religious). \textit{Masc. or pl. only, see a
 c’haúhýr|n.|consœur|Sister (religious). \textit{Fem. only, see also \
     \w{c’haúfrér}}
 fórvẹ́|v.|informer|To inform (+\s{acc} sbd.) (+\s{aci} of sth.)|\s{fut} fórv́ẹ́, \s{subj} fórvẹ́s
-sérẹ́|v.|serré|1. To be tight, close-fitting, snug. 2. \s{indef} \textit{usually} \s{instr} \w{c’hýr sérệ} \
+sérẹ́|v.|serré|\\ To be tight, close-fitting, snug. \\ \s{indef} \textit{usually} \s{instr} \w{c’hýr sérệ} \
     A heavy heart|\s{fut} sérrẹ́, \s{subj} sérẹ́s
 c’hýr|n.|cœur|Heart
-će|v.|échouer|1. +\s{part} To stumble, do a bad job at. 2. +\s{acc} \textit{or} \s{aci} To \
+će|v.|échouer|\\ +\s{part} To stumble, do a bad job at. \\ +\s{acc} \textit{or} \s{aci} To \
     fail, flunk, not pass|\s{fut} ćere, \s{subj} ćes
-v́ár|v. irreg.|devoir|1. \s{pass} +\s{aci} Must, have to, be obliged to. \textit{The subject is always \
-    in the passive in this sense only}. 2. +\s{dat} To owe sbd. (+\s{acc} sth.). 3. \s{cond i + aci} \
-    Even if; \textit{e.g.} \w{aúrdyssa dẹće} \textit{‘even if he should fail’}|\s{cond i, ii} dy, \
-    \s{fut} dv́e, \s{subj} ráb’h
+v́ár|v. irreg.|devoir|\
+    \\ \s{pass} +\s{aci} Must, have to, be obliged to. \textit{The subject is always \
+        in the passive in this sense only}. \
+    \\ +\s{dat} To owe sbd. (+\s{acc} sth.). \
+    \\ \s{cond i + aci} Even if; \textit{e.g.} \w{aúrdyssa dẹće} \textit{‘even if he should fail’}|\s{cond i, ii} dy, \
+        \s{fut} dv́e, \s{subj} ráb’h
 Snet’h|n.||\textit{Family name, equivalent to English ‘Smyth’}
 sénýr|n.|seigneur|Lord
 abhérś|v.|apercevoir|To behold, descry
@@ -416,19 +425,19 @@ ráb’háy’|v.|\pf{travailler}, \s{fut} and \s{subj} from \pf{bos\-ser}|To wo
 rúb’h|v.|trouver|To find, discover
 b’hid|v.|vide|To be empty
 rêdrsýrśẹ|v.|\pf{prendre sur soi}|\
-  1. +\s{aci} To take upon onself to do sth.\
-  2. +\s{pci} To take upon oneself to start doing sth.
+  \\ +\s{aci} To take upon onself to do sth.\
+  \\ +\s{pci} To take upon oneself to start doing sth.
 c’haúḍrêd’hẹ|n.|compte-rendu|Account, record
-c’haú|adj.|see sense 2|1. Holy. 2. \w{c’haú-}\L{} \textit{‘religious prefix’, prepended in derivation to nouns that \
+c’haú|adj.|see sense 2|\\ Holy. \\ \w{c’haú-}\L{} \textit{‘religious prefix’, prepended in derivation to nouns that \
   have a religous connotation; this is historically a back-formation from \w{c’haúfrér} and \w{c’haúhýr} \
   which happen to both start with this ‘prefix’}
 ḷý|n.|lieu|\textit{Base of the spatial correlatives. In senses 2–5, case affixes are attached before \this, e.g. \
-    sense 2 \s{all} \w{sẹb'héḷý} ‘hither’} \
-  1. Place, location \
-  2. \w{sẹ}\ldots\this \s{def} [from \w{sẹh}] Here, hither, hence, \&c. \textit{Proximal demonstrative (all cases)} \
-  3. \w{sý’\L}\ldots\this \s{def} [from \w{sý’ẹ}] There, thither, thence, \&c. \textit{Distal demonstrative (all cases)} \
-  4. \this\w{hes} \s{indef} [from \w{c’hes}] Where, whither, whence, \&c. \textit{Interrogative (locative cases only)} \
-  5. \w{s’}/\w{sá\L}\ldots\this \s{indef} [from \w{sá}] No\-where, from no\-where, \&c. \textit{Negative (locative cases only)}
+    sense 2 \s{all} \w{sẹb'héḷý} ‘hither’}. \
+  \\ Place, location \
+  \\ \w{sẹ}\ldots\this \s{def} [from \w{sẹh}] Here, hither, hence, \&c. \textit{Proximal demonstrative (all cases)} \
+  \\ \w{sý’\L}\ldots\this \s{def} [from \w{sý’ẹ}] There, thither, thence, \&c. \textit{Distal demonstrative (all cases)} \
+  \\ \this\w{hes} \s{indef} [from \w{c’hes}] Where, whither, when\-ce, \&c. \textit{Interrogative (locative cases only)} \
+  \\ \w{s’}/\w{sá\L}\ldots\this \s{indef} [from \w{sá}] No\-where, from no\-where, \&c. \textit{Negative (locative cases only)}
 c’haúbhárrás|n.|\w{c’haú} + \pf{paroisse}|Parish
 c’haúhaúvnaút’hẹ|n.|\w{c’haú} + \pf{com\-mu\-nau\-té}|Mo\-nastery
 c’haúvnaút’hẹ|n.|communauté|Community
@@ -475,14 +484,14 @@ sèt’h|v.|sentir|To feel|\s{fut} sèt’he, \s{subj} sès
 cah|v.|chasser|To hunt|\s{fut} cahe, \s{subj} cas
 áb’há|n.|enfant|Child
 ríb’hy’ér|n.|rivière|River
-syl|v.|seul|1. \textit{(chiefly)} To be the only one. \textit{Often as the adjective \w{sylâ} ‘only’}. \
-    2. To be alone|\s{fut} syle, \s{subj} syls
+syl|v.|seul|\\ \textit{(chiefly)} To be the only one. \textit{Often as the adjective \w{sylâ} ‘only’}. \
+    \\ To be alone|\s{fut} syle, \s{subj} syls
 dá|n.|dent|Tooth
 ḅará|n.|parent|Parent
 
 ḅáréḍ|v.|\pf{parraitre}; future stem from \pf{sembler}|To seem, appear|\s{fut} sáb
-c’hlýr|v.|inclure|1. +\s{part} To include. 2. +\s{acc} To possess, have \
-    \textit{(alienably)}. 3. +\s{gen} \textit{usually} \s{indef} To sell, offer, \
+c’hlýr|v.|inclure|\\ +\s{part} To include. \\ +\s{acc} To possess, have \
+    \textit{(alienably)}. \\ +\s{gen} \textit{usually} \s{indef} To sell, offer, \
     have in stock|\s{fut} c’hlýré, \s{subj} c’hlýrs
 rá|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
@@ -558,7 +567,7 @@ raúvá|n.|fromage|Moon
 y’úr|n.|jour|Day
 y’í|n.|nuit|Night
 vúb’hvâ|n.|movement|Movement, motion
-dévýr|v.|demeurer|1. To remain, stay. 2. To live, dwell (+\s{iness} somewhere)
+dévýr|v.|demeurer|\\ To remain, stay. \\ To live, dwell (+\s{iness} somewhere)
 ḅét’hýr|v.|peinture|To paint
 rál|n.|toile|Canvas
 vérr|n.|mer|Sea, ocean

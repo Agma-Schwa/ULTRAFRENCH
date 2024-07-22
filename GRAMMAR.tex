@@ -2698,9 +2698,25 @@ at least in spoken communication with non-android participants, UF is the best o
 \catcode `/ = 13
 \def/{\char`/\penalty0}
 
-\cs_new:Npn \start_entry: {
+%% Counter for senses.
+\newcounter {sense}
+\def \\ { %% 'Magic' macro that is recognised by the ULTRAFRENCHER. DO NOT RENAME.
+    \par
+    \textbf {\arabic{sense}.} \space
+    \stepcounter {sense}
+    \ignorespaces
+}
+
+\parindent = 3pt
+\everypar {
     \hangindent = 6pt
-    \hangafter = 1
+    \hangafter = 1 \relax
+}
+
+\cs_new:Npn \start_entry: {
+    \ifvmode\else\unskip\par\fi
+    \vskip 1pt
+    \setcounter {sense} {1}
     \noindent
 }
 
@@ -2713,7 +2729,7 @@ at least in spoken communication with non-android participants, UF is the best o
 
     %% Typeset word and part of speech.
     \mark { #1 }
-    \textbf { \ignorespaces #1 } \space
+    \textbf { \fontsize{13}{13}\selectfont \ignorespaces #1 } \space
     \textit { \ignorespaces #2 }
 
     %% Typeset etymology.
@@ -2734,7 +2750,7 @@ at least in spoken communication with non-android participants, UF is the best o
     }
 
     %% Typeset definition.
-    \space \ignorespaces #4 .
+    \space \ignorespaces #4
     \par
 }
 
@@ -2748,6 +2764,13 @@ at least in spoken communication with non-android participants, UF is the best o
     \textbf { \ignorespaces #2 }
     .
     \par
+}
+
+%% Print errors here.
+\msg_new:nnn  { ULTRAFRENCHER } { message } { foo }
+\def \ULTRAFRENCHERERROR #1 {
+    \msg_set:nnn  { ULTRAFRENCHER } { message } { #1 }
+    \msg_error:nn { ULTRAFRENCHER } { message }
 }
 
 \ExplSyntaxOff

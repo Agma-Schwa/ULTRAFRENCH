@@ -109,12 +109,36 @@ struct entry {
     /// Data.
     std::variant<std::u32string, std::vector<std::u32string>> data;
 
+    /// Part indices.
+    enum : size_t {
+        POSPart = 0,
+        EtymPart = 1,
+        BodyPart = 2,
+        FormsPart = 3,
+    };
+
     entry(std::u32string word, std::u32string data)
         : word{std::move(word)}
         , data{std::move(data)} { init(); }
     entry(std::u32string word, std::vector<std::u32string> data)
         : word{std::move(word)}
         , data{std::move(data)} { init(); }
+
+    static auto FullStop(std::u32string_view text_before) -> std::string_view {
+        text_before = trim(text_before);
+
+        // Skip past quotes so we don’t turn e.g. ⟨...’⟩ into ⟨...’.⟩.
+        while (text_before.ends_with(U'’')) text_before.remove_suffix(1);
+
+        // Recognise common punctuation marks.
+        if (
+            text_before.ends_with(U"?") or
+            text_before.ends_with(U"!") or
+            text_before.ends_with(U".") or
+            text_before.ends_with(U"\\ldots")
+        ) return "";
+        return ".";
+    }
 
     void print() const {
         auto s = to_utf8(word);
@@ -125,20 +149,66 @@ struct entry {
             usz i = 0;
             fmt::print("\\entry{{{}}}", s);
             for (; i < parts.size(); i++) {
-                // Typeset etymology.
-                if (i == 1 and not parts[i].empty()) {
-                    std::u32string_view etym{parts[1]};
+                static constexpr std::u32string_view SenseMacro = U"\\\\";
+                auto EmitField = [&] (bool full_stop = false) {
+                    if (full_stop) fmt::print("{{{}{}}}", to_utf8(parts[i]), FullStop(parts[i]));
+                    else fmt::print("{{{}}}", to_utf8(parts[i]));
+                };
+                switch (i) {
+                    // If this is a single word, wrap it with '\pf{}'. That takes
+                    // care of this field for most words (conversely, more complex
+                    // etymologies often don’t start w/ a PF word).
+                    case EtymPart: {
+                        if (parts[i].empty()) {
+                            EmitField();
+                            break;
+                        }
 
-                    // If the etymology contains no spaces, insert \pfabbr, and
-                    // make the word italic.
-                    if (not etym.contains(U' ')) fmt::print("{{\\pf{{{}}}}}", to_utf8(etym));
+                        std::u32string_view etym{parts[i]};
 
-                    // Otherwise, pass it along as-is.
-                    else { fmt::print("{{{}}}", to_utf8(etym)); }
+                        // If the etymology contains no spaces, insert \pf, and
+                        // make the word italic.
+                        if (not etym.contains(U' ')) fmt::print("{{\\pf{{{}}}}}", to_utf8(etym));
+
+                        // Otherwise, pass it along as-is.
+                        else { fmt::print("{{{}}}", to_utf8(etym)); }
+                    } break;
+
+                    // If the body contains senses, delimit each one with a dot. We
+                    // do this here because there isn’t really a good way to do that
+                    // in LaTeX.
+                    case BodyPart: {
+                        if (not parts[i].contains(SenseMacro)) {
+                            EmitField(true);
+                            break;
+                        }
+
+                        std::u32string_view body = parts[i];
+                        fmt::print("{{");
+                        while (not body.empty()) {
+                            auto pos = body.find(SenseMacro);
+
+                            // Last or only sense; just emit it.
+                            if (pos == std::u32string_view::npos) {
+                                fmt::print("{}{}", to_utf8(body), FullStop(body));
+                                break;
+                            }
+
+                            // Found a sense.
+                            //
+                            // - Terminate the previous one with a dot.
+                            // - Delete spaces between the two.
+                            // - Insert the sense macro.
+                            auto prev = trim(body.substr(0, pos));
+                            if (prev.empty()) fmt::print("{}", to_utf8(SenseMacro));
+                            else fmt::print("{}{}{} ", to_utf8(prev), FullStop(prev), to_utf8(SenseMacro));
+                            body.remove_prefix(pos + SenseMacro.size());
+                        }
+                        fmt::print("}}");
+                    } break;
+
+                    default: EmitField();
                 }
-
-                // All other fields are handled normally.
-                else { fmt::print("{{{}}}", to_utf8(parts[i])); }
             }
             for (; i < 5; i++) fmt::print("{{}}");
             fmt::print("\n");
@@ -157,12 +227,15 @@ class line_buffer {
     usz pos;
 
 public:
+    usz linenum = 0;
+
     line_buffer(std::u32string_view text)
         : text{text}
         , pos{0} {}
     void operator()(std::u32string& line) {
         /// Return empty line if we’re at the end.
         if (pos == std::u32string::npos) return;
+        linenum++;
 
         /// Find next line break. If there is none, return the rest.
         auto line_break = text.find('\n', pos);
@@ -180,6 +253,18 @@ public:
 
     explicit operator bool() const { return pos != std::u32string::npos; }
 };
+
+/// Emit errors as LaTeX macros.
+///
+/// This is so the error gets printed at the end of LaTeX compilation;
+/// if we print it when the ULTRAFRENCHER runs, it’s likely to get missed,
+/// so we do this instead.
+template <typename ...Args>
+void EmitError(fmt::format_string<Args...> fmt, Args&& ...args) {
+    fmt::print("\\ULTRAFRENCHERERROR{{  ERROR: ");
+    fmt::print(fmt, std::forward<Args>(args)...);
+    fmt::print("}}");
+}
 
 void generate(std::string_view input_text) {
     fmt::print(stderr, "[ULTRAFRENCHER] Generating dictionary...\n");
@@ -206,6 +291,14 @@ void generate(std::string_view input_text) {
         /// Delete comments.
         if (auto comment_start = line.find(U'#'); comment_start != std::u32string::npos)
             line.erase(comment_start);
+
+        /// Warn about non-typographic quotes, after comment deletion
+        /// because it’s technically fine to have them in comments.
+        if (line.contains(U'\'')) EmitError(
+            "Non-typographic quote in line {}! "
+            "Please use ‘’ (and “” for nested quotes) instead!",
+            buf.linenum
+        );
 
         /// Perform line continuation.
         while (trim(line), line.back() == U'\\' and buf) {
