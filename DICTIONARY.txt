@@ -383,7 +383,7 @@ rád’hérn|n.|from \w{rá} + \w{dérny’é}|\textit{(always definite)} Last m
 rẹ́b’h|v. or n.|rêver|\\ To dream (+\s{gen} of sth.). \\ Dream, a dreaming|\s{fut} rẹ́v́e, \
     \s{subj} rẹ́b’hs
 aúráj|n.|orage|\
-    \\ \textit{(usually pl.)} Storm, tempest, thunderstorm. \ex \s{Snet’h ii.7} \w{bárýaúráj déríbâ} \
+    \\ \textit{(usually pl.)} Storm, tempest, thunderstorm. \ex \s{Snet’h ii.7} \w{phárýaúráj téríbâ} \
         ‘like a terrible storm’ \
     \\ \textit{fig.} Upheaval, turmoil, crisis
 dec̣ír|v.|déchirer|\\ +\s{part} To tear, rip, rend. \\ +\s{acc} To rend asunder, tear to pieces\
@@ -408,7 +408,7 @@ v́ár|v. irreg.|devoir|\
     \\ \s{cond i + aci} Even if; \textit{e.g.} \w{aúrdyssa dẹće} \textit{‘even if he should fail’}|\s{cond i, ii} dy, \
         \s{fut} dv́e, \s{subj} ráb’h
 Snet’h|n.||\textit{Family name, equivalent to English ‘Smyth’}
-sénýr|n.|seigneur|Lord
+sénýr|n.|seigneur|\\ Lord \\ \textit{Short for \w{Ráb’h sénýr}}
 abhérś|v.|apercevoir|To behold, descry
 sáḍy’ér|n.|sanctuaire|Sanctuary, shrine
 ḅusy’ér|n.|poussière|Dust
@@ -427,7 +427,7 @@ b’hid|v.|vide|To be empty
 rêdrsýrśẹ|v.|\pf{prendre sur soi}|\
   \\ +\s{aci} To take upon onself to do sth.\
   \\ +\s{pci} To take upon oneself to start doing sth.
-c’haúḍrêd’hẹ|n.|compte-rendu|Account, record
+c’haúḍrêd’hẹ|n.|compte-rendu|Account, rec\-ord
 c’haú|adj.|see sense 2|\\ Holy. \\ \w{c’haú-}\L{} \textit{‘religious prefix’, prepended in derivation to nouns that \
   have a religous connotation; this is historically a back-formation from \w{c’haúfrér} and \w{c’haúhýr} \
   which happen to both start with this ‘prefix’}
@@ -496,7 +496,7 @@ c’hlýr|v.|inclure|\\ +\s{part} To include. \\ +\s{acc} To possess, have \
 rá|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
 ḅá nórávíc’h|n. archaic|Panoramix|Druid. \textit{Only the \w{nórávíc’h} is inflected; infixing of adj. is \
-    attested.} \ex \s{Snet’h}, \s{iii.2}: \w{derúb’h bá ráinórávíc’h} ‘to find the great druid’, with infixed \w{rá}
+    attested.} \ex \s{Snet’h}, \s{iii.2}: \w{derúb’h phá ráinórávíc’h} ‘to find the great druid’, with infixed \w{rá}
 nóráv|n.|from archaic \w{ḅá nórávíc’h}|Druid
 ahúr|v.|assurer|To ensure|\s{fut} ahúré, \s{subj} ahúrs
 fúr|v.|fournir|To deliver, provide (+\s{dat} sbd.) (+ \s{acc} with sth.)
@@ -574,6 +574,18 @@ vérr|n.|mer|Sea, ocean
 Sávýy’él|n.|Samuel|\textit{Male given name}
 rád’hyc’hsy’ô|n.|traduction|Translation
 
+révôt’hẹ|v.|remonter|To return, come back
+Ráb’h|n.|unknown; presumably the name of some celebrity or local deity|\
+    \\ \textit{indecl.} \s{def sg} \textit{always} \s{nom} \textit{or} \s{voc} Ráb’h. \textit{Main god of the \
+        ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps \w{RÁB’H}.} \
+        \ex \s{Snet’h}, \s{i.17}: \w{au lebálá daú RÁB’H} ‘and thus spake Ráb’h’ \
+    \\ \w{Ráb’h sénýr} \s{def sg} Lord Ráb’h. \textit{Used for sense~{\bf 1} in all other cases; as with all names, only \
+        \w{sénýr} is inflected. Old-fashioned often \w{RÁB’H Sénýr}} \
+        \ex \s{Snet’h}, \s{8.1}: \w{au labraúc RÁB’H naút B’héhénýr} ‘and they came to our Lord Ráb’h’ \
+    \\ \textit{(rarely)} The main god of another culture. \textit{Only attested figuratively. Not capitalised in \
+        this sense, and declined like a regular word.} \
+        \ex \s{Snet’h}, \s{ii.3}: \w{ledéraújá’z derévôt’he  láráb’h} ‘their god demanded they return’
+
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} \textit{active only, see §~\ref{subsec:ed-paradigm}}
 
@@ -589,3 +601,7 @@ s’ > sá
 ’sý’ýâ > asý’ýâ
 úrẹ́, ís > ub’hrá
 vá > rvá
+p- > ḅ-
+ph- > ḅ-
+p’h- > bh-
+t- > ḍ-
