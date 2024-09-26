@@ -346,7 +346,7 @@ lẹhuvud|n.|\pf{coup de foudre}|Love at first sight
 c’háraúciḍ|v.|\pf{les carrotes sont cuites}|To end for good, put to a permanent end\
     |\s{fut} c’hár\-aúc\-re, \s{subj} c’háraúc
 ḅauheŷnlabhé|v.|\pf{poser un lapin}|To forsake, abandon|\s{fut} ḅauheŷnlabhére, \s{subj} ḅauheŷnlabhés
-férrrásvát’h|n.|\pf{fer la grasse matinée}|A long, deep sleep
+férr-rásvát’h|n.|\pf{faire la grasse mat’}|A long, deep sleep
 rác’hsaý’ad|v.|\pf{raconter des salades}|To lie, tell tall tales, overexaggerate|\s{fut}\
     rác’h\-sa\-ý’e, \s{subj} rác’hsaýs
 férḍufraú|v.|\pf{en faire tout un fromage}|To make a big fuss a\-bout something|\s{fut}\
@@ -594,6 +594,40 @@ rét’hír|v.|retirer| \
     \\ +\s{part} To pull on sth. without actually moving it; to try to pull sth.|\s{fut} rét’hírẹ́, \s{subj} rét’hírs
 íváj|n. archaic|image|Image, picture
 váj|n.|from \w{íváj}|Image, picture
+
+váý’ýr|n.|malheur|Tragedy, misfortune
+saj|v.|sage|To be wise, prudent
+sajès|n.|sagesse|Wisdom
+dejẹ|adv.|déjà|Already
+dej|particle|from \w{dejẹ}| \textit{Emphatic particle; only used in the preterite} \
+    \\ \s{pret} + \w{dej} \textit{roughly} To have ever done sth.
+rẹ́flec̣|v.|réfléchir|To think (+\s{part} sth.)
+isḍrár|n.|histoire|Story, tale
+rývýr|.n|rumeur|History
+nárrahóḍ|v.|\pf{raconter} + \pf{narrer}; subj. from \pf{filer}|To narrate, recount \s{+part sth.}, \
+    tell (\s{+dat} sbd.) a story|\s{fut} nárrahóḍe, \s{subj} fils
+Jed’háy’|n.|Jedi|Jedi (Star Wars).
+Sit’h|n.|Sith|Sith (Star Wars).
+í|n.|hymne|Legend, myth
+ḍénéb|n. pl.|ténèbres|\textit{exclusively plural \w{lḍénéb}} Darkness
+Víd’hic’hlaúry’ê|n.|Midichlorian|Midichlorian (Star Wars)
+ah|n.|assez|\textit{sufficient comparative prefix; see §~\ref{subsubsec:comparison}}
+y’íhá|v.|puissant|To be powerful, mighty, puissant
+ré|v.|\pf{créer}, \s{subj} from \pf{fabriquer}|To create, make (\s{+acc} sth.)|\s{fut} rẹ́éré, \s{subj} faríc’hs
+sufb’h|n.|\pf{souffle} + \pf{vie}|Life
+c’haúnéhás|.n|connaissance|Knowledge
+ausc’hýr|v.|obscur|To be dark
+rráḍraúc|n.|\pf{droit} + \pf{gauche}|Side
+réb’hní|v.|prévenir|\
+    \\ To prevent, stop (+\s{acc} sth. from happening) \
+    \\ To forewarn (+\s{part} of sth.)|\s{fut} réb’hníre, \s{subj} réb’hnís
+dérny’ẹ́huf|n.|\pf{dernier} + \pf{souffle}|Death
+cér|v.|cher|To be dear, important (+\s{dat} to sbd.)
+
+## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
+## word as part of \entry.
+
+## TODO: Replace backslash-continuation w/ indentation.
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} \textit{active only, see §~\ref{subsec:ed-paradigm}}

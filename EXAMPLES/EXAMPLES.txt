@@ -14,3 +14,93 @@ s-dír-á|as\Sl d’hb’hid’h|lá-a|s-díríj-é|i\Sl t’halisvâ
 
 ḍẹ-c’hlýr|sý-b’hé|syhyý’\Sl â
 \s{2sg}-include|\s{gen.pl.indef}-grape|be.succulent-\s{ptcp}
+
+=== 21 Jul 2024 ===
+‘All in a hot and copper sky,
+The bloody Sun, at noon,
+Right up above the mast did stand,
+No bigger than the Moon.
+
+‘Day after day, day after day,
+We stuck, ne breath ne motion;
+As idle as a painted ship
+Upon a painted ocean.’
+
+Dáhŷná’ câ, bárýnrê de,
+Láhaul dwávíd’h’, áhâłát’hâ,
+Sýrvá sb’haulá dèl sý’dwálý,
+    Aûlerá áraúvá.
+
+Órdy’úr ád’y’úr, órdy’í ád’y’í,
+Aúrdévýry’aû, sáhýnvúb’hvâ,
+Bárýnc’hánár âbét’hýrér,
+    Dáhŷnvérr dehýnrál.
+
+dáhŷn\Sl á(ẹ)|câ|ḅárýn-rê|ḍẹ
+\s{iness.indef}\Sl sky|be.hot\Sl\s{ptcp}|\s{ess.indef}-copper|all
+
+lá\Sl haul|dwá-víd’h(ẹ)|áhâłát’h\Sl â
+\s{nom}-sun|\s{iness}-noon|be.bloody-\s{ptcp}
+
+sýr-vá|s-b’haul-á|dèl|sý’-dwá-ḷý
+\s{spress}-mast|\s{3n}-hover-\s{pres.ant}|{\it particle}|{\it distal}-\s{iness}-{\it sp. correl.}
+
+aû-lẹ-rá|áraúvá
+not-\s{aff.comp}-big|\s{gen}-moon
+
+órd-y’úr|ád(á)-y’úr|órd-y’í|ád(á)-y’í
+\s{ela}-day|\s{ill}-day|\s{ela}-night|\s{ill}-night %Definite to fit the metre.
+
+aúr-dévýr-y’aû|sáhýn-vúb’hvâ
+\s{1pl}-remain-\s{pret.1pl}|\s{abess}-movement
+
+ḅárýn-c’hánár|â-ḅét’hýr-ér
+\s{ess.indef}-ship|\s{ptcp.pass}-paint-\s{ptcp.pres.ant}
+
+dáhŷn-vérr|dẹhýn-rál
+\s{iness.indef}-sea|\s{spress.indef}-canvas
+
+=== 26 Sep 2024 ===
+‘Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not.
+It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis
+was a Dark Lord of the Sith, so powerful and so wise he could use the Force to
+influence the midichlorians to create life… He had such a knowledge of the dark
+side, he could even keep the ones he cared about from dying.’
+
+As-tu déjá entendu la tragedie de Darth Plagueis le Sage ? Je pensais bien que non. Ce n’est pas une histoire que les Jedi te raconterais. C’est une légende Sith. Darth Plagueis était un [Dark Lord (?)] des Sith, si puissant et si sage qu’il pouvait utiliser la Force pour influer sur les [midichlorians (?)] et créer la vie... Il avait une telle connaissance du côté obscure qu’il pouvait même prévenir la mort de ceux qui lui étaient chers
+
+Láváý’ýr Blac’his Ád’hart’h Áhaj
+
+Dát’hád’hé dej dyváý’ýr Blac’his Ád’hart’h Áhaj. Jréflecé’sý’ýâ dyźi. Isdrár se a dyisdrár léjed’háy’
+laúnárrahódejússaub’he’sý’ýâ. Î se Abhhit’h. Sénýr Abht’hénéb Abhhit’h le Blac’his Dart’h; leb’h au ahy’íhâ
+au ahsajâ líhá dab’hèc’h àré shufb’h sývíd’hic’hlaúry’ê. Lyá sahc’haúnéhás árrádraúc ausc’hýrâ lihá
+id’hérny’éhuf abhźi la lacérérle deréb’hní.
+
+ḍ-át’hád’h\Sl é|dej|dy-váý’ýr|Ḅlac’his Á\Sl d’hart’h|á\Sl haj
+\s{2sg}-hear\Sl\s{pret}|\s{particle}|\{part}-tragedy|Plagueis \s{gen}\Sl Darth|\s{gen}\Sl be.wise
+
+j-rẹ́flec̣-é|’sý’ýâ|dy\Sl źi
+\s{1sg}-think-\s{pres.ant}|not|\s{part}-this.one
+
+se|isḍrár|a|dy-isḍrár|lé-jed’háy’|laú-nárrahóḍe-jú-ss\Sl au-b’hẹ|’sý’ýâ
+be.\s{3n}|story.\s{abs}|\s{rel}|\s{part}-story|\s{nom.pl}-Jedi|\s{3pl}-\s{narrate.fut}-\s{gnomic}-\s{cond}\Sl\s{circ}-\s{2.dat}|not
+
+se|î|abh\Sl hit’h
+be.\s{3n}|legend.\s{abs.indef}|\s{gen.pl}-Sith
+
+Sénýr|abh\Sl t’hénéb|abh\Sl hit’h|le|Blac’his Dart’h
+lord.\s{abs.indef}|\s{gen.pl}-darkness|\s{gen.pl}-Sith|be.\s{3m}|Darth Plagueis
+
+leb’h|au|ah-y’íh\Sl â|au|ah-saj-â|l-ih\Sl á
+be.\s{3m.pres.ant}|and|\s{suff.comp}-be.powerful\Sl \s{ptcp}|and|\s{suff.comp}-be.wise-\s{ptcp}|\s{3m}-be.able.to.\s{subj}\Sl \s{pres.ant}
+
+d-ab’hèc’h|à-ré|s\Sl hufb’h|sý-víd’hic’hlaúry’ê
+\s{inf}-influence|\s{inf.pass}-create|\s{acc.indef}-life|\s{acc.pl}-Midichlorian
+
+l-y-á|s-ah-c’haúnéhás|á-rráḍraúc|ausc’hýr-â|l-ih\Sl á
+\s{3m}-have-\s{pres.ant}|\s{acc.indef}-such-knowledge|\s{gen}-side|be.dark-\s{ptcp}|\s{3m}-be.able.to.\s{subj}\Sl \s{pres.ant}
+
+i\Sl d’hérny’ẹ́huf|abh\Sl źi|l-a|la-cér-ér-ḷẹ|dẹ-réb’hní
+\s{acc}\Sl death|\s{gen.pl}-the.one|\s{abs.pl}-\s{rel}|\s{3pl}-be.dear-\s{pres.ant}-\s{3dat}|\s{inf}-prevent
+
+
