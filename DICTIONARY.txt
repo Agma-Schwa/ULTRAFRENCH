@@ -50,7 +50,8 @@ aub’heír|v. (in)tr.|obéir|To obey
 dír|v. tr.|dire|+\s{acc} To say, tell (+\s{dat} someone) |\s{fut} dírẹ́, \s{subj} díss
 vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} vvaúríźe, \s{subj} vvaúríhes
 y’ír|v. (in)tr.|ouïr|To understand, listen, \textit{(rarely)} hear|\s{fut} aúré, \s{subj} rás
-Cár|n.||\textit{male given name, equivalent to English ‘Kyle’ or ‘Charles’}
+Cár|n.||\textit{Male given name, equivalent to English ‘Kyle’ or ‘Charles’. Often declined like \
+    a regular noun, e.g. \s{nom} \w{Lác̣ár}}
 ráhó|n.|poisson|Fish
 act’he|v. tr.|from \w{ac}|\
     \\ To cut or cleave with an axe. \
@@ -444,7 +445,7 @@ c’haúvnaút’hẹ|n.|communauté|Community
 vnásḍér|n.|monastère|Castle
 c’haúbhèłínáj|n.|\w{c’haú} + \pf{pèlerinage}|Pilgrimage
 vŷ|v.|mener|To lead|\s{fut} menre, \s{subj} mens
-áł|v.|from earlier *\w{ḅał} < \pf{parler}]|To speak
+áł|v.|from earlier *\w{ḅał} < \pf{parler}|To speak
 c’haúáł|n.|\w{c’haú} + \w{áł}|Prophecy
 rýc̣ér|v.|requerir|To ask, question
 ḍéraúj|v.|interroger|To demand
@@ -521,7 +522,7 @@ raû|n. archaic|tronc|Log (of a tree)
 raûd’hárb|n.|\pf{tronc d’arbre}|Log (of a tree)
 át’hér|v.|enterrer|+\s{acc} To bury, inter
 vúslihé|n.|\pf{mousse} + \pf{lichen}|Moss
-b’heý’o|v.|back-formation from \w{b’heý’os}, reanalysed as a subjunctive; from \pf{véloce}|To be \
+b’heý’o|v.|back-formation from *\w{b’heý’os}, reanalysed as a subjunctive; from \pf{véloce}|To be \
     quick, fast|\s{fut} b’heý’o\-se, \s{subj} b’heý’os
 b’heý’auhic’h|n. archaic|vélo-cycle|Bicycle
 b’heý’au|n.|from archaic \w{b’heý’auhic’h}|Bicycle
@@ -585,6 +586,14 @@ Ráb’h|n.|unknown; presumably the name of some celebrity or local deity|\
     \\ \textit{(rarely)} The main god of another culture. \textit{Only attested figuratively. Not capitalised in \
         this sense, and declined like a regular word.} \
         \ex \s{Snet’h}, \s{ii.3}: \w{ledéraújá’z derévôt’he  láráb’h} ‘their god demanded they return’
+
+áb’hóhẹ|v.|enfoncer|To push, press, shove, drive (+\s{ill} into)
+jaý’aú|n.|jalon|\\ Nail \\ \textit{obsolete} Stake, pole
+rét’hír|v.|retirer| \
+    \\ (+\s{acc}) To pull, draw, withdraw \
+    \\ +\s{part} To pull on sth. without actually moving it; to try to pull sth.|\s{fut} rét’hírẹ́, \s{subj} rét’hírs
+íváj|n. archaic|image|Image, picture
+váj|n.|from \w{íváj}|Image, picture
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} \textit{active only, see §~\ref{subsec:ed-paradigm}}
