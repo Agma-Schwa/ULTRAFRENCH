@@ -722,8 +722,8 @@ void translate(std::string_view text, bool show_unsupported) {
                 break;
 
             case U'r':
-                ipa += U"ɰ";
-                while (it.consume(U'r')) ipa += U'ː';
+                if (it.consume(U'r')) ipa += U'ʀ';
+                else ipa += U"ɰ";
                 break;
 
             case U's':
