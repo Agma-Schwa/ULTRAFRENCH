@@ -37,13 +37,13 @@
             ],
             "contents": [
                 [
-                    "ad’hór",
+                    "act’he",
                     "",
                     "",
                     "",
+                    "ACC",
                     "",
-                    "",
-                    "To love, adore"
+                    "To bring an end to"
                 ],
                 [
                     "act’he",
@@ -55,15 +55,6 @@
                     "To get to the point, cut to the chase"
                 ],
                 [
-                    "ad’hór",
-                    "",
-                    "",
-                    "",
-                    "GEN",
-                    "",
-                    "To desire (sbd.)"
-                ],
-                [
                     "act’he",
                     "v. tr.",
                     "U ac",
@@ -73,13 +64,13 @@
                     "To cut or cleave with an axe"
                 ],
                 [
-                    "act’he",
+                    "ad’hór",
                     "",
                     "",
                     "",
-                    "ACC",
+                    "GEN",
                     "",
-                    "To bring an end to"
+                    "To desire (sbd.)"
                 ],
                 [
                     "ad’hór",
@@ -89,32 +80,49 @@
                     "PART",
                     "",
                     "To be in love with, have a crush on"
+                ],
+                [
+                    "ad’hór",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "To love, adore"
                 ]
             ]
         },
-        "input.text": "imaʒ\n",
+        "input.text": "imaʒ\nafafafaefaef\nae\nfa\nef\neaf\n\n\n\nq\nqq",
         "notes": {
             "files": [
                 {
-                    "contents": "",
+                    "contents": "wrgwrgwrgwrggggggggggggggggggggg",
                     "name": "New file"
+                },
+                {
+                    "contents": "gwsrgwrgwrg",
+                    "name": "rfgswergertg"
+                },
+                {
+                    "contents": "warjgijwergiorqefq\n\n\n\nwagjwre[aj[ojwinaefffffffffffff",
+                    "name": "aefaefaefaef"
                 }
             ],
             "splitter.sizes": "AAAA/wAAAAEAAAACAAAAswAABI0B/////wEAAAABAA=="
         },
-        "output.text": "ĩʋ̃ɑ̃ʑ\n",
+        "output.text": "ĩʋ̃ɑ̃ʑ\naβaβaβaeβaeɸ\naə̥\nɸə̥\nɸ\neaɸ\n",
         "sca": {
             "cbox.changes.norm.choice": 2,
             "cbox.input.norm.choice": 2,
             "cbox.output.norm.choice": 1,
             "cbox.stop.before": "Romaniser",
-            "chbox.details": 2,
+            "chbox.details": 0,
             "chbox.enable.js": 0,
-            "splitter.sizes": "AAAA/wAAAAEAAAADAAABYQAABEUAAAEFAf////8BAAAAAQA="
+            "splitter.sizes": "AAAA/wAAAAEAAAADAAABDgAAAqwAAACsAf////8BAAAAAQA="
         },
         "window.size": [
-            1524,
-            741
+            1381,
+            876
         ]
     },
     "settings": {

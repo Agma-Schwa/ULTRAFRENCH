@@ -104,3 +104,68 @@ i\Sl d’hérny’ẹ́huf|abh\Sl źi|l-a|la-cér-ér-ḷẹ|dẹ-réb’hní
 \s{acc}\Sl death|\s{gen.pl}-the.one|\s{abs.pl}-\s{rel}|\s{3pl}-be.dear-\s{pres.ant}-\s{3dat}|\s{inf}-prevent
 
 
+=== 12 Oct 2024 ===
+Βορέας καὶ Ἥλιος περὶ δυνάμεως ἤριζον. Ἔδοξε δὲ αὐτοῖς ἐκείνῳ τὴν νίκην ἀπονεῖμαι, ὃς ἂν αὐτῶν ἄνθρωπον ὁδοιπόρον ἀποδύσῃ. Καὶ ὁ Βορέας ἀρξάμενος σφοδρὸς ἦν· τοῦ δὲ ἀνθρώπου ἀντεχομένου τῆς ἐσθῆτος μᾶλλον ἐπέκειτο. Ὁ δὲ ὑπὸ τοῦ ψύχους καταπονούμενος ἔτι μᾶλλον, καὶ περιττοτέραν ἐσθῆτα προσελάμβανεν, ἕως ἀποκαμὼν ⟨ὁ Βορέας⟩ τῷ Ἡλίῳ αὐτὸν παρέδωκε. Κἀκεῖνος τὸ μὲν πρῶτον μετρίως προσέλαμψε· τοῦ δὲ ἀνθρώπου τὰ περισσὰ τῶν ἱματίων ἀποτιθεμένου, σφοδρότερον τὸ καῦμα ἐπέτεινεν, ἕως οὗ πρὸς τὴν ἀλέαν ἀντέχειν μὴ δυνάμενος, ἀποδυσάμενος, ποταμοῦ παραρρέοντος ἐπὶ λουτρὸν ἀπῄει.
+
+Ὁ λόγος δηλοῖ ὅτι πολλάκις τὸ πείθειν τοῦ βιάζεσθαι ἀνυτικώτερόν ἐστι.
+
+Borée et le Soleil contestaient de leur force. Ils décidèrent d’attribuer la palme à celui d’entre eux qui dépouillerait un voyageur de ses vêtements. Borée commença ; il souffla avec violence. Comme l’homme serrait sur lui son vêtement, il l’assaillit avec plus de force. Mais l’homme incommodé encore davantage par le froid, prit un vêtement de plus, si bien que, rebuté, Borée le livra au Soleil. Celui-ci tout d’abord luisit modérément ; puis, l’homme ayant ôté son vêtement supplémentaire, le Soleil darda des rayons plus ardents, jusqu’à ce que l’homme, ne pouvant plus résister à la chaleur, ôta ses habits et s’en alla prendre un bain dans la rivière voisine.
+
+Cette fable montre que souvent la persuasion est plus efficace que la violence.
+
+=====================================================
+
+## Au Baúré Au Saul
+
+Lasehérélé au Láb’haúré au Láhaul dŷnfaúr. Ladehid’hér haúdóné dýb’hic’htrár asa aúrdehab’híy’á ráy’á sráy’â.
+Sc’hóvâá láb’haúré, b’hát’hiý’at’hýrâ y’aúý’ávâ. Phas láaú’z sýrêr leraúhéréhá, sárslá b’hefaúr levú. Lárrád’hahánár
+vé dèl y’áb’hedêr, srêr syplâ latrâ, fahaú dèl, âníér, Láb’haúré sy’y’erádá Ashaul. Sec’hlérá révy’évâ vaúd’hérvâ.
+Ráhaú dé wêr irêr syplâ, Láhaul sdárá sré lerýlâ, Láaú jys, ub’hrâ’sý’ýâ lys dád’hýr it’hèrvíc’h, au ly’y’edehab’híy’á
+au ly’ad’há desb’hé dáhŷnríb’hy’ér ré.
+
+Seh láistrár svaût lyp’hárdyt’há ihaúb’héc’h áy’aúý’á derêfihasjú.
+
+    — Zaup, rád’hyc’hsy’ô Áhnet’h
+
+la-sẹhérél-é|au lá\Sl b’haúré au lá\Sl haul|dŷn-faúr|
+\s{3pl}-quarrel-\s{pret}|and|\s{def}-North.Wind|and|\s{def}-Sun|\s{indef.part}-strength.
+
+La-dehid’h\Sl ér|haú-dónẹ́|dý-b’hic’hḍrár|as-a|
+\s{3pl}-decide\s{3pl.pres.ant}|\s{pass.inf.fut.ii}-give|\s{part.def}-victory|\s{dat-rel.pron}
+
+aúr-dehab’híy’-á|s-ráy’\Sl â
+\s{3n.fut.ant}-undress-\s{circ}|\s{acc.indef}-travel-\s{ptcp}
+
+s-c’hóvâ-á|láb’haúré|b’hát’hiý’at’hýr-â|y’aúý’ávâ
+\s{3n}-begin-\s{pres.ant}|láb’haúré|blow-\s{ptcp}|violently
+
+ḅas|lá-aú|’z|sý-rêr|lẹ-raúhérẹ́h\Sl á
+because|\s{def}-man|his|\s{acc.pl}-clothing|\s{3m}-\s{tighten}-\s{pres.ant}
+
+s-ársl-á|b’he-faúr|lẹ-vú
+\s{3n}-\s{attack}-\s{pres.ant}|\s{instr.indef}-force|\s{aff.comp}-much
+
+lá-rrád’hahánár|vé|ḍèl|y’-áb’hẹḍ-êr|s-rêr|syḅlâ|l-aḍr\Sl â|
+\s{def}-cold|but|\s{particle}|\s{3m.pass}-inconvenience-\s{pres.ant.ptcp}|\s{acc.indef}-clothing|additional|\s{3m}-take-\s{pres.ant}|
+
+fahaú|dèl|â-ní-ér|Láb’haúré|s-y’-y’ẹ-rád-á|as-\Sl haul
+so.much.so|emphatic|\s{ptcp.pass}-rebut-\s{pres.ant}|Láb’haúré|\s{3n}-\s{3m.pass}-\s{opt}-surrender-\s{pres.ant}|\s{dat}-sun
+
+s-ec’hlér-á|révy’ẹ́-vâ|vaúd’hér-vâ
+\s{3n}-shine-\s{pres.ant}|first-\s{adv}|be.moderate-\s{adv}
+
+ráh-aú|dẹ́|w-êr|i-rêr|syḅlâ|Láhaul|s-dár-á|s-ré
+lá-aú|then|remove-\s{pres.ant.ptcp}|\s{acc}-clothing|supplementary|Láhaul|\s{3n}-throw-\s{pres.ant}|\s{acc.indef.pl}-ray
+
+lẹ-rýl-â|Láaú|jys|ub’hr\Sl â|’sý’ýâ|lys|d-ád’hýr|i\Sl t’hèrvíc’h|and
+\s{aff.comp}-burn-\s{ptcp}|Láaú|until|be.able-\s{ptcp}|not|no.longer|\s{inf}-resist|\s{acc}-heat|
+
+au|l-y’-y’ẹ-dehab’híy’-á|au|l-y’-ad’h\Sl á|dẹ-sb’hé|
+and|\s{3m}-\s{3m.pass}-\s{opt}-undress-\s{pres.ant}|and|\s{3m}-\s{opt}-go\Sl \s{pres.ant}|\s{inf}-bathe|
+
+dáhŷn-ríb’hy’ér|sẹh|lá-isḍrár|s-vaût|lybhárdyt’há|i\Sl haúb’héc’h|á-y’aúý’á|dẹ-rê-fihas-jú
+\s{iness}-river|this|\s{nom}-tale|\s{3n}-show|often|\s{acc}-persuade|\s{gen}-be.violent|\s{inf}-\s{comp}-be.efficient-\s{gnomic}
+
+
+
+TODO: French fables that Annwan mentioned (La Fontaine)

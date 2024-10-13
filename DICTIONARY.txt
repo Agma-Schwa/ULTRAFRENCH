@@ -108,8 +108,8 @@ ac|n.|hache|Axe, hatchet
 asý’ýâ|particle|\pf{pas absolument}|Not, no. \textit{Commonly \w{’sý’ýâ} after vowels and \
     verbs. This particle is used only in the indicative; see also \w{sá}, \w{t’hé}}
 c’hd’hal|adv.|\pf{que dalle}|Naught, absolutely no\-thing
-jávé|adv.|jamais|Never, at no time
-ráv́â|adv.|rarement|Seldom, rarely (ever)
+jávé|adv.|jamais|\textit{neg. only} Never, at no time
+ráv́â|adv.|rarement|\textit{neg. only} Seldom, rarely (ever)
 y’é|adv.|rien|Nothing
 au|conj.|aussi|\\ And, also, as well, too \\ \w{au} \ldots{} \w{au} \ldots{} ‘both \ldots{} and \ldots’
 ec̣|n.|péché|Sin, transgression, wrongdoing
@@ -125,7 +125,7 @@ e|n.|eau|Water
 dẹhẹ|n.|dessus|\\ Top, upper side. \\ Surface of a body of water
 b’he|conj.|envers|+\s{subj} So that, so as to, to, in order to. \textit{Commonly enclitic \
     \w{’b’h} after vowels}
-ḅarḍ|v.|partir| To leave, go away, depart|\s{fut} ḅarẹ́, \s{subj} ḅars
+ḅarḍ|v.|partir|To leave, go away, depart|\s{fut} ḅarẹ́, \s{subj} ḅars
 ad’he|v.|vader|To go|\s{fut} í, \s{subj} al
 sá|particle|sans|Not, no. \textit{Always enclitic \w{s’} before vowels. \
     This particle is used only in the subjunctive; see also \w{asý’ýâ}, \w{t’hé}}
@@ -136,7 +136,7 @@ y’ís|conj.|puisque|Considering that, since, because. \textit{Unlike \w{c’ha
 laúrs|conj.|lorsque|When (temporal only)
 áhaúr|conj.|encore|+\s{subj} Even though
 ráhẹ|conj.|quoique|+\s{subj} Although, though
-aý’aúr|conj.|alors|While, as (temporal)
+aý’aúr|conj.|alors|While, as (temporal), because
 ḍá|conj.|tandis|Whereas
 de|conj.|\pf{dès que}|+\s{subj} Once, when once, as soon as
 sá|conj.|\pf{sans que}|+\s{subj} Without (doing sth.)
@@ -158,7 +158,7 @@ jys|conj.|\pf{jusqu’à ce que}|+\s{opt} Until
 ávrê|conj.|\pf{à moins que}|+\s{opt} Unless
 úrbh|conj.|\pf{pour peu que}|+\s{opt} Provided that, so long as
 sit’há|conj.|\pf{si tant est que}|+\s{opt} Supposing that; if, assuming that
-fahaú|conj.|\pf{de façon que}|+\s{opt} In such a way that
+fahaú|conj.|\pf{de façon que}|+\s{opt} In such a way that, such that, so much so
 véhýr|conj.|\pf{dans la mesure où}|Insofar as
 sḅé|v.|espérer|\\ To want (+\s{acc} sth.) \\ +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
 rêd|v.|craindre|+s{opt} To fear, lest \ldots \textit{Construed with the negated optative}|\s{fut} \
@@ -217,7 +217,7 @@ c’hesse||contraction of \w{c’hes} + \w{se}| Is it? \textit{Also substituted 
 aud|adj.|autre|Other, another
 sauz-aud|adj.|\pf{autre chose}|Something else, another thing
 rét’hád|v.|prétendre|To claim, allege|\s{fut} rét’hádrẹ́, \s{subj} rét’h\-ádes
-dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow. \textit{The \s{acc} is used when talking about\
+dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow, give. \textit{The \s{acc} is used when talking about\
     concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts\
     or parts of objects; the \s{dat} is the person being endowed with}|\s{fut} dónrẹ́, \s{subj} dónés
 ḍeý’ebhat’hic’h|v.|télépathique|To be telepathic|\s{fut} ḍeý’ebh\-at’hic’hre, \s{subj} \
@@ -359,7 +359,7 @@ uy’ed’háb’hrí|v.|\pf{rouler dans la farine}|To scam, cheat, swindle|\s{f
     \s{subj} uy’ed’háb’hrís
 ab’hínéb’heḅaý’évrâ|v.|\pf{habit ne fait pas le moi\-ne}|To judge based on appearances|\s{fut}\
     ab’hínéb’heḅaý’év́ẹ́, \s{subj} ab’hínéb’heḅaý’\-év́\-ás
-rrád’hahánár|n.|\pf{froid de canard}|Coldness
+rrád’hahánár|n.|\pf{froid de canard}|Extreme cold, coldness
 y’ŷvéłáfrí|n. pl. archaic|\pf{yeux de merlan frit}|Eyes
 y’ŷ|n.|from \w{y’ŷvéłáfrí}|Eye
 lârdávrá|n.|\pf{langue de bois}|Evasive, unclear, or overly formal speech
@@ -452,10 +452,12 @@ ḍéraúj|v.|interroger|To demand
 ḍérsèd|v.|intercéder|To intercede
 rébhós|n.|réponse|Answer, response, reply
 fé|n.|fin|End
-ráy’á|n.|voyage|Travel, voyage, journey
+ráy’á|v.|voyage|\
+    \\ To travel, go on a journey \
+    \\ \textit{n.} Travel, voyage, journey
 vêt’hnâ|adv.|from \pf{maintenant}, lenited for unknown reasons|Now
 áríb’h|v.|arriver|To arrive
-lys|adv.|\pf{plus} /plys/|No longer, not any more. \textit{The meaning of this and \
+lys|adv.|\pf{plus} /plys/|\textit{neg. only} No longer, not any more. \textit{The meaning of this and \
     \w{lẹ} swapped at some point for unknown reasons}
 
 ḍédv́ér|interj.|\pf{putain de merde}|Fuck. \textit{Generic expletive}
@@ -529,7 +531,7 @@ b’heý’au|n.|from archaic \w{b’heý’auhic’h}|Bicycle
 bźé|v.|besoin|+\s{acc} \textit{or} \s{part} To need, require
 
 vvâ|n.|moment|Moment, instant
-át’hád|n.|entendre|Hear, perceive (+\s{part} sbd./sth.)|\s{fut} át’hádé, \s{subj} át’hás
+át’hád|v.|entendre|To hear, perceive (+\s{part} sbd./sth.)|\s{fut} át’hádé, \s{subj} át’hás
 núb’h|v.|nouveau|To be new|\s{fut} núb’he, \s{subj} núb’hs
 b’hŷnnúb’hâ|adv.|old \s{all} of \w{núb’hâ}|Anew
 vê|n.|main|Hand
@@ -610,7 +612,7 @@ Jed’háy’|n.|Jedi|Jedi (Star Wars).
 Sit’h|n.|Sith|Sith (Star Wars).
 í|n.|hymne|Legend, myth
 ḍénéb|n. pl.|ténèbres|\textit{exclusively plural \w{lḍénéb}} Darkness
-Víd’hic’hlaúry’ê|n.|Midichlorian|Midichlorian (Star Wars)
+Víd’hic’hlaúry’ê|n.|Midichlorien|Midichlorian (Star Wars)
 ah|n.|assez|\textit{sufficient comparative prefix; see §~\ref{subsubsec:comparison}}
 y’íhá|v.|puissant|To be powerful, mighty, puissant
 ré|v.|\pf{créer}, \s{subj} from \pf{fabriquer}|To create, make (\s{+acc} sth.)|\s{fut} rẹ́éré, \s{subj} faríc’hs
@@ -623,6 +625,65 @@ réb’hní|v.|prévenir|\
     \\ To forewarn (+\s{part} of sth.)|\s{fut} réb’hníre, \s{subj} réb’hnís
 dérny’ẹ́huf|n.|\pf{dernier} + \pf{souffle}|Death
 cér|v.|cher|To be dear, important (+\s{dat} to sbd.)
+
+Baúré|n.|Borée|Boreas, the North Wind
+sẹhérél|v.|se quereller|To quarrel, argue, fight about (+\s{part})
+dehid|v.|décider|To decide (+\s{inf} to do sth.)
+gâ|v.|gagner|To win, gain, earn (+\s{acc} sth.)
+b’hic’hḍrár|n.|victoire|Victory
+dehab’híy’|v. tr.|déshabiller|To undress +\s{acc} sbd.
+hab’híy’|v. tr.|habiller|To dress +\s{acc} sbd.
+b’hát’hiý’at’hýr|v.|ventilateur|To blow
+y’aúý’ávâ|adv. archaic|violament|Violently, vehemently
+y’aúý’vâ|adv.|back-formation from \w{y’aúý’á}, displacing earlier \w{y’aúý’ávâ}|Violently, vehemently
+y’aúý’á|v. archaic|back-formation from \w{y’aúý’ávâ}|To be violent, vehement
+y’aúý’|v.|back-formation from \w{y’aúý’vâ}, displacing earlier \w{y’aúý’á}|To be violent, vehement
+aú|n.|homme|Man, human
+rêr|n.|fringues|\
+    \\ An article of clothing, garment, piece of clothing \
+    \\ \textit{pl.} Clothes, garments
+ársl|v.|harceler|To attack, assail, beset, bully (+\s{acc} sbd.)
+áb’hẹḍ|v.|embêtter|\
+    \\ +\s{acc} To disturb, inconvenience sbd. \
+    \\ +\s{part} To harass, bother sbd.
+ní|v.|\pf{nier}, \s{fut} from \pf{contrer}, \s{subj} from \pf{oposer}|\
+    To deny, ref\-use, reject, rebut (+\s{acc} sbd./sth.)|\s{fut} c’haúḍé, \s{subj} aubhaus
+c’haúḍé > ní
+aubhaus > ní
+ní|conj.|ni|Neither, nor
+rád|v. tr.|rendre|To surrender +\s{acc} sth. (\s{dat} to sbd.)
+sẹrád|v. intr.|se rendre|To surrender
+ec’hlér|v.|éclairer|To shine
+iý’ývî|v.|illuminer|To light up, illuminate
+raúhérẹ́|v.|from \w{raú-} + \w{sérẹ́}|To tighten, make tighter (+\s{acc})|\s{fut} raúhérrẹ́, \s{subj} raúhérẹ́s
+raú(b’hc’h)-|prefix|from \w{rób’hoc’h}|\textit{Causative prefix, see \
+    §~\ref{subsec:diachrony-and-derivation}}
+vaúd’hér|v.|modérer|To be moderate
+syḅlẹ|v.|suppléer|\
+    \\ To supplement (\s{acc} sth.) (+\s{instr} with sth.). \textit{If no \s{instr} \
+       is present, the subject is implied to be the supplement.} \
+    \\ \s{syḅlâ} \textit{adj.} Additional, extra
+dár|v.|darder|To throw, cast, yeet (+\s{acc} sth.)
+y’í|n.|puits|Well (water source)
+dẹ́|particle|from \w{Provençal} \textit{den}|Then (sequential), next
+w|v.|enlever|To remove (+\s{acc} sth.)
+ád’hýr|v.|endure|To resist, endure, withstand (+\s{acc} sth.)
+ḍèrvíc’h |n.|thermique|Heat, warmth
+sb’hé|v.|se baigner|To bathe
+lab’h|v.|laver|\
+    \\ To wash, clean (+\s{acc} sth.) \
+    \\ \textit{refl} To wash oneself, take a bath, have a shower
+ré|adj.|près|Near, close, nearby
+ráhé|n.|voisin|Neighbour
+vaûḍ|v.|montrer|To show, display (+\s{acc} sth.)
+Jac’h|n.|Jacques|\textit{Male given name}
+Yý’is|n.|Ulysse|\textit{Male given name}
+Bèrḍrá|n.|Bertrand|\textit{Male given name}
+lybhárdyt’há|adv.|pluspart du temps|Often
+Aý’èc’hsád|n.|Alexandre|\textit{Male given name}
+c’haúb’héc’h|v.|convaincre|To persuade
+fihas|v.|efficace|To be efficient
+Zauḅ|n.|Ésope|Aesop
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.

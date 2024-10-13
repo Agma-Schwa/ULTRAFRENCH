@@ -155,9 +155,9 @@ struct entry {
                     else fmt::print("{{{}}}", to_utf8(parts[i]));
                 };
                 switch (i) {
-                    // If this is a single word, wrap it with '\pf{}'. That takes
-                    // care of this field for most words (conversely, more complex
-                    // etymologies often don’t start w/ a PF word).
+                    // If this is a single word, and the field contains no backslashes,
+                    // wrap it with '\pf{}'. That takes care of this field for most words
+                    // (conversely, more complex etymologies often don’t start w/ a PF word).
                     case EtymPart: {
                         if (parts[i].empty()) {
                             EmitField();
@@ -168,7 +168,8 @@ struct entry {
 
                         // If the etymology contains no spaces, insert \pf, and
                         // make the word italic.
-                        if (not etym.contains(U' ')) fmt::print("{{\\pf{{{}}}}}", to_utf8(etym));
+                        if (not etym.contains(U' ') and not etym.contains(U'\\'))
+                            fmt::print("{{\\pf{{{}}}}}", to_utf8(etym));
 
                         // Otherwise, pass it along as-is.
                         else { fmt::print("{{{}}}", to_utf8(etym)); }
