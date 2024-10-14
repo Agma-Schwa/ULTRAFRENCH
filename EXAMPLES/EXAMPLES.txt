@@ -167,5 +167,46 @@ dáhŷn-ríb’hy’ér|sẹh|lá-isḍrár|s-vaût|lybhárdyt’há|i\Sl haúb�
 \s{iness}-river|this|\s{nom}-tale|\s{3n}-show|often|\s{acc}-persuade|\s{gen}-be.violent|\s{inf}-\s{comp}-be.efficient-\s{gnomic}
 
 
+=== 13/14 Oct 2024 ===
+  The Misanthrope – Molière
+
+Non, elle est générale, et je hais tous les hommes :
+Les uns, parce qu’ils sont méchants et malfaisants,
+Et les autres, pour être aux méchants complaisant,
+Et n’avoir pas pour eux ces haines vigoureuses
+Que doit donner le vice aux âmes vertueuses.
+De cette complaisance on voit l’injuste excès
+Pour le franc scélérat avec qui j’ai procès.
+
+There’s no exception, and I hate all men:
+A part, because they’re wicked and do evil;
+The rest, because they fawn upon the wicked,
+And fail to feel for them that healthy hatred
+Which vice should always rouse in virtuous hearts.
+You see the rank injustice of this fawning,
+Shown toward the bare-faced scoundrel I’m at law with.
+
+=====================================================
+
+C’hasbesy’ál y’aúhý, jaír ivaûd de :
+Sýhèl bas labíres laválfès,
+Sýaud bas abhvaúb’hâ lac’haúblés,
+Au sá lac’hlýrs dyn vérjet’hic’hâ
+A dyn sdónés láváý’eb’his anhbrí b’hérdy’ŷâ.
+Aúráró ijys rá seh áhaúblér
+Árívnél lérâ asa jlit’hijy’.
+
+-------------------------------------------
+C’hasbesy’ál y’aúhý, jaír ivaûd ḍẹ :
+Sýhèl ḅas labíres laválfès,
+Sýhèl ḅas abhvaúb’hâ lac’haúḅlés
+Au lac’hlýrs dyn (dy- + ‘n’) vérjet’hic’hâ
+...
+
+Notes (most things aren’t glossed because they’re obvious)
+  bíres = subjunctive of vaúb’hẹ
+  anhḅrí = an- + sḅrí (dat pl indef)
+
+
 
 TODO: French fables that Annwan mentioned (La Fontaine)

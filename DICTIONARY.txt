@@ -684,6 +684,21 @@ Aý’èc’hsád|n.|Alexandre|\textit{Male given name}
 c’haúb’héc’h|v.|convaincre|To persuade
 fihas|v.|efficace|To be efficient
 Zauḅ|n.|Ésope|Aesop
+c’hasḅesy’ál|n.|cas spécial|Exception
+aír|v.|hair|To hate, abhor, detest, loathe, despise (+\s{acc} sbd./sth.)
+c’hèl|det. postpos.|quelques|Some, a few, a couple of
+válfèz|v.|malfaisant|To be malfeasant, evil, malevolent|\s{fut} válfèź, \s{subj} válfès
+c’haúḅlér|.v|complaire|To be complacent; to be accepting in the presence of \
+    +\s{gen} sbd./sth. perceived as negative|\s{fut} c’haúḅlére, \s{subj} c’haúḅlés
+n|n.|haine|Hate, hatred, loathing
+vérjet’hic’h|v.|énergétique|To be vigorous, energetic
+váý’eb’his|n.|maléfice|Vice
+sḅrí|n.|espirit|Soul
+á|n.|âme|Spirit
+b’hérḍy’ŷ|v.|vertueux|To be virtuous
+rívnél|n.|criminel|Scoundrel, someone without virtue
+lér|v.|clair|To be evident, obvious, frank, clear
+lit’hijy’|v.|litigier|To litigate, be at law with (+\s{dat} sbd.)
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
