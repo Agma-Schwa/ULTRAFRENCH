@@ -207,6 +207,7 @@ Notes (most things aren’t glossed because they’re obvious)
   bíres = subjunctive of vaúb’hẹ
   anhḅrí = an- + sḅrí (dat pl indef)
 
-
+TODO: ‘Anyone can cook’ from Ratatouille (request by Agma)
+TODO: ‘My name is Yoshikage Kira’ (also request by Agma)
 
 TODO: French fables that Annwan mentioned (La Fontaine)
