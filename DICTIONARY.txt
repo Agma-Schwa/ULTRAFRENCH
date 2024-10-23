@@ -699,6 +699,7 @@ b’hérḍy’ŷ|v.|vertueux|To be virtuous
 rívnél|n.|criminel|Scoundrel, someone without virtue
 lér|v.|clair|To be evident, obvious, frank, clear
 lit’hijy’|v.|litigier|To litigate, be at law with (+\s{dat} sbd.)
+rê|n.|point|Point (in a score).
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
