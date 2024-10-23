@@ -354,7 +354,7 @@ void generate(std::string_view input_text) {
     }
 
     /// Sort the entries.
-    rgs::sort(entries, [](const auto& a, const auto& b) {
+    rgs::stable_sort(entries, [](const auto& a, const auto& b) {
         return a.nfkd == b.nfkd ? a.word < b.word : a.nfkd < b.nfkd;
     });
 
