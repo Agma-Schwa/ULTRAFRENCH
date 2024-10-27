@@ -33,16 +33,16 @@ namespace dictionary {
 static icu::Transliterator* normaliser;
 
 struct entry {
-    /// Headword.
+    // Headword.
     std::u32string word;
 
-    /// Headword in NFKD for sorting.
+    // Headword in NFKD for sorting.
     icu::UnicodeString nfkd;
 
-    /// Data.
+    // Data.
     std::variant<std::u32string, std::vector<std::u32string>> data;
 
-    /// Part indices.
+    // Part indices.
     enum : size_t {
         POSPart = 0,
         EtymPart = 1,
@@ -148,11 +148,11 @@ private:
     }
 };
 
-/// Emit errors as LaTeX macros.
-///
-/// This is so the error gets printed at the end of LaTeX compilation;
-/// if we print it when the ULTRAFRENCHER runs, it’s likely to get missed,
-/// so we do this instead.
+// Emit errors as LaTeX macros.
+//
+// This is so the error gets printed at the end of LaTeX compilation;
+// if we print it when the ULTRAFRENCHER runs, it’s likely to get missed,
+// so we do this instead.
 template <typename ...Args>
 void EmitError(std::format_string<Args...> fmt, Args&& ...args) {
     std::print("\\ULTRAFRENCHERERROR{{  ERROR: ");
@@ -171,18 +171,17 @@ void generate(std::string_view input_text) {
     );
     Assert(not U_FAILURE(err), "Failed to get NFKD normalizer: {}", u_errorName(err));
 
-    /// Convert text to u32.
+    // Convert text to u32.
     std::u32string text = text::ToUTF32(input_text);
 
-    /// Convert a line into an entry.
+    // Convert a line into an entry.
     std::u32string logical_line;
     std::vector<entry> entries;
     auto ShipoutLine = [&] {
         if (logical_line.empty()) return;
         defer { logical_line.clear(); };
-    //    std::println("SOut: {}", text::ToUTF8(logical_line));
 
-        /// Collapse whitespace into single spaces.
+        // Collapse whitespace into single spaces.
         for (usz pos = 0;;) {
             static constexpr std::u32string_view ws = U" \t\v\f\n\r";
             pos = logical_line.find_first_of(ws, pos);
@@ -199,10 +198,10 @@ void generate(std::string_view input_text) {
         u32stream line{logical_line};
         line.trim();
 
-        /// If the line contains no '|' characters and a `>`,
-        /// it is a reference. Split by '>'. The lhs is a
-        /// comma-separated list of references, the rhs is the
-        /// actual definition.
+        // If the line contains no '|' characters and a `>`,
+        // it is a reference. Split by '>'. The lhs is a
+        // comma-separated list of references, the rhs is the
+        // actual definition.
         if (not line.contains(U'|')) {
             auto from = u32stream(line.take_until(U'>')).trim();
             auto target = line.drop().trim().text();
@@ -214,8 +213,8 @@ void generate(std::string_view input_text) {
             }
         }
 
-        /// Otherwise, the line is an entry. Split by '|' and emit
-        /// a single entry for the line.
+        // Otherwise, the line is an entry. Split by '|' and emit
+        // a single entry for the line.
         else {
             bool first = true;
             std::u32string word;
@@ -232,23 +231,22 @@ void generate(std::string_view input_text) {
         }
     };
 
-    /// Process the text.
+    // Process the text.
     for (auto [i, line] : u32stream(text).lines() | vws::enumerate) {
-      //  std::println("Line: {}", text::ToUTF8(line.text()));
         line = line.take_until(U'#');
 
-        /// Warn about non-typographic quotes, after comment deletion
-        /// because it’s technically fine to have them in comments.
+        // Warn about non-typographic quotes, after comment deletion
+        // because it’s technically fine to have them in comments.
         if (line.contains(U'\'')) EmitError(
             "Non-typographic quote in line {}! "
             "Please use ‘’ (and “” for nested quotes) instead!",
             i
         );
 
-        /// Skip empty lines.
+        // Skip empty lines.
         if (line.empty()) continue;
 
-        /// Perform line continuation.
+        // Perform line continuation.
         if (line.trim().back() == U'\\') {
             line.drop_back();
             logical_line += U' ';
@@ -256,22 +254,21 @@ void generate(std::string_view input_text) {
             continue;
         }
 
-        /// Ship out the line.
+        // Ship out the line.
         logical_line += U' ';
         logical_line += line.text();
         ShipoutLine();
     }
 
-    /// Ship out the last line.
+    // Ship out the last line.
     ShipoutLine();
-    //std::exit(42);
 
-    /// Sort the entries.
+    // Sort the entries.
     rgs::stable_sort(entries, [](const auto& a, const auto& b) {
         return a.nfkd == b.nfkd ? a.word < b.word : a.nfkd < b.nfkd;
     });
 
-    /// Emit it.
+    // Emit it.
     std::print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
     std::print("%%            This file was generated from DICTIONARY.txt             %%\n");
     std::print("%%                                                                    %%\n");
@@ -292,8 +289,8 @@ static constexpr char32_t VoicelessBelow = U'̥';
 static constexpr char32_t Diaeresis = U'̈';
 static constexpr char32_t DotBelow = U'̣';
 
-/// Convert a sound to its nasal equivalent (but without
-/// any diacritics)
+// Convert a sound to its nasal equivalent (but without
+// any diacritics)
 constexpr char32_t
 Nasal(char32_t c) {
     switch (c) {
@@ -312,9 +309,9 @@ Nasal(char32_t c) {
 }
 
 void translate(std::string_view text, bool show_unsupported) {
-    /// Normalise the text before IPA conversion so we have
-    /// to deal with fewer cases. Also convert to lowercase
-    /// and convert ASCII apostrophes to '’'.
+    // Normalise the text before IPA conversion so we have
+    // to deal with fewer cases. Also convert to lowercase
+    // and convert ASCII apostrophes to '’'.
     UErrorCode err{U_ZERO_ERROR};
     auto normaliser = icu::Transliterator::createInstance(
         u"NFD; Lower;",
@@ -325,17 +322,17 @@ void translate(std::string_view text, bool show_unsupported) {
     auto us = icu::UnicodeString::fromUTF8(text);
     normaliser->transliterate(us);
 
-    /// Convert it to a u32 string.
-    /// Map the text to IPA.
+    // Convert it to a u32 string.
+    // Map the text to IPA.
     std::u32string ipa, input = ICUToUTF32(us);
     char32_t c{};
     [[maybe_unused]] char32_t prev{};
     u32stream s{input};
 
-    /// Helper to handle apostrophe-h combinations. Some letters
-    /// may be followed by '’h', which turns them into fricatives;
-    /// if the apostrophe is not followed by a 'h', then it is simply
-    /// discarded. This handles that case.
+    // Helper to handle apostrophe-h combinations. Some letters
+    // may be followed by '’h', which turns them into fricatives;
+    // if the apostrophe is not followed by a 'h', then it is simply
+    // discarded. This handles that case.
     const auto HandleApostropheH = [&](char32_t base, char32_t fricative) {
         if (s.consume_any(apos) and s.consume(U'h')) ipa += fricative;
         else ipa += base;
@@ -343,7 +340,7 @@ void translate(std::string_view text, bool show_unsupported) {
 
     for (; not s.empty(); prev = c) {
         switch (c = s.take()[0]) {
-            /// Skip most punctuation marks.
+            // Skip most punctuation marks.
             case U'.':
             case U',':
             case U':':
@@ -355,13 +352,13 @@ void translate(std::string_view text, bool show_unsupported) {
             case U'\\':
                 break;
 
-            /// Skip these in the middle of words.
+            // Skip these in the middle of words.
             case U'\'':
             case U'`':
             case U'’':
                 break;
 
-            /// Skip letters that are not part of the language.
+            // Skip letters that are not part of the language.
             case U'g':
             case U'm':
             case U'k':
@@ -370,8 +367,8 @@ void translate(std::string_view text, bool show_unsupported) {
             case U'x':
                 break;
 
-            /// Collapse whitespace and convert '|' to a space as well
-            /// since we use it to separate words in glosses.
+            // Collapse whitespace and convert '|' to a space as well
+            // since we use it to separate words in glosses.
             case U' ':
             case U'\t':
             case U'\v':
@@ -383,7 +380,7 @@ void translate(std::string_view text, bool show_unsupported) {
                 ipa += U' ';
                 break;
 
-            /// Simple vowels.
+            // Simple vowels.
             case U'i':
             case U'o':
             case U'u':
@@ -414,9 +411,9 @@ void translate(std::string_view text, bool show_unsupported) {
                 }
             } break;
 
-            /// 'a' could be followed by 'u', optionally with
-            /// a diacritic on the 'u' (except a diaeresis), in
-            /// which case it is actually 'o'.
+            // 'a' could be followed by 'u', optionally with
+            // a diacritic on the 'u' (except a diaeresis), in
+            // which case it is actually 'o'.
             case U'a': {
                 if (s.consume(U'u')) {
                     if (s.consume(Diaeresis)) {
@@ -432,14 +429,14 @@ void translate(std::string_view text, bool show_unsupported) {
                 goto simple_vowel;
             }
 
-            /// 'e' is complicated because it has two nasal variants,
-            /// and because it can also be a schwa. Fortunately, NFC
-            /// puts the dot below first, so we can get that out of the
-            /// way early.
+            // 'e' is complicated because it has two nasal variants,
+            // and because it can also be a schwa. Fortunately, NFC
+            // puts the dot below first, so we can get that out of the
+            // way early.
             case U'e': {
                 const bool dot = s.consume(DotBelow);
                 switch (s.front().value_or(0)) {
-                    /// E-grave is oral 'ɛ'.
+                    // E-grave is oral 'ɛ'.
                     case Grave:
                         s.drop();
                         ipa += U'ɛ';
@@ -459,17 +456,17 @@ void translate(std::string_view text, bool show_unsupported) {
                         break;
 
                     default:
-                        /// E-dot w/ no nasal diacritic is a schwa.
+                        // E-dot w/ no nasal diacritic is a schwa.
                         ipa += dot ? U'ə' : U'e';
 
-                        /// Word-finally, E-dot is voiceless.
+                        // Word-finally, E-dot is voiceless.
                         if (dot and s.starts_with_any(ws)) ipa += VoicelessBelow;
                         break;
                 }
             } break;
 
-            /// 'y' can be a vowel or a consonant if followed by '’'. Note
-            /// that there may be an acute before the apostrophe.
+            // 'y' can be a vowel or a consonant if followed by '’'. Note
+            // that there may be an acute before the apostrophe.
             case 'y': {
                 switch (s.front().value_or(0)) {
                     case Acute:
@@ -487,7 +484,7 @@ void translate(std::string_view text, bool show_unsupported) {
                 }
             } break;
 
-            /// 'b' can be followed by a dot, 'h', or an apostrophe.
+            // 'b' can be followed by a dot, 'h', or an apostrophe.
             case U'b': {
                 switch (s.front().value_or(0)) {
                     case U'h':
@@ -495,8 +492,8 @@ void translate(std::string_view text, bool show_unsupported) {
                         ipa += U"bʱ";
                         break;
 
-                    /// If followed by '’h', then this is a fricative. Otherwise,
-                    /// just skip the apostrophe.
+                    // If followed by '’h', then this is a fricative. Otherwise,
+                    // just skip the apostrophe.
                     case U'’':
                     case U'\'':
                     case U'`':
@@ -505,7 +502,7 @@ void translate(std::string_view text, bool show_unsupported) {
                         else ipa += U"b";
                         break;
 
-                    /// Dot below doesn’t change the pronunciation.
+                    // Dot below doesn’t change the pronunciation.
                     default:
                         (void) s.consume(DotBelow);
                         ipa += U'b';
@@ -519,7 +516,7 @@ void translate(std::string_view text, bool show_unsupported) {
                 else HandleApostropheH(U'ɕ', U'x');
                 break;
 
-            /// 'd' can be followed by a dot, or '’h’.
+            // 'd' can be followed by a dot, or '’h’.
             case U'd':
                 if (s.consume(DotBelow)) ipa += 'd';
                 else HandleApostropheH(U'd', U'ð');
@@ -533,15 +530,15 @@ void translate(std::string_view text, bool show_unsupported) {
                 ipa += U'h';
                 break;
 
-            /// We sometimes use dotless ‘j’ so we don’t end up
-            /// with a dot *and* an acute.
+            // We sometimes use dotless ‘j’ so we don’t end up
+            // with a dot *and* an acute.
             case U'ȷ':
             case U'j':
                 ipa += U'ʑ';
                 if (s.consume(Acute)) ipa += U'ʶ';
                 break;
 
-            /// Also handle `ll`.
+            // Also handle `ll`.
             case U'l':
                 if (s.consume(DotBelow)) {
                     ipa += U"ʎ̝̃";
@@ -582,7 +579,7 @@ void translate(std::string_view text, bool show_unsupported) {
                 }
                 break;
 
-            /// 't' is /t/ on its own (archaic spelling), and 't’h' otherwise.
+            // 't' is /t/ on its own (archaic spelling), and 't’h' otherwise.
             case U't':
                 if (s.consume_any(apos) and s.consume(U'h')) ipa += U'θ';
                 else ipa += U't';
