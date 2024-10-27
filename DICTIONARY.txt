@@ -700,11 +700,16 @@ rívnél|n.|criminel|Scoundrel, someone without virtue
 lér|v.|clair|To be evident, obvious, frank, clear
 lit’hijy’|v.|litigier|To litigate, be at law with (+\s{dat} sbd.)
 rê|n.|point|Point (in a score).
+ady’ŷ|v. or interj.|adieu|\
+    \\ Goodbye, farewell \
+    \\ +\s{gen} To say goodbye to sbd., bid sbd. farewell
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
 
 ## TODO: Replace backslash-continuation w/ indentation.
+## TODO: Add subscripts if there are multiple words that are spelt the same (in here so we can
+##       do cross-referencing). The ULTRAFRENCHER should complain if there are unannotated homographs.
 
 # To be is a rather complicated entry.
 eḍ|v. irreg. |être|To be|\s{forms} \textit{active only, see §~\ref{subsec:ed-paradigm}}
