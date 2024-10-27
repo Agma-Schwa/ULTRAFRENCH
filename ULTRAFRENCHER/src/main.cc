@@ -177,7 +177,7 @@ void generate(std::string_view input_text) {
     // Convert a line into an entry.
     std::u32string logical_line;
     std::vector<entry> entries;
-    auto ShipoutLine = [&] {
+    auto ShipOutLine = [&] {
         if (logical_line.empty()) return;
         defer { logical_line.clear(); };
 
@@ -254,12 +254,12 @@ void generate(std::string_view input_text) {
 
         // This line starts a new entry, so ship out the last
         // one and start a new one.
-        ShipoutLine();
+        ShipOutLine();
         logical_line = line.text();
     }
 
     // Ship out the last line.
-    ShipoutLine();
+    ShipOutLine();
 
     // Sort the entries.
     rgs::stable_sort(entries, [](const auto& a, const auto& b) {
