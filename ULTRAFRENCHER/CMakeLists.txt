@@ -1,42 +1,36 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.28)
 project(ULTRAFRENCH VERSION 0.1.0 LANGUAGES CXX)
 
 ## ============================================================================
 ##  Global CMake Variables.
 ## ============================================================================
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 26)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-## ============================================================================
-##  Global compiler options.
-## ============================================================================
-## Turn on diagnostics colours.
-if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    add_compile_options(-fdiagnostics-color=always)
-elseif (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    add_compile_options(-fcolor-diagnostics)
-endif()
-
-## Use mold as the default linker, if it exists.
-if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    find_program(MOLD_LINKER "mold")
-    if (MOLD_LINKER)
-        add_link_options(-fuse-ld=mold)
-    endif()
-endif()
 
 ## ============================================================================
 ##  Compiler options.
 ## ============================================================================
 add_library(options INTERFACE)
 
+## Turn on diagnostics colours.
+if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(options INTERFACE -fdiagnostics-color=always)
+elseif (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    target_compile_options(options INTERFACE -fcolor-diagnostics)
+endif()
+
+## Use mold as the default linker, if it exists.
+if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    find_program(MOLD_LINKER "mold")
+    if (MOLD_LINKER)
+        target_link_options(options INTERFACE -fuse-ld=mold)
+    endif()
+endif()
+
 ## Flags for Clang and GCC.
 if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     target_compile_options(options INTERFACE
-        -fno-exceptions
-        -fno-rtti
-
         ## Warnings.
         -Wall -Wextra     # Enable ‘all’ warnings.
         -Wundef           # Invalid #undef or undefined macro in #if.
@@ -122,11 +116,11 @@ endif()
 ## Debug/Release flags.
 if (NOT MSVC)
     target_compile_options(options INTERFACE
-        $<$<CONFIG:DEBUG>:-O0 -g3 -ggdb3 -rdynamic>
+        $<$<CONFIG:DEBUG>:-O0 -g3 -ggdb3>
         $<$<CONFIG:RELEASE>:-O3 -march=native>
     )
     target_link_options(options INTERFACE
-        $<$<CONFIG:DEBUG>:-O0 -g3 -ggdb3 -rdynamic>
+        $<$<CONFIG:DEBUG>:-O0 -g3 -ggdb3>
         $<$<CONFIG:RELEASE>:-O3 -march=native>
     )
 else()
@@ -139,43 +133,16 @@ endif()
 ## ============================================================================
 ##  Submodules and include dirs.
 ## ============================================================================
-## Find ICU.
-set(ICU_FIND_COMPONENTS uc i18n data)
-include(FindICU)
-if (NOT ICU_FOUND)
-    message(WARNING "ICU not found, disabling dictionary generation...")
-endif()
-
-## Find libfmt.
-find_package(fmt CONFIG)
-if (NOT fmt_FOUND)
-    include(FetchContent)
-	message(STATUS "Fmtlib not found, downloading ...")
-	FetchContent_Declare(fmtlib
-		GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-		GIT_TAG 10.0.0
-		SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/fmt"
-    )
-	FetchContent_MakeAvailable(fmtlib)
-endif()
-
-## Add libclopts.
-include(CheckIncludeFileCXX)
-check_include_file_cxx(clopts.hh has_libclopts)
-if (NOT has_libclopts)
-    include(FetchContent)
-    message(STATUS "clopts.hh not found, downloading ...")
-    FetchContent_Declare(clopts
-        GIT_REPOSITORY https://github.com/Sirraide/clopts.git
-        GIT_TAG master
-        SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/clopts"
-    )
-    FetchContent_MakeAvailable(clopts)
-    target_include_directories(options INTERFACE "${CMAKE_CURRENT_BINARY_DIR}/libs/clopts/include")
-endif()
+include(FetchContent)
+FetchContent_Declare(libbase
+    GIT_REPOSITORY https://github.com/Sirraide/libbase
+    GIT_TAG master
+    SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/libbase"
+)
+FetchContent_MakeAvailable(libbase)
 
 ## Link against libfmt.
-target_link_libraries(options INTERFACE fmt)
+target_link_libraries(options INTERFACE libbase)
 
 ## ============================================================================
 ##  Executables and libraries.
@@ -193,4 +160,4 @@ endif()
 add_executable(ULTRAFRENCHER ${sources})
 
 ## Link ICU.
-target_link_libraries(ULTRAFRENCHER PRIVATE options ICU::i18n ICU::uc ICU::data)
+target_link_libraries(ULTRAFRENCHER PRIVATE options)

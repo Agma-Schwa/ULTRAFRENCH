@@ -433,7 +433,7 @@ c’haú|adj.|see sense 2|\\ Holy. \\ \w{c’haú-}\L{} \textit{‘religious pre
   have a religous connotation; this is historically a back-formation from \w{c’haúfrér} and \w{c’haúhýr} \
   which happen to both start with this ‘prefix’}
 ḷý|n.|lieu|\textit{Base of the spatial correlatives. In senses 2–5, case affixes are attached before \this, e.g. \
-    sense 2 \s{all} \w{sẹb'héḷý} ‘hither’}. \
+    sense 2 \s{all} \w{sẹb’héḷý} ‘hither’}. \
   \\ Place, location \
   \\ \w{sẹ}\ldots\this \s{def} [from \w{sẹh}] Here, hither, hence, \&c. \textit{Proximal demonstrative (all cases)} \
   \\ \w{sý’\L}\ldots\this \s{def} [from \w{sý’ẹ}] There, thither, thence, \&c. \textit{Distal demonstrative (all cases)} \

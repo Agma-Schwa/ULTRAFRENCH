@@ -1,7 +1,8 @@
 #include <algorithm>
+#include <base/Assert.hh>
+#include <base/Macros.hh>
 #include <clopts.hh>
-#include <fmt/format.h>
-#include <fmt/xchar.h>
+#include <print>
 #include <ranges>
 #include <string>
 #include <unicode/schriter.h>
@@ -11,89 +12,21 @@
 #include <variant>
 #include <vector>
 
-namespace rgs = std::ranges;
-namespace vws = std::ranges::views;
+import base;
+import base.text;
+using namespace base;
 
-using u8 = uint8_t;
-using u16 = uint16_t;
-using u32 = uint32_t;
-using u64 = uint64_t;
-using usz = size_t;
-using uptr = uintptr_t;
+static constexpr std::u32string_view apos = U"'`’";
+static constexpr std::u32string_view ws = U" \t\v\f\n\r|";
 
-using i8 = int8_t;
-using i16 = int16_t;
-using i32 = int32_t;
-using i64 = int64_t;
-using isz = ptrdiff_t;
-using iptr = intptr_t;
-
-#define STR_(X) #X
-#define STR(X)  STR_(X)
-
-#define CAT_(X, Y) X##Y
-#define CAT(X, Y)  CAT_(X, Y)
-
-template <typename... arguments>
-[[noreturn]] void die(fmt::format_string<arguments...> fmt, arguments&&... args) {
-    fmt::print(stderr, fmt, std::forward<arguments>(args)...);
-    fmt::print(stderr, "\n");
-    std::exit(1);
-}
-
-constexpr bool isspace(char32_t c) {
-    return c == ' ' or c == '\t' or c == '\n' or c == '\r' or c == '\f' or c == '\v';
-}
-
-void trim(std::u32string& s) {
-    while (s.back() == ' ') { s.pop_back(); }
-    auto it = s.begin();
-    while (it != s.end() and isspace(*it)) it++;
-    s.erase(s.begin(), it);
-}
-
-[[nodiscard]] auto trim(std::u32string_view s) -> std::u32string_view {
-    while (s.back() == ' ') { s.remove_suffix(1); }
-    auto it = s.begin();
-    while (it != s.end() and isspace(*it)) it++;
-    return s.substr(usz(it - s.begin()));
-}
-
-template <typename Callback>
-void split(std::u32string_view text, std::u32string_view sep, Callback cb) {
-    usz pos = 0;
-    for (;;) {
-        auto next = text.find(sep, pos);
-        if (next == std::u32string::npos) {
-            cb(text.substr(pos));
-            break;
-        } else {
-            cb(text.substr(pos, next - pos));
-            pos = next + sep.size();
-        }
-    }
-}
-
-auto to_utf8(std::u32string_view sv) -> std::string {
-    auto s = icu::UnicodeString::fromUTF32(reinterpret_cast<const UChar32*>(sv.data()), i32(sv.size()));
-    std::string result;
-    s.toUTF8String(result);
-    return result;
-}
-
-auto to_utf32(const icu::UnicodeString& us) -> std::u32string {
+auto ICUToUTF32(const icu::UnicodeString& us) -> std::u32string {
     std::u32string text;
     UErrorCode err{U_ZERO_ERROR};
     text.resize(usz(us.length()));
     auto sz = us.toUTF32(reinterpret_cast<UChar32*>(text.data()), i32(text.size()), err);
-    if (U_FAILURE(err)) die("Failed to convert text to UTF-32: {}", u_errorName(err));
+    Assert(not U_FAILURE(err), "Failed to convert text to UTF-32: {}", u_errorName(err));
     text.resize(usz(sz));
     return text;
-}
-
-auto utf8(char32_t c) -> std::string {
-    std::u32string_view sv{&c, 1};
-    return to_utf8(sv);
 }
 
 namespace dictionary {
@@ -124,35 +57,32 @@ struct entry {
         : word{std::move(word)}
         , data{std::move(data)} { init(); }
 
-    static auto FullStop(std::u32string_view text_before) -> std::string_view {
-        text_before = trim(text_before);
+    static auto FullStopDelimited(u32stream text) -> std::string {
+        text.trim();
+        if (text.empty()) return "";
+        auto str = text::ToUTF8(text.text());
 
         // Skip past quotes so we don’t turn e.g. ⟨...’⟩ into ⟨...’.⟩.
-        while (text_before.ends_with(U'’')) text_before.remove_suffix(1);
+        while (text.ends_with_any(apos)) text.drop_back();
 
         // Recognise common punctuation marks.
-        if (
-            text_before.ends_with(U"?") or
-            text_before.ends_with(U"!") or
-            text_before.ends_with(U".") or
-            text_before.ends_with(U"\\ldots")
-        ) return "";
-        return ".";
+        if (not text.ends_with_any(U"?!.") and not text.ends_with(U"\\ldots")) str += ".";
+        return str;
     }
 
     void print() const {
-        auto s = to_utf8(word);
+        auto s = text::ToUTF8(word);
         if (std::holds_alternative<std::u32string>(data)) {
-            fmt::print("\\refentry{{{}}}{{{}}}\n", s, to_utf8(std::get<std::u32string>(data)));
+            std::print("\\refentry{{{}}}{{{}}}\n", s, text::ToUTF8(std::get<std::u32string>(data)));
         } else {
             auto& parts = std::get<std::vector<std::u32string>>(data);
             usz i = 0;
-            fmt::print("\\entry{{{}}}", s);
+            std::print("\\entry{{{}}}", s);
             for (; i < parts.size(); i++) {
                 static constexpr std::u32string_view SenseMacro = U"\\\\";
                 auto EmitField = [&] (bool full_stop = false) {
-                    if (full_stop) fmt::print("{{{}{}}}", to_utf8(parts[i]), FullStop(parts[i]));
-                    else fmt::print("{{{}}}", to_utf8(parts[i]));
+                    if (full_stop) std::print("{{{}}}", FullStopDelimited(parts[i]));
+                    else std::print("{{{}}}", text::ToUTF8(parts[i]));
                 };
                 switch (i) {
                     // If this is a single word, and the field contains no backslashes,
@@ -169,10 +99,10 @@ struct entry {
                         // If the etymology contains no spaces, insert \pf, and
                         // make the word italic.
                         if (not etym.contains(U' ') and not etym.contains(U'\\'))
-                            fmt::print("{{\\pf{{{}}}}}", to_utf8(etym));
+                            std::print("{{\\pf{{{}}}}}", text::ToUTF8(etym));
 
                         // Otherwise, pass it along as-is.
-                        else { fmt::print("{{{}}}", to_utf8(etym)); }
+                        else { std::print("{{{}}}", text::ToUTF8(etym)); }
                     } break;
 
                     // If the body contains senses, delimit each one with a dot. We
@@ -184,35 +114,30 @@ struct entry {
                             break;
                         }
 
-                        std::u32string_view body = parts[i];
-                        fmt::print("{{");
-                        while (not body.empty()) {
-                            auto pos = body.find(SenseMacro);
+                        u32stream body = parts[i];
+                        std::print("{{");
 
-                            // Last or only sense; just emit it.
-                            if (pos == std::u32string_view::npos) {
-                                fmt::print("{}{}", to_utf8(body), FullStop(body));
-                                break;
-                            }
+                        // Emit everything before the first sense.
+                        auto text = body.take_until(SenseMacro);
+                        std::print("{}", FullStopDelimited(text));
 
-                            // Found a sense.
-                            //
-                            // - Terminate the previous one with a dot.
-                            // - Delete spaces between the two.
-                            // - Insert the sense macro.
-                            auto prev = trim(body.substr(0, pos));
-                            if (prev.empty()) fmt::print("{}", to_utf8(SenseMacro));
-                            else fmt::print("{}{}{} ", to_utf8(prev), FullStop(prev), to_utf8(SenseMacro));
-                            body.remove_prefix(pos + SenseMacro.size());
-                        }
-                        fmt::print("}}");
+                        // Split by senses.
+                        //
+                        // The first element is everything before the sense macro, which
+                        // is always going to be empty, so we drop it.
+                        for (auto sense : body.split(SenseMacro) | vws::drop(1)) std::print(
+                            "{}{}",
+                            SenseMacro,
+                            FullStopDelimited(sense)
+                        );
+                        std::print("}}");
                     } break;
 
                     default: EmitField();
                 }
             }
-            for (; i < 5; i++) fmt::print("{{}}");
-            fmt::print("\n");
+            for (; i < 5; i++) std::print("{{}}");
+            std::print("\n");
         }
     }
 
@@ -223,52 +148,20 @@ private:
     }
 };
 
-class line_buffer {
-    std::u32string_view text;
-    usz pos;
-
-public:
-    usz linenum = 0;
-
-    line_buffer(std::u32string_view text)
-        : text{text}
-        , pos{0} {}
-    void operator()(std::u32string& line) {
-        /// Return empty line if we’re at the end.
-        if (pos == std::u32string::npos) return;
-        linenum++;
-
-        /// Find next line break. If there is none, return the rest.
-        auto line_break = text.find('\n', pos);
-        if (line_break == std::u32string::npos) {
-            line += text.substr(pos);
-            pos = std::u32string::npos;
-        }
-
-        /// Otherwise, return the line and advance the position.
-        else {
-            line += text.substr(pos, line_break - pos);
-            pos = line_break + 1;
-        }
-    }
-
-    explicit operator bool() const { return pos != std::u32string::npos; }
-};
-
 /// Emit errors as LaTeX macros.
 ///
 /// This is so the error gets printed at the end of LaTeX compilation;
 /// if we print it when the ULTRAFRENCHER runs, it’s likely to get missed,
 /// so we do this instead.
 template <typename ...Args>
-void EmitError(fmt::format_string<Args...> fmt, Args&& ...args) {
-    fmt::print("\\ULTRAFRENCHERERROR{{  ERROR: ");
-    fmt::print(fmt, std::forward<Args>(args)...);
-    fmt::print("}}");
+void EmitError(std::format_string<Args...> fmt, Args&& ...args) {
+    std::print("\\ULTRAFRENCHERERROR{{  ERROR: ");
+    std::print(fmt, std::forward<Args>(args)...);
+    std::print("}}");
 }
 
 void generate(std::string_view input_text) {
-    fmt::print(stderr, "[ULTRAFRENCHER] Generating dictionary...\n");
+    std::print(stderr, "[ULTRAFRENCHER] Generating dictionary...\n");
 
     UErrorCode err{U_ZERO_ERROR};
     normaliser = icu::Transliterator::createInstance(
@@ -276,63 +169,49 @@ void generate(std::string_view input_text) {
         UTRANS_FORWARD,
         err
     );
-    if (U_FAILURE(err)) die("Failed to get NFKD normalizer: {}", u_errorName(err));
+    Assert(not U_FAILURE(err), "Failed to get NFKD normalizer: {}", u_errorName(err));
 
     /// Convert text to u32.
-    std::u32string text = to_utf32(icu::UnicodeString::fromUTF8(input_text));
+    std::u32string text = text::ToUTF32(input_text);
 
-    /// Process the text.
-    line_buffer buf{text};
-    std::u32string line;
+    /// Convert a line into an entry.
+    std::u32string logical_line;
     std::vector<entry> entries;
-    while (buf) {
-        line.clear();
-        buf(line);
-
-        /// Delete comments.
-        if (auto comment_start = line.find(U'#'); comment_start != std::u32string::npos)
-            line.erase(comment_start);
-
-        /// Warn about non-typographic quotes, after comment deletion
-        /// because it’s technically fine to have them in comments.
-        if (line.contains(U'\'')) EmitError(
-            "Non-typographic quote in line {}! "
-            "Please use ‘’ (and “” for nested quotes) instead!",
-            buf.linenum
-        );
-
-        /// Perform line continuation.
-        while (trim(line), line.back() == U'\\' and buf) {
-            line.pop_back();
-            buf(line);
-        }
-
-        /// Skip empty lines.
-        if (line.empty()) continue;
+    auto ShipoutLine = [&] {
+        if (logical_line.empty()) return;
+        defer { logical_line.clear(); };
+    //    std::println("SOut: {}", text::ToUTF8(logical_line));
 
         /// Collapse whitespace into single spaces.
         for (usz pos = 0;;) {
             static constexpr std::u32string_view ws = U" \t\v\f\n\r";
-            pos = line.find_first_of(ws, pos);
+            pos = logical_line.find_first_of(ws, pos);
             if (pos == std::u32string::npos) break;
-            if (auto end = line.find_first_not_of(ws, pos); end != std::u32string::npos) {
-                line.replace(pos, end - pos, U" ");
+            if (auto end = logical_line.find_first_not_of(ws, pos); end != std::u32string::npos) {
+                logical_line.replace(pos, end - pos, U" ");
                 pos = end;
             } else {
-                line.erase(pos);
+                logical_line.erase(pos);
                 break;
             }
         }
+
+        u32stream line{logical_line};
+        line.trim();
 
         /// If the line contains no '|' characters and a `>`,
         /// it is a reference. Split by '>'. The lhs is a
         /// comma-separated list of references, the rhs is the
         /// actual definition.
-        if (auto gt = line.find(U'>'); gt != std::u32string::npos and not line.contains('|')) {
-            auto word = trim(std::u32string_view{line}.substr(gt + 1));
-            split(std::u32string_view{line}.substr(0, gt), U",", [&](std::u32string_view ref) {
-                entries.emplace_back(std::u32string{trim(ref)}, std::u32string{word});
-            });
+        if (not line.contains(U'|')) {
+            auto from = u32stream(line.take_until(U'>')).trim();
+            auto target = line.drop().trim().text();
+            for (auto entry : from.split(U",")) {
+                entries.emplace_back(
+                    std::u32string{entry.trim().text()},
+                    std::u32string{target}
+                );
+            }
         }
 
         /// Otherwise, the line is an entry. Split by '|' and emit
@@ -341,17 +220,51 @@ void generate(std::string_view input_text) {
             bool first = true;
             std::u32string word;
             std::vector<std::u32string> line_parts;
-            split(line, U"|", [&](std::u32string_view part) {
+            for (auto part : line.split(U"|")) {
                 if (first) {
                     first = false;
-                    word = std::u32string{part};
+                    word = std::u32string{part.trim().text()};
                 } else {
-                    line_parts.emplace_back(trim(part));
+                    line_parts.emplace_back(part.trim().text());
                 }
-            });
+            }
             entries.emplace_back(std::move(word), std::move(line_parts));
         }
+    };
+
+    /// Process the text.
+    for (auto [i, line] : u32stream(text).lines() | vws::enumerate) {
+      //  std::println("Line: {}", text::ToUTF8(line.text()));
+        line = line.take_until(U'#');
+
+        /// Warn about non-typographic quotes, after comment deletion
+        /// because it’s technically fine to have them in comments.
+        if (line.contains(U'\'')) EmitError(
+            "Non-typographic quote in line {}! "
+            "Please use ‘’ (and “” for nested quotes) instead!",
+            i
+        );
+
+        /// Skip empty lines.
+        if (line.empty()) continue;
+
+        /// Perform line continuation.
+        if (line.trim().back() == U'\\') {
+            line.drop_back();
+            logical_line += U' ';
+            logical_line += line.trim().text();
+            continue;
+        }
+
+        /// Ship out the line.
+        logical_line += U' ';
+        logical_line += line.text();
+        ShipoutLine();
     }
+
+    /// Ship out the last line.
+    ShipoutLine();
+    //std::exit(42);
 
     /// Sort the entries.
     rgs::stable_sort(entries, [](const auto& a, const auto& b) {
@@ -359,12 +272,12 @@ void generate(std::string_view input_text) {
     });
 
     /// Emit it.
-    fmt::print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
-    fmt::print("%%            This file was generated from DICTIONARY.txt             %%\n");
-    fmt::print("%%                                                                    %%\n");
-    fmt::print("%%                         DO NOT EDIT                                %%\n");
-    fmt::print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
-    fmt::print("\n");
+    std::print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
+    std::print("%%            This file was generated from DICTIONARY.txt             %%\n");
+    std::print("%%                                                                    %%\n");
+    std::print("%%                         DO NOT EDIT                                %%\n");
+    std::print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
+    std::print("\n");
     for (auto&& entry : entries) entry.print();
 }
 } // namespace dictionary
@@ -375,70 +288,9 @@ static constexpr char32_t Grave = U'̀';
 static constexpr char32_t Circumflex = U'̂';
 static constexpr char32_t Tilde = U'̃';
 static constexpr char32_t VoicelessBelow = U'̥';
-static constexpr char32_t VoicelessAbove = U'̊';
+[[maybe_unused]] static constexpr char32_t VoicelessAbove = U'̊';
 static constexpr char32_t Diaeresis = U'̈';
 static constexpr char32_t DotBelow = U'̣';
-
-static constexpr std::u32string_view apos = U"'`’";
-static constexpr std::u32string_view ws = U" \t\v\f\n\r|";
-
-class iterator {
-    const char32_t* it;
-    const char32_t* end;
-
-public:
-    iterator(const std::u32string& sv)
-        : it{sv.data()}
-        , end{sv.data() + sv.size()} {}
-
-    bool consume(char32_t c) {
-        if (is(c)) {
-            it++;
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    bool consume_any(std::u32string_view sv) {
-        if (is_any(sv)) {
-            it++;
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    bool is(std::same_as<char32_t> auto... cs) {
-        auto c = **this;
-        return ((c == cs) or ...);
-    }
-
-    bool is_any(std::u32string_view sv) {
-        return rgs::contains(sv, **this);
-    }
-
-    bool matches(std::u32string_view sv) {
-        return std::u32string_view{it, usz(end - it)}.starts_with(sv);
-    }
-
-    char32_t operator*() const {
-        if (it == end) return 0;
-        return *it;
-    }
-
-    auto operator++() -> char32_t {
-        if (it == end) return 0;
-        return *++it;
-    }
-
-    auto operator++(int) -> char32_t {
-        if (it == end) return 0;
-        return *it++;
-    }
-
-    explicit operator bool() const { return it != end; }
-};
 
 /// Convert a sound to its nasal equivalent (but without
 /// any diacritics)
@@ -469,34 +321,28 @@ void translate(std::string_view text, bool show_unsupported) {
         UTRANS_FORWARD,
         err
     );
-    if (U_FAILURE(err)) die("Failed to get Transliterator: {}", u_errorName(err));
+    Assert(not U_FAILURE(err), "Failed to get Transliterator: {}", u_errorName(err));
     auto us = icu::UnicodeString::fromUTF8(text);
     normaliser->transliterate(us);
 
     /// Convert it to a u32 string.
     /// Map the text to IPA.
-    std::u32string ipa, input = to_utf32(us);
+    std::u32string ipa, input = ICUToUTF32(us);
     char32_t c{};
     [[maybe_unused]] char32_t prev{};
-    iterator it{input};
+    u32stream s{input};
 
     /// Helper to handle apostrophe-h combinations. Some letters
     /// may be followed by '’h', which turns them into fricatives;
     /// if the apostrophe is not followed by a 'h', then it is simply
     /// discarded. This handles that case.
     const auto HandleApostropheH = [&](char32_t base, char32_t fricative) {
-        if (it.consume_any(apos)) {
-            if (it.consume(U'h')) {
-                ipa += fricative;
-                return;
-            }
-        }
-
-        ipa += base;
+        if (s.consume_any(apos) and s.consume(U'h')) ipa += fricative;
+        else ipa += base;
     };
 
-    for (; it; prev = c) {
-        switch (c = it++) {
+    for (; not s.empty(); prev = c) {
+        switch (c = s.take()[0]) {
             /// Skip most punctuation marks.
             case U'.':
             case U',':
@@ -533,7 +379,7 @@ void translate(std::string_view text, bool show_unsupported) {
             case U'\n':
             case U'\r':
             case U'|':
-                while (it.is_any(ws)) it++;
+                while (s.consume_any(ws));
                 ipa += U' ';
                 break;
 
@@ -542,21 +388,21 @@ void translate(std::string_view text, bool show_unsupported) {
             case U'o':
             case U'u':
             simple_vowel: {
-                switch (*it) {
+                switch (s.front().value_or(0)) {
                     case Grave:
-                        it++;
+                        s.drop();
                         ipa += c;
                         ipa += VoicelessBelow;
                         break;
 
                     case Acute:
-                        it++;
+                        s.drop();
                         ipa += Nasal(c);
                         ipa += Tilde;
                         break;
 
                     case Circumflex:
-                        it++;
+                        s.drop();
                         ipa += Nasal(c);
                         ipa += Tilde;
                         ipa += Tilde;
@@ -572,8 +418,8 @@ void translate(std::string_view text, bool show_unsupported) {
             /// a diacritic on the 'u' (except a diaeresis), in
             /// which case it is actually 'o'.
             case U'a': {
-                if (it.consume(U'u')) {
-                    if (it.consume(Diaeresis)) {
+                if (s.consume(U'u')) {
+                    if (s.consume(Diaeresis)) {
                         ipa += U'ɐ';
                         c = U'u';
                     } else {
@@ -591,22 +437,22 @@ void translate(std::string_view text, bool show_unsupported) {
             /// puts the dot below first, so we can get that out of the
             /// way early.
             case U'e': {
-                const bool dot = it.consume(DotBelow);
-                switch (*it) {
+                const bool dot = s.consume(DotBelow);
+                switch (s.front().value_or(0)) {
                     /// E-grave is oral 'ɛ'.
                     case Grave:
-                        it++;
+                        s.drop();
                         ipa += U'ɛ';
                         break;
 
                     case Acute:
-                        it++;
+                        s.drop();
                         ipa += dot ? U'e' : U'ɛ';
                         ipa += Tilde;
                         break;
 
                     case Circumflex:
-                        it++;
+                        s.drop();
                         ipa += dot ? U'e' : U'ɛ';
                         ipa += Tilde;
                         ipa += Tilde;
@@ -617,7 +463,7 @@ void translate(std::string_view text, bool show_unsupported) {
                         ipa += dot ? U'ə' : U'e';
 
                         /// Word-finally, E-dot is voiceless.
-                        if (dot and (not it or it.is_any(ws))) ipa += VoicelessBelow;
+                        if (dot and s.starts_with_any(ws)) ipa += VoicelessBelow;
                         break;
                 }
             } break;
@@ -625,10 +471,10 @@ void translate(std::string_view text, bool show_unsupported) {
             /// 'y' can be a vowel or a consonant if followed by '’'. Note
             /// that there may be an acute before the apostrophe.
             case 'y': {
-                switch (*it) {
+                switch (s.front().value_or(0)) {
                     case Acute:
-                        it++;
-                        if (it.consume_any(apos)) ipa += U"ɥ̃";
+                        s.drop();
+                        if (s.consume_any(apos)) ipa += U"ɥ̃";
                         else {
                             ipa += Nasal(c);
                             ipa += Tilde;
@@ -636,16 +482,16 @@ void translate(std::string_view text, bool show_unsupported) {
                         break;
 
                     default:
-                        if (it.consume_any(apos)) ipa += U"ɥ";
+                        if (s.consume_any(apos)) ipa += U"ɥ";
                         else goto simple_vowel;
                 }
             } break;
 
             /// 'b' can be followed by a dot, 'h', or an apostrophe.
             case U'b': {
-                switch (*it) {
+                switch (s.front().value_or(0)) {
                     case U'h':
-                        it++;
+                        s.drop();
                         ipa += U"bʱ";
                         break;
 
@@ -654,28 +500,28 @@ void translate(std::string_view text, bool show_unsupported) {
                     case U'’':
                     case U'\'':
                     case U'`':
-                        it++;
-                        if (it.consume(U'h')) ipa += U"β";
+                        s.drop();
+                        if (s.consume(U'h')) ipa += U"β";
                         else ipa += U"b";
                         break;
 
                     /// Dot below doesn’t change the pronunciation.
                     default:
-                        it.consume(DotBelow);
+                        (void) s.consume(DotBelow);
                         ipa += U'b';
                         break;
                 }
             } break;
 
             case U'c':
-                if (it.consume(Acute)) ipa += U"ɕʶ";
-                else if (it.consume(DotBelow)) ipa += U"ȷ̊";
+                if (s.consume(Acute)) ipa += U"ɕʶ";
+                else if (s.consume(DotBelow)) ipa += U"ȷ̊";
                 else HandleApostropheH(U'ɕ', U'x');
                 break;
 
             /// 'd' can be followed by a dot, or '’h’.
             case U'd':
-                if (it.consume(DotBelow)) ipa += 'd';
+                if (s.consume(DotBelow)) ipa += 'd';
                 else HandleApostropheH(U'd', U'ð');
                 break;
 
@@ -692,22 +538,18 @@ void translate(std::string_view text, bool show_unsupported) {
             case U'ȷ':
             case U'j':
                 ipa += U'ʑ';
-                if (it.consume(Acute)) ipa += U'ʶ';
+                if (s.consume(Acute)) ipa += U'ʶ';
                 break;
 
             /// Also handle `ll`.
             case U'l':
-                if (it.consume(DotBelow)) {
+                if (s.consume(DotBelow)) {
                     ipa += U"ʎ̝̃";
-                    while (it.matches(U"ḷ")) {
-                        it++;
-                        it++;
-                        ipa += U'ː';
-                    }
+                    while (s.consume(U"ḷ")) ipa += U'ː';
                 } else {
                     ipa += U"ɮ̃";
-                    while (*it == U'l' and not it.matches(U"ḷ")) {
-                        it++;
+                    while (s.starts_with(U'l') and not s.starts_with(U"ḷ")) {
+                        s.drop();
                         ipa += U'ː';
                     }
                 }
@@ -715,7 +557,7 @@ void translate(std::string_view text, bool show_unsupported) {
 
             case U'ł':
                 ipa += U"ɮ̃ʶ";
-                while (it.consume(U'ł')) ipa += U'ː';
+                while (s.consume(U'ł')) ipa += U'ː';
                 break;
 
             case U'n':
@@ -723,40 +565,35 @@ void translate(std::string_view text, bool show_unsupported) {
                 break;
 
             case U'r':
-                if (it.consume(U'r')) ipa += U'ʀ';
+                if (s.consume(U'r')) ipa += U'ʀ';
                 else ipa += U"ɰ";
                 break;
 
             case U's':
-                if (it.consume(Acute)) {
+                if (s.consume(Acute)) {
                     ipa += U"sʶ";
-                    while (it.matches(U"ś")) {
-                        it++;
-                        it++;
-                        ipa += U'ː';
-                    }
+                    while (s.consume(U"ś")) ipa += U'ː';
                 } else {
                     ipa += U's';
-                    while (*it == U's' and not it.matches(U"ś")) {
-                        it++;
+                    while (s.starts_with(U's') and not s.starts_with(U"ś")) {
+                        s.drop();
                         ipa += U'ː';
                     }
                 }
                 break;
 
-            /// 't' is always 't’h'
+            /// 't' is /t/ on its own (archaic spelling), and 't’h' otherwise.
             case U't':
-                it.consume_any(apos);
-                it.consume(U'h');
-                ipa += U'θ';
+                if (s.consume_any(apos) and s.consume(U'h')) ipa += U'θ';
+                else ipa += U't';
                 break;
 
             case U'v':
-                if (it.consume(Acute)) ipa += U"βʶ";
+                if (s.consume(Acute)) ipa += U"βʶ";
                 else {
                     ipa += U"ʋ̃";
-                    while (*it == U'v' and not it.matches(U"v́")) {
-                        it++;
+                    while (s.starts_with(U'v') and not s.starts_with(U"v́")) {
+                        s.drop();
                         ipa += U'ː';
                     }
                 }
@@ -768,26 +605,23 @@ void translate(std::string_view text, bool show_unsupported) {
 
             case U'z':
                 ipa += U'z';
-                if (it.consume(Acute)) ipa += U'ʶ';
+                if (s.consume(Acute)) ipa += U'ʶ';
                 break;
 
             default: {
-                std::u32string s;
-                s += c;
-                auto u8char = to_utf8(s);
-                fmt::print(
+                std::print(
                     stderr,
                     "[ULTRAFRENCHER] Warning: unsupported character U+{:04X}: {}\n",
                     u32(c),
-                    u8char
+                    text::ToUTF8(c)
                 );
 
-                if (show_unsupported) ipa += fmt::format(U"\033[33m<U+{:04X}>\033[m", u32(c));
+                if (show_unsupported) ipa += text::ToUTF32(std::format("\033[33m<U+{:04X}>\033[m", u32(c)));
             } break;
         }
     }
 
-    fmt::print(stdout, "{}\n", to_utf8(ipa));
+    std::print(stdout, "{}\n", text::ToUTF8(ipa));
 }
 } // namespace ipa
 
@@ -806,5 +640,5 @@ int main(int argc, char** argv) {
     if (auto d = opts.get<"--dict">()) dictionary::generate(d->contents);
     else if (auto i = opts.get<"-i">()) ipa::translate(*i, show_unsupp);
     else if (auto f = opts.get<"-f">()) ipa::translate(f->contents, show_unsupp);
-    else fmt::print("{} {}", argv[0], options::help());
+    else std::print("{} {}", argv[0], options::help());
 }
