@@ -17,7 +17,6 @@ import base.text;
 using namespace base;
 
 static constexpr std::u32string_view apos = U"'`’";
-static constexpr std::u32string_view ws = U" \t\v\f\n\r|";
 
 auto ICUToUTF32(const icu::UnicodeString& us) -> std::u32string {
     std::u32string text;
@@ -161,6 +160,7 @@ void EmitError(std::format_string<Args...> fmt, Args&& ...args) {
 }
 
 void generate(std::string_view input_text) {
+    static constexpr std::u32string_view ws = U" \t\v\f\n\r";
     std::print(stderr, "[ULTRAFRENCHER] Generating dictionary...\n");
 
     UErrorCode err{U_ZERO_ERROR};
@@ -183,7 +183,6 @@ void generate(std::string_view input_text) {
 
         // Collapse whitespace into single spaces.
         for (usz pos = 0;;) {
-            static constexpr std::u32string_view ws = U" \t\v\f\n\r";
             pos = logical_line.find_first_of(ws, pos);
             if (pos == std::u32string::npos) break;
             if (auto end = logical_line.find_first_not_of(ws, pos); end != std::u32string::npos) {
@@ -247,17 +246,16 @@ void generate(std::string_view input_text) {
         if (line.empty()) continue;
 
         // Perform line continuation.
-        if (line.trim().back() == U'\\') {
-            line.drop_back();
-            logical_line += U' ';
+        if (line.starts_with_any(U" \t")) {
+            logical_line += ' ';
             logical_line += line.trim().text();
             continue;
         }
 
-        // Ship out the line.
-        logical_line += U' ';
-        logical_line += line.text();
+        // This line starts a new entry, so ship out the last
+        // one and start a new one.
         ShipoutLine();
+        logical_line = line.text();
     }
 
     // Ship out the last line.
@@ -288,6 +286,7 @@ static constexpr char32_t VoicelessBelow = U'̥';
 [[maybe_unused]] static constexpr char32_t VoicelessAbove = U'̊';
 static constexpr char32_t Diaeresis = U'̈';
 static constexpr char32_t DotBelow = U'̣';
+static constexpr std::u32string_view WSOrPipe = U" \t\v\f\n\r|";
 
 // Convert a sound to its nasal equivalent (but without
 // any diacritics)
@@ -376,7 +375,7 @@ void translate(std::string_view text, bool show_unsupported) {
             case U'\n':
             case U'\r':
             case U'|':
-                while (s.consume_any(ws));
+                while (s.consume_any(WSOrPipe));
                 ipa += U' ';
                 break;
 
@@ -460,7 +459,7 @@ void translate(std::string_view text, bool show_unsupported) {
                         ipa += dot ? U'ə' : U'e';
 
                         // Word-finally, E-dot is voiceless.
-                        if (dot and s.starts_with_any(ws)) ipa += VoicelessBelow;
+                        if (dot and s.starts_with_any(WSOrPipe)) ipa += VoicelessBelow;
                         break;
                 }
             } break;
