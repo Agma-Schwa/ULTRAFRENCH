@@ -629,7 +629,7 @@ cér|v.|cher|To be dear, important (+\s{dat} to sbd.)
 Baúré|n.|Borée|Boreas, the North Wind
 sẹhérél|v.|se quereller|To quarrel, argue, fight about (+\s{part})
 dehid|v.|décider|To decide (+\s{inf} to do sth.)
-gâ|v.|gagner|To win, gain, earn (+\s{acc} sth.)
+râ|v.|gagner|To win, gain, earn (+\s{acc} sth.)
 b’hic’hḍrár|n.|victoire|Victory
 dehab’híy’|v. tr.|déshabiller|To undress +\s{acc} sbd.
 hab’híy’|v. tr.|habiller|To dress +\s{acc} sbd.
