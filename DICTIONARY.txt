@@ -704,6 +704,8 @@ ady’ŷ|v. or interj.|adieu|
     \\ Goodbye, farewell
     \\ +\s{gen} To say goodbye to sbd., bid sbd. farewell
 
+rébh|v.|préparer|To anticipate (+\s{acc} sth.)
+
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
 
