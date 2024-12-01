@@ -174,7 +174,7 @@ C’hebèc’h|n.|Québec|The Promised Land
 áȷ́éd|v.|enjoindre|To order, enjoin, command
 fér|v.|faire|\\ To do, make, build, construct, erect \\ \textit{Expletive; see
     §~\ref{subsubsec:personal-pronouns}}|\s{fut} fẹ́, \s{subj} fés
-sav́á|v.|savoir|To know|\s{fut} saúr, \s{subj} sac
+sav́á|v.|savoir|To know (+\s{part/acc} sth. \textit{case depends on the depth of the speaker’s understanding})|\s{fut} saúr, \s{subj} sac
 ré|v.|vrai|To be true, correct, right|\s{fut} rẹ́, \s{subj} rés
 aû|particle|non|Not-. \textit{Used to negate nouns, adjectives, and adverbs; see §~\ref{subsubsec:noun-negation}}
 fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} faure, \s{subj} faus
@@ -233,7 +233,10 @@ cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, on
 liv́uhé|n.|\pf{livre} + \pf{bouquin}|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} áv́áy’érẹ́, \s{subj} áv́áy’és
 Sásc’hríḍ|n. never lenited|sanskrit|The Sanskrit language
-baú|v. irreg.|bon|\\ To be good, well. \\ To be right, correct, appropriate|\s{fut} baúré,
+baú|v. irreg.|bon|
+    \\ To be good, well, healthy.
+    \\ To be right, correct, appropriate.
+    \\ \textit{usually intr.} To satisfy, fullfill, gratify |\s{fut} baúré,
     \s{subj} véy’ýrs; \s{comp} lẹvéy’ýr, y’ŷvéy’ýr, rêvéy’ýr; \s{sup} révéy’ýr,
     râdvâv\-éy’\-ýr
 vaúb’hẹ|v. irreg.|mauvais|\\ To be bad \\ To be wrong, incorrect, inappropriate|\s{fut}
@@ -705,6 +708,14 @@ ady’ŷ|v. or interj.|adieu|
     \\ +\s{gen} To say goodbye to sbd., bid sbd. farewell
 
 rébh|v.|préparer|To anticipate (+\s{acc} sth.)
+lý|n.|plume|Pen, quill
+c’hut’hrá|n.|\pf{couteau} + \pf{grand}|Sword, blade
+    \ex \w{áhut’hrá’t ilý ly b’haúr} ‘the pen is mightier than the sword’ \textit{(originally a fossilised,
+        obsolete ACI: \w{á\-hut’h\-rá éḍ ilý lẹb’haúr})}
+faúr|adj.|fort|\textit{obsolete, except in proverbs} Strong, mighty.
+ly|particle|plus|\textit{obsolete variant of \w{lẹ}, sometimes leniting}
+b’hért’he|n.|from \pf{vérité}; the /i/ disappeared during Early Middle UF|Truth
+saut’h|v.|sauter|To teleport, translocate, warp
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
