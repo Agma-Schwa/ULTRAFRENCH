@@ -110,7 +110,7 @@ asý’ýâ|particle|\pf{pas absolument}|Not, no. \textit{Commonly \w{’sý’�
 c’hd’hal|adv.|\pf{que dalle}|Naught, absolutely no\-thing
 jávé|adv.|jamais|\textit{neg. only} Never, at no time
 ráv́â|adv.|rarement|\textit{neg. only} Seldom, rarely (ever)
-y’é|adv.|rien|Nothing
+y’é|pron.|rien|Nothing. \textit{Like most negative polarity items, this induces negation of the verb}
 au|conj.|aussi|\\ And, also, as well, too \\ \w{au} \ldots{} \w{au} \ldots{} ‘both \ldots{} and \ldots’
 ec̣|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
@@ -709,13 +709,19 @@ ady’ŷ|v. or interj.|adieu|
 
 rébh|v.|préparer|To anticipate (+\s{acc} sth.)
 lý|n.|plume|Pen, quill
-c’hut’hrá|n.|\pf{couteau} + \pf{grand}|Sword, blade
-    \ex \w{áhut’hrá’t ilý ly b’haúr} ‘the pen is mightier than the sword’ \textit{(originally a fossilised,
+ráhut’h|n.|\pf{grand} + \pf{couteau}|Sword, blade
+    \ex \w{áráhut’h’t ilý ly b’haúr} ‘the pen is mightier than the sword’ \textit{(originally a fossilised,
         obsolete ACI: \w{á\-hut’h\-rá éḍ ilý lẹb’haúr})}
 faúr|adj.|fort|\textit{obsolete, except in proverbs} Strong, mighty.
 ly|particle|plus|\textit{obsolete variant of \w{lẹ}, sometimes leniting}
 b’hért’he|n.|from \pf{vérité}; the /i/ disappeared during Early Middle UF|Truth
-saut’h|v.|sauter|To teleport, translocate, warp
+saut’h|v. intr. or tr.|sauter|To teleport, translocate, warp (+\s{acc} sth.)
+aublit’hér|v.|oblitérer|
+    \\ To defeat, vanquish, obliterate (+\s{acc} sbd./sth.)
+    \\ To be better than, ‘beat’ (+\s{inf} sbd/sth.)
+baḍ|v.|battre|To beat, strike, hit (+\s{acc} sbd./sth.)
+raû|interj.|gône|Kid. \textit{This is grammatically a vocative—not that
+    one could tell since it looks identical to the absolutive}
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
