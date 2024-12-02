@@ -11,9 +11,9 @@
 #include <unicode/unistr.h>
 #include <variant>
 #include <vector>
+#include <base/Base.hh>
+#include <base/Text.hh>
 
-import base;
-import base.text;
 using namespace base;
 
 static constexpr std::u32string_view apos = U"'`’";
