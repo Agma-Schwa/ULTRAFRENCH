@@ -257,7 +257,9 @@ sásy’él|v.|essentiel|To be essential|\s{fut} sásy’élẹ́, \s{subj} sásy
 ráhis|v.|raciste|To be racist|\s{fut} ráhise, \s{subj} ráhiss
 ab’hèc’h|v.|affecter|+\s{acc} To affect, influence|\s{fut} ab’hèc’hre, \s{subj} ab’hè\-c’hes
 vú|adj.|moult|Many, much, a lot of
-faúr|n.|force|\\ Force, strength, power. \\ \w{Faúr} \s{def} \textit{(science fiction, Star Wars)} The Force
+faúr₁|n.|force|
+    \\ Force, strength, power.
+    \\ \w{Faúr} \s{def} \textit{(science fiction, Star Wars)} The Force
 b’hýlnẹ́r|v.|invulnérable|+\s{instr} To be incapable of being af\-fec\-ted by,
     invulnerable to|\s{fut} b’hýlnẹ́rẹ́, \s{subj} b’hýlnẹ́rs
 u|conj.|ou|\\ Or. \textit{Inclusive, see also \w{ra}}. \\ \w{u} \ldots\ \w{u} \ldots\ ‘\ldots\ or
@@ -279,8 +281,11 @@ c’hrír|v.|écrire|To write|\s{fut} c’hrírẹ́, \s{subj} c’hrís
 dahaúr|particle|d’accord|Sure, ok, agreed, fine
 jys|v.|injuste|To be unjust, unfair|\s{fut} jysre, \s{subj} jyss
 c’hóbhár|v.|comparer|To compare|\s{fut} c’hóbhárre, \s{subj} c’hó\-bhárs
-c’hóvâ|v.|commencer|\\ (\s{+ part}) To start, commence, begin. \\ \s{+ gen} To start out as|
-    \s{fut} c’hóvârẹ́, \s{subj} c’hóv\-ás
+c’hóvâ|v.|commencer|
+    \\ (\s{+ part}) To start, commence, begin.
+    \\ \s{+ gen} To start out as
+    \\ \w{âc’hóvâ} \textit{def.} Beginning, start. \textit{Lit. ‘that which is being begun’}
+    |\s{fut} c’hóvârẹ́, \s{subj} c’hóv\-ás
 vás|n. \s{pl def}|masses|The masses, the people
 nór|v.|back-formation from *\w{nórâ} from \pf{ignorant}|To be ignorant,
     unaware, oblivious
@@ -521,7 +526,9 @@ válv́áy’|v.|malvoyant|To be blind
 av́árḷý|v.|\pf{avoir lieu}|To take place, happen|\s{fut} lav́árḷýé, \s{subj} lav́árḷýs
 c’haúbhýríf|n.|\w{c’haú} + \pf{purifier}|To purify (+\s{acc} sbd./sth.)
 râd|v.|prendre|+\s{acc} \textit{or} \s{part} To grab
-aḍrá|v.|attraper|+\s{acc} \textit{or} \s{part} To take
+aḍrá|v.|attraper|
+    \\ +\s{acc} \textit{or} \s{part} To take
+    \\ \w{aḍrá faúr} \textit{intr.} To take shape, take form
 ḅelbec|n.|\pf{pelle} + \pf{bêche}|Shovel
 raû|n. archaic|tronc|Log (of a tree)
 raûd’hárb|n.|\pf{tronc d’arbre}|Log (of a tree)
@@ -570,7 +577,7 @@ lá|v.|planer|To fly
 b’haul|v.|voler|To hover, float
 raúvá|n.|fromage|Moon
 
-y’úr|n.|jour|Day
+y’úr|n.|jour|\\ Day \\ \w{órdy’úr ád’y’úr} Day after day. \textit{Contracted \s{ela} and \s{ill}}
 y’í|n.|nuit|Night
 vúb’hvâ|n.|movement|Movement, motion
 dévýr|v.|demeurer|\\ To remain, stay. \\ To live, dwell (+\s{iness} somewhere)
@@ -618,7 +625,9 @@ ḍénéb|n. pl.|ténèbres|\textit{exclusively plural \w{lḍénéb}} Darkness
 Víd’hic’hlaúry’ê|n.|Midichlorien|Midichlorian (Star Wars)
 ah|n.|assez|\textit{sufficient comparative prefix; see §~\ref{subsubsec:comparison}}
 y’íhá|v.|puissant|To be powerful, mighty, puissant
-ré|v.|\pf{créer}, \s{subj} from \pf{fabriquer}|To create, make (\s{+acc} sth.)|\s{fut} rẹ́éré, \s{subj} faríc’hs
+ré|v.|\pf{créer}, \s{subj} from \pf{fabriquer}|To create, make (\s{+acc} sth.)|
+    \s{fut} rẹ́éré, \s{subj} faríc’hs
+réaû|n.|from \w{ré}|Creation, making
 sufb’h|n.|\pf{souffle} + \pf{vie}|Life
 c’haúnéhás|.n|connaissance|Knowledge
 ausc’hýr|v.|obscur|To be dark
@@ -722,6 +731,20 @@ aublit’hér|v.|oblitérer|
 baḍ|v.|battre|To beat, strike, hit (+\s{acc} sbd./sth.)
 raû|interj.|gône|Kid. \textit{This is grammatically a vocative—not that
     one could tell since it looks identical to the absolutive}
+ráhó|n.|gazon|Grassland, grassy field, meadow
+b’há|n.|vent|Wind, breeze
+lé|n.|plaine|Plain, plains
+leḍ|n.|lettre|
+    \\ Letter (of the alphabet)
+    \\ \w{lý’aúleḍ} By the book
+cévê|n.|chemin|Street
+b’hár|n.|vague|\\ Wave \\ \textit{pl.} Ripples, undulations
+láḍ|n.|plant|\\ Blade of grass \\ \textit{pl.} Grass
+faúr₂|n.|forme|Shape, form. \textit{Sometimes also spelt \w{fór}}
+fór|n.|from \w{faúr}|\textit{Alternative spelling of \w{faúr₂} to disambiguate it from \w{faúr₁}}
+rýl|n.|gueule|Face
+sy’b’h|v. intr.|se lever|To rise (+\s{ela} from sth.)
+
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
