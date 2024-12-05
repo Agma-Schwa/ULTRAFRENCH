@@ -43,7 +43,10 @@
 ad’hór|v. tr.|adore|
     \\ To love, adore.
     \\ +\s{part} To be in love with, have a crush on.
-    \\ +\s{gen} To desire sbd./sth|\s{fut} ad’hórérẹ́, \s{subj} ad’hórs
+    \\ +\s{gen} To desire, yearn for sbd./sth
+        \ex \s{Snet’h iv.17} \w{jad’hóré ávvaúríhe} ‘I yearned to remember’ \textit{(compare
+            \w{jad’hóré devvaúríhe} ‘I loved to remember’)}
+    |\s{fut} ad’hórérẹ́, \s{subj} ad’hórs
 
 aub’heír|v. (in)tr.|obéir|To obey
 ánvé|v. tr.|animer|To bring to life, animate
@@ -160,7 +163,7 @@ jys|conj.|\pf{jusqu’à ce que}|+\s{opt} Until
 sit’há|conj.|\pf{si tant est que}|+\s{opt} Supposing that; if, assuming that
 fahaú|conj.|\pf{de façon que}|+\s{opt} In such a way that, such that, so much so
 véhýr|conj.|\pf{dans la mesure où}|Insofar as
-sḅé|v.|espérer|\\ To want (+\s{acc} sth.) \\ +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
+sḅé|v.|espérer|\\ To want (+\s{acc/inf} sth.) \\ +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
 rêd|v.|craindre|+s{opt} To fear, lest \ldots \textit{Construed with the negated optative}|\s{fut}
     rêdrẹ́, \s{subj} rês
 rêd’hes|particle|\pf{bien sûr}|Of course, certainly, surely
@@ -331,7 +334,7 @@ lúr|v.|lourd|To be bulky, oversized, heavy
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
 c’hánár|n.|canard|\\ Ship, boat. \\ \s{instr indef} By boat
-c’hánaú|n.|canot|Duck (bird)
+c’hánaú|n.|canot|Duck (bir)
 rác’hánár|n.|from \w{ráhe} + \w{c’hánár}|Airship, dirigible
 ráhe|n.|oiseau|Bird
 ráhé|n.|from \w{ráhe} + \w{ráhó}|Flying fish
@@ -418,7 +421,7 @@ v́ár|v. irreg.|devoir|
         \s{fut} dv́e, \s{subj} ráb’h
 Snet’h|n.||\textit{Family name, equivalent to English ‘Smyth’}
 sénýr|n.|seigneur|\\ Lord \\ \textit{Short for \w{Ráb’h sénýr}}
-abhérś|v.|apercevoir|To behold, descry
+abhérś|v.|apercevoir|To behold, descry (+\s{part})
 sáḍy’ér|n.|sanctuaire|Sanctuary, shrine
 ḅusy’ér|n.|poussière|Dust
 rẹ́dy’í|v.|réduire|To reduce (+\s{acc} \textit{or pass.} sbd./sth.) (+\s{all} to sth.)|\s{fut} rẹ́dy’ré, \s{subj} rẹ́dy’ís
@@ -739,11 +742,24 @@ leḍ|n.|lettre|
     \\ \w{lý’aúleḍ} By the book
 cévê|n.|chemin|Street
 b’hár|n.|vague|\\ Wave \\ \textit{pl.} Ripples, undulations
-láḍ|n.|plant|\\ Blade of grass \\ \textit{pl.} Grass
+láḍ|n.|plante|\\ Blade of grass \\ \textit{pl.} Grass
 faúr₂|n.|forme|Shape, form. \textit{Sometimes also spelt \w{fór}}
-fór|n.|from \w{faúr}|\textit{Alternative spelling of \w{faúr₂} to disambiguate it from \w{faúr₁}}
+fór > faúr₂
 rýl|n.|gueule|Face
 sy’b’h|v. intr.|se lever|To rise (+\s{ela} from sth.)
+faú|adv.|fort|Very, right, really. \textit{Postpositive intensifier placed after adjectives, particularly
+    in the comparative or superlative degrees.}
+rés|n.|reste|Rest, remainder
+dẹb’hní|v.|devenir|To become, turn into (+\s{transl} sth./sbd.). \textit{The subject is in the \s{abs} case}.
+sẹ|particle|ainsi|So, thus, as a result
+véc|n.|mèche|\\ A strand of hair \\ \s{pl.} Hair
+ḍaúb’h|v. intr.|tomber|To fall, drop
+lánẹ́|v.|flâner|To meander
+néḍ|v. dep.|naître|To be born. \s{This is a deponent verb whose subject takes the \s{acc} and
+    which only takes passive affixes.}|\s{sub} néhs
+raûc|n.|tronche|Head
+lèheb’h|v.|laisser-faire|+\s{aci} To let happen
+áhaúr|adv.|encore|\\ Still, yet \textit{(positive context)} \\ Again \textit{(negative context)}
 
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
