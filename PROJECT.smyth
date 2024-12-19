@@ -1,6 +1,6 @@
 {
     "main": {
-        "changes.text": "#Feature +nasalised, +nasal, +voiced\n#\n#Diacritic ̃  (floating) [+nasalised]\n#Diacritic ̃̃  (floating) [+nasal]\n#Diacritic ̥  (floating) [-voiced]\n\n## TODO: Run all of this through a unicode canonicalisation program to\n##       make sure we’re not using both e.g. ‘y + combining tilde’, and\n##       the actual unicode character ‘y with tilde above’.\n\nSymbol d2, b2, bʱ, ȷ̊, ʎ̝, ʑʶ, ɕʶ, sʶ, zʶ, vʶ, βʶ, ʃʶ, ʒʶ, ɮ̃ʶ\n\nClass cn  {ɰ̃, ɥ̃, ʋ̃, ɮ̃, ʎ̝̃, ɮ̃ʶ}\nClass n   {m, n, ɲ, ŋ}\nClass pk  {p, k, b, g}\nClass p   {p, t, k, b, d, g, b2, d2}\nClass cpf {@n, @pk, t, d, f, s, ʃ, ʁ, v, z, ʒ, l, j, ɥ, w}\nClass cuf {ɰ, ʎ, x, ɕ, ʑ, θ, ð, ɸ, β, ȷ̊, bʱ, sʶ, ɕʶ, zʶ, ʑʶ, vʶ, βʶ, ʀ}\nClass c   {@cn, @cpf, @cuf}\nClass vn  {ĩ, ỹ, ẽ, ɔ̃, õ, ɛ̃, ã, ɑ̃, ũ, ə̃}\nClass vnn {ĩ̃, ỹ̃, ẽ̃, ɔ̃̃, õ̃, ɛ̃̃, ã̃, ɑ̃̃, ũ̃, ə̃̃}\nClass vq  {i̥, ẙ, e̥, ɔ̥, o̥, ɛ̥, ḁ, ɑ̥, u̥, ə̥}\nClass vo  {i, y, e, ɔ, o, ɛ, a, ɑ, u, ə}\nClass v   {@vn, @vnn, @vq, @vo}\n\nClass gnsnasal {@n, @cn, ɥ, ɰ}\n\nPrelim:\n  {ɡ, g, w} => ɰ\n  Then: {œ, œ̃, ø} => {y, ỹ, ỹ}\n  Then: ɔ => o\n  Then: uo => vo\n  Then: $$ => * / y _ @v\n  Then: y => j / _ @v\n  Then: $$ => * / @v$1 _ $1\n  Then: @v$1 $1 => $1\n  Then: {lj, lɥ} => ʎ\n  Then: j => ɥ\n  Then: ɰ => ɥ / _ i\n  Then: ʁʁ => ʀ\n  Then: ʁ => ɰ\n  Then: @c => * / $ _ @c\n  Then: @c => * / @c _ $\n  Then: {e, ẽ, ɛ, ɛ̃} => * / $ _ @c\n  Then: k => x\n  Then: xɥ => ɕ\n  Then: {sɰ, ʃɰ, zɰ, ʒɰ, vɰ} => {sʶ, ʃʶ, zʶ, ʒʶ, vʶ}\n  Then: {ʃ, ʃʶ, ʒ, ʒʶ} => {ɕ, ɕʶ, ʑ, ʑʶ}\n  Then: nt => nθ\n  Then: t => d2\n  Then: p => b2\n  Then: {f, v, vʶ} => {ɸ, β, βʶ}\n\nGNS:\n  $$ => * / @vn _ l\n  Then: @vn l => ɰ̃\n  Then:\n    @vo => @vnn / @gnsnasal _ @n $\n    @vo => @vn / _ @gnsnasal\n    @vn => @vnn / _ @gnsnasal\n    @vo => @vn / @gnsnasal _\n    @vn => @vnn / @gnsnasal _\n  Then: {ə̃, ə̃̃, ã, ã̃, õ, õ̃} => {ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃}\n  Then: {@n, @cn} => * / @v _ $\n  Then: {ɲ, ŋ} => n\n  Then: {@vo, @vn} => * / @n _ @n\n  Then: {m, l, ʎ} => {ʋ̃, ɮ̃, ʎ̝̃}\n  Then: {ɮ̃ɰ, ɰɮ̃} => ɮ̃ʶ\n\nLenition:\n  {x, s, z} => h / @v _ @v\n  Then: {ɕ, ɮ̃, ʎ̝̃} => {ȷ̊, ɥ̃, ɰ̃} / @v _ @v\n  Then: nθ => n / @v _ @v\n  Then: {d, d2, b, b2} => {ð, θ, β, bʱ} / @v _ @v\n  Then: ɸ => β / @v _ @v\n\nLate:\n  @pk @c$1 => $1\n  Then: @p @p$1 => $1\n  Then: h @v$1 h => h $1\n  Then: ə => * / @c _ @c\n  Then: @vo => ə̥ / _ $\n  Then: ɰ ɰ => ʀ *\n\nRomaniser:\n    {βʶ, sʶ, zʶ, ɮ̃ʶ} => {v́, ś, ź, ł}\n    Then: {b2, d2, β, θ, ð, bʱ, x, ɰ̃, ɥ̃} => {ḅ, ḍ, b’h, t’h, d’h, bh, c’h, w, ý’}\n    Then: {ʋ̃, ç, ɕ, ʑ, ɮ̃, ʎ̝̃, ȷ̊, ɥ, ɰ, ʀ} => {v, h, c, j, l, ḷ, c̣, y’, r, rr}\n    Then: {ĩ̃, ỹ̃, ũ̃, ẽ̃, ɛ̃̃, ɔ̃̃, ɑ̃̃} => {î, ŷ, û, ệ, ê, ô, â} \n    Then: {ĩ, ỹ, ũ, ẽ, ɛ̃, ɔ̃, ɑ̃} => {í, ý, ú, ẹ́, é, ó, á}\n    Then: {i̥, ẙ, e̥, o̥, ḁ, u̥, ə̥} => {ì, ỳ, ẹ̀, ò, à, ù, ẹ}\n    Then: {i, y, u, e, ɛ, ɔ, a, ə} => {i, y, u, e, è, o, a, ẹ}\n",
+        "changes.text": "#Feature +nasalised, +nasal, +voiced\n#\n#Diacritic ̃  (floating) [+nasalised]\n#Diacritic ̃̃  (floating) [+nasal]\n#Diacritic ̥  (floating) [-voiced]\n\n## TODO: Run all of this through a unicode canonicalisation program to\n##       make sure we’re not using both e.g. ‘y + combining tilde’, and\n##       the actual unicode character ‘y with tilde above’.\n\nSymbol d2, b2, bʱ, ȷ̊, ʎ̝, ʑʶ, ɕʶ, sʶ, zʶ, vʶ, βʶ, ʃʶ, ʒʶ, ɮ̃ʶ\n\nClass cn  {ɰ̃, ɥ̃, ʋ̃, ɮ̃, ʎ̝̃, ɮ̃ʶ}\nClass n   {m, n, ɲ, ŋ}\nClass pk  {p, k, b, g}\nClass p   {p, t, k, b, d, g, b2, d2}\nClass cpf {@n, @pk, t, d, f, s, ʃ, ʁ, v, z, ʒ, l, j, ɥ, w}\nClass cuf {ɰ, ʎ, x, ɕ, ʑ, θ, ð, ɸ, β, ȷ̊, bʱ, sʶ, ɕʶ, zʶ, ʑʶ, vʶ, βʶ, ʀ}\nClass c   {@cn, @cpf, @cuf}\nClass vn  {ĩ, ỹ, ẽ, ɔ̃, õ, ɛ̃, ã, ɑ̃, ũ, ə̃}\nClass vnn {ĩ̃, ỹ̃, ẽ̃, ɔ̃̃, õ̃, ɛ̃̃, ã̃, ɑ̃̃, ũ̃, ə̃̃}\nClass vq  {i̥, ẙ, e̥, ɔ̥, o̥, ɛ̥, ḁ, ɑ̥, u̥, ə̥}\nClass vo  {i, y, e, ɔ, o, ɛ, a, ɑ, u, ə}\nClass v   {@vn, @vnn, @vq, @vo}\n\nClass gnsnasal {@n, @cn, ɥ, ɰ}\n\nPrelim:\n  {ɡ, g, w} => ɰ\n  Then: {œ, œ̃, ø} => {y, ỹ, ỹ}\n  Then: ɔ => o\n  Then: uo => vo\n  Then: $$ => * / y _ @v\n  Then: y => j / _ @v\n  Then: $$ => * / @v$1 _ $1\n  Then: @v$1 $1 => $1\n  Then: {lj, lɥ} => ʎ\n  Then: j => ɥ\n  Then: ɰ => ɥ / _ i\n  Then: ʁʁ => ʀ\n  Then: ʁ => ɰ\n  Then: @c => * / $ _ @c\n  Then: @c => * / @c _ $\n  Then: {e, ẽ, ɛ, ɛ̃} => * / $ _ @c\n  Then: k => x\n  Then: xɥ => ɕ\n  Then: {sɰ, ʃɰ, zɰ, ʒɰ, vɰ} => {sʶ, ʃʶ, zʶ, ʒʶ, vʶ}\n  Then: {ʃ, ʃʶ, ʒ, ʒʶ} => {ɕ, ɕʶ, ʑ, ʑʶ}\n  Then: nt => nθ\n  Then: t => d2\n  Then: p => b2\n  Then: {f, v, vʶ} => {ɸ, β, βʶ}\n\nGNS:\n  $$ => * / @vn _ l\n  Then: @vn l => ɰ̃\n  Then:\n    @vo => @vnn / @gnsnasal _ @n $\n    @vo => @vn / _ @gnsnasal\n    @vn => @vnn / _ @gnsnasal\n    @vo => @vn / @gnsnasal _\n    @vn => @vnn / @gnsnasal _\n  Then: {ə̃, ə̃̃, ã, ã̃, õ, õ̃} => {ɛ̃, ɛ̃̃, ɑ̃, ɑ̃̃, ɔ̃, ɔ̃̃}\n  Then: {@n, @cn} => * / @v _ $\n  Then: {ɲ, ŋ} => n\n  Then: {@vo, @vn} => * / @n _ @n\n  Then: {m, l, ʎ} => {ʋ̃, ɮ̃, ʎ̝̃}\n  Then: {ɮ̃ɰ, ɰɮ̃} => ɮ̃ʶ\n\nLenition:\n  {x, s, z} => h / @v _ @v\n  Then: {ɕ, ɮ̃, ʎ̝̃} => {ȷ̊, ɥ̃, ɰ̃} / @v _ @v\n  Then: nθ => n / @v _ @v\n  Then: {d, d2, b, b2} => {ð, θ, β, bʱ} / @v _ @v\n  Then: ɸ => β / @v _ @v\n\nLate:\n  @pk @c$1 => $1\n  Then: @p @p$1 => $1\n  Then: h @v$1 h => h $1\n  Then: ə => * / @c _ @c\n  Then: @vo => ə̥ / _ $\n  Then: ɰ ɰ => ʀ *\n  Then: eɛ̃  => ẽ\n\nRomaniser:\n    {βʶ, sʶ, zʶ, ɮ̃ʶ} => {v́, ś, ź, ł}\n    Then: {b2, d2, β, θ, ð, bʱ, x, ɰ̃, ɥ̃} => {ḅ, ḍ, b’h, t’h, d’h, bh, c’h, w, ý’}\n    Then: {ʋ̃, ç, ɕ, ʑ, ɮ̃, ʎ̝̃, ȷ̊, ɥ, ɰ, ʀ} => {v, h, c, j, l, ḷ, c̣, y’, r, rr}\n    Then: {ĩ̃, ỹ̃, ũ̃, ẽ̃, ɛ̃̃, ɔ̃̃, ɑ̃̃} => {î, ŷ, û, ệ, ê, ô, â} \n    Then: {ĩ, ỹ, ũ, ẽ, ɛ̃, ɔ̃, ɑ̃} => {í, ý, ú, ẹ́, é, ó, á}\n    Then: {i̥, ẙ, e̥, o̥, ḁ, u̥, ə̥} => {ì, ỳ, ẹ̀, ò, à, ù, ẹ}\n    Then: {i, y, u, e, ɛ, ɔ, a, ə} => {i, y, u, e, è, o, a, ẹ}\n",
         "charmap": {
             "splitter.sizes": "AAAA/wAAAAEAAAACAAAnEAAAAQAB/////wEAAAABAA=="
         },
@@ -92,7 +92,7 @@
                 ]
             ]
         },
-        "input.text": "sot",
+        "input.text": "mɛtʁ",
         "notes": {
             "files": [
                 {
@@ -110,20 +110,26 @@
             ],
             "splitter.sizes": "AAAA/wAAAAEAAAACAAAAswAABI0B/////wEAAAABAA=="
         },
-        "output.text": "sod2\n",
+        "output.text": "ʋ̃ɛ̃d2\n",
         "sca": {
             "cbox.changes.norm.choice": 2,
             "cbox.input.norm.choice": 2,
             "cbox.output.norm.choice": 1,
-            "cbox.stop.before": "Late",
+            "cbox.stop.before": "Romaniser",
             "chbox.details": 2,
             "chbox.enable.js": 0,
             "splitter.sizes": "AAAA/wAAAAEAAAADAAABDgAAAqwAAACsAf////8BAAAAAQA="
         },
         "window.size": [
-            1381,
-            876
-        ]
+            1541,
+            791
+        ],
+        "wordgen": {
+            "classes.text": "C = n, t, d, s, z, r, l, ;\nV = i, e, a\nN = t, d, s, z, r, l\nS = n, t, l\nZ = n, d, r, l\nR = n, l, d\nL = n, d\n",
+            "output.text": "",
+            "phono": "((V)C)V[C|nN|sS|zZ|rR|lL]V(C)",
+            "splitter": "AAAA/wAAAAEAAAACAAABuQAABCAB/////wEAAAABAA=="
+        }
     },
     "settings": {
         "duplicate_rows": "1, 7"

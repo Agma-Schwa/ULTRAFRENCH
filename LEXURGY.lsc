@@ -81,6 +81,7 @@ Late:
   Then: ə => * / @c _ @c
   Then: @vo => ə̥ / _ $
   Then: ɰ ɰ => ʀ *
+  Then: eɛ̃  => ẽ
 
 Romaniser:
     {βʶ, sʶ, zʶ, ɮ̃ʶ} => {v́, ś, ź, ł}
