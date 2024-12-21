@@ -643,7 +643,7 @@ dérny’ẹ́huf|n.|\pf{dernier} + \pf{souffle}|Death
 cér|v.|cher|To be dear, important (+\s{dat} to sbd.)
 
 Baúré|n.|Borée|Boreas, the North Wind
-sẹhérél|v.|se quereller|To quarrel, argue, fight about (+\s{part})
+sẹhérél|v.|\pf{se quereller}|To quarrel, argue, fight about (+\s{part})
 dehid|v.|décider|To decide (+\s{inf} to do sth.)
 râ|v.|gagner|To win, gain, earn (+\s{acc} sth.)
 b’hic’hḍrár|n.|victoire|Victory
@@ -668,7 +668,7 @@ c’haúḍé > ní
 aubhaus > ní
 ní|conj.|ni|Neither, nor
 rád|v. tr.|rendre|To surrender +\s{acc} sth. (\s{dat} to sbd.)
-sẹrád|v. intr.|se rendre|To surrender
+sẹrád|v. intr.|\pf{se rendre}|To surrender
 ec’hlér|v.|éclairer|To shine
 iý’ývî|v.|illuminer|To light up, illuminate
 raúhérẹ́|v.|from \w{raú-} + \w{sérẹ́}|To tighten, make tighter (+\s{acc})|\s{fut} raúhérrẹ́, \s{subj} raúhérẹ́s
@@ -685,7 +685,7 @@ dẹ́|particle|from \w{Provençal} \textit{den}|Then (sequential), next
 w|v.|enlever|To remove (+\s{acc} sth.)
 ád’hýr|v.|endure|To resist, endure, withstand (+\s{acc} sth.)
 ḍèrvíc’h |n.|thermique|Heat, warmth
-sb’hé|v.|se baigner|To bathe
+sb’hé|v.|\pf{se baigner}|To bathe
 lab’h|v.|laver|
     \\ To wash, clean (+\s{acc} sth.)
     \\ \textit{refl} To wash oneself, take a bath, have a shower
@@ -747,7 +747,7 @@ láḍ|n.|plante|\\ Blade of grass \\ \textit{pl.} Grass
 faúr₂|n.|forme|Shape, form. \textit{Sometimes also spelt \w{fór}}
 fór > faúr₂
 rýl|n.|gueule|Face
-sy’b’h|v. intr.|se lever|To rise (+\s{ela} from sth.)
+sy’b’h|v. intr.|\pf{se lever}|To rise (+\s{ela} from sth.)
 faú|adv.|fort|Very, right, really. \textit{Postpositive intensifier placed after adjectives, particularly
     in the comparative or superlative degrees.}
 rés|n.|reste|Rest, remainder
