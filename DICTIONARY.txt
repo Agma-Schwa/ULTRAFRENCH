@@ -789,9 +789,9 @@ suḍ|v.|soutenir|\\+\s{acc} To support, hold up \\+\s{part} To help support, ho
 ad’hyl|v.|adulte|To be adult, grown-up|\s{fut} ad’hyle, \s{subj} ad’hyls
 seb’haúd|v. intr.|s’effondrer|To cave in, collapse
 ḍaú|n.|tonne|Weight
-ârýý’|v.|enrouler|To wrap (+s\{acc} around sth.)
+ârýý’|v.|enrouler|To wrap (+\s{acc} around sth.)
 b’huḍ|n.|voûte|Vault, arched ceiling
-ré|v. intr.|errer|To wander, roam (+s\{perl} across sth.)
+ré|v. intr.|errer|To wander, roam (+\s{perl} across sth.)
 ré|adv.|en vain|In vain, for nothing.\textit{Usually preceded directly by the verb it applies to}
 deḅlér|v.|déplaire|To displease (+\s{acc} sbd.), be displeasing
 lér|v.|plaire|To please (+\s{acc} sbd.), be pleasing
