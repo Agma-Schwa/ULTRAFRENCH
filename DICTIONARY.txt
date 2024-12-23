@@ -103,7 +103,7 @@ lýr|pron.|leur|Their
 el|n.|ailles|Wing, blade, fin
 Lác|n.||\textit{female given name, equivalent to English ‘Bi\-anca’}
 auḍé|v.|obtenir|\\ To obtain, get, acquire \\ +\s{abl} To gain purchase on or hei\-ght or distance from|\s{fut} auḍy’édrẹ́
-sol|n.|sol|Ground, floor, earth, soil
+sol|n.|sol|Ground, floor, earth, soil.\textit{The plural may be used to indicate a large quantity of soil}
 c’hór|n.|corps|Body
 ab’haḍ|v.|abattre|\\ To cut down, fell, knock down, shoot down. \\ To butcher, cut apart violently|\s{fut} ab’haḍrẹ́, \s{subj} ab’has
 árb|n.|arbre|Tree
@@ -454,6 +454,7 @@ c’haúbhárrás|n.|\w{c’haú} + \pf{paroisse}|Parish
 c’haúhaúvnaút’hẹ|n.|\w{c’haú} + \pf{com\-mu\-nau\-té}|Mo\-nastery
 c’haúvnaút’hẹ|n.|communauté|Community
 vnásḍér|n.|monastère|Castle
+ríy’ŷrệ|n.|prieuré|Priory
 c’haúbhèłínáj|n.|\w{c’haú} + \pf{pèlerinage}|Pilgrimage
 vŷ|v.|mener|To lead|\s{fut} menre, \s{subj} mens
 áł|v.|from earlier *\w{ḅał} < \pf{parler}|To speak
@@ -498,8 +499,9 @@ sèt’h|v.|sentir|To feel|\s{fut} sèt’he, \s{subj} sès
 cah|v.|chasser|To hunt|\s{fut} cahe, \s{subj} cas
 áb’há|n.|enfant|Child
 ríb’hy’ér|n.|rivière|River
-syl|v.|seul|\\ \textit{(chiefly)} To be the only one. \textit{Often as the adjective \w{sylâ} ‘only’}.
-    \\ To be alone|\s{fut} syle, \s{subj} syls
+syl|v.|seul|
+    \\ To be the only one.
+    \\ To be lone, alone|\s{fut} syle, \s{subj} syls
 dá|n.|dent|Tooth
 ḅará|n.|parent|Parent
 
@@ -640,7 +642,12 @@ réb’hní|v.|prévenir|
     \\ To prevent, stop (+\s{acc} sth. from happening)
     \\ To forewarn (+\s{part} of sth.)|\s{fut} réb’hníre, \s{subj} réb’hnís
 dérny’ẹ́huf|n.|\pf{dernier} + \pf{souffle}|Death
-cér|v.|cher|To be dear, important (+\s{dat} to sbd.)
+cér|v.|cher|
+    \\ To be dear, important (+\s{dat} to sbd.). \textit{Possession of a noun qualified with
+    this adjective verb is generally construed with the dative rather than the genitive, e.g. \w{asvẹ
+    áví cérâ} or \w{áví cérâvé} ‘my dear friend’, rather than *\w{vaú áví cérâ}}
+    \\ \textit{with \w{áví} ‘friend’} To be friends with.
+        \ex \w{áví lẹcérvé} ‘he is a (dear) friend of mine’|\s{fut} céré, \s{subj} cés
 
 Baúré|n.|Borée|Boreas, the North Wind
 sẹhérél|v.|\pf{se quereller}|To quarrel, argue, fight about (+\s{part})
@@ -677,8 +684,8 @@ raú(b’hc’h)-|prefix|from \w{rób’hoc’h}|\textit{Causative prefix, see
 vaúd’hér|v.|modérer|To be moderate
 syḅlẹ|v.|suppléer|
     \\ To supplement (\s{acc} sth.) (+\s{instr} with sth.). \textit{If no \s{instr}
-       is present, the subject is implied to be the supplement.}
-    \\ \s{syḅlâ} \textit{adj.} Additional, extra
+       is present, the subject is implied to be the supplement}
+    \\ \w{syḅlâ} \textit{adj.} Additional, extra
 dár|v.|darder|To throw, cast, yeet (+\s{acc} sth.)
 y’í|n.|puits|Well (water source)
 dẹ́|particle|from \w{Provençal} \textit{den}|Then (sequential), next
@@ -778,6 +785,21 @@ las|v.|placer|To place, put, set (+\s{acc} sth.)
 sívý’ér|v.|similaire|To be similar, alike (+\s{gen} to sth.)
 dẹh|v.|dessous|To be below, beneath
 véḍ|v.|mettre|To lay, put, place (+\s{acc} sth.)
+suḍ|v.|soutenir|\\+\s{acc} To support, hold up \\+\s{part} To help support, hold up part of
+ad’hyl|v.|adulte|To be adult, grown-up|\s{fut} ad’hyle, \s{subj} ad’hyls
+seb’haúd|v. intr.|s’effondrer|To cave in, collapse
+ḍaú|n.|tonne|Weight
+ârýý’|v.|enrouler|To wrap (+s\{acc} around sth.)
+b’huḍ|n.|voûte|Vault, arched ceiling
+ré|v. intr.|errer|To wander, roam (+s\{perl} across sth.)
+ré|adv.|en vain|In vain, for nothing.\textit{Usually preceded directly by the verb it applies to}
+deḅlér|v.|déplaire|To displease (+\s{acc} sbd.), be displeasing
+lér|v.|plaire|To please (+\s{acc} sbd.), be pleasing
+cèc’h|n.|échec|Failure, defeat
+cèc|n.|phonetic respelling of \w{cèc’h}|\textit{(chess)} Check
+rýrŷ|v.|rugueux|To be rough, rugged
+rýd|v.|rude|To be uneven, rough, rugged
+rýsḍ|v.|frustrer|To frustrate, vex, annoy
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
