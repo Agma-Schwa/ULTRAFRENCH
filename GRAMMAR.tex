@@ -25,6 +25,7 @@
 \setmathfont[range=\mathit]{Minion 3 Italic}
 
 %% TODO: Remove this and fix overfull boxes.
+%% TODO: Switch to the book class at this point.
 \hfuzz=10000pt
 %\geometry{showframe}
 
@@ -272,6 +273,18 @@
     \endgroup
 }
 
+\renewenvironment {verse} {
+    \ifvmode\else\unskip\par\fi
+    \begingroup
+        \obeylines
+        \obeyspaces
+        \parindent0pt
+        \parskip0pt
+} {
+        \par
+    \endgroup
+}
+
 \def \footnoterule {
     \kern -3\p@
     \hrule \@width .4\columnwidth
@@ -349,6 +362,9 @@
 \let \Sub \textsubscript
 \let \Sup \textsuperscript
 \def \parheading #1 { \noindent \textbf{#1} }
+
+\newbox\BoxA
+\newbox\BoxB
 
 \def \Item #1 {
     \item [ \textsc{\textbf{#1}} ]
@@ -713,7 +729,7 @@ UF has no morphologically separate articles; rather, the old PF articles have be
 into the declensions. Furthermore, UF no longer has a gender distinction in nouns.
 
 \subsection{Declension}\label{subsubsec:declension}
-The table below shows the most common cases of the definite and indefinite declensions. UF pretty much has no
+The table below shows the most common cases of the definite and indefinite declensions. UF pretty has no
 adpositions and instead uses cases instead.
 
 Many of the case prefixes cause lenition in the initial consonant of the noun, e.g. \w{ḍalẹ} ‘table’ to
@@ -721,6 +737,7 @@ Many of the case prefixes cause lenition in the initial consonant of the noun, e
 in \pf{ces}, e.g. \w{s’ḍalẹ} ‘the tables (\s{acc})’ (not \w{s’thalẹ}, which is the singular), as well as in
 less commonly used forms such as the \s{def iness} \w{dwáḍalẹ} ‘on the table’.
 
+%% TODO: longtable or sth.
 \begin{table}[H]
 \centering
 \noindent\begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
@@ -2731,7 +2748,9 @@ using a morphological future in both the apodosis and the protasis. The tenses u
 reflect the tense actually used in UF.
 
 \section{Examples}\label{sec:examples}
-\subsection{Simple Examples}
+\def\Author#1{{\centering—\space\ignorespaces#1\par}}
+
+\subsection{Fully-Glossed Examples}
 \subsubsection{Simple Glossing Example}
 
 \gloss {
@@ -2743,8 +2762,8 @@ reflect the tense actually used in UF.
 }
 
 
-\subsubsection{I Don’t Think This Warrants Explaining}
-{\itshape\bfseries
+\subsubsection{CCC 1 Text}
+{\itshape
 Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’e sab’héy’. Ez lé-el lalebet’he z’ihór bet’hê rêsol daudé.
 Ýab’héy’ rêd’hes lab’hóy’ejú, dŷna c’haúr debauhib sá lasusy’és ýrâhe lasyrrájú.
 }
@@ -2775,8 +2794,8 @@ Note that UF here uses the verbal noun \w{b’hóy’ẹ} ‘to fly’ as a noun
 Its wings are too small for its little body to obtain [distance] from the ground. Of course, bees fly [anyway], as
 they do not care about what humans believe to be impossible.
 
-\subsection{Copypasta Translation}
-{\itshape\bfseries
+\subsubsection{Copypasta Translation}
+{\itshape
 Rub’hráy’ó rát’he au sré au sfèhe laut’hâ adŷbáłýr Át’hebhaú Raúl dedesle, s aút’hiy’ey’ó sývéhýr dýhisdé sérdé laúây’êr;
 aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse? Lec’hdr\-aúv\-nét’hic’hâ nérje c’hesse?
 Árdihyl c’hesse? Sauz-aud de c’hesse? Jávé’sý’ýâ jrét’hádé dedónéle dýha\-bha\-hit’he deý’ebhat’hic’hâ Áraúl dybháł.
@@ -2900,6 +2919,218 @@ language, be ‘technically’ ‘superior’ to The UF Language, but it is unfa
 a written language, until the ignorant masses started attempting to ‘speak’ it. But when we consider the triune nature
 of The Language, it has transpired that,\footnote{‘To become clear’ is expressed with the \s{pres ant} form of ‘transpire’.}
 at least in spoken communication with non-android participants, UF is the best of the terrestrial languages.
+
+\subsubsection{Two Stanzas from ‘The Rime of the Ancient Mariner’}
+
+%% FIXME: This is dumb. Write a proper TwoCols macros that parses two
+%% boxes first using the \afterassignment+\aftergroup trick.
+%%
+%% \unvbox or sth in the verse environment to get the longest line?
+\makeatletter
+\setbox\BoxA\hbox{\it Right up above the mast did stand,}
+\@tempdima\wd\BoxA
+\setbox\BoxA\vtop{\hsize\@tempdima
+\begin{verse}
+All in a hot and copper sky,
+\quad The bloody Sun, at noon,
+Right up above the mast did stand,
+\quad No bigger than the Moon.\\
+
+Day after day, day after day,
+\quad We stuck, ne breath ne motion;
+As idle as a painted ship
+\quad Upon a painted ocean.\\
+\end{verse}
+}
+
+\setbox\BoxB\hbox{\it Órdy’úr ád’y’úr, órdy’í ád’y’í,}
+\@tempdima\wd\BoxB
+\setbox\BoxB\vtop{\hsize\@tempdima
+\begin{verse}\it
+Dáhŷná’ câ, bárýnrê de,
+Láhaul dwávíd’h’, áhâłát’hâ,
+Sýrvá sb’haulá dèl sý’dwálý,
+\quad Aûlerá áraúvá.\\
+
+Órdy’úr ád’y’úr, órdy’í ád’y’í,
+Aúrdévýry’aû, sáhýnvúb’hvâ,
+Bárýnc’hánár âbét’hýrér,
+\quad Dáhŷnvérr dehýnrál.
+\end{verse}
+}
+\makeatother
+
+{\centering
+\noindent\leavevmode\usebox\BoxA\qquad\usebox\BoxB\par
+}
+
+\Author{\s{Sávy’él D. C’haulełij}, rád’hyc’hsy’ô \s{Áhnet’h}}
+
+
+\Paragraph{Gloss}
+\multigloss {
+dáhŷn\Sl á(ẹ)|câ|ḅárýn-rê|ḍẹ
+\s{iness.indef}\Sl sky|be.hot\Sl\s{ptcp}|\s{ess.indef}-copper|all
+
+lá\Sl haul|dwá-víd’h(ẹ)|áhâłát’h\Sl â
+\s{nom}-sun|\s{iness}-noon|be.bloody-\s{ptcp}
+
+sýr-vá|s-b’haul-á|dèl|sý’-dwá-ḷý
+\s{spress}-mast|\s{3n}-hover-\s{pres.ant}|{\it particle}|{\it distal}-\s{iness}-{\it sp. correl.}
+
+aû-lẹ-rá|áraúvá
+not-\s{aff.comp}-big|\s{gen}-moon
+
+órd-y’úr|ád(á)-y’úr|órd-y’í|ád(á)-y’í
+\s{ela}-day|\s{ill}-day|\s{ela}-night|\s{ill}-night %Definite to fit the metre.
+
+aúr-dévýr-y’aû|sáhýn-vúb’hvâ
+\s{1pl}-remain-\s{pret.1pl}|\s{abess}-movement
+
+ḅárýn-c’hánár|â-ḅét’hýr-ér
+\s{ess.indef}-ship|\s{ptcp.pass}-paint-\s{ptcp.pres.ant}
+
+dáhŷn-vérr|dẹhýn-rál
+\s{iness.indef}-sea|\s{spress.indef}-canvas
+}
+
+\subsubsection{The Tragedy of Darth Plagueis the Wise}
+\Paragraph{Láváý’ýr Blac’his Ád’hart’h Áhaj}\medskip
+{\it%
+Dát’hád’hé dej dyváý’ýr Blac’his Ád’hart’h Áhaj. Jréflecé’sý’ýâ dyźi. Isdrár se a dyisdrár léjed’háy’
+laúnárrahódejússaub’he’sý’ýâ. Î se Abhhit’h. Sénýr Abht’hénéb Abhhit’h le Blac’his Dart’h; leb’h au ahy’íhâ
+au ahsajâ líhá dab’hèc’h àré shufb’h sývíd’hic’hlaúry’ê. Lyá sahc’haúnéhás árrádraúc ausc’hýrâ lihá
+id’hérny’éhuf abhźi la lacérérle deréb’hní.
+}
+
+\Paragraph{Gloss}
+\multigloss{
+ḍ-át’hád’h\Sl é|dej|dy-váý’ýr|Ḅlac’his Á\Sl d’hart’h|á\Sl haj
+\s{2sg}-hear\Sl\s{pret}|\s{particle}|\s{part}-tragedy|Plagueis \s{gen}\Sl Darth|\s{gen}\Sl be.wise
+
+j-rẹ́flec̣-é|’sý’ýâ|dy\Sl źi
+\s{1sg}-think-\s{pres.ant}|not|\s{part}-this.one
+
+se|isḍrár|a|dy-isḍrár|lé-jed’háy’|laú-nárrahóḍe-jú-ss\Sl au-b’hẹ|’sý’ýâ
+be.\s{3n}|story.\s{abs}|\s{rel}|\s{part}-story|\s{nom.pl}-Jedi|\s{3pl}-\s{narrate.fut}-\s{gnomic}-\s{cond}\Sl\s{circ}-\s{2.dat}|not
+
+se|î|abh\Sl hit’h
+be.\s{3n}|legend.\s{abs.indef}|\s{gen.pl}-Sith
+
+Sénýr|abh\Sl t’hénéb|abh\Sl hit’h|le|Blac’his Dart’h
+lord.\s{abs.indef}|\s{gen.pl}-darkness|\s{gen.pl}-Sith|be.\s{3m}|Darth Plagueis
+
+leb’h|au|ah-y’íh\Sl â|au|ah-saj-â|l-ih\Sl á
+be.\s{3m.pres.ant}|and|\s{suff.comp}-be.powerful\Sl \s{ptcp}|and|\s{suff.comp}-be.wise-\s{ptcp}|\s{3m}-be.able.to.\s{subj}\Sl \s{pres.ant}
+
+d-ab’hèc’h|à-ré|s\Sl hufb’h|sý-víd’hic’hlaúry’ê
+\s{inf}-influence|\s{inf.pass}-create|\s{acc.indef}-life|\s{acc.pl}-Midichlorian
+
+l-y-á|s-ah-c’haúnéhás|á-rráḍraúc|ausc’hýr-â|l-ih\Sl á
+\s{3m}-have-\s{pres.ant}|\s{acc.indef}-such-knowledge|\s{gen}-side|be.dark-\s{ptcp}|\s{3m}-be.able.to.\s{subj}\Sl \s{pres.ant}
+
+i\Sl d’hérny’ẹ́huf|abh\Sl źi|l-a|la-cér-ér-ḷẹ|dẹ-réb’hní
+\s{acc}\Sl death|\s{gen.pl}-the.one|\s{abs.pl}-\s{rel}|\s{3pl}-be.dear-\s{pres.ant}-\s{3dat}|\s{inf}-prevent
+}
+
+\subsubsection{The North Wind and the Sun}
+{\it%
+\noindent Lasehérélé au Láb’haúré au Láhaul dŷnfaúr. Ladehid’hér haúdóné dýb’hic’htrár asa aúrdehab’híy’á ráy’á sráy’â.
+Sc’hóvâá láb’haúré, b’hát’hiý’at’hýrâ y’aúý’ávâ. Phas láaú’z sýrêr leraúhéréhá, sárslá b’hefaúr levú. Lárrád’hahánár
+vé dèl y’áb’hedêr, srêr syplâ latrâ, fahaú dèl, âníér, Láb’haúré sy’y’erádá Ashaul. Sec’hlérá révy’évâ vaúd’hérvâ.
+Ráhaú dé wêr irêr syplâ, Láhaul sdárá sré lerýlâ, Láaú jys, ub’hrâ’sý’ýâ lys dád’hýr it’hèrvíc’h, au ly’y’edehab’híy’á
+au ly’ad’há desb’hé dáhŷnríb’hy’ér ré.
+
+Seh láistrár svaût lyp’hárdyt’há ihaúb’héc’h áy’aúý’á derêfihasjú.
+}\medskip
+
+\Author{\s{Zaub},\footnote{\w{Zauḅ} is the UF name for Aesop.} rád’hyc’hsy’ô \s{Áhnet’h}}
+
+\Paragraph{Original Text}\smallskip
+\noindent Βορέας καὶ Ἥλιος περὶ δυνάμεως ἤριζον. ἔδοξε δὲ αὐτοῖς ἐκείνῳ τὴν νίκην ἀπονεῖμαι, ὃς ἂν αὐτῶν ἄνθρωπον ὁδοιπόρον ἀποδύσῃ. καὶ ὁ Βορέας ἀρξάμενος σφοδρὸς ἦν· τοῦ δὲ ἀνθρώπου ἀντεχομένου τῆς ἐσθῆτος μᾶλλον ἐπέκειτο. ὁ δὲ ὑπὸ τοῦ ψύχους καταπονούμενος ἔτι μᾶλλον, καὶ περιττοτέραν ἐσθῆτα προσελάμβανεν, ἕως ἀποκαμὼν ⟨ὁ Βορέας⟩ τῷ Ἡλίῳ αὐτὸν παρέδωκε. κἀκεῖνος τὸ μὲν πρῶτον μετρίως προσέλαμψε· τοῦ δὲ ἀνθρώπου τὰ περισσὰ τῶν ἱματίων ἀποτιθεμένου, σφοδρότερον τὸ καῦμα ἐπέτεινεν, ἕως οὗ πρὸς τὴν ἀλέαν ἀντέχειν μὴ δυνάμενος, ἀποδυσάμενος, ποταμοῦ παραρρέοντος ἐπὶ λουτρὸν ἀπῄει.
+
+ὁ λόγος δηλοῖ ὅτι πολλάκις τὸ πείθειν τοῦ βιάζεσθαι ἀνυτικώτερόν ἐστι.
+
+\Paragraph{Translation by Some Random Frenchman}\smallskip
+\noindent Borée et le Soleil contestaient de leur force. Ils décidèrent d’attribuer la palme à celui d’entre eux qui dépouillerait un voyageur de ses vêtements. Borée commença ; il souffla avec violence. Comme l’homme serrait sur lui son vêtement, il l’assaillit avec plus de force. Mais l’homme incommodé encore davantage par le froid, prit un vêtement de plus, si bien que, rebuté, Borée le livra au Soleil. Celui-ci tout d’abord luisit modérément ; puis, l’homme ayant ôté son vêtement supplémentaire, le Soleil darda des rayons plus ardents, jusqu’à ce que l’homme, ne pouvant plus résister à la chaleur, ôta ses habits et s’en alla prendre un bain dans la rivière voisine.
+
+Cette fable montre que souvent la persuasion est plus efficace que la violence.
+
+\Paragraph{Gloss}
+\multigloss{
+la-sẹhérél-é|au|lá\Sl b’haúré|au|lá\Sl haul|dŷn-faúr|
+\s{3pl}-quarrel-\s{pret}|and|\s{def}\Sl North.Wind|and|\s{def}-Sun|\s{indef.part}-strength.
+
+La-dehid’h\Sl ér|haú-dónẹ́|dý-b’hic’hḍrár|as-a|
+\s{3pl}-decide.\s{3pl.pres.ant}|\s{pass.inf.fut.ii}-give|\s{part.def}-victory|\s{dat-rel.pron}
+
+aúr-dehab’híy’-á|s-ráy’\Sl â
+\s{3n.fut.ant}-undress-\s{circ}|\s{acc.indef}-travel-\s{ptcp}
+
+s-c’hóvâ-á|lá\Sl b’haúré|b’hát’hiý’at’hýr-â|y’aúý’ávâ
+\s{3n}-begin-\s{pres.ant}|\s{def}\Sl North.Wind|blow-\s{ptcp}|violently
+
+ḅas|lá-aú|’z|sý-rêr|lẹ-raúhérẹ́h\Sl á
+because|\s{def}-man|his|\s{acc.pl}-clothing|\s{3m}-\s{tighten}-\s{pres.ant}
+
+s-ársl-á|b’he-faúr|lẹ-vú
+\s{3n}-\s{attack}-\s{pres.ant}|\s{instr.indef}-force|\s{aff.comp}-much
+
+lá-rrád’hahánár|vé|ḍèl|y’-áb’hẹḍ-êr|s-rêr|syḅlâ|l-aḍr\Sl â|
+\s{def}-cold|but|\s{particle}|\s{3m.pass}-inconvenience-\s{pres.ant.ptcp}|\s{acc.indef}-clothing|additional|\s{3m}-take-\s{pres.ant}|
+
+fahaú|dèl|â-ní-ér|lá\Sl b’haúré|s-y’-y’ẹ-rád-á|as\Sl haul
+so.much.so|emphatic|\s{ptcp.pass}-rebut-\s{pres.ant}|\s{def}\Sl North.Wind|\s{3n}-\s{3m.pass}-\s{opt}-surrender-\s{pres.ant}|\s{dat}-sun
+
+s-ec’hlér-á|révy’ẹ́-vâ|vaúd’hér-vâ
+\s{3n}-shine-\s{pres.ant}|first-\s{adv}|be.moderate-\s{adv}
+
+ráh-aú|dẹ́|w-êr|i-rêr|syḅlâ|lá\Sl haul|s-dár-á|s-ré
+lá-aú|then|remove-\s{pres.ant.ptcp}|\s{acc}-clothing|supplementary|\s{def}\Sl sun|\s{3n}-throw-\s{pres.ant}|\s{acc.indef.pl}-ray
+
+lẹ-rýl-â|lá-aú|jys|ub’hr\Sl â|’sý’ýâ|lys|d-ád’hýr|i\Sl t’hèrvíc’h|and
+\s{aff.comp}-burn-\s{ptcp}|\s{def}-man|until|be.able-\s{ptcp}|not|no.longer|\s{inf}-resist|\s{acc}-heat|
+
+au|l-y’-y’ẹ-dehab’híy’-á|au|l-y’-ad’h\Sl á|dẹ-sb’hé|
+and|\s{3m}-\s{3m.pass}-\s{opt}-undress-\s{pres.ant}|and|\s{3m}-\s{opt}-go\Sl \s{pres.ant}|\s{inf}-bathe|
+
+dáhŷn-ríb’hy’ér|sẹh|lá-isḍrár|s-vaût|lybhárdyt’há|i\Sl haúb’héc’h|á-y’aúý’á|dẹ-rê-fihas-jú
+\s{iness}-river|this|\s{nom}-tale|\s{3n}-show|often|\s{acc}-persuade|\s{gen}-be.violent|\s{inf}-\s{comp}-be.efficient-\s{gnomic}
+}
+
+\subsection{Unglossed Translations}
+\subsubsection{The Misanthrope – \s{Molière}}
+\begin{verse}\it
+C’hasbesy’ál y’aúhý, jaír ivaûd de :
+Sýhèl bas labíres laválfès,
+Sýaud bas abhvaúb’hâ lac’haúblés,
+Au sá lac’hlýrs dyn vérjet’hic’hâ
+A dyn sdónés láváý’eb’his anhbrí b’hérdy’ŷâ.
+Aúráró ijys rá seh áhaúblér
+Árívnél lérâ asa jlit’hijy’.
+\end{verse}
+
+\Paragraph{Original Text}\smallskip
+\begin{verse}
+Non, elle est générale, et je hais tous les hommes :
+Les uns, parce qu’ils sont méchants et malfaisants,
+Et les autres, pour être aux méchants complaisant,
+Et n’avoir pas pour eux ces haines vigoureuses
+Que doit donner le vice aux âmes vertueuses.
+De cette complaisance on voit l’injuste excès
+Pour le franc scélérat avec qui j’ai procès.
+\end{verse}
+
+\Paragraph{English Translation}\smallskip
+\begin{verse}
+There’s no exception, and I hate all men:
+A part, because they’re wicked and do evil;
+The rest, because they fawn upon the wicked,
+And fail to feel for them that healthy hatred
+Which vice should always rouse in virtuous hearts.
+You see the rank injustice of this fawning,
+Shown toward the bare-faced scoundrel I’m at law with.
+\end{verse}
 
 %% Dictionary.
 \clearpage
