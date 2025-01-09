@@ -1,27 +1,34 @@
 ##
 ## ULTRAFRENCH DICTIONARY
 ##
-## Lines starting with ‘#’ are ignored. Entries are automatically
-## sorted alphabetically; they can be in any order in this file.
+## Lines starting with ‘#’ as well as empty lines are ignored. Entries are
+## automatically sorted alphabetically; they can be in any order in this file.
 ##
-## Each line in this file is an entry in the dictionary. An entry
-## consists of several fields, each delimited by ‘|’. No field may
-## contain a ‘|’ character. The fields are as follows:
+## By default, each line in this file is an entry in the dictionary.
+## To break an entry across multiple lines, indent the continuation lines
+## with four spaces. Line-breaking does not affect how the text is displayed.
+##
+## An entry consists of several fields, separated by a single ‘|’ character. No
+## field may contain a ‘|’ character. The fields are as follows:
 ##
 ##     1. The word in the UF orthography.
 ##     2. The part of speech and other initial annotations.
 ##     3. The etymology of the word. If this field contains no spaces, it
 ##        is assumed to be a PF word.
-##     4. The English translation of the word.
+##     4. The English translation of the word. If a word has multiple senses
+##        each sense should be preceded by ‘\\’; a more general definition may
+##        precede the first sense; an example may be added to a sense using
+##        the ‘\ex’ macro.
 ##     5. (optional) Grammatical forms of the word.
 ##
-## To break an entry across multiple lines, end each line with a ‘\’
-## character. There MUST NOT be any characters between the ‘\’ and the
-## end of the line. The ‘\’ character will be removed and the next line
-## will be concatenated to the current line.
+## EXAMPLE:
 ##
-## Furthermore, it is possible to create references to other entries by
-## adding a line that contains NO ‘|’ characters and is of the form
+## dír|v. tr.|dire|+\s{acc} To say, tell (+\s{dat} someone) |\s{fut} dírẹ́, \s{subj} díss
+## ^^^ ^^^^^^ ^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+## 1   2      3    4                                         5
+##
+## In addition to regular entries, it is possible to create references to other
+## entries by adding a line that contains NO ‘|’ characters and is of the form
 ##
 ##     entries > reference
 ##
@@ -29,15 +36,16 @@
 ## references, and ‘reference’ is the word to which the references should
 ## point.
 ##
+## As in the rest of the grammar, use ‘\s{...}’ for small-caps.
 ##
 ## In entries, the following formatting conventions apply.
 ##
 ##   - If the etymology is a single PF word (w/o spaces), just put it in
 ##     the field by itself, and it will be typeset accordingly and in italics.
 ##
-##   - Use \w and \w only to refer to other UF words within an entry
+##   - Use ‘\w’ and ‘\w’ only to refer to other UF words within an entry
 ##
-##   - Do not use any markup in the ‘forms’ field (except for making ‘fut’ etc.
+##   - Do not use any markup in the ‘forms’ field (except ‘\s’ for making ‘fut’ etc.
 ##     italic). FIXME: Do that in the ULTRAFRENCHER instead.
 
 ad’hór|v. tr.|adore|
