@@ -81,10 +81,11 @@ ráý’ẹ|v.|râler|To complain, grumble
 ḅáł|v.|parler|To speak, talk|\s{fut} báłérẹ́
 ab’hásy’ô|n.|aviation|Aviation
 rá₁|n.|loi|Law, rule, regulation
-ḍẹ|adj.|tout|All, every, whole, entire
+ḍẹ|adj.|tout|\\All, every, whole, entire \\\w{ḍẹ auḍ} Obsolete form of \w{ḍauḍ}.
+ḍauḍ|def. pron.|from earlier \w{ḍẹ auḍ}|Everything else, any other (one)
 c’hóný|adj.|connu|Known, familiar, well-kn\-own
-y’aúhý|inconj., postpos.|\pf{il n’y a aucun}|There is no, there are no, there is none
-ý’aúhý|inconj., postpos.|\pf{il y a aucun}|There is, there are
+y’aúhý|part.|\pf{il n’y a aucun}|There is no, there are no, there is none
+ý’aúhý|part.|\pf{il y a aucun}|There is, there are
 ráy’ê|n.|moyen|\\ Way, means, method. \\ \w{ráy’ê y’aúhý} + \s{aci} There is no way, that \ldots{}
     \\ \s{instr pl} \w{b’hehráy’ê} How, by what means, in this way
 
@@ -118,11 +119,11 @@ au|conj.|aussi|\\ And, also, as well, too \\ \w{au} \ldots{} \w{au} \ldots{} ‘
 ec̣|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
 ânb’hé|adv.|\pf{en effet}, via metathesis from *\w{âné\-b’he}|Verily, indeed, in fact
-y’ŷ|prefix|mieux|\textit{Denying comparative prefix. See grammar}
-lẹ|prefix|plus|\textit{Affirming comparative prefix. See grammar}
-rê|prefix|moins|\textit{Neutral comparative prefix. See grammar}
-ré|prefix|très|\textit{Superlative prefix. See grammar}
-râdvâ|prefix|grandement|\textit{Superlative prefix. See grammar}
+y’ŷ-|prefix|mieux|\textit{Denying comparative prefix. See grammar}
+lẹ-|prefix|plus|\textit{Affirming comparative prefix. See grammar}
+rê-|prefix|moins|\textit{Neutral comparative prefix. See grammar}
+ré-|prefix|très|\textit{Superlative prefix. See grammar}
+râdvâ-|prefix|grandement|\textit{Superlative prefix. See grammar}
 nájẹ|v.|nager|To swim|\s{fut} náȷ́ẹ, \s{subj} nájes
 e|n.|eau|Water
 dẹhẹ|n.|dessus|\\ Top, upper side. \\ Surface of a body of water
@@ -217,7 +218,7 @@ nérjẹ|n.|énergie|Energy
 árḍihyl|n.|particule|Particle
 c’hesse||contraction of \w{c’hes} + \w{se}| Is it? \textit{Also substituted for other forms of ‘to
     be’ in questions, particularly for the plural neuter; stressed on the first syllable}
-aud|adj.|autre|Other, another
+auḍ|adj.|autre|Other, another
 sauz-aud|adj.|\pf{autre chose}|Something else, another thing
 rét’hád|v.|prétendre|To claim, allege|\s{fut} rét’hádrẹ́, \s{subj} rét’h\-ádes
 dónẹ́|v.|donner|\s{+ dat \& acc/part} To endow, bestow, give. \textit{The \s{acc} is used when talking about
@@ -231,7 +232,7 @@ sáhẹ|v.|insensé|To be preposterous, absurd, nonsensical|\s{fut} sáhere, \s{
 jys|adv.|juste|Just, only, merely
 lí|v.|lire|\\ +\s{part} To read from. \\ +\s{acc} To peruse, read entirely
     |\s{fut} lírẹ́, \s{subj} lís
-cahý|pro. \s{pl indef} only; declined like a regular noun|chacun|Each other, one another
+cahý|pron. pl. indef.|chacun|Each other, one another.
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pf{livre} + \pf{bouquin}|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} áv́áy’érẹ́, \s{subj} áv́áy’és
@@ -346,7 +347,7 @@ a|pron.|quoi|\textit{Interrogative and relative} \\ \s{indef} What? \\ \s{def} W
     \\ \s{indef} \textit{or} \s{def} Which, who, that \textit{(see grammar)}
 vérs|interj.|merci|\\ Thank you. (+\s{gen} for sth.). \\ \w{dyvérs fér} To thank
     (+\s{dat} sbd.) (+\s{gen} for sth.)
-rárd|v.|regarder|\\ To watch. \\ To look at|\s{fut} rárdre, \s{subj} rárds
+rárd|v.|regarder|\\+\s{acc} To watch. \\+\s{part} To look at|\s{fut} rárdre, \s{subj} rárds
 ḍẹ́ríb|v.|terrible|To be terrible (all senses)|\s{fut} ḍẹ́ríre, \s{subj} ḍẹ́rís
 
 # From Étienne.
@@ -800,6 +801,16 @@ cèc|n.|phonetic respelling of \w{cèc’h}|\textit{(chess)} Check
 rýrŷ|v.|rugueux|To be rough, rugged
 rýd|v.|rude|To be uneven, rough, rugged
 rýsḍ|v.|frustrer|To frustrate, vex, annoy
+sèd’h|part.|from \pf{c’est du}|It is due to (+\s{gen} sth. / +\s{aci} the fact that...)
+b’héy’|v.|veiller|\\\textit{intr.} To keep watch, keep guard \\+\s{spress} To watch over, guard, keep an eye on
+aḅ|v.|appeler|To call (+\s{acc} sbd./sth.) (+\s{abs} sbd./sth.). \textit{In PF, this verb used to take a double
+    accusative, but this usage disappeared early on in UF, with the second accusative naturally being replaced
+    by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly
+    free word order.}
+    \ex \s{Snet’h v.2} \w{jdap rác’hsaý’adâ} ‘I call you a liar’; even in the writings of \s{Snet’h}, the double
+        accusative is no longer attested.
+ré|n.|souhait|Wish
+réḍ|v.|souhaiter|To wish (+\s{acc/aci} for sth.)
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
