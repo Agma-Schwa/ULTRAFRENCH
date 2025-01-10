@@ -133,120 +133,143 @@ private:
     auto entries() -> json& { return out["entries"]; }
 
     auto TeXToHtml(stream input) -> std::string {
-        std::string out;
+        return TeXToHtmlConverter(*this, input).Run();
+    }
 
-        // Process macros.
-        for (;;) {
-            out += input.take_until("\\$");
-            if (input.empty()) break;
+    struct TeXToHtmlConverter {
+        JsonBackend& backend;
+        stream input;
+        std::string out = "";
 
-            // TODO: Render maths.
-            if (input.consume('$')) {
-                out += "$";
-                out += input.take_until('$');
-                out += '$';
-                continue;
+        void Append(std::string_view s) {
+            // We need to escape certain chars for HTML. Do this first
+            // since we’ll be inserting HTML tags later.
+            if (stream{s}.contains_any("<>§~")) {
+                auto copy = std::string{s};
+                utils::ReplaceAll(copy, "<", "&lt;");
+                utils::ReplaceAll(copy, ">", "&gt;");
+                utils::ReplaceAll(copy, "§~", "grammar"); // FIXME: Make section references work somehow.
+                utils::ReplaceAll(copy, "~", "&nbsp;");
+                out += copy;
+            } else {
+                out += s;
+            }
+        }
+
+        auto Run() -> std::string {
+            // Process macros.
+            for (;;) {
+                Append(input.take_until_any("\\$"));
+                if (input.empty()) break;
+
+                // TODO: Render maths.
+                if (input.consume('$')) {
+                    out += "$";
+                    Append(input.take_until('$'));
+                    out += '$';
+                    continue;
+                }
+
+                // Yeet '\'.
+                input.drop();
+                if (input.empty()) {
+                    backend.error("Invalid macro escape sequence");
+                    break;
+                }
+
+                ProcessMacro();
             }
 
-            // Yeet '\'.
+            return out;
+        }
+
+        void ProcessMacro() {
+            // Found a macro; first, handle single-character macros.
+            if (text::IsPunct(*input.front()) or input.starts_with(' ')) {
+                switch (auto c = input.take()[0]) {
+                    // Discretionary hyphen.
+                    case '-': out += "&shy;"; return;
+
+                    // Space.
+                    case ' ': out += " "; return;
+
+                    // Escaped characters.
+                    case '&': out += "&amp;"; return;
+                    case '%': out += "%"; return;
+                    case '#': out += "#"; return;
+
+                    // These should no longer exist at this point.
+                    case '\\': backend.error("'\\\\' is not supported in this field"); return;
+
+                    // Unknown.
+                    default: backend.error("Unsupported macro. Please add support for '\\{}' to the ULTRAFRENCHER", c); return;
+                }
+            }
+
+            // Drop a brace-delimited argument after a macro.
+            auto DropArg = [&] {
+                if (input.trim_front().starts_with('{')) input.drop_until('}');
+            };
+
+            auto DropArgAndAppendRaw = [&](std::string_view text) {
+                DropArg();
+                out += text;
+            };
+
+            // Handle regular macros. We use custom tags for some of these to
+            // separate the formatting from data.
+            auto macro = input.take_while_any("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@");
+            input.trim_front();
+            if (macro == "pf") SingleArgumentMacroToTag("uf-pf");
+            else if (macro == "s") SingleArgumentMacroToTag("uf-s");
+            else if (macro == "w") SingleArgumentMacroToTag("uf-w");
+            else if (macro == "textit") SingleArgumentMacroToTag("em");
+            else if (macro == "textbf") SingleArgumentMacroToTag("strong");
+            else if (macro == "textnf") SingleArgumentMacroToTag("uf-nf");
+            else if (macro == "senseref") SingleArgumentMacroToTag("uf-sense");
+            else if (macro == "L") DropArgAndAppendRaw("<uf-mut>L</uf-mut>");
+            else if (macro == "N") DropArgAndAppendRaw("<uf-mut>N</uf-mut>");
+            else if (macro == "ref" or macro == "label") DropArg();
+            else if (macro == "ldots") DropArgAndAppendRaw("&hellip;");
+            else if (macro == "this") out += backend.current_word; // This has already been escaped; don’t escape it again.
+            else if (macro == "ex") {} // Already handled when we split senses and examples.
+            else backend.error("Unsupported macro '\\{}'. Please add support for it to the ULTRAFRENCHER", macro);
+        }
+
+        void SingleArgumentMacroToTag(std::string_view tag_name) {
+            // Drop everything until the argument brace. We’re not a LaTeX tokeniser, so we don’t
+            // support stuff like `\fract1 2`, as much as I like to write it.
+            if (not stream{input.take_until('{')}.trim().empty())
+                backend.error("Sorry, macro arguments must be enclosed in braces");
+
+            // Drop the opening brace.
             input.drop();
-            if (input.empty()) {
-                error("Invalid macro escape sequence");
-                break;
-            }
 
-            ProcessMacro(out, input);
-        }
+            // Everything until the next closing brace is our argument, but we also need to handle
+            // nested macros properly.
+            out += std::format("<{}>", tag_name);
+            while (not input.empty()) {
+                auto arg = input.take_until_any("$\\}");
+                Append(arg);
 
-        // We need to escape some more chars for HTML.
-        utils::ReplaceAll(out, "<", "&lt;");
-        utils::ReplaceAll(out, ">", "&gt;");
-        utils::ReplaceAll(out, "~", "&nbsp;");
-        utils::ReplaceAll(out, "§", "grammar"); // FIXME: Make section references work somehow.
-        return out;
-    }
+                // TODO: Render maths.
+                if (input.consume('$')) {
+                    out += "$";
+                    Append(input.take_until('$'));
+                    out += '$';
+                    continue;
+                }
 
-    void ProcessMacro(std::string& out, stream& input) {
-        // Found a macro; first, handle single-character macros.
-        if (text::IsPunct(*input.front())) {
-            switch (auto c = input.take()[0]) {
-                // Discretionary hyphen.
-                case '-': out += "&shy;"; return;
+                if (input.consume('}')) {
+                    out += std::format("</{}>", tag_name);
+                    return;
+                }
 
-                // Escaped characters.
-                case '&': out += "&amp;"; return;
-                case '%': out += "%"; return;
-                case '#': out += "#"; return;
-
-                // These should no longer exist at this point.
-                case '\\': error("'\\\\' is not supported in this field"); return;
-
-                // Unknown.
-                default: error("Unsupported macro. Please add support for '\\{}' to the ULTRAFRENCHER", c); return;
+                input.drop();
+                ProcessMacro();
             }
         }
-
-        // Drop a brace-delimited argument after a macro.
-        auto DropArg = [&] {
-            if (input.trim_front().starts_with('{')) input.drop_until('}');
-        };
-
-        auto DropArgAndAppend = [&] (std::string_view text) {
-            DropArg();
-            out += text;
-        };
-
-        // Handle regular macros. We use custom tags for some of these to
-        // separate the formatting from data.
-        auto macro = input.take_while_any("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@");
-        if (macro == "pf") SingleArgumentMacroToTag(out, input, "uf-pf");
-        else if (macro == "s") SingleArgumentMacroToTag(out, input, "uf-s");
-        else if (macro == "w") SingleArgumentMacroToTag(out, input, "uf-w");
-        else if (macro == "textit") SingleArgumentMacroToTag(out, input, "em");
-        else if (macro == "textbf") SingleArgumentMacroToTag(out, input, "strong");
-        else if (macro == "textnf") SingleArgumentMacroToTag(out, input, "uf-nf");
-        else if (macro == "senseref") SingleArgumentMacroToTag(out, input, "uf-sense");
-        else if (macro == "L") DropArgAndAppend("<uf-mut>L</uf-mut>");
-        else if (macro == "N") DropArgAndAppend("<uf-mut>N</uf-mut>");
-        else if (macro == "ref" or macro == "label") DropArg();
-        else if (macro == "ldots") DropArgAndAppend("&hellip;");
-        else if (macro == "this") out += current_word;
-        else if (macro == "ex") error("'\\ex' is only supported in the definition field of an entry, after a sense"); // Already handled.
-        else error("Unsupported macro '\\{}'. Please add support for it to the ULTRAFRENCHER", macro);
-    }
-
-    void SingleArgumentMacroToTag(std::string& out, stream& input, std::string_view tag_name) {
-        // Drop everything until the argument brace. We’re not a LaTeX tokeniser, so we don’t
-        // support stuff like `\fract1 2`, as much as I like to write it.
-        if (not stream{input.take_until('{')}.trim().empty())
-            error("Sorry, macro arguments must be enclosed in braces");
-
-        // Drop the opening brace.
-        input.drop();
-
-        // Everything until the next closing brace is our argument, but we also need to handle
-        // nested macros properly.
-        out += std::format("<{}>", tag_name);
-        while (not input.empty()) {
-            auto arg = input.take_until_any("$\\}");
-            out += arg;
-
-            // TODO: Render maths.
-            if (input.consume('$')) {
-                out += "$";
-                out += input.take_until('$');
-                out += '$';
-                continue;
-            }
-
-            if (input.consume('}')) {
-                out += std::format("</{}>", tag_name);
-                return;
-            }
-
-            ProcessMacro(out, input.drop());
-        }
-    }
+    };
 };
 
 struct TeXBackend final : Backend {

@@ -245,7 +245,7 @@
             "word": "áẹ"
         },
         {
-            "def": "<em>sufficient comparative prefix; see §~</em>}.",
+            "def": "<em>sufficient comparative prefix; see grammar</em>}.",
             "etym": "<uf-pf>assez</uf-pf>",
             "pos": "n.",
             "word": "ah"
@@ -389,7 +389,7 @@
             "word": "aú"
         },
         {
-            "def": "Not-. <em>Used to negate nouns, adjectives, and adverbs; see §~</em>}.",
+            "def": "Not-. <em>Used to negate nouns, adjectives, and adverbs; see grammar</em>}.",
             "etym": "<uf-pf>non</uf-pf>",
             "pos": "particle",
             "word": "aû"
@@ -514,7 +514,7 @@
         },
         {
             "def": "To speak.",
-            "etym": "from earlier *<uf-w>ḅał</uf-w> < <uf-pf>parler</uf-pf>",
+            "etym": "from earlier *<uf-w>ḅał</uf-w> &lt; <uf-pf>parler</uf-pf>",
             "pos": "v.",
             "word": "áł"
         },
@@ -1635,7 +1635,7 @@
             "word": "ec’hlér"
         },
         {
-            "def": "<em>Used in numbers, see §~</em>}.",
+            "def": "<em>Used in numbers, see grammar</em>}.",
             "etym": "<uf-pf>et</uf-pf>",
             "pos": "particle",
             "word": "ed"
@@ -1643,7 +1643,7 @@
         {
             "def": "To be.",
             "etym": "<uf-pf>être</uf-pf>",
-            "forms": "<uf-s>forms</uf-s> <em>active only, see §~</em>}",
+            "forms": "<uf-s>forms</uf-s> <em>active only, see grammar</em>}",
             "pos": "v. irreg.",
             "word": "eḍ"
         },
@@ -1761,7 +1761,7 @@
                     "def": "To do, make, build, construct, erect."
                 },
                 {
-                    "def": "<em>Expletive; see §~</em>}."
+                    "def": "<em>Expletive; see grammar</em>}."
                 }
             ],
             "word": "fér"
@@ -1990,7 +1990,7 @@
         },
         {
             "def": "<em>Chiefly in questions or imperative.</em> To let, allow, permit.",
-            "etym": "<uf-pf>laisser</uf-pf> > *<uf-w>lehe</uf-w>",
+            "etym": "<uf-pf>laisser</uf-pf> &gt; *<uf-w>lehe</uf-w>",
             "forms": "<uf-s>fut</uf-s> lere, <uf-s>subj</uf-s> les",
             "pos": "v.",
             "word": "le"
@@ -2291,11 +2291,11 @@
             "word": "r"
         },
         {
-            "etym": "<uf-pf>swa</uf-pf> > *<uf-w>rá</uf-w>",
+            "etym": "<uf-pf>swa</uf-pf> &gt; *<uf-w>rá</uf-w>",
             "pos": "conj.",
             "senses": [
                 {
-                    "def": "Or. <em>exclusive, see also~<uf-w>u</uf-w></em>."
+                    "def": "Or. <em>exclusive, see also&nbsp;<uf-w>u</uf-w></em>."
                 },
                 {
                     "def": "<uf-w>u</uf-w>/<uf-w>ra</uf-w> &hellip; <uf-w>ra</uf-w> &hellip; ‘either &hellip; or &hellip;’ <em>(exclusive)</em>."
@@ -2557,7 +2557,7 @@
             "word": "raû"
         },
         {
-            "def": "<em>Causative prefix, see §~</em>}.",
+            "def": "<em>Causative prefix, see grammar</em>}.",
             "etym": "from <uf-w>rób’hoc’h</uf-w>",
             "pos": "prefix",
             "word": "raú(b’hc’h)-"
@@ -3424,7 +3424,7 @@
         },
         {
             "def": "Not, no. <em>Always <uf-w>t’h’<uf-mut>N</uf-mut></uf-w> before vowels, but does not nasalise if the ‘é’ is still present. This particle is used only in the optative; see also <uf-w>asý’ýâ</uf-w>, <uf-w>sá</uf-w></em>.",
-            "etym": "<uf-pf>de peur que</uf-pf> > *<uf-w>dbhýrc’h</uf-w> > *<uf-w>dýrc’h</uf-w> > *<uf-w>dc’hý</uf-w> > t’hé",
+            "etym": "<uf-pf>de peur que</uf-pf> &gt; *<uf-w>dbhýrc’h</uf-w> &gt; *<uf-w>dýrc’h</uf-w> &gt; *<uf-w>dc’hý</uf-w> &gt; t’hé",
             "pos": "conj.",
             "word": "t’hé"
         },
