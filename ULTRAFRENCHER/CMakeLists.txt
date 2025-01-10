@@ -134,14 +134,17 @@ endif()
 ##  Submodules and include dirs.
 ## ============================================================================
 include(FetchContent)
+
 FetchContent_Declare(libbase
     GIT_REPOSITORY https://github.com/Sirraide/libbase
     GIT_TAG master
     SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/libbase"
 )
-FetchContent_MakeAvailable(libbase)
 
-## Link against libfmt.
+FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
+
+FetchContent_MakeAvailable(libbase json)
+
 target_link_libraries(options INTERFACE libbase)
 
 ## ============================================================================
@@ -160,4 +163,4 @@ endif()
 add_executable(ULTRAFRENCHER ${sources})
 
 ## Link ICU.
-target_link_libraries(ULTRAFRENCHER PRIVATE options)
+target_link_libraries(ULTRAFRENCHER PRIVATE options nlohmann_json::nlohmann_json)

@@ -100,7 +100,7 @@ ráy’ê|n.|moyen|\\ Way, means, method. \\ \w{ráy’ê y’aúhý} + \s{aci} 
 ub’hrá|v.|pouvoir|
     \\ +\s{inf/aci} To be able to, can.
         \textit{Never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or
-        \s{pci}, in which case the variant with the \s{part} (sense {\bf 2}) is used instead}.
+        \s{pci}, in which case the variant with the \s{part} (\senseref{2}) is used instead}.
     \\ +\s{part} To be capable of \ldots
     \\ \s{opt cond i + aci} To be possible; may. \textit{Dynamic or epistemic, never deontic; this and sense 4 are essentially a
         more emphatic optative}.
@@ -282,7 +282,7 @@ ra|conj.|\pf{swa} > *\w{rá}|\\ Or. \textit{exclusive, see also~\w{u}}. \\ \w{u}
 áví|n.|ami|Friend
 lyzy’ýr|adj.|plusieurs|Several
 av́ár|v. irreg.|avoir|+\s{acc} To have \textit{(usually inalienably)}|\s{pres ant} and \s{pret}
-    y, \s{{\it obsolete} pret} ab’hẹ, \s{fut} aúrẹ́, \s{subj} ès
+    y, \textit{obsolete} \s{pret} ab’hẹ, \s{fut} aúrẹ́, \s{subj} ès
 sybhẹ́rýr|v.|supérieur|\textit{intr. or} +\s{gen} To be superior to, better than, higher than|\s{fut}
     sybhẹ́rýrẹ́, \s{subj} sybhẹ́rýrs
 
@@ -835,7 +835,7 @@ bír > vaúb’hẹ
 rêd > ḅẹt’hẹ
 c’h’s > c’hes
 ráb’h > v́ár
-daú’b’h > daú(c’h) {\nf +} b’he
+daú’b’h > daú(c’h) \textnf{+} b’he
 vérvá > vér + vá
 
 sauzaud > sauz-aud

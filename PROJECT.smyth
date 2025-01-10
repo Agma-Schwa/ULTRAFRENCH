@@ -92,7 +92,7 @@
                 ]
             ]
         },
-        "input.text": "pʁijøʁe",
+        "input.text": "swɛ\nswet",
         "notes": {
             "files": [
                 {
@@ -110,7 +110,7 @@
             ],
             "splitter.sizes": "AAAA/wAAAAEAAAACAAAAswAABI0B/////wEAAAABAA=="
         },
-        "output.text": "ɰĩɥỹ̃ɰẽ\n",
+        "output.text": "ɰɛ̃\nɰẽd2\n",
         "sca": {
             "cbox.changes.norm.choice": 2,
             "cbox.input.norm.choice": 2,
