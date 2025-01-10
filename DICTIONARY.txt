@@ -343,7 +343,7 @@ lúr|v.|lourd|To be bulky, oversized, heavy
 c’húr|v.|court|To shrink, reduce in size, narrow
 eḍrrá|v.|étroit|Pointy
 c’hánár|n.|canard|\\ Ship, boat. \\ \s{instr indef} By boat
-c’hánaú|n.|canot|Duck (bir)
+c’hánaú|n.|canot|Duck (bird)
 rác’hánár|n.|from \w{ráhe} + \w{c’hánár}|Airship, dirigible
 ráhe|n.|oiseau|Bird
 ráhé|n.|from \w{ráhe} + \w{ráhó}|Flying fish
