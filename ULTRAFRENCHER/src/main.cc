@@ -85,8 +85,9 @@ struct JsonBackend final : Backend {
     json out;
     std::string errors;
     std::string current_word = "<error: \\this undefined>";
+    bool minify;
 
-    JsonBackend() {
+    JsonBackend(bool minify) : minify{minify} {
         out = json::object();
         refs() = json::array();
         entries() = json::array();
@@ -162,7 +163,7 @@ struct JsonBackend final : Backend {
 
     void print() override {
         if (not errors.empty()) std::println("{}", errors);
-        else std::println("{}", out.dump(4));
+        else std::println("{}", minify ? out.dump() : out.dump(4));
     }
 
 private:
@@ -956,13 +957,14 @@ int main(int argc, char** argv) {
         option<"-f", "Convert a text file to IPA", file<>>,
         flag<"--show-unsupported", "Print <U+XXXX> for unsupported characters">,
         flag<"--json", "Output the dictionary as JSON">,
+        flag<"--minify", "Minify JSON output">,
         help<>
     >; // clang-format on
 
     auto opts = options::parse(argc, argv);
     const bool show_unsupp = opts.get<"--show-unsupported">();
     if (auto d = opts.get<"--dict">()) {
-        if (opts.get<"--json">()) dict::Generate(d->contents, dict::JsonBackend());
+        if (opts.get<"--json">()) dict::Generate(d->contents, dict::JsonBackend(opts.get<"--minify">()));
         else dict::Generate(d->contents, dict::TeXBackend());
     } else if (auto i = opts.get<"-i">()) ipa::Translate(*i, show_unsupp);
     else if (auto f = opts.get<"-f">()) ipa::Translate(f->contents, show_unsupp);
