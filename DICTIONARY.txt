@@ -607,7 +607,7 @@ Ráb’h|n.|unknown; presumably the name of some celebrity or local deity|
     \\ \textit{indecl.} \s{def sg} \textit{always} \s{nom} \textit{or} \s{voc} Ráb’h. \textit{Main god of the
         ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps \w{RÁB’H}.}
         \ex \s{Snet’h}, \s{i.17}: \w{au lebálá daú RÁB’H} ‘and thus spake Ráb’h’
-    \\ \w{Ráb’h sénýr} \s{def sg} Lord Ráb’h. \textit{Used for sense~{\bf 1} in all other cases; as with all names, only
+    \\ \w{Ráb’h sénýr} \s{def sg} Lord Ráb’h. \textit{Used for \senseref{1} in all other cases; as with all names, only
         \w{sénýr} is inflected. Old-fashioned often \w{RÁB’H Sénýr}}
         \ex \s{Snet’h}, \s{8.1}: \w{au labraúc RÁB’H naút B’héhénýr} ‘and they came to our Lord Ráb’h’
     \\ \textit{(rarely)} The main god of another culture. \textit{Only attested figuratively. Not capitalised in
