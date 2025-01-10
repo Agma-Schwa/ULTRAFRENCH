@@ -2,7 +2,9 @@
     "entries": [
         {
             "def": "<em>Interrogative and relative</em>.",
+            "def-search": "that what which who whom",
             "etym": "<uf-pf>quoi</uf-pf>",
+            "hw-search": "a",
             "pos": "pron.",
             "senses": [
                 {
@@ -19,64 +21,84 @@
         },
         {
             "def": "Spirit.",
+            "def-search": "spirit",
             "etym": "<uf-pf>âme</uf-pf>",
+            "hw-search": "a",
             "pos": "n.",
             "word": "á"
         },
         {
             "def": "To call (+<uf-s>acc</uf-s> sbd./sth.) (+<uf-s>abs</uf-s> sbd./sth.). <em>In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the second accusative naturally being replaced by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly free word order.</em> <uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’; even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested.",
+            "def-search": "a accusative attested call double even i in is liar’ longer no of the to writings you",
             "etym": "<uf-pf>appeler</uf-pf>",
+            "hw-search": "ab",
             "pos": "v.",
             "word": "aḅ"
         },
         {
             "def": "+<uf-s>acc</uf-s> To prevent, stop (sth. from happening).",
+            "def-search": "from happening prevent sth stop to",
             "etym": "<uf-pf>empêcher</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ábhece, <uf-s>subj</uf-s> ábhecs",
+            "hw-search": "abhec",
             "pos": "v.",
             "word": "ábhec"
         },
         {
             "def": "To behold, descry (+<uf-s>part</uf-s>).",
+            "def-search": "behold descry to",
             "etym": "<uf-pf>apercevoir</uf-pf>",
+            "hw-search": "abhers",
             "pos": "v.",
             "word": "abhérś"
         },
         {
             "def": "To learn.",
+            "def-search": "learn to",
             "etym": "<uf-pf>apprendre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> aḅrâdé, <uf-s>subj</uf-s> aḅrâs",
+            "hw-search": "abra",
             "pos": "v.",
             "word": "aḅrâ"
         },
         {
             "def": "To approach, come near, walk up to (+<uf-s>all</uf-s> sbd./sth.).",
+            "def-search": " approach come near to up walk",
             "etym": "<uf-pf>approcher</uf-pf>",
             "forms": "<uf-s>fut</uf-s> aḅraúc̣é, <uf-s>subj</uf-s> aḅraúc̣s",
+            "hw-search": "abrauc",
             "pos": "v.",
             "word": "aḅraúc̣"
         },
         {
             "def": "The day after tomorrow. <em>The prefix <uf-w>aḅr</uf-w> can be prepended as often as necessary, e.g. <uf-w>aḅraḅraḅrdvê</uf-w> would be ‘in four days’</em>.",
+            "def-search": "after day the tomorrow",
             "etym": "<uf-pf>après-demain</uf-pf>",
+            "hw-search": "abrdve",
             "pos": "adv.",
             "word": "aḅrdvê"
         },
         {
             "def": "+<uf-s>opt</uf-s> Before.",
+            "def-search": "before",
             "etym": "<uf-pf>avant que</uf-pf>",
+            "hw-search": "ab’ha",
             "pos": "conj.",
             "word": "ab’há"
         },
         {
             "def": "Child.",
+            "def-search": "child",
             "etym": "<uf-pf>enfant</uf-pf>",
+            "hw-search": "ab’ha",
             "pos": "n.",
             "word": "áb’há"
         },
         {
+            "def-search": "apart butcher cut down downto fell knock shoot to violently",
             "etym": "<uf-pf>abattre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ab’haḍrẹ́, <uf-s>subj</uf-s> ab’has",
+            "hw-search": "ab’had",
             "pos": "v.",
             "senses": [
                 {
@@ -90,19 +112,25 @@
         },
         {
             "def": "Aviation.",
+            "def-search": "aviation",
             "etym": "<uf-pf>aviation</uf-pf>",
+            "hw-search": "ab’hasy’o",
             "pos": "n.",
             "word": "ab’hásy’ô"
         },
         {
             "def": "+<uf-s>acc</uf-s> To affect, influence.",
+            "def-search": "affect influence to",
             "etym": "<uf-pf>affecter</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ab’hèc’hre, <uf-s>subj</uf-s> ab’hè&shy;c’hes",
+            "hw-search": "ab’hec’h",
             "pos": "v.",
             "word": "ab’hèc’h"
         },
         {
+            "def-search": "bother disturb harass inconvenience sbd to",
             "etym": "<uf-pf>embêtter</uf-pf>",
+            "hw-search": "ab’hed",
             "pos": "v.",
             "senses": [
                 {
@@ -116,32 +144,42 @@
         },
         {
             "def": "Bee.",
+            "def-search": "bee",
             "etym": "<uf-pf>abeille</uf-pf>",
+            "hw-search": "ab’hey’",
             "pos": "n.",
             "word": "ab’héy’"
         },
         {
             "def": "To judge based on appearances.",
+            "def-search": "appearances based judge on to",
             "etym": "<uf-pf>habit ne fait pas le moi&shy;ne</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ab’hínéb’heḅaý’év́ẹ́, <uf-s>subj</uf-s> ab’hínéb’heḅaý’&shy;év́&shy;ás",
+            "hw-search": "ab’hineb’hebay’evra",
             "pos": "v.",
             "word": "ab’hínéb’heḅaý’évrâ"
         },
         {
             "def": "To push, press, shove, drive (+<uf-s>ill</uf-s> into).",
+            "def-search": "drive into press push shove to",
             "etym": "<uf-pf>enfoncer</uf-pf>",
+            "hw-search": "ab’hohe",
             "pos": "v.",
             "word": "áb’hóhẹ"
         },
         {
             "def": "Axe, hatchet.",
+            "def-search": "axe hatchet",
             "etym": "<uf-pf>hache</uf-pf>",
+            "hw-search": "ac",
             "pos": "n.",
             "word": "ac"
         },
         {
+            "def-search": "an axe bring chase cleave cut end get light or point reveal the to with",
             "etym": "from <uf-w>ac</uf-w>",
             "forms": "<uf-s>fut</uf-s> acḍe, <uf-s>subj</uf-s> act’hes",
+            "hw-search": "act’he",
             "pos": "v. tr.",
             "senses": [
                 {
@@ -161,13 +199,17 @@
         },
         {
             "def": "To buy.",
+            "def-search": "buy to",
             "etym": "<uf-pf>acheter</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ac̣ḍrẹ́, <uf-s>subj</uf-s> ac̣t’hes",
+            "hw-search": "act’he",
             "pos": "v. tr.",
             "word": "ac̣t’he"
         },
         {
+            "def-search": "form shape take to",
             "etym": "<uf-pf>attraper</uf-pf>",
+            "hw-search": "adra",
             "pos": "v.",
             "senses": [
                 {
@@ -181,12 +223,16 @@
         },
         {
             "def": "Android.",
+            "def-search": "android",
             "etym": "<uf-pf>androïde</uf-pf>",
+            "hw-search": "adroid",
             "pos": "n.",
             "word": "ádróid"
         },
         {
+            "def-search": "bid farewell goodbye say sbd to",
             "etym": "<uf-pf>adieu</uf-pf>",
+            "hw-search": "ady’y",
             "pos": "v. or interj.",
             "senses": [
                 {
@@ -200,14 +246,18 @@
         },
         {
             "def": "To go.",
+            "def-search": "go to",
             "etym": "<uf-pf>vader</uf-pf>",
             "forms": "<uf-s>fut</uf-s> í, <uf-s>subj</uf-s> al",
+            "hw-search": "ad’he",
             "pos": "v.",
             "word": "ad’he"
         },
         {
+            "def-search": " a adore be crush desire for have in love on to with yearn",
             "etym": "<uf-pf>adore</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ad’hórérẹ́, <uf-s>subj</uf-s> ad’hórs",
+            "hw-search": "ad’hor",
             "pos": "v. tr.",
             "senses": [
                 {
@@ -227,37 +277,49 @@
         },
         {
             "def": "To be adult, grown-up.",
+            "def-search": "adult be grown-up to",
             "etym": "<uf-pf>adulte</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ad’hyle, <uf-s>subj</uf-s> ad’hyls",
+            "hw-search": "ad’hyl",
             "pos": "v.",
             "word": "ad’hyl"
         },
         {
             "def": "To resist, endure, withstand (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "endure resist sth to withstand",
             "etym": "<uf-pf>endure</uf-pf>",
+            "hw-search": "ad’hyr",
             "pos": "v.",
             "word": "ád’hýr"
         },
         {
             "def": "Sky. <em>Often plural, especially in a religious sense.</em>.",
+            "def-search": "sky",
             "etym": "<uf-pf>en-haut</uf-pf>",
+            "hw-search": "ae",
             "pos": "n.",
             "word": "áẹ"
         },
         {
-            "def": "<em>sufficient comparative prefix; see grammar</em>}.",
+            "def": "<em>sufficient comparative prefix; see grammar</em>.",
+            "def-search": "",
             "etym": "<uf-pf>assez</uf-pf>",
+            "hw-search": "ah",
             "pos": "n.",
             "word": "ah"
         },
         {
             "def": "+<uf-s>subj</uf-s> Even though.",
+            "def-search": "even though",
             "etym": "<uf-pf>encore</uf-pf>",
+            "hw-search": "ahaur",
             "pos": "conj.",
             "word": "áhaúr"
         },
         {
+            "def-search": "again still yet",
             "etym": "<uf-pf>encore</uf-pf>",
+            "hw-search": "ahaur",
             "pos": "adv.",
             "senses": [
                 {
@@ -271,87 +333,115 @@
         },
         {
             "def": "To be (very) bloody, bloodstained.",
+            "def-search": "be bloodstained bloody to very",
             "etym": "<uf-pf>ensanglanté</uf-pf>",
+            "hw-search": "ahałat’he",
             "pos": "v.",
             "word": "áhâłát’hẹ"
         },
         {
             "def": "To ensure.",
+            "def-search": "ensure to",
             "etym": "<uf-pf>assurer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ahúré, <uf-s>subj</uf-s> ahúrs",
+            "hw-search": "ahur",
             "pos": "v.",
             "word": "ahúr"
         },
         {
             "def": "To hate, abhor, detest, loathe, despise (+<uf-s>acc</uf-s> sbd./sth.).",
+            "def-search": " abhor despise detest hate loathe to",
             "etym": "<uf-pf>hair</uf-pf>",
+            "hw-search": "air",
             "pos": "v.",
             "word": "aír"
         },
         {
             "def": "Verily, indeed, in fact.",
+            "def-search": "fact in indeed verily",
             "etym": "<uf-pf>en effet</uf-pf>, via metathesis from *<uf-w>âné&shy;b’he</uf-w>",
+            "hw-search": "anb’he",
             "pos": "adv.",
             "word": "ânb’hé"
         },
         {
             "def": "To bring to life, animate.",
+            "def-search": "animate bring life to",
             "etym": "<uf-pf>animer</uf-pf>",
+            "hw-search": "anve",
             "pos": "v. tr.",
             "word": "ánvé"
         },
         {
             "def": "Tree.",
+            "def-search": "tree",
             "etym": "<uf-pf>arbre</uf-pf>",
+            "hw-search": "arb",
             "pos": "n.",
             "word": "árb"
         },
         {
             "def": "Particle.",
+            "def-search": "particle",
             "etym": "<uf-pf>particule</uf-pf>",
+            "hw-search": "ardihyl",
             "pos": "n.",
             "word": "árḍihyl"
         },
         {
             "def": "To arrive.",
+            "def-search": "arrive to",
             "etym": "<uf-pf>arriver</uf-pf>",
+            "hw-search": "arib’h",
             "pos": "v.",
             "word": "áríb’h"
         },
         {
             "def": "To attack, assail, beset, bully (+<uf-s>acc</uf-s> sbd.).",
+            "def-search": "assail attack beset bully sbd to",
             "etym": "<uf-pf>harceler</uf-pf>",
+            "hw-search": "arsl",
             "pos": "v.",
             "word": "ársl"
         },
         {
             "def": "To wrap (+<uf-s>acc</uf-s> around sth.).",
+            "def-search": "around sth to wrap",
             "etym": "<uf-pf>enrouler</uf-pf>",
+            "hw-search": "aryy’",
             "pos": "v.",
             "word": "ârýý’"
         },
         {
             "def": "To be ancient.",
+            "def-search": "ancient be to",
             "etym": "<uf-pf>ancien</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ásy’êr, <uf-s>subj</uf-s> ásy’ês",
+            "hw-search": "asy’e",
             "pos": "v.",
             "word": "ásy’ê"
         },
         {
             "def": "Not, no. <em>Commonly <uf-w>’sý’ýâ</uf-w> after vowels and verbs. This particle is used only in the indicative; see also <uf-w>sá</uf-w>, <uf-w>t’hé</uf-w></em>.",
+            "def-search": "no not",
             "etym": "<uf-pf>pas absolument</uf-pf>",
+            "hw-search": "asy’ya",
             "pos": "particle",
             "word": "asý’ýâ"
         },
         {
             "def": "To hear, perceive (+<uf-s>part</uf-s> sbd./sth.).",
+            "def-search": " hear perceive to",
             "etym": "<uf-pf>entendre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> át’hádé, <uf-s>subj</uf-s> át’hás",
+            "hw-search": "at’had",
             "pos": "v.",
             "word": "át’hád"
         },
         {
+            "def-search": "accumulate heap pile to up",
             "etym": "<uf-pf>entasser</uf-pf>",
+            "hw-search": "at’has",
             "pos": "v.",
             "senses": [
                 {
@@ -365,37 +455,47 @@
         },
         {
             "def": "+<uf-s>acc</uf-s> To bury, inter.",
+            "def-search": "bury inter to",
             "etym": "<uf-pf>enterrer</uf-pf>",
+            "hw-search": "at’her",
             "pos": "v.",
             "word": "át’hér"
         },
         {
+            "def-search": "also and as both too well ’",
             "etym": "<uf-pf>aussi</uf-pf>",
+            "hw-search": "au",
             "pos": "conj.",
             "senses": [
                 {
                     "def": "And, also, as well, too."
                 },
                 {
-                    "def": "<uf-w>au</uf-w> &hellip;} <uf-w>au</uf-w> &hellip;} ‘both &hellip;} and &hellip;’"
+                    "def": "<uf-w>au</uf-w> &hellip; <uf-w>au</uf-w> &hellip; ‘both &hellip; and &hellip;’"
                 }
             ],
             "word": "au"
         },
         {
             "def": "Man, human.",
+            "def-search": "human man",
             "etym": "<uf-pf>homme</uf-pf>",
+            "hw-search": "au",
             "pos": "n.",
             "word": "aú"
         },
         {
-            "def": "Not-. <em>Used to negate nouns, adjectives, and adverbs; see grammar</em>}.",
+            "def": "Not-. <em>Used to negate nouns, adjectives, and adverbs; see grammar</em>.",
+            "def-search": "not-",
             "etym": "<uf-pf>non</uf-pf>",
+            "hw-search": "au",
             "pos": "particle",
             "word": "aû"
         },
         {
+            "def-search": " be beat’ better defeat obliterate than to vanquish",
             "etym": "<uf-pf>oblitérer</uf-pf>",
+            "hw-search": "aublit’her",
             "pos": "v.",
             "senses": [
                 {
@@ -409,19 +509,25 @@
         },
         {
             "def": "To obey.",
+            "def-search": "obey to",
             "etym": "<uf-pf>obéir</uf-pf>",
+            "hw-search": "aub’heir",
             "pos": "v. (in)tr.",
             "word": "aub’heír"
         },
         {
             "def": "Other, another.",
+            "def-search": "another other",
             "etym": "<uf-pf>autre</uf-pf>",
+            "hw-search": "aud",
             "pos": "adj.",
             "word": "auḍ"
         },
         {
+            "def-search": "acquire distance from gain get height obtain on or purchase to",
             "etym": "<uf-pf>obtenir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> auḍy’édrẹ́",
+            "hw-search": "aude",
             "pos": "v.",
             "senses": [
                 {
@@ -435,18 +541,24 @@
         },
         {
             "def": "+<uf-s>opt</uf-s> In case.",
+            "def-search": "case in",
             "etym": "<uf-pf>au cas où</uf-pf>",
+            "hw-search": "auha",
             "pos": "conj.",
             "word": "auha"
         },
         {
             "def": "Today. <em>Archaic, see also <uf-w>júrdy’í</uf-w></em>.",
+            "def-search": "today",
             "etym": "<uf-pf>aujourd’hui</uf-pf>",
+            "hw-search": "aujurdy’i",
             "pos": "adv.",
             "word": "aujúrdy’í"
         },
         {
+            "def-search": "crisis storm tempest thunderstorm turmoil upheaval",
             "etym": "<uf-pf>orage</uf-pf>",
+            "hw-search": "auraj",
             "pos": "n.",
             "senses": [
                 {
@@ -463,145 +575,191 @@
         },
         {
             "def": "To be dark.",
+            "def-search": "be dark to",
             "etym": "<uf-pf>obscur</uf-pf>",
+            "hw-search": "ausc’hyr",
             "pos": "v.",
             "word": "ausc’hýr"
         },
         {
             "def": "+<uf-s>acc</uf-s> To have <em>(usually inalienably)</em>.",
+            "def-search": "have to",
             "etym": "<uf-pf>avoir</uf-pf>",
             "forms": "<uf-s>pres ant</uf-s> and <uf-s>pret</uf-s> y, <em>obsolete</em> <uf-s>pret</uf-s> ab’hẹ, <uf-s>fut</uf-s> aúrẹ́, <uf-s>subj</uf-s> ès",
+            "hw-search": "avar",
             "pos": "v. irreg.",
             "word": "av́ár"
         },
         {
             "def": "To take place, happen.",
+            "def-search": "happen place take to",
             "etym": "<uf-pf>avoir lieu</uf-pf>",
             "forms": "<uf-s>fut</uf-s> lav́árḷýé, <uf-s>subj</uf-s> lav́árḷýs",
+            "hw-search": "avarly",
             "pos": "v.",
             "word": "av́árḷý"
         },
         {
             "def": "To send.",
+            "def-search": "send to",
             "etym": "<uf-pf>envoyer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> áv́áy’érẹ́, <uf-s>subj</uf-s> áv́áy’és",
+            "hw-search": "avay’e",
             "pos": "v.",
             "word": "áv́áy’é"
         },
         {
             "def": "Friend.",
+            "def-search": "friend",
             "etym": "<uf-pf>ami</uf-pf>",
+            "hw-search": "avi",
             "pos": "n.",
             "word": "áví"
         },
         {
             "def": "+<uf-s>opt</uf-s> Unless.",
+            "def-search": "unless",
             "etym": "<uf-pf>à moins que</uf-pf>",
+            "hw-search": "avre",
             "pos": "conj.",
             "word": "ávrê"
         },
         {
             "def": "While, as (temporal), because.",
+            "def-search": "as because temporal while",
             "etym": "<uf-pf>alors</uf-pf>",
+            "hw-search": "ay’aur",
             "pos": "conj.",
             "word": "aý’aúr"
         },
         {
             "def": "<em>Male given name</em>.",
+            "def-search": "",
             "etym": "<uf-pf>Alexandre</uf-pf>",
+            "hw-search": "ay’ec’hsad",
             "pos": "n.",
             "word": "Aý’èc’hsád"
         },
         {
             "def": "To speak.",
+            "def-search": "speak to",
             "etym": "from earlier *<uf-w>ḅał</uf-w> &lt; <uf-pf>parler</uf-pf>",
+            "hw-search": "ał",
             "pos": "v.",
             "word": "áł"
         },
         {
             "def": "To order, enjoin, command.",
+            "def-search": "command enjoin order to",
             "etym": "<uf-pf>enjoindre</uf-pf>",
+            "hw-search": "aed",
             "pos": "v.",
             "word": "áȷ́éd"
         },
         {
             "def": "To base on, found on.",
+            "def-search": "base found on to",
             "etym": "<uf-pf>baser</uf-pf>",
             "forms": "<uf-s>fut</uf-s> bare, <uf-s>subj</uf-s> bas",
+            "hw-search": "ba",
             "pos": "v.",
             "word": "ba"
         },
         {
             "def": "Druid. <em>Only the <uf-w>nórávíc’h</uf-w> is inflected; infixing of adj. is attested.</em> <uf-s>Snet’h</uf-s>, <uf-s>iii.2</uf-s>: <uf-w>derúb’h phá ráinórávíc’h</uf-w> ‘to find the great druid’, with infixed <uf-w>rá</uf-w>.",
+            "def-search": "druid druid’ find great infixed the to with",
             "etym": "<uf-pf>Panoramix</uf-pf>",
+            "hw-search": "ba noravic’h",
             "pos": "n. archaic",
             "word": "ḅá nórávíc’h"
         },
         {
             "def": "To beat, strike, hit (+<uf-s>acc</uf-s> sbd./sth.).",
+            "def-search": " beat hit strike to",
             "etym": "<uf-pf>battre</uf-pf>",
+            "hw-search": "bad",
             "pos": "v.",
             "word": "baḍ"
         },
         {
             "def": "Thought, reflection, meditation, faculty of thinking.",
+            "def-search": "faculty meditation of reflection thinking thought",
             "etym": "<uf-pf>pensée</uf-pf>",
+            "hw-search": "bahe",
             "pos": "n.",
             "word": "ḅáhẹ"
         },
         {
             "def": "Page.",
+            "def-search": "page",
             "etym": "<uf-pf>page</uf-pf>",
+            "hw-search": "baj",
             "pos": "n.",
             "word": "ḅaj"
         },
         {
             "def": "Parent.",
+            "def-search": "parent",
             "etym": "<uf-pf>parent</uf-pf>",
+            "hw-search": "bara",
             "pos": "n.",
             "word": "ḅará"
         },
         {
             "def": "To leave, go away, depart.",
+            "def-search": "away depart go leave to",
             "etym": "<uf-pf>partir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ḅarẹ́, <uf-s>subj</uf-s> ḅars",
+            "hw-search": "bard",
             "pos": "v.",
             "word": "ḅarḍ"
         },
         {
             "def": "(+ <uf-s>aci</uf-s>) To be interested in, willing to, ready to, prepared for.",
+            "def-search": "be for in interested prepared ready to willing",
             "etym": "<uf-pf>partante</uf-pf>",
+            "hw-search": "bardad",
             "pos": "v.",
             "word": "ḅárḍáḍ"
         },
         {
             "def": "Part, portion, piece, faction of a whole.",
+            "def-search": "a faction of part piece portion whole",
             "etym": "<uf-pf>partie</uf-pf>",
+            "hw-search": "barde",
             "pos": "n.",
             "word": "ḅárḍẹ"
         },
         {
             "def": "Participant.",
+            "def-search": "participant",
             "etym": "<uf-pf>participant</uf-pf>",
+            "hw-search": "bardihibha",
             "pos": "n.",
             "word": "ḅárḍihibhá"
         },
         {
             "def": "To seem, appear.",
+            "def-search": "appear seem to",
             "etym": "<uf-pf>parraitre</uf-pf>; future stem from <uf-pf>sembler</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sáb",
+            "hw-search": "bared",
             "pos": "v.",
             "word": "ḅáréḍ"
         },
         {
             "def": "+<uf-s>subj</uf-s> Because. <em>Often used to explain motivation rather than cause, as in e.g. ‘We did that because&hellip;’</em>.",
+            "def-search": "because",
             "etym": "<uf-pf>parce que</uf-pf>",
+            "hw-search": "bas",
             "pos": "conj.",
             "word": "ḅas"
         },
         {
+            "def-search": "appropriate be correct fullfill good gratify healthyto right satisfy to well",
             "etym": "<uf-pf>bon</uf-pf>",
             "forms": "<uf-s>fut</uf-s> baúré, <uf-s>subj</uf-s> véy’ýrs; <uf-s>comp</uf-s> lẹvéy’ýr, y’ŷvéy’ýr, rêvéy’ýr; <uf-s>sup</uf-s> révéy’ýr, râdvâv&shy;éy’&shy;ýr",
+            "hw-search": "bau",
             "pos": "v. irreg.",
             "senses": [
                 {
@@ -618,112 +776,148 @@
         },
         {
             "def": "Bridge.",
+            "def-search": "bridge",
             "etym": "<uf-pf>pont</uf-pf>",
+            "hw-search": "bau",
             "pos": "n.",
             "word": "ḅaú"
         },
         {
             "def": "To forsake, abandon.",
+            "def-search": "abandon forsake to",
             "etym": "<uf-pf>poser un lapin</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ḅauheŷnlabhére, <uf-s>subj</uf-s> ḅauheŷnlabhés",
+            "hw-search": "bauheynlabhe",
             "pos": "v.",
             "word": "ḅauheŷnlabhé"
         },
         {
             "def": "To be impossible, unfeasible.",
+            "def-search": "be impossible to unfeasible",
             "etym": "<uf-pf>impossible</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ḅauhibre, <uf-s>subj</uf-s> ḅauh&shy;ibes",
+            "hw-search": "bauhib",
             "pos": "v.",
             "word": "ḅauhib"
         },
         {
             "def": "Boreas, the North Wind.",
+            "def-search": "boreas north the wind",
             "etym": "<uf-pf>Borée</uf-pf>",
+            "hw-search": "baure",
             "pos": "n.",
             "word": "Baúré"
         },
         {
             "def": "To speak, talk.",
+            "def-search": "speak talk to",
             "etym": "<uf-pf>parler</uf-pf>",
             "forms": "<uf-s>fut</uf-s> báłérẹ́",
+            "hw-search": "bał",
             "pos": "v.",
             "word": "ḅáł"
         },
         {
             "def": "Speaker, interlocutor.",
+            "def-search": "interlocutor speaker",
             "etym": "<uf-pf>parleur</uf-pf>",
+            "hw-search": "bałyr",
             "pos": "n.",
             "word": "ḅáłýr"
         },
         {
             "def": "Shovel.",
+            "def-search": "shovel",
             "etym": "<uf-pf>pelle</uf-pf> + <uf-pf>bêche</uf-pf>",
+            "hw-search": "belbec",
             "pos": "n.",
             "word": "ḅelbec"
         },
         {
             "def": "<em>Male given name</em>.",
+            "def-search": "",
             "etym": "<uf-pf>Bertrand</uf-pf>",
+            "hw-search": "berdra",
             "pos": "n.",
             "word": "Bèrḍrá"
         },
         {
             "def": "To be small, little.",
+            "def-search": "be little small to",
             "etym": "<uf-pf>petit</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rêdẹ́, <uf-s>subj</uf-s> ḅẹt’hes; <uf-s>comp</uf-s> lẹrêd, y’ŷrêd, rêrêd; <uf-s>sup</uf-s> rérêd, râdvârêd",
+            "hw-search": "bet’he",
             "pos": "v. irreg.",
             "word": "ḅẹt’hẹ"
         },
         {
             "def": "To paint.",
+            "def-search": "paint to",
             "etym": "<uf-pf>peinture</uf-pf>",
+            "hw-search": "bet’hyr",
             "pos": "v.",
             "word": "ḅét’hýr"
         },
         {
             "def": "Country, land, region, nation.",
+            "def-search": "country land nation region",
             "etym": "<uf-pf>pays</uf-pf>",
+            "hw-search": "bey’i",
             "pos": "n.",
             "word": "ḅéy’í"
         },
         {
             "def": "Wine.",
+            "def-search": "wine",
             "etym": "<uf-pf>pinard</uf-pf>",
+            "hw-search": "binar",
             "pos": "n.",
             "word": "ḅínár"
         },
         {
-            "def": "<em>(obsolete)</em> Billion (long scale, i.e. $10^{12}$$). \\textit{Replaced with modern \\w{dýwaú})}.$",
+            "def": "<em>(obsolete)</em> Billion (long scale, i.e. $10^{12}$). <em>Replaced with modern <uf-w>dýwaú</uf-w>)</em>.",
+            "def-search": "billion ie long scale",
             "etym": "<uf-pf>billion</uf-pf>",
+            "hw-search": "biwau",
             "pos": "n.",
             "word": "biwaú"
         },
         {
             "def": "+<uf-s>opt</uf-s> After.",
+            "def-search": "after",
             "etym": "<uf-pf>après que</uf-pf>",
+            "hw-search": "bre",
             "pos": "conj.",
             "word": "ḅré"
         },
         {
             "def": "Dust.",
+            "def-search": "dust",
             "etym": "<uf-pf>poussière</uf-pf>",
+            "hw-search": "busy’er",
             "pos": "n.",
             "word": "ḅusy’ér"
         },
         {
             "def": "+<uf-s>acc</uf-s> <em>or</em> <uf-s>part</uf-s> To need, require.",
+            "def-search": "need require to",
             "etym": "<uf-pf>besoin</uf-pf>",
+            "hw-search": "bze",
             "pos": "v.",
             "word": "bźé"
         },
         {
             "def": "Wind, breeze.",
+            "def-search": "breeze wind",
             "etym": "<uf-pf>vent</uf-pf>",
+            "hw-search": "b’ha",
             "pos": "n.",
             "word": "b’há"
         },
         {
+            "def-search": "ripples undulations wave",
             "etym": "<uf-pf>vague</uf-pf>",
+            "hw-search": "b’har",
             "pos": "n.",
             "senses": [
                 {
@@ -737,61 +931,81 @@
         },
         {
             "def": "To blow.",
+            "def-search": "blow to",
             "etym": "<uf-pf>ventilateur</uf-pf>",
+            "hw-search": "b’hat’hiy’at’hyr",
             "pos": "v.",
             "word": "b’hát’hiý’at’hýr"
         },
         {
             "def": "To be yours (<uf-s>pl</uf-s>).",
+            "def-search": "be to yours",
             "etym": "<uf-pf>vôtre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> b’hauḍre, <uf-s>subj</uf-s> b’haus",
+            "hw-search": "b’haud",
             "pos": "v.",
             "word": "b’hauḍ"
         },
         {
             "def": "To hover, float.",
+            "def-search": "float hover to",
             "etym": "<uf-pf>voler</uf-pf>",
+            "hw-search": "b’haul",
             "pos": "v.",
             "word": "b’haul"
         },
         {
             "def": "The day before yesterday. <em>The prefix <uf-w>b’hâ</uf-w> can be prepended as often as necessary, e.g. <uf-w>b’hâb’hâb’hây’ér</uf-w> would be ‘four days ago’</em>.",
+            "def-search": "before day the yesterday",
             "etym": "<uf-pf>avant-hier</uf-pf>",
+            "hw-search": "b’hay’er",
             "pos": "adv.",
             "word": "b’hây’ér"
         },
         {
             "def": "+<uf-s>subj</uf-s> So that, so as to, to, in order to. <em>Commonly enclitic <uf-w>’b’h</uf-w> after vowels</em>.",
+            "def-search": "as in order so that to",
             "etym": "<uf-pf>envers</uf-pf>",
+            "hw-search": "b’he",
             "pos": "conj.",
             "word": "b’he"
         },
         {
             "def": "Grape.",
+            "def-search": "grape",
             "etym": "<uf-pf>vin</uf-pf>",
+            "hw-search": "b’he",
             "pos": "n.",
             "word": "b’hé"
         },
         {
             "def": "Event, occurrence.",
+            "def-search": "event occurrence",
             "etym": "<uf-pf>évènement</uf-pf>",
+            "hw-search": "b’henva",
             "pos": "n.",
             "word": "b’hénvâ"
         },
         {
             "def": "To be virtuous.",
+            "def-search": "be to virtuous",
             "etym": "<uf-pf>vertueux</uf-pf>",
+            "hw-search": "b’herdy’y",
             "pos": "v.",
             "word": "b’hérḍy’ŷ"
         },
         {
             "def": "Truth.",
+            "def-search": "truth",
             "etym": "from <uf-pf>vérité</uf-pf>; the /i/ disappeared during Early Middle UF",
+            "hw-search": "b’hert’he",
             "pos": "n.",
             "word": "b’hért’he"
         },
         {
+            "def-search": "an eye guard keep on over to watch",
             "etym": "<uf-pf>veiller</uf-pf>",
+            "hw-search": "b’hey’",
             "pos": "v.",
             "senses": [
                 {
@@ -805,105 +1019,139 @@
         },
         {
             "def": "Bicycle.",
+            "def-search": "bicycle",
             "etym": "from archaic <uf-w>b’heý’auhic’h</uf-w>",
+            "hw-search": "b’hey’au",
             "pos": "n.",
             "word": "b’heý’au"
         },
         {
             "def": "Bicycle.",
+            "def-search": "bicycle",
             "etym": "<uf-pf>vélo-cycle</uf-pf>",
+            "hw-search": "b’hey’auhic’h",
             "pos": "n. archaic",
             "word": "b’heý’auhic’h"
         },
         {
             "def": "To be quick, fast.",
+            "def-search": "be fast quick to",
             "etym": "back-formation from *<uf-w>b’heý’os</uf-w>, reanalysed as a subjunctive; from <uf-pf>véloce</uf-pf>",
             "forms": "<uf-s>fut</uf-s> b’heý’o&shy;se, <uf-s>subj</uf-s> b’heý’os",
+            "hw-search": "b’hey’o",
             "pos": "v.",
             "word": "b’heý’o"
         },
         {
             "def": "Vine.",
+            "def-search": "vine",
             "etym": "<uf-pf>vigne</uf-pf>",
+            "hw-search": "b’hi",
             "pos": "n.",
             "word": "b’hí"
         },
         {
             "def": "Victory.",
+            "def-search": "victory",
             "etym": "<uf-pf>victoire</uf-pf>",
+            "hw-search": "b’hic’hdrar",
             "pos": "n.",
             "word": "b’hic’hḍrár"
         },
         {
             "def": "To be empty.",
+            "def-search": "be empty to",
             "etym": "<uf-pf>vide</uf-pf>",
+            "hw-search": "b’hid",
             "pos": "v.",
             "word": "b’hid"
         },
         {
             "def": "Vision.",
+            "def-search": "vision",
             "etym": "<uf-pf>vision</uf-pf>",
+            "hw-search": "b’hizy’o",
             "pos": "n.",
             "word": "b’hizy’ô"
         },
         {
             "def": "To fly. Flight.",
+            "def-search": "flight fly to",
             "etym": "<uf-pf>voler</uf-pf>",
+            "hw-search": "b’hoy’e",
             "pos": "v.",
             "word": "b’hóy’ẹ"
         },
         {
             "def": "Vault, arched ceiling.",
+            "def-search": "arched ceiling vault",
             "etym": "<uf-pf>voûte</uf-pf>",
+            "hw-search": "b’hud",
             "pos": "n.",
             "word": "b’huḍ"
         },
         {
             "def": "+<uf-s>instr</uf-s> To be incapable of being af&shy;fec&shy;ted by, invulnerable to.",
+            "def-search": "affected be being by incapable invulnerable of to",
             "etym": "<uf-pf>invulnérable</uf-pf>",
             "forms": "<uf-s>fut</uf-s> b’hýlnẹ́rẹ́, <uf-s>subj</uf-s> b’hýlnẹ́rs",
+            "hw-search": "b’hylner",
             "pos": "v.",
             "word": "b’hýlnẹ́r"
         },
         {
             "def": "Anew.",
+            "def-search": "anew",
             "etym": "old <uf-s>all</uf-s> of <uf-w>núb’hâ</uf-w>",
+            "hw-search": "b’hynnub’ha",
             "pos": "adv.",
             "word": "b’hŷnnúb’hâ"
         },
         {
             "def": "To shimmer, iridesce.",
+            "def-search": "iridesce shimmer to",
             "etym": "<uf-pf>chatoyer</uf-pf>",
+            "hw-search": "cadray’e",
             "pos": "v.",
             "word": "caḍráy’ẹ́"
         },
         {
             "def": "To hunt.",
+            "def-search": "hunt to",
             "etym": "<uf-pf>chasser</uf-pf>",
             "forms": "<uf-s>fut</uf-s> cahe, <uf-s>subj</uf-s> cas",
+            "hw-search": "cah",
             "pos": "v.",
             "word": "cah"
         },
         {
             "def": "Each other, one another.",
+            "def-search": "another each one other",
             "etym": "<uf-pf>chacun</uf-pf>",
+            "hw-search": "cahy",
             "pos": "pron. pl. indef.",
             "word": "cahý"
         },
         {
             "def": "<em>Male given name, equivalent to English ‘Kyle’ or ‘Charles’. Often declined like a regular noun, e.g. <uf-s>nom</uf-s> <uf-w>Lác̣ár</uf-w></em>.",
+            "def-search": "",
+            "hw-search": "car",
             "pos": "n.",
             "word": "Cár"
         },
         {
             "def": "To be hot.",
+            "def-search": "be hot to",
             "etym": "<uf-pf>chaud</uf-pf>",
+            "hw-search": "ce",
             "pos": "v.",
             "word": "cẹ"
         },
         {
+            "def-search": "a at bad do fail flunk job not pass stumble to",
             "etym": "<uf-pf>échouer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ćere, <uf-s>subj</uf-s> ćes",
+            "hw-search": "ce",
             "pos": "v.",
             "senses": [
                 {
@@ -917,19 +1165,25 @@
         },
         {
             "def": "<em>(chess)</em> Check.",
+            "def-search": "check",
             "etym": "phonetic respelling of <uf-w>cèc’h</uf-w>",
+            "hw-search": "cec",
             "pos": "n.",
             "word": "cèc"
         },
         {
             "def": "Failure, defeat.",
+            "def-search": "defeat failure",
             "etym": "<uf-pf>échec</uf-pf>",
+            "hw-search": "cec’h",
             "pos": "n.",
             "word": "cèc’h"
         },
         {
+            "def-search": "be dear friends important sbd to with",
             "etym": "<uf-pf>cher</uf-pf>",
             "forms": "<uf-s>fut</uf-s> céré, <uf-s>subj</uf-s> cés",
+            "hw-search": "cer",
             "pos": "v.",
             "senses": [
                 {
@@ -946,18 +1200,24 @@
         },
         {
             "def": "Street.",
+            "def-search": "street",
             "etym": "<uf-pf>chemin</uf-pf>",
+            "hw-search": "ceve",
             "pos": "n.",
             "word": "cévê"
         },
         {
             "def": "Skill, capacity, ability.",
+            "def-search": "ability capacity skill",
             "etym": "<uf-pf>capacité</uf-pf>",
+            "hw-search": "c’habhahit’he",
             "pos": "n.",
             "word": "c’habhahit’hẹ"
         },
         {
+            "def-search": "boat by ship",
             "etym": "<uf-pf>canard</uf-pf>",
+            "hw-search": "c’hanar",
             "pos": "n.",
             "senses": [
                 {
@@ -971,179 +1231,235 @@
         },
         {
             "def": "Duck (bir).",
+            "def-search": "bir duck",
             "etym": "<uf-pf>canot</uf-pf>",
+            "hw-search": "c’hanau",
             "pos": "n.",
             "word": "c’hánaú"
         },
         {
             "def": "To end for good, put to a permanent end.",
+            "def-search": "a end for good permanent put to",
             "etym": "<uf-pf>les carrotes sont cuites</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’hár&shy;aúc&shy;re, <uf-s>subj</uf-s> c’háraúc",
+            "hw-search": "c’haraucid",
             "pos": "v.",
             "word": "c’háraúciḍ"
         },
         {
             "def": "Exception.",
+            "def-search": "exception",
             "etym": "cas spécial",
+            "hw-search": "c’hasbesy’al",
             "pos": "n.",
             "word": "c’hasḅesy’ál"
         },
         {
+            "def-search": "holy",
             "etym": "see sense 2",
+            "hw-search": "c’hau",
             "pos": "adj.",
             "senses": [
                 {
                     "def": "Holy."
                 },
                 {
-                    "def": "<uf-w>c’haú-</uf-w><uf-mut>L</uf-mut>} <em>‘religious prefix’, prepended in derivation to nouns that have a religous connotation; this is historically a back-formation from <uf-w>c’haúfrér</uf-w> and <uf-w>c’haúhýr</uf-w> which happen to both start with this ‘prefix’</em>."
+                    "def": "<uf-w>c’haú-</uf-w><uf-mut><sup>L</sup></uf-mut> <em>‘religious prefix’, prepended in derivation to nouns that have a religous connotation; this is historically a back-formation from <uf-w>c’haúfrér</uf-w> and <uf-w>c’haúhýr</uf-w> which happen to both start with this ‘prefix’</em>."
                 }
             ],
             "word": "c’haú"
         },
         {
             "def": "Prophecy.",
+            "def-search": "prophecy",
             "etym": "<uf-w>c’haú</uf-w> + <uf-w>áł</uf-w>",
+            "hw-search": "c’hauał",
             "pos": "n.",
             "word": "c’haúáł"
         },
         {
             "def": "Parish.",
+            "def-search": "parish",
             "etym": "<uf-w>c’haú</uf-w> + <uf-pf>paroisse</uf-pf>",
+            "hw-search": "c’haubharras",
             "pos": "n.",
             "word": "c’haúbhárrás"
         },
         {
             "def": "Composition, arrangement, structure.",
+            "def-search": "arrangement composition structure",
             "etym": "<uf-pf>composition</uf-pf>",
+            "hw-search": "c’haubhausy’o",
             "pos": "n.",
             "word": "c’haúbhausy’ô"
         },
         {
             "def": "Pilgrimage.",
+            "def-search": "pilgrimage",
             "etym": "<uf-w>c’haú</uf-w> + <uf-pf>pèlerinage</uf-pf>",
+            "hw-search": "c’haubhełinaj",
             "pos": "n.",
             "word": "c’haúbhèłínáj"
         },
         {
             "def": "To purify (+<uf-s>acc</uf-s> sbd./sth.).",
+            "def-search": " purify to",
             "etym": "<uf-w>c’haú</uf-w> + <uf-pf>purifier</uf-pf>",
+            "hw-search": "c’haubhyrif",
             "pos": "n.",
             "word": "c’haúbhýríf"
         },
         {
             "def": "To be complacent; to be accepting in the presence of +<uf-s>gen</uf-s> sbd./sth. perceived as negative.",
+            "def-search": "accepting as be complacent in negative of perceived presence the to",
             "etym": "<uf-pf>complaire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’haúḅlére, <uf-s>subj</uf-s> c’haúḅlés",
+            "hw-search": "c’haubler",
             "pos": ".v",
             "word": "c’haúḅlér"
         },
         {
             "def": "+<uf-s>part</uf-s> To comprehend, understand, gr&shy;asp.",
+            "def-search": "comprehend grasp to understand",
             "etym": "<uf-pf>comprendre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’haúḅrâdrẹ́, <uf-s>subj</uf-s> c’haúḅrâs",
+            "hw-search": "c’haubrad",
             "pos": "v.",
             "word": "c’haúḅrâd"
         },
         {
             "def": "To persuade.",
+            "def-search": "persuade to",
             "etym": "<uf-pf>convaincre</uf-pf>",
+            "hw-search": "c’haub’hec’h",
             "pos": "v.",
             "word": "c’haúb’héc’h"
         },
         {
             "def": "Account, rec&shy;ord.",
+            "def-search": "account record",
             "etym": "<uf-pf>compte-rendu</uf-pf>",
+            "hw-search": "c’haudred’he",
             "pos": "n.",
             "word": "c’haúḍrêd’hẹ"
         },
         {
             "def": "To contain.",
+            "def-search": "contain to",
             "etym": "<uf-pf>confiner</uf-pf>",
+            "hw-search": "c’haufi",
             "pos": "v.",
             "word": "c’haúfí"
         },
         {
             "def": "Brother (religious). <em>Masc. or pl. only, see also <uf-w>c’haúhýr</uf-w></em>.",
+            "def-search": "brother religious",
             "etym": "<uf-pf>confrère</uf-pf>",
+            "hw-search": "c’haufrer",
             "pos": "n.",
             "word": "c’haúfrér"
         },
         {
             "def": "Mo&shy;nastery.",
+            "def-search": "monastery",
             "etym": "<uf-w>c’haú</uf-w> + <uf-pf>com&shy;mu&shy;nau&shy;té</uf-pf>",
+            "hw-search": "c’hauhauvnaut’he",
             "pos": "n.",
             "word": "c’haúhaúvnaút’hẹ"
         },
         {
             "def": "Sister (religious). <em>Fem. only, see also <uf-w>c’haúfrér</uf-w></em>.",
+            "def-search": "religious sister",
             "etym": "<uf-pf>consœur</uf-pf>",
+            "hw-search": "c’hauhyr",
             "pos": "n.",
             "word": "c’haúhýr"
         },
         {
             "def": "Knowledge.",
+            "def-search": "knowledge",
             "etym": "<uf-pf>connaissance</uf-pf>",
+            "hw-search": "c’haunehas",
             "pos": ".n",
             "word": "c’haúnéhás"
         },
         {
             "def": "+<uf-s>subj</uf-s> As, because, since.",
+            "def-search": "as because since",
             "etym": "<uf-pf>car</uf-pf> + <uf-pf>comme</uf-pf>",
+            "hw-search": "c’haur",
             "pos": "conj.",
             "word": "c’haúr"
         },
         {
             "def": "Magic.",
+            "def-search": "magic",
             "etym": "<uf-w>c’haú</uf-w> + <uf-pf>magie</uf-pf>",
+            "hw-search": "c’hauvaje",
             "pos": "n.",
             "word": "c’haúv́ájẹ"
         },
         {
             "def": "Community.",
+            "def-search": "community",
             "etym": "<uf-pf>communauté</uf-pf>",
+            "hw-search": "c’hauvnaut’he",
             "pos": "n.",
             "word": "c’haúvnaút’hẹ"
         },
         {
             "def": "Naught, absolutely no&shy;thing.",
+            "def-search": "absolutely naught nothing",
             "etym": "<uf-pf>que dalle</uf-pf>",
+            "hw-search": "c’hd’hal",
             "pos": "adv.",
             "word": "c’hd’hal"
         },
         {
             "def": "The Promised Land.",
+            "def-search": "land promised the",
             "etym": "<uf-pf>Québec</uf-pf>",
+            "hw-search": "c’hebec’h",
             "pos": "n.",
             "word": "C’hebèc’h"
         },
         {
             "def": "Some, a few, a couple of.",
+            "def-search": "a couple few of some",
             "etym": "<uf-pf>quelques</uf-pf>",
+            "hw-search": "c’hel",
             "pos": "det. postpos.",
             "word": "c’hèl"
         },
         {
             "def": "Someone, somebody, anyone, anybody.",
+            "def-search": "anybody anyone somebody someone",
             "etym": "<uf-pf>quelqu’un</uf-pf>",
+            "hw-search": "c’helc’hy",
             "pos": "pron.",
             "word": "c’hèlc’hý"
         },
         {
             "def": "<em>see grammar; often <uf-w>c’h’s</uf-w> in older texts</em>.",
+            "def-search": "",
             "etym": "<uf-pf>qu’est-ce que</uf-pf>",
+            "hw-search": "c’hes",
             "pos": "quest. part.",
             "word": "c’hes"
         },
         {
             "def": "Is it? <em>Also substituted for other forms of ‘to be’ in questions, particularly for the plural neuter; stressed on the first syllable</em>.",
+            "def-search": "is it",
             "etym": "contraction of <uf-w>c’hes</uf-w> + <uf-w>se</uf-w>",
+            "hw-search": "c’hesse",
             "pos": "",
             "word": "c’hesse"
         },
         {
+            "def-search": "have in include offer possess sell stock to",
             "etym": "<uf-pf>inclure</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’hlýré, <uf-s>subj</uf-s> c’hlýrs",
+            "hw-search": "c’hlyr",
             "pos": "v.",
             "senses": [
                 {
@@ -1160,14 +1476,18 @@
         },
         {
             "def": "To compare.",
+            "def-search": "compare to",
             "etym": "<uf-pf>comparer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’hóbhárre, <uf-s>subj</uf-s> c’hó&shy;bhárs",
+            "hw-search": "c’hobhar",
             "pos": "v.",
             "word": "c’hóbhár"
         },
         {
+            "def-search": "about consider ponder think through to",
             "etym": "<uf-pf>considérer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’hóhid’hẹ́rẹ́, <uf-s>subj</uf-s> c’hóhid’hés",
+            "hw-search": "c’hohid’he",
             "pos": "v.",
             "senses": [
                 {
@@ -1181,19 +1501,25 @@
         },
         {
             "def": "Known, familiar, well-kn&shy;own.",
+            "def-search": "familiar known well-known",
             "etym": "<uf-pf>connu</uf-pf>",
+            "hw-search": "c’hony",
             "pos": "adj.",
             "word": "c’hóný"
         },
         {
             "def": "Body.",
+            "def-search": "body",
             "etym": "<uf-pf>corps</uf-pf>",
+            "hw-search": "c’hor",
             "pos": "n.",
             "word": "c’hór"
         },
         {
+            "def-search": "as begin beginning commence out start to",
             "etym": "<uf-pf>commencer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’hóvârẹ́, <uf-s>subj</uf-s> c’hóv&shy;ás",
+            "hw-search": "c’hova",
             "pos": "v.",
             "senses": [
                 {
@@ -1209,8 +1535,10 @@
             "word": "c’hóvâ"
         },
         {
+            "def-search": "communicate sbdcommunication to with",
             "etym": "<uf-pf>communiquer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’hóvníc’hre, <uf-s>subj</uf-s> c’hóvníc’hes",
+            "hw-search": "c’hovnic’h",
             "pos": "v.",
             "senses": [
                 {
@@ -1224,133 +1552,177 @@
         },
         {
             "def": "To write.",
+            "def-search": "to write",
             "etym": "<uf-pf>écrire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’hrírẹ́, <uf-s>subj</uf-s> c’hrís",
+            "hw-search": "c’hrir",
             "pos": "v.",
             "word": "c’hrír"
         },
         {
             "def": "Flow.",
+            "def-search": "flow",
             "etym": "<uf-pf>écoulement</uf-pf>",
+            "hw-search": "c’hulva",
             "pos": "n.",
             "word": "c’hulvâ"
         },
         {
             "def": "To shrink, reduce in size, narrow.",
+            "def-search": "in narrow reduce shrink size to",
             "etym": "<uf-pf>court</uf-pf>",
+            "hw-search": "c’hur",
             "pos": "v.",
             "word": "c’húr"
         },
         {
             "def": "To run.",
+            "def-search": "run to",
             "etym": "<uf-pf>courrir</uf-pf>",
+            "hw-search": "c’hur",
             "pos": "v.",
             "word": "c’húr"
         },
         {
             "def": "Heart.",
+            "def-search": "heart",
             "etym": "<uf-pf>cœur</uf-pf>",
+            "hw-search": "c’hyr",
             "pos": "n.",
             "word": "c’hýr"
         },
         {
             "def": "Tooth.",
+            "def-search": "tooth",
             "etym": "<uf-pf>dent</uf-pf>",
+            "hw-search": "da",
             "pos": "n.",
             "word": "dá"
         },
         {
             "def": "Whereas.",
+            "def-search": "whereas",
             "etym": "<uf-pf>tandis</uf-pf>",
+            "hw-search": "da",
             "pos": "conj.",
             "word": "ḍá"
         },
         {
             "def": "Stand, stall, booth.",
+            "def-search": "booth stall stand",
             "etym": "<uf-pf>stand</uf-pf>",
+            "hw-search": "dad",
             "pos": "n.",
             "word": "ḍád"
         },
         {
             "def": "Sure, ok, agreed, fine.",
+            "def-search": "agreed fine ok sure",
             "etym": "<uf-pf>d’accord</uf-pf>",
+            "hw-search": "dahaur",
             "pos": "particle",
             "word": "dahaúr"
         },
         {
             "def": "Table.",
+            "def-search": "table",
             "etym": "<uf-pf>tableau</uf-pf>",
+            "hw-search": "dale",
             "pos": "n.",
             "word": "ḍalẹ"
         },
         {
             "def": "Establishment, institution.",
+            "def-search": "establishment institution",
             "etym": "<uf-pf>établissement</uf-pf>",
+            "hw-search": "dalisva",
             "pos": "n.",
             "word": "ḍalisvâ"
         },
         {
             "def": "To throw, cast, yeet (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "cast sth throw to yeet",
             "etym": "<uf-pf>darder</uf-pf>",
+            "hw-search": "dar",
             "pos": "v.",
             "word": "dár"
         },
         {
             "def": "Weight.",
+            "def-search": "weight",
             "etym": "<uf-pf>tonne</uf-pf>",
+            "hw-search": "dau",
             "pos": "n.",
             "word": "ḍaú"
         },
         {
             "def": "Therefore, then, thus.",
+            "def-search": "then therefore thus",
             "etym": "<uf-pf>donc</uf-pf>",
+            "hw-search": "dauc’h",
             "pos": "particle",
             "word": "daú(c’h)"
         },
         {
             "def": "To fall, drop.",
+            "def-search": "drop fall to",
             "etym": "<uf-pf>tomber</uf-pf>",
+            "hw-search": "daub’h",
             "pos": "v. intr.",
             "word": "ḍaúb’h"
         },
         {
             "def": "To faint.",
+            "def-search": "faint to",
             "etym": "<uf-pf>tomber dans les pommes</uf-pf>",
             "forms": "<uf-s>fut</uf-s> daúb’hedwébhóre, <uf-s>subj</uf-s> daúb’hedwébhós",
+            "hw-search": "daub’hedwebho",
             "pos": "v.",
             "word": "daúb’hedwébhó"
         },
         {
             "def": "Everything else, any other (one).",
+            "def-search": "any else everything one other",
             "etym": "from earlier <uf-w>ḍẹ auḍ</uf-w>",
+            "hw-search": "daud",
             "pos": "def. pron.",
             "word": "ḍauḍ"
         },
         {
             "def": "<em>male or female given name, equivalent to English ‘Dominic’</em>.",
+            "def-search": "",
+            "hw-search": "dauvnic’h",
             "pos": "n.",
             "word": "Daúvníc’h"
         },
         {
             "def": "Person, individual.",
+            "def-search": "individual person",
             "etym": "<uf-pf>individu</uf-pf>",
+            "hw-search": "db’hid’h",
             "pos": "n.",
             "word": "db’hid’h"
         },
         {
             "def": "+<uf-s>subj</uf-s> Once, when once, as soon as.",
+            "def-search": "as once soon when",
             "etym": "<uf-pf>dès que</uf-pf>",
+            "hw-search": "de",
             "pos": "conj.",
             "word": "de"
         },
         {
             "def": "Then (sequential), next.",
+            "def-search": "next sequential then",
             "etym": "from <uf-w>Provençal</uf-w> <em>den</em>",
+            "hw-search": "de",
             "pos": "particle",
             "word": "dẹ́"
         },
         {
+            "def-search": "all entire every form obsolete of whole",
             "etym": "<uf-pf>tout</uf-pf>",
+            "hw-search": "de",
             "pos": "adj.",
             "senses": [
                 {
@@ -1364,19 +1736,25 @@
         },
         {
             "def": "To displease (+<uf-s>acc</uf-s> sbd.), be displeasing.",
+            "def-search": "be displease displeasing sbd to",
             "etym": "<uf-pf>déplaire</uf-pf>",
+            "hw-search": "debler",
             "pos": "v.",
             "word": "deḅlér"
         },
         {
             "def": "To become, turn into (+<uf-s>transl</uf-s> sth./sbd.). <em>The subject is in the <uf-s>abs</uf-s> case</em>.",
+            "def-search": "become into sthsbd to turn",
             "etym": "<uf-pf>devenir</uf-pf>",
+            "hw-search": "deb’hni",
             "pos": "v.",
             "word": "dẹb’hní"
         },
         {
+            "def-search": "asunder pieces rend rip tear to",
             "etym": "<uf-pf>déchirer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> dec̣irrẹ, <uf-s>subj</uf-s> dec̣írs",
+            "hw-search": "decir",
             "pos": "v.",
             "senses": [
                 {
@@ -1390,36 +1768,48 @@
         },
         {
             "def": "Right (side), right-handed.",
+            "def-search": "right right-handed side",
             "etym": "<uf-pf>dextre</uf-pf>",
+            "hw-search": "dec’h",
             "pos": "adj.",
             "word": "dèc’h"
         },
         {
             "def": "Technically.",
+            "def-search": "technically",
             "etym": "<uf-pf>techniquement</uf-pf>",
+            "hw-search": "dec’hnic’hva",
             "pos": "adv.",
             "word": "ḍèc’hníc’hvâ"
         },
         {
             "def": "Fuck. <em>Generic expletive</em>.",
+            "def-search": "fuck",
             "etym": "<uf-pf>putain de merde</uf-pf>",
+            "hw-search": "dedver",
             "pos": "interj.",
             "word": "ḍédv́ér"
         },
         {
             "def": "To be below, beneath.",
+            "def-search": "be below beneath to",
             "etym": "<uf-pf>dessous</uf-pf>",
+            "hw-search": "deh",
             "pos": "v.",
             "word": "dẹh"
         },
         {
             "def": "To undress +<uf-s>acc</uf-s> sbd.",
+            "def-search": "sbd to undress",
             "etym": "<uf-pf>déshabiller</uf-pf>",
+            "hw-search": "dehab’hiy’",
             "pos": "v. tr.",
             "word": "dehab’híy’"
         },
         {
+            "def-search": "a body of sidesurface top upper water",
             "etym": "<uf-pf>dessus</uf-pf>",
+            "hw-search": "dehe",
             "pos": "n.",
             "senses": [
                 {
@@ -1433,13 +1823,17 @@
         },
         {
             "def": "To decide (+<uf-s>inf</uf-s> to do sth.).",
+            "def-search": "decide do sth to",
             "etym": "<uf-pf>décider</uf-pf>",
+            "hw-search": "dehid",
             "pos": "v.",
             "word": "dehid"
         },
         {
             "def": "<em>Emphatic particle; only used in the preterite</em>.",
+            "def-search": "done ever have sth to",
             "etym": "from <uf-w>dejẹ</uf-w>",
+            "hw-search": "dej",
             "pos": "particle",
             "senses": [
                 {
@@ -1450,82 +1844,108 @@
         },
         {
             "def": "Already.",
+            "def-search": "already",
             "etym": "<uf-pf>déjà</uf-pf>",
+            "hw-search": "deje",
             "pos": "adv.",
             "word": "dejẹ"
         },
         {
             "def": "<em>Emphatic particle, used as an intensifier, often postpositive after the verb, but not so much intensifying the verb directly as it does the entire clause.</em> <uf-s>Snet’h</uf-s>, <uf-s>ii.34</uf-s>: <uf-w>lá-árb srýlé dèl</uf-w> ‘so it was that the tree was burning’ or ‘the tree was burning fiercely’, or ‘indeed, the tree was burning’.",
+            "def-search": "burning burning’ fiercely’ indeed it or so that the tree was",
             "etym": "<uf-pf>tel</uf-pf>",
+            "hw-search": "del",
             "pos": "particle",
             "word": "ḍèl"
         },
         {
             "def": "<em>exclusively plural <uf-w>lḍénéb</uf-w></em> Darkness.",
+            "def-search": "darkness",
             "etym": "<uf-pf>ténèbres</uf-pf>",
+            "hw-search": "deneb",
             "pos": "n. pl.",
             "word": "ḍénéb"
         },
         {
             "def": "To silence, shut up.",
+            "def-search": "shut silence to up",
             "etym": "<uf-pf>taire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ḍérẹ́",
+            "hw-search": "der",
             "pos": "v.",
             "word": "ḍèr"
         },
         {
             "def": "To demand.",
+            "def-search": "demand to",
             "etym": "<uf-pf>interroger</uf-pf>",
+            "hw-search": "derauj",
             "pos": "v.",
             "word": "ḍéraúj"
         },
         {
             "def": "To be terrestrial, earth-based.",
+            "def-search": "be earth-based terrestrial to",
             "etym": "<uf-pf>terrestre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ḍérésḍrẹ́, <uf-s>subj</uf-s> ḍérésḍs",
+            "hw-search": "deresd",
             "pos": "v.",
             "word": "ḍérésḍ"
         },
         {
             "def": "To be terrible (all senses).",
+            "def-search": "all be senses terrible to",
             "etym": "<uf-pf>terrible</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ḍẹ́ríre, <uf-s>subj</uf-s> ḍẹ́rís",
+            "hw-search": "derib",
             "pos": "v.",
             "word": "ḍẹ́ríb"
         },
         {
             "def": "Last, final, ultimate.",
+            "def-search": "final last ultimate",
             "etym": "<uf-pf>dernier</uf-pf>",
+            "hw-search": "derny’e",
             "pos": "adj.",
             "word": "dérny’é"
         },
         {
             "def": "Death.",
+            "def-search": "death",
             "etym": "<uf-pf>dernier</uf-pf> + <uf-pf>souffle</uf-pf>",
+            "hw-search": "derny’ehuf",
             "pos": "n.",
             "word": "dérny’ẹ́huf"
         },
         {
             "def": "To intercede.",
+            "def-search": "intercede to",
             "etym": "<uf-pf>intercéder</uf-pf>",
+            "hw-search": "dersed",
             "pos": "v.",
             "word": "ḍérsèd"
         },
         {
             "def": "Heat, warmth.",
+            "def-search": "heat warmth",
             "etym": "<uf-pf>thermique</uf-pf>",
+            "hw-search": "dervic’h",
             "pos": "n.",
             "word": "ḍèrvíc’h"
         },
         {
             "def": "To detect, discover, uncover, reveal.",
+            "def-search": "detect discover reveal to uncover",
             "etym": "<uf-pf>déceler</uf-pf>",
             "forms": "<uf-s>fut</uf-s> deslẹre, <uf-s>subj</uf-s> deslẹs",
+            "hw-search": "desle",
             "pos": "v.",
             "word": "deslẹ"
         },
         {
+            "def-search": "dwell live remain somewhere stayto to",
             "etym": "<uf-pf>demeurer</uf-pf>",
+            "hw-search": "devyr",
             "pos": "v.",
             "senses": [
                 {
@@ -1539,40 +1959,52 @@
         },
         {
             "def": "Telepathy.",
+            "def-search": "telepathy",
             "etym": "<uf-pf>télépathie</uf-pf>",
+            "hw-search": "dey’ebhat’he",
             "pos": "n.",
             "word": "ḍeý’ebhat’hẹ"
         },
         {
             "def": "To be telepathic.",
+            "def-search": "be telepathic to",
             "etym": "<uf-pf>télépathique</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ḍeý’ebh&shy;at’hic’hre, <uf-s>subj</uf-s> ḍeý’ebhat’hic’hes",
+            "hw-search": "dey’ebhat’hic’h",
             "pos": "v.",
             "word": "ḍeý’ebhat’hic’h"
         },
         {
             "def": "+<uf-s>acc</uf-s> To say, tell (+<uf-s>dat</uf-s> someone).",
+            "def-search": "say someone tell to",
             "etym": "<uf-pf>dire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> dírẹ́, <uf-s>subj</uf-s> díss",
+            "hw-search": "dir",
             "pos": "v. tr.",
             "word": "dír"
         },
         {
             "def": "+<uf-s>acc</uf-s> To direct, run, oversee, operate (a business or establishment).",
+            "def-search": "a business direct establishment operate or oversee run to",
             "etym": "<uf-pf>diriger</uf-pf>",
             "forms": "<uf-s>fut</uf-s> díríje, <uf-s>subj</uf-s> díríjs",
+            "hw-search": "dirij",
             "pos": "v.",
             "word": "díríj"
         },
         {
             "def": "<uf-s>+ dat &amp; acc/part</uf-s> To endow, bestow, give. <em>The <uf-s>acc</uf-s> is used when talking about concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts or parts of objects; the <uf-s>dat</uf-s> is the person being endowed with</em>.",
+            "def-search": "bestow endow give to",
             "etym": "<uf-pf>donner</uf-pf>",
             "forms": "<uf-s>fut</uf-s> dónrẹ́, <uf-s>subj</uf-s> dónés",
+            "hw-search": "done",
             "pos": "v.",
             "word": "dónẹ́"
         },
         {
+            "def-search": "always still",
             "etym": "<uf-pf>toujours</uf-pf>",
+            "hw-search": "dur",
             "pos": "adv.",
             "senses": [
                 {
@@ -1586,122 +2018,162 @@
         },
         {
             "def": "Tower.",
+            "def-search": "tower",
             "etym": "<uf-pf>tour</uf-pf>",
+            "hw-search": "dur",
             "pos": "n.",
             "word": "ḍúr"
         },
         {
             "def": "To suffer, be in pain.",
+            "def-search": "be in pain suffer to",
             "etym": "<uf-pf>douleur</uf-pf>",
+            "hw-search": "duy’yr",
             "pos": "v.",
             "word": "duý’ýr"
         },
         {
             "def": "At least. <em>As in e.g. ‘At least, I think that &hellip;’</em>.",
+            "def-search": "at least",
             "etym": "<uf-pf>du moins</uf-pf>",
+            "hw-search": "dyvre",
             "pos": "particle",
             "word": "dývrê"
         },
         {
             "def": "To be yours (<uf-s>sg</uf-s>).",
+            "def-search": "be to yours",
             "etym": "<uf-pf>tien</uf-pf>",
             "forms": "<uf-s>fut</uf-s> dy’êrẹ́, <uf-s>subj</uf-s> dy’ês",
+            "hw-search": "dy’e",
             "pos": "v.",
             "word": "dy’ê"
         },
         {
             "def": "Water.",
+            "def-search": "water",
             "etym": "<uf-pf>eau</uf-pf>",
+            "hw-search": "e",
             "pos": "n.",
             "word": "e"
         },
         {
             "def": "To be thick.",
+            "def-search": "be thick to",
             "etym": "<uf-pf>épais</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ebhrẹ, <uf-s>subj</uf-s> ebhes",
+            "hw-search": "ebhe",
             "pos": "v.",
             "word": "ebhẹ"
         },
         {
             "def": "Sin, transgression, wrongdoing.",
+            "def-search": "sin transgression wrongdoing",
             "etym": "<uf-pf>péché</uf-pf>",
+            "hw-search": "ec",
             "pos": "n.",
             "word": "ec̣"
         },
         {
             "def": "To shine.",
+            "def-search": "shine to",
             "etym": "<uf-pf>éclairer</uf-pf>",
+            "hw-search": "ec’hler",
             "pos": "v.",
             "word": "ec’hlér"
         },
         {
-            "def": "<em>Used in numbers, see grammar</em>}.",
+            "def": "<em>Used in numbers, see grammar</em>.",
+            "def-search": "",
             "etym": "<uf-pf>et</uf-pf>",
+            "hw-search": "ed",
             "pos": "particle",
             "word": "ed"
         },
         {
             "def": "To be.",
+            "def-search": "be to",
             "etym": "<uf-pf>être</uf-pf>",
-            "forms": "<uf-s>forms</uf-s> <em>active only, see grammar</em>}",
+            "forms": "<uf-s>forms</uf-s> <em>active only, see grammar</em>",
+            "hw-search": "ed",
             "pos": "v. irreg.",
             "word": "eḍ"
         },
         {
             "def": "Pointy.",
+            "def-search": "pointy",
             "etym": "<uf-pf>étroit</uf-pf>",
+            "hw-search": "edrra",
             "pos": "v.",
             "word": "eḍrrá"
         },
         {
             "def": "<em>male given name, equivalent to English ‘Ste&shy;phen’</em>.",
+            "def-search": "",
+            "hw-search": "edy’e",
             "pos": "n.",
             "word": "Eḍy’ê"
         },
         {
             "def": "Shield.",
+            "def-search": "shield",
             "etym": "<uf-pf>écusson</uf-pf>",
+            "hw-search": "ehyo",
             "pos": "n.",
             "word": "ehyó"
         },
         {
             "def": "Wing, blade, fin.",
+            "def-search": "blade fin wing",
             "etym": "<uf-pf>ailles</uf-pf>",
+            "hw-search": "el",
             "pos": "n.",
             "word": "el"
         },
         {
             "def": "Its, her, his, their.",
+            "def-search": "her his its their",
             "etym": "<uf-pf>ses</uf-pf>",
+            "hw-search": "ez-",
             "pos": "pron.",
             "word": "ez-"
         },
         {
-            "def": "<em>Logic.</em> False, $\\bot$$. \\textit{Always capitalised}.$",
+            "def": "<em>Logic.</em> False, $\\bot$. <em>Always capitalised</em>.",
+            "def-search": "false",
             "etym": "from <uf-pf>fẹ</uf-pf>",
+            "hw-search": "f",
             "pos": "adj.",
             "word": "F"
         },
         {
             "def": "+<uf-s>opt</uf-s> In such a way that, such that, so much so.",
+            "def-search": "a in much so such that way",
             "etym": "<uf-pf>de façon que</uf-pf>",
+            "hw-search": "fahau",
             "pos": "conj.",
             "word": "fahaú"
         },
         {
             "def": "Very, right, really. <em>Postpositive intensifier placed after adjectives, particularly in the comparative or superlative degrees.</em>.",
+            "def-search": "really right very",
             "etym": "<uf-pf>fort</uf-pf>",
+            "hw-search": "fau",
             "pos": "adv.",
             "word": "faú"
         },
         {
             "def": "<em>obsolete, except in proverbs</em> Strong, mighty.",
+            "def-search": "mighty strong",
             "etym": "<uf-pf>fort</uf-pf>",
+            "hw-search": "faur",
             "pos": "adj.",
             "word": "faúr"
         },
         {
+            "def-search": "force power strength the",
             "etym": "<uf-pf>force</uf-pf>",
+            "hw-search": "faur",
             "pos": "n.",
             "senses": [
                 {
@@ -1715,32 +2187,42 @@
         },
         {
             "def": "Shape, form. <em>Sometimes also spelt <uf-w>fór</uf-w></em>.",
+            "def-search": "form shape",
             "etym": "<uf-pf>forme</uf-pf>",
+            "hw-search": "faur",
             "pos": "n.",
             "word": "faúr₂"
         },
         {
             "def": "End.",
+            "def-search": "end",
             "etym": "<uf-pf>fin</uf-pf>",
+            "hw-search": "fe",
             "pos": "n.",
             "word": "fé"
         },
         {
             "def": "To be false, incorrect, wrong.",
+            "def-search": "be false incorrect to wrong",
             "etym": "<uf-pf>faux</uf-pf>",
             "forms": "<uf-s>fut</uf-s> faure, <uf-s>subj</uf-s> faus",
+            "hw-search": "fe",
             "pos": "v.",
             "word": "fẹ"
         },
         {
             "def": "To be possible, feasible.",
+            "def-search": "be feasible possible to",
             "etym": "<uf-pf>faisable</uf-pf>",
             "forms": "<uf-s>fut</uf-s> fẹhabre, <uf-s>subj</uf-s> fẹhas",
+            "hw-search": "fehab",
             "pos": "v.",
             "word": "fẹhab"
         },
         {
+            "def-search": "bunch bundle clusterbeam ray",
             "etym": "<uf-pf>faisceau</uf-pf>",
+            "hw-search": "fehe",
             "pos": "n.",
             "senses": [
                 {
@@ -1753,113 +2235,147 @@
             "word": "fèhẹ"
         },
         {
+            "def-search": "build construct do erect make to",
             "etym": "<uf-pf>faire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> fẹ́, <uf-s>subj</uf-s> fés",
+            "hw-search": "fer",
             "pos": "v.",
             "senses": [
                 {
                     "def": "To do, make, build, construct, erect."
                 },
                 {
-                    "def": "<em>Expletive; see grammar</em>}."
+                    "def": "<em>Expletive; see grammar</em>."
                 }
             ],
             "word": "fér"
         },
         {
             "def": "To make a big fuss a&shy;bout something.",
+            "def-search": "a about big fuss make something to",
             "etym": "<uf-pf>en faire tout un fromage</uf-pf>",
             "forms": "<uf-s>fut</uf-s> fér&shy;ḍu&shy;fraúrẹ́, <uf-s>subj</uf-s> férḍufraús",
+            "hw-search": "ferdufrau",
             "pos": "v.",
             "word": "férḍufraú"
         },
         {
             "def": "A long, deep sleep.",
+            "def-search": "a deep long sleep",
             "etym": "<uf-pf>faire la grasse mat’</uf-pf>",
+            "hw-search": "ferr-rasvat’h",
             "pos": "n.",
             "word": "férr-rásvát’h"
         },
         {
             "def": "To fix, set, establish.",
+            "def-search": "establish fix set to",
             "etym": "back-formation from *<uf-w>fic’hs</uf-w>, reinterpreted as a subjunctive stem; from <uf-pf>fixer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> fic’hre, <uf-s>subj</uf-s> fic’hs",
+            "hw-search": "fic’h",
             "pos": "v.",
             "word": "fic’h"
         },
         {
             "def": "To be efficient.",
+            "def-search": "be efficient to",
             "etym": "<uf-pf>efficace</uf-pf>",
+            "hw-search": "fihas",
             "pos": "v.",
             "word": "fihas"
         },
         {
             "def": "To inform (+<uf-s>acc</uf-s> sbd.) (+<uf-s>aci</uf-s> of sth.).",
+            "def-search": "inform of sbd sth to",
             "etym": "<uf-pf>informer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> fórv́ẹ́, <uf-s>subj</uf-s> fórvẹ́s",
+            "hw-search": "forve",
             "pos": "v.",
             "word": "fórvẹ́"
         },
         {
             "def": "To deliver, provide (+<uf-s>dat</uf-s> sbd.) (+ <uf-s>acc</uf-s> with sth.).",
+            "def-search": "deliver provide sbd sth to with",
             "etym": "<uf-pf>fournir</uf-pf>",
+            "hw-search": "fur",
             "pos": "v.",
             "word": "fúr"
         },
         {
             "def": "Fire.",
+            "def-search": "fire",
             "etym": "<uf-pf>feu</uf-pf>",
+            "hw-search": "fy",
             "pos": "n.",
             "word": "fý"
         },
         {
             "def": "To dress +<uf-s>acc</uf-s> sbd.",
+            "def-search": "dress sbd to",
             "etym": "<uf-pf>habiller</uf-pf>",
+            "hw-search": "hab’hiy’",
             "pos": "v. tr.",
             "word": "hab’híy’"
         },
         {
             "def": "Legend, myth.",
+            "def-search": "legend myth",
             "etym": "<uf-pf>hymne</uf-pf>",
+            "hw-search": "i",
             "pos": "n.",
             "word": "í"
         },
         {
             "def": "Story, tale.",
+            "def-search": "story tale",
             "etym": "<uf-pf>histoire</uf-pf>",
+            "hw-search": "isdrar",
             "pos": "n.",
             "word": "isḍrár"
         },
         {
             "def": "Image, picture.",
+            "def-search": "image picture",
             "etym": "<uf-pf>image</uf-pf>",
+            "hw-search": "ivaj",
             "pos": "n. archaic",
             "word": "íváj"
         },
         {
             "def": "To light up, illuminate.",
+            "def-search": "illuminate light to up",
             "etym": "<uf-pf>illuminer</uf-pf>",
+            "hw-search": "iy’yvi",
             "pos": "v.",
             "word": "iý’ývî"
         },
         {
             "def": "<em>male or female given name, equivalent to English ‘John’ or ‘Joan’</em>.",
+            "def-search": "",
+            "hw-search": "ja",
             "pos": "n.",
             "word": "Já"
         },
         {
             "def": "<em>Male given name</em>.",
+            "def-search": "",
             "etym": "<uf-pf>Jacques</uf-pf>",
+            "hw-search": "jac’h",
             "pos": "n.",
             "word": "Jac’h"
         },
         {
             "def": "<em>neg. only</em> Never, at no time.",
+            "def-search": "at never no time",
             "etym": "<uf-pf>jamais</uf-pf>",
+            "hw-search": "jave",
             "pos": "adv.",
             "word": "jávé"
         },
         {
+            "def-search": "nail pole stake",
             "etym": "<uf-pf>jalon</uf-pf>",
+            "hw-search": "jay’au",
             "pos": "n.",
             "senses": [
                 {
@@ -1873,43 +2389,57 @@
         },
         {
             "def": "Jedi (Star Wars).",
+            "def-search": "jedi star wars",
             "etym": "<uf-pf>Jedi</uf-pf>",
+            "hw-search": "jed’hay’",
             "pos": "n.",
             "word": "Jed’háy’"
         },
         {
             "def": "Today.",
+            "def-search": "today",
             "etym": "from archaic <uf-pf>aujúrdy’í</uf-pf>",
+            "hw-search": "jurdy’i",
             "pos": "adv.",
             "word": "júrdy’í"
         },
         {
             "def": "+<uf-s>opt</uf-s> Until.",
+            "def-search": "until",
             "etym": "<uf-pf>jusqu’à ce que</uf-pf>",
+            "hw-search": "jys",
             "pos": "conj.",
             "word": "jys"
         },
         {
             "def": "Just, only, merely.",
+            "def-search": "just merely only",
             "etym": "<uf-pf>juste</uf-pf>",
+            "hw-search": "jys",
             "pos": "adv.",
             "word": "jys"
         },
         {
             "def": "To be unjust, unfair.",
+            "def-search": "be to unfair unjust",
             "etym": "<uf-pf>injuste</uf-pf>",
             "forms": "<uf-s>fut</uf-s> jysre, <uf-s>subj</uf-s> jyss",
+            "hw-search": "jys",
             "pos": "v.",
             "word": "jys"
         },
         {
             "def": "To fly.",
+            "def-search": "fly to",
             "etym": "<uf-pf>planer</uf-pf>",
+            "hw-search": "la",
             "pos": "v.",
             "word": "lá"
         },
         {
+            "def-search": "a bath clean have oneself shower sth take to wash",
             "etym": "<uf-pf>laver</uf-pf>",
+            "hw-search": "lab’h",
             "pos": "v.",
             "senses": [
                 {
@@ -1923,11 +2453,15 @@
         },
         {
             "def": "<em>female given name, equivalent to English ‘Bi&shy;anca’</em>.",
+            "def-search": "",
+            "hw-search": "lac",
             "pos": "n.",
             "word": "Lác"
         },
         {
+            "def-search": "blade grass of",
             "etym": "<uf-pf>plante</uf-pf>",
+            "hw-search": "lad",
             "pos": "n.",
             "senses": [
                 {
@@ -1941,81 +2475,107 @@
         },
         {
             "def": "To meander.",
+            "def-search": "meander to",
             "etym": "<uf-pf>flâner</uf-pf>",
+            "hw-search": "lane",
             "pos": "v.",
             "word": "lánẹ́"
         },
         {
             "def": "Wide, broad.",
+            "def-search": "broad wide",
             "etym": "<uf-pf>large</uf-pf>",
+            "hw-search": "lar",
             "pos": "v.",
             "word": "lár"
         },
         {
             "def": "Evasive, unclear, or overly formal speech.",
+            "def-search": "evasive formal or overly speech unclear",
             "etym": "<uf-pf>langue de bois</uf-pf>",
+            "hw-search": "lardavra",
             "pos": "n.",
             "word": "lârdávrá"
         },
         {
             "def": "To place, put, set (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "place put set sth to",
             "etym": "<uf-pf>placer</uf-pf>",
+            "hw-search": "las",
             "pos": "v.",
             "word": "las"
         },
         {
             "def": "Long. <em>Often in compounds <uf-w>laú-</uf-w> ‘long-’</em>.",
+            "def-search": "long",
             "etym": "<uf-pf>long</uf-pf>",
+            "hw-search": "lau",
             "pos": "v.",
             "word": "laú"
         },
         {
             "def": "When (temporal only).",
+            "def-search": "only temporal when",
             "etym": "<uf-pf>lorsque</uf-pf>",
+            "hw-search": "laurs",
             "pos": "conj.",
             "word": "laúrs"
         },
         {
             "def": "<em>(contraction)</em> But, when. <em>Stressed on the first syllable</em>.",
+            "def-search": "but when",
             "etym": "from <uf-w>laúrs</uf-w> + <uf-w>vé</uf-w>",
+            "hw-search": "laurve",
             "pos": "conj.",
             "word": "laúrvé"
         },
         {
             "def": "Fl&shy;oat, hover, levitate.",
+            "def-search": "float hover levitate",
             "etym": "<uf-pf>flotter</uf-pf>",
             "forms": "<uf-s>fut</uf-s> laut’hre, <uf-s>subj</uf-s> laut’hes",
+            "hw-search": "laut’h",
             "pos": "v.",
             "word": "laut’h"
         },
         {
             "def": "<em>Chiefly in questions or imperative.</em> To let, allow, permit.",
+            "def-search": "allow let permit to",
             "etym": "<uf-pf>laisser</uf-pf> &gt; *<uf-w>lehe</uf-w>",
             "forms": "<uf-s>fut</uf-s> lere, <uf-s>subj</uf-s> les",
+            "hw-search": "le",
             "pos": "v.",
             "word": "le"
         },
         {
             "def": "Plain, plains.",
+            "def-search": "plain plains",
             "etym": "<uf-pf>plaine</uf-pf>",
+            "hw-search": "le",
             "pos": "n.",
             "word": "lé"
         },
         {
             "def": "<em>Affirming comparative prefix. See grammar</em>.",
+            "def-search": "",
             "etym": "<uf-pf>plus</uf-pf>",
+            "hw-search": "le-",
             "pos": "prefix",
             "word": "lẹ-"
         },
         {
             "def": "To be electromagnetic.",
+            "def-search": "be electromagnetic to",
             "etym": "<uf-pf>électromagnétique</uf-pf>",
             "forms": "<uf-s>fut</uf-s> lec’hḍraúvnẹ́t’hic’hre, <uf-s>subj</uf-s> lec’hḍraúvnẹ́t’hic’hes",
+            "hw-search": "lec’hdrauvnet’hic’h",
             "pos": "v.",
             "word": "lec’hḍraúvnẹ́t’hic’h"
         },
         {
+            "def-search": "alphabet book by letter of the",
             "etym": "<uf-pf>lettre</uf-pf>",
+            "hw-search": "led",
             "pos": "n.",
             "senses": [
                 {
@@ -2029,31 +2589,41 @@
         },
         {
             "def": "+<uf-s>aci</uf-s> To let happen.",
+            "def-search": "happen let to",
             "etym": "<uf-pf>laisser-faire</uf-pf>",
+            "hw-search": "leheb’h",
             "pos": "v.",
             "word": "lèheb’h"
         },
         {
             "def": "Love at first sight.",
+            "def-search": "at first love sight",
             "etym": "<uf-pf>coup de foudre</uf-pf>",
+            "hw-search": "lehuvud",
             "pos": "n.",
             "word": "lẹhuvud"
         },
         {
             "def": "To be evident, obvious, frank, clear.",
+            "def-search": "be clear evident frank obvious to",
             "etym": "<uf-pf>clair</uf-pf>",
+            "hw-search": "ler",
             "pos": "v.",
             "word": "lér"
         },
         {
             "def": "To please (+<uf-s>acc</uf-s> sbd.), be pleasing.",
+            "def-search": "be please pleasing sbd to",
             "etym": "<uf-pf>plaire</uf-pf>",
+            "hw-search": "ler",
             "pos": "v.",
             "word": "lér"
         },
         {
+            "def-search": "entirely from peruse read to",
             "etym": "<uf-pf>lire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> lírẹ́, <uf-s>subj</uf-s> lís",
+            "hw-search": "li",
             "pos": "v.",
             "senses": [
                 {
@@ -2067,129 +2637,165 @@
         },
         {
             "def": "To litigate, be at law with (+<uf-s>dat</uf-s> sbd.).",
+            "def-search": "at be law litigate sbd to with",
             "etym": "<uf-pf>litigier</uf-pf>",
+            "hw-search": "lit’hijy’",
             "pos": "v.",
             "word": "lit’hijy’"
         },
         {
             "def": "Lemonade.",
+            "def-search": "lemonade",
             "etym": "<uf-pf>limonade</uf-pf>",
+            "hw-search": "livnad",
             "pos": "n.",
             "word": "lívnád"
         },
         {
             "def": "Book.",
+            "def-search": "book",
             "etym": "<uf-pf>livre</uf-pf> + <uf-pf>bouquin</uf-pf>",
+            "hw-search": "livuhe",
             "pos": "n.",
             "word": "liv́uhé"
         },
         {
             "def": "To be bulky, oversized, heavy.",
+            "def-search": "be bulky heavy oversized to",
             "etym": "<uf-pf>lourd</uf-pf>",
+            "hw-search": "lur",
             "pos": "v.",
             "word": "lúr"
         },
         {
             "def": "<em>obsolete variant of <uf-w>lẹ</uf-w>, sometimes leniting</em>.",
+            "def-search": "",
             "etym": "<uf-pf>plus</uf-pf>",
+            "hw-search": "ly",
             "pos": "particle",
             "word": "ly"
         },
         {
             "def": "Pen, quill.",
+            "def-search": "pen quill",
             "etym": "<uf-pf>plume</uf-pf>",
+            "hw-search": "ly",
             "pos": "n.",
             "word": "lý"
         },
         {
-            "def": "<em>Base of the spatial correlatives. In senses 2–5, case affixes are attached before ḷý, e.g. sense 2 <uf-s>all</uf-s> <uf-w>sẹb’héḷý</uf-w> ‘hither’</em>.",
+            "def": "<em>Base of the spatial correlatives. In senses 2–5, case affixes are attached before <uf-w>ḷý</uf-w>, e.g. sense 2 <uf-s>all</uf-s> <uf-w>sẹb’héḷý</uf-w> ‘hither’</em>.",
+            "def-search": "c from hence here hither location nowhere place thence there thither whence where whither",
             "etym": "<uf-pf>lieu</uf-pf>",
+            "hw-search": "ly",
             "pos": "n.",
             "senses": [
                 {
                     "def": "Place, location."
                 },
                 {
-                    "def": "<uf-w>sẹ</uf-w>&hellip;ḷý<uf-s>def</uf-s> [from <uf-w>sẹh</uf-w>] Here, hither, hence, &amp;c. <em>Proximal demonstrative (all cases)</em>."
+                    "def": "<uf-w>sẹ</uf-w>&hellip;<uf-w>ḷý</uf-w> <uf-s>def</uf-s> [from <uf-w>sẹh</uf-w>] Here, hither, hence, &amp;c. <em>Proximal demonstrative (all cases)</em>."
                 },
                 {
-                    "def": "<uf-w>sý’<uf-mut>L</uf-mut></uf-w>&hellip;ḷý<uf-s>def</uf-s> [from <uf-w>sý’ẹ</uf-w>] There, thither, thence, &amp;c. <em>Distal demonstrative (all cases)</em>."
+                    "def": "<uf-w>sý’<uf-mut><sup>L</sup></uf-mut></uf-w>&hellip;<uf-w>ḷý</uf-w> <uf-s>def</uf-s> [from <uf-w>sý’ẹ</uf-w>] There, thither, thence, &amp;c. <em>Distal demonstrative (all cases)</em>."
                 },
                 {
-                    "def": "ḷý<uf-w>hes</uf-w> <uf-s>indef</uf-s> [from <uf-w>c’hes</uf-w>] Where, whither, when&shy;ce, &amp;c. <em>Interrogative (locative cases only)</em>."
+                    "def": "<uf-w>ḷý</uf-w><uf-w>hes</uf-w> <uf-s>indef</uf-s> [from <uf-w>c’hes</uf-w>] Where, whither, when&shy;ce, &amp;c. <em>Interrogative (locative cases only)</em>."
                 },
                 {
-                    "def": "<uf-w>s’</uf-w>/<uf-w>sá<uf-mut>L</uf-mut></uf-w>&hellip;ḷý<uf-s>indef</uf-s> [from <uf-w>sá</uf-w>] No&shy;where, from no&shy;where, &amp;c. <em>Negative (locative cases only)</em>."
+                    "def": "<uf-w>s’</uf-w>/<uf-w>sá<uf-mut><sup>L</sup></uf-mut></uf-w>&hellip;<uf-w>ḷý</uf-w> <uf-s>indef</uf-s> [from <uf-w>sá</uf-w>] No&shy;where, from no&shy;where, &amp;c. <em>Negative (locative cases only)</em>."
                 }
             ],
             "word": "ḷý"
         },
         {
             "def": "Often.",
+            "def-search": "often",
             "etym": "pluspart du temps",
+            "hw-search": "lybhardyt’ha",
             "pos": "adv.",
             "word": "lybhárdyt’há"
         },
         {
             "def": "Their.",
+            "def-search": "their",
             "etym": "<uf-pf>leur</uf-pf>",
+            "hw-search": "lyr",
             "pos": "pron.",
             "word": "lýr"
         },
         {
             "def": "To be theirs.",
+            "def-search": "be theirs to",
             "etym": "from <uf-pf>leur</uf-pf>; the ‘ḍ’ was added in analogy with <uf-w>naúḍ</uf-w> and <uf-w>b’hauḍ</uf-w>",
             "forms": "<uf-s>fut</uf-s> lýrḍre, <uf-s>subj</uf-s> lýrs",
+            "hw-search": "lyrd",
             "pos": "v.",
             "word": "lýrḍ"
         },
         {
             "def": "<em>neg. only</em> No longer, not any more. <em>The meaning of this and <uf-w>lẹ</uf-w> swapped at some point for unknown reasons</em>.",
+            "def-search": "any longer more no not",
             "etym": "<uf-pf>plus</uf-pf> /plys/",
+            "hw-search": "lys",
             "pos": "adv.",
             "word": "lys"
         },
         {
             "def": "To rain.",
+            "def-search": "rain to",
             "etym": "<uf-pf>pleuvoir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> lýv́áre, <uf-s>subj</uf-s> lýv́ás",
+            "hw-search": "lyva",
             "pos": "v. <uf-s>3rd</uf-s> person only",
             "word": "lýv́á"
         },
         {
             "def": "Light.",
+            "def-search": "light",
             "etym": "<uf-pf>lumière</uf-pf>",
+            "hw-search": "lyvy’er",
             "pos": "n.",
             "word": "lývy’ér"
         },
         {
             "def": "Several.",
+            "def-search": "several",
             "etym": "<uf-pf>plusieurs</uf-pf>",
+            "hw-search": "lyzy’yr",
             "pos": "adj.",
             "word": "lyzy’ýr"
         },
         {
             "def": "Hate, hatred, loathing.",
+            "def-search": "hate hatred loathing",
             "etym": "<uf-pf>haine</uf-pf>",
+            "hw-search": "n",
             "pos": "n.",
             "word": "n"
         },
         {
             "def": "To swim.",
+            "def-search": "swim to",
             "etym": "<uf-pf>nager</uf-pf>",
             "forms": "<uf-s>fut</uf-s> náȷ́ẹ, <uf-s>subj</uf-s> nájes",
+            "hw-search": "naje",
             "pos": "v.",
             "word": "nájẹ"
         },
         {
             "def": "To narrate, recount <uf-s>+part sth.</uf-s>, tell (<uf-s>+dat</uf-s> sbd.) a story.",
+            "def-search": "a narrate recount sbd story tell to",
             "etym": "<uf-pf>raconter</uf-pf> + <uf-pf>narrer</uf-pf>; subj. from <uf-pf>filer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> nárrahóḍe, <uf-s>subj</uf-s> fils",
+            "hw-search": "narrahod",
             "pos": "v.",
             "word": "nárrahóḍ"
         },
         {
+            "def-search": "is natural nature something the way world",
             "etym": "<uf-pf>nature</uf-pf>",
+            "hw-search": "nat’hyr",
             "pos": "n.",
             "senses": [
                 {
@@ -2203,51 +2809,67 @@
         },
         {
             "def": "To be ours.",
+            "def-search": "be ours to",
             "etym": "<uf-pf>nôtre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> naúḍre, <uf-s>subj</uf-s> naús",
+            "hw-search": "naud",
             "pos": "v.",
             "word": "naúḍ"
         },
         {
             "def": "To be born. <uf-s>This is a deponent verb whose subject takes the <uf-s>acc</uf-s> and which only takes passive affixes.</uf-s>.",
+            "def-search": "be born to",
             "etym": "<uf-pf>naître</uf-pf>",
             "forms": "<uf-s>sub</uf-s> néhs",
+            "hw-search": "ned",
             "pos": "v. dep.",
             "word": "néḍ"
         },
         {
             "def": "Energy.",
+            "def-search": "energy",
             "etym": "<uf-pf>énergie</uf-pf>",
+            "hw-search": "nerje",
             "pos": "n.",
             "word": "nérjẹ"
         },
         {
             "def": "Left (side), left-handed.",
+            "def-search": "left left-handed side",
             "etym": "from earlier <uf-w>nésḍ</uf-w>",
+            "hw-search": "nes",
             "pos": "adj.",
             "word": "nés"
         },
         {
             "def": "Left (side), left-handed.",
+            "def-search": "left left-handed side",
             "etym": "<uf-pf>senestre</uf-pf>",
+            "hw-search": "nesd",
             "pos": "adj. archaic",
             "word": "nésḍ"
         },
         {
             "def": "To deny, ref&shy;use, reject, rebut (+<uf-s>acc</uf-s> sbd./sth.).",
+            "def-search": " deny rebut refuse reject to",
             "etym": "<uf-pf>nier</uf-pf>, <uf-s>fut</uf-s> from <uf-pf>contrer</uf-pf>, <uf-s>subj</uf-s> from <uf-pf>oposer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> c’haúḍé, <uf-s>subj</uf-s> aubhaus",
+            "hw-search": "ni",
             "pos": "v.",
             "word": "ní"
         },
         {
             "def": "Neither, nor.",
+            "def-search": "neither nor",
             "etym": "<uf-pf>ni</uf-pf>",
+            "hw-search": "ni",
             "pos": "conj.",
             "word": "ní"
         },
         {
+            "def-search": "degree level of on the",
             "etym": "<uf-pf>niveau</uf-pf>",
+            "hw-search": "nib’he",
             "pos": "n.",
             "senses": [
                 {
@@ -2261,37 +2883,49 @@
         },
         {
             "def": "To be ignorant, unaware, oblivious.",
+            "def-search": "be ignorant oblivious to unaware",
             "etym": "back-formation from *<uf-w>nórâ</uf-w> from <uf-pf>ignorant</uf-pf>",
+            "hw-search": "nor",
             "pos": "v.",
             "word": "nór"
         },
         {
             "def": "Druid.",
+            "def-search": "druid",
             "etym": "from archaic <uf-w>ḅá nórávíc’h</uf-w>",
+            "hw-search": "norav",
             "pos": "n.",
             "word": "nóráv"
         },
         {
             "def": "To be new.",
+            "def-search": "be new to",
             "etym": "<uf-pf>nouveau</uf-pf>",
             "forms": "<uf-s>fut</uf-s> núb’he, <uf-s>subj</uf-s> núb’hs",
+            "hw-search": "nub’h",
             "pos": "v.",
             "word": "núb’h"
         },
         {
-            "def": "<em>Logic.</em> True, $\\top$$. \\textit{Always capitalised}.$",
+            "def": "<em>Logic.</em> True, $\\top$. <em>Always capitalised</em>.",
+            "def-search": "true",
             "etym": "from <uf-pf>ré</uf-pf>",
+            "hw-search": "r",
             "pos": "adj.",
             "word": "R"
         },
         {
             "def": "Air. <em>Frequently plural</em>.",
+            "def-search": "air",
             "etym": "<uf-pf>air</uf-pf>",
+            "hw-search": "r",
             "pos": "n.",
             "word": "r"
         },
         {
+            "def-search": "either or ’",
             "etym": "<uf-pf>swa</uf-pf> &gt; *<uf-w>rá</uf-w>",
+            "hw-search": "ra",
             "pos": "conj.",
             "senses": [
                 {
@@ -2305,42 +2939,56 @@
         },
         {
             "def": "To win, gain, earn (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "earn gain sth to win",
             "etym": "<uf-pf>gagner</uf-pf>",
+            "hw-search": "ra",
             "pos": "v.",
             "word": "râ"
         },
         {
             "def": "Law, rule, regulation.",
+            "def-search": "law regulation rule",
             "etym": "<uf-pf>loi</uf-pf>",
+            "hw-search": "ra",
             "pos": "n.",
             "word": "rá₁"
         },
         {
             "def": "Big, large, great.",
+            "def-search": "big great large",
             "etym": "<uf-pf>grand</uf-pf>",
+            "hw-search": "ra",
             "pos": "adj.",
             "word": "rá₂"
         },
         {
             "def": "Month.",
+            "def-search": "month",
             "etym": "<uf-pf>mois</uf-pf>",
+            "hw-search": "ra",
             "pos": "n.",
             "word": "rá₃"
         },
         {
             "def": "Voice.",
+            "def-search": "voice",
             "etym": "<uf-pf>voix</uf-pf>",
+            "hw-search": "ra",
             "pos": "n.",
             "word": "rá₄"
         },
         {
             "def": "Arm.",
+            "def-search": "arm",
             "etym": "<uf-pf>bras</uf-pf>",
+            "hw-search": "ra",
             "pos": "n.",
             "word": "rá₅"
         },
         {
+            "def-search": "another culture god lord main of rab’h the",
             "etym": "unknown; presumably the name of some celebrity or local deity",
+            "hw-search": "rab’h",
             "pos": "n.",
             "senses": [
                 {
@@ -2366,152 +3014,200 @@
         },
         {
             "def": "To work.",
+            "def-search": "to work",
             "etym": "<uf-pf>travailler</uf-pf>, <uf-s>fut</uf-s> and <uf-s>subj</uf-s> from <uf-pf>bos&shy;ser</uf-pf>",
             "forms": "<uf-s>fut</uf-s> bohér, <uf-s>subj</uf-s> bos",
+            "hw-search": "rab’hay’",
             "pos": "v.",
             "word": "ráb’háy’"
         },
         {
             "def": "Airship, dirigible.",
+            "def-search": "airship dirigible",
             "etym": "from <uf-w>ráhe</uf-w> + <uf-w>c’hánár</uf-w>",
+            "hw-search": "rac’hanar",
             "pos": "n.",
             "word": "rác’hánár"
         },
         {
             "def": "To lie, tell tall tales, overexaggerate.",
+            "def-search": "lie overexaggerate tales tall tell to",
             "etym": "<uf-pf>raconter des salades</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rác’h&shy;sa&shy;ý’e, <uf-s>subj</uf-s> rác’hsaýs",
+            "hw-search": "rac’hsay’ad",
             "pos": "v.",
             "word": "rác’hsaý’ad"
         },
         {
             "def": "To surrender +<uf-s>acc</uf-s> sth. (<uf-s>dat</uf-s> to sbd.).",
+            "def-search": "sbd sth surrender to",
             "etym": "<uf-pf>rendre</uf-pf>",
+            "hw-search": "rad",
             "pos": "v. tr.",
             "word": "rád"
         },
         {
             "def": "+<uf-s>acc</uf-s> <em>or</em> <uf-s>part</uf-s> To grab. <em>The <uf-s>part</uf-s> usually implies that only a part or some of a larger whole is grabbed, e.g. a handful of sand)</em>.",
+            "def-search": "grab to",
             "etym": "<uf-pf>prendre</uf-pf>",
+            "hw-search": "rad",
             "pos": "v.",
             "word": "râd"
         },
         {
             "def": "To run.",
+            "def-search": "run to",
             "etym": "<uf-pf>prendre ses jambe à son cou</uf-pf>",
             "forms": "<uf-s>fut</uf-s> râdrásônre, <uf-s>subj</uf-s> râdrásôns",
+            "hw-search": "radrason",
             "pos": "v.",
             "word": "râdrásôn"
         },
         {
             "def": "To put no effort into.",
+            "def-search": "effort into no put to",
             "etym": "<uf-pf>les doigts dans le nez</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rádrénrẹ́, <uf-s>subj</uf-s> rádrénẹ́s",
+            "hw-search": "radrene",
             "pos": "v. + <uf-s>aci</uf-s>",
             "word": "rádrénẹ́"
         },
         {
             "def": "<em>Superlative prefix. See grammar</em>.",
+            "def-search": "",
             "etym": "<uf-pf>grandement</uf-pf>",
+            "hw-search": "radva-",
             "pos": "prefix",
             "word": "râdvâ-"
         },
         {
             "def": "<em>(always definite)</em> Last month.",
+            "def-search": "last month",
             "etym": "from <uf-w>rá</uf-w> + <uf-w>dérny’é</uf-w>",
+            "hw-search": "rad’hern",
             "pos": "n.",
             "word": "rád’hérn"
         },
         {
             "def": "Tradition, custom.",
+            "def-search": "custom tradition",
             "etym": "<uf-pf>traditon</uf-pf>",
+            "hw-search": "rad’hsy’o",
             "pos": "n.",
             "word": "rád’hsy’ô"
         },
         {
             "def": "Translation.",
+            "def-search": "translation",
             "etym": "<uf-pf>traduction</uf-pf>",
+            "hw-search": "rad’hyc’hsy’o",
             "pos": "n.",
             "word": "rád’hyc’hsy’ô"
         },
         {
             "def": "To meet, encounter, come face to face (+<uf-s>all</uf-s> with sbd.).",
+            "def-search": "come encounter face meet sbd to with",
             "etym": "<uf-pf>recontrer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> râhaúḍre, <uf-s>subj</uf-s> râhaús",
+            "hw-search": "rahaud",
             "pos": "v.",
             "word": "râhaúḍ"
         },
         {
             "def": "Bird.",
+            "def-search": "bird",
             "etym": "<uf-pf>oiseau</uf-pf>",
+            "hw-search": "rahe",
             "pos": "n.",
             "word": "ráhe"
         },
         {
             "def": "Flying fish.",
+            "def-search": "fish flying",
             "etym": "from <uf-w>ráhe</uf-w> + <uf-w>ráhó</uf-w>",
+            "hw-search": "rahe",
             "pos": "n.",
             "word": "ráhé"
         },
         {
             "def": "Neighbour.",
+            "def-search": "neighbour",
             "etym": "<uf-pf>voisin</uf-pf>",
+            "hw-search": "rahe",
             "pos": "n.",
             "word": "ráhé"
         },
         {
             "def": "+<uf-s>subj</uf-s> Although, though.",
+            "def-search": "although though",
             "etym": "<uf-pf>quoique</uf-pf>",
+            "hw-search": "rahe",
             "pos": "conj.",
             "word": "ráhẹ"
         },
         {
             "def": "Human, person.",
+            "def-search": "human person",
             "etym": "<uf-pf>français</uf-pf>",
+            "hw-search": "rahe",
             "pos": "n.",
             "word": "râhẹ"
         },
         {
             "def": "To be racist.",
+            "def-search": "be racist to",
             "etym": "<uf-pf>raciste</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ráhise, <uf-s>subj</uf-s> ráhiss",
+            "hw-search": "rahis",
             "pos": "v.",
             "word": "ráhis"
         },
         {
             "def": "Fish.",
+            "def-search": "fish",
             "etym": "<uf-pf>poisson</uf-pf>",
+            "hw-search": "raho",
             "pos": "n.",
             "word": "ráhó"
         },
         {
             "def": "Grassland, grassy field, meadow.",
+            "def-search": "field grassland grassy meadow",
             "etym": "<uf-pf>gazon</uf-pf>",
+            "hw-search": "raho",
             "pos": "n.",
             "word": "ráhó"
         },
         {
             "def": "Sword, blade <uf-w>áráhut’h’t ilý ly b’haúr</uf-w> ‘the pen is mightier than the sword’ <em>(originally a fossilised, obsolete ACI: <uf-w>á&shy;hut’h&shy;rá éḍ ilý lẹb’haúr</uf-w>)</em>.",
+            "def-search": "blade is mightier pen sword sword’ than the",
             "etym": "<uf-pf>grand</uf-pf> + <uf-pf>couteau</uf-pf>",
+            "hw-search": "rahut’h",
             "pos": "n.",
             "word": "ráhut’h"
         },
         {
             "def": "Canvas.",
+            "def-search": "canvas",
             "etym": "<uf-pf>toile</uf-pf>",
+            "hw-search": "ral",
             "pos": "n.",
             "word": "rál"
         },
         {
             "def": "To see (+<uf-s>part</uf-s> sbd./sth.).",
+            "def-search": " see to",
             "etym": "<uf-pf>voir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> b’hérẹ́, <uf-s>subj</uf-s> rárs",
+            "hw-search": "rar",
             "pos": "v.",
             "word": "rár"
         },
         {
+            "def-search": "at look to watch",
             "etym": "<uf-pf>regarder</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rárdre, <uf-s>subj</uf-s> rárds",
+            "hw-search": "rard",
             "pos": "v.",
             "senses": [
                 {
@@ -2525,8 +3221,10 @@
         },
         {
             "def": "+<uf-s>aci</uf-s>.",
+            "def-search": "apparent be become clear come evident for it known light that to transpire",
             "etym": "<uf-pf>transpirer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> râsírẹ́, <uf-s>subj</uf-s> râsírs",
+            "hw-search": "rasir",
             "pos": "v.",
             "senses": [
                 {
@@ -2540,61 +3238,81 @@
         },
         {
             "def": "You see, you know.",
+            "def-search": "know see you",
             "etym": "<uf-pf>vois-tu</uf-pf>",
+            "hw-search": "rat’he",
             "pos": "particle",
             "word": "rát’hẹ"
         },
         {
             "def": "Log (of a tree).",
+            "def-search": "a log of tree",
             "etym": "<uf-pf>tronc</uf-pf>",
+            "hw-search": "rau",
             "pos": "n. archaic",
             "word": "raû"
         },
         {
             "def": "Kid. <em>This is grammatically a vocative—not that one could tell since it looks identical to the absolutive</em>.",
+            "def-search": "kid",
             "etym": "<uf-pf>gône</uf-pf>",
+            "hw-search": "rau",
             "pos": "interj.",
             "word": "raû"
         },
         {
-            "def": "<em>Causative prefix, see grammar</em>}.",
+            "def": "<em>Causative prefix, see grammar</em>.",
+            "def-search": "",
             "etym": "from <uf-w>rób’hoc’h</uf-w>",
+            "hw-search": "raub’hc’h-",
             "pos": "prefix",
             "word": "raú(b’hc’h)-"
         },
         {
             "def": "Robot.",
+            "def-search": "robot",
             "etym": "<uf-pf>robot</uf-pf>",
+            "hw-search": "raub’he",
             "pos": "n.",
             "word": "raúb’hẹ"
         },
         {
             "def": "Head.",
+            "def-search": "head",
             "etym": "<uf-pf>tronche</uf-pf>",
+            "hw-search": "rauc",
             "pos": "n.",
             "word": "raûc"
         },
         {
             "def": "Log (of a tree).",
+            "def-search": "a log of tree",
             "etym": "<uf-pf>tronc d’arbre</uf-pf>",
+            "hw-search": "raud’harb",
             "pos": "n.",
             "word": "raûd’hárb"
         },
         {
             "def": "To tighten, make tighter (+<uf-s>acc</uf-s>).",
+            "def-search": "make tighten tighter to",
             "etym": "from <uf-w>raú-</uf-w> + <uf-w>sérẹ́</uf-w>",
             "forms": "<uf-s>fut</uf-s> raúhérrẹ́, <uf-s>subj</uf-s> raúhérẹ́s",
+            "hw-search": "rauhere",
             "pos": "v.",
             "word": "raúhérẹ́"
         },
         {
             "def": "To raise, lift up (+<uf-s>acc</uf-s> sth.) (+<uf-s>ela</uf-s> from sth.).",
+            "def-search": "from lift raise sth to up",
             "etym": "from <uf-w>raú-</uf-w> + <uf-w>sy’b’h</uf-w>",
+            "hw-search": "rauhy’b’h",
             "pos": "v.",
             "word": "raúhy’b’h"
         },
         {
+            "def-search": "for language short speech word",
             "etym": "<uf-pf>parole</uf-pf>",
+            "hw-search": "raul",
             "pos": "n.",
             "senses": [
                 {
@@ -2608,18 +3326,24 @@
         },
         {
             "def": "Moon.",
+            "def-search": "moon",
             "etym": "<uf-pf>fromage</uf-pf>",
+            "hw-search": "rauva",
             "pos": "n.",
             "word": "raúvá"
         },
         {
             "def": "<em>neg. only</em> Seldom, rarely (ever).",
+            "def-search": "ever rarely seldom",
             "etym": "<uf-pf>rarement</uf-pf>",
+            "hw-search": "rava",
             "pos": "adv.",
             "word": "ráv́â"
         },
         {
+            "def-search": "a describing grammar grammatical language languagea of rules textbook the",
             "etym": "<uf-pf>grammaire</uf-pf>",
+            "hw-search": "raver",
             "pos": "n.",
             "senses": [
                 {
@@ -2632,7 +3356,9 @@
             "word": "rávér"
         },
         {
+            "def-search": "a go journey on to travel voyage",
             "etym": "<uf-pf>voyage</uf-pf>",
+            "hw-search": "ray’a",
             "pos": "v.",
             "senses": [
                 {
@@ -2646,19 +3372,23 @@
         },
         {
             "def": "To drown.",
+            "def-search": "drown to",
             "etym": "<uf-pf>noyer</uf-pf>",
+            "hw-search": "ray’e",
             "pos": "v.",
             "word": "ráy’é"
         },
         {
+            "def-search": "by how in is means method no that there this way what",
             "etym": "<uf-pf>moyen</uf-pf>",
+            "hw-search": "ray’e",
             "pos": "n.",
             "senses": [
                 {
                     "def": "Way, means, method."
                 },
                 {
-                    "def": "<uf-w>ráy’ê y’aúhý</uf-w> + <uf-s>aci</uf-s> There is no way, that &hellip;}."
+                    "def": "<uf-w>ráy’ê y’aúhý</uf-w> + <uf-s>aci</uf-s> There is no way, that &hellip;."
                 },
                 {
                     "def": "<uf-s>instr pl</uf-s> <uf-w>b’hehráy’ê</uf-w> How, by what means, in this way."
@@ -2668,112 +3398,148 @@
         },
         {
             "def": "To complain, grumble.",
+            "def-search": "complain grumble to",
             "etym": "<uf-pf>râler</uf-pf>",
+            "hw-search": "ray’e",
             "pos": "v.",
             "word": "ráý’ẹ"
         },
         {
             "def": "To be true, correct, right.",
+            "def-search": "be correct right to true",
             "etym": "<uf-pf>vrai</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rẹ́, <uf-s>subj</uf-s> rés",
+            "hw-search": "re",
             "pos": "v.",
             "word": "ré"
         },
         {
             "def": "Ray, beam.",
+            "def-search": "beam ray",
             "etym": "<uf-pf>rai</uf-pf>",
+            "hw-search": "re",
             "pos": "n.",
             "word": "ré"
         },
         {
             "def": "To create, make (<uf-s>+acc</uf-s> sth.).",
+            "def-search": "create make sth to",
             "etym": "<uf-pf>créer</uf-pf>, <uf-s>subj</uf-s> from <uf-pf>fabriquer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rẹ́éré, <uf-s>subj</uf-s> faríc’hs",
+            "hw-search": "re",
             "pos": "v.",
             "word": "ré"
         },
         {
             "def": "Near, close, nearby.",
+            "def-search": "close near nearby",
             "etym": "<uf-pf>près</uf-pf>",
+            "hw-search": "re",
             "pos": "adj.",
             "word": "ré"
         },
         {
             "def": "To wander, roam (+<uf-s>perl</uf-s> across sth.).",
+            "def-search": "across roam sth to wander",
             "etym": "<uf-pf>errer</uf-pf>",
+            "hw-search": "re",
             "pos": "v. intr.",
             "word": "ré"
         },
         {
             "def": "In vain, for nothing.<em>Usually preceded directly by the verb it applies to</em>.",
+            "def-search": "for in nothing vain",
             "etym": "en vain",
+            "hw-search": "re",
             "pos": "adv.",
             "word": "ré"
         },
         {
             "def": "Wish.",
+            "def-search": "wish",
             "etym": "<uf-pf>souhait</uf-pf>",
+            "hw-search": "re",
             "pos": "n.",
             "word": "ré"
         },
         {
             "def": "+<uf-s>subj</uf-s> Although, though.",
+            "def-search": "although though",
             "etym": "<uf-pf>bien que</uf-pf>",
+            "hw-search": "re",
             "pos": "conj.",
             "word": "rê"
         },
         {
             "def": "To be composed of three parts or people; triune.",
+            "def-search": "be composed of or parts people three to triune",
             "etym": "<uf-pf>trine</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rêrẹ́, <uf-s>subj</uf-s> rês",
+            "hw-search": "re",
             "pos": "v.",
             "word": "rê"
         },
         {
             "def": "Copper.",
+            "def-search": "copper",
             "etym": "<uf-pf>airain</uf-pf>",
+            "hw-search": "re",
             "pos": "n.",
             "word": "rê"
         },
         {
             "def": "Point (in a score).",
+            "def-search": "a in point score",
             "etym": "<uf-pf>point</uf-pf>",
+            "hw-search": "re",
             "pos": "n.",
             "word": "rê"
         },
         {
             "def": "<em>Superlative prefix. See grammar</em>.",
+            "def-search": "",
             "etym": "<uf-pf>très</uf-pf>",
+            "hw-search": "re-",
             "pos": "prefix",
             "word": "ré-"
         },
         {
             "def": "<em>Neutral comparative prefix. See grammar</em>.",
+            "def-search": "",
             "etym": "<uf-pf>moins</uf-pf>",
+            "hw-search": "re-",
             "pos": "prefix",
             "word": "rê-"
         },
         {
             "def": "Creation, making.",
+            "def-search": "creation making",
             "etym": "from <uf-w>ré</uf-w>",
+            "hw-search": "reau",
             "pos": "n.",
             "word": "réaû"
         },
         {
             "def": "To anticipate (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "anticipate sth to",
             "etym": "<uf-pf>préparer</uf-pf>",
+            "hw-search": "rebh",
             "pos": "v.",
             "word": "rébh"
         },
         {
             "def": "Answer, response, reply.",
+            "def-search": "answer reply response",
             "etym": "<uf-pf>réponse</uf-pf>",
+            "hw-search": "rebhos",
             "pos": "n.",
             "word": "rébhós"
         },
         {
+            "def-search": "a dream dreaming of sthdream to",
             "etym": "<uf-pf>rêver</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rẹ́v́e, <uf-s>subj</uf-s> rẹ́b’hs",
+            "hw-search": "reb’h",
             "pos": "v. or n.",
             "senses": [
                 {
@@ -2786,8 +3552,10 @@
             "word": "rẹ́b’h"
         },
         {
+            "def-search": "forewarn from happeningto of prevent sth stop to",
             "etym": "<uf-pf>prévenir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> réb’hníre, <uf-s>subj</uf-s> réb’hnís",
+            "hw-search": "reb’hni",
             "pos": "v.",
             "senses": [
                 {
@@ -2801,19 +3569,25 @@
         },
         {
             "def": "To wish (+<uf-s>acc/aci</uf-s> for sth.).",
+            "def-search": "for sth to wish",
             "etym": "<uf-pf>souhaiter</uf-pf>",
+            "hw-search": "red",
             "pos": "v.",
             "word": "réḍ"
         },
         {
             "def": "+s{opt} To fear, lest &hellip;<em>Construed with the negated optative</em>.",
+            "def-search": "fear lest sopt to",
             "etym": "<uf-pf>craindre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rêdrẹ́, <uf-s>subj</uf-s> rês",
+            "hw-search": "red",
             "pos": "v.",
             "word": "rêd"
         },
         {
+            "def-search": "do doing oneself onself start sth take to upon",
             "etym": "<uf-pf>prendre sur soi</uf-pf>",
+            "hw-search": "redrsyrse",
             "pos": "v.",
             "senses": [
                 {
@@ -2827,32 +3601,42 @@
         },
         {
             "def": "To reduce (+<uf-s>acc</uf-s> <em>or pass.</em> sbd./sth.) (+<uf-s>all</uf-s> to sth.).",
+            "def-search": "reduce sth to",
             "etym": "<uf-pf>réduire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rẹ́dy’ré, <uf-s>subj</uf-s> rẹ́dy’ís",
+            "hw-search": "redy’i",
             "pos": "v.",
             "word": "rẹ́dy’í"
         },
         {
             "def": "Of course, certainly, surely.",
+            "def-search": "certainly course of surely",
             "etym": "<uf-pf>bien sûr</uf-pf>",
+            "hw-search": "red’hes",
             "pos": "particle",
             "word": "rêd’hes"
         },
         {
             "def": "To think (+<uf-s>part</uf-s> sth.).",
+            "def-search": "sth think to",
             "etym": "<uf-pf>réfléchir</uf-pf>",
+            "hw-search": "reflec",
             "pos": "v.",
             "word": "rẹ́flec̣"
         },
         {
             "def": "To receive.",
+            "def-search": "receive to",
             "etym": "<uf-pf>recevoir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> réhẹv́é, <uf-s>subj</uf-s> rẹsy",
+            "hw-search": "rehev",
             "pos": "v.",
             "word": "réhẹv́"
         },
         {
+            "def-search": "an article clothes clothing garment garments of piece",
             "etym": "<uf-pf>fringues</uf-pf>",
+            "hw-search": "rer",
             "pos": "n.",
             "senses": [
                 {
@@ -2866,27 +3650,35 @@
         },
         {
             "def": "Rest, remainder.",
+            "def-search": "remainder rest",
             "etym": "<uf-pf>reste</uf-pf>",
+            "hw-search": "res",
             "pos": "n.",
             "word": "rés"
         },
         {
             "def": "To claim, allege.",
+            "def-search": "allege claim to",
             "etym": "<uf-pf>prétendre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rét’hádrẹ́, <uf-s>subj</uf-s> rét’h&shy;ádes",
+            "hw-search": "ret’had",
             "pos": "v.",
             "word": "rét’hád"
         },
         {
             "def": "To handle, take care of, deal with.",
+            "def-search": "care deal handle of take to with",
             "etym": "<uf-pf>traiter</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rét’hẹre, <uf-s>subj</uf-s> rét’hes",
+            "hw-search": "ret’he",
             "pos": "v.",
             "word": "rét’hẹ"
         },
         {
+            "def-search": "actually draw it moving on pull sth to try withdraw without",
             "etym": "<uf-pf>retirer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rét’hírẹ́, <uf-s>subj</uf-s> rét’hírs",
+            "hw-search": "ret’hir",
             "pos": "v.",
             "senses": [
                 {
@@ -2900,87 +3692,115 @@
         },
         {
             "def": "To return, come back.",
+            "def-search": "back come return to",
             "etym": "<uf-pf>remonter</uf-pf>",
+            "hw-search": "revot’he",
             "pos": "v.",
             "word": "révôt’hẹ"
         },
         {
             "def": "River.",
+            "def-search": "river",
             "etym": "<uf-pf>rivière</uf-pf>",
+            "hw-search": "rib’hy’er",
             "pos": "n.",
             "word": "ríb’hy’ér"
         },
         {
             "def": "Scoundrel, someone without virtue.",
+            "def-search": "scoundrel someone virtue without",
             "etym": "<uf-pf>criminel</uf-pf>",
+            "hw-search": "rivnel",
             "pos": "n.",
             "word": "rívnél"
         },
         {
             "def": "Priory.",
+            "def-search": "priory",
             "etym": "<uf-pf>prieuré</uf-pf>",
+            "hw-search": "riy’yre",
             "pos": "n.",
             "word": "ríy’ŷrệ"
         },
         {
             "def": "Comic book.",
+            "def-search": "book comic",
             "etym": "<uf-pf>Hergé</uf-pf>",
+            "hw-search": "rje",
             "pos": "n.",
             "word": "rjẹ"
         },
         {
             "def": "<uf-s>+acc</uf-s> To cause, make happen.",
+            "def-search": "cause happen make to",
             "etym": "<uf-pf>provoquer</uf-pf>; future from <uf-pf>infliger</uf-pf>",
             "forms": "<uf-s>fut</uf-s> flijé, <uf-s>subj</uf-s> rób’hoc’hs",
+            "hw-search": "rob’hoc’h",
             "pos": "v.",
             "word": "rób’hoc’h"
         },
         {
             "def": "Believe (something or someone).",
+            "def-search": "believe or someone something",
             "etym": "<uf-pf>croire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rrẹ́, <uf-s>subj</uf-s> rrás",
+            "hw-search": "rra",
             "pos": "v.",
             "word": "rrá"
         },
         {
             "def": "Side.",
+            "def-search": "side",
             "etym": "<uf-pf>droit</uf-pf> + <uf-pf>gauche</uf-pf>",
+            "hw-search": "rradrauc",
             "pos": "n.",
             "word": "rráḍraúc"
         },
         {
             "def": "Extreme cold, coldness.",
+            "def-search": "cold coldness extreme",
             "etym": "<uf-pf>froid de canard</uf-pf>",
+            "hw-search": "rrad’hahanar",
             "pos": "n.",
             "word": "rrád’hahánár"
         },
         {
             "def": "To find, discover.",
+            "def-search": "discover find to",
             "etym": "<uf-pf>trouver</uf-pf>",
+            "hw-search": "rub’h",
             "pos": "v.",
             "word": "rúb’h"
         },
         {
             "def": "Alas, woe, oh. <em>Exclamation of distress, surprise, sadness, or regret</em>.",
+            "def-search": "alas oh woe",
             "etym": "of unknown origin",
             "forms": "<em>after words that end with ‘r’, this is spelt <uf-w>-vá</uf-w> instead</em>",
+            "hw-search": "rva",
             "pos": "interj.",
             "word": "rvá"
         },
         {
             "def": "To ask, question.",
+            "def-search": "ask question to",
             "etym": "<uf-pf>requerir</uf-pf>",
+            "hw-search": "rycer",
             "pos": "v.",
             "word": "rýc̣ér"
         },
         {
             "def": "To be uneven, rough, rugged.",
+            "def-search": "be rough rugged to uneven",
             "etym": "<uf-pf>rude</uf-pf>",
+            "hw-search": "ryd",
             "pos": "v.",
             "word": "rýd"
         },
         {
+            "def-search": "burn scorch singe to",
             "etym": "<uf-pf>brûler</uf-pf>",
+            "hw-search": "ryl",
             "pos": "v.",
             "senses": [
                 {
@@ -2994,37 +3814,49 @@
         },
         {
             "def": "Face.",
+            "def-search": "face",
             "etym": "<uf-pf>gueule</uf-pf>",
+            "hw-search": "ryl",
             "pos": "n.",
             "word": "rýl"
         },
         {
             "def": "To be rough, rugged.",
+            "def-search": "be rough rugged to",
             "etym": "<uf-pf>rugueux</uf-pf>",
+            "hw-search": "ryry",
             "pos": "v.",
             "word": "rýrŷ"
         },
         {
             "def": "To frustrate, vex, annoy.",
+            "def-search": "annoy frustrate to vex",
             "etym": "<uf-pf>frustrer</uf-pf>",
+            "hw-search": "rysd",
             "pos": "v.",
             "word": "rýsḍ"
         },
         {
             "def": "History.",
+            "def-search": "history",
             "etym": "<uf-pf>rumeur</uf-pf>",
+            "hw-search": "ryvyr",
             "pos": ".n",
             "word": "rývýr"
         },
         {
             "def": "To be cerulean, sky-blue.",
+            "def-search": "be cerulean sky-blue to",
             "etym": "<uf-pf>céruléen</uf-pf>",
+            "hw-search": "ryy’e",
             "pos": "v.",
             "word": "rýý’ẹ́"
         },
         {
+            "def-search": "be completed completeto comprehensive exhaustive finished to",
             "etym": "<uf-pf>exhaustif</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rzaúsḍre, <uf-s>subj</uf-s> rzaúsḍs",
+            "hw-search": "rzausd",
             "pos": "v.",
             "senses": [
                 {
@@ -3038,74 +3870,98 @@
         },
         {
             "def": "If, when, whenever.",
+            "def-search": "if when whenever",
             "etym": "<uf-pf>si</uf-pf>",
+            "hw-search": "s",
             "pos": "conj.",
             "word": "s"
         },
         {
             "def": "Not, no. <em>Always enclitic <uf-w>s’</uf-w> before vowels. This particle is used only in the subjunctive; see also <uf-w>asý’ýâ</uf-w>, <uf-w>t’hé</uf-w></em>.",
+            "def-search": "no not",
             "etym": "<uf-pf>sans</uf-pf>",
+            "hw-search": "sa",
             "pos": "particle",
             "word": "sá"
         },
         {
             "def": "+<uf-s>subj</uf-s> Without (doing sth.).",
+            "def-search": "doing sth without",
             "etym": "<uf-pf>sans que</uf-pf>",
+            "hw-search": "sa",
             "pos": "conj.",
             "word": "sá"
         },
         {
             "def": "Sanctuary, shrine.",
+            "def-search": "sanctuary shrine",
             "etym": "<uf-pf>sanctuaire</uf-pf>",
+            "hw-search": "sady’er",
             "pos": "n.",
             "word": "sáḍy’ér"
         },
         {
             "def": "To be preposterous, absurd, nonsensical.",
+            "def-search": "absurd be nonsensical preposterous to",
             "etym": "<uf-pf>insensé</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sáhere, <uf-s>subj</uf-s> sáhes",
+            "hw-search": "sahe",
             "pos": "v.",
             "word": "sáhẹ"
         },
         {
             "def": "To be wise, prudent.",
+            "def-search": "be prudent to wise",
             "etym": "<uf-pf>sage</uf-pf>",
+            "hw-search": "saj",
             "pos": "v.",
             "word": "saj"
         },
         {
             "def": "Wisdom.",
+            "def-search": "wisdom",
             "etym": "<uf-pf>sagesse</uf-pf>",
+            "hw-search": "sajes",
             "pos": "n.",
             "word": "sajès"
         },
         {
             "def": "The Sanskrit language.",
+            "def-search": "language sanskrit the",
             "etym": "<uf-pf>sanskrit</uf-pf>",
+            "hw-search": "sasc’hrid",
             "pos": "n. never lenited",
             "word": "Sásc’hríḍ"
         },
         {
             "def": "To be essential.",
+            "def-search": "be essential to",
             "etym": "<uf-pf>essentiel</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sásy’élẹ́, <uf-s>subj</uf-s> sásy’éls",
+            "hw-search": "sasy’el",
             "pos": "v.",
             "word": "sásy’él"
         },
         {
             "def": "+<uf-s>subj</uf-s> Except that.",
+            "def-search": "except that",
             "etym": "<uf-pf>sauf que</uf-pf>",
+            "hw-search": "sauc’h",
             "pos": "conj.",
             "word": "sauc’h"
         },
         {
             "def": "Sun.",
+            "def-search": "sun",
             "etym": "<uf-pf>sol</uf-pf>",
+            "hw-search": "saul",
             "pos": "n.",
             "word": "saul"
         },
         {
+            "def-search": "form kind kinds of some sort type",
             "etym": "<uf-pf>sorte</uf-pf>",
+            "hw-search": "saur",
             "pos": "n.",
             "senses": [
                 {
@@ -3119,38 +3975,50 @@
         },
         {
             "def": "To teleport, translocate, warp (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "sth teleport to translocate warp",
             "etym": "<uf-pf>sauter</uf-pf>",
+            "hw-search": "saut’h",
             "pos": "v. intr. or tr.",
             "word": "saut’h"
         },
         {
             "def": "Thing, object.",
+            "def-search": "object thing",
             "etym": "<uf-pf>chose</uf-pf>",
+            "hw-search": "sauz",
             "pos": "n.",
             "word": "sauz"
         },
         {
             "def": "Something else, another thing.",
+            "def-search": "another else something thing",
             "etym": "<uf-pf>autre chose</uf-pf>",
+            "hw-search": "sauz-aud",
             "pos": "adj.",
             "word": "sauz-aud"
         },
         {
             "def": "To know (+<uf-s>part/acc</uf-s> sth. <em>case depends on the depth of the speaker’s understanding</em>).",
+            "def-search": "know sth to",
             "etym": "<uf-pf>savoir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> saúr, <uf-s>subj</uf-s> sac",
+            "hw-search": "sava",
             "pos": "v.",
             "word": "sav́á"
         },
         {
             "def": "<em>Male given name</em>.",
+            "def-search": "",
             "etym": "<uf-pf>Samuel</uf-pf>",
+            "hw-search": "savyy’el",
             "pos": "n.",
             "word": "Sávýy’él"
         },
         {
+            "def-search": "desire sth to want wish",
             "etym": "<uf-pf>espérer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sḅérẹ́, <uf-s>subj</uf-s> sḅés",
+            "hw-search": "sbe",
             "pos": "v.",
             "senses": [
                 {
@@ -3164,68 +4032,90 @@
         },
         {
             "def": "Soul.",
+            "def-search": "soul",
             "etym": "<uf-pf>espirit</uf-pf>",
+            "hw-search": "sbri",
             "pos": "n.",
             "word": "sḅrí"
         },
         {
             "def": "To bathe.",
+            "def-search": "bathe to",
             "etym": "<uf-pf>se baigner</uf-pf>",
+            "hw-search": "sb’he",
             "pos": "v.",
             "word": "sb’hé"
         },
         {
             "def": "So, thus, as a result.",
+            "def-search": "a as result so thus",
             "etym": "<uf-pf>ainsi</uf-pf>",
+            "hw-search": "se",
             "pos": "particle",
             "word": "sẹ"
         },
         {
             "def": "To be plain, simple.",
+            "def-search": "be plain simple to",
             "etym": "<uf-pf>simple</uf-pf>",
             "forms": "<uf-s>fut</uf-s> séḅrẹ́, <uf-s>subj</uf-s> séḅs",
+            "hw-search": "seb",
             "pos": "v.",
             "word": "séḅ"
         },
         {
             "def": "To cave in, collapse.",
+            "def-search": "cave collapse in to",
             "etym": "<uf-pf>s’effondrer</uf-pf>",
+            "hw-search": "seb’haud",
             "pos": "v. intr.",
             "word": "seb’haúd"
         },
         {
             "def": "It is due to (+<uf-s>gen</uf-s> sth. / +<uf-s>aci</uf-s> the fact that...).",
+            "def-search": "due fact is it sth that the to",
             "etym": "from <uf-pf>c’est du</uf-pf>",
+            "hw-search": "sed’h",
             "pos": "part.",
             "word": "sèd’h"
         },
         {
             "def": "+<uf-s>def</uf-s> <em>noun</em> This, these. <em>Precedes and is attached to nouns</em>.",
+            "def-search": "these this",
             "etym": "<uf-pf>ceci</uf-pf>",
+            "hw-search": "seh",
             "pos": "det.",
             "word": "sẹh"
         },
         {
             "def": "To quarrel, argue, fight about (+<uf-s>part</uf-s>).",
+            "def-search": "about argue fight quarrel to",
             "etym": "<uf-pf>se quereller</uf-pf>",
+            "hw-search": "seherel",
             "pos": "v.",
             "word": "sẹhérél"
         },
         {
             "def": "To flow.",
+            "def-search": "flow to",
             "etym": "<uf-pf>s’écouler</uf-pf>",
+            "hw-search": "sehul",
             "pos": "v.",
             "word": "sehul"
         },
         {
             "def": "To help, succour, give aid (+<uf-s>dat</uf-s> to sb.) (+<uf-s>aci</uf-s>/<uf-s>acc</uf-s> with sth.).",
+            "def-search": "aid give help sb sth succour to with",
             "etym": "<uf-pf>secourir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sẹhúrre, <uf-s>subj</uf-s> sẹhús",
+            "hw-search": "sehur",
             "pos": "v.",
             "word": "sẹhúr"
         },
         {
+            "def-search": "lord",
             "etym": "<uf-pf>seigneur</uf-pf>",
+            "hw-search": "senyr",
             "pos": "n.",
             "senses": [
                 {
@@ -3239,19 +4129,25 @@
         },
         {
             "def": "To surrender.",
+            "def-search": "surrender to",
             "etym": "<uf-pf>se rendre</uf-pf>",
+            "hw-search": "serad",
             "pos": "v. intr.",
             "word": "sẹrád"
         },
         {
             "def": "Certain, particular but not specified.",
+            "def-search": "but certain not particular specified",
             "etym": "<uf-pf>certain</uf-pf>",
+            "hw-search": "serde",
             "pos": "det.",
             "word": "sérḍé"
         },
         {
+            "def-search": "a be close-fitting heart heavy snug tight to",
             "etym": "<uf-pf>serré</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sérrẹ́, <uf-s>subj</uf-s> sérẹ́s",
+            "hw-search": "sere",
             "pos": "v.",
             "senses": [
                 {
@@ -3265,61 +4161,81 @@
         },
         {
             "def": "To feel.",
+            "def-search": "feel to",
             "etym": "<uf-pf>sentir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sèt’he, <uf-s>subj</uf-s> sès",
+            "hw-search": "set’h",
             "pos": "v.",
             "word": "sèt’h"
         },
         {
             "def": "+<uf-s>part</uf-s> <em>or</em> <uf-s>inf</uf-s> To try, attempt.",
+            "def-search": "attempt to try",
             "etym": "<uf-pf>essayer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> séy’ẹ́rẹ́, <uf-s>subj</uf-s> séy’ẹ́s",
+            "hw-search": "sey’e",
             "pos": "v.",
             "word": "séy’ẹ́"
         },
         {
             "def": "Facility, site.",
+            "def-search": "facility site",
             "etym": "<uf-pf>site</uf-pf>",
+            "hw-search": "sid",
             "pos": "n.",
             "word": "siḍ"
         },
         {
             "def": "System.",
+            "def-search": "system",
             "etym": "<uf-pf>système</uf-pf>",
+            "hw-search": "sisde",
             "pos": "n.",
             "word": "sisḍé"
         },
         {
             "def": "Sith (Star Wars).",
+            "def-search": "sith star wars",
             "etym": "<uf-pf>Sith</uf-pf>",
+            "hw-search": "sit’h",
             "pos": "n.",
             "word": "Sit’h"
         },
         {
             "def": "+<uf-s>opt</uf-s> Supposing that; if, assuming that.",
+            "def-search": "assuming if supposing that",
             "etym": "<uf-pf>si tant est que</uf-pf>",
+            "hw-search": "sit’ha",
             "pos": "conj.",
             "word": "sit’há"
         },
         {
             "def": "To be similar, alike (+<uf-s>gen</uf-s> to sth.).",
+            "def-search": "alike be similar sth to",
             "etym": "<uf-pf>similaire</uf-pf>",
+            "hw-search": "sivy’er",
             "pos": "v.",
             "word": "sívý’ér"
         },
         {
             "def": "<em>Family name, equivalent to English ‘Smyth’</em>.",
+            "def-search": "",
+            "hw-search": "snet’h",
             "pos": "n.",
             "word": "Snet’h"
         },
         {
             "def": "Ground, floor, earth, soil.<em>The plural may be used to indicate a large quantity of soil</em>.",
+            "def-search": "earth floor ground soil",
             "etym": "<uf-pf>sol</uf-pf>",
+            "hw-search": "sol",
             "pos": "n.",
             "word": "sol"
         },
         {
+            "def-search": "help hold of part support to up",
             "etym": "<uf-pf>soutenir</uf-pf>",
+            "hw-search": "sud",
             "pos": "v.",
             "senses": [
                 {
@@ -3333,44 +4249,58 @@
         },
         {
             "def": "Suddenly.",
+            "def-search": "suddenly",
             "etym": "<uf-pf>soudainement</uf-pf>",
+            "hw-search": "sud’henva",
             "pos": "adv.",
             "word": "sud’hénvâ"
         },
         {
             "def": "Pain.",
+            "def-search": "pain",
             "etym": "<uf-pf>souffre</uf-pf>",
+            "hw-search": "suf",
             "pos": "n.",
             "word": "suf"
         },
         {
             "def": "Life.",
+            "def-search": "life",
             "etym": "<uf-pf>souffle</uf-pf> + <uf-pf>vie</uf-pf>",
+            "hw-search": "sufb’h",
             "pos": "n.",
             "word": "sufb’h"
         },
         {
             "def": "+<uf-s>part, pci</uf-s> To care about, worry about.",
+            "def-search": "about care to worry",
             "etym": "<uf-pf>soucier</uf-pf>",
             "forms": "<uf-s>fut</uf-s> susy’ére, <uf-s>subj</uf-s> susy’és",
+            "hw-search": "susy’e",
             "pos": "v.",
             "word": "susy’é"
         },
         {
             "def": "The one, that one, this one.",
+            "def-search": "one that the this",
             "etym": "<uf-pf>celui</uf-pf>",
+            "hw-search": "swi",
             "pos": "det.",
             "word": "swi"
         },
         {
             "def": "<em>intr. or</em> +<uf-s>gen</uf-s> To be superior to, better than, higher than.",
+            "def-search": "be better higher superior than to",
             "etym": "<uf-pf>supérieur</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sybhẹ́rýrẹ́, <uf-s>subj</uf-s> sybhẹ́rýrs",
+            "hw-search": "sybheryr",
             "pos": "v.",
             "word": "sybhẹ́rýr"
         },
         {
+            "def-search": "additional extra sth supplement to with",
             "etym": "<uf-pf>suppléer</uf-pf>",
+            "hw-search": "syble",
             "pos": "v.",
             "senses": [
                 {
@@ -3384,14 +4314,18 @@
         },
         {
             "def": "To be succulent, delicious.",
+            "def-search": "be delicious succulent to",
             "etym": "<uf-pf>succulent</uf-pf>",
             "forms": "<uf-s>fut</uf-s> syhyý’áré, <uf-s>subj</uf-s> syhyý’ás",
+            "hw-search": "syhyy’a",
             "pos": "v.",
             "word": "syhyý’á"
         },
         {
+            "def-search": "alone be lone oneto only the to",
             "etym": "<uf-pf>seul</uf-pf>",
             "forms": "<uf-s>fut</uf-s> syle, <uf-s>subj</uf-s> syls",
+            "hw-search": "syl",
             "pos": "v.",
             "senses": [
                 {
@@ -3405,58 +4339,76 @@
         },
         {
             "def": "To rise (+<uf-s>ela</uf-s> from sth.).",
+            "def-search": "from rise sth to",
             "etym": "<uf-pf>se lever</uf-pf>",
+            "hw-search": "sy’b’h",
             "pos": "v. intr.",
             "word": "sy’b’h"
         },
         {
             "def": "To be his, hers, its.",
+            "def-search": "be hers his its to",
             "etym": "<uf-pf>sien</uf-pf>",
             "forms": "<uf-s>fut</uf-s> sy’êrẹ́, <uf-s>subj</uf-s> sy’ês",
+            "hw-search": "sy’e",
             "pos": "v.",
             "word": "sy’ê"
         },
         {
             "def": "+<uf-s>def</uf-s> <em>noun</em> That, those. <em>Precedes and is attached to nouns; often <uf-w>sý’</uf-w> before vowels, with one apostrophe, not two</em>.",
+            "def-search": "that those",
             "etym": "<uf-pf>cela</uf-pf>",
+            "hw-search": "sy’e",
             "pos": "det.",
             "word": "sý’ẹ"
         },
         {
-            "def": "Not, no. <em>Always <uf-w>t’h’<uf-mut>N</uf-mut></uf-w> before vowels, but does not nasalise if the ‘é’ is still present. This particle is used only in the optative; see also <uf-w>asý’ýâ</uf-w>, <uf-w>sá</uf-w></em>.",
-            "etym": "<uf-pf>de peur que</uf-pf> &gt; *<uf-w>dbhýrc’h</uf-w> &gt; *<uf-w>dýrc’h</uf-w> &gt; *<uf-w>dc’hý</uf-w> &gt; t’hé",
+            "def": "Not, no. <em>Always <uf-w>t’h’<uf-mut><sup>N</sup></uf-mut></uf-w> before vowels, but does not nasalise if the ‘é’ is still present. This particle is used only in the optative; see also <uf-w>asý’ýâ</uf-w>, <uf-w>sá</uf-w></em>.",
+            "def-search": "no not",
+            "etym": "<uf-pf>de peur que</uf-pf> &gt; *<uf-w>dbhýrc’h</uf-w> &gt; *<uf-w>dýrc’h</uf-w> &gt; *<uf-w>dc’hý</uf-w> &gt; <uf-w>t’hé</uf-w>",
+            "hw-search": "t’he",
             "pos": "conj.",
             "word": "t’hé"
         },
         {
             "def": "(ULTRA-) France, (ULTRA-)French.",
+            "def-search": "france ultra- ultra-french",
             "etym": "from <uf-w>t’hebhaúz</uf-w>",
+            "hw-search": "t’hebhau",
             "pos": "n. or adj.",
             "word": "T’hebhaú"
         },
         {
             "def": "The ULTRAFR&shy;ENCH language. <em>Only <uf-w>T’hebhaú</uf-w> is declined as though the entire phrase were one word. In informal speech and writing, this is typically shortened to <uf-w>Raúl</uf-w></em>.",
+            "def-search": "language the ultrafrench",
             "etym": "from <uf-w>t’hebhaúz</uf-w> + <uf-w>raúl</uf-w>",
             "forms": "<uf-s>nom sg</uf-s> <em>irreg.</em> <uf-w>T’hebhaú Raúl</uf-w>",
+            "hw-search": "raul t’hebhau",
             "pos": "n. def. sg.",
             "word": "T’hebhaú Raúl"
         },
         {
             "def": "To be (ULTRA-)French.",
+            "def-search": "be to ultra-french",
             "etym": "<uf-pf>jeter l’éponge</uf-pf>",
             "forms": "<uf-s>fut</uf-s> t’hebhaúźe, <uf-s>subj</uf-s> t’hebhaúś",
+            "hw-search": "t’hebhauz",
             "pos": "v.",
             "word": "t’hebhaúz"
         },
         {
             "def": "+<uf-s>part</uf-s> To use, make use of.",
+            "def-search": "make of to use",
             "etym": "from <uf-w>yt’hiy’ihẹ</uf-w>; <uf-s>subj</uf-s> via ba&shy;ck-formation from the <uf-s>fut</uf-s>",
             "forms": "<uf-s>fut</uf-s> t’hiźe, <uf-s>subj</uf-s> <uf-s>t’hizes</uf-s>",
+            "hw-search": "t’hiy’e",
             "pos": "v.",
             "word": "t’hiy’e"
         },
         {
+            "def-search": "or ’",
             "etym": "<uf-pf>ou</uf-pf>",
+            "hw-search": "u",
             "pos": "conj.",
             "senses": [
                 {
@@ -3470,14 +4422,18 @@
         },
         {
             "def": "To open.",
+            "def-search": "open to",
             "etym": "<uf-pf>ouvrir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> uv́, <uf-s>subj</uf-s> ub’hs",
+            "hw-search": "ub’h",
             "pos": "v.",
             "word": "ub’h"
         },
         {
+            "def-search": "able be can capable may might of possible to",
             "etym": "<uf-pf>pouvoir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> úrẹ́, <uf-s>subj</uf-s> ís",
+            "hw-search": "ub’hra",
             "pos": "v.",
             "senses": [
                 {
@@ -3497,46 +4453,60 @@
         },
         {
             "def": "To forget.",
+            "def-search": "forget to",
             "etym": "<uf-pf>oublier</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ulíy’ẹ́rẹ́, <uf-s>subj</uf-s> ulíy’ẹ́s",
+            "hw-search": "uliy’e",
             "pos": "v.",
             "word": "ulíy’ẹ́"
         },
         {
             "def": "+<uf-s>opt</uf-s> Provided that, so long as.",
+            "def-search": "as long provided so that",
             "etym": "<uf-pf>pour peu que</uf-pf>",
+            "hw-search": "urbh",
             "pos": "conj.",
             "word": "úrbh"
         },
         {
             "def": "A very rich person; billionaire.",
+            "def-search": "a billionaire person rich very",
             "etym": "<uf-pf>avoir un oursin dans le portefeuille</uf-pf>",
+            "hw-search": "urdalbhaurd",
             "pos": "n.",
             "word": "urdálbhaúrḍ"
         },
         {
             "def": "To scam, cheat, swindle.",
+            "def-search": "cheat scam swindle to",
             "etym": "<uf-pf>rouler dans la farine</uf-pf>",
             "forms": "<uf-s>fut</uf-s> uy’e&shy;d’háv́e, <uf-s>subj</uf-s> uy’ed’háb’hrís",
+            "hw-search": "uy’ed’hab’hri",
             "pos": "v.",
             "word": "uy’ed’háb’hrí"
         },
         {
             "def": "Mast.",
+            "def-search": "mast",
             "etym": "<uf-pf>mât</uf-pf>",
+            "hw-search": "va",
             "pos": "n.",
             "word": "vá"
         },
         {
             "def": "To depend on predictions of the future. <em>Of disputed origin; first attested in the works of the Early UF comedian <uf-s>J. A. B. Snet’h</uf-s></em>.",
+            "def-search": "depend future of on predictions the to",
             "etym": "<uf-pf>vendre la peau de ours avant de avoir tué</uf-pf>",
             "forms": "<uf-s>fut</uf-s> vád&shy;ła&shy;bhau&shy;d’há&shy;vúr&shy;sa&shy;b’há&shy;d’há&shy;vá&shy;b’hrár&shy;ḍu&shy;re, <uf-s>s</uf-s> vád&shy;ła&shy;bhau&shy;d’há&shy;vúr&shy;sa&shy;b’há&shy;d’há&shy;vá&shy;b’hrár&shy;ḍus",
+            "hw-search": "vadłabhaud’havursab’had’havab’hrardue",
             "pos": "v. literary",
             "word": "vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ"
         },
         {
+            "def-search": "lack miss on out to want",
             "etym": "<uf-pf>manquer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> vâhérẹ́, <uf-s>subj</uf-s> vâhés",
+            "hw-search": "vahe",
             "pos": "v.",
             "senses": [
                 {
@@ -3553,39 +4523,51 @@
         },
         {
             "def": "Image, picture.",
+            "def-search": "image picture",
             "etym": "from <uf-w>íváj</uf-w>",
+            "hw-search": "vaj",
             "pos": "n.",
             "word": "váj"
         },
         {
             "def": "Torture.",
+            "def-search": "torture",
             "etym": "<uf-pf>maltraitance</uf-pf>",
+            "hw-search": "valdret’has",
             "pos": "n.",
             "word": "válḍrét’hás"
         },
         {
             "def": "To be malfeasant, evil, malevolent.",
+            "def-search": "be evil malevolent malfeasant to",
             "etym": "<uf-pf>malfaisant</uf-pf>",
             "forms": "<uf-s>fut</uf-s> válfèź, <uf-s>subj</uf-s> válfès",
+            "hw-search": "valfez",
             "pos": "v.",
             "word": "válfèz"
         },
         {
             "def": "To be blind.",
+            "def-search": "be blind to",
             "etym": "<uf-pf>malvoyant</uf-pf>",
+            "hw-search": "valvay’",
             "pos": "v.",
             "word": "válv́áy’"
         },
         {
             "def": "To mistreat, torture.",
+            "def-search": "mistreat to torture",
             "etym": "<uf-pf>malmener</uf-pf>",
             "forms": "<uf-s>fut</uf-s> válv́e, <uf-s>subj</uf-s> válvês",
+            "hw-search": "valve",
             "pos": "v.",
             "word": "válvê"
         },
         {
+            "def-search": "be even have if must obliged owe sbd sth to",
             "etym": "<uf-pf>devoir</uf-pf>",
             "forms": "<uf-s>cond i, ii</uf-s> dy, <uf-s>fut</uf-s> dv́e, <uf-s>subj</uf-s> ráb’h",
+            "hw-search": "var",
             "pos": "v. irreg.",
             "senses": [
                 {
@@ -3602,13 +4584,17 @@
         },
         {
             "def": "The masses, the people.",
+            "def-search": "masses people the",
             "etym": "<uf-pf>masses</uf-pf>",
+            "hw-search": "vas",
             "pos": "n. <uf-s>pl def</uf-s>",
             "word": "vás"
         },
         {
+            "def-search": "badto be inappropriate incorrect to wrong",
             "etym": "<uf-pf>mauvais</uf-pf>",
             "forms": "<uf-s>fut</uf-s> bíré, <uf-s>subj</uf-s> bíres; <uf-s>comp</uf-s> lẹbír, y’ŷbír, rêbír; <uf-s>sup</uf-s> réb’hír, râdvâbír",
+            "hw-search": "vaub’he",
             "pos": "v. irreg.",
             "senses": [
                 {
@@ -3622,66 +4608,88 @@
         },
         {
             "def": "World.",
+            "def-search": "world",
             "etym": "<uf-pf>monde</uf-pf>",
+            "hw-search": "vaud",
             "pos": "n.",
             "word": "vaûd"
         },
         {
             "def": "To show, display (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "display show sth to",
             "etym": "<uf-pf>montrer</uf-pf>",
+            "hw-search": "vaud",
             "pos": "v.",
             "word": "vaûḍ"
         },
         {
             "def": "To be moderate.",
+            "def-search": "be moderate to",
             "etym": "<uf-pf>modérer</uf-pf>",
+            "hw-search": "vaud’her",
             "pos": "v.",
             "word": "vaúd’hér"
         },
         {
             "def": "Mountain.",
+            "def-search": "mountain",
             "etym": "<uf-pf>montagne</uf-pf>",
+            "hw-search": "vaut’ha",
             "pos": "n.",
             "word": "vaût’há"
         },
         {
             "def": "Vice.",
+            "def-search": "vice",
             "etym": "<uf-pf>maléfice</uf-pf>",
+            "hw-search": "vay’eb’his",
             "pos": "n.",
             "word": "váý’eb’his"
         },
         {
             "def": "Tragedy, misfortune.",
+            "def-search": "misfortune tragedy",
             "etym": "<uf-pf>malheur</uf-pf>",
+            "hw-search": "vay’yr",
             "pos": "n.",
             "word": "váý’ýr"
         },
         {
             "def": "+<uf-s>subj</uf-s> Despite that, in spite of.",
+            "def-search": "despite in of spite that",
             "etym": "<uf-pf>malgré que</uf-pf>",
+            "hw-search": "vałe",
             "pos": "conj.",
             "word": "váłé"
         },
         {
             "def": "But, however, although.",
+            "def-search": "although but however",
             "etym": "<uf-pf>mais</uf-pf>",
+            "hw-search": "ve",
             "pos": "conj.",
             "word": "vé"
         },
         {
             "def": "Tomorrow.",
+            "def-search": "tomorrow",
             "etym": "<uf-pf>demain</uf-pf>",
+            "hw-search": "ve",
             "pos": "adv.",
             "word": "vê₁"
         },
         {
             "def": "Hand.",
+            "def-search": "hand",
             "etym": "<uf-pf>main</uf-pf>",
+            "hw-search": "ve",
             "pos": "n.",
             "word": "vê₂"
         },
         {
+            "def-search": "a hair of strand",
             "etym": "<uf-pf>mèche</uf-pf>",
+            "hw-search": "vec",
             "pos": "n.",
             "senses": [
                 {
@@ -3695,19 +4703,25 @@
         },
         {
             "def": "To lay, put, place (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "lay place put sth to",
             "etym": "<uf-pf>mettre</uf-pf>",
+            "hw-search": "ved",
             "pos": "v.",
             "word": "véḍ"
         },
         {
             "def": "Insofar as.",
+            "def-search": "as insofar",
             "etym": "<uf-pf>dans la mesure où</uf-pf>",
+            "hw-search": "vehyr",
             "pos": "conj.",
             "word": "véhýr"
         },
         {
+            "def-search": "measuremeasurement to",
             "etym": "<uf-pf>mesure</uf-pf>",
             "forms": "<uf-s>fut</uf-s> véhýrẹ́, <uf-s>subj</uf-s> véhýrs",
+            "hw-search": "vehyr",
             "pos": "v/n.",
             "senses": [
                 {
@@ -3721,24 +4735,32 @@
         },
         {
             "def": "<em>(informal)</em> Mum, mom.",
+            "def-search": "mom mum",
             "etym": "<uf-pf>mère</uf-pf>",
+            "hw-search": "ver",
             "pos": "n.",
             "word": "vér"
         },
         {
             "def": "To be vigorous, energetic.",
+            "def-search": "be energetic to vigorous",
             "etym": "<uf-pf>énergétique</uf-pf>",
+            "hw-search": "verjet’hic’h",
             "pos": "v.",
             "word": "vérjet’hic’h"
         },
         {
             "def": "Sea, ocean.",
+            "def-search": "ocean sea",
             "etym": "<uf-pf>mer</uf-pf>",
+            "hw-search": "verr",
             "pos": "n.",
             "word": "vérr"
         },
         {
+            "def-search": "for sbd sth thank to you",
             "etym": "<uf-pf>merci</uf-pf>",
+            "hw-search": "vers",
             "pos": "interj.",
             "senses": [
                 {
@@ -3752,24 +4774,32 @@
         },
         {
             "def": "Now.",
+            "def-search": "now",
             "etym": "from <uf-pf>maintenant</uf-pf>, lenited for unknown reasons",
+            "hw-search": "vet’hna",
             "pos": "adv.",
             "word": "vêt’hnâ"
         },
         {
             "def": "Noon, midday.",
+            "def-search": "midday noon",
             "etym": "<uf-pf>midi</uf-pf>",
+            "hw-search": "vid’he",
             "pos": "n.",
             "word": "víd’hẹ"
         },
         {
             "def": "Midichlorian (Star Wars).",
+            "def-search": "midichlorian star wars",
             "etym": "<uf-pf>Midichlorien</uf-pf>",
+            "hw-search": "vid’hic’hlaury’e",
             "pos": "n.",
             "word": "Víd’hic’hlaúry’ê"
         },
         {
+            "def-search": "broadcast emissionprogramme show",
             "etym": "<uf-pf>émission</uf-pf>",
+            "hw-search": "visy’o",
             "pos": "n.",
             "senses": [
                 {
@@ -3783,188 +4813,248 @@
         },
         {
             "def": "Castle.",
+            "def-search": "castle",
             "etym": "<uf-pf>monastère</uf-pf>",
+            "hw-search": "vnasder",
             "pos": "n.",
             "word": "vnásḍér"
         },
         {
             "def": "Many, much, a lot of.",
+            "def-search": "a lot many much of",
             "etym": "<uf-pf>moult</uf-pf>",
+            "hw-search": "vu",
             "pos": "adj.",
             "word": "vú"
         },
         {
             "def": "Movement, motion.",
+            "def-search": "motion movement",
             "etym": "<uf-pf>movement</uf-pf>",
+            "hw-search": "vub’hva",
             "pos": "n.",
             "word": "vúb’hvâ"
         },
         {
             "def": "Moss.",
+            "def-search": "moss",
             "etym": "<uf-pf>mousse</uf-pf> + <uf-pf>lichen</uf-pf>",
+            "hw-search": "vuslihe",
             "pos": "n.",
             "word": "vúslihé"
         },
         {
             "def": "Mother.",
+            "def-search": "mother",
             "etym": "<uf-pf>maman</uf-pf>",
+            "hw-search": "vva",
             "pos": "n.",
             "word": "vvâ"
         },
         {
             "def": "Moment, instant.",
+            "def-search": "instant moment",
             "etym": "<uf-pf>moment</uf-pf>",
+            "hw-search": "vva",
             "pos": "n.",
             "word": "vvâ"
         },
         {
             "def": "To remember.",
+            "def-search": "remember to",
             "etym": "<uf-pf>mémoriser</uf-pf>",
             "forms": "<uf-s>fut</uf-s> vvaúríźe, <uf-s>subj</uf-s> vvaúríhes",
+            "hw-search": "vvaurihe",
             "pos": "v. (in)tr.",
             "word": "vvaúríhe"
         },
         {
             "def": "To lead.",
+            "def-search": "lead to",
             "etym": "<uf-pf>mener</uf-pf>",
             "forms": "<uf-s>fut</uf-s> menre, <uf-s>subj</uf-s> mens",
+            "hw-search": "vy",
             "pos": "v.",
             "word": "vŷ"
         },
         {
             "def": "To remove (+<uf-s>acc</uf-s> sth.).",
+            "def-search": "remove sth to",
             "etym": "<uf-pf>enlever</uf-pf>",
+            "hw-search": "w",
             "pos": "v.",
             "word": "w"
         },
         {
             "def": "To hit, strike.",
+            "def-search": "hit strike to",
             "etym": "<uf-pf>heurter</uf-pf>",
             "forms": "<uf-s>fut</uf-s> ýrḍ, <uf-s>subj</uf-s> ýrs",
+            "hw-search": "yr",
             "pos": "v.",
             "word": "ýr"
         },
         {
             "def": "+<uf-s>part</uf-s> <em>Archaic</em>. To use, make use of.",
+            "def-search": "make of to use",
             "etym": "<uf-pf>utiliser</uf-pf>",
             "forms": "<uf-s>fut</uf-s> yt’hiy’iźe, <uf-s>subj</uf-s> yt’hiy’&shy;ihẹs",
+            "hw-search": "yt’hiy’ihe",
             "pos": "v.",
             "word": "yt’hiy’ihẹ"
         },
         {
             "def": "<em>Male given name</em>.",
+            "def-search": "",
             "etym": "<uf-pf>Ulysse</uf-pf>",
+            "hw-search": "yy’is",
             "pos": "n.",
             "word": "Yý’is"
         },
         {
             "def": "To be diachronic.",
+            "def-search": "be diachronic to",
             "etym": "<uf-pf>diachronique</uf-pf>",
             "forms": "<uf-s>fut</uf-s> y’ác’hraú&shy;níc’hre, <uf-s>subj</uf-s> y’ác’hraúníc’hes",
+            "hw-search": "y’ac’hraunic’h",
             "pos": "v.",
             "word": "y’ác’hraúníc’h"
         },
         {
             "def": "There is no, there are no, there is none.",
+            "def-search": "are is no none there",
             "etym": "<uf-pf>il n’y a aucun</uf-pf>",
+            "hw-search": "y’auhy",
             "pos": "part.",
             "word": "y’aúhý"
         },
         {
             "def": "There is, there are.",
+            "def-search": "are is there",
             "etym": "<uf-pf>il y a aucun</uf-pf>",
+            "hw-search": "y’auhy",
             "pos": "part.",
             "word": "ý’aúhý"
         },
         {
             "def": "To be violent, vehement.",
+            "def-search": "be to vehement violent",
             "etym": "back-formation from <uf-w>y’aúý’vâ</uf-w>, displacing earlier <uf-w>y’aúý’á</uf-w>",
+            "hw-search": "y’auy’",
             "pos": "v.",
             "word": "y’aúý’"
         },
         {
             "def": "To be violent, vehement.",
+            "def-search": "be to vehement violent",
             "etym": "back-formation from <uf-w>y’aúý’ávâ</uf-w>",
+            "hw-search": "y’auy’a",
             "pos": "v. archaic",
             "word": "y’aúý’á"
         },
         {
             "def": "Violently, vehemently.",
+            "def-search": "vehemently violently",
             "etym": "<uf-pf>violament</uf-pf>",
+            "hw-search": "y’auy’ava",
             "pos": "adv. archaic",
             "word": "y’aúý’ávâ"
         },
         {
             "def": "Violently, vehemently.",
+            "def-search": "vehemently violently",
             "etym": "back-formation from <uf-w>y’aúý’á</uf-w>, displacing earlier <uf-w>y’aúý’ávâ</uf-w>",
+            "hw-search": "y’auy’va",
             "pos": "adv.",
             "word": "y’aúý’vâ"
         },
         {
             "def": "Nothing. <em>Like most negative polarity items, this induces negation of the verb</em>.",
+            "def-search": "nothing",
             "etym": "<uf-pf>rien</uf-pf>",
+            "hw-search": "y’e",
             "pos": "pron.",
             "word": "y’é"
         },
         {
             "def": "To forbid, deny.",
+            "def-search": "deny forbid to",
             "etym": "<uf-pf>nier</uf-pf>",
             "forms": "<uf-s>fut</uf-s> y’ẹ́rẹ́, <uf-s>subj</uf-s> y’ẹ́s",
+            "hw-search": "y’e",
             "pos": "v.",
             "word": "y’ẹ́"
         },
         {
             "def": "To be mine.",
+            "def-search": "be mine to",
             "etym": "<uf-pf>mien</uf-pf>",
             "forms": "<uf-s>fut</uf-s> y’êrẹ́, <uf-s>subj</uf-s> y’ês",
+            "hw-search": "y’e",
             "pos": "v.",
             "word": "y’ê"
         },
         {
             "def": "Chair, seat.",
+            "def-search": "chair seat",
             "etym": "<uf-pf>siège</uf-pf> + <uf-pf>tabouret</uf-pf>",
+            "hw-search": "y’ejure",
             "pos": "n.",
             "word": "y’éjúré"
         },
         {
             "def": "Yesterday.",
+            "def-search": "yesterday",
             "etym": "<uf-pf>hier</uf-pf>",
+            "hw-search": "y’er",
             "pos": "adv.",
             "word": "y’ér"
         },
         {
             "def": "Night.",
+            "def-search": "night",
             "etym": "<uf-pf>nuit</uf-pf>",
+            "hw-search": "y’i",
             "pos": "n.",
             "word": "y’í"
         },
         {
             "def": "Well (water source).",
+            "def-search": "source water well",
             "etym": "<uf-pf>puits</uf-pf>",
+            "hw-search": "y’i",
             "pos": "n.",
             "word": "y’í"
         },
         {
             "def": "To be powerful, mighty, puissant.",
+            "def-search": "be mighty powerful puissant to",
             "etym": "<uf-pf>puissant</uf-pf>",
+            "hw-search": "y’iha",
             "pos": "v.",
             "word": "y’íhá"
         },
         {
             "def": "To understand, listen, <em>(rarely)</em> hear.",
+            "def-search": "hear listen to understand",
             "etym": "<uf-pf>ouïr</uf-pf>",
             "forms": "<uf-s>fut</uf-s> aúré, <uf-s>subj</uf-s> rás",
+            "hw-search": "y’ir",
             "pos": "v. (in)tr.",
             "word": "y’ír"
         },
         {
             "def": "Considering that, since, because. <em>Unlike <uf-w>c’haúr</uf-w>, this does not take the subjunctive; it is used to indicate the (potential) cause of something</em>.",
+            "def-search": "because considering since that",
             "etym": "<uf-pf>puisque</uf-pf>",
+            "hw-search": "y’is",
             "pos": "conj.",
             "word": "y’ís"
         },
         {
+            "def-search": "after day",
             "etym": "<uf-pf>jour</uf-pf>",
+            "hw-search": "y’ur",
             "pos": "n.",
             "senses": [
                 {
@@ -3978,25 +5068,33 @@
         },
         {
             "def": "Eye.",
+            "def-search": "eye",
             "etym": "from <uf-w>y’ŷvéłáfrí</uf-w>",
+            "hw-search": "y’y",
             "pos": "n.",
             "word": "y’ŷ"
         },
         {
             "def": "<em>Denying comparative prefix. See grammar</em>.",
+            "def-search": "",
             "etym": "<uf-pf>mieux</uf-pf>",
+            "hw-search": "y’y-",
             "pos": "prefix",
             "word": "y’ŷ-"
         },
         {
             "def": "Eyes.",
+            "def-search": "eyes",
             "etym": "<uf-pf>yeux de merlan frit</uf-pf>",
+            "hw-search": "y’yvełafri",
             "pos": "n. pl. archaic",
             "word": "y’ŷvéłáfrí"
         },
         {
             "def": "Aesop.",
+            "def-search": "aesop",
             "etym": "<uf-pf>Ésope</uf-pf>",
+            "hw-search": "zaub",
             "pos": "n.",
             "word": "Zauḅ"
         }

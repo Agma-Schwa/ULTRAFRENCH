@@ -455,10 +455,10 @@ c’haú|adj.|see sense 2|\\ Holy. \\ \w{c’haú-}\L{} \textit{‘religious pre
 ḷý|n.|lieu|\textit{Base of the spatial correlatives. In senses 2–5, case affixes are attached before \this, e.g.
     sense 2 \s{all} \w{sẹb’héḷý} ‘hither’}.
   \\ Place, location
-  \\ \w{sẹ}\ldots\this \s{def} [from \w{sẹh}] Here, hither, hence, \&c. \textit{Proximal demonstrative (all cases)}
-  \\ \w{sý’\L}\ldots\this \s{def} [from \w{sý’ẹ}] There, thither, thence, \&c. \textit{Distal demonstrative (all cases)}
+  \\ \w{sẹ}\ldots\this{} \s{def} [from \w{sẹh}] Here, hither, hence, \&c. \textit{Proximal demonstrative (all cases)}
+  \\ \w{sý’\L}\ldots\this{} \s{def} [from \w{sý’ẹ}] There, thither, thence, \&c. \textit{Distal demonstrative (all cases)}
   \\ \this\w{hes} \s{indef} [from \w{c’hes}] Where, whither, when\-ce, \&c. \textit{Interrogative (locative cases only)}
-  \\ \w{s’}/\w{sá\L}\ldots\this \s{indef} [from \w{sá}] No\-where, from no\-where, \&c. \textit{Negative (locative cases only)}
+  \\ \w{s’}/\w{sá\L}\ldots\this{} \s{indef} [from \w{sá}] No\-where, from no\-where, \&c. \textit{Negative (locative cases only)}
 c’haúbhárrás|n.|\w{c’haú} + \pf{paroisse}|Parish
 c’haúhaúvnaút’hẹ|n.|\w{c’haú} + \pf{com\-mu\-nau\-té}|Mo\-nastery
 c’haúvnaút’hẹ|n.|communauté|Community

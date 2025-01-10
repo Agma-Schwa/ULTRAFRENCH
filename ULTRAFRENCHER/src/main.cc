@@ -7,6 +7,7 @@
 #include <nlohmann/json.hpp>
 #include <print>
 #include <ranges>
+#include <set>
 #include <string>
 #include <unicode/schriter.h>
 #include <unicode/stringoptions.h>
@@ -100,6 +101,7 @@ struct JsonBackend final : Backend {
         json& e = entries().emplace_back();
         e["word"] = current_word = TeXToHtml(word);
         e["pos"] = TeXToHtml(data.pos);
+
         if (not data.etym.empty()) e["etym"] = TeXToHtml(data.etym);
         if (not data.primary_definition.empty()) e["def"] = TeXToHtml(data.primary_definition);
         if (not data.forms.empty()) e["forms"] = TeXToHtml(data.forms);
@@ -115,6 +117,41 @@ struct JsonBackend final : Backend {
                 }
             }
         }
+
+        // IMPORTANT: Remember to update the function with the same name in the
+        // code for the ULTRAFRENCH dictionary page on nguh.org if the output of
+        // this function changes.
+        //
+        auto NormaliseForSearch = [](std::string_view value) {
+            auto haystack = text::ToUTF8(
+                Normalise(text::ToLower(text::ToUTF32(value)), text::NormalisationForm::NFKD).value()                                //
+                | vws::filter([](char32_t c) { return U"abcdefghijklłmnopqrstuvwxyzABCDEFGHIJKLŁMNOPQRSTUVWXYZ’- "sv.contains(c); }) //
+                | rgs::to<std::u32string>()
+            );
+
+            // The steps below only apply to the haystack, not the needle, and should
+            // NOT be applied on the frontend:
+            //
+            // Yeet all instances of 'sbdsth', which is what 'sbd./sth.' degenerates to.
+            auto remove_weird = stream(haystack).trim().replace("sbdsth", "");
+
+            // Trim and fold whitespace.
+            auto fold_ws = stream(remove_weird).fold_ws();
+
+            // Unique all words.
+            return utils::join(
+                stream(fold_ws).split(" ")                            //
+                    | vws::transform([](auto s) { return s.text(); }) //
+                    | rgs::to<std::set>(),
+                " "
+            );
+        };
+
+        // Precomputed normalised strings for searching. Do all filtering in UTF32 land since
+        // we need to iterate over entire characters.
+        auto all_senses = utils::join(data.senses | vws::transform(&FullEntry::Sense::def), "");
+        e["hw-search"] = NormaliseForSearch(TeXToHtml(word, true));
+        e["def-search"] = NormaliseForSearch(TeXToHtml(data.primary_definition, true) + TeXToHtml(all_senses, true));
     }
 
     void emit(std::string_view word, const RefEntry& data) override {
@@ -132,28 +169,34 @@ private:
     auto refs() -> json& { return out["refs"]; }
     auto entries() -> json& { return out["entries"]; }
 
-    auto TeXToHtml(stream input) -> std::string {
-        return TeXToHtmlConverter(*this, input).Run();
+    auto TeXToHtml(stream input, bool plain_text_output = false) -> std::string {
+        return TeXToHtmlConverter(*this, input, plain_text_output).Run();
     }
 
     struct TeXToHtmlConverter {
         JsonBackend& backend;
         stream input;
+        bool plain_text_output;
+        bool suppress_output = false;
         std::string out = "";
 
         void Append(std::string_view s) {
             // We need to escape certain chars for HTML. Do this first
             // since we’ll be inserting HTML tags later.
-            if (stream{s}.contains_any("<>§~")) {
+            if (not plain_text_output and stream{s}.contains_any("<>§~")) {
                 auto copy = std::string{s};
                 utils::ReplaceAll(copy, "<", "&lt;");
                 utils::ReplaceAll(copy, ">", "&gt;");
                 utils::ReplaceAll(copy, "§~", "grammar"); // FIXME: Make section references work somehow.
                 utils::ReplaceAll(copy, "~", "&nbsp;");
-                out += copy;
+                AppendRaw(copy);
             } else {
-                out += s;
+                AppendRaw(s);
             }
+        }
+
+        void AppendRaw(std::string_view s) {
+            if (not suppress_output) out += s;
         }
 
         auto Run() -> std::string {
@@ -164,9 +207,11 @@ private:
 
                 // TODO: Render maths.
                 if (input.consume('$')) {
-                    out += "$";
+                    tempset suppress_output = plain_text_output;
+                    AppendRaw("$");
                     Append(input.take_until('$'));
-                    out += '$';
+                    AppendRaw("$");
+                    input.drop();
                     continue;
                 }
 
@@ -184,19 +229,21 @@ private:
         }
 
         void ProcessMacro() {
+            tempset suppress_output = plain_text_output;
+
             // Found a macro; first, handle single-character macros.
             if (text::IsPunct(*input.front()) or input.starts_with(' ')) {
                 switch (auto c = input.take()[0]) {
                     // Discretionary hyphen.
-                    case '-': out += "&shy;"; return;
+                    case '-': AppendRaw("&shy;"); return;
 
                     // Space.
-                    case ' ': out += " "; return;
+                    case ' ': AppendRaw(" "); return;
 
                     // Escaped characters.
-                    case '&': out += "&amp;"; return;
-                    case '%': out += "%"; return;
-                    case '#': out += "#"; return;
+                    case '&': AppendRaw("&amp;"); return;
+                    case '%': AppendRaw("%"); return;
+                    case '#': AppendRaw("#"); return;
 
                     // These should no longer exist at this point.
                     case '\\': backend.error("'\\\\' is not supported in this field"); return;
@@ -208,12 +255,12 @@ private:
 
             // Drop a brace-delimited argument after a macro.
             auto DropArg = [&] {
-                if (input.trim_front().starts_with('{')) input.drop_until('}');
+                if (input.trim_front().starts_with('{')) input.drop_until('}').drop();
             };
 
             auto DropArgAndAppendRaw = [&](std::string_view text) {
                 DropArg();
-                out += text;
+                if (not plain_text_output) AppendRaw(text);
             };
 
             // Handle regular macros. We use custom tags for some of these to
@@ -227,13 +274,15 @@ private:
             else if (macro == "textbf") SingleArgumentMacroToTag("strong");
             else if (macro == "textnf") SingleArgumentMacroToTag("uf-nf");
             else if (macro == "senseref") SingleArgumentMacroToTag("uf-sense");
-            else if (macro == "L") DropArgAndAppendRaw("<uf-mut>L</uf-mut>");
-            else if (macro == "N") DropArgAndAppendRaw("<uf-mut>N</uf-mut>");
+            else if (macro == "L") DropArgAndAppendRaw("<uf-mut><sup>L</sup></uf-mut>");
+            else if (macro == "N") DropArgAndAppendRaw("<uf-mut><sup>N</sup></uf-mut>");
             else if (macro == "ref" or macro == "label") DropArg();
             else if (macro == "ldots") DropArgAndAppendRaw("&hellip;");
-            else if (macro == "this") out += backend.current_word; // This has already been escaped; don’t escape it again.
-            else if (macro == "ex") {} // Already handled when we split senses and examples.
-            else backend.error("Unsupported macro '\\{}'. Please add support for it to the ULTRAFRENCHER", macro);
+            else if (macro == "this") DropArgAndAppendRaw(std::format("<uf-w>{}</uf-w>", backend.current_word)); // This has already been escaped; don’t escape it again.
+            else if (macro == "ex") {
+            } // Already handled when we split senses and examples.
+            else
+                backend.error("Unsupported macro '\\{}'. Please add support for it to the ULTRAFRENCHER", macro);
         }
 
         void SingleArgumentMacroToTag(std::string_view tag_name) {
@@ -247,21 +296,21 @@ private:
 
             // Everything until the next closing brace is our argument, but we also need to handle
             // nested macros properly.
-            out += std::format("<{}>", tag_name);
+            AppendRaw(std::format("<{}>", tag_name));
             while (not input.empty()) {
                 auto arg = input.take_until_any("$\\}");
                 Append(arg);
 
                 // TODO: Render maths.
                 if (input.consume('$')) {
-                    out += "$";
+                    AppendRaw("$");
                     Append(input.take_until('$'));
-                    out += '$';
+                    AppendRaw("$");
                     continue;
                 }
 
                 if (input.consume('}')) {
-                    out += std::format("</{}>", tag_name);
+                    AppendRaw(std::format("</{}>", tag_name));
                     return;
                 }
 
