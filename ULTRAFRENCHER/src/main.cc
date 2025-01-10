@@ -270,7 +270,7 @@ struct TeXBackend final : Backend {
 
     void emit(std::string_view word, const FullEntry& data) override { // clang-format off
         std::println(
-            "\\entry{{{}}}{{{}}}{{{}}}{{{}{}}}{{{}}}{{}}",
+            "\\entry{{{}}}{{{}}}{{{}}}{{{}{}}}{{{}}}",
             word,
             data.pos,
             data.etym,
