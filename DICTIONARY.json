@@ -2,7 +2,7 @@
     "entries": [
         {
             "def": {
-                "def": "<em>Interrogative and relative</em>."
+                "def": "<em>Interrogative and relative pronoun</em>."
             },
             "def-search": "that what which who whom",
             "etym": "<uf-pf>quoi</uf-pf>",
@@ -3418,7 +3418,8 @@
         },
         {
             "def": {
-                "def": "To be born. <uf-s>This is a deponent verb whose subject takes the <uf-s>acc</uf-s> and which only takes passive affixes.</uf-s>."
+                "comment": "This is a deponent verb whose subject takes the <uf-s>acc</uf-s> and which only takes passive affixes.",
+                "def": "To be born."
             },
             "def-search": "be born to",
             "etym": "<uf-pf>naître</uf-pf>",
@@ -4348,9 +4349,9 @@
         {
             "def": {
                 "comment": "Construed with the negated optative.",
-                "def": "+s{opt} To fear, lest &hellip;"
+                "def": "+<uf-s>opt</uf-s> To fear, lest &hellip;"
             },
-            "def-search": "fear lest sopt to",
+            "def-search": "fear lest to",
             "etym": "<uf-pf>craindre</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rêdrẹ́, <uf-s>subj</uf-s> rês",
             "hw-search": "red",
@@ -4766,12 +4767,13 @@
         },
         {
             "def": {
+                "comment": "Never lenited.",
                 "def": "The Sanskrit language."
             },
             "def-search": "language sanskrit the",
             "etym": "<uf-pf>sanskrit</uf-pf>",
             "hw-search": "sasc’hrid",
-            "pos": "n. never lenited",
+            "pos": "n.",
             "word": "Sásc’hríḍ"
         },
         {
@@ -5467,13 +5469,13 @@
         {
             "def": {
                 "comment": "Of disputed origin; first attested in the works of the Early UF comedian <uf-s>J. A. B. Snet’h</uf-s>.",
-                "def": "To depend on predictions of the future."
+                "def": "<em>(literary)</em> To depend on predictions of the future."
             },
             "def-search": "depend future of on predictions the to",
             "etym": "<uf-pf>vendre la peau de ours avant de avoir tué</uf-pf>",
             "forms": "<uf-s>fut</uf-s> vád&shy;ła&shy;bhau&shy;d’há&shy;vúr&shy;sa&shy;b’há&shy;d’há&shy;vá&shy;b’hrár&shy;ḍu&shy;re, <uf-s>s</uf-s> vád&shy;ła&shy;bhau&shy;d’há&shy;vúr&shy;sa&shy;b’há&shy;d’há&shy;vá&shy;b’hrár&shy;ḍus",
             "hw-search": "vadłabhaud’havursab’had’havab’hrardue",
-            "pos": "v. literary",
+            "pos": "v.",
             "word": "vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ"
         },
         {

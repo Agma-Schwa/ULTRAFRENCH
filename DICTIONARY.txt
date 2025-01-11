@@ -185,7 +185,7 @@ sit’há|conj.|\pf{si tant est que}|+\s{opt} Supposing that; if, assuming that
 fahaú|conj.|\pf{de façon que}|+\s{opt} In such a way that, such that, so much so
 véhýr|conj.|\pf{dans la mesure où}|Insofar as
 sḅé|v.|espérer|\\ To want (+\s{acc/inf} sth.) \\ +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
-rêd|v.|craindre|+s{opt} To fear, lest \ldots \comment Construed with the negated optative|\s{fut}
+rêd|v.|craindre|+\s{opt} To fear, lest \ldots \comment Construed with the negated optative|\s{fut}
     rêdrẹ́, \s{subj} rês
 rêd’hes|particle|\pf{bien sûr}|Of course, certainly, surely
 râhẹ|n.|français|Human, person
@@ -258,7 +258,7 @@ cahý|pron. pl. indef.|chacun|Each other, one another.
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pf{livre} + \pf{bouquin}|Book
 áv́áy’é|v.|envoyer|To send|\s{fut} áv́áy’érẹ́, \s{subj} áv́áy’és
-Sásc’hríḍ|n. never lenited|sanskrit|The Sanskrit language
+Sásc’hríḍ|n.|sanskrit|The Sanskrit language \comment Never lenited
 baú|v. irreg.|bon|
     \\ To be good, well, healthy.
     \\ To be right, correct, appropriate.
@@ -365,7 +365,7 @@ raúl|n.|parole|\\ Language, speech, word. \\ \w{Raúl} \textit{(definite only)}
     \textit{\s{nom sg} irreg. \w{Raúl}; all other forms are regular}
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
 susy’é|v.|soucier|+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
-a|pron.|quoi|\textit{Interrogative and relative} \\ \s{indef} What? \\ \s{def} Who? Whom?
+a|pron.|quoi|\textit{Interrogative and relative pronoun} \\ \s{indef} What? \\ \s{def} Who? Whom?
     \\ \s{indef} \textit{or} \s{def} Which, who, that \textit{(see grammar)}
 vérs|interj.|merci|\\ Thank you. (+\s{gen} for sth.). \\ \w{dyvérs fér} To thank
     (+\s{dat} sbd.) (+\s{gen} for sth.)
@@ -398,8 +398,8 @@ y’ŷvéłáfrí|n. pl. archaic|\pf{yeux de merlan frit}|Eyes
 y’ŷ|n.|from \w{y’ŷvéłáfrí}|Eye
 lârdávrá|n.|\pf{langue de bois}|Evasive, unclear, or overly formal speech
 urdálbhaúrḍ|n.|\pf{avoir un oursin dans le portefeuille}|A very rich person; billionaire
-vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v. literary|\pf{vendre la peau de ours avant de avoir tué}|
-    To depend on predictions of the future. \comment Of disputed origin; first attested in the
+vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ|v.|\pf{vendre la peau de ours avant de avoir tué}|
+    \textit{(literary)} To depend on predictions of the future. \comment Of disputed origin; first attested in the
     works of the Early UF comedian \s{J. A. B. Snet’h}| \s{fut} vád\-ła\-bhau\-d’há\-vúr\-sa\-b’há\-d’há\-vá\-b’hrár\-ḍu\-re,
     \s{s} vád\-ła\-bhau\-d’há\-vúr\-sa\-b’há\-d’há\-vá\-b’hrár\-ḍus
 râdrásôn|v.|\pf{prendre ses jambe à son cou}|To run|\s{fut} râdrásônre, \s{subj} râdrásôns
@@ -786,8 +786,8 @@ sẹ|particle|ainsi|So, thus, as a result
 véc|n.|mèche|\\ A strand of hair \\\s{pl.} Hair
 ḍaúb’h|v. intr.|tomber|To fall, drop
 lánẹ́|v.|flâner|To meander
-néḍ|v. dep.|naître|To be born. \s{This is a deponent verb whose subject takes the \s{acc} and
-    which only takes passive affixes.}|\s{sub} néhs
+néḍ|v. dep.|naître|To be born. \comment This is a deponent verb whose subject takes the \s{acc} and
+    which only takes passive affixes.|\s{sub} néhs
 raûc|n.|tronche|Head
 lèheb’h|v.|laisser-faire|+\s{aci} To let happen
 áhaúr|adv.|encore|\\\textit{(positive context)} Still, yet \\\textit{(negative context)} Again
