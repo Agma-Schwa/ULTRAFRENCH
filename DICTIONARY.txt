@@ -80,7 +80,7 @@ ehyó|n.|écusson|Shield
 rvá|interj.|of unknown origin|Alas, woe, oh. \textit{Exclamation of distress, surprise, sadness, or regret}|
     \textit{after words that end with ‘r’, this is spelt \w{-vá} instead}
 ḅárḍáḍ|v.|partante| (+ \s{aci}) To be interested in, willing to, ready to, prepared for
-c’hes|quest. part.|\pf{qu’est-ce que}|\textit{see grammar; often \w{c’h’s} in older texts}
+c’hes|quest. part.|\pf{qu’est-ce que}|\textit{see grammar; often enclitic \w{-c’h’s} in older texts}
 Daúvníc’h|n.||\textit{male or female given name, equivalent to English ‘Dominic’}
 Já|n.||\textit{male or female given name, equivalent to English ‘John’ or ‘Joan’}
 ráy’é|v.|noyer|To drown
@@ -307,7 +307,7 @@ c’hóhid’hẹ́|v.|considérer|\\ +\s{part} To consider, think ab\-out, ponde
 nát’hýr|n.|nature|\\ \textit{(chiefly)} \s{indef} Nature, the natural world. \\ \s{def} The way
     something is
 rê|v.|trine|To be composed of three parts or people; triune|\s{fut} rêrẹ́, \s{subj} rês
-laúrvé|conj.|from \w{laúrs} + \w{vé}|\textit{(contraction)} But, when. \textit{Stressed on the first
+laúrvé|conj.|from \w{laúrs} + \w{vé}|\textit{(contraction)} But when. \textit{Stressed on the first
     syllable}
 râsír|v.|transpirer|+\s{aci} \\ To come to light, become known, transpire.
     \\ \s{pres ant} For it to be clear, apparent, evident that \ldots \textit{Lit.
@@ -819,6 +819,19 @@ aḅ|v.|appeler|To call (+\s{acc} sbd./sth.) (+\s{abs} sbd./sth.). \textit{In PF
         accusative is no longer attested.
 ré|n.|souhait|Wish
 réḍ|v.|souhaiter|To wish (+\s{acc/aci} for sth.)
+rébhauz|v.|reposer|\\+\s{acc} To set down, put down, place \\\textit{refl.} To rest, relax, repose
+árrih|n.|arbrisseau|Forest, woods, woodland
+set’hád|v. chiefly trans.|from \pf{s’étendre}; see also \senseref{3}|
+    \\+\s{acc/part} To spread, extend, expand. \textit{The \s{acc} is used for concrete objects
+        or substances, the \s{part} for abstract or intangible concepts}
+    \\\textit{refl.} To sprawl, stretch out, extend oneself
+    \\\textit{intr. (archaic). Same as \senseref{2}, but implicitly reflexive even though it
+        is morphologically only intransitive. This sense has been largely replaced by the morphological
+        reflexive}
+c’haút’h|v.|content|To be content. \textit{This is perceived as weaker than \w{baú} ‘satisfy’}|
+    c’haút’hé, c’haúss
+
+## TODO: '+\s{...}' -> '\s{+...}'
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.

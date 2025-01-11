@@ -16,3 +16,7 @@ cmake-build-debug/
 ## the generator doesn’t break randomly; no need to include the minified
 ## version as well.
 /DICTIONARY.min.json
+
+## Local script I use to update the dictionary and grammar on the server.
+/deploy.sh
+

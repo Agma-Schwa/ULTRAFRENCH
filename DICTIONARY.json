@@ -397,6 +397,14 @@
             "word": "áríb’h"
         },
         {
+            "def": "Forest, woods, woodland.",
+            "def-search": "forest woodland woods",
+            "etym": "<uf-pf>arbrisseau</uf-pf>",
+            "hw-search": "arrih",
+            "pos": "n.",
+            "word": "árrih"
+        },
+        {
             "def": "To attack, assail, beset, bully (+<uf-s>acc</uf-s> sbd.).",
             "def-search": "assail attack beset bully sbd to",
             "etym": "<uf-pf>harceler</uf-pf>",
@@ -1392,6 +1400,15 @@
             "word": "c’haúr"
         },
         {
+            "def": "To be content. <em>This is perceived as weaker than <uf-w>baú</uf-w> ‘satisfy’</em>.",
+            "def-search": "be content to",
+            "etym": "<uf-pf>content</uf-pf>",
+            "forms": "c’haút’hé, c’haúss",
+            "hw-search": "c’haut’h",
+            "pos": "v.",
+            "word": "c’haút’h"
+        },
+        {
             "def": "Magic.",
             "def-search": "magic",
             "etym": "<uf-w>c’haú</uf-w> + <uf-pf>magie</uf-pf>",
@@ -1440,7 +1457,7 @@
             "word": "c’hèlc’hý"
         },
         {
-            "def": "<em>see grammar; often <uf-w>c’h’s</uf-w> in older texts</em>.",
+            "def": "<em>see grammar; often enclitic <uf-w>-c’h’s</uf-w> in older texts</em>.",
             "def-search": "",
             "etym": "<uf-pf>qu’est-ce que</uf-pf>",
             "hw-search": "c’hes",
@@ -2522,7 +2539,7 @@
             "word": "laúrs"
         },
         {
-            "def": "<em>(contraction)</em> But, when. <em>Stressed on the first syllable</em>.",
+            "def": "<em>(contraction)</em> But when. <em>Stressed on the first syllable</em>.",
             "def-search": "but when",
             "etym": "from <uf-w>laúrs</uf-w> + <uf-w>vé</uf-w>",
             "hw-search": "laurve",
@@ -3528,6 +3545,21 @@
             "word": "rébh"
         },
         {
+            "def-search": "down place put relax repose rest set to",
+            "etym": "<uf-pf>reposer</uf-pf>",
+            "hw-search": "rebhauz",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<uf-s>acc</uf-s> To set down, put down, place."
+                },
+                {
+                    "def": "<em>refl.</em> To rest, relax, repose."
+                }
+            ],
+            "word": "rébhauz"
+        },
+        {
             "def": "Answer, response, reply.",
             "def-search": "answer reply response",
             "etym": "<uf-pf>réponse</uf-pf>",
@@ -4167,6 +4199,24 @@
             "hw-search": "set’h",
             "pos": "v.",
             "word": "sèt’h"
+        },
+        {
+            "def-search": "expand extend oneself out sprawl spread stretch to",
+            "etym": "from <uf-pf>s’étendre</uf-pf>; see also <uf-sense>3</uf-sense>",
+            "hw-search": "set’had",
+            "pos": "v. chiefly trans.",
+            "senses": [
+                {
+                    "def": "+<uf-s>acc/part</uf-s> To spread, extend, expand. <em>The <uf-s>acc</uf-s> is used for concrete objects or substances, the <uf-s>part</uf-s> for abstract or intangible concepts</em>."
+                },
+                {
+                    "def": "<em>refl.</em> To sprawl, stretch out, extend oneself."
+                },
+                {
+                    "def": "<em>intr. (archaic). Same as <uf-sense>2</uf-sense>, but implicitly reflexive even though it is morphologically only intransitive. This sense has been largely replaced by the morphological reflexive</em>."
+                }
+            ],
+            "word": "set’hád"
         },
         {
             "def": "+<uf-s>part</uf-s> <em>or</em> <uf-s>inf</uf-s> To try, attempt.",
