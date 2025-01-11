@@ -13,7 +13,6 @@
 #include <unicode/stringoptions.h>
 #include <unicode/translit.h>
 #include <unicode/unistr.h>
-#include <variant>
 #include <vector>
 
 using namespace base;
@@ -48,9 +47,9 @@ struct FullEntry {
     /// Etymology; may be empty.
     std::string etym;
 
-    /// Primary definition, before any sense. This is also used
+    /// Primary definition, before any sense actual sense. This is also used
     /// if there is only one sense.
-    std::string primary_definition;
+    Sense primary_definition;
 
     /// Senses after the primary definition. If there are multiple
     /// senses, the primary definition is everything before the
@@ -103,27 +102,30 @@ struct JsonBackend final : Backend {
         e["word"] = current_word = TeXToHtml(word);
         e["pos"] = TeXToHtml(data.pos);
 
+        auto EmitSense = [&](const FullEntry::Sense& sense) {
+            json s;
+            s["def"] = TeXToHtml(sense.def);
+            if (not sense.examples.empty()) {
+                auto& ex = s["examples"] = json::array();
+                for (auto& example : sense.examples)
+                    ex.push_back(TeXToHtml(example));
+            }
+            return s;
+        };
+
         if (not data.etym.empty()) e["etym"] = TeXToHtml(data.etym);
-        if (not data.primary_definition.empty()) e["def"] = TeXToHtml(data.primary_definition);
+        if (not data.primary_definition.def.empty()) e["def"] = EmitSense(data.primary_definition);
         if (not data.forms.empty()) e["forms"] = TeXToHtml(data.forms);
         if (not data.senses.empty()) {
             json& senses = e["senses"] = json::array();
-            for (auto& sense : data.senses) {
-                auto& s = senses.emplace_back();
-                s["def"] = TeXToHtml(sense.def);
-                if (not sense.examples.empty()) {
-                    auto& ex = s["examples"] = json::array();
-                    for (auto& example : sense.examples)
-                        ex.push_back(TeXToHtml(example));
-                }
-            }
+            for (auto& sense : data.senses) senses.push_back(EmitSense(sense));
         }
 
         // IMPORTANT: Remember to update the function with the same name in the
         // code for the ULTRAFRENCH dictionary page on nguh.org if the output of
         // this function changes.
-        //
         auto NormaliseForSearch = [](std::string_view value) {
+            // Do all filtering in UTF32 land since we need to iterate over entire characters.
             auto haystack = text::ToUTF8(
                 Normalise(text::ToLower(text::ToUTF32(value)), text::NormalisationForm::NFKD).value()                                //
                 | vws::filter([](char32_t c) { return U"abcdefghijklłmnopqrstuvwxyzABCDEFGHIJKLŁMNOPQRSTUVWXYZ’- "sv.contains(c); }) //
@@ -148,11 +150,10 @@ struct JsonBackend final : Backend {
             );
         };
 
-        // Precomputed normalised strings for searching. Do all filtering in UTF32 land since
-        // we need to iterate over entire characters.
+        // Precomputed normalised strings for searching.
         auto all_senses = utils::join(data.senses | vws::transform(&FullEntry::Sense::def), "");
         e["hw-search"] = NormaliseForSearch(TeXToHtml(word, true));
-        e["def-search"] = NormaliseForSearch(TeXToHtml(data.primary_definition, true) + TeXToHtml(all_senses, true));
+        e["def-search"] = NormaliseForSearch(TeXToHtml(data.primary_definition.def, true) + TeXToHtml(all_senses, true));
     }
 
     void emit(std::string_view word, const RefEntry& data) override {
@@ -342,19 +343,21 @@ struct TeXBackend final : Backend {
     }
 
     void emit(std::string_view word, const FullEntry& data) override { // clang-format off
+        auto FormatSense = [](const FullEntry::Sense& s) {
+            return s.def + (s.examples.empty() ? ""s : "\\ex " + utils::join(s.examples, "\\ex "));
+        };
+
         std::println(
             "\\entry{{{}}}{{{}}}{{{}}}{{{}{}}}{{{}}}",
             word,
             data.pos,
             data.etym,
-            data.primary_definition,
+            FormatSense(data.primary_definition),
             data.senses.empty() ? ""s : "\\\\"s + utils::join(
                 data.senses,
                 "\\\\",
                 "{}",
-                [&](const FullEntry::Sense& s) {
-                    return s.def + (s.examples.empty() ? ""s : "\\ex " + utils::join(s.examples, "\\ex "));
-                }
+                FormatSense
             ),
             data.forms
         ); // clang-format on
@@ -433,26 +436,28 @@ struct Entry {
                 // do this here because there isn’t really a good way to do that
                 // in LaTeX.
                 case DefPart: {
+                    // A sense may contain examples; this moves them out of the sense.
+                    auto SplitSense = [](u32stream sense) {
+                        if (not sense.contains(U"\\ex"))
+                            return FullEntry::Sense(FullStopDelimited(sense), {});
+
+                        auto sense_def = sense.take_until(U"\\ex");
+                        auto examples = sense.split(U"\\ex") | vws::drop(1) | vws::transform(FullStopDelimited) | rgs::to<std::vector>();
+                        return FullEntry::Sense(FullStopDelimited(sense_def), std::move(examples));
+                    };
+
+                    // Process the primary definition. This is everything before the first sense
+                    // and doesn’t count as a sense because it is either the only one or, if there
+                    // are multiple senses, it denotes a more overarching definition that applies
+                    // to all or most senses.
                     u32stream def = part;
-                    full.primary_definition = FullStopDelimited(def.take_until(SenseMacroU32));
+                    full.primary_definition = SplitSense(def.take_until(SenseMacroU32));
                     if (def.empty()) break;
+                    def.drop(SenseMacroU32.size());
 
                     // Split by senses.
-                    //
-                    // The first element is everything before the sense macro, which
-                    // is always going to be empty (because we just dropped everything
-                    // up to the first occurrence of the macro), so we drop it here.
-                    //
-                    // Lastly, a sense may contain examples; move them out of the sense.
-                    for (auto sense : def.split(SenseMacroU32) | vws::drop(1)) {
-                        if (not sense.contains(U"\\ex")) {
-                            full.senses.emplace_back(FullStopDelimited(sense));
-                        } else {
-                            auto sense_def = sense.take_until(U"\\ex");
-                            auto examples = sense.split(U"\\ex") | vws::drop(1) | vws::transform(FullStopDelimited) | rgs::to<std::vector>();
-                            full.senses.emplace_back(FullStopDelimited(sense_def), std::move(examples));
-                        }
-                    }
+                    for (auto sense : def.split(SenseMacroU32))
+                        full.senses.push_back(SplitSense(sense));
                 } break;
 
                 // FIXME: The dot should be added here instead of by LaTeX.
