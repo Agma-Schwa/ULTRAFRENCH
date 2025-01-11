@@ -38,6 +38,7 @@ using RefEntry = std::string;
 struct FullEntry {
     struct Sense {
         std::string def;
+        std::string comment;
         std::vector<std::string> examples;
     };
 
@@ -86,7 +87,8 @@ struct JsonBackend final : Backend {
     std::string current_word = "<error: \\this undefined>";
     bool minify;
 
-    JsonBackend(bool minify) : minify{minify} {
+    JsonBackend(bool minify)
+        : minify{minify} {
         out = json::object();
         refs() = json::array();
         entries() = json::array();
@@ -105,6 +107,7 @@ struct JsonBackend final : Backend {
         auto EmitSense = [&](const FullEntry::Sense& sense) {
             json s;
             s["def"] = TeXToHtml(sense.def);
+            if (not sense.comment.empty()) s["comment"] = TeXToHtml(sense.comment);
             if (not sense.examples.empty()) {
                 auto& ex = s["examples"] = json::array();
                 for (auto& example : sense.examples)
@@ -281,7 +284,7 @@ private:
             else if (macro == "ref" or macro == "label") DropArg();
             else if (macro == "ldots") DropArgAndAppendRaw("&hellip;");
             else if (macro == "this") DropArgAndAppendRaw(std::format("<uf-w>{}</uf-w>", backend.current_word)); // This has already been escaped; don’t escape it again.
-            else if (macro == "ex") {
+            else if (macro == "ex" or macro == "comment") {
             } // Already handled when we split senses and examples.
             else
                 backend.error("Unsupported macro '\\{}'. Please add support for it to the ULTRAFRENCHER", macro);
@@ -344,7 +347,17 @@ struct TeXBackend final : Backend {
 
     void emit(std::string_view word, const FullEntry& data) override { // clang-format off
         auto FormatSense = [](const FullEntry::Sense& s) {
-            return s.def + (s.examples.empty() ? ""s : "\\ex " + utils::join(s.examples, "\\ex "));
+            return s.def
+                + (
+                    s.comment.empty()
+                    ? ""s
+                    : std::format(" \\textit{{{}}}", s.comment)
+                )
+                + (
+                    s.examples.empty()
+                    ? ""s
+                    : "\\ex " + utils::join(s.examples, "\\ex ")
+                );
         };
 
         std::println(
@@ -436,27 +449,26 @@ struct Entry {
                 // do this here because there isn’t really a good way to do that
                 // in LaTeX.
                 case DefPart: {
-                    // A sense may contain examples; this moves them out of the sense.
+                    // A sense may contain a comment and examples, in that order. A comment cannot
+                    // be placed after the examples.
                     auto SplitSense = [](u32stream sense) {
-                        if (not sense.contains(U"\\ex"))
-                            return FullEntry::Sense(FullStopDelimited(sense), {});
-
-                        auto sense_def = sense.take_until(U"\\ex");
-                        auto examples = sense.split(U"\\ex") | vws::drop(1) | vws::transform(FullStopDelimited) | rgs::to<std::vector>();
-                        return FullEntry::Sense(FullStopDelimited(sense_def), std::move(examples));
+                        static constexpr std::u32string_view ex = U"\\ex";
+                        static constexpr std::u32string_view comment = U"\\comment";
+                        bool has_comment = sense.contains(comment);
+                        return FullEntry::Sense{
+                            .def = FullStopDelimited(sense.trim_front().take_until_and_drop(has_comment ? comment : ex)),
+                            .comment = has_comment ? FullStopDelimited(sense.trim_front().take_until_and_drop(ex)) : "",
+                            .examples = sense.trim_front().split(ex) | vws::transform(FullStopDelimited) | rgs::to<std::vector>(),
+                        };
                     };
 
                     // Process the primary definition. This is everything before the first sense
                     // and doesn’t count as a sense because it is either the only one or, if there
                     // are multiple senses, it denotes a more overarching definition that applies
                     // to all or most senses.
-                    u32stream def = part;
-                    full.primary_definition = SplitSense(def.take_until(SenseMacroU32));
-                    if (def.empty()) break;
-                    def.drop(SenseMacroU32.size());
-
-                    // Split by senses.
-                    for (auto sense : def.split(SenseMacroU32))
+                    u32stream s{part};
+                    full.primary_definition = SplitSense(s.take_until_and_drop(SenseMacroU32));
+                    for (auto sense : s.split(SenseMacroU32))
                         full.senses.push_back(SplitSense(sense));
                 } break;
 
