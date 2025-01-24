@@ -516,7 +516,7 @@ void Generate(std::string_view input_text, Backend&& backend) {
 
     UErrorCode err{U_ZERO_ERROR};
     Normaliser = icu::Transliterator::createInstance(
-        "NFKD; [:M:] Remove; NFC; Lower;",
+        "NFKD; [:M:] Remove; [:Punctuation:] Remove; NFC; Lower;",
         UTRANS_FORWARD,
         err
     );
