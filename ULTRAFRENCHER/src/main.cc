@@ -130,8 +130,8 @@ struct JsonBackend final : Backend {
         auto NormaliseForSearch = [](std::string_view value) {
             // Do all filtering in UTF32 land since we need to iterate over entire characters.
             auto haystack = text::ToUTF8(
-                Normalise(text::ToLower(text::ToUTF32(value)), text::NormalisationForm::NFKD).value()                                //
-                | vws::filter([](char32_t c) { return U"abcdefghijklłmnopqrstuvwxyzABCDEFGHIJKLŁMNOPQRSTUVWXYZ’- "sv.contains(c); }) //
+                Normalise(text::ToLower(text::ToUTF32(value)), text::NormalisationForm::NFKD).value()                              //
+                | vws::filter([](char32_t c) { return U"abcdefghijklłmnopqrstuvwxyzABCDEFGHIJKLŁMNOPQRSTUVWXYZ "sv.contains(c); }) //
                 | rgs::to<std::u32string>()
             );
 
