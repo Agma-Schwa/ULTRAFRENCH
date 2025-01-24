@@ -499,8 +499,8 @@ lys|adv.|\pf{plus} /plys/|\textit{neg. only} No longer, not any more. \comment T
 y’éjúré|n.|\pf{siège} + \pf{tabouret}|Chair, seat
 
 sẹhúr|v.|secourir|To help, succour, give aid (+\s{dat} to sb.) (+\s{aci}/\s{acc} with sth.)|\s{fut} sẹhúrre, \s{subj} sẹhús
-aujúrdy’í|adv.|aujourd’hui|\textit{(archaic)} Today. \comment See also \w{júrdy’í}
-júrdy’í|adv.|from archaic \pf{aujúrdy’í}|Today
+aujúrdy’í|adv.|aujourd’hui|\textit{(archaic)} Today, nowadays. \comment See also \w{júrdy’í}
+júrdy’í|adv.|from archaic \pf{aujúrdy’í}|Today, nowadays
 vê₁|adv.|demain|Tomorrow
 y’ér|adv.|hier|Yesterday.
 b’hây’ér|adv.|avant-hier|The day before yesterday. \comment The prefix \w{b’hâ} can be prepended as often as necessary, e.g.
@@ -617,16 +617,16 @@ Sávýy’él|n.|Samuel|\textit{Male given name}
 rád’hyc’hsy’ô|n.|traduction|Translation
 
 révôt’hẹ|v.|remonter|To return, come back
-Ráb’h|n.|unknown; presumably the name of some celebrity or local deity|
+Ráb’h|n.|from earlier \w{Réáb’h}; presumably the name of some celebrity or local deity|
     \\ \textit{indecl.} \s{def sg} \textit{always} \s{nom} \textit{or} \s{voc} Ráb’h. \comment Main god of the
         ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps \w{RÁB’H}.
         \ex \s{Snet’h}, \s{i.17}: \w{au lebálá daú RÁB’H} ‘and thus spake Ráb’h’
     \\ \w{Ráb’h sénýr} \s{def sg} Lord Ráb’h. \comment Used for \senseref{1} in all other cases; as with all names, only
         \w{sénýr} is inflected. Old-fashioned often \w{RÁB’H Sénýr}
         \ex \s{Snet’h}, \s{8.1}: \w{au labraúc RÁB’H naút B’héhénýr} ‘and they came to our Lord Ráb’h’
-    \\ \textit{(rarely)} The main god of another culture. \comment Only attested figuratively. Not capitalised in
-        this sense, and declined like a regular word.
-        \ex \s{Snet’h}, \s{ii.3}: \w{ledéraújá’z derévôt’he  láráb’h} ‘their god demanded they return’
+    \\ \textit{(rarely)} \w{réáb’h} The main god of another culture. \comment Only attested figuratively. Not
+        capitalised in this sense, and declined like a regular word.
+        \ex \s{Snet’h}, \s{ii.3}: \w{ledéraújá’z derévôt’he  láréáb’h} ‘their god demanded they return’
 
 áb’hóhẹ|v.|enfoncer|To push, press, shove, drive (+\s{ill} into)
 jaý’aú|n.|jalon|\\ Nail \\\textit{(obsolete)} Stake, pole
@@ -774,7 +774,9 @@ leḍ|n.|lettre|
 cévê|n.|chemin|Street
 b’hár|n.|vague|\\ Wave \\\textit{pl.} Ripples, undulations
 láḍ|n.|plante|\\ Blade of grass \\\textit{pl.} Grass
-faúr₂|n.|forme|Shape, form. \comment Sometimes also spelt \w{fór}
+faúr₂|n. or v. tr.|forme|
+    \\ Shape, form. \comment In this sense sometimes also spelt \w{fór}
+    \\+\s{acc} To give form to, shape
 fór > faúr₂
 rýl|n.|gueule|Face
 sy’b’h|v. intr.|\pf{se lever}|To rise (+\s{ela} from sth.)
@@ -825,12 +827,15 @@ rýd|v.|rude|To be uneven, rough, rugged
 rýsḍ|v.|frustrer|To frustrate, vex, annoy
 sèd’h|part.|from \pf{c’est du}|It is due to (+\s{gen} sth. / +\s{aci} the fact that...)
 b’héy’|v.|veiller|\\\textit{intr.} To keep watch, keep guard \\+\s{spress} To watch over, guard, keep an eye on
-aḅ|v.|appeler|To call (+\s{acc} sbd./sth.) (+\s{abs} sbd./sth.). \comment In PF, this verb used to take a double
-    accusative, but this usage disappeared early on in UF, with the second accusative naturally being replaced
-    by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly
-    free word order.
-    \ex \s{Snet’h v.2} \w{jdap rác’hsaý’adâ} ‘I call you a liar’; even in the writings of \s{Snet’h}, the double
-        accusative is no longer attested.
+aḅ|v.|appeler|
+    \\+\s{acc} \textit{and} \s{abs} To call, name, nominate, give a name to
+        \comment In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the
+            second accusative, denoting the name, naturally being replaced by the absolutive, likely to avoid ambiguity
+            that was starting to manifest as a result of UF’s increasingly free word order.
+        \ex \s{Snet’h v.2} \w{jdap rác’hsaý’adâ} ‘I call you a liar’; even in the writings of \s{Snet’h}, the double
+            accusative is no longer attested.
+    \\\textit{(archaic)} To call oneself, be called.
+        \comment Replaced by \w{nvẹ́} in Early Modern UF in the reflexive sense.
 ré|n.|souhait|Wish
 réḍ|v.|souhaiter|To wish (+\s{acc/aci} for sth.)
 rébhauz|v.|reposer|\\+\s{acc} To set down, put down, place \\\textit{refl.} To rest, relax, repose
@@ -844,6 +849,19 @@ set’hád|v. chiefly trans.|from \pf{s’étendre}; see also \senseref{3}|
         reflexive}
 c’haút’h|v.|content|To be content. \comment This is perceived as weaker than \w{baú} ‘satisfy’|
     c’haút’hé, c’haúss
+nvẹ́|v. intr.|nommer|\textit{(refl. or intr.)} To be called, name oneself
+        \comment Usually placed after the name. This word replaced \w{aḅ} in the reflexive sense in Early
+            Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.
+        \ex \w{Aý’èc’hsád j(v)nvé} ‘My name is Aý’èc’hsád’
+ád’húy’|n.|andouille|Fool, buffoon, idiot.
+áb’hé|adv.|enfin|Finally, at last, at the end.
+raúc’hlá|v.|proclamer|+\s{acc/aci} To proclaim, announce, declare
+ríj|v. tr.|ériger|+\s{acc} To erect, raise, set up
+-(é)raû|affix|-eron|-maker, -wright
+    \comment Used in derivation, see §~\ref{subsec:diachrony-and-derivation}
+    \ex \w{ḍaléraû} ‘carpenter’ from \w{ḍalẹ} ‘table’
+ḍaléraû|n.|from \w{ḍalẹ} + \w{-(é)raû}|Carpenter
+várḍeý’|v.|marteler|+\s{acc} To forge
 
 ## TODO: '+\s{...}' -> '\s{+...}'
 
@@ -874,3 +892,4 @@ p- > ḅ-
 ph- > ḅ-
 p’h- > bh-
 t- > ḍ-
+Réáb’h > Ráb’h

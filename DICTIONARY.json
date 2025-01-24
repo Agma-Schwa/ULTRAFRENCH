@@ -2,6 +2,20 @@
     "entries": [
         {
             "def": {
+                "comment": "Used in derivation, see grammar.",
+                "def": "-maker, -wright.",
+                "examples": [
+                    "<uf-w>ḍaléraû</uf-w> ‘carpenter’ from <uf-w>ḍalẹ</uf-w> ‘table’."
+                ]
+            },
+            "def-search": "maker wright",
+            "etym": "<uf-pf>-eron</uf-pf>",
+            "hw-search": "erau",
+            "pos": "affix",
+            "word": "-(é)raû"
+        },
+        {
+            "def": {
                 "def": "<em>Interrogative and relative pronoun</em>."
             },
             "def-search": "that what which who whom",
@@ -32,17 +46,23 @@
             "word": "á"
         },
         {
-            "def": {
-                "comment": "In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the second accusative naturally being replaced by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly free word order.",
-                "def": "To call (+<uf-s>acc</uf-s> sbd./sth.) (+<uf-s>abs</uf-s> sbd./sth.).",
-                "examples": [
-                    "<uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’; even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested."
-                ]
-            },
-            "def-search": " call to",
+            "def-search": "a be call called give name nominate oneself to",
             "etym": "<uf-pf>appeler</uf-pf>",
             "hw-search": "ab",
             "pos": "v.",
+            "senses": [
+                {
+                    "comment": "In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the second accusative, denoting the name, naturally being replaced by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly free word order.",
+                    "def": "+<uf-s>acc</uf-s> <em>and</em> <uf-s>abs</uf-s> To call, name, nominate, give a name to.",
+                    "examples": [
+                        "<uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’; even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested."
+                    ]
+                },
+                {
+                    "comment": "Replaced by <uf-w>nvẹ́</uf-w> in Early Modern UF in the reflexive sense.",
+                    "def": "<em>(archaic)</em> To call oneself, be called."
+                }
+            ],
             "word": "aḅ"
         },
         {
@@ -144,6 +164,16 @@
             "hw-search": "abhasyo",
             "pos": "n.",
             "word": "ab’hásy’ô"
+        },
+        {
+            "def": {
+                "def": "Finally, at last, at the end."
+            },
+            "def-search": "at end finally last the",
+            "etym": "<uf-pf>enfin</uf-pf>",
+            "hw-search": "abhe",
+            "pos": "adv.",
+            "word": "áb’hé"
         },
         {
             "def": {
@@ -318,6 +348,16 @@
                 }
             ],
             "word": "ad’hór"
+        },
+        {
+            "def": {
+                "def": "Fool, buffoon, idiot."
+            },
+            "def-search": "buffoon fool idiot",
+            "etym": "<uf-pf>andouille</uf-pf>",
+            "hw-search": "adhuy",
+            "pos": "n.",
+            "word": "ád’húy’"
         },
         {
             "def": {
@@ -655,9 +695,9 @@
         {
             "def": {
                 "comment": "See also <uf-w>júrdy’í</uf-w>.",
-                "def": "<em>(archaic)</em> Today."
+                "def": "<em>(archaic)</em> Today, nowadays."
             },
-            "def-search": "today",
+            "def-search": "nowadays today",
             "etym": "<uf-pf>aujourd’hui</uf-pf>",
             "hw-search": "aujurdyi",
             "pos": "adv.",
@@ -1983,6 +2023,16 @@
         },
         {
             "def": {
+                "def": "Carpenter."
+            },
+            "def-search": "carpenter",
+            "etym": "from <uf-w>ḍalẹ</uf-w> + <uf-w>-(é)raû</uf-w>",
+            "hw-search": "dalerau",
+            "pos": "n.",
+            "word": "ḍaléraû"
+        },
+        {
+            "def": {
                 "def": "Establishment, institution."
             },
             "def-search": "establishment institution",
@@ -2657,14 +2707,19 @@
             "word": "faúr₁"
         },
         {
-            "def": {
-                "comment": "Sometimes also spelt <uf-w>fór</uf-w>.",
-                "def": "Shape, form."
-            },
-            "def-search": "form shape",
+            "def-search": "form give shape to",
             "etym": "<uf-pf>forme</uf-pf>",
             "hw-search": "faur",
-            "pos": "n.",
+            "pos": "n. or v. tr.",
+            "senses": [
+                {
+                    "comment": "In this sense sometimes also spelt <uf-w>fór</uf-w>.",
+                    "def": "Shape, form."
+                },
+                {
+                    "def": "+<uf-s>acc</uf-s> To give form to, shape."
+                }
+            ],
             "word": "faúr₂"
         },
         {
@@ -2909,9 +2964,9 @@
         },
         {
             "def": {
-                "def": "Today."
+                "def": "Today, nowadays."
             },
-            "def-search": "today",
+            "def-search": "nowadays today",
             "etym": "from archaic <uf-pf>aujúrdy’í</uf-pf>",
             "hw-search": "jurdyi",
             "pos": "adv.",
@@ -3527,6 +3582,20 @@
         },
         {
             "def": {
+                "comment": "Usually placed after the name. This word replaced <uf-w>aḅ</uf-w> in the reflexive sense in Early Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.",
+                "def": "<em>(refl. or intr.)</em> To be called, name oneself.",
+                "examples": [
+                    "<uf-w>Aý’èc’hsád j(v)nvé</uf-w> ‘My name is Aý’èc’hsád’."
+                ]
+            },
+            "def-search": "be called name oneself to",
+            "etym": "<uf-pf>nommer</uf-pf>",
+            "hw-search": "nve",
+            "pos": "v. intr.",
+            "word": "nvẹ́"
+        },
+        {
+            "def": {
                 "comment": "Always capitalised.",
                 "def": "<em>(Logic)</em> True, $\\top$."
             },
@@ -3625,7 +3694,7 @@
         },
         {
             "def-search": "another culture god lord main of rabh the",
-            "etym": "unknown; presumably the name of some celebrity or local deity",
+            "etym": "from earlier <uf-w>Réáb’h</uf-w>; presumably the name of some celebrity or local deity",
             "hw-search": "rabh",
             "pos": "n.",
             "senses": [
@@ -3645,9 +3714,9 @@
                 },
                 {
                     "comment": "Only attested figuratively. Not capitalised in this sense, and declined like a regular word.",
-                    "def": "<em>(rarely)</em> The main god of another culture.",
+                    "def": "<em>(rarely)</em> <uf-w>réáb’h</uf-w> The main god of another culture.",
                     "examples": [
-                        "<uf-s>Snet’h</uf-s>, <uf-s>ii.3</uf-s>: <uf-w>ledéraújá’z derévôt’he láráb’h</uf-w> ‘their god demanded they return’."
+                        "<uf-s>Snet’h</uf-s>, <uf-s>ii.3</uf-s>: <uf-w>ledéraújá’z derévôt’he láréáb’h</uf-w> ‘their god demanded they return’."
                     ]
                 }
             ],
@@ -3990,6 +4059,16 @@
             "hw-search": "rauc",
             "pos": "n.",
             "word": "raûc"
+        },
+        {
+            "def": {
+                "def": "+<uf-s>acc/aci</uf-s> To proclaim, announce, declare."
+            },
+            "def-search": "announce declare proclaim to",
+            "etym": "<uf-pf>proclamer</uf-pf>",
+            "hw-search": "rauchla",
+            "pos": "v.",
+            "word": "raúc’hlá"
         },
         {
             "def": {
@@ -4497,6 +4576,16 @@
             "hw-search": "ribhyer",
             "pos": "n.",
             "word": "ríb’hy’ér"
+        },
+        {
+            "def": {
+                "def": "+<uf-s>acc</uf-s> To erect, raise, set up."
+            },
+            "def-search": "erect raise set to up",
+            "etym": "<uf-pf>ériger</uf-pf>",
+            "hw-search": "rij",
+            "pos": "v. tr.",
+            "word": "ríj"
         },
         {
             "def": {
@@ -5575,6 +5664,16 @@
         },
         {
             "def": {
+                "def": "+<uf-s>acc</uf-s> To forge."
+            },
+            "def-search": "forge to",
+            "etym": "<uf-pf>marteler</uf-pf>",
+            "hw-search": "vardey",
+            "pos": "v.",
+            "word": "várḍeý’"
+        },
+        {
+            "def": {
                 "def": "The masses, the people."
             },
             "def-search": "masses people the",
@@ -6236,6 +6335,18 @@
             "to": "ub’hrá"
         },
         {
+            "from": "jvẹ́",
+            "to": "nvẹ́"
+        },
+        {
+            "from": "jvvẹ́",
+            "to": "nvẹ́"
+        },
+        {
+            "from": "jv’vẹ́",
+            "to": "nvẹ́"
+        },
+        {
             "from": "p-",
             "to": "ḅ-"
         },
@@ -6250,6 +6361,10 @@
         {
             "from": "ráb’h",
             "to": "v́ár"
+        },
+        {
+            "from": "Réáb’h",
+            "to": "Ráb’h"
         },
         {
             "from": "rêd",
