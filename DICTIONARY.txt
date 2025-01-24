@@ -862,6 +862,9 @@ ríj|v. tr.|ériger|+\s{acc} To erect, raise, set up
     \ex \w{ḍaléraû} ‘carpenter’ from \w{ḍalẹ} ‘table’
 ḍaléraû|n.|from \w{ḍalẹ} + \w{-(é)raû}|Carpenter
 várḍeý’|v.|marteler|+\s{acc} To forge
+rábh|v.|frapper|+\s{acc} To smite, strike down
+víwý|v.|milieu|To be central, in the middle of
+lẹ|n.|clef|Key
 
 ## TODO: '+\s{...}' -> '\s{+...}'
 

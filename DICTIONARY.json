@@ -3159,6 +3159,16 @@
         },
         {
             "def": {
+                "def": "Key."
+            },
+            "def-search": "key",
+            "etym": "<uf-pf>clef</uf-pf>",
+            "hw-search": "le",
+            "pos": "n.",
+            "word": "lẹ"
+        },
+        {
+            "def": {
                 "def": "<em>Affirming comparative prefix. See grammar</em>."
             },
             "def-search": "",
@@ -3721,6 +3731,16 @@
                 }
             ],
             "word": "Ráb’h"
+        },
+        {
+            "def": {
+                "def": "+<uf-s>acc</uf-s> To smite, strike down."
+            },
+            "def-search": "down smite strike to",
+            "etym": "<uf-pf>frapper</uf-pf>",
+            "hw-search": "rabh",
+            "pos": "v.",
+            "word": "rábh"
         },
         {
             "def": {
@@ -5938,6 +5958,16 @@
                 }
             ],
             "word": "vísy’ô"
+        },
+        {
+            "def": {
+                "def": "To be central, in the middle of."
+            },
+            "def-search": "be central in middle of the to",
+            "etym": "<uf-pf>milieu</uf-pf>",
+            "hw-search": "viwy",
+            "pos": "v.",
+            "word": "víwý"
         },
         {
             "def": {
