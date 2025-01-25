@@ -59,7 +59,9 @@
 ##
 ##   - Do not use any markup in the ‘forms’ field (except ‘\s’ for making ‘fut’ etc.
 ##     italic). FIXME: Do that in the ULTRAFRENCHER instead.
-
+##
+## A `$backend` directive (search for occurrences in this file to see how it’s used)
+## can be used to restrict a set of entries to the printed or online dictionary.
 ad’hór|v. tr.|adore|
     \\ To love, adore.
     \\ +\s{part} To be in love with, have a crush on.
@@ -896,3 +898,247 @@ ph- > ḅ-
 p’h- > bh-
 t- > ḍ-
 Réáb’h > Ráb’h
+
+## Grammatical forms are only in the online dictionary because if you have
+## the grammar you can just search it instead. We only include the most common
+## numbers in the dictionary since they are more likely to be useful.
+ý|num.||One
+dý|num.||Two
+rrá|num.||Three
+c’haḍ|num.||Four
+séc’h|num.||Five
+sis|num.||Six
+sèḍ|num.||Seven
+y’íḍ|num.||Eight
+nýt’h|num.||Nine
+dis|num.||Ten
+révy’ẹ́|num.||First
+dýzy’ê|num.||Second
+rrázy’ê|num.||Third
+c’haḍríy’ê|num.||Fourth
+séc̣é|num.||Fifth
+sizy’ê|num.||Sixth
+sèḍy’ê|num.||Seventh
+y’íḍy’ê|num.||Eighth
+nýb’hy’ê|num.||Ninth
+dizy’ê|num.||Tenth
+séḅ|num.||Once
+dub|num.||Twice
+ríḅ|num.||Thrice, three times
+dubâ|num.||Twofold
+ríḅâ|num.||Threefold
+áḍy’ẹ́|num. frac. or n.|entier|\\ Entire, whole \\\textit{n.} Entirety, wholeness
+déví|num. frac. or n.|demi|Half
+
+$backend json
+vy’í, aúsó, vẹ, aúfý, vet’h, weḍy’ó, vẹ́hér, aúhér, vẹhér, aúfêr,
+    ḍe, b’heḍ, ḍyf, b’hu, ḍet’h, b’heḍy’é, dyhér, b’hehér, ḍyfér, b’huhér,
+    le, lẹsó, leb’h, lẹfýr, let’h, let’he, lehér, lẹhér, leb’hér, lẹfêr,
+    lle, llẹsó, lleb’h, llẹfýr, llet’h, llet’he, llehér, llẹhér, lleb’hér, llẹfêr,
+    se, lasó, seb’h, lafýr, set’h, laet’h, sehér, lahér, seb’hér, lafêr,
+    vy’íra, aúra, vẹsa, aúfýs, veḍra, weḍra, vẹ́héra, aúhéra, vẹhéra, aúfêra,
+    ḍera, b’hera, ḍys, b’hus, ḍeḍra, b’heḍra, dyhéra, b’hehéra, ḍyféra, b’huhéra,
+    lera, lẹra, les, lẹfýs, leḍra, le’thra, lehéra, lẹhéra, leb’héra, lẹfêra,
+    llera, llẹra, lles, llẹfýs, lleḍra, llet’hra, llehéra, llẹhéra, lleb’héra, llẹfêra,
+    sera, lara, ses, lafýs, seḍra, laet’hra, sehéra, lahéra, seb’héra, lafêra,
+    víra, aúry’a, vẹsy’a, aúfýy’a, veḍraä, weḍraä, vẹ́ra, aúra, vẹra, aúfrá,
+    ḍy’era, b’hery’a, ḍysy’a, b’huy’a, ḍeḍraä, b’heḍraä, dyra, b’hera, ḍyra, b’hura,
+    ly’era, lẹry’a, lesy’a, lẹfýy’a, leḍraä, le’thraä, lera, lẹra, leb’hra, lẹfrá,
+    lly’era, llẹry’a, llesy’a, llẹfýy’a, lleḍraä, llet’hraä, lléra, llẹra, lleb’hra, llẹfrá,
+    sy’era, lary’a, sesy’a, lafýy’a, seḍraä, laet’hraä, sera, lara, seb’hra, lafrá,
+    éḍ, éfyḍ, ét’hẹd, éhér, éfér,
+    ḍâ, fyḍâ, t’hẹdâ, hérâ, férâ,
+    éḍra, éfysa, ét’hẹra, éhéra, éféra,
+    ḍerâ, fysâ, t’hẹrâ, hérarâ, férarâ,
+    éḍy’a, éfyy’a, ét’hẹä, éhérá, éférá,
+    ḍy’â, fyy’â, t’hẹáâ, héráâ, féráâ,
+    > eḍ
+
+aúz|num.||Eleven
+duz|num.||Twelve
+réz|num.||Thirteen
+c’hat’haúr|num.||Fourteen
+c’héz|num.||Fifteen
+sez|num.||Sixteen
+dihèḍ|num.||Seventeen
+dizy’íḍ|num.||Eighteen
+diznýt’h|num.||Nineteen
+b’hé|num.||Twenty
+b’hé’ddis|num.||Thirty
+dýb’hé|num.||Forty
+dýb’hé’ddis|num.||Fifty
+rráb’hé|num.||Sixty
+rráb’hé’ddis|num.||Seventy
+c’haḍb’hé|num.||Eighty
+c’haḍb’hé’ddis|num.||Ninety
+sá|num.||Hundred
+dýsá|num.||Two hundred
+rásá|num.||Three hundred
+c’hasá|num.||Four hundred
+sésá|num.||Five hundred
+sisá|num.||Six hundred
+sèsá|num.||Seven hundred
+y’ísá|num.||Eight hundred
+nýsá|num.||Nine hundred
+víl|num.||Thousand
+dývíl|num.||Two thousand
+disvíl|num.||Ten thousand
+víwaú|num.||Million (10$^6$)
+dýwaú|num.||Trillion (10$^{12}$)
+ráwaú|num.||Quintillion (10$^{18}$)
+
+aúzy’ê|num. ord.||Eleventh
+duzy’ê|num. ord.||Twelfth
+rézy’ê|num. ord.||Thirteenth
+c’hat’haúrzy’ê|num. ord.||Fourteenth
+c’hézy’ê|num. ord.||Fifteenth
+sezy’ê|num. ord.||Sixteenth
+dihèḍy’ê|num. ord.||Seventeenth
+dizy’íḍy’ê|num. ord.||Eighteenth
+diznýb’hy’ê|num. ord.||Nineteenth
+b’héy’ê|num. ord.||Twentieth
+b’hé’ddizy’ê|num. ord.||Thirtieth
+dýb’héy’ê|num. ord.||Fortieth
+dýb’hé’ddizy’ê|num. ord.||Fiftieth
+rráb’héy’ê|num. ord.||Sixtieth
+rráb’hé’ddizy’ê|num. ord.||Seventieth
+c’haḍb’héy’ê|num. ord.||Eightieth
+c’haḍb’hé’ddizy’ê|num. ord.||Ninetieth
+sáḍy’ê|num. ord.||Hundredth
+dýsáḍy’ê|num. ord.||Two-hundredth
+rásáḍy’ê|num. ord.||Three-hundredth
+c’hasáḍy’ê|num. ord.||Four-hundredth
+sésáḍy’ê|num. ord.||Five-hundredth
+sisáḍy’ê|num. ord.||Six-hundredth
+sèsáḍy’ê|num. ord.||Seven-hundredth
+y’ísáḍy’ê|num. ord.||Eight-hundredth
+nýsáḍy’ê|num. ord.||Nine-hundredth
+víly’ê|num. ord.||Thousandth
+dývíly’ê|num. ord.||Two-thousandth
+disvíly’ê|num. ord.||Ten-thousandth
+víwaúy’ê|num. ord.||Millionth (10$^6$)
+dýwaúy’ê|num. ord.||Trillionth (10$^{12}$)
+ráwaúy’ê|num. ord.||Quintillionth (10$^{18}$)
+
+c’hadrýḅ|num.||Four times
+c’hét’hyḅ|num.||Five times
+sec’hsḍyḅ|num.||Six times
+sèḍyḅ|num.||Seven times
+auc’hḍyḅ|num.||Eight times
+nýḅ|num.||Nine times
+dehyḅ|num.||Ten times
+aúzyḅ|num.||Eleven times
+duzyḅ|num.||Twelve times
+rézyḅ|num.||Thirteen times
+c’hat’haúrzyḅ|num.||Fourteen times
+c’hézyḅ|num.||Fifteen times
+sezyḅ|num.||Sixteen times
+dihèḍyḅ|num.||Seventeen times
+dizy’íḍyḅ|num.||Eighteen times
+diznýt’hyḅ|num.||Nineteen times
+b’héḍyḅ|num.||Twenty times
+b’hé’ddehyḅ|num.||Thirty times
+dýb’héḍyḅ|num.||Forty times
+dýb’hé’ddehyḅ|num.||Fifty times
+rráb’héḍyḅ|num.||Sixty times
+rráb’hé’ddehyḅ|num.||Seventy times
+c’haḍb’héḍyḅ|num.||Eighty times
+c’haḍb’hé’ddehyḅ|num.||Ninety times
+sáḍyḅ|num.||One hundred times
+dýsáḍyḅ|num.||Two hundred times
+rásáḍyḅ|num.||Three hundred times
+c’hasáḍyḅ|num.||Four hundred times
+sésáḍyḅ|num.||Five hundred times
+sisáḍyḅ|num.||Six hundred times
+sèsáḍyḅ|num.||Seven hundred times
+y’ísáḍyḅ|num.||Eight hundred times
+nýsáḍyḅ|num.||Nine hundred times
+vílḍyḅ|num.||One thousand times
+dývílḍyḅ|num.||Two thousand times
+disvílḍyḅ|num.||Ten thousand times
+víwaúḍyḅ|num.||One million times
+dýwaúḍyḅ|num.||One trillion times
+ráwaúḍyḅ|num.||One quintillion times
+
+séḅâ|num.||Onefold
+c’hadrýḅâ|num.||Fourfold
+c’hét’hyḅâ|num.||Fivefold
+sec’hsḍyḅâ|num.||Sixfold
+sèḍyḅâ|num.||Sevenfold
+auc’hḍyḅâ|num.||Eightfold
+nýḅâ|num.||Ninefold
+dehyḅâ|num.||Tenfold
+aúzyḅâ|num.||Elevenfold
+duzyḅâ|num.||Twelvefold
+rézyḅâ|num.||Thirteenfold
+c’hat’haúrzyḅâ|num.||Fourteenfold
+c’hézyḅâ|num.||Fifteenfold
+sezyḅâ|num.||Sixteenfold
+dihèḍyḅâ|num.||Seventeenfold
+dizy’íḍyḅâ|num.||Eighteenfold
+diznýt’hyḅâ|num.||Nineteenfold
+b’héḍyḅâ|num.||Twentyfold
+b’hé’ddehyḅâ|num.||Thirtyfold
+dýb’héḍyḅâ|num.||Fortyfold
+dýb’hé’ddehyḅâ|num.||Fiftyfold
+rráb’héḍyḅâ|num.||Sixtyfold
+rráb’hé’ddehyḅâ|num.||Seventyfold
+c’haḍb’héḍyḅâ|num.||Eightyfold
+c’haḍb’hé’ddehyḅâ|num.||Ninetyfold
+sáḍyḅâ|num.||Hundredfold
+dýsáḍyḅâ|num.||Two-hundredfold
+rásáḍyḅâ|num.||Three-hundredfold
+c’hasáḍyḅâ|num.||Four-hundredfold
+sésáḍyḅâ|num.||Five-hundredfold
+sisáḍyḅâ|num.||Six-hundredfold
+sèsáḍyḅâ|num.||Seven-hundredfold
+y’ísáḍyḅâ|num.||Eight-hundredfold
+nýsáḍyḅâ|num.||Nine-hundredfold
+vílḍyḅâ|num.||Thousandfold
+dývílḍyḅâ|num.||Two-thousandfold
+disvílḍyḅâ|num.||Ten-thousandfold
+víwaúḍyḅâ|num.||Millionfold
+dýwaúḍyḅâ|num.||Trillionfold
+ráwaúḍyḅâ|num.||Quintillionfold
+
+y’ér|num. frac.||Third
+c’hár|num. frac.||Fourth
+c’hé|num. frac.||Fifth
+sic’hs|num. frac.||Sixth
+sè|num. frac.||Seventh
+auc’h|num. frac.||Eighth
+ny|num. frac.||Ninth
+deh|num. frac.||Tenth
+auz|num. frac.||Eleventh
+duz|num. frac.||Twelfth
+rez|num. frac.||Thirteenth
+c’hat’haurz|num. frac.||Fourteenth
+c’hez|num. frac.||Fifteenth
+sez|num. frac.||Sixteenth
+dihè|num. frac.||Seventeenth
+dizy’i|num. frac.||Eighteenth
+diznyb’h|num. frac.||Nineteenth
+b’he|num. frac.||Twentieth
+b’hé’ddeh|num. frac.||Thirtieth
+dýb’he|num. frac.||Fortieth
+dýb’hé’ddeh|num. frac.||Fiftieth
+rráb’he|num. frac.||Sixtieth
+rráb’hé’ddeh|num. frac.||Seventieth
+c’haḍb’he|num. frac.||Eightieth
+c’haḍb’hé’ddeh|num. frac.||Ninetieth
+sáḍ|num. frac.||Hundredth
+dýsáḍ|num. frac.||Two-hundredth
+rásáḍ|num. frac.||Three-hundredth
+c’hasáḍ|num. frac.||Four-hundredth
+sésáḍ|num. frac.||Five-hundredth
+sisáḍ|num. frac.||Six-hundredth
+sèsáḍ|num. frac.||Seven-hundredth
+y’ísáḍ|num. frac.||Eight-hundredth
+nýsáḍ|num. frac.||Nine-hundredth
+víláḍ|num. frac.||Thousandth
+dývíláḍ|num. frac.||Two-thousandth
+disvíláḍ|num. frac.||Ten-thousandth
+víwaúḍ|num. frac.||Millionth
+dýwaúḍ|num. frac.||Trillionth
+ráwaúḍ|num. frac.||Quintillionth
+$backend all

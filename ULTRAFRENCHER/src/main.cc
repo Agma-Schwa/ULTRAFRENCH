@@ -583,6 +583,7 @@ void Generate(std::string_view input_text, Backend&& backend) {
     };
 
     // Process the text.
+    bool skipping = false;
     for (auto [i, line] : u32stream(text).lines() | vws::enumerate) {
         line = line.take_until(U'#');
         backend.line = i;
@@ -595,6 +596,25 @@ void Generate(std::string_view input_text, Backend&& backend) {
 
         // Skip empty lines.
         if (line.empty()) continue;
+
+        // Check for directives.
+        if (line.starts_with(U'$')) {
+            ShipOutLine(); // Lines can’t span directives.
+            if (line.consume(U"$backend")) {
+                line.trim_front();
+                if (line.consume(U"all")) skipping = false;
+                else if (line.consume(U"json")) skipping = not dynamic_cast<JsonBackend*>(&backend);
+                else if (line.consume(U"tex")) skipping = not dynamic_cast<TeXBackend*>(&backend);
+                else backend.error("Unknown backend: {}", line.text());
+                continue;
+            }
+
+            backend.error("Unknown directive: {}", line.text());
+            continue;
+        }
+
+        // Skip lines that are not for this backend.
+        if (skipping) continue;
 
         // Perform line continuation.
         if (line.starts_with_any(U" \t")) {

@@ -352,6 +352,21 @@
             "word": "ádróid"
         },
         {
+            "def-search": "entire entirety whole wholeness",
+            "etym": "<uf-pf>entier</uf-pf>",
+            "hw-search": "adye",
+            "pos": "num. frac. or n.",
+            "senses": [
+                {
+                    "def": "Entire, whole."
+                },
+                {
+                    "def": "<em>n.</em> Entirety, wholeness."
+                }
+            ],
+            "word": "áḍy’ẹ́"
+        },
+        {
             "def-search": "bid farewell goodbye say sbd to",
             "etym": "<uf-pf>adieu</uf-pf>",
             "hw-search": "adyy",
@@ -644,6 +659,33 @@
         },
         {
             "def": {
+                "def": "Eighth."
+            },
+            "def-search": "eighth",
+            "hw-search": "auch",
+            "pos": "num. frac.",
+            "word": "auc’h"
+        },
+        {
+            "def": {
+                "def": "Eight times."
+            },
+            "def-search": "eight times",
+            "hw-search": "auchdyb",
+            "pos": "num.",
+            "word": "auc’hḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Eightfold."
+            },
+            "def-search": "eightfold",
+            "hw-search": "auchdyba",
+            "pos": "num.",
+            "word": "auc’hḍyḅâ"
+        },
+        {
+            "def": {
                 "def": "Other, another."
             },
             "def-search": "another other",
@@ -716,6 +758,51 @@
             "hw-search": "auschyr",
             "pos": "v.",
             "word": "ausc’hýr"
+        },
+        {
+            "def": {
+                "def": "Eleventh."
+            },
+            "def-search": "eleventh",
+            "hw-search": "auz",
+            "pos": "num. frac.",
+            "word": "auz"
+        },
+        {
+            "def": {
+                "def": "Eleven."
+            },
+            "def-search": "eleven",
+            "hw-search": "auz",
+            "pos": "num.",
+            "word": "aúz"
+        },
+        {
+            "def": {
+                "def": "Eleven times."
+            },
+            "def-search": "eleven times",
+            "hw-search": "auzyb",
+            "pos": "num.",
+            "word": "aúzyḅ"
+        },
+        {
+            "def": {
+                "def": "Elevenfold."
+            },
+            "def-search": "elevenfold",
+            "hw-search": "auzyba",
+            "pos": "num.",
+            "word": "aúzyḅâ"
+        },
+        {
+            "def": {
+                "def": "Eleventh."
+            },
+            "def-search": "eleventh",
+            "hw-search": "auzye",
+            "pos": "num. ord.",
+            "word": "aúzy’ê"
         },
         {
             "def": {
@@ -1152,6 +1239,15 @@
         },
         {
             "def": {
+                "def": "Twentieth."
+            },
+            "def-search": "twentieth",
+            "hw-search": "bhe",
+            "pos": "num. frac.",
+            "word": "b’he"
+        },
+        {
+            "def": {
                 "def": "Grape."
             },
             "def-search": "grape",
@@ -1159,6 +1255,78 @@
             "hw-search": "bhe",
             "pos": "n.",
             "word": "b’hé"
+        },
+        {
+            "def": {
+                "def": "Twenty."
+            },
+            "def-search": "twenty",
+            "hw-search": "bhe",
+            "pos": "num.",
+            "word": "b’hé"
+        },
+        {
+            "def": {
+                "def": "Thirtieth."
+            },
+            "def-search": "thirtieth",
+            "hw-search": "bheddeh",
+            "pos": "num. frac.",
+            "word": "b’hé’ddeh"
+        },
+        {
+            "def": {
+                "def": "Thirty times."
+            },
+            "def-search": "thirty times",
+            "hw-search": "bheddehyb",
+            "pos": "num.",
+            "word": "b’hé’ddehyḅ"
+        },
+        {
+            "def": {
+                "def": "Thirtyfold."
+            },
+            "def-search": "thirtyfold",
+            "hw-search": "bheddehyba",
+            "pos": "num.",
+            "word": "b’hé’ddehyḅâ"
+        },
+        {
+            "def": {
+                "def": "Thirty."
+            },
+            "def-search": "thirty",
+            "hw-search": "bheddis",
+            "pos": "num.",
+            "word": "b’hé’ddis"
+        },
+        {
+            "def": {
+                "def": "Thirtieth."
+            },
+            "def-search": "thirtieth",
+            "hw-search": "bheddizye",
+            "pos": "num. ord.",
+            "word": "b’hé’ddizy’ê"
+        },
+        {
+            "def": {
+                "def": "Twenty times."
+            },
+            "def-search": "times twenty",
+            "hw-search": "bhedyb",
+            "pos": "num.",
+            "word": "b’héḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Twentyfold."
+            },
+            "def-search": "twentyfold",
+            "hw-search": "bhedyba",
+            "pos": "num.",
+            "word": "b’héḍyḅâ"
         },
         {
             "def": {
@@ -1224,6 +1392,15 @@
             "hw-search": "bheyauhich",
             "pos": "n. archaic",
             "word": "b’heý’auhic’h"
+        },
+        {
+            "def": {
+                "def": "Twentieth."
+            },
+            "def-search": "twentieth",
+            "hw-search": "bheye",
+            "pos": "num. ord.",
+            "word": "b’héy’ê"
         },
         {
             "def": {
@@ -1495,6 +1672,132 @@
             "word": "c’habhahit’hẹ"
         },
         {
+            "def": {
+                "def": "Four."
+            },
+            "def-search": "four",
+            "hw-search": "chad",
+            "pos": "num.",
+            "word": "c’haḍ"
+        },
+        {
+            "def": {
+                "def": "Eightieth."
+            },
+            "def-search": "eightieth",
+            "hw-search": "chadbhe",
+            "pos": "num. frac.",
+            "word": "c’haḍb’he"
+        },
+        {
+            "def": {
+                "def": "Eighty."
+            },
+            "def-search": "eighty",
+            "hw-search": "chadbhe",
+            "pos": "num.",
+            "word": "c’haḍb’hé"
+        },
+        {
+            "def": {
+                "def": "Ninetieth."
+            },
+            "def-search": "ninetieth",
+            "hw-search": "chadbheddeh",
+            "pos": "num. frac.",
+            "word": "c’haḍb’hé’ddeh"
+        },
+        {
+            "def": {
+                "def": "Ninety times."
+            },
+            "def-search": "ninety times",
+            "hw-search": "chadbheddehyb",
+            "pos": "num.",
+            "word": "c’haḍb’hé’ddehyḅ"
+        },
+        {
+            "def": {
+                "def": "Ninetyfold."
+            },
+            "def-search": "ninetyfold",
+            "hw-search": "chadbheddehyba",
+            "pos": "num.",
+            "word": "c’haḍb’hé’ddehyḅâ"
+        },
+        {
+            "def": {
+                "def": "Ninety."
+            },
+            "def-search": "ninety",
+            "hw-search": "chadbheddis",
+            "pos": "num.",
+            "word": "c’haḍb’hé’ddis"
+        },
+        {
+            "def": {
+                "def": "Ninetieth."
+            },
+            "def-search": "ninetieth",
+            "hw-search": "chadbheddizye",
+            "pos": "num. ord.",
+            "word": "c’haḍb’hé’ddizy’ê"
+        },
+        {
+            "def": {
+                "def": "Eighty times."
+            },
+            "def-search": "eighty times",
+            "hw-search": "chadbhedyb",
+            "pos": "num.",
+            "word": "c’haḍb’héḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Eightyfold."
+            },
+            "def-search": "eightyfold",
+            "hw-search": "chadbhedyba",
+            "pos": "num.",
+            "word": "c’haḍb’héḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Eightieth."
+            },
+            "def-search": "eightieth",
+            "hw-search": "chadbheye",
+            "pos": "num. ord.",
+            "word": "c’haḍb’héy’ê"
+        },
+        {
+            "def": {
+                "def": "Fourth."
+            },
+            "def-search": "fourth",
+            "hw-search": "chadriye",
+            "pos": "num.",
+            "word": "c’haḍríy’ê"
+        },
+        {
+            "def": {
+                "def": "Four times."
+            },
+            "def-search": "four times",
+            "hw-search": "chadryb",
+            "pos": "num.",
+            "word": "c’hadrýḅ"
+        },
+        {
+            "def": {
+                "def": "Fourfold."
+            },
+            "def-search": "fourfold",
+            "hw-search": "chadryba",
+            "pos": "num.",
+            "word": "c’hadrýḅâ"
+        },
+        {
             "def-search": "boat by ship",
             "etym": "<uf-pf>canard</uf-pf>",
             "hw-search": "chanar",
@@ -1521,6 +1824,15 @@
         },
         {
             "def": {
+                "def": "Fourth."
+            },
+            "def-search": "fourth",
+            "hw-search": "char",
+            "pos": "num. frac.",
+            "word": "c’hár"
+        },
+        {
+            "def": {
                 "def": "To end for good, put to a permanent end."
             },
             "def-search": "a end for good permanent put to",
@@ -1532,6 +1844,51 @@
         },
         {
             "def": {
+                "def": "Four hundred."
+            },
+            "def-search": "four hundred",
+            "hw-search": "chasa",
+            "pos": "num.",
+            "word": "c’hasá"
+        },
+        {
+            "def": {
+                "def": "Four-hundredth."
+            },
+            "def-search": "fourhundredth",
+            "hw-search": "chasad",
+            "pos": "num. frac.",
+            "word": "c’hasáḍ"
+        },
+        {
+            "def": {
+                "def": "Four hundred times."
+            },
+            "def-search": "four hundred times",
+            "hw-search": "chasadyb",
+            "pos": "num.",
+            "word": "c’hasáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Four-hundredfold."
+            },
+            "def-search": "fourhundredfold",
+            "hw-search": "chasadyba",
+            "pos": "num.",
+            "word": "c’hasáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Four-hundredth."
+            },
+            "def-search": "fourhundredth",
+            "hw-search": "chasadye",
+            "pos": "num. ord.",
+            "word": "c’hasáḍy’ê"
+        },
+        {
+            "def": {
                 "def": "Exception."
             },
             "def-search": "exception",
@@ -1539,6 +1896,51 @@
             "hw-search": "chasbesyal",
             "pos": "n.",
             "word": "c’hasḅesy’ál"
+        },
+        {
+            "def": {
+                "def": "Fourteen."
+            },
+            "def-search": "fourteen",
+            "hw-search": "chathaur",
+            "pos": "num.",
+            "word": "c’hat’haúr"
+        },
+        {
+            "def": {
+                "def": "Fourteenth."
+            },
+            "def-search": "fourteenth",
+            "hw-search": "chathaurz",
+            "pos": "num. frac.",
+            "word": "c’hat’haurz"
+        },
+        {
+            "def": {
+                "def": "Fourteen times."
+            },
+            "def-search": "fourteen times",
+            "hw-search": "chathaurzyb",
+            "pos": "num.",
+            "word": "c’hat’haúrzyḅ"
+        },
+        {
+            "def": {
+                "def": "Fourteenfold."
+            },
+            "def-search": "fourteenfold",
+            "hw-search": "chathaurzyba",
+            "pos": "num.",
+            "word": "c’hat’haúrzyḅâ"
+        },
+        {
+            "def": {
+                "def": "Fourteenth."
+            },
+            "def-search": "fourteenth",
+            "hw-search": "chathaurzye",
+            "pos": "num. ord.",
+            "word": "c’hat’haúrzy’ê"
         },
         {
             "def-search": "holy",
@@ -1754,6 +2156,15 @@
         },
         {
             "def": {
+                "def": "Fifth."
+            },
+            "def-search": "fifth",
+            "hw-search": "che",
+            "pos": "num. frac.",
+            "word": "c’hé"
+        },
+        {
+            "def": {
                 "def": "The Promised Land."
             },
             "def-search": "land promised the",
@@ -1803,6 +2214,69 @@
             "hw-search": "chesse",
             "pos": "",
             "word": "c’hesse"
+        },
+        {
+            "def": {
+                "def": "Five times."
+            },
+            "def-search": "five times",
+            "hw-search": "chethyb",
+            "pos": "num.",
+            "word": "c’hét’hyḅ"
+        },
+        {
+            "def": {
+                "def": "Fivefold."
+            },
+            "def-search": "fivefold",
+            "hw-search": "chethyba",
+            "pos": "num.",
+            "word": "c’hét’hyḅâ"
+        },
+        {
+            "def": {
+                "def": "Fifteenth."
+            },
+            "def-search": "fifteenth",
+            "hw-search": "chez",
+            "pos": "num. frac.",
+            "word": "c’hez"
+        },
+        {
+            "def": {
+                "def": "Fifteen."
+            },
+            "def-search": "fifteen",
+            "hw-search": "chez",
+            "pos": "num.",
+            "word": "c’héz"
+        },
+        {
+            "def": {
+                "def": "Fifteen times."
+            },
+            "def-search": "fifteen times",
+            "hw-search": "chezyb",
+            "pos": "num.",
+            "word": "c’hézyḅ"
+        },
+        {
+            "def": {
+                "def": "Fifteenfold."
+            },
+            "def-search": "fifteenfold",
+            "hw-search": "chezyba",
+            "pos": "num.",
+            "word": "c’hézyḅâ"
+        },
+        {
+            "def": {
+                "def": "Fifteenth."
+            },
+            "def-search": "fifteenth",
+            "hw-search": "chezye",
+            "pos": "num. ord.",
+            "word": "c’hézy’ê"
         },
         {
             "def-search": "have in include offer possess sell stock to",
@@ -2211,6 +2685,15 @@
         },
         {
             "def": {
+                "def": "Tenth."
+            },
+            "def-search": "tenth",
+            "hw-search": "deh",
+            "pos": "num. frac.",
+            "word": "deh"
+        },
+        {
+            "def": {
                 "def": "To be below, beneath."
             },
             "def-search": "be below beneath to",
@@ -2253,6 +2736,24 @@
             "hw-search": "dehid",
             "pos": "v.",
             "word": "dehid"
+        },
+        {
+            "def": {
+                "def": "Ten times."
+            },
+            "def-search": "ten times",
+            "hw-search": "dehyb",
+            "pos": "num.",
+            "word": "dehyḅ"
+        },
+        {
+            "def": {
+                "def": "Tenfold."
+            },
+            "def-search": "tenfold",
+            "hw-search": "dehyba",
+            "pos": "num.",
+            "word": "dehyḅâ"
         },
         {
             "def": {
@@ -2398,6 +2899,16 @@
             "word": "deslẹ"
         },
         {
+            "def": {
+                "def": "Half."
+            },
+            "def-search": "half",
+            "etym": "<uf-pf>demi</uf-pf>",
+            "hw-search": "devi",
+            "pos": "num. frac. or n.",
+            "word": "déví"
+        },
+        {
             "def-search": "dwell live remain somewhere stayto to",
             "etym": "<uf-pf>demeurer</uf-pf>",
             "hw-search": "devyr",
@@ -2435,6 +2946,51 @@
         },
         {
             "def": {
+                "def": "Seventeenth."
+            },
+            "def-search": "seventeenth",
+            "hw-search": "dihe",
+            "pos": "num. frac.",
+            "word": "dihè"
+        },
+        {
+            "def": {
+                "def": "Seventeen."
+            },
+            "def-search": "seventeen",
+            "hw-search": "dihed",
+            "pos": "num.",
+            "word": "dihèḍ"
+        },
+        {
+            "def": {
+                "def": "Seventeen times."
+            },
+            "def-search": "seventeen times",
+            "hw-search": "dihedyb",
+            "pos": "num.",
+            "word": "dihèḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Seventeenfold."
+            },
+            "def-search": "seventeenfold",
+            "hw-search": "dihedyba",
+            "pos": "num.",
+            "word": "dihèḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Seventeenth."
+            },
+            "def-search": "seventeenth",
+            "hw-search": "dihedye",
+            "pos": "num. ord.",
+            "word": "dihèḍy’ê"
+        },
+        {
+            "def": {
                 "def": "+<uf-s>acc</uf-s> To say, tell (+<uf-s>dat</uf-s> someone)."
             },
             "def-search": "say someone tell to",
@@ -2457,6 +3013,159 @@
         },
         {
             "def": {
+                "def": "Ten."
+            },
+            "def-search": "ten",
+            "hw-search": "dis",
+            "pos": "num.",
+            "word": "dis"
+        },
+        {
+            "def": {
+                "def": "Ten thousand."
+            },
+            "def-search": "ten thousand",
+            "hw-search": "disvil",
+            "pos": "num.",
+            "word": "disvíl"
+        },
+        {
+            "def": {
+                "def": "Ten-thousandth."
+            },
+            "def-search": "tenthousandth",
+            "hw-search": "disvilad",
+            "pos": "num. frac.",
+            "word": "disvíláḍ"
+        },
+        {
+            "def": {
+                "def": "Ten thousand times."
+            },
+            "def-search": "ten thousand times",
+            "hw-search": "disvildyb",
+            "pos": "num.",
+            "word": "disvílḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Ten-thousandfold."
+            },
+            "def-search": "tenthousandfold",
+            "hw-search": "disvildyba",
+            "pos": "num.",
+            "word": "disvílḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Ten-thousandth."
+            },
+            "def-search": "tenthousandth",
+            "hw-search": "disvilye",
+            "pos": "num. ord.",
+            "word": "disvíly’ê"
+        },
+        {
+            "def": {
+                "def": "Nineteenth."
+            },
+            "def-search": "nineteenth",
+            "hw-search": "diznybh",
+            "pos": "num. frac.",
+            "word": "diznyb’h"
+        },
+        {
+            "def": {
+                "def": "Nineteenth."
+            },
+            "def-search": "nineteenth",
+            "hw-search": "diznybhye",
+            "pos": "num. ord.",
+            "word": "diznýb’hy’ê"
+        },
+        {
+            "def": {
+                "def": "Nineteen."
+            },
+            "def-search": "nineteen",
+            "hw-search": "diznyth",
+            "pos": "num.",
+            "word": "diznýt’h"
+        },
+        {
+            "def": {
+                "def": "Nineteen times."
+            },
+            "def-search": "nineteen times",
+            "hw-search": "diznythyb",
+            "pos": "num.",
+            "word": "diznýt’hyḅ"
+        },
+        {
+            "def": {
+                "def": "Nineteenfold."
+            },
+            "def-search": "nineteenfold",
+            "hw-search": "diznythyba",
+            "pos": "num.",
+            "word": "diznýt’hyḅâ"
+        },
+        {
+            "def": {
+                "def": "Tenth."
+            },
+            "def-search": "tenth",
+            "hw-search": "dizye",
+            "pos": "num.",
+            "word": "dizy’ê"
+        },
+        {
+            "def": {
+                "def": "Eighteenth."
+            },
+            "def-search": "eighteenth",
+            "hw-search": "dizyi",
+            "pos": "num. frac.",
+            "word": "dizy’i"
+        },
+        {
+            "def": {
+                "def": "Eighteen."
+            },
+            "def-search": "eighteen",
+            "hw-search": "dizyid",
+            "pos": "num.",
+            "word": "dizy’íḍ"
+        },
+        {
+            "def": {
+                "def": "Eighteen times."
+            },
+            "def-search": "eighteen times",
+            "hw-search": "dizyidyb",
+            "pos": "num.",
+            "word": "dizy’íḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Eighteenfold."
+            },
+            "def-search": "eighteenfold",
+            "hw-search": "dizyidyba",
+            "pos": "num.",
+            "word": "dizy’íḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Eighteenth."
+            },
+            "def-search": "eighteenth",
+            "hw-search": "dizyidye",
+            "pos": "num. ord.",
+            "word": "dizy’íḍy’ê"
+        },
+        {
+            "def": {
                 "comment": "The <uf-s>acc</uf-s> is used when talking about concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts or parts of objects; the <uf-s>dat</uf-s> is the person being endowed with.",
                 "def": "<uf-s>+ dat &amp; acc/part</uf-s> To endow, bestow, give."
             },
@@ -2466,6 +3175,24 @@
             "hw-search": "done",
             "pos": "v.",
             "word": "dónẹ́"
+        },
+        {
+            "def": {
+                "def": "Twice."
+            },
+            "def-search": "twice",
+            "hw-search": "dub",
+            "pos": "num.",
+            "word": "dub"
+        },
+        {
+            "def": {
+                "def": "Twofold."
+            },
+            "def-search": "twofold",
+            "hw-search": "duba",
+            "pos": "num.",
+            "word": "dubâ"
         },
         {
             "def-search": "always still",
@@ -2504,6 +3231,150 @@
         },
         {
             "def": {
+                "def": "Twelve."
+            },
+            "def-search": "twelve",
+            "hw-search": "duz",
+            "pos": "num.",
+            "word": "duz"
+        },
+        {
+            "def": {
+                "def": "Twelfth."
+            },
+            "def-search": "twelfth",
+            "hw-search": "duz",
+            "pos": "num. frac.",
+            "word": "duz"
+        },
+        {
+            "def": {
+                "def": "Twelve times."
+            },
+            "def-search": "times twelve",
+            "hw-search": "duzyb",
+            "pos": "num.",
+            "word": "duzyḅ"
+        },
+        {
+            "def": {
+                "def": "Twelvefold."
+            },
+            "def-search": "twelvefold",
+            "hw-search": "duzyba",
+            "pos": "num.",
+            "word": "duzyḅâ"
+        },
+        {
+            "def": {
+                "def": "Twelfth."
+            },
+            "def-search": "twelfth",
+            "hw-search": "duzye",
+            "pos": "num. ord.",
+            "word": "duzy’ê"
+        },
+        {
+            "def": {
+                "def": "Two."
+            },
+            "def-search": "two",
+            "hw-search": "dy",
+            "pos": "num.",
+            "word": "dý"
+        },
+        {
+            "def": {
+                "def": "Fortieth."
+            },
+            "def-search": "fortieth",
+            "hw-search": "dybhe",
+            "pos": "num. frac.",
+            "word": "dýb’he"
+        },
+        {
+            "def": {
+                "def": "Forty."
+            },
+            "def-search": "forty",
+            "hw-search": "dybhe",
+            "pos": "num.",
+            "word": "dýb’hé"
+        },
+        {
+            "def": {
+                "def": "Fiftieth."
+            },
+            "def-search": "fiftieth",
+            "hw-search": "dybheddeh",
+            "pos": "num. frac.",
+            "word": "dýb’hé’ddeh"
+        },
+        {
+            "def": {
+                "def": "Fifty times."
+            },
+            "def-search": "fifty times",
+            "hw-search": "dybheddehyb",
+            "pos": "num.",
+            "word": "dýb’hé’ddehyḅ"
+        },
+        {
+            "def": {
+                "def": "Fiftyfold."
+            },
+            "def-search": "fiftyfold",
+            "hw-search": "dybheddehyba",
+            "pos": "num.",
+            "word": "dýb’hé’ddehyḅâ"
+        },
+        {
+            "def": {
+                "def": "Fifty."
+            },
+            "def-search": "fifty",
+            "hw-search": "dybheddis",
+            "pos": "num.",
+            "word": "dýb’hé’ddis"
+        },
+        {
+            "def": {
+                "def": "Fiftieth."
+            },
+            "def-search": "fiftieth",
+            "hw-search": "dybheddizye",
+            "pos": "num. ord.",
+            "word": "dýb’hé’ddizy’ê"
+        },
+        {
+            "def": {
+                "def": "Forty times."
+            },
+            "def-search": "forty times",
+            "hw-search": "dybhedyb",
+            "pos": "num.",
+            "word": "dýb’héḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Fortyfold."
+            },
+            "def-search": "fortyfold",
+            "hw-search": "dybhedyba",
+            "pos": "num.",
+            "word": "dýb’héḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Fortieth."
+            },
+            "def-search": "fortieth",
+            "hw-search": "dybheye",
+            "pos": "num. ord.",
+            "word": "dýb’héy’ê"
+        },
+        {
+            "def": {
                 "def": "To be yours (<uf-s>sg</uf-s>)."
             },
             "def-search": "be to yours",
@@ -2515,6 +3386,96 @@
         },
         {
             "def": {
+                "def": "Two hundred."
+            },
+            "def-search": "hundred two",
+            "hw-search": "dysa",
+            "pos": "num.",
+            "word": "dýsá"
+        },
+        {
+            "def": {
+                "def": "Two-hundredth."
+            },
+            "def-search": "twohundredth",
+            "hw-search": "dysad",
+            "pos": "num. frac.",
+            "word": "dýsáḍ"
+        },
+        {
+            "def": {
+                "def": "Two hundred times."
+            },
+            "def-search": "hundred times two",
+            "hw-search": "dysadyb",
+            "pos": "num.",
+            "word": "dýsáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Two-hundredfold."
+            },
+            "def-search": "twohundredfold",
+            "hw-search": "dysadyba",
+            "pos": "num.",
+            "word": "dýsáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Two-hundredth."
+            },
+            "def-search": "twohundredth",
+            "hw-search": "dysadye",
+            "pos": "num. ord.",
+            "word": "dýsáḍy’ê"
+        },
+        {
+            "def": {
+                "def": "Two thousand."
+            },
+            "def-search": "thousand two",
+            "hw-search": "dyvil",
+            "pos": "num.",
+            "word": "dývíl"
+        },
+        {
+            "def": {
+                "def": "Two-thousandth."
+            },
+            "def-search": "twothousandth",
+            "hw-search": "dyvilad",
+            "pos": "num. frac.",
+            "word": "dývíláḍ"
+        },
+        {
+            "def": {
+                "def": "Two thousand times."
+            },
+            "def-search": "thousand times two",
+            "hw-search": "dyvildyb",
+            "pos": "num.",
+            "word": "dývílḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Two-thousandfold."
+            },
+            "def-search": "twothousandfold",
+            "hw-search": "dyvildyba",
+            "pos": "num.",
+            "word": "dývílḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Two-thousandth."
+            },
+            "def-search": "twothousandth",
+            "hw-search": "dyvilye",
+            "pos": "num. ord.",
+            "word": "dývíly’ê"
+        },
+        {
+            "def": {
                 "comment": "As in e.g. ‘At least, I think that &hellip;’",
                 "def": "At least."
             },
@@ -2523,6 +3484,60 @@
             "hw-search": "dyvre",
             "pos": "particle",
             "word": "dývrê"
+        },
+        {
+            "def": {
+                "def": "Trillion (10$^{12}$)."
+            },
+            "def-search": "trillion",
+            "hw-search": "dywau",
+            "pos": "num.",
+            "word": "dýwaú"
+        },
+        {
+            "def": {
+                "def": "Trillionth."
+            },
+            "def-search": "trillionth",
+            "hw-search": "dywaud",
+            "pos": "num. frac.",
+            "word": "dýwaúḍ"
+        },
+        {
+            "def": {
+                "def": "One trillion times."
+            },
+            "def-search": "one times trillion",
+            "hw-search": "dywaudyb",
+            "pos": "num.",
+            "word": "dýwaúḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Trillionfold."
+            },
+            "def-search": "trillionfold",
+            "hw-search": "dywaudyba",
+            "pos": "num.",
+            "word": "dýwaúḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Trillionth (10$^{12}$)."
+            },
+            "def-search": "trillionth",
+            "hw-search": "dywauye",
+            "pos": "num. ord.",
+            "word": "dýwaúy’ê"
+        },
+        {
+            "def": {
+                "def": "Second."
+            },
+            "def-search": "second",
+            "hw-search": "dyzye",
+            "pos": "num.",
+            "word": "dýzy’ê"
         },
         {
             "def": {
@@ -3606,6 +4621,96 @@
         },
         {
             "def": {
+                "def": "Ninth."
+            },
+            "def-search": "ninth",
+            "hw-search": "ny",
+            "pos": "num. frac.",
+            "word": "ny"
+        },
+        {
+            "def": {
+                "def": "Nine times."
+            },
+            "def-search": "nine times",
+            "hw-search": "nyb",
+            "pos": "num.",
+            "word": "nýḅ"
+        },
+        {
+            "def": {
+                "def": "Ninefold."
+            },
+            "def-search": "ninefold",
+            "hw-search": "nyba",
+            "pos": "num.",
+            "word": "nýḅâ"
+        },
+        {
+            "def": {
+                "def": "Ninth."
+            },
+            "def-search": "ninth",
+            "hw-search": "nybhye",
+            "pos": "num.",
+            "word": "nýb’hy’ê"
+        },
+        {
+            "def": {
+                "def": "Nine hundred."
+            },
+            "def-search": "hundred nine",
+            "hw-search": "nysa",
+            "pos": "num.",
+            "word": "nýsá"
+        },
+        {
+            "def": {
+                "def": "Nine-hundredth."
+            },
+            "def-search": "ninehundredth",
+            "hw-search": "nysad",
+            "pos": "num. frac.",
+            "word": "nýsáḍ"
+        },
+        {
+            "def": {
+                "def": "Nine hundred times."
+            },
+            "def-search": "hundred nine times",
+            "hw-search": "nysadyb",
+            "pos": "num.",
+            "word": "nýsáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Nine-hundredfold."
+            },
+            "def-search": "ninehundredfold",
+            "hw-search": "nysadyba",
+            "pos": "num.",
+            "word": "nýsáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Nine-hundredth."
+            },
+            "def-search": "ninehundredth",
+            "hw-search": "nysadye",
+            "pos": "num. ord.",
+            "word": "nýsáḍy’ê"
+        },
+        {
+            "def": {
+                "def": "Nine."
+            },
+            "def-search": "nine",
+            "hw-search": "nyth",
+            "pos": "num.",
+            "word": "nýt’h"
+        },
+        {
+            "def": {
                 "comment": "Always capitalised.",
                 "def": "<em>(Logic)</em> True, $\\top$."
             },
@@ -4001,6 +5106,51 @@
         },
         {
             "def": {
+                "def": "Three hundred."
+            },
+            "def-search": "hundred three",
+            "hw-search": "rasa",
+            "pos": "num.",
+            "word": "rásá"
+        },
+        {
+            "def": {
+                "def": "Three-hundredth."
+            },
+            "def-search": "threehundredth",
+            "hw-search": "rasad",
+            "pos": "num. frac.",
+            "word": "rásáḍ"
+        },
+        {
+            "def": {
+                "def": "Three hundred times."
+            },
+            "def-search": "hundred three times",
+            "hw-search": "rasadyb",
+            "pos": "num.",
+            "word": "rásáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Three-hundredfold."
+            },
+            "def-search": "threehundredfold",
+            "hw-search": "rasadyba",
+            "pos": "num.",
+            "word": "rásáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Three-hundredth."
+            },
+            "def-search": "threehundredth",
+            "hw-search": "rasadye",
+            "pos": "num. ord.",
+            "word": "rásáḍy’ê"
+        },
+        {
+            "def": {
                 "def": "+<uf-s>aci</uf-s>."
             },
             "def-search": "apparent be become clear come evident for it known light that to transpire",
@@ -4170,6 +5320,51 @@
                 }
             ],
             "word": "rávér"
+        },
+        {
+            "def": {
+                "def": "Quintillion (10$^{18}$)."
+            },
+            "def-search": "quintillion",
+            "hw-search": "rawau",
+            "pos": "num.",
+            "word": "ráwaú"
+        },
+        {
+            "def": {
+                "def": "Quintillionth."
+            },
+            "def-search": "quintillionth",
+            "hw-search": "rawaud",
+            "pos": "num. frac.",
+            "word": "ráwaúḍ"
+        },
+        {
+            "def": {
+                "def": "One quintillion times."
+            },
+            "def-search": "one quintillion times",
+            "hw-search": "rawaudyb",
+            "pos": "num.",
+            "word": "ráwaúḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Quintillionfold."
+            },
+            "def-search": "quintillionfold",
+            "hw-search": "rawaudyba",
+            "pos": "num.",
+            "word": "ráwaúḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Quintillionth (10$^{18}$)."
+            },
+            "def-search": "quintillionth",
+            "hw-search": "rawauye",
+            "pos": "num. ord.",
+            "word": "ráwaúy’ê"
         },
         {
             "def-search": "a go journey on to travel voyage",
@@ -4589,6 +5784,78 @@
         },
         {
             "def": {
+                "def": "First."
+            },
+            "def-search": "first",
+            "hw-search": "revye",
+            "pos": "num.",
+            "word": "révy’ẹ́"
+        },
+        {
+            "def": {
+                "def": "Thirteenth."
+            },
+            "def-search": "thirteenth",
+            "hw-search": "rez",
+            "pos": "num. frac.",
+            "word": "rez"
+        },
+        {
+            "def": {
+                "def": "Thirteen."
+            },
+            "def-search": "thirteen",
+            "hw-search": "rez",
+            "pos": "num.",
+            "word": "réz"
+        },
+        {
+            "def": {
+                "def": "Thirteen times."
+            },
+            "def-search": "thirteen times",
+            "hw-search": "rezyb",
+            "pos": "num.",
+            "word": "rézyḅ"
+        },
+        {
+            "def": {
+                "def": "Thirteenfold."
+            },
+            "def-search": "thirteenfold",
+            "hw-search": "rezyba",
+            "pos": "num.",
+            "word": "rézyḅâ"
+        },
+        {
+            "def": {
+                "def": "Thirteenth."
+            },
+            "def-search": "thirteenth",
+            "hw-search": "rezye",
+            "pos": "num. ord.",
+            "word": "rézy’ê"
+        },
+        {
+            "def": {
+                "def": "Thrice, three times."
+            },
+            "def-search": "three thrice times",
+            "hw-search": "rib",
+            "pos": "num.",
+            "word": "ríḅ"
+        },
+        {
+            "def": {
+                "def": "Threefold."
+            },
+            "def-search": "threefold",
+            "hw-search": "riba",
+            "pos": "num.",
+            "word": "ríḅâ"
+        },
+        {
+            "def": {
                 "def": "River."
             },
             "def-search": "river",
@@ -4661,6 +5928,105 @@
         },
         {
             "def": {
+                "def": "Three."
+            },
+            "def-search": "three",
+            "hw-search": "rra",
+            "pos": "num.",
+            "word": "rrá"
+        },
+        {
+            "def": {
+                "def": "Sixtieth."
+            },
+            "def-search": "sixtieth",
+            "hw-search": "rrabhe",
+            "pos": "num. frac.",
+            "word": "rráb’he"
+        },
+        {
+            "def": {
+                "def": "Sixty."
+            },
+            "def-search": "sixty",
+            "hw-search": "rrabhe",
+            "pos": "num.",
+            "word": "rráb’hé"
+        },
+        {
+            "def": {
+                "def": "Seventieth."
+            },
+            "def-search": "seventieth",
+            "hw-search": "rrabheddeh",
+            "pos": "num. frac.",
+            "word": "rráb’hé’ddeh"
+        },
+        {
+            "def": {
+                "def": "Seventy times."
+            },
+            "def-search": "seventy times",
+            "hw-search": "rrabheddehyb",
+            "pos": "num.",
+            "word": "rráb’hé’ddehyḅ"
+        },
+        {
+            "def": {
+                "def": "Seventyfold."
+            },
+            "def-search": "seventyfold",
+            "hw-search": "rrabheddehyba",
+            "pos": "num.",
+            "word": "rráb’hé’ddehyḅâ"
+        },
+        {
+            "def": {
+                "def": "Seventy."
+            },
+            "def-search": "seventy",
+            "hw-search": "rrabheddis",
+            "pos": "num.",
+            "word": "rráb’hé’ddis"
+        },
+        {
+            "def": {
+                "def": "Seventieth."
+            },
+            "def-search": "seventieth",
+            "hw-search": "rrabheddizye",
+            "pos": "num. ord.",
+            "word": "rráb’hé’ddizy’ê"
+        },
+        {
+            "def": {
+                "def": "Sixty times."
+            },
+            "def-search": "sixty times",
+            "hw-search": "rrabhedyb",
+            "pos": "num.",
+            "word": "rráb’héḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Sixtyfold."
+            },
+            "def-search": "sixtyfold",
+            "hw-search": "rrabhedyba",
+            "pos": "num.",
+            "word": "rráb’héḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Sixtieth."
+            },
+            "def-search": "sixtieth",
+            "hw-search": "rrabheye",
+            "pos": "num. ord.",
+            "word": "rráb’héy’ê"
+        },
+        {
+            "def": {
                 "def": "Extreme cold, coldness."
             },
             "def-search": "cold coldness extreme",
@@ -4678,6 +6044,15 @@
             "hw-search": "rradrauc",
             "pos": "n.",
             "word": "rráḍraúc"
+        },
+        {
+            "def": {
+                "def": "Third."
+            },
+            "def-search": "third",
+            "hw-search": "rrazye",
+            "pos": "num.",
+            "word": "rrázy’ê"
         },
         {
             "def": {
@@ -4832,6 +6207,51 @@
             "hw-search": "sa",
             "pos": "conj.",
             "word": "sá"
+        },
+        {
+            "def": {
+                "def": "Hundred."
+            },
+            "def-search": "hundred",
+            "hw-search": "sa",
+            "pos": "num.",
+            "word": "sá"
+        },
+        {
+            "def": {
+                "def": "Hundredth."
+            },
+            "def-search": "hundredth",
+            "hw-search": "sad",
+            "pos": "num. frac.",
+            "word": "sáḍ"
+        },
+        {
+            "def": {
+                "def": "One hundred times."
+            },
+            "def-search": "hundred one times",
+            "hw-search": "sadyb",
+            "pos": "num.",
+            "word": "sáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Hundredfold."
+            },
+            "def-search": "hundredfold",
+            "hw-search": "sadyba",
+            "pos": "num.",
+            "word": "sáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Hundredth."
+            },
+            "def-search": "hundredth",
+            "hw-search": "sadye",
+            "pos": "num. ord.",
+            "word": "sáḍy’ê"
         },
         {
             "def": {
@@ -5021,6 +6441,15 @@
         },
         {
             "def": {
+                "def": "Seventh."
+            },
+            "def-search": "seventh",
+            "hw-search": "se",
+            "pos": "num. frac.",
+            "word": "sè"
+        },
+        {
+            "def": {
                 "def": "So, thus, as a result."
             },
             "def-search": "a as result so thus",
@@ -5042,6 +6471,24 @@
         },
         {
             "def": {
+                "def": "Once."
+            },
+            "def-search": "once",
+            "hw-search": "seb",
+            "pos": "num.",
+            "word": "séḅ"
+        },
+        {
+            "def": {
+                "def": "Onefold."
+            },
+            "def-search": "onefold",
+            "hw-search": "seba",
+            "pos": "num.",
+            "word": "séḅâ"
+        },
+        {
+            "def": {
                 "def": "To cave in, collapse."
             },
             "def-search": "cave collapse in to",
@@ -5052,6 +6499,51 @@
         },
         {
             "def": {
+                "def": "Fifth."
+            },
+            "def-search": "fifth",
+            "hw-search": "sece",
+            "pos": "num.",
+            "word": "séc̣é"
+        },
+        {
+            "def": {
+                "def": "Five."
+            },
+            "def-search": "five",
+            "hw-search": "sech",
+            "pos": "num.",
+            "word": "séc’h"
+        },
+        {
+            "def": {
+                "def": "Six times."
+            },
+            "def-search": "six times",
+            "hw-search": "sechsdyb",
+            "pos": "num.",
+            "word": "sec’hsḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Sixfold."
+            },
+            "def-search": "sixfold",
+            "hw-search": "sechsdyba",
+            "pos": "num.",
+            "word": "sec’hsḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Seven."
+            },
+            "def-search": "seven",
+            "hw-search": "sed",
+            "pos": "num.",
+            "word": "sèḍ"
+        },
+        {
+            "def": {
                 "def": "It is due to (+<uf-s>gen</uf-s> sth. / +<uf-s>aci</uf-s> the fact that...)."
             },
             "def-search": "due fact is it sth that the to",
@@ -5059,6 +6551,33 @@
             "hw-search": "sedh",
             "pos": "part.",
             "word": "sèd’h"
+        },
+        {
+            "def": {
+                "def": "Seven times."
+            },
+            "def-search": "seven times",
+            "hw-search": "sedyb",
+            "pos": "num.",
+            "word": "sèḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Sevenfold."
+            },
+            "def-search": "sevenfold",
+            "hw-search": "sedyba",
+            "pos": "num.",
+            "word": "sèḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Seventh."
+            },
+            "def-search": "seventh",
+            "hw-search": "sedye",
+            "pos": "num.",
+            "word": "sèḍy’ê"
         },
         {
             "def": {
@@ -5155,6 +6674,96 @@
         },
         {
             "def": {
+                "def": "Seven hundred."
+            },
+            "def-search": "hundred seven",
+            "hw-search": "sesa",
+            "pos": "num.",
+            "word": "sèsá"
+        },
+        {
+            "def": {
+                "def": "Five hundred."
+            },
+            "def-search": "five hundred",
+            "hw-search": "sesa",
+            "pos": "num.",
+            "word": "sésá"
+        },
+        {
+            "def": {
+                "def": "Seven-hundredth."
+            },
+            "def-search": "sevenhundredth",
+            "hw-search": "sesad",
+            "pos": "num. frac.",
+            "word": "sèsáḍ"
+        },
+        {
+            "def": {
+                "def": "Five-hundredth."
+            },
+            "def-search": "fivehundredth",
+            "hw-search": "sesad",
+            "pos": "num. frac.",
+            "word": "sésáḍ"
+        },
+        {
+            "def": {
+                "def": "Seven hundred times."
+            },
+            "def-search": "hundred seven times",
+            "hw-search": "sesadyb",
+            "pos": "num.",
+            "word": "sèsáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Five hundred times."
+            },
+            "def-search": "five hundred times",
+            "hw-search": "sesadyb",
+            "pos": "num.",
+            "word": "sésáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Seven-hundredfold."
+            },
+            "def-search": "sevenhundredfold",
+            "hw-search": "sesadyba",
+            "pos": "num.",
+            "word": "sèsáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Five-hundredfold."
+            },
+            "def-search": "fivehundredfold",
+            "hw-search": "sesadyba",
+            "pos": "num.",
+            "word": "sésáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Seven-hundredth."
+            },
+            "def-search": "sevenhundredth",
+            "hw-search": "sesadye",
+            "pos": "num. ord.",
+            "word": "sèsáḍy’ê"
+        },
+        {
+            "def": {
+                "def": "Five-hundredth."
+            },
+            "def-search": "fivehundredth",
+            "hw-search": "sesadye",
+            "pos": "num. ord.",
+            "word": "sésáḍy’ê"
+        },
+        {
+            "def": {
                 "def": "To feel."
             },
             "def-search": "feel to",
@@ -5196,6 +6805,60 @@
         },
         {
             "def": {
+                "def": "Sixteen."
+            },
+            "def-search": "sixteen",
+            "hw-search": "sez",
+            "pos": "num.",
+            "word": "sez"
+        },
+        {
+            "def": {
+                "def": "Sixteenth."
+            },
+            "def-search": "sixteenth",
+            "hw-search": "sez",
+            "pos": "num. frac.",
+            "word": "sez"
+        },
+        {
+            "def": {
+                "def": "Sixteen times."
+            },
+            "def-search": "sixteen times",
+            "hw-search": "sezyb",
+            "pos": "num.",
+            "word": "sezyḅ"
+        },
+        {
+            "def": {
+                "def": "Sixteenfold."
+            },
+            "def-search": "sixteenfold",
+            "hw-search": "sezyba",
+            "pos": "num.",
+            "word": "sezyḅâ"
+        },
+        {
+            "def": {
+                "def": "Sixteenth."
+            },
+            "def-search": "sixteenth",
+            "hw-search": "sezye",
+            "pos": "num. ord.",
+            "word": "sezy’ê"
+        },
+        {
+            "def": {
+                "def": "Sixth."
+            },
+            "def-search": "sixth",
+            "hw-search": "sichs",
+            "pos": "num. frac.",
+            "word": "sic’hs"
+        },
+        {
+            "def": {
                 "def": "Facility, site."
             },
             "def-search": "facility site",
@@ -5203,6 +6866,60 @@
             "hw-search": "sid",
             "pos": "n.",
             "word": "siḍ"
+        },
+        {
+            "def": {
+                "def": "Six."
+            },
+            "def-search": "six",
+            "hw-search": "sis",
+            "pos": "num.",
+            "word": "sis"
+        },
+        {
+            "def": {
+                "def": "Six hundred."
+            },
+            "def-search": "hundred six",
+            "hw-search": "sisa",
+            "pos": "num.",
+            "word": "sisá"
+        },
+        {
+            "def": {
+                "def": "Six-hundredth."
+            },
+            "def-search": "sixhundredth",
+            "hw-search": "sisad",
+            "pos": "num. frac.",
+            "word": "sisáḍ"
+        },
+        {
+            "def": {
+                "def": "Six hundred times."
+            },
+            "def-search": "hundred six times",
+            "hw-search": "sisadyb",
+            "pos": "num.",
+            "word": "sisáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Six-hundredfold."
+            },
+            "def-search": "sixhundredfold",
+            "hw-search": "sisadyba",
+            "pos": "num.",
+            "word": "sisáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Six-hundredth."
+            },
+            "def-search": "sixhundredth",
+            "hw-search": "sisadye",
+            "pos": "num. ord.",
+            "word": "sisáḍy’ê"
         },
         {
             "def": {
@@ -5243,6 +6960,15 @@
             "hw-search": "sivyer",
             "pos": "v.",
             "word": "sívý’ér"
+        },
+        {
+            "def": {
+                "def": "Sixth."
+            },
+            "def-search": "sixth",
+            "hw-search": "sizye",
+            "pos": "num.",
+            "word": "sizy’ê"
         },
         {
             "def": {
@@ -5945,6 +7671,51 @@
             "word": "Víd’hic’hlaúry’ê"
         },
         {
+            "def": {
+                "def": "Thousand."
+            },
+            "def-search": "thousand",
+            "hw-search": "vil",
+            "pos": "num.",
+            "word": "víl"
+        },
+        {
+            "def": {
+                "def": "Thousandth."
+            },
+            "def-search": "thousandth",
+            "hw-search": "vilad",
+            "pos": "num. frac.",
+            "word": "víláḍ"
+        },
+        {
+            "def": {
+                "def": "One thousand times."
+            },
+            "def-search": "one thousand times",
+            "hw-search": "vildyb",
+            "pos": "num.",
+            "word": "vílḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Thousandfold."
+            },
+            "def-search": "thousandfold",
+            "hw-search": "vildyba",
+            "pos": "num.",
+            "word": "vílḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Thousandth."
+            },
+            "def-search": "thousandth",
+            "hw-search": "vilye",
+            "pos": "num. ord.",
+            "word": "víly’ê"
+        },
+        {
             "def-search": "broadcast emissionprogramme show",
             "etym": "<uf-pf>émission</uf-pf>",
             "hw-search": "visyo",
@@ -5958,6 +7729,51 @@
                 }
             ],
             "word": "vísy’ô"
+        },
+        {
+            "def": {
+                "def": "Million (10$^6$)."
+            },
+            "def-search": "million",
+            "hw-search": "viwau",
+            "pos": "num.",
+            "word": "víwaú"
+        },
+        {
+            "def": {
+                "def": "Millionth."
+            },
+            "def-search": "millionth",
+            "hw-search": "viwaud",
+            "pos": "num. frac.",
+            "word": "víwaúḍ"
+        },
+        {
+            "def": {
+                "def": "One million times."
+            },
+            "def-search": "million one times",
+            "hw-search": "viwaudyb",
+            "pos": "num.",
+            "word": "víwaúḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Millionfold."
+            },
+            "def-search": "millionfold",
+            "hw-search": "viwaudyba",
+            "pos": "num.",
+            "word": "víwaúḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Millionth (10$^6$)."
+            },
+            "def-search": "millionth",
+            "hw-search": "viwauye",
+            "pos": "num. ord.",
+            "word": "víwaúy’ê"
         },
         {
             "def": {
@@ -6060,6 +7876,15 @@
             "hw-search": "w",
             "pos": "v.",
             "word": "w"
+        },
+        {
+            "def": {
+                "def": "One."
+            },
+            "def-search": "one",
+            "hw-search": "y",
+            "pos": "num.",
+            "word": "ý"
         },
         {
             "def": {
@@ -6187,6 +8012,15 @@
         },
         {
             "def": {
+                "def": "Third."
+            },
+            "def-search": "third",
+            "hw-search": "yer",
+            "pos": "num. frac.",
+            "word": "y’ér"
+        },
+        {
+            "def": {
                 "def": "Night."
             },
             "def-search": "night",
@@ -6204,6 +8038,24 @@
             "hw-search": "yi",
             "pos": "n.",
             "word": "y’í"
+        },
+        {
+            "def": {
+                "def": "Eight."
+            },
+            "def-search": "eight",
+            "hw-search": "yid",
+            "pos": "num.",
+            "word": "y’íḍ"
+        },
+        {
+            "def": {
+                "def": "Eighth."
+            },
+            "def-search": "eighth",
+            "hw-search": "yidye",
+            "pos": "num.",
+            "word": "y’íḍy’ê"
         },
         {
             "def": {
@@ -6241,6 +8093,51 @@
             "hw-search": "yis",
             "pos": "conj.",
             "word": "y’ís"
+        },
+        {
+            "def": {
+                "def": "Eight hundred."
+            },
+            "def-search": "eight hundred",
+            "hw-search": "yisa",
+            "pos": "num.",
+            "word": "y’ísá"
+        },
+        {
+            "def": {
+                "def": "Eight-hundredth."
+            },
+            "def-search": "eighthundredth",
+            "hw-search": "yisad",
+            "pos": "num. frac.",
+            "word": "y’ísáḍ"
+        },
+        {
+            "def": {
+                "def": "Eight hundred times."
+            },
+            "def-search": "eight hundred times",
+            "hw-search": "yisadyb",
+            "pos": "num.",
+            "word": "y’ísáḍyḅ"
+        },
+        {
+            "def": {
+                "def": "Eight-hundredfold."
+            },
+            "def-search": "eighthundredfold",
+            "hw-search": "yisadyba",
+            "pos": "num.",
+            "word": "y’ísáḍyḅâ"
+        },
+        {
+            "def": {
+                "def": "Eight-hundredth."
+            },
+            "def-search": "eighthundredth",
+            "hw-search": "yisadye",
+            "pos": "num. ord.",
+            "word": "y’ísáḍy’ê"
         },
         {
             "def": {
@@ -6333,12 +8230,124 @@
     ],
     "refs": [
         {
+            "from": "",
+            "to": "eḍ"
+        },
+        {
             "from": "ach’es",
             "to": "<uf-w>a</uf-w> + <uf-w>c’hes</uf-w>"
         },
         {
             "from": "aubhaus",
             "to": "ní"
+        },
+        {
+            "from": "aúfêr",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúfêra",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúfrá",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúfý",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúfýs",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúfýy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúhér",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúhéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúra",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúra",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúry’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "aúsó",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’heḍ",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’heḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’heḍraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’heḍy’é",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hehér",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hehéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hera",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hera",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hery’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hu",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’huhér",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’huhéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hura",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’hus",
+            "to": "eḍ"
+        },
+        {
+            "from": "b’huy’a",
+            "to": "eḍ"
         },
         {
             "from": "bír",
@@ -6353,16 +8362,484 @@
             "to": "c’hes"
         },
         {
+            "from": "ḍâ",
+            "to": "eḍ"
+        },
+        {
             "from": "daú’b’h",
             "to": "daú(c’h) <uf-nf>+</uf-nf> b’he"
+        },
+        {
+            "from": "ḍe",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍeḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍeḍraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍera",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍerâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍet’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍy’â",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍy’era",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍyf",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍyfér",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍyféra",
+            "to": "eḍ"
+        },
+        {
+            "from": "dyhér",
+            "to": "eḍ"
+        },
+        {
+            "from": "dyhéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "dyra",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍyra",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍys",
+            "to": "eḍ"
+        },
+        {
+            "from": "ḍysy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "éḍ",
+            "to": "eḍ"
+        },
+        {
+            "from": "éḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "éḍy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "éfér",
+            "to": "eḍ"
+        },
+        {
+            "from": "éféra",
+            "to": "eḍ"
+        },
+        {
+            "from": "éférá",
+            "to": "eḍ"
+        },
+        {
+            "from": "éfyḍ",
+            "to": "eḍ"
+        },
+        {
+            "from": "éfysa",
+            "to": "eḍ"
+        },
+        {
+            "from": "éfyy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "éhér",
+            "to": "eḍ"
+        },
+        {
+            "from": "éhéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "éhérá",
+            "to": "eḍ"
+        },
+        {
+            "from": "ét’hẹä",
+            "to": "eḍ"
+        },
+        {
+            "from": "ét’hẹd",
+            "to": "eḍ"
+        },
+        {
+            "from": "ét’hẹra",
+            "to": "eḍ"
+        },
+        {
+            "from": "férâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "féráâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "férarâ",
+            "to": "eḍ"
         },
         {
             "from": "fór",
             "to": "faúr₂"
         },
         {
+            "from": "fyḍâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "fysâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "fyy’â",
+            "to": "eḍ"
+        },
+        {
+            "from": "hérâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "héráâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "hérarâ",
+            "to": "eḍ"
+        },
+        {
             "from": "ís",
             "to": "ub’hrá"
+        },
+        {
+            "from": "laet’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "laet’hra",
+            "to": "eḍ"
+        },
+        {
+            "from": "laet’hraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "lafêr",
+            "to": "eḍ"
+        },
+        {
+            "from": "lafêra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lafrá",
+            "to": "eḍ"
+        },
+        {
+            "from": "lafýr",
+            "to": "eḍ"
+        },
+        {
+            "from": "lafýs",
+            "to": "eḍ"
+        },
+        {
+            "from": "lafýy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "lahér",
+            "to": "eḍ"
+        },
+        {
+            "from": "lahéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lara",
+            "to": "eḍ"
+        },
+        {
+            "from": "lara",
+            "to": "eḍ"
+        },
+        {
+            "from": "lary’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "lasó",
+            "to": "eḍ"
+        },
+        {
+            "from": "le",
+            "to": "eḍ"
+        },
+        {
+            "from": "leb’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "leb’hér",
+            "to": "eḍ"
+        },
+        {
+            "from": "leb’héra",
+            "to": "eḍ"
+        },
+        {
+            "from": "leb’hra",
+            "to": "eḍ"
+        },
+        {
+            "from": "leḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "leḍraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹfêr",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹfêra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹfrá",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹfýr",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹfýs",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹfýy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "lehér",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹhér",
+            "to": "eḍ"
+        },
+        {
+            "from": "lehéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹhéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lera",
+            "to": "eḍ"
+        },
+        {
+            "from": "lera",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹry’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "les",
+            "to": "eḍ"
+        },
+        {
+            "from": "lẹsó",
+            "to": "eḍ"
+        },
+        {
+            "from": "lesy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "let’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "let’he",
+            "to": "eḍ"
+        },
+        {
+            "from": "le’thra",
+            "to": "eḍ"
+        },
+        {
+            "from": "le’thraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "lle",
+            "to": "eḍ"
+        },
+        {
+            "from": "lleb’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "lleb’hér",
+            "to": "eḍ"
+        },
+        {
+            "from": "lleb’héra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lleb’hra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lleḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lleḍraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹfêr",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹfêra",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹfrá",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹfýr",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹfýs",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹfýy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "llehér",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹhér",
+            "to": "eḍ"
+        },
+        {
+            "from": "llehéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹhéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "llera",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹra",
+            "to": "eḍ"
+        },
+        {
+            "from": "lléra",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹra",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹry’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "lles",
+            "to": "eḍ"
+        },
+        {
+            "from": "llẹsó",
+            "to": "eḍ"
+        },
+        {
+            "from": "llesy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "llet’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "llet’he",
+            "to": "eḍ"
+        },
+        {
+            "from": "llet’hra",
+            "to": "eḍ"
+        },
+        {
+            "from": "llet’hraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "lly’era",
+            "to": "eḍ"
+        },
+        {
+            "from": "ly’era",
+            "to": "eḍ"
         },
         {
             "from": "p-",
@@ -6397,12 +8874,84 @@
             "to": "sauz-aud"
         },
         {
+            "from": "se",
+            "to": "eḍ"
+        },
+        {
+            "from": "seb’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "seb’hér",
+            "to": "eḍ"
+        },
+        {
+            "from": "seb’héra",
+            "to": "eḍ"
+        },
+        {
+            "from": "seb’hra",
+            "to": "eḍ"
+        },
+        {
+            "from": "seḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "seḍraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "sehér",
+            "to": "eḍ"
+        },
+        {
+            "from": "sehéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "sera",
+            "to": "eḍ"
+        },
+        {
+            "from": "sera",
+            "to": "eḍ"
+        },
+        {
+            "from": "ses",
+            "to": "eḍ"
+        },
+        {
+            "from": "sesy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "set’h",
+            "to": "eḍ"
+        },
+        {
+            "from": "sy’era",
+            "to": "eḍ"
+        },
+        {
             "from": "’sý’ýâ",
             "to": "asý’ýâ"
         },
         {
             "from": "t-",
             "to": "ḍ-"
+        },
+        {
+            "from": "t’hẹáâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "t’hẹdâ",
+            "to": "eḍ"
+        },
+        {
+            "from": "t’hẹrâ",
+            "to": "eḍ"
         },
         {
             "from": "úrẹ́",
@@ -6413,12 +8962,84 @@
             "to": "rvá"
         },
         {
+            "from": "vẹ",
+            "to": "eḍ"
+        },
+        {
+            "from": "veḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "veḍraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "vẹ́hér",
+            "to": "eḍ"
+        },
+        {
+            "from": "vẹhér",
+            "to": "eḍ"
+        },
+        {
+            "from": "vẹ́héra",
+            "to": "eḍ"
+        },
+        {
+            "from": "vẹhéra",
+            "to": "eḍ"
+        },
+        {
+            "from": "vẹ́ra",
+            "to": "eḍ"
+        },
+        {
+            "from": "vẹra",
+            "to": "eḍ"
+        },
+        {
             "from": "vérvá",
             "to": "vér + vá"
         },
         {
+            "from": "vẹsa",
+            "to": "eḍ"
+        },
+        {
+            "from": "vẹsy’a",
+            "to": "eḍ"
+        },
+        {
+            "from": "vet’h",
+            "to": "eḍ"
+        },
+        {
             "from": "véy’ýr",
             "to": "baú"
+        },
+        {
+            "from": "víra",
+            "to": "eḍ"
+        },
+        {
+            "from": "vy’í",
+            "to": "eḍ"
+        },
+        {
+            "from": "vy’íra",
+            "to": "eḍ"
+        },
+        {
+            "from": "weḍra",
+            "to": "eḍ"
+        },
+        {
+            "from": "weḍraä",
+            "to": "eḍ"
+        },
+        {
+            "from": "weḍy’ó",
+            "to": "eḍ"
         }
     ]
 }
