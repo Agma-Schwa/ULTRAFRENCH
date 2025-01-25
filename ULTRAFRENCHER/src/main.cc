@@ -210,15 +210,10 @@ private:
             for (;;) {
                 Append(input.take_until_any("\\$"));
                 if (input.empty()) break;
-
-                // TODO: Render maths.
                 if (input.consume('$')) {
                     tempset suppress_output = plain_text_output;
-                    AppendRaw("$");
-                    Append(input.take_until('$'));
-                    AppendRaw("$");
-                    input.drop();
-                    continue;
+                    backend.error("Rendering arbitrary maths in the dictionary is not supported");
+                    break;
                 }
 
                 // Yeet '\'.
@@ -280,6 +275,8 @@ private:
             else if (macro == "textbf") SingleArgumentMacroToTag("strong");
             else if (macro == "textnf") SingleArgumentMacroToTag("uf-nf");
             else if (macro == "senseref") SingleArgumentMacroToTag("uf-sense");
+            else if (macro == "Sup") SingleArgumentMacroToTag("sup");
+            else if (macro == "Sub") SingleArgumentMacroToTag("sub");
             else if (macro == "L") DropArgAndAppendRaw("<uf-mut><sup>L</sup></uf-mut>");
             else if (macro == "N") DropArgAndAppendRaw("<uf-mut><sup>N</sup></uf-mut>");
             else if (macro == "ref" or macro == "label") DropArg();

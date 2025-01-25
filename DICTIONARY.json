@@ -1507,7 +1507,7 @@
         {
             "def": {
                 "comment": "Replaced with modern <uf-w>dýwaú</uf-w>).",
-                "def": "<em>(obsolete)</em> Billion (long scale, i.e. $10^{12}$)."
+                "def": "<em>(obsolete)</em> Billion (long scale, i.e. 10<sup>12</sup>)."
             },
             "def-search": "billion ie long scale",
             "etym": "<uf-pf>billion</uf-pf>",
@@ -3487,7 +3487,7 @@
         },
         {
             "def": {
-                "def": "Trillion (10$^{12}$)."
+                "def": "Trillion (10<sup>12</sup>)."
             },
             "def-search": "trillion",
             "hw-search": "dywau",
@@ -3523,7 +3523,7 @@
         },
         {
             "def": {
-                "def": "Trillionth (10$^{12}$)."
+                "def": "Trillionth (10<sup>12</sup>)."
             },
             "def-search": "trillionth",
             "hw-search": "dywauye",
@@ -3667,7 +3667,7 @@
         {
             "def": {
                 "comment": "Always capitalised.",
-                "def": "<em>(Logic)</em> False, $\\bot$."
+                "def": "<em>(Logic)</em> False."
             },
             "def-search": "false",
             "etym": "from <uf-pf>fẹ</uf-pf>",
@@ -4712,7 +4712,7 @@
         {
             "def": {
                 "comment": "Always capitalised.",
-                "def": "<em>(Logic)</em> True, $\\top$."
+                "def": "<em>(Logic)</em> True."
             },
             "def-search": "true",
             "etym": "from <uf-pf>ré</uf-pf>",
@@ -5323,7 +5323,7 @@
         },
         {
             "def": {
-                "def": "Quintillion (10$^{18}$)."
+                "def": "Quintillion (10<sup>18</sup>)."
             },
             "def-search": "quintillion",
             "hw-search": "rawau",
@@ -5359,7 +5359,7 @@
         },
         {
             "def": {
-                "def": "Quintillionth (10$^{18}$)."
+                "def": "Quintillionth (10<sup>18</sup>)."
             },
             "def-search": "quintillionth",
             "hw-search": "rawauye",
@@ -7732,7 +7732,7 @@
         },
         {
             "def": {
-                "def": "Million (10$^6$)."
+                "def": "Million (10<sup>6</sup>)."
             },
             "def-search": "million",
             "hw-search": "viwau",
@@ -7768,7 +7768,7 @@
         },
         {
             "def": {
-                "def": "Millionth (10$^6$)."
+                "def": "Millionth (10<sup>6</sup>)."
             },
             "def-search": "millionth",
             "hw-search": "viwauye",

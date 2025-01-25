@@ -206,8 +206,8 @@ sav́á|v.|savoir|To know (+\s{part/acc} sth.) \comment The case depends on the 
 ré|v.|vrai|To be true, correct, right|\s{fut} rẹ́, \s{subj} rés
 aû|particle|non|Not-. \comment Used to negate nouns, adjectives, and adverbs; see §~\ref{subsubsec:noun-negation}
 fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} faure, \s{subj} faus
-R|adj.|from \pf{ré}|\textit{(Logic)} True, $\top$. \comment Always capitalised
-F|adj.|from \pf{fẹ}|\textit{(Logic)} False, $\bot$. \comment Always capitalised
+R|adj.|from \pf{ré}|\textit{(Logic)} True. \comment Always capitalised
+F|adj.|from \pf{fẹ}|\textit{(Logic)} False. \comment Always capitalised
 rár|v.|voir|To see (+\s{part} sbd./sth.)|\s{fut} b’hérẹ́, \s{subj} rárs
 rát’hẹ|particle|vois-tu|You see, you know
 ré|n.|rai|Ray, beam
@@ -350,7 +350,7 @@ rávér|n.|grammaire|\\ Grammar, the grammatical rules of a language \\ A textbo
     of a language
 lýv́á|v. \s{3rd} person only|pleuvoir|To rain|\s{fut} lýv́áre, \s{subj} lýv́ás
 ed|particle|et|\textit{Used in numbers, see §~\ref{subsec:numerals}}
-biwaú|n.|billion|\textit{(obsolete)} Billion (long scale, i.e. $10^{12}$). \comment Replaced with modern \w{dýwaú})
+biwaú|n.|billion|\textit{(obsolete)} Billion (long scale, i.e. 10\Sup{12}). \comment Replaced with modern \w{dýwaú})
 rá₂|adj.|grand|Big, large, great
 laú|v.|long|Long. \comment Often in compounds \w{laú-} ‘long-’
 lár|v.|large|Wide, broad
@@ -983,9 +983,9 @@ nýsá|num.||Nine hundred
 víl|num.||Thousand
 dývíl|num.||Two thousand
 disvíl|num.||Ten thousand
-víwaú|num.||Million (10$^6$)
-dýwaú|num.||Trillion (10$^{12}$)
-ráwaú|num.||Quintillion (10$^{18}$)
+víwaú|num.||Million (10\Sup{6})
+dýwaú|num.||Trillion (10\Sup{12})
+ráwaú|num.||Quintillion (10\Sup{18})
 
 aúzy’ê|num. ord.||Eleventh
 duzy’ê|num. ord.||Twelfth
@@ -1016,9 +1016,9 @@ nýsáḍy’ê|num. ord.||Nine-hundredth
 víly’ê|num. ord.||Thousandth
 dývíly’ê|num. ord.||Two-thousandth
 disvíly’ê|num. ord.||Ten-thousandth
-víwaúy’ê|num. ord.||Millionth (10$^6$)
-dýwaúy’ê|num. ord.||Trillionth (10$^{12}$)
-ráwaúy’ê|num. ord.||Quintillionth (10$^{18}$)
+víwaúy’ê|num. ord.||Millionth (10\Sup{6})
+dýwaúy’ê|num. ord.||Trillionth (10\Sup{12})
+ráwaúy’ê|num. ord.||Quintillionth (10\Sup{18})
 
 c’hadrýḅ|num.||Four times
 c’hét’hyḅ|num.||Five times
