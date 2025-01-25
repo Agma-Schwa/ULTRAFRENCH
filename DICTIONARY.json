@@ -8231,814 +8231,1017 @@
     "refs": [
         {
             "from": "",
+            "from-search": "",
             "to": "eḍ"
         },
         {
             "from": "ach’es",
+            "from-search": "aches",
             "to": "<uf-w>a</uf-w> + <uf-w>c’hes</uf-w>"
         },
         {
             "from": "aubhaus",
+            "from-search": "aubhaus",
             "to": "ní"
         },
         {
             "from": "aúfêr",
+            "from-search": "aufer",
             "to": "eḍ"
         },
         {
             "from": "aúfêra",
+            "from-search": "aufera",
             "to": "eḍ"
         },
         {
             "from": "aúfrá",
+            "from-search": "aufra",
             "to": "eḍ"
         },
         {
             "from": "aúfý",
+            "from-search": "aufy",
             "to": "eḍ"
         },
         {
             "from": "aúfýs",
+            "from-search": "aufys",
             "to": "eḍ"
         },
         {
             "from": "aúfýy’a",
+            "from-search": "aufyya",
             "to": "eḍ"
         },
         {
             "from": "aúhér",
+            "from-search": "auher",
             "to": "eḍ"
         },
         {
             "from": "aúhéra",
+            "from-search": "auhera",
             "to": "eḍ"
         },
         {
             "from": "aúra",
+            "from-search": "aura",
             "to": "eḍ"
         },
         {
             "from": "aúra",
+            "from-search": "aura",
             "to": "eḍ"
         },
         {
             "from": "aúry’a",
+            "from-search": "aurya",
             "to": "eḍ"
         },
         {
             "from": "aúsó",
+            "from-search": "auso",
             "to": "eḍ"
         },
         {
             "from": "b’heḍ",
+            "from-search": "bhed",
             "to": "eḍ"
         },
         {
             "from": "b’heḍra",
+            "from-search": "bhedra",
             "to": "eḍ"
         },
         {
             "from": "b’heḍraä",
+            "from-search": "bhedraa",
             "to": "eḍ"
         },
         {
             "from": "b’heḍy’é",
+            "from-search": "bhedye",
             "to": "eḍ"
         },
         {
             "from": "b’hehér",
+            "from-search": "bheher",
             "to": "eḍ"
         },
         {
             "from": "b’hehéra",
+            "from-search": "bhehera",
             "to": "eḍ"
         },
         {
             "from": "b’hera",
+            "from-search": "bhera",
             "to": "eḍ"
         },
         {
             "from": "b’hera",
+            "from-search": "bhera",
             "to": "eḍ"
         },
         {
             "from": "b’hery’a",
+            "from-search": "bherya",
             "to": "eḍ"
         },
         {
             "from": "b’hu",
+            "from-search": "bhu",
             "to": "eḍ"
         },
         {
             "from": "b’huhér",
+            "from-search": "bhuher",
             "to": "eḍ"
         },
         {
             "from": "b’huhéra",
+            "from-search": "bhuhera",
             "to": "eḍ"
         },
         {
             "from": "b’hura",
+            "from-search": "bhura",
             "to": "eḍ"
         },
         {
             "from": "b’hus",
+            "from-search": "bhus",
             "to": "eḍ"
         },
         {
             "from": "b’huy’a",
+            "from-search": "bhuya",
             "to": "eḍ"
         },
         {
             "from": "bír",
+            "from-search": "bir",
             "to": "vaúb’hẹ"
         },
         {
             "from": "c’haúḍé",
+            "from-search": "chaude",
             "to": "ní"
         },
         {
             "from": "c’h’s",
+            "from-search": "chs",
             "to": "c’hes"
         },
         {
             "from": "ḍâ",
+            "from-search": "da",
             "to": "eḍ"
         },
         {
             "from": "daú’b’h",
+            "from-search": "daubh",
             "to": "daú(c’h) <uf-nf>+</uf-nf> b’he"
         },
         {
             "from": "ḍe",
+            "from-search": "de",
             "to": "eḍ"
         },
         {
             "from": "ḍeḍra",
+            "from-search": "dedra",
             "to": "eḍ"
         },
         {
             "from": "ḍeḍraä",
+            "from-search": "dedraa",
             "to": "eḍ"
         },
         {
             "from": "ḍera",
+            "from-search": "dera",
             "to": "eḍ"
         },
         {
             "from": "ḍerâ",
+            "from-search": "dera",
             "to": "eḍ"
         },
         {
             "from": "ḍet’h",
+            "from-search": "deth",
             "to": "eḍ"
         },
         {
             "from": "ḍy’â",
+            "from-search": "dya",
             "to": "eḍ"
         },
         {
             "from": "ḍy’era",
+            "from-search": "dyera",
             "to": "eḍ"
         },
         {
             "from": "ḍyf",
+            "from-search": "dyf",
             "to": "eḍ"
         },
         {
             "from": "ḍyfér",
+            "from-search": "dyfer",
             "to": "eḍ"
         },
         {
             "from": "ḍyféra",
+            "from-search": "dyfera",
             "to": "eḍ"
         },
         {
             "from": "dyhér",
+            "from-search": "dyher",
             "to": "eḍ"
         },
         {
             "from": "dyhéra",
+            "from-search": "dyhera",
             "to": "eḍ"
         },
         {
             "from": "dyra",
+            "from-search": "dyra",
             "to": "eḍ"
         },
         {
             "from": "ḍyra",
+            "from-search": "dyra",
             "to": "eḍ"
         },
         {
             "from": "ḍys",
+            "from-search": "dys",
             "to": "eḍ"
         },
         {
             "from": "ḍysy’a",
+            "from-search": "dysya",
             "to": "eḍ"
         },
         {
             "from": "éḍ",
+            "from-search": "ed",
             "to": "eḍ"
         },
         {
             "from": "éḍra",
+            "from-search": "edra",
             "to": "eḍ"
         },
         {
             "from": "éḍy’a",
+            "from-search": "edya",
             "to": "eḍ"
         },
         {
             "from": "éfér",
+            "from-search": "efer",
             "to": "eḍ"
         },
         {
             "from": "éféra",
+            "from-search": "efera",
             "to": "eḍ"
         },
         {
             "from": "éférá",
+            "from-search": "efera",
             "to": "eḍ"
         },
         {
             "from": "éfyḍ",
+            "from-search": "efyd",
             "to": "eḍ"
         },
         {
             "from": "éfysa",
+            "from-search": "efysa",
             "to": "eḍ"
         },
         {
             "from": "éfyy’a",
+            "from-search": "efyya",
             "to": "eḍ"
         },
         {
             "from": "éhér",
+            "from-search": "eher",
             "to": "eḍ"
         },
         {
             "from": "éhéra",
+            "from-search": "ehera",
             "to": "eḍ"
         },
         {
             "from": "éhérá",
+            "from-search": "ehera",
             "to": "eḍ"
         },
         {
             "from": "ét’hẹä",
+            "from-search": "ethea",
             "to": "eḍ"
         },
         {
             "from": "ét’hẹd",
+            "from-search": "ethed",
             "to": "eḍ"
         },
         {
             "from": "ét’hẹra",
+            "from-search": "ethera",
             "to": "eḍ"
         },
         {
             "from": "férâ",
+            "from-search": "fera",
             "to": "eḍ"
         },
         {
             "from": "féráâ",
+            "from-search": "feraa",
             "to": "eḍ"
         },
         {
             "from": "férarâ",
+            "from-search": "ferara",
             "to": "eḍ"
         },
         {
             "from": "fór",
+            "from-search": "for",
             "to": "faúr₂"
         },
         {
             "from": "fyḍâ",
+            "from-search": "fyda",
             "to": "eḍ"
         },
         {
             "from": "fysâ",
+            "from-search": "fysa",
             "to": "eḍ"
         },
         {
             "from": "fyy’â",
+            "from-search": "fyya",
             "to": "eḍ"
         },
         {
             "from": "hérâ",
+            "from-search": "hera",
             "to": "eḍ"
         },
         {
             "from": "héráâ",
+            "from-search": "heraa",
             "to": "eḍ"
         },
         {
             "from": "hérarâ",
+            "from-search": "herara",
             "to": "eḍ"
         },
         {
             "from": "ís",
+            "from-search": "is",
             "to": "ub’hrá"
         },
         {
             "from": "laet’h",
+            "from-search": "laeth",
             "to": "eḍ"
         },
         {
             "from": "laet’hra",
+            "from-search": "laethra",
             "to": "eḍ"
         },
         {
             "from": "laet’hraä",
+            "from-search": "laethraa",
             "to": "eḍ"
         },
         {
             "from": "lafêr",
+            "from-search": "lafer",
             "to": "eḍ"
         },
         {
             "from": "lafêra",
+            "from-search": "lafera",
             "to": "eḍ"
         },
         {
             "from": "lafrá",
+            "from-search": "lafra",
             "to": "eḍ"
         },
         {
             "from": "lafýr",
+            "from-search": "lafyr",
             "to": "eḍ"
         },
         {
             "from": "lafýs",
+            "from-search": "lafys",
             "to": "eḍ"
         },
         {
             "from": "lafýy’a",
+            "from-search": "lafyya",
             "to": "eḍ"
         },
         {
             "from": "lahér",
+            "from-search": "laher",
             "to": "eḍ"
         },
         {
             "from": "lahéra",
+            "from-search": "lahera",
             "to": "eḍ"
         },
         {
             "from": "lara",
+            "from-search": "lara",
             "to": "eḍ"
         },
         {
             "from": "lara",
+            "from-search": "lara",
             "to": "eḍ"
         },
         {
             "from": "lary’a",
+            "from-search": "larya",
             "to": "eḍ"
         },
         {
             "from": "lasó",
+            "from-search": "laso",
             "to": "eḍ"
         },
         {
             "from": "le",
+            "from-search": "le",
             "to": "eḍ"
         },
         {
             "from": "leb’h",
+            "from-search": "lebh",
             "to": "eḍ"
         },
         {
             "from": "leb’hér",
+            "from-search": "lebher",
             "to": "eḍ"
         },
         {
             "from": "leb’héra",
+            "from-search": "lebhera",
             "to": "eḍ"
         },
         {
             "from": "leb’hra",
+            "from-search": "lebhra",
             "to": "eḍ"
         },
         {
             "from": "leḍra",
+            "from-search": "ledra",
             "to": "eḍ"
         },
         {
             "from": "leḍraä",
+            "from-search": "ledraa",
             "to": "eḍ"
         },
         {
             "from": "lẹfêr",
+            "from-search": "lefer",
             "to": "eḍ"
         },
         {
             "from": "lẹfêra",
+            "from-search": "lefera",
             "to": "eḍ"
         },
         {
             "from": "lẹfrá",
+            "from-search": "lefra",
             "to": "eḍ"
         },
         {
             "from": "lẹfýr",
+            "from-search": "lefyr",
             "to": "eḍ"
         },
         {
             "from": "lẹfýs",
+            "from-search": "lefys",
             "to": "eḍ"
         },
         {
             "from": "lẹfýy’a",
+            "from-search": "lefyya",
             "to": "eḍ"
         },
         {
             "from": "lehér",
+            "from-search": "leher",
             "to": "eḍ"
         },
         {
             "from": "lẹhér",
+            "from-search": "leher",
             "to": "eḍ"
         },
         {
             "from": "lehéra",
+            "from-search": "lehera",
             "to": "eḍ"
         },
         {
             "from": "lẹhéra",
+            "from-search": "lehera",
             "to": "eḍ"
         },
         {
             "from": "lera",
+            "from-search": "lera",
             "to": "eḍ"
         },
         {
             "from": "lera",
+            "from-search": "lera",
             "to": "eḍ"
         },
         {
             "from": "lẹra",
+            "from-search": "lera",
             "to": "eḍ"
         },
         {
             "from": "lẹra",
+            "from-search": "lera",
             "to": "eḍ"
         },
         {
             "from": "lẹry’a",
+            "from-search": "lerya",
             "to": "eḍ"
         },
         {
             "from": "les",
+            "from-search": "les",
             "to": "eḍ"
         },
         {
             "from": "lẹsó",
+            "from-search": "leso",
             "to": "eḍ"
         },
         {
             "from": "lesy’a",
+            "from-search": "lesya",
             "to": "eḍ"
         },
         {
             "from": "let’h",
+            "from-search": "leth",
             "to": "eḍ"
         },
         {
             "from": "let’he",
+            "from-search": "lethe",
             "to": "eḍ"
         },
         {
             "from": "le’thra",
+            "from-search": "lethra",
             "to": "eḍ"
         },
         {
             "from": "le’thraä",
+            "from-search": "lethraa",
             "to": "eḍ"
         },
         {
             "from": "lle",
+            "from-search": "lle",
             "to": "eḍ"
         },
         {
             "from": "lleb’h",
+            "from-search": "llebh",
             "to": "eḍ"
         },
         {
             "from": "lleb’hér",
+            "from-search": "llebher",
             "to": "eḍ"
         },
         {
             "from": "lleb’héra",
+            "from-search": "llebhera",
             "to": "eḍ"
         },
         {
             "from": "lleb’hra",
+            "from-search": "llebhra",
             "to": "eḍ"
         },
         {
             "from": "lleḍra",
+            "from-search": "lledra",
             "to": "eḍ"
         },
         {
             "from": "lleḍraä",
+            "from-search": "lledraa",
             "to": "eḍ"
         },
         {
             "from": "llẹfêr",
+            "from-search": "llefer",
             "to": "eḍ"
         },
         {
             "from": "llẹfêra",
+            "from-search": "llefera",
             "to": "eḍ"
         },
         {
             "from": "llẹfrá",
+            "from-search": "llefra",
             "to": "eḍ"
         },
         {
             "from": "llẹfýr",
+            "from-search": "llefyr",
             "to": "eḍ"
         },
         {
             "from": "llẹfýs",
+            "from-search": "llefys",
             "to": "eḍ"
         },
         {
             "from": "llẹfýy’a",
+            "from-search": "llefyya",
             "to": "eḍ"
         },
         {
             "from": "llehér",
+            "from-search": "lleher",
             "to": "eḍ"
         },
         {
             "from": "llẹhér",
+            "from-search": "lleher",
             "to": "eḍ"
         },
         {
             "from": "llehéra",
+            "from-search": "llehera",
             "to": "eḍ"
         },
         {
             "from": "llẹhéra",
+            "from-search": "llehera",
             "to": "eḍ"
         },
         {
             "from": "llera",
+            "from-search": "llera",
             "to": "eḍ"
         },
         {
             "from": "llẹra",
+            "from-search": "llera",
             "to": "eḍ"
         },
         {
             "from": "lléra",
+            "from-search": "llera",
             "to": "eḍ"
         },
         {
             "from": "llẹra",
+            "from-search": "llera",
             "to": "eḍ"
         },
         {
             "from": "llẹry’a",
+            "from-search": "llerya",
             "to": "eḍ"
         },
         {
             "from": "lles",
+            "from-search": "lles",
             "to": "eḍ"
         },
         {
             "from": "llẹsó",
+            "from-search": "lleso",
             "to": "eḍ"
         },
         {
             "from": "llesy’a",
+            "from-search": "llesya",
             "to": "eḍ"
         },
         {
             "from": "llet’h",
+            "from-search": "lleth",
             "to": "eḍ"
         },
         {
             "from": "llet’he",
+            "from-search": "llethe",
             "to": "eḍ"
         },
         {
             "from": "llet’hra",
+            "from-search": "llethra",
             "to": "eḍ"
         },
         {
             "from": "llet’hraä",
+            "from-search": "llethraa",
             "to": "eḍ"
         },
         {
             "from": "lly’era",
+            "from-search": "llyera",
             "to": "eḍ"
         },
         {
             "from": "ly’era",
+            "from-search": "lyera",
             "to": "eḍ"
         },
         {
             "from": "p-",
+            "from-search": "p",
             "to": "ḅ-"
         },
         {
             "from": "ph-",
+            "from-search": "ph",
             "to": "ḅ-"
         },
         {
             "from": "p’h-",
+            "from-search": "ph",
             "to": "bh-"
         },
         {
             "from": "ráb’h",
+            "from-search": "rabh",
             "to": "v́ár"
         },
         {
             "from": "Réáb’h",
+            "from-search": "reabh",
             "to": "Ráb’h"
         },
         {
             "from": "rêd",
+            "from-search": "red",
             "to": "ḅẹt’hẹ"
         },
         {
             "from": "s’",
+            "from-search": "s",
             "to": "sá"
         },
         {
             "from": "sauzaud",
+            "from-search": "sauzaud",
             "to": "sauz-aud"
         },
         {
             "from": "se",
+            "from-search": "se",
             "to": "eḍ"
         },
         {
             "from": "seb’h",
+            "from-search": "sebh",
             "to": "eḍ"
         },
         {
             "from": "seb’hér",
+            "from-search": "sebher",
             "to": "eḍ"
         },
         {
             "from": "seb’héra",
+            "from-search": "sebhera",
             "to": "eḍ"
         },
         {
             "from": "seb’hra",
+            "from-search": "sebhra",
             "to": "eḍ"
         },
         {
             "from": "seḍra",
+            "from-search": "sedra",
             "to": "eḍ"
         },
         {
             "from": "seḍraä",
+            "from-search": "sedraa",
             "to": "eḍ"
         },
         {
             "from": "sehér",
+            "from-search": "seher",
             "to": "eḍ"
         },
         {
             "from": "sehéra",
+            "from-search": "sehera",
             "to": "eḍ"
         },
         {
             "from": "sera",
+            "from-search": "sera",
             "to": "eḍ"
         },
         {
             "from": "sera",
+            "from-search": "sera",
             "to": "eḍ"
         },
         {
             "from": "ses",
+            "from-search": "ses",
             "to": "eḍ"
         },
         {
             "from": "sesy’a",
+            "from-search": "sesya",
             "to": "eḍ"
         },
         {
             "from": "set’h",
+            "from-search": "seth",
             "to": "eḍ"
         },
         {
             "from": "sy’era",
+            "from-search": "syera",
             "to": "eḍ"
         },
         {
             "from": "’sý’ýâ",
+            "from-search": "syya",
             "to": "asý’ýâ"
         },
         {
             "from": "t-",
+            "from-search": "t",
             "to": "ḍ-"
         },
         {
             "from": "t’hẹáâ",
+            "from-search": "theaa",
             "to": "eḍ"
         },
         {
             "from": "t’hẹdâ",
+            "from-search": "theda",
             "to": "eḍ"
         },
         {
             "from": "t’hẹrâ",
+            "from-search": "thera",
             "to": "eḍ"
         },
         {
             "from": "úrẹ́",
+            "from-search": "ure",
             "to": "ub’hrá"
         },
         {
             "from": "vá",
+            "from-search": "va",
             "to": "rvá"
         },
         {
             "from": "vẹ",
+            "from-search": "ve",
             "to": "eḍ"
         },
         {
             "from": "veḍra",
+            "from-search": "vedra",
             "to": "eḍ"
         },
         {
             "from": "veḍraä",
+            "from-search": "vedraa",
             "to": "eḍ"
         },
         {
             "from": "vẹ́hér",
+            "from-search": "veher",
             "to": "eḍ"
         },
         {
             "from": "vẹhér",
+            "from-search": "veher",
             "to": "eḍ"
         },
         {
             "from": "vẹ́héra",
+            "from-search": "vehera",
             "to": "eḍ"
         },
         {
             "from": "vẹhéra",
+            "from-search": "vehera",
             "to": "eḍ"
         },
         {
             "from": "vẹ́ra",
+            "from-search": "vera",
             "to": "eḍ"
         },
         {
             "from": "vẹra",
+            "from-search": "vera",
             "to": "eḍ"
         },
         {
             "from": "vérvá",
+            "from-search": "verva",
             "to": "vér + vá"
         },
         {
             "from": "vẹsa",
+            "from-search": "vesa",
             "to": "eḍ"
         },
         {
             "from": "vẹsy’a",
+            "from-search": "vesya",
             "to": "eḍ"
         },
         {
             "from": "vet’h",
+            "from-search": "veth",
             "to": "eḍ"
         },
         {
             "from": "véy’ýr",
+            "from-search": "veyyr",
             "to": "baú"
         },
         {
             "from": "víra",
+            "from-search": "vira",
             "to": "eḍ"
         },
         {
             "from": "vy’í",
+            "from-search": "vyi",
             "to": "eḍ"
         },
         {
             "from": "vy’íra",
+            "from-search": "vyira",
             "to": "eḍ"
         },
         {
             "from": "weḍra",
+            "from-search": "wedra",
             "to": "eḍ"
         },
         {
             "from": "weḍraä",
+            "from-search": "wedraa",
             "to": "eḍ"
         },
         {
             "from": "weḍy’ó",
+            "from-search": "wedyo",
             "to": "eḍ"
         }
     ]

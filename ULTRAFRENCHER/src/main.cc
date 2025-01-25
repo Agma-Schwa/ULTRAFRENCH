@@ -124,35 +124,6 @@ struct JsonBackend final : Backend {
             for (auto& sense : data.senses) senses.push_back(EmitSense(sense));
         }
 
-        // IMPORTANT: Remember to update the function with the same name in the
-        // code for the ULTRAFRENCH dictionary page on nguh.org if the output of
-        // this function changes.
-        auto NormaliseForSearch = [](std::string_view value) {
-            // Do all filtering in UTF32 land since we need to iterate over entire characters.
-            auto haystack = text::ToUTF8(
-                Normalise(text::ToLower(text::ToUTF32(value)), text::NormalisationForm::NFKD).value()                              //
-                | vws::filter([](char32_t c) { return U"abcdefghijklłmnopqrstuvwxyzABCDEFGHIJKLŁMNOPQRSTUVWXYZ "sv.contains(c); }) //
-                | rgs::to<std::u32string>()
-            );
-
-            // The steps below only apply to the haystack, not the needle, and should
-            // NOT be applied on the frontend:
-            //
-            // Yeet all instances of 'sbdsth', which is what 'sbd./sth.' degenerates to.
-            auto remove_weird = stream(haystack).trim().replace("sbdsth", "");
-
-            // Trim and fold whitespace.
-            auto fold_ws = stream(remove_weird).fold_ws();
-
-            // Unique all words.
-            return utils::join(
-                stream(fold_ws).split(" ")                            //
-                    | vws::transform([](auto s) { return s.text(); }) //
-                    | rgs::to<std::set>(),
-                " "
-            );
-        };
-
         // Precomputed normalised strings for searching.
         auto all_senses = utils::join(data.senses | vws::transform(&FullEntry::Sense::def), "");
         e["hw-search"] = NormaliseForSearch(TeXToHtml(word, true));
@@ -162,6 +133,7 @@ struct JsonBackend final : Backend {
     void emit(std::string_view word, const RefEntry& data) override {
         json& e = refs().emplace_back();
         e["from"] = current_word = TeXToHtml(word);
+        e["from-search"] = NormaliseForSearch(TeXToHtml(current_word, true));
         e["to"] = TeXToHtml(data);
     }
 
@@ -173,6 +145,35 @@ struct JsonBackend final : Backend {
 private:
     auto refs() -> json& { return out["refs"]; }
     auto entries() -> json& { return out["entries"]; }
+
+    // IMPORTANT: Remember to update the function with the same name in the
+    // code for the ULTRAFRENCH dictionary page on nguh.org if the output of
+    // this function changes.
+    auto NormaliseForSearch(std::string_view value) -> std::string {
+        // Do all filtering in UTF32 land since we need to iterate over entire characters.
+        auto haystack = text::ToUTF8(
+            Normalise(text::ToLower(text::ToUTF32(value)), text::NormalisationForm::NFKD).value()                              //
+            | vws::filter([](char32_t c) { return U"abcdefghijklłmnopqrstuvwxyzABCDEFGHIJKLŁMNOPQRSTUVWXYZ "sv.contains(c); }) //
+            | rgs::to<std::u32string>()
+        );
+
+        // The steps below only apply to the haystack, not the needle, and should
+        // NOT be applied on the frontend:
+        //
+        // Yeet all instances of 'sbdsth', which is what 'sbd./sth.' degenerates to.
+        auto remove_weird = stream(haystack).trim().replace("sbdsth", "");
+
+        // Trim and fold whitespace.
+        auto fold_ws = stream(remove_weird).fold_ws();
+
+        // Unique all words.
+        return utils::join(
+            stream(fold_ws).split(" ")                            //
+                | vws::transform([](auto s) { return s.text(); }) //
+                | rgs::to<std::set>(),
+            " "
+        );
+    }
 
     auto TeXToHtml(stream input, bool plain_text_output = false) -> std::string {
         return TeXToHtmlConverter(*this, input, plain_text_output).Run();
