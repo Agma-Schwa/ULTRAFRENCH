@@ -363,6 +363,7 @@
 \let \Sub \textsubscript
 \let \Sup \textsuperscript
 \def \parheading #1 { \noindent \textbf{#1} }
+\let\MC\multicolumn
 
 \newbox\BoxA
 \newbox\BoxB
@@ -1346,13 +1347,13 @@ Table~\ref{tab:active-passive-prefixes} below lists those affixes.
 \centering
 \noindent\begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
 Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-\scshape 1st&j-&aú-/r-/w- -(y’)ó  &&\scshape 1st&v-&aú-/r-/w-\\
-\scshape 2nd&ḍ(ẹ)-&b’h(y)- -(y’)é &&\scshape 2nd&ḍ(ẹ)-&b’h(y)-\\
-\scshape 3m&l(ẹ)-&l(ẹ)-           &&\scshape 3m&y’-&lý-\\
-\scshape 3f&ll(a)-&ll(ẹ)-         &&\scshape 3f&y’- &lý-\\
-\scshape 3n&s- &l(a)-             &&\scshape 3n&sy-&lý-\\\cline{1-3}\cline{5-7}
-\scshape inf&\multicolumn{2}{c}{\it d(ẹ)-}&&\scshape inf&\multicolumn{2}{c}{\it à-/h-}\\
-\scshape ptcp&\multicolumn{2}{c}{\it -â}&&\s{ptcp}&\multicolumn{2}{c}{\it â-}\\
+\s{1st}  &j-     &aú-/r-/w- -(y’)ó      &&\s{1st}  &v-    &aú-/r-/w- \\
+\s{2nd}  &ḍ(ẹ)-  &b’h(y)- -(y’)é        &&\s{2nd}  &ḍ(ẹ)- &b’h(y)-   \\
+\s{3m}   &l(ẹ)-  &l(ẹ)-                 &&\s{3m}   &y’-   &lý-       \\
+\s{3f}   &ll(a)- &ll(ẹ)-                &&\s{3f}   &y’-   &lý-       \\
+\s{3n}   &s-     &l(a)-                 &&\s{3n}   &sy-   &lý-       \\\cline{1-3}\cline{5-7}
+\s{inf}  &\multicolumn{2}{c}{\it d(ẹ)-} &&\s{inf}  &\multicolumn{2}{c}{\it à-/h-}\\
+\s{ptcp} &\multicolumn{2}{c}{\it -â}    &&\s{ptcp} &\multicolumn{2}{c}{\it â-}\\
 \end{tabular}
 \caption{Active (left) and passive (right) verbal affixes.}\label{tab:active-passive-prefixes}
 \end{table}
@@ -1557,57 +1558,82 @@ first, e.g. \w{c’hevad’hór!} ‘love me!’, and passive affixes are placed
 us!’. The negation of the imperative uses the subjunctive and is explained in §~\ref{subsubsec:negated-subjunctive}.
 
 \subsection{Past Tenses}\label{subsec:tense-and-aspect-marking}
-Tense in UF is marked by additional sets of affixes that are appended to the verb in addition to the active/passive affixes.
-There are two broad groups of such affixes: suffixes, which are appended to the end of the verb and replace the \s{act 1pl, 2pl} suffixes
-in those persons, as well as circumfixes and prefixes, which are inserted before the active/passive markers and replace the
-\s{act 1pl, 2pl} suffixes in some cases.
+Past tenses in UF are marked by additional sets of affixes that are appended to the verb in addition to the active/passive affixes.
+There are two broad groups of such affixes. UF has three past tenses:
+\begin{items}
+\item the Present Anterior, which has a perfect or perfective aspect and is commonly used
+      to describe events that are completed or extend to the present—particularly events that occurred recently, hence the name;
+\item the Preterite, which has an imperfective aspect and is used to describe events that are ongoing or habitual;
+\item the Preterite Anterior, which functions as a pluperfect.
+\end{items}
 
 \subsubsection{Present Anterior and Preterite}\label{subsubsec:suffixed-tenses}
-The present anterior and preterite are formed by appending a set of suffixes to the verb. Table~\ref{tab:present-anterior-and-preterite-suffixes}
-below lists the suffixes for those tenses. The present anterior has a perfect or perfective aspect, while the preterite has an imperfective aspect. The
-former is commonly used to describe events that are completed or extend to the present—particularly events that occurred recently, hence the name—while the latter
-is used to describe events that are ongoing or habitual.
-
+The present anterior and preterite are formed by appending a set of suffixes to the verb, which replace or coalesce with the active/passive
+suffixes, see Tables~\ref{tab:pres-ant-combined}~and~\ref{tab:pret-combined} below.
 
 \begin{table}[H]
 \centering
-\noindent\begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
-\nf Pres. Ant.&\nf Sg&\nf Pl&\nf &\nf Preterite&\nf Sg&\nf Pl \\\cline{1-3}\cline{5-7}
-\s{1st}       & -\L é & -\L â  &&\s{1st}    & -\L á  & -y’aû  \\
-\s{2nd}       & -\L á & -\L áḍ &&\s{2nd}   & -\L é  & -y’ẹ́  \\
-\s{3rd}       & -\L á & -\L ér &&\s{3rd} & -\L é  & -\L é   \\\cline{1-3}\cline{5-7}
-\s{inf}& \multicolumn{2}{c}{\it -á }  && \s{inf} & \multicolumn{2}{c}{\it -é } \\
-\s{ptcp}& \multicolumn{2}{c}{\it -ér }  && \s{ptcp} & \multicolumn{2}{c}{\it -ár } \\
+\noindent\begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
+\nf Base &\nf Sg&\nf Pl&& Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}\cline{9-11}
+\s{1st}  & -\L é & -\L â      && \s{1st}  &j- -\L é     &aú-/r-/w- -\L â  &&\s{1st}  &v- -\L é    &aú-/r-/w- -\L â \\
+\s{2nd}  & -\L á & -\L áḍ     && \s{2nd}  &ḍ(ẹ)- -\L á  &b’h(y)- -\L áḍ   &&\s{2nd}  &ḍ(ẹ)- -\L á &b’h(y)- -\L áḍ  \\
+\s{3m}   & -\L á & -\L ér     && \s{3m}   &l(ẹ)- -\L á  &l(ẹ)- -\L ér     &&\s{3m}   &y’- -\L á   &lý- -\L ér      \\
+\s{3f}   & -\L á & -\L ér     && \s{3f}   &ll(a)- -\L á &ll(ẹ)- -\L ér    &&\s{3f}   &y’- -\L á   &lý- -\L ér      \\
+\s{3n}   & -\L á & -\L ér     && \s{3n}   &s- -\L á     &l(a)- -\L ér     &&\s{3n}   &sy- -\L á   &lý- -\L ér      \\\cline{1-3}\cline{5-7}\cline{9-11}
+\s{inf}  & \MC{2}{c}{\it -á}  && \s{inf}  &\MC{2}{c}{\it d(ẹ)- -á} &&\s{inf}  &\MC{2}{c}{\it à-/h- -á}\\
+\s{ptcp} & \MC{2}{c}{\it -ér} && \s{ptcp} &\MC{2}{c}{\it -êr}      &&\s{ptcp} &\MC{2}{c}{\it â- -ér}\\
 \end{tabular}
-\caption{Present Anterior and Preterite Affixes.}\label{tab:present-anterior-and-preterite-suffixes}
+\caption{Present Anterior Affixes.}\label{tab:pres-ant-combined}
 \end{table}
 
-\noindent Neither tense distinguishes gender in the third person. All suffixes, except for the infinitive and \s{1pl, 2pl pret},
-lenite any consonant \textit{before} them, e.g. \w{ḅárḍáḍ} ‘to be willing’ to \w{jḅárḍát’hé} ‘I was willing’ but \w{dẹḅárḍáḍá}
-‘to have been willing’.
+\begin{table}[H]
+\centering
+\noindent\begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
+\nf Base & \nf Sg&\nf Pl&& Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}\cline{9-11}
+\s{1st}  & -\L á  & -y’aû     && \s{1st}  &j- -\L á     &aú-/r-/w- -\L y’aû  &&\s{1st}  &v- -\L é    &aú-/r-/w- -\L y’aû \\
+\s{2nd}  & -\L é  & -y’ẹ́      && \s{2nd}  &ḍ(ẹ)- -\L é  &b’h(y)- -\L y’ẹ́     &&\s{2nd}  &ḍ(ẹ)- -\L é &b’h(y)- -\L y’ẹ́    \\
+\s{3m}   & -\L é  & -\L é     && \s{3m}   &l(ẹ)- -\L é  &l(ẹ)- -\L é         &&\s{3m}   &y’- -\L é   &lý- -\L é          \\
+\s{3f}   & -\L é  & -\L é     && \s{3f}   &ll(a)- -\L é &ll(ẹ)- -\L é        &&\s{3f}   &y’- -\L é   &lý- -\L é          \\
+\s{3n}   & -\L é  & -\L é     && \s{3n}   &s- -\L é     &l(a)- -\L é         &&\s{3n}   &sy- -\L é   &lý- -\L é          \\\cline{1-3}\cline{5-7}\cline{9-11}
+\s{inf}  & \MC{2}{c}{\it -é}  && \s{inf}  &\MC{2}{c}{\it d(ẹ)- -é}           &&\s{inf}  &\MC{2}{c}{\it à-/h- -é}\\
+\s{ptcp} & \MC{2}{c}{\it -ár} && \s{ptcp} &\MC{2}{c}{\it -âr}                &&\s{ptcp} &\MC{2}{c}{\it â- -ár}\\
+\end{tabular}
+\caption{Preterite Affixes.}\label{tab:pret-combined}
+\end{table}
 
+\Paragraph{Lenition}
+All \s{pres ant} and \s{pret} suffixes, except for the infinitive and \s{1pl, 2pl pret}, lenite any consonant \textit{before} them, e.g.
+\w{ḅárḍáḍ} ‘to be willing’ to \w{jḅárḍát’hé} ‘I was willing’ but \w{dẹḅárḍáḍá} ‘to have been willing’.
+
+\Paragraph{Coalescence}
+In both tenses, the initial vowel of suffixes coalesces with any preceding vowel according to the following rules; note
+that all of these except the first describe distinct cases.
+\begin{items}
+    \item First, if the preceding vowel is \w{ẹ}, it is simply deleted, e.g. \w{jrévôt’hẹ} ‘I return’ becomes \w{jrévôt’hé}
+          ‘I returned’. This case takes precedence over all other cases.
+    \item If either vowel is fully nasal, no coalescence occurs, e.g. \w{jvŷ} ‘I lead’ becomes \w{jvŷé} ‘I led’.
+    \item If the preceding vowel is \w{è} or \w{ẹ́} and the suffix vowel is \w{é}, they merge into \w{ẹ́} or \w{ệ}.
+    \item If both vowels have the same quality (and neither is fully nasal), they merge into a vowel with that
+          quality, and a level of nasalisation is added,\footnote{All suffixes are either nasalised and nasal, so there
+          can never be a case where we’d end up with two oral vowels coalescing here.} e.g.
+          \w{jvvaúríhe} ‘I remember’ becomes \w{jvvaúríhé} ‘I remembered’.
+    \item In any other case (i.e. if the vowels differ in quality), hiatus is maintained, e.g. \w{ní} ‘to deny’ becomes
+          \w{âníér} ‘having been denied’.
+\end{items}
+
+\Paragraph{Multiple Affixes}
+If a verb takes both and active and a passive person affix, the suffix aligns with the active affix; thus
+\s{pres ant} ‘she loved me’ is \w{llavad’hórá}. Note that \w{llavád’hóré}, while also grammatical, is the
+corresponding \s{pret} form instead since the \w{-é} indicates a \s{pret} in the \s{3f}.
+
+\Paragraph{Diachrony}
 Diachronically, the \s{1sg pret} is an interesting case; in EUF, it was originally *\w{-é}, but it later changed to \w{-á}
 to distinguish it from the \s{2sg, 3sg pres ant}. The remaining forms—save the infinitives, which are derived from the
 tenses’ definite endings by analogy—originated from the PF simple past tenses.
 
+\Paragraph{Examples}
 The table below lists the example paradigm of the verb \w{ad’hór} in the present anterior and preterite tenses.
 Observe that there is no difference between the \s{1pl, 2pl} active and passive.
-
-The participle suffixes coalesce with present participle affixes to form \w{êr}/\w{ệr} in the present anterior and \w{âr} in the preterite,
-where applicable, e.g. present \w{ad’hórâ} ‘loving’ and \w{vvaúríhê} ‘remembering’ become \w{ad’hórêr} ‘having loved’,
-and \w{vvaúríhêr} ‘having remembered’. This is one of the rare cases where the quality of the desinence overrides that of
-the stem.
-
-In both tenses, the suffixes coalesce with vowels of the same quality before them, nasalising them if
-they are already nasalised, e.g. \w{jvvaúríhé} ‘I remembered’. If the verb form ends with a \textit{nasal} vowel,
-the suffixes are simply appended, \w{jvŷ} ‘I lead’ to \w{jvŷé} ‘I led’. Additionally,
-preceding vowel is \textit{ẹ́} and the suffix starts with \textit{é}, it instead becomes
-\textit{ệ}. If the preceding vowel differs in quality, hiatus is maintained, e.g. \w{ní} becomes \w{âníér} ‘having
-been denied’. If the final stem vowel is \w{ẹ}, it is deleted, and the suffix is simply appended, e.g. \w{jrévôt’hé}
-‘I returned’ from \w{révôt’hẹ} ‘return’.
-
-If a verb takes both and active and a passive person affix, the suffix aligns with the active affix; thus
-‘she loved me’ is \w{llavad’hórá} and not *\w{llavád’hóré}.
 
 \begin{table}[H]
 \centering
@@ -1668,7 +1694,7 @@ the passive participle prefix \w{â-} prepended to it), or the form of \w{av́á
 in the participle) the two verbs forms are simply written as one word, e.g. \w{jyávvaúríhê} ‘I had remembered’.
 
 Otherwise, we have a collision of two vowels. The first vowel of the participle is erased. If it was nasal(ised),
-a level of nasalisation is added to the last vowel of the form of \w{av́ár}, then, the two forms concatenated as
+a \textit{single} level of nasalisation is added to the last vowel of the form of \w{av́ár}, then, the two forms are concatenated as
 by the first rule, e.g. \w{ḍyéd’hórâr} ‘you had loved’, and \w{ḍyêd’hórár} ‘you had been loved’. Thus, the actual paradigm
 of \w{ad’hór} in the preterite anterior is as shown in Table~\ref{tab:adhor-paradigm-pret-ant} below.
 
@@ -1687,12 +1713,13 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \caption{Preterite Anterior Paradigm of \emph{ad’hór}.}\label{tab:adhor-paradigm-pret-ant}
 \end{table}
 
+\noindent
 Note that the active participle is used with active prefixes and the passive participle with passive prefixes. If both
 are present, either may be used, depending on the dialect; for example, the passive participle is preferred in
 literary language, whereas the active participle is more common in speech.
 
 The subjunctive and optative paradigms can be obtained using the same construction and follow the same coalescence
-rules: first, construct the appropriate form of \w{av́ár}, and the perform the merging with the appropriate indicative
+rules: first, construct the appropriate form of \w{av́ár}, and the perform the merging with the appropriate \textit{indicative}
 participle, e.g. *\w{jèsá ad’hórâr} > \w{jèsád’hórâr} (roughly ‘I should have had loved’\footnote{This is another of
 those forms that has no real equivalent in English and is fairly untranslatable.}).
 
