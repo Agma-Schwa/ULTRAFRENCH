@@ -867,6 +867,9 @@ várḍeý’|v.|marteler|+\s{acc} To forge
 rábh|v.|frapper|+\s{acc} To smite, strike down
 víwý|v.|milieu|To be central, in the middle of
 lẹ|n.|clef|Key
+véḍ|n.|maître|Master, expert
+c’hah|v.|casser|\\+\s{acc} To break, shatter, smash \\+\s{part} To crack, make a crack in
+yl|n.|hublot|Window
 
 ## TODO: '+\s{...}' -> '\s{+...}'
 

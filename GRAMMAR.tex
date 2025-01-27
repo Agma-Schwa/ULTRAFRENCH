@@ -343,6 +343,23 @@
     \addvspace\medskipamount
 }
 
+\cs_new:Npn \__uf_no_indent: {
+    \global \everypar { \setbox\z@\lastbox \everypar{} }
+}
+
+\cs_new:Npn \examples {
+    \ifvmode\else\unskip\par\fi
+    \begingroup
+    \def \labelitemi { \(\diamond\) }
+    \items
+}
+
+\cs_new:Npn \endexamples {
+    \enditems
+    \endgroup
+    \__uf_no_indent:
+}
+
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Settings and Utility
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -359,6 +376,7 @@
 \long \def \s #1 {{\normalfont\scshape #1 }}
 
 \let \w \textit
+\let \b \textbf
 \let \Sl \textbackslash
 \let \Sub \textsubscript
 \let \Sup \textsuperscript
@@ -832,24 +850,40 @@ The inessive, interessive, superessive, illative, elative, ablative, and allativ
 indicate the position of an object or movement towards or away from an object, e.g. \w{B’hét’hebhaú} ‘to France’.
 
 \subsection{Absolutive}
-The absolutive case has two main uses: First, it is used for the subject and predicate noun of predicative sentences,
-i.e. ‘X’ and ‘Y’ in ‘X is Y’, e.g. \w{Aúsó ḍe ráhó} ‘We are all fish’, as well as for the subject of a sentence whose predicate
-is an adjective verb, e.g. \w{ráhó sausc’hýr} ‘the fish is dark’.
+The \s{abs} is the base form of the noun, with the \s{abs def} being identical to the uninflected root, which is also
+used as the citation form. It is used mainly in contexts where no case marking is otherwise assigned to noun.
+
+\Paragraph{Verbs of Being and Becoming}
+The \s{abs} is used for the subject and predicate noun of predicative sentences,
+i.e. ‘X’ and ‘Y’ in ‘X is Y’, the subject of a sentence whose predicate is an adjective verb, and the subject of a verb
+that carries a sense of being or becoming:
+\begin{examples}
+    \item \w{Aúsó ḍe \b{ráhó}.} ‘We are all fish.’
+    \item \w{\b{Ráhó} sausc’hýr.} ‘The fish is dark.’
+    \item \w{\b{Aú} sdẹb’hní cájŷnárb.} ‘The man turned into a tree.’
+    \item \w{\b{Aý’èc’hsád} lẹy’abhá.} ‘He called himself Alexandre.’
+\end{examples}
 
 Note that this use can lead to ambiguity, e.g. \w{vaût’há se ráhó} could mean ‘a mountain is a fish’ or ‘a fish is a
 mountain’ (word order, is irrelevant here). However, if the nouns have different number or the subject is gendered,
-this is disambiguated since the verb will agree with the subject, e.g. \w{Cár le ráhó} ‘Charles is a fish’, as opposed to
-\w{Cár se ráhó} ‘a/the fish is Charles’.
+this is disambiguated since the verb will agree with the subject, e.g. \w{\b{Cár} le ráhó} ‘Charles is a fish’, as opposed to
+\w{Cár se \b{ráhó}} ‘a/the fish is Charles’.
 
-Secondly, it turns nouns into modifier nouns, e.g.
-\w{árḍihyl lývy’ér} ‘light particle (as in, a particle of light)’. In this second use, the modifier is generally
-placed second, after the noun it modifies, though this is only mandatory if ambiguity would arise otherwise.
-
-Lastly, the \s{abs sg} is also used as the citation form of a noun.
+\Paragraph{Modifiers}
+Additionally, the \s{abs} turns nouns into modifier nouns. The modifier is generally placed after the noun it modifies,
+though this is only mandatory if ambiguity would arise otherwise.
+\begin{examples}
+    \item \w{abhárḍihyl \b{lývy’ér}} ‘of light particles’
+    \item \w{ḍaléraû \b{véḍ} âférér} ‘made by a master carpenter’
+    \item \w{lásásc’hríḍ \b{raúl}} ‘the Sanskrit language’
+\end{examples}
 
 \subsection{Nominative}
-The nominative is one of the most common cases in UF and marks the subject of an active sentence, e.g.
-\w{Seb’h dwásẹ láraúb’hẹ} ‘The robot was here’. Apart from this, the \s{nom} isn’t really used in UF.
+The \s{nom} is one of the most common cases in UF; its main and really only use is to mark the subject of an active sentence
+\begin{examples}
+    \item \w{Seb’h dwásẹ \b{lá}raúb’hẹ.} ‘The robot was here.’
+    \item \w{Lasẹhérélé au \b{lá}b’haúré au \b{lá}haul.} ‘The Sun and the North Wind were quarreling.’
+\end{examples}
 
 The \s{indef nom sg} \w{ŷn-} prefix and some other forms nasalise nouns; as a reminder, this means that in
 nouns starting with \w{ḍ}, the \w{ḍ} is deleted, e.g. \w{ŷnalẹ} ‘a table’; it causes nasalisation in words
@@ -864,34 +898,74 @@ rather by mutation only, e.g. \w{C̣ár} from \w{Cár}.
 
 \subsection{Accusative and Partitive}
 These two cases, while often different in meaning, are almost identical in grammatical purpose: Their main use is to
-mark the direct object of a verb. While some verbs, e.g. \w{ub’hrá} ‘to be
-able to’ always take a \s{part}, and others always take an \s{acc}, the difference between the two, in most contexts,
-is one of semantics. There is hardly a grammatical construction that admits the \s{acc} in which the \s{part} would be
-ungrammatical, and vice versa.
+mark the direct object of a verb. While some verbs, e.g. \w{ub’hrá} ‘to be able to’ always take a \s{part}, and others
+always take an \s{acc}, the difference between the two, in most contexts, is one of semantics. There is hardly a grammatical
+construction that admits the \s{acc} in which the \s{part} would be ungrammatical, and vice versa.
 
-To elaborate, the \s{acc} indicates that an action is being or has been performed in its entirety or to completion, e.g.
-\w{jlí sliv́uhé} ‘I peruse a book’ vs \w{jlí dŷnliv́uhé} ‘I read (\s{pres}) from a book’ or ‘I am reading a book’. Consequently,
-\s{pres ant} forms, which are mainly perfective, generally take the \s{acc}, e.g. \w{jlíé iliv́uhé} ‘I’ve read the book’,
-whereas \s{pret} forms, which are mainly imperfective, generally take the \s{part}, e.g. \w{jlíá dyliv́uhé} ‘I was reading
-(from) the book’. As most conversations generally concern matters that are relevant to the present and thus still incomplete,
+To elaborate, the \s{acc} indicates that an action is being or has been performed in its entirety or to completion. Consequently,
+\s{pres ant} forms, which are mainly perfective, generally take the \s{acc}, whereas \s{pret} forms, which are mainly imperfective,
+generally take the \s{part}. As most conversations generally concern matters that are relevant to the present and thus still incomplete,
 the \s{part} ends up being the commoner of the two cases.
+\begin{examples}
+    \item \w{Jlí \b{s}liv́uhé.} ‘I peruse a book.’
+    \item \w{Jlí \b{dŷn}liv́uhé.} ‘I read from a book.’ or ‘I am reading a book.’
+    \item \w{Jlíé \b{i}liv́uhé.} ‘I’ve read the book (to completion).’
+    \item \w{Jlíá \b{dy}liv́uhé.} ‘I was reading (from) the book.’
+\end{examples}
 
 Both cases are also used to express a ‘passive’, as UF has no traditional morphological passive in that the so-called
 ‘active’ and ‘passive’ affixes are really ‘agent’ and ‘patient’ affixes. As such, a ‘passive’ form is construed by
-omitting the agent affix; the ‘subject’, if there is any, will then be in the \s{acc} or \s{part}, e.g. \w{sylí dýliv́uhé}
-‘the book is being read’.
+omitting the agent affix; the ‘subject’, if there is any, will then be in the \s{acc} or \s{part}.
+\begin{examples}
+    \item \w{Sylí \w{dý}liv́uhé.} ‘The book is being read.’
+    \item \w{Dy-yl syc’hahé.} ‘The window has been broken.’
+\end{examples}
 
-Lastly, the they are also used in a construction known as the \s{aci/pci} (see §~\ref{subsec:aci-pci}).
+Lastly, the \s{acc/part} are also used in a construction known as the \s{aci/pci} (see §~\ref{subsec:aci-pci}).
 
 \subsection{Genitive}
-The \s{gen} case is used to indicate possession or belonging. The possessor can precede or follow its possessee. Typically,
-the \s{gen} follow the possessee, but if the possessee is qualified with adjectives, then the adjectives must follow the
+The \s{gen} case is chiefly used to indicate possession or belonging, as well as with certain verbs.
+
+\Paragraph{Possession}
+The possessor can precede or follow its possessee. Typically,
+the \s{gen} follows the possessee, but if the possessee is qualified with adjectives, then the adjectives must follow the
 possessee immediately, lest they end up qualify the genitive instead, and thus, the genitive is placed first.
+\begin{examples}
+    \item \w{ḅárḍẹ sásy’élâ \b{á}raúl} ‘an essential part of the language’
+    \item \w{c’haúnéhás \b{á}rráḍraúc ausc’hýrâ} ‘knowledge of the dark side’
+    \item \w{\b{vaú} ḍalẹ} ‘my table’
+\end{examples}
+
+\Paragraph{Comparison}
+In constructions using the comparative, the \s{gen} marks the standard of comparison (see §~\ref{subsec:comparison}).
+\begin{examples}
+    \item \w{aûlẹrá \b{á}raúvá} ‘no bigger than the moon’
+    \item \w{Sẹh lá isḍrár svaût lybhárdyt’há ihaúb’héc’h \b{á}y’aúý’á dẹrêfihasjú.}\\‘This tale shows that often persuation
+          is more efficient than violence.’
+\end{examples}
+
+\Paragraph{Objects}
+The \s{gen} is also used to mark the object of certain verbs.
+\begin{examples}
+    \item \w{Lẹc’hlýr \b{sý}rjẹ.} ‘He sells comic books.’
+    \item \w{\b{Daú} jady’ŷ.} ‘I bid you farewell.’
+    \item \w{Ssívý’érá \b{sýn}árb.} ‘It was similar to a tree.’
+    \item \w{vâhâ \b{sý}faúr} ‘lacking strength’
+    \item \w{c’haúḅlérâ \b{sý}válfèzâ} ‘to be complacent in the presence of evildoers’
+\end{examples}
 
 \subsection{Dative}
-The \s{dat} case is used to indicate the indirect object of some verbs, \w{jdónẹ́ḷẹ} ‘I bestow upon him’. Note that some
-verbs, however, may govern a different case instead, such as the allative. Unlike most other cases, there actually is
+The \s{dat} case is used to indicate the indirect object of some verbs. Some verbs, may instead govern a different case,
+such as the allative. Unlike most other cases, there actually is
 a dative affix (see §~\ref{subsubsec:dative-affixes}) that can be added to a verb in some cases.
+
+\Paragraph{Indirect Objects}
+The \s{dat} is used with a large number of ditransitive verbs.
+\begin{examples}
+    \item \w{Dyvérs jféré \b{as}aú.} ‘I thanked the man.’
+    \item \w{Jv́ár\b{b’hẹ} sufb’h vaú.} ‘I owe you my life.’
+    \item \w{Jdónẹ́\b{ḷẹ} iárb.} ‘I bestow upon him a tree.’
+\end{examples}
 
 Another use of the dative is to indicate a beneficiary or recipient in a more general sense, e.g. \w{jsyfér asvẹ} ‘I did
 it for me/us’.
@@ -1068,7 +1142,7 @@ as gnomic, as ‘being someone who is tortured frequently’ is not a particular
 most other verbs.
 
 %% ‘lẹ-’: from PF ‘plus’. Comparative prefix.
-\subsection{Comparison}\label{subsubsec:comparison}
+\subsection{Comparison}\label{subsec:comparison}
 Unlike in many other languages, there are 4 comparatives in UF: The affirming comparative, so called
 because it affirms the positive (‘better, and also good’); the denying comparative, which denies the positive
 (‘better, but not good’), the sufficient comparative, which indicates that there is just enough of something,
@@ -2304,7 +2378,7 @@ gnomic            & j(ú)-   & {\nf V}\Sub α& j\kern1pt{\nf V}\Sub{α+} &§~\re
 \medskip
 
 \noindent Lastly, note that the 4 principles mentioned earlier are guidelines, not rules. There are cases of affixes that do not coalesce
-at all, e.g. the comparative prefix \w{lẹ} (see §~\ref{subsubsec:comparison}). If a form is not listed in this table, then,
+at all, e.g. the comparative prefix \w{lẹ} (see §~\ref{subsec:comparison}). If a form is not listed in this table, then,
 unless explicitly stated where that form is introduced (in which case case we simply forgot to include it in the table),
 it does not coalesce at all. Furthermore, this table only handles coalescence rules between vowels and some vowel elision rules; other
 elision rules are either very regular or have nothing to do with adjacent vowels. This table exists only because coalescence rules are
@@ -2894,7 +2968,7 @@ dwác’hóvníc’h âbáł dývrê b’hehbár\-di\-hi\-bhá aû-á\-dr\-ó\-i
     \s{nom}-Sanskrit|\s{abs}.language|\s{sup}-better|\s{q}|\s{3n}.be-\s{gn}
 
     lé-raúb’hẹ|la-sy-dír|la-vâhẹ|vé|s\Sl bhárḍẹ|sásy’él-â|á-raúl
-    \s{nom.pl}-robot|\s{3pl}-\s{3n.pass}-say|\s{3pl}-miss.out|but|\s{acc.indef}\Sl \s{part}|be.essential-\s{ptcp}|\s{gen}-language
+    \s{nom.pl}-robot|\s{3pl}-\s{3n.pass}-say|\s{3pl}-miss.out|but|\s{acc.indef}\Sl part|be.essential-\s{ptcp}|\s{gen}-language
 
     s-ráhis|’sý’ýâ|i\Sl d’hír|dẹ-b’hýlnẹ́r|u|b’hel-saúr|rê-vú|aû-|á\Sl t’heý’ebhat’hẹ
     \s{3n}-be.racist|not|\s{acc}\Sl say|\s{inf}-be.unaffected|or|\s{instr.pl}-form|\s{sup}-many|non-|\s{gen}-telepathy

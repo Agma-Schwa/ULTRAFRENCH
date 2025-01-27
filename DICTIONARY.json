@@ -1798,6 +1798,21 @@
             "word": "c’hadrýḅâ"
         },
         {
+            "def-search": "a break crack in make shatter smash to",
+            "etym": "<uf-pf>casser</uf-pf>",
+            "hw-search": "chah",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<uf-s>acc</uf-s> To break, shatter, smash."
+                },
+                {
+                    "def": "+<uf-s>part</uf-s> To crack, make a crack in."
+                }
+            ],
+            "word": "c’hah"
+        },
+        {
             "def-search": "boat by ship",
             "etym": "<uf-pf>canard</uf-pf>",
             "hw-search": "chanar",
@@ -7571,6 +7586,16 @@
         },
         {
             "def": {
+                "def": "Master, expert."
+            },
+            "def-search": "expert master",
+            "etym": "<uf-pf>maître</uf-pf>",
+            "hw-search": "ved",
+            "pos": "n.",
+            "word": "véḍ"
+        },
+        {
+            "def": {
                 "def": "Insofar as."
             },
             "def-search": "as insofar",
@@ -8138,6 +8163,16 @@
             "hw-search": "yisadye",
             "pos": "num. ord.",
             "word": "y’ísáḍy’ê"
+        },
+        {
+            "def": {
+                "def": "Window."
+            },
+            "def-search": "window",
+            "etym": "<uf-pf>hublot</uf-pf>",
+            "hw-search": "yl",
+            "pos": "n.",
+            "word": "yl"
         },
         {
             "def": {
