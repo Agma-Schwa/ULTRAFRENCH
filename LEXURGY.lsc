@@ -51,6 +51,9 @@ Prelim:
   Then: p => b2
   Then: {f, v, vʶ} => {ɸ, β, βʶ}
 
+Simplification:
+  {ds, bs, d2s, b2s} => s
+
 GNS:
   $$ => * / @vn _ l
   Then: @vn l => ɰ̃
