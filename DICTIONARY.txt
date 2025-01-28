@@ -435,7 +435,8 @@ c’haúhýr|n.|consœur|Sister (religious). \comment Fem. only, see also
     \w{c’haúfrér}
 fórvẹ́|v.|informer|To inform (+\s{acc} sbd.) (+\s{aci} of sth.)|\s{fut} fórv́ẹ́, \s{subj} fórvẹ́s
 sérẹ́|v.|serré|\\ To be tight, close-fitting, snug. \\\s{def} \textit{usually} \s{instr} \w{c’hýr sérệ}
-    A heavy heart|\s{fut} sérrẹ́, \s{subj} sérẹ́s
+    A heavy heart \comment The use of the \s{instr} instead of the \s{ess} case in this sense is an established
+    idiom; in Middle UF, the \s{ess} was more common in this sense|\s{fut} sérrẹ́, \s{subj} sérẹ́s
 c’hýr|n.|cœur|Heart
 će|v.|échouer|\\ +\s{part} To stumble, do a bad job at. \\ +\s{acc} \textit{or} \s{aci} To
     fail, flunk, not pass|\s{fut} ćere, \s{subj} ćes
