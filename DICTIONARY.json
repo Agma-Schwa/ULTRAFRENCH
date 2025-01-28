@@ -828,14 +828,20 @@
             "word": "av́árḷý"
         },
         {
-            "def": {
-                "def": "To send."
-            },
-            "def-search": "send to",
+            "def-search": "kill send someone to",
             "etym": "<uf-pf>envoyer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> áv́áy’érẹ́, <uf-s>subj</uf-s> áv́áy’és",
             "hw-search": "avaye",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "To send."
+                },
+                {
+                    "comment": "Lit. ‘to send to the Promised Land’.",
+                    "def": "<uf-w>Ádác’hebèc’h áv́áy’é</uf-w> To kill someone."
+                }
+            ],
             "word": "áv́áy’é"
         },
         {
@@ -2448,6 +2454,16 @@
         },
         {
             "def": {
+                "def": "<em>(grammar)</em> Case."
+            },
+            "def-search": "case",
+            "etym": "<uf-pf>chute</uf-pf>",
+            "hw-search": "cyd",
+            "pos": "n.",
+            "word": "cyḍ"
+        },
+        {
+            "def": {
                 "def": "Tooth."
             },
             "def-search": "tooth",
@@ -2634,7 +2650,7 @@
         {
             "def": {
                 "comment": "The subject is in the <uf-s>abs</uf-s> case.",
-                "def": "To become, turn into (+<uf-s>transl</uf-s> sth./sbd.)."
+                "def": "To become, turn into (+<uf-s>trans</uf-s> sth./sbd.)."
             },
             "def-search": "become into sthsbd to turn",
             "etym": "<uf-pf>devenir</uf-pf>",
@@ -3546,12 +3562,17 @@
             "word": "dýwaúy’ê"
         },
         {
-            "def": {
-                "def": "Second."
-            },
-            "def-search": "second",
+            "def-search": "second secondary",
             "hw-search": "dyzye",
             "pos": "num.",
+            "senses": [
+                {
+                    "def": "Second."
+                },
+                {
+                    "def": "<uf-w>dýzy’êâ</uf-w> Secondary."
+                }
+            ],
             "word": "dýzy’ê"
         },
         {
@@ -5798,12 +5819,17 @@
             "word": "révôt’hẹ"
         },
         {
-            "def": {
-                "def": "First."
-            },
-            "def-search": "first",
+            "def-search": "first primary",
             "hw-search": "revye",
             "pos": "num.",
+            "senses": [
+                {
+                    "def": "First."
+                },
+                {
+                    "def": "<uf-w>révy’ẹ́â</uf-w> Primary."
+                }
+            ],
             "word": "révy’ẹ́"
         },
         {
@@ -6061,12 +6087,17 @@
             "word": "rráḍraúc"
         },
         {
-            "def": {
-                "def": "Third."
-            },
-            "def-search": "third",
+            "def-search": "tertiary third",
             "hw-search": "rrazye",
             "pos": "num.",
+            "senses": [
+                {
+                    "def": "Third."
+                },
+                {
+                    "def": "<uf-w>rrázy’êâ</uf-w> Tertiary."
+                }
+            ],
             "word": "rrázy’ê"
         },
         {
@@ -6288,6 +6319,16 @@
             "hw-search": "sahe",
             "pos": "v.",
             "word": "sáhẹ"
+        },
+        {
+            "def": {
+                "def": "To be upside down."
+            },
+            "def-search": "be down to upside",
+            "etym": "<uf-pf>sens dessus dessous</uf-pf>",
+            "hw-search": "sahye",
+            "pos": "adj.",
+            "word": "sáhyẹ"
         },
         {
             "def": {

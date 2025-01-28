@@ -259,7 +259,8 @@ lí|v.|lire|\\ +\s{part} To read from. \\ +\s{acc} To peruse, read entirely
 cahý|pron. pl. indef.|chacun|Each other, one another.
 ḅáhẹ|n.|pensée|Thought, reflection, meditation, faculty of thinking
 liv́uhé|n.|\pf{livre} + \pf{bouquin}|Book
-áv́áy’é|v.|envoyer|To send|\s{fut} áv́áy’érẹ́, \s{subj} áv́áy’és
+áv́áy’é|v.|envoyer|\\ To send \\ \w{Ádác’hebèc’h áv́áy’é} To kill someone \comment Lit. ‘to send to the Promised Land’
+    |\s{fut} áv́áy’érẹ́, \s{subj} áv́áy’és
 Sásc’hríḍ|n.|sanskrit|The Sanskrit language \comment Never lenited
 baú|v. irreg.|bon|
     \\ To be good, well, healthy.
@@ -785,7 +786,7 @@ sy’b’h|v. intr.|\pf{se lever}|To rise (+\s{ela} from sth.)
 faú|adv.|fort|Very, right, really. \comment Postpositive intensifier placed after adjectives, particularly
     in the comparative or superlative degrees.
 rés|n.|reste|Rest, remainder
-dẹb’hní|v.|devenir|To become, turn into (+\s{transl} sth./sbd.). \comment The subject is in the \s{abs} case
+dẹb’hní|v.|devenir|To become, turn into (+\s{trans} sth./sbd.). \comment The subject is in the \s{abs} case
 sẹ|particle|ainsi|So, thus, as a result
 véc|n.|mèche|\\ A strand of hair \\\s{pl.} Hair
 ḍaúb’h|v. intr.|tomber|To fall, drop
@@ -870,6 +871,8 @@ lẹ|n.|clef|Key
 véḍ|n.|maître|Master, expert
 c’hah|v.|casser|\\+\s{acc} To break, shatter, smash \\+\s{part} To crack, make a crack in
 yl|n.|hublot|Window
+cyḍ|n.|chute|\textit{(grammar)} Case
+sáhyẹ|adj.|\pf{sens dessus dessous}|To be upside down
 
 ## TODO: '+\s{...}' -> '\s{+...}'
 
@@ -915,9 +918,9 @@ sèḍ|num.||Seven
 y’íḍ|num.||Eight
 nýt’h|num.||Nine
 dis|num.||Ten
-révy’ẹ́|num.||First
-dýzy’ê|num.||Second
-rrázy’ê|num.||Third
+révy’ẹ́|num.||\\ First \\\w{révy’ẹ́â} Primary
+dýzy’ê|num.||\\ Second \\\w{dýzy’êâ} Secondary
+rrázy’ê|num.||\\ Third \\\w{rrázy’êâ} Tertiary
 c’haḍríy’ê|num.||Fourth
 séc̣é|num.||Fifth
 sizy’ê|num.||Sixth
