@@ -655,7 +655,7 @@ Sit’h|n.|Sith|Sith (Star Wars).
 í|n.|hymne|Legend, myth
 ḍénéb|n. pl.|ténèbres|Darkness \comment This nouns is exclusively plural, e.g. \w{lḍénéb}
 Víd’hic’hlaúry’ê|n.|Midichlorien|Midichlorian (Star Wars)
-ah|n.|assez|\textit{sufficient comparative prefix; see §~\ref{subsubsec:comparison}}
+ah|n.|assez|\textit{sufficient comparative prefix; see §~\ref{subsec:comparison}}
 y’íhá|v.|puissant|To be powerful, mighty, puissant
 ré|v.|\pf{créer}, \s{subj} from \pf{fabriquer}|To create, make (\s{+acc} sth.)|
     \s{fut} rẹ́éré, \s{subj} faríc’hs
