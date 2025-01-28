@@ -7093,6 +7093,16 @@
         },
         {
             "def": {
+                "def": "Fear, dread."
+            },
+            "def-search": "dread fear",
+            "etym": "<uf-pf>souci</uf-pf>",
+            "hw-search": "suh",
+            "pos": "n.",
+            "word": "suh"
+        },
+        {
+            "def": {
                 "def": "+<uf-s>part, pci</uf-s> To care about, worry about."
             },
             "def-search": "about care to worry",

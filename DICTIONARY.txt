@@ -873,13 +873,12 @@ c’hah|v.|casser|\\+\s{acc} To break, shatter, smash \\+\s{part} To crack, make
 yl|n.|hublot|Window
 cyḍ|n.|chute|\textit{(grammar)} Case
 sáhyẹ|adj.|\pf{sens dessus dessous}|To be upside down
+suh|n.|souci|Fear, dread
 
-## TODO: '+\s{...}' -> '\s{+...}'
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
 
-## TODO: Replace backslash-continuation w/ indentation.
 ## TODO: Add subscripts if there are multiple words that are spelt the same (in here so we can
 ##       do cross-referencing). The ULTRAFRENCHER should complain if there are unannotated homographs.
 
