@@ -594,7 +594,8 @@ b’hí|n.|vigne|Vine
 ḅínár|n.|pinard|Wine
 
 áẹ|n.|en-haut|Sky. \comment Often plural, especially in a religious sense.
-cẹ|v.|chaud|To be hot \comment For weather, see \w{b’hér}.
+cẹ|v.|chaud|To be hot \comment For weather, \w{cẹaû} is used instead; see also \w{b’hér}.
+cẹaû|n.|from \w{cẹ}|\\ Heat \\\s{part} + \s{pass} of \w{b’hér} To be hot \ex \w{Dŷncẹaû syb’hér.} ‘It is hot.’
 rýl|v.|brûler|\\\s{+acc} To burn \\\s{+part} To scorch, singe
 rê|n.|airain|Copper
 saul|n.|sol|Sun

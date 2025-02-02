@@ -1622,7 +1622,7 @@
         },
         {
             "def": {
-                "comment": "<p>For weather, see <uf-w>b’hér</uf-w>.</p>",
+                "comment": "<p>For weather, <uf-w>cẹaû</uf-w> is used instead; see also <uf-w>b’hér</uf-w>.</p>",
                 "def": "To be hot."
             },
             "def-search": "be hot to",
@@ -1646,6 +1646,24 @@
                 }
             ],
             "word": "će"
+        },
+        {
+            "def-search": "be heat hot of to",
+            "etym": "from <uf-w>cẹ</uf-w>",
+            "hw-search": "ceau",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Heat."
+                },
+                {
+                    "def": "<uf-s>part</uf-s> + <uf-s>pass</uf-s> of <uf-w>b’hér</uf-w> To be hot.",
+                    "examples": [
+                        "<uf-w>Dŷncẹaû syb’hér.</uf-w> ‘It is hot.’"
+                    ]
+                }
+            ],
+            "word": "cẹaû"
         },
         {
             "def": {
