@@ -349,10 +349,10 @@ rzaúsḍ|v.|exhaustif|\\ To be exhaustive, comprehensive, complete \\ To be fin
 y’ác’hraúníc’h|v.|diachronique|To be diachronic|\s{fut} y’ác’hraú\-níc’hre, \s{subj} y’ác’hraúníc’hes
 rávér|n.|grammaire|\\ Grammar, the grammatical rules of a language \\ A textbook describing the grammar
     of a language
-lýv́á|v. \s{3rd} person only|pleuvoir|To rain|\s{fut} lýv́áre, \s{subj} lýv́ás
+lýv́á|v. obsolete, \s{3rd} person only|pleuvoir|To rain \comment Replaced with \w{b’hér} in Middle UF.|\s{fut} lýv́áre, \s{subj} lýv́ás
 ed|particle|et|\textit{Used in numbers, see §~\ref{subsec:numerals}}
 biwaú|n.|billion|\textit{(obsolete)} Billion (long scale, i.e. 10\Sup{12}). \comment Replaced with modern \w{dýwaú})
-rá₂|adj.|grand|Big, large, great
+rá₂|adj.|grand|Big, large, great, tall
 laú|v.|long|Long. \comment Often in compounds \w{laú-} ‘long-’
 lár|v.|large|Wide, broad
 ebhẹ|v.|épais|To be  thick|\s{fut} ebhrẹ, \s{subj} ebhes
@@ -594,7 +594,7 @@ b’hí|n.|vigne|Vine
 ḅínár|n.|pinard|Wine
 
 áẹ|n.|en-haut|Sky. \comment Often plural, especially in a religious sense.
-cẹ|v.|chaud|To be hot
+cẹ|v.|chaud|To be hot \comment For weather, see \w{b’hér}.
 rýl|v.|brûler|\\\s{+acc} To burn \\\s{+part} To scorch, singe
 rê|n.|airain|Copper
 saul|n.|sol|Sun
@@ -789,7 +789,7 @@ faú|adv.|fort|Very, right, really. \comment Postpositive intensifier placed aft
 rés|n.|reste|Rest, remainder
 dẹb’hní|v.|devenir|To become, turn into (+\s{trans} sth./sbd.). \comment The subject is in the \s{abs} case
 sẹ|particle|ainsi|So, thus, as a result
-véc|n.|mèche|\\ A strand of hair \\\s{pl.} Hair
+véc|n.|mèche|\\ A strand of hair \\\s{pl} Hair
 ḍaúb’h|v. intr.|tomber|To fall, drop
 lánẹ́|v.|flâner|To meander
 néḍ|v. dep.|naître|To be born. \comment This is a deponent verb whose subject takes the \s{acc} and
@@ -886,7 +886,26 @@ daúr|v.|dormir|To sleep
 vúr|v.|mourir|To die|\s{pres ptcp} vaûr, \s{fut} vúre
 ér|n.|ère|Era, age, aeon
 ḍrâ|adj.|étrange|Strange, foreign
-
+ḷẹ|n. pl.|pluie|Rain
+    \comment Starting in Early Modern UF, this noun only occurs in the plural.
+    \ex \w{dýḷẹ syb’hér} ‘it rains’ (lit. ‘rains are being poured’).
+b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
+    \\+\s{part} \textit{(archaic)} To pour
+    \\\s{pass} + \s{part/acc} To be in a state or condition, to fall \textit{(of precipitation)}
+        \comment Exclusively used in the passive of the weather or a situation or state of affairs, with the noun
+            for the condition or preciptation as the ‘object’ and no subject, e.g. \w{dýḷẹ syb’hér} ‘it rains’,
+            \w{dŷncẹaû syb’hér} ‘it is hot’. \par
+            In Middle UF, \w{fér} with a noun in
+            the \s{abs} was often used for this purpose, hence also the irregular \s{fut} and \s{subj}, e.g.
+            *\w{sfér cẹaû} ‘It is hot’; similarly, weather conditions
+            used to be their own verbs, e.g. *\w{slýv́á} ‘it rains’. \par
+            The latter were eventually replaced with a construction using \w{b’hér} in the passive with the
+            noun in the \s{part}, e.g. *\w{dŷnḷẹ syb’hér} ‘it rains’ (lit. ‘some rain is being poured’). This was
+            later extended to any state (of the weather), e.g. \w{dŷncẹaû syb’hér} (lit. ‘some heat is being
+            poured’). The \s{acc} can be used instead as an intensifier, e.g. \w{sc̣ẹaû syb’hér} ‘it is scorching hot’. \par
+            With precipitation, the \s{pl} is most common in modern times, e.g. \w{dýḷẹ syb’hér} instead
+            of older *\w{dŷnḷẹ syb’hér}. The old weather verbs, e.g. *\w{lýv́á}, are altogether obsolete.
+        |\s{fut} b’hẹ́, \s{subj} b’hés
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.

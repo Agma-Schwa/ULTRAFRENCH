@@ -107,7 +107,7 @@ struct JsonBackend final : Backend {
         auto EmitSense = [&](const FullEntry::Sense& sense) {
             json s;
             s["def"] = TeXToHtml(sense.def);
-            if (not sense.comment.empty()) s["comment"] = TeXToHtml(sense.comment);
+            if (not sense.comment.empty()) s["comment"] = std::format("<p>{}</p>", TeXToHtml(sense.comment));
             if (not sense.examples.empty()) {
                 auto& ex = s["examples"] = json::array();
                 for (auto& example : sense.examples)
@@ -277,6 +277,7 @@ private:
             else if (macro == "senseref") SingleArgumentMacroToTag("uf-sense");
             else if (macro == "Sup") SingleArgumentMacroToTag("sup");
             else if (macro == "Sub") SingleArgumentMacroToTag("sub");
+            else if (macro == "par") AppendRaw("</p><p>");
             else if (macro == "L") DropArgAndAppendRaw("<uf-mut><sup>L</sup></uf-mut>");
             else if (macro == "N") DropArgAndAppendRaw("<uf-mut><sup>N</sup></uf-mut>");
             else if (macro == "ref" or macro == "label") DropArg();
@@ -349,7 +350,7 @@ struct TeXBackend final : Backend {
                 + (
                     s.comment.empty()
                     ? ""s
-                    : std::format(" \\textit{{{}}}", s.comment)
+                    : std::format(" {{\\itshape{{}}{}}}", s.comment)
                 )
                 + (
                     s.examples.empty()

@@ -38,14 +38,14 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the second accusative, denoting the name, naturally being replaced by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly free word order.",
+                    "comment": "<p>In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the second accusative, denoting the name, naturally being replaced by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly free word order.</p>",
                     "def": "+<uf-s>acc</uf-s> <em>and</em> <uf-s>abs</uf-s> To call, name, nominate, give a name to.",
                     "examples": [
                         "<uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’; even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested."
                     ]
                 },
                 {
-                    "comment": "Replaced by <uf-w>nvẹ́</uf-w> in Early Modern UF in the reflexive sense.",
+                    "comment": "<p>Replaced by <uf-w>nvẹ́</uf-w> in Early Modern UF in the reflexive sense.</p>",
                     "def": "<em>(archaic)</em> To call oneself, be called."
                 }
             ],
@@ -220,7 +220,7 @@
         },
         {
             "def": {
-                "comment": "The prefix <uf-w>aḅr</uf-w> can be prepended as often as necessary, e.g. <uf-w>aḅraḅraḅrdvê</uf-w> would be ‘in four days’.",
+                "comment": "<p>The prefix <uf-w>aḅr</uf-w> can be prepended as often as necessary, e.g. <uf-w>aḅraḅraḅrdvê</uf-w> would be ‘in four days’.</p>",
                 "def": "The day after tomorrow."
             },
             "def-search": "after day the tomorrow",
@@ -256,7 +256,7 @@
                     "def": "+<uf-s>acc def</uf-s> <em>of <uf-w>árb</uf-w> intr. (other than literal)</em> To get to the point, cut to the chase."
                 },
                 {
-                    "comment": "Originally, this idiom did not take a double <uf-s>acc</uf-s>, but was instead formed with the <uf-s>acc</uf-s> of ‘tree’ and the <uf-s>ill</uf-s> of the object, meaning something along the lines of ‘to bring down the tree(s) on sth’—the image here being that of cutting down trees in a wood until only a clearing remains or is ‘brought to light’.",
+                    "comment": "<p>Originally, this idiom did not take a double <uf-s>acc</uf-s>, but was instead formed with the <uf-s>acc</uf-s> of ‘tree’ and the <uf-s>ill</uf-s> of the object, meaning something along the lines of ‘to bring down the tree(s) on sth’—the image here being that of cutting down trees in a wood until only a clearing remains or is ‘brought to light’.</p>",
                     "def": "+<uf-s>acc def</uf-s> <em>of <uf-w>árb</uf-w> and <uf-s>acc</uf-s></em> To bring to light, reveal."
                 }
             ],
@@ -369,7 +369,7 @@
             "pos": "num. frac. or n.",
             "senses": [
                 {
-                    "comment": "Seldom used metaphorically, for that see <uf-w>ḍẹ</uf-w> instead, e.g. <uf-w>vaûd ḍẹ</uf-w> ‘all the world’, i.e. everyone, as opposed to <uf-w>vaúd áḍy’ẹ́</uf-w> ‘the world as a whole’, i.e. the entire world considered as a physical object.",
+                    "comment": "<p>Seldom used metaphorically, for that see <uf-w>ḍẹ</uf-w> instead, e.g. <uf-w>vaûd ḍẹ</uf-w> ‘all the world’, i.e. everyone, as opposed to <uf-w>vaúd áḍy’ẹ́</uf-w> ‘the world as a whole’, i.e. the entire world considered as a physical object.</p>",
                     "def": "Entire, whole."
                 },
                 {
@@ -395,7 +395,7 @@
         },
         {
             "def": {
-                "comment": "Often plural, especially in a religious sense.",
+                "comment": "<p>Often plural, especially in a religious sense.</p>",
                 "def": "Sky."
             },
             "def-search": "sky",
@@ -563,7 +563,7 @@
         },
         {
             "def": {
-                "comment": "Commonly <uf-w>’sý’ýâ</uf-w> after vowels and verbs. This particle is used only in the indicative; see also <uf-w>sá</uf-w>, <uf-w>t’hé</uf-w>.",
+                "comment": "<p>Commonly <uf-w>’sý’ýâ</uf-w> after vowels and verbs. This particle is used only in the indicative; see also <uf-w>sá</uf-w>, <uf-w>t’hé</uf-w>.</p>",
                 "def": "Not, no."
             },
             "def-search": "no not",
@@ -635,7 +635,7 @@
         },
         {
             "def": {
-                "comment": "Used to negate nouns, adjectives, and adverbs; see grammar.",
+                "comment": "<p>Used to negate nouns, adjectives, and adverbs; see grammar.</p>",
                 "def": "Not-."
             },
             "def-search": "not",
@@ -734,7 +734,7 @@
         },
         {
             "def": {
-                "comment": "See also <uf-w>júrdy’í</uf-w>.",
+                "comment": "<p>See also <uf-w>júrdy’í</uf-w>.</p>",
                 "def": "<em>(archaic)</em> Today, nowadays."
             },
             "def-search": "nowadays today",
@@ -818,7 +818,7 @@
         },
         {
             "def": {
-                "comment": "This usually denotes inalienable possession.",
+                "comment": "<p>This usually denotes inalienable possession.</p>",
                 "def": "+<uf-s>acc</uf-s> To have."
             },
             "def-search": "have to",
@@ -850,7 +850,7 @@
                     "def": "To send."
                 },
                 {
-                    "comment": "Lit. ‘to send to the Promised Land’.",
+                    "comment": "<p>Lit. ‘to send to the Promised Land’.</p>",
                     "def": "<uf-w>Ádác’hebèc’h áv́áy’é</uf-w> To kill someone."
                 }
             ],
@@ -929,7 +929,7 @@
         },
         {
             "def": {
-                "comment": "Only the <uf-w>nórávíc’h</uf-w> is inflected; infixing of adj. is attested.",
+                "comment": "<p>Only the <uf-w>nórávíc’h</uf-w> is inflected; infixing of adj. is attested.</p>",
                 "def": "Druid.",
                 "examples": [
                     "<uf-s>Snet’h</uf-s>, <uf-s>iii.2</uf-s>: <uf-w>derúb’h phá ráinórávíc’h</uf-w> ‘to find the great druid’, with infixed <uf-w>rá</uf-w>."
@@ -1035,7 +1035,7 @@
         },
         {
             "def": {
-                "comment": "Often used to explain motivation rather than cause, as in e.g. ‘We did that because&hellip;’",
+                "comment": "<p>Often used to explain motivation rather than cause, as in e.g. ‘We did that because&hellip;’</p>",
                 "def": "+<uf-s>subj</uf-s> Because."
             },
             "def-search": "because",
@@ -1235,7 +1235,7 @@
         },
         {
             "def": {
-                "comment": "The prefix <uf-w>b’hâ</uf-w> can be prepended as often as necessary, e.g. <uf-w>b’hâb’hâb’hây’ér</uf-w> would be ‘four days ago’.",
+                "comment": "<p>The prefix <uf-w>b’hâ</uf-w> can be prepended as often as necessary, e.g. <uf-w>b’hâb’hâb’hây’ér</uf-w> would be ‘four days ago’.</p>",
                 "def": "The day before yesterday."
             },
             "def-search": "before day the yesterday",
@@ -1246,7 +1246,7 @@
         },
         {
             "def": {
-                "comment": "Commonly enclitic <uf-w>’b’h</uf-w> after vowels.",
+                "comment": "<p>Commonly enclitic <uf-w>’b’h</uf-w> after vowels.</p>",
                 "def": "+<uf-s>subj</uf-s> So that, so as to, to, in order to."
             },
             "def-search": "as in order so that to",
@@ -1355,6 +1355,23 @@
             "hw-search": "bhenva",
             "pos": "n.",
             "word": "b’hénvâ"
+        },
+        {
+            "def-search": "a be condition fall in or pour state to",
+            "etym": "from <uf-pf>verser</uf-pf> and <uf-w>fér</uf-w>, see <uf-sense>2</uf-sense>",
+            "forms": "<uf-s>fut</uf-s> b’hẹ́, <uf-s>subj</uf-s> b’hés",
+            "hw-search": "bher",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<uf-s>part</uf-s> <em>(archaic)</em> To pour."
+                },
+                {
+                    "comment": "<p>Exclusively used in the passive of the weather or a situation or state of affairs, with the noun for the condition or preciptation as the ‘object’ and no subject, e.g. <uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’, <uf-w>dŷncẹaû syb’hér</uf-w> ‘it is hot’. </p><p>In Middle UF, <uf-w>fér</uf-w> with a noun in the <uf-s>abs</uf-s> was often used for this purpose, hence also the irregular <uf-s>fut</uf-s> and <uf-s>subj</uf-s>, e.g. *<uf-w>sfér cẹaû</uf-w> ‘It is hot’; similarly, weather conditions used to be their own verbs, e.g. *<uf-w>slýv́á</uf-w> ‘it rains’. </p><p>The latter were eventually replaced with a construction using <uf-w>b’hér</uf-w> in the passive with the noun in the <uf-s>part</uf-s>, e.g. *<uf-w>dŷnḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘some rain is being poured’). This was later extended to any state (of the weather), e.g. <uf-w>dŷncẹaû syb’hér</uf-w> (lit. ‘some heat is being poured’). The <uf-s>acc</uf-s> can be used instead as an intensifier, e.g. <uf-w>sc̣ẹaû syb’hér</uf-w> ‘it is scorching hot’. </p><p>With precipitation, the <uf-s>pl</uf-s> is most common in modern times, e.g. <uf-w>dýḷẹ syb’hér</uf-w> instead of older *<uf-w>dŷnḷẹ syb’hér</uf-w>. The old weather verbs, e.g. *<uf-w>lýv́á</uf-w>, are altogether obsolete.</p>",
+                    "def": "<uf-s>pass</uf-s> + <uf-s>part/acc</uf-s> To be in a state or condition, to fall <em>(of precipitation)</em>."
+                }
+            ],
+            "word": "b’hér"
         },
         {
             "def": {
@@ -1524,7 +1541,7 @@
         },
         {
             "def": {
-                "comment": "Replaced with modern <uf-w>dýwaú</uf-w>).",
+                "comment": "<p>Replaced with modern <uf-w>dýwaú</uf-w>).</p>",
                 "def": "<em>(obsolete)</em> Billion (long scale, i.e. 10<sup>12</sup>)."
             },
             "def-search": "billion ie long scale",
@@ -1605,6 +1622,7 @@
         },
         {
             "def": {
+                "comment": "<p>For weather, see <uf-w>b’hér</uf-w>.</p>",
                 "def": "To be hot."
             },
             "def-search": "be hot to",
@@ -1657,7 +1675,7 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "Possession of a noun qualified with this adjective verb is generally construed with the dative rather than the genitive, e.g. <uf-w>asvẹ áví cérâ</uf-w> or <uf-w>áví cérâvé</uf-w> ‘my dear friend’, rather than *<uf-w>vaú áví cérâ</uf-w>.",
+                    "comment": "<p>Possession of a noun qualified with this adjective verb is generally construed with the dative rather than the genitive, e.g. <uf-w>asvẹ áví cérâ</uf-w> or <uf-w>áví cérâvé</uf-w> ‘my dear friend’, rather than *<uf-w>vaú áví cérâ</uf-w>.</p>",
                     "def": "To be dear, important (+<uf-s>dat</uf-s> to sbd.)."
                 },
                 {
@@ -1985,7 +2003,7 @@
                     "def": "Holy."
                 },
                 {
-                    "comment": "The so-called ‘religious prefix’ is prepended in derivation to nouns that have a religous connotation; this is historically a back-formation from <uf-w>c’haúfrér</uf-w> and <uf-w>c’haúhýr</uf-w> which happen to both start with this ‘prefix’.",
+                    "comment": "<p>The so-called ‘religious prefix’ is prepended in derivation to nouns that have a religous connotation; this is historically a back-formation from <uf-w>c’haúfrér</uf-w> and <uf-w>c’haúhýr</uf-w> which happen to both start with this ‘prefix’.</p>",
                     "def": "<uf-w>c’haú-</uf-w><uf-mut><sup>L</sup></uf-mut>."
                 }
             ],
@@ -2095,7 +2113,7 @@
         },
         {
             "def": {
-                "comment": "Masc. or pl. only, see also <uf-w>c’haúhýr</uf-w>.",
+                "comment": "<p>Masc. or pl. only, see also <uf-w>c’haúhýr</uf-w>.</p>",
                 "def": "Brother (religious)."
             },
             "def-search": "brother religious",
@@ -2116,7 +2134,7 @@
         },
         {
             "def": {
-                "comment": "Fem. only, see also <uf-w>c’haúfrér</uf-w>.",
+                "comment": "<p>Fem. only, see also <uf-w>c’haúfrér</uf-w>.</p>",
                 "def": "Sister (religious)."
             },
             "def-search": "religious sister",
@@ -2147,7 +2165,7 @@
         },
         {
             "def": {
-                "comment": "This is perceived as weaker than <uf-w>baú</uf-w> ‘satisfy’.",
+                "comment": "<p>This is perceived as weaker than <uf-w>baú</uf-w> ‘satisfy’.</p>",
                 "def": "To be content."
             },
             "def-search": "be content to",
@@ -2239,7 +2257,7 @@
         },
         {
             "def": {
-                "comment": "Also substituted for other forms of ‘to be’ in questions, particularly for the plural neuter; stressed on the first syllable.",
+                "comment": "<p>Also substituted for other forms of ‘to be’ in questions, particularly for the plural neuter; stressed on the first syllable.</p>",
                 "def": "Is it?"
             },
             "def-search": "is it",
@@ -2391,7 +2409,7 @@
                     "def": "<uf-s>+ gen</uf-s> To start out as."
                 },
                 {
-                    "comment": "Lit. ‘that which is being begun’.",
+                    "comment": "<p>Lit. ‘that which is being begun’.</p>",
                     "def": "<uf-w>âc’hóvâ</uf-w> <em>def.</em> Beginning, start."
                 }
             ],
@@ -2671,7 +2689,7 @@
         },
         {
             "def": {
-                "comment": "The subject is in the <uf-s>abs</uf-s> case.",
+                "comment": "<p>The subject is in the <uf-s>abs</uf-s> case.</p>",
                 "def": "To become, turn into (+<uf-s>trans</uf-s> sth./sbd.)."
             },
             "def-search": "become into sthsbd to turn",
@@ -2848,7 +2866,7 @@
         },
         {
             "def": {
-                "comment": "This nouns is exclusively plural, e.g. <uf-w>lḍénéb</uf-w>.",
+                "comment": "<p>This nouns is exclusively plural, e.g. <uf-w>lḍénéb</uf-w>.</p>",
                 "def": "Darkness."
             },
             "def-search": "darkness",
@@ -3219,7 +3237,7 @@
         },
         {
             "def": {
-                "comment": "The <uf-s>acc</uf-s> is used when talking about concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts or parts of objects; the <uf-s>dat</uf-s> is the person being endowed with.",
+                "comment": "<p>The <uf-s>acc</uf-s> is used when talking about concrete, measurable, and finite objects or sums; the partitive to talk about abstract concepts or parts of objects; the <uf-s>dat</uf-s> is the person being endowed with.</p>",
                 "def": "<uf-s>+ dat &amp; acc/part</uf-s> To endow, bestow, give."
             },
             "def-search": "bestow endow give to",
@@ -3539,7 +3557,7 @@
         },
         {
             "def": {
-                "comment": "As in e.g. ‘At least, I think that &hellip;’",
+                "comment": "<p>As in e.g. ‘At least, I think that &hellip;’</p>",
                 "def": "At least."
             },
             "def-search": "at least",
@@ -3660,7 +3678,7 @@
         },
         {
             "def": {
-                "comment": "Active only, see grammar.",
+                "comment": "<p>Active only, see grammar.</p>",
                 "def": "To be."
             },
             "def-search": "be to",
@@ -3720,7 +3738,7 @@
         },
         {
             "def": {
-                "comment": "Used in derivation, see grammar.",
+                "comment": "<p>Used in derivation, see grammar.</p>",
                 "def": "-maker, -wright.",
                 "examples": [
                     "<uf-w>ḍaléraû</uf-w> ‘carpenter’ from <uf-w>ḍalẹ</uf-w> ‘table’."
@@ -3744,7 +3762,7 @@
         },
         {
             "def": {
-                "comment": "Always capitalised.",
+                "comment": "<p>Always capitalised.</p>",
                 "def": "<em>(Logic)</em> False."
             },
             "def-search": "false",
@@ -3765,7 +3783,7 @@
         },
         {
             "def": {
-                "comment": "Postpositive intensifier placed after adjectives, particularly in the comparative or superlative degrees.",
+                "comment": "<p>Postpositive intensifier placed after adjectives, particularly in the comparative or superlative degrees.</p>",
                 "def": "Very, right, really."
             },
             "def-search": "really right very",
@@ -3806,7 +3824,7 @@
             "pos": "n. or v. tr.",
             "senses": [
                 {
-                    "comment": "In this sense sometimes also spelt <uf-w>fór</uf-w>.",
+                    "comment": "<p>In this sense sometimes also spelt <uf-w>fór</uf-w>.</p>",
                     "def": "Shape, form."
                 },
                 {
@@ -4195,7 +4213,7 @@
         },
         {
             "def": {
-                "comment": "Often in compounds <uf-w>laú-</uf-w> ‘long-’.",
+                "comment": "<p>Often in compounds <uf-w>laú-</uf-w> ‘long-’.</p>",
                 "def": "Long."
             },
             "def-search": "long",
@@ -4216,7 +4234,7 @@
         },
         {
             "def": {
-                "comment": "Stressed on the first syllable.",
+                "comment": "<p>Stressed on the first syllable.</p>",
                 "def": "<em>(contraction)</em> But when."
             },
             "def-search": "but when",
@@ -4238,7 +4256,7 @@
         },
         {
             "def": {
-                "comment": "Used chiefly in questions or imperative.",
+                "comment": "<p>Used chiefly in questions or imperative.</p>",
                 "def": "To let, allow, permit."
             },
             "def-search": "allow let permit to",
@@ -4257,6 +4275,20 @@
             "hw-search": "le",
             "pos": "n.",
             "word": "lé"
+        },
+        {
+            "def": {
+                "comment": "<p>Starting in Early Modern UF, this noun only occurs in the plural.</p>",
+                "def": "Rain.",
+                "examples": [
+                    "<uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘rains are being poured’)."
+                ]
+            },
+            "def-search": "rain",
+            "etym": "<uf-pf>pluie</uf-pf>",
+            "hw-search": "le",
+            "pos": "n. pl.",
+            "word": "ḷẹ"
         },
         {
             "def": {
@@ -4433,19 +4465,19 @@
                     "def": "Place, location."
                 },
                 {
-                    "comment": "Proximal demonstrative (all cases).",
+                    "comment": "<p>Proximal demonstrative (all cases).</p>",
                     "def": "<uf-w>sẹ</uf-w>&hellip;<uf-w>ḷý</uf-w> <uf-s>def</uf-s> [from <uf-w>sẹh</uf-w>] Here, hither, hence, &amp;c."
                 },
                 {
-                    "comment": "Distal demonstrative (all cases).",
+                    "comment": "<p>Distal demonstrative (all cases).</p>",
                     "def": "<uf-w>sý’<uf-mut><sup>L</sup></uf-mut></uf-w>&hellip;<uf-w>ḷý</uf-w> <uf-s>def</uf-s> [from <uf-w>sý’ẹ</uf-w>] There, thither, thence, &amp;c."
                 },
                 {
-                    "comment": "Interrogative (locative cases only).",
+                    "comment": "<p>Interrogative (locative cases only).</p>",
                     "def": "<uf-w>ḷý</uf-w><uf-w>hes</uf-w> <uf-s>indef</uf-s> [from <uf-w>c’hes</uf-w>] Where, whither, when&shy;ce, &amp;c."
                 },
                 {
-                    "comment": "Negative (locative cases only).",
+                    "comment": "<p>Negative (locative cases only).</p>",
                     "def": "<uf-w>s’</uf-w>/<uf-w>sá<uf-mut><sup>L</sup></uf-mut></uf-w>&hellip;<uf-w>ḷý</uf-w> <uf-s>indef</uf-s> [from <uf-w>sá</uf-w>] No&shy;where, from no&shy;where, &amp;c."
                 }
             ],
@@ -4484,7 +4516,7 @@
         },
         {
             "def": {
-                "comment": "The meaning of this and <uf-w>lẹ</uf-w> swapped at some point for unknown reasons.",
+                "comment": "<p>The meaning of this and <uf-w>lẹ</uf-w> swapped at some point for unknown reasons.</p>",
                 "def": "<em>neg. only</em> No longer, not any more."
             },
             "def-search": "any longer more no not",
@@ -4495,13 +4527,14 @@
         },
         {
             "def": {
+                "comment": "<p>Replaced with <uf-w>b’hér</uf-w> in Middle UF.</p>",
                 "def": "To rain."
             },
             "def-search": "rain to",
             "etym": "<uf-pf>pleuvoir</uf-pf>",
             "forms": "<uf-s>fut</uf-s> lýv́áre, <uf-s>subj</uf-s> lýv́ás",
             "hw-search": "lyva",
-            "pos": "v. <uf-s>3rd</uf-s> person only",
+            "pos": "v. obsolete, <uf-s>3rd</uf-s> person only",
             "word": "lýv́á"
         },
         {
@@ -4584,7 +4617,7 @@
         },
         {
             "def": {
-                "comment": "This is a deponent verb whose subject takes the <uf-s>acc</uf-s> and which only takes passive affixes.",
+                "comment": "<p>This is a deponent verb whose subject takes the <uf-s>acc</uf-s> and which only takes passive affixes.</p>",
                 "def": "To be born."
             },
             "def-search": "be born to",
@@ -4693,7 +4726,7 @@
         },
         {
             "def": {
-                "comment": "Usually placed after the name. This word replaced <uf-w>aḅ</uf-w> in the reflexive sense in Early Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.",
+                "comment": "<p>Usually placed after the name. This word replaced <uf-w>aḅ</uf-w> in the reflexive sense in Early Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.</p>",
                 "def": "<em>(refl. or intr.)</em> To be called, name oneself.",
                 "examples": [
                     "<uf-w>Aý’èc’hsád j(v)nvé</uf-w> ‘My name is Aý’èc’hsád’."
@@ -4797,7 +4830,7 @@
         },
         {
             "def": {
-                "comment": "Always capitalised.",
+                "comment": "<p>Always capitalised.</p>",
                 "def": "<em>(Logic)</em> True."
             },
             "def-search": "true",
@@ -4808,7 +4841,7 @@
         },
         {
             "def": {
-                "comment": "Frequently in the plural.",
+                "comment": "<p>Frequently in the plural.</p>",
                 "def": "Air."
             },
             "def-search": "air",
@@ -4824,7 +4857,7 @@
             "pos": "conj.",
             "senses": [
                 {
-                    "comment": "Exclusive, see also&nbsp;<uf-w>u</uf-w>.",
+                    "comment": "<p>Exclusive, see also&nbsp;<uf-w>u</uf-w>.</p>",
                     "def": "Or."
                 },
                 {
@@ -4855,9 +4888,9 @@
         },
         {
             "def": {
-                "def": "Big, large, great."
+                "def": "Big, large, great, tall."
             },
-            "def-search": "big great large",
+            "def-search": "big great large tall",
             "etym": "<uf-pf>grand</uf-pf>",
             "hw-search": "ra",
             "pos": "adj.",
@@ -4900,21 +4933,21 @@
             "pos": "n.",
             "senses": [
                 {
-                    "comment": "Main god of the ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps <uf-w>RÁB’H</uf-w>.",
+                    "comment": "<p>Main god of the ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps <uf-w>RÁB’H</uf-w>.</p>",
                     "def": "<em>indecl.</em> <uf-s>def sg</uf-s> <em>always</em> <uf-s>nom</uf-s> <em>or</em> <uf-s>voc</uf-s> Ráb’h.",
                     "examples": [
                         "<uf-s>Snet’h</uf-s>, <uf-s>i.17</uf-s>: <uf-w>au lebálá daú RÁB’H</uf-w> ‘and thus spake Ráb’h’."
                     ]
                 },
                 {
-                    "comment": "Used for <uf-sense>1</uf-sense> in all other cases; as with all names, only <uf-w>sénýr</uf-w> is inflected. Old-fashioned often <uf-w>RÁB’H Sénýr</uf-w>.",
+                    "comment": "<p>Used for <uf-sense>1</uf-sense> in all other cases; as with all names, only <uf-w>sénýr</uf-w> is inflected. Old-fashioned often <uf-w>RÁB’H Sénýr</uf-w>.</p>",
                     "def": "<uf-w>Ráb’h sénýr</uf-w> <uf-s>def sg</uf-s> Lord Ráb’h.",
                     "examples": [
                         "<uf-s>Snet’h</uf-s>, <uf-s>8.1</uf-s>: <uf-w>au labraúc RÁB’H naút B’héhénýr</uf-w> ‘and they came to our Lord Ráb’h’."
                     ]
                 },
                 {
-                    "comment": "Only attested figuratively. Not capitalised in this sense, and declined like a regular word.",
+                    "comment": "<p>Only attested figuratively. Not capitalised in this sense, and declined like a regular word.</p>",
                     "def": "<em>(rarely)</em> <uf-w>réáb’h</uf-w> The main god of another culture.",
                     "examples": [
                         "<uf-s>Snet’h</uf-s>, <uf-s>ii.3</uf-s>: <uf-w>ledéraújá’z derévôt’he láréáb’h</uf-w> ‘their god demanded they return’."
@@ -4977,7 +5010,7 @@
         },
         {
             "def": {
-                "comment": "The <uf-s>part</uf-s> usually implies that only a part or some of a larger whole is grabbed, e.g. a handful of sand).",
+                "comment": "<p>The <uf-s>part</uf-s> usually implies that only a part or some of a larger whole is grabbed, e.g. a handful of sand).</p>",
                 "def": "+<uf-s>acc</uf-s> <em>or</em> <uf-s>part</uf-s> To grab."
             },
             "def-search": "grab to",
@@ -5249,7 +5282,7 @@
                     "def": "To come to light, become known, transpire."
                 },
                 {
-                    "comment": "Lit. ‘it has come to light that &hellip;’",
+                    "comment": "<p>Lit. ‘it has come to light that &hellip;’</p>",
                     "def": "<uf-s>pres ant</uf-s> For it to be clear, apparent, evident that &hellip;"
                 }
             ],
@@ -5277,7 +5310,7 @@
         },
         {
             "def": {
-                "comment": "This is grammatically a vocative—not that one could tell since it looks identical to the absolutive.",
+                "comment": "<p>This is grammatically a vocative—not that one could tell since it looks identical to the absolutive.</p>",
                 "def": "Kid."
             },
             "def-search": "kid",
@@ -5559,7 +5592,7 @@
         },
         {
             "def": {
-                "comment": "Usually preceded directly by the verb it applies to.",
+                "comment": "<p>Usually preceded directly by the verb it applies to.</p>",
                 "def": "In vain, for nothing."
             },
             "def-search": "for in nothing vain",
@@ -5728,7 +5761,7 @@
         },
         {
             "def": {
-                "comment": "Construed with the negated optative.",
+                "comment": "<p>Construed with the negated optative.</p>",
                 "def": "+<uf-s>opt</uf-s> To fear, lest &hellip;"
             },
             "def-search": "fear lest to",
@@ -6162,7 +6195,7 @@
         },
         {
             "def": {
-                "comment": "Exclamation of distress, surprise, sadness, or regret.",
+                "comment": "<p>Exclamation of distress, surprise, sadness, or regret.</p>",
                 "def": "Alas, woe, oh."
             },
             "def-search": "alas oh woe",
@@ -6285,7 +6318,7 @@
         },
         {
             "def": {
-                "comment": "Always enclitic <uf-w>s’</uf-w> before vowels. This particle is used only in the subjunctive; see also <uf-w>asý’ýâ</uf-w>, <uf-w>t’hé</uf-w>.",
+                "comment": "<p>Always enclitic <uf-w>s’</uf-w> before vowels. This particle is used only in the subjunctive; see also <uf-w>asý’ýâ</uf-w>, <uf-w>t’hé</uf-w>.</p>",
                 "def": "Not, no."
             },
             "def-search": "no not",
@@ -6402,7 +6435,7 @@
         },
         {
             "def": {
-                "comment": "Never lenited.",
+                "comment": "<p>Never lenited.</p>",
                 "def": "The Sanskrit language."
             },
             "def-search": "language sanskrit the",
@@ -6489,7 +6522,7 @@
         },
         {
             "def": {
-                "comment": "The case depends on the depth of the speaker’s understanding: the <uf-s>acc</uf-s> indicates ‘complete’ or expert-level understanding, the <uf-s>part</uf-s> only some understanding.",
+                "comment": "<p>The case depends on the depth of the speaker’s understanding: the <uf-s>acc</uf-s> indicates ‘complete’ or expert-level understanding, the <uf-s>part</uf-s> only some understanding.</p>",
                 "def": "To know (+<uf-s>part/acc</uf-s> sth.)."
             },
             "def-search": "know sth to",
@@ -6687,7 +6720,7 @@
         },
         {
             "def": {
-                "comment": "Precedes and is attached to nouns.",
+                "comment": "<p>Precedes and is attached to nouns.</p>",
                 "def": "+<uf-s>def</uf-s> <em>noun</em> This, these."
             },
             "def-search": "these this",
@@ -6773,7 +6806,7 @@
                     "def": "To be tight, close-fitting, snug."
                 },
                 {
-                    "comment": "The use of the <uf-s>instr</uf-s> instead of the <uf-s>ess</uf-s> case in this sense is an established idiom; in Middle UF, the <uf-s>ess</uf-s> was more common in this sense.",
+                    "comment": "<p>The use of the <uf-s>instr</uf-s> instead of the <uf-s>ess</uf-s> case in this sense is an established idiom; in Middle UF, the <uf-s>ess</uf-s> was more common in this sense.</p>",
                     "def": "<uf-s>def</uf-s> <em>usually</em> <uf-s>instr</uf-s> <uf-w>c’hýr sérệ</uf-w> A heavy heart."
                 }
             ],
@@ -6887,7 +6920,7 @@
             "pos": "v. chiefly trans.",
             "senses": [
                 {
-                    "comment": "The <uf-s>acc</uf-s> is used for concrete objects or substances, the <uf-s>part</uf-s> for abstract or intangible concepts.",
+                    "comment": "<p>The <uf-s>acc</uf-s> is used for concrete objects or substances, the <uf-s>part</uf-s> for abstract or intangible concepts.</p>",
                     "def": "+<uf-s>acc/part</uf-s> To spread, extend, expand."
                 },
                 {
@@ -7088,7 +7121,7 @@
         },
         {
             "def": {
-                "comment": "The plural may be used to indicate a large quantity of soil.",
+                "comment": "<p>The plural may be used to indicate a large quantity of soil.</p>",
                 "def": "Ground, floor, earth, soil."
             },
             "def-search": "earth floor ground soil",
@@ -7201,7 +7234,7 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "If no <uf-s>instr</uf-s> is present, the subject is implied to be the supplement.",
+                    "comment": "<p>If no <uf-s>instr</uf-s> is present, the subject is implied to be the supplement.</p>",
                     "def": "To supplement (<uf-s>acc</uf-s> sth.) (+<uf-s>instr</uf-s> with sth.)."
                 },
                 {
@@ -7223,7 +7256,7 @@
         },
         {
             "def": {
-                "comment": "Precedes and is attached to nouns; often <uf-w>sý’</uf-w> before vowels, with one apostrophe, not two.",
+                "comment": "<p>Precedes and is attached to nouns; often <uf-w>sý’</uf-w> before vowels, with one apostrophe, not two.</p>",
                 "def": "+<uf-s>def</uf-s> <em>noun</em> That, those."
             },
             "def-search": "that those",
@@ -7261,7 +7294,7 @@
         },
         {
             "def": {
-                "comment": "Always <uf-w>t’h’<uf-mut><sup>N</sup></uf-mut></uf-w> before vowels, but does not nasalise if the ‘é’ is still present. This particle is used only in the optative; see also <uf-w>asý’ýâ</uf-w>, <uf-w>sá</uf-w>.",
+                "comment": "<p>Always <uf-w>t’h’<uf-mut><sup>N</sup></uf-mut></uf-w> before vowels, but does not nasalise if the ‘é’ is still present. This particle is used only in the optative; see also <uf-w>asý’ýâ</uf-w>, <uf-w>sá</uf-w>.</p>",
                 "def": "Not, no."
             },
             "def-search": "no not",
@@ -7282,7 +7315,7 @@
         },
         {
             "def": {
-                "comment": "Only <uf-w>T’hebhaú</uf-w> is declined as though the entire phrase were one word. In informal speech and writing, this is typically shortened to <uf-w>Raúl</uf-w>.",
+                "comment": "<p>Only <uf-w>T’hebhaú</uf-w> is declined as though the entire phrase were one word. In informal speech and writing, this is typically shortened to <uf-w>Raúl</uf-w>.</p>",
                 "def": "The ULTRAFR&shy;ENCH language."
             },
             "def-search": "language the ultrafrench",
@@ -7321,7 +7354,7 @@
             "pos": "conj.",
             "senses": [
                 {
-                    "comment": "Inclusive, see also <uf-w>ra</uf-w>.",
+                    "comment": "<p>Inclusive, see also <uf-w>ra</uf-w>.</p>",
                     "def": "Or."
                 },
                 {
@@ -7349,18 +7382,18 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "Never construed with an <uf-s>inf</uf-s> if it in and of itself is the infinitive of an <uf-s>aci</uf-s> or <uf-s>pci</uf-s>, in which case the variant with the <uf-s>part</uf-s> (<uf-sense>2</uf-sense>) is used instead.",
+                    "comment": "<p>Never construed with an <uf-s>inf</uf-s> if it in and of itself is the infinitive of an <uf-s>aci</uf-s> or <uf-s>pci</uf-s>, in which case the variant with the <uf-s>part</uf-s> (<uf-sense>2</uf-sense>) is used instead.</p>",
                     "def": "+<uf-s>inf/aci</uf-s> To be able to, can."
                 },
                 {
                     "def": "+<uf-s>part</uf-s> To be capable of &hellip;"
                 },
                 {
-                    "comment": "Dynamic or epistemic, never deontic; this and sense 4 are essentially a more emphatic optative.",
+                    "comment": "<p>Dynamic or epistemic, never deontic; this and sense 4 are essentially a more emphatic optative.</p>",
                     "def": "<uf-s>opt cond i + aci</uf-s> To be possible; may."
                 },
                 {
-                    "comment": "Dynamic or epistemic, never deontic.",
+                    "comment": "<p>Dynamic or epistemic, never deontic.</p>",
                     "def": "<uf-s>opt cond ii + aci</uf-s> Might."
                 }
             ],
@@ -7420,7 +7453,7 @@
         },
         {
             "def": {
-                "comment": "Of disputed origin; first attested in the works of the Early UF comedian <uf-s>J. A. B. Snet’h</uf-s>.",
+                "comment": "<p>Of disputed origin; first attested in the works of the Early UF comedian <uf-s>J. A. B. Snet’h</uf-s>.</p>",
                 "def": "<em>(literary)</em> To depend on predictions of the future."
             },
             "def-search": "depend future of on predictions the to",
@@ -7441,7 +7474,7 @@
                     "def": "+<uf-s>gen</uf-s> To lack, want."
                 },
                 {
-                    "comment": "The object and subject of this verb are swapped compared to English ‘to miss’, e.g. <uf-w>b’hývvâhé</uf-w> (<uf-s>2pl.act</uf-s> + <uf-s>1sg.pass</uf-s>) ‘I miss you (<uf-s>pl</uf-s>)’, lit. roughly ‘you (<uf-s>pl</uf-s>) are wanting to me’).",
+                    "comment": "<p>The object and subject of this verb are swapped compared to English ‘to miss’, e.g. <uf-w>b’hývvâhé</uf-w> (<uf-s>2pl.act</uf-s> + <uf-s>1sg.pass</uf-s>) ‘I miss you (<uf-s>pl</uf-s>)’, lit. roughly ‘you (<uf-s>pl</uf-s>) are wanting to me’).</p>",
                     "def": "+<uf-s>part</uf-s> <em>or</em> <uf-s>pass</uf-s> To miss."
                 },
                 {
@@ -7510,7 +7543,7 @@
             "pos": "v. irreg.",
             "senses": [
                 {
-                    "comment": "The subject is always in the passive in this sense only.",
+                    "comment": "<p>The subject is always in the passive in this sense only.</p>",
                     "def": "<uf-s>pass</uf-s> +<uf-s>aci</uf-s> Must, have to, be obliged to."
                 },
                 {
@@ -7681,7 +7714,7 @@
                     "def": "To be the same, identical, alike."
                 },
                 {
-                    "comment": "In this sense, <uf-w>vêvâ</uf-w> usually precedes the noun (phrase) it qualifies.",
+                    "comment": "<p>In this sense, <uf-w>vêvâ</uf-w> usually precedes the noun (phrase) it qualifies.</p>",
                     "def": "<uf-w>vêvâ</uf-w> Even.",
                     "examples": [
                         "<uf-s>H. P. Lovecraft:</uf-s> <uf-w>Lavúrer’sý’ýâ là dwájávé sdaúr&nbsp;/ Ádȅr trâ vêvâ Dérny’éhuf laúv’raú.</uf-w> ‘That is not dead which can eternal lie&nbsp;/ And with strange æons even death may die’."
@@ -7700,7 +7733,7 @@
                     "def": "A strand of hair."
                 },
                 {
-                    "def": "<uf-s>pl.</uf-s> Hair."
+                    "def": "<uf-s>pl</uf-s> Hair."
                 }
             ],
             "word": "véc"
@@ -8126,7 +8159,7 @@
         },
         {
             "def": {
-                "comment": "Like most negative polarity items, this induces negation of the verb.",
+                "comment": "<p>Like most negative polarity items, this induces negation of the verb.</p>",
                 "def": "Nothing."
             },
             "def-search": "nothing",
@@ -8252,7 +8285,7 @@
         },
         {
             "def": {
-                "comment": "Unlike <uf-w>c’haúr</uf-w>, this does not take the subjunctive; it is used to indicate the (potential) cause of something.",
+                "comment": "<p>Unlike <uf-w>c’haúr</uf-w>, this does not take the subjunctive; it is used to indicate the (potential) cause of something.</p>",
                 "def": "Considering that, since, because."
             },
             "def-search": "because considering since that",
@@ -8348,7 +8381,7 @@
                     "def": "Day."
                 },
                 {
-                    "comment": "Contracted <uf-s>ela</uf-s> and <uf-s>ill</uf-s>.",
+                    "comment": "<p>Contracted <uf-s>ela</uf-s> and <uf-s>ill</uf-s>.</p>",
                     "def": "<uf-w>órdy’úr ád’y’úr</uf-w> Day after day."
                 }
             ],
