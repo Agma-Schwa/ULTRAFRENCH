@@ -92,7 +92,7 @@
                 ]
             ]
         },
-        "input.text": "sɑ̃tsytsu",
+        "input.text": "",
         "notes": {
             "files": [
                 {
@@ -110,13 +110,13 @@
             ],
             "splitter.sizes": "AAAA/wAAAAEAAAACAAAAswAABI0B/////wEAAAABAA=="
         },
-        "output.text": "sɑ̃hyə̥\n",
+        "output.text": "",
         "sca": {
             "cbox.changes.norm.choice": 2,
             "cbox.input.norm.choice": 2,
             "cbox.output.norm.choice": 1,
             "cbox.stop.before": "Romaniser",
-            "chbox.details": 2,
+            "chbox.details": 0,
             "chbox.enable.js": 0,
             "splitter.sizes": "AAAA/wAAAAEAAAADAAABDgAAAqwAAACsAf////8BAAAAAQA="
         },

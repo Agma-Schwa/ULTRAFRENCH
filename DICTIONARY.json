@@ -177,6 +177,17 @@
         },
         {
             "def": {
+                "def": "To be divine, heavenly, empyrean, celestial."
+            },
+            "def-search": "be celestial divine empyrean heavenly to",
+            "etym": "<uf-pf>empyrée</uf-pf>",
+            "forms": "<uf-s>ptcp</uf-s> ábhírâ",
+            "hw-search": "abhire",
+            "pos": "adj.",
+            "word": "ábhíré"
+        },
+        {
+            "def": {
                 "def": "To push, press, shove, drive (+<uf-s>ill</uf-s> into)."
             },
             "def-search": "drive into press push shove to",
@@ -358,6 +369,7 @@
             "pos": "num. frac. or n.",
             "senses": [
                 {
+                    "comment": "Seldom used metaphorically, for that see <uf-w>ḍẹ</uf-w> instead, e.g. <uf-w>vaûd ḍẹ</uf-w> ‘all the world’, i.e. everyone, as opposed to <uf-w>vaúd áḍy’ẹ́</uf-w> ‘the world as a whole’, i.e. the entire world considered as a physical object.",
                     "def": "Entire, whole."
                 },
                 {
@@ -2595,6 +2607,16 @@
         },
         {
             "def": {
+                "def": "To sleep."
+            },
+            "def-search": "sleep to",
+            "etym": "<uf-pf>dormir</uf-pf>",
+            "hw-search": "daur",
+            "pos": "v.",
+            "word": "daúr"
+        },
+        {
+            "def": {
                 "def": "<em>Male or female given name, equivalent to English ‘Dominic’</em>."
             },
             "def-search": "",
@@ -3209,6 +3231,16 @@
         },
         {
             "def": {
+                "def": "Strange, foreign."
+            },
+            "def-search": "foreign strange",
+            "etym": "<uf-pf>étrange</uf-pf>",
+            "hw-search": "dra",
+            "pos": "adj.",
+            "word": "ḍrâ"
+        },
+        {
+            "def": {
                 "def": "Twice."
             },
             "def-search": "twice",
@@ -3678,6 +3710,16 @@
         },
         {
             "def": {
+                "def": "Era, age, aeon."
+            },
+            "def-search": "aeon age era",
+            "etym": "<uf-pf>ère</uf-pf>",
+            "hw-search": "er",
+            "pos": "n.",
+            "word": "ér"
+        },
+        {
+            "def": {
                 "comment": "Used in derivation, see grammar.",
                 "def": "-maker, -wright.",
                 "examples": [
@@ -3979,13 +4021,21 @@
             "word": "Jac’h"
         },
         {
-            "def": {
-                "def": "<em>neg. only</em> Never, at no time."
-            },
-            "def-search": "at never no time",
+            "def-search": "always at ever for forever never no time",
             "etym": "<uf-pf>jamais</uf-pf>",
             "hw-search": "jave",
             "pos": "adv.",
+            "senses": [
+                {
+                    "def": "<em>neg.</em> Never, at no time."
+                },
+                {
+                    "def": "<em>pos.</em> Ever, always."
+                },
+                {
+                    "def": "<uf-w>dwájávé</uf-w> For ever, forever."
+                }
+            ],
             "word": "jávé"
         },
         {
@@ -7496,6 +7546,16 @@
             "word": "vás"
         },
         {
+            "def": {
+                "def": "Word."
+            },
+            "def-search": "word",
+            "etym": "<uf-pf>mot</uf-pf>",
+            "hw-search": "vau",
+            "pos": "v.",
+            "word": "vaú"
+        },
+        {
             "def-search": "badto be inappropriate incorrect to wrong",
             "etym": "<uf-pf>mauvais</uf-pf>",
             "forms": "<uf-s>fut</uf-s> bíré, <uf-s>subj</uf-s> bíres; <uf-s>comp</uf-s> lẹbír, y’ŷbír, rêbír; <uf-s>sup</uf-s> réb’hír, râdvâbír",
@@ -7610,6 +7670,25 @@
             "hw-search": "ve",
             "pos": "n.",
             "word": "vê₂"
+        },
+        {
+            "def-search": "alike be even identical same the to",
+            "etym": "<uf-pf>même</uf-pf>",
+            "hw-search": "ve",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To be the same, identical, alike."
+                },
+                {
+                    "comment": "In this sense, <uf-w>vêvâ</uf-w> usually precedes the noun (phrase) it qualifies.",
+                    "def": "<uf-w>vêvâ</uf-w> Even.",
+                    "examples": [
+                        "<uf-s>H. P. Lovecraft:</uf-s> <uf-w>Lavúrer’sý’ýâ là dwájávé sdaúr&nbsp;/ Ádȅr trâ vêvâ Dérny’éhuf laúv’raú.</uf-w> ‘That is not dead which can eternal lie&nbsp;/ And with strange æons even death may die’."
+                    ]
+                }
+            ],
+            "word": "vê₃"
         },
         {
             "def-search": "a hair of strand",
@@ -7891,6 +7970,17 @@
             "hw-search": "vubhva",
             "pos": "n.",
             "word": "vúb’hvâ"
+        },
+        {
+            "def": {
+                "def": "To die."
+            },
+            "def-search": "die to",
+            "etym": "<uf-pf>mourir</uf-pf>",
+            "forms": "<uf-s>pres ptcp</uf-s> vaûr, <uf-s>fut</uf-s> vúre",
+            "hw-search": "vur",
+            "pos": "v.",
+            "word": "vúr"
         },
         {
             "def": {
@@ -8320,6 +8410,11 @@
             "from": "",
             "from-search": "",
             "to": "eḍ"
+        },
+        {
+            "from": "ábhírâ",
+            "from-search": "abhira",
+            "to": "ábhíré"
         },
         {
             "from": "ach’es",

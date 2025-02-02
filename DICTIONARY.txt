@@ -134,7 +134,7 @@ ac|n.|hache|Axe, hatchet
 asý’ýâ|particle|\pf{pas absolument}|Not, no. \comment Commonly \w{’sý’ýâ} after vowels and
     verbs. This particle is used only in the indicative; see also \w{sá}, \w{t’hé}
 c’hd’hal|adv.|\pf{que dalle}|Naught, absolutely no\-thing
-jávé|adv.|jamais|\textit{neg. only} Never, at no time
+jávé|adv.|jamais|\\\textit{neg.} Never, at no time \\\textit{pos.} Ever, always \\\w{dwájávé} For ever, forever
 ráv́â|adv.|rarement|\textit{neg. only} Seldom, rarely (ever)
 y’é|pron.|rien|Nothing. \comment Like most negative polarity items, this induces negation of the verb
 au|conj.|aussi|\\ And, also, as well, too \\ \w{au} \ldots{} \w{au} \ldots{} ‘both \ldots{} and \ldots’
@@ -875,6 +875,17 @@ yl|n.|hublot|Window
 cyḍ|n.|chute|\textit{(grammar)} Case
 sáhyẹ|adj.|\pf{sens dessus dessous}|To be upside down
 suh|n.|souci|Fear, dread
+ábhíré|adj.|empyrée|To be divine, heavenly, empyrean, celestial|\s{ptcp} ábhírâ
+vaú|v.|mot|Word
+vê₃|v.|même|
+    \\ To be the same, identical, alike
+    \\ \w{vêvâ} Even \comment In this sense, \w{vêvâ} usually precedes the noun (phrase) it qualifies.
+        \ex \s{H. P. Lovecraft:} \w{Lavúrer’sý’ýâ là dwájávé sdaúr~/ Ádȅr trâ vêvâ Dérny’éhuf laúv’raú.}
+            ‘That is not dead which can eternal lie~/ And with strange æons even death may die’.
+daúr|v.|dormir|To sleep
+vúr|v.|mourir|To die|\s{pres ptcp} vaûr, \s{fut} vúre
+ér|n.|ère|Era, age, aeon
+ḍrâ|adj.|étrange|Strange, foreign
 
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
@@ -904,6 +915,7 @@ ph- > ḅ-
 p’h- > bh-
 t- > ḍ-
 Réáb’h > Ráb’h
+ábhírâ > ábhíré
 
 ## Grammatical forms are only in the online dictionary because if you have
 ## the grammar you can just search it instead. We only include the most common
@@ -933,7 +945,10 @@ dub|num.||Twice
 ríḅ|num.||Thrice, three times
 dubâ|num.||Twofold
 ríḅâ|num.||Threefold
-áḍy’ẹ́|num. frac. or n.|entier|\\ Entire, whole \\\textit{n.} Entirety, wholeness
+áḍy’ẹ́|num. frac. or n.|entier|\\ Entire, whole \comment Seldom used metaphorically, for that
+    see \w{ḍẹ} instead, e.g. \w{vaûd ḍẹ} ‘all the world’, i.e. everyone, as opposed to
+    \w{vaúd áḍy’ẹ́} ‘the world as a whole’, i.e. the entire world considered as a physical
+    object. \\\textit{n.} Entirety, wholeness
 déví|num. frac. or n.|demi|Half
 
 $backend json
