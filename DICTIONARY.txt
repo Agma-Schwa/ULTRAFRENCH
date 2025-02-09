@@ -326,8 +326,8 @@ nát’hýr|n.|nature|\\\textit{(chiefly)} \s{indef} Nature, the natural world. 
 rê|v.|trine|To be composed of three parts or people; triune|\s{fut} rêrẹ́, \s{subj} rês
 laúrvé|conj.|from \w{laúrs} + \w{vé}|\textit{(contraction)} But when. \comment Stressed on the first
     syllable
-râsír|v.|transpirer|+\s{aci} \\ To come to light, become known, transpire.
-    \\ \s{pres ant} For it to be clear, apparent, evident that \ldots \comment Lit.
+râsír|v.|transpirer|\\ +\s{aci} To come to light, become known, transpire.
+    \\ +\s{aci} \s{pres ant} For it to be clear, apparent, evident that \ldots \comment Lit.
     ‘it has come to light that \ldots’|\s{fut} râsírẹ́, \s{subj} râsírs
 c’hóvníc’h|v.|communiquer|\\ To communicate (+\s{instr} with sbd.). \\ Communication|\s{fut}
     c’hóvníc’hre, \s{subj} c’hóvníc’hes
@@ -891,7 +891,7 @@ ḷẹ|n. pl.|pluie|Rain
     \comment Starting in Early Modern UF, this noun only occurs in the plural.
     \ex \w{dýḷẹ syb’hér} ‘it rains’ (lit. ‘rains are being poured’).
 b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
-    \\+\s{part} \textit{(archaic)} To pour
+    \\+\s{part} \textit{(archaic)} To pour out
     \\\s{pass} + \s{part/acc} To be in a state or condition, to fall \textit{(of precipitation)}
         \comment Exclusively used in the passive of the weather or a situation or state of affairs, with the noun
             for the condition or preciptation as the ‘object’ and no subject, e.g. \w{dýḷẹ syb’hér} ‘it rains’,

@@ -1357,14 +1357,14 @@
             "word": "b’hénvâ"
         },
         {
-            "def-search": "a be condition fall in or pour state to",
+            "def-search": "a be condition fall in or out pour state to",
             "etym": "from <uf-pf>verser</uf-pf> and <uf-w>fér</uf-w>, see <uf-sense>2</uf-sense>",
             "forms": "<uf-s>fut</uf-s> b’hẹ́, <uf-s>subj</uf-s> b’hés",
             "hw-search": "bher",
             "pos": "v.",
             "senses": [
                 {
-                    "def": "+<uf-s>part</uf-s> <em>(archaic)</em> To pour."
+                    "def": "+<uf-s>part</uf-s> <em>(archaic)</em> To pour out."
                 },
                 {
                     "comment": "<p>Exclusively used in the passive of the weather or a situation or state of affairs, with the noun for the condition or preciptation as the ‘object’ and no subject, e.g. <uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’, <uf-w>dŷncẹaû syb’hér</uf-w> ‘it is hot’. </p><p>In Middle UF, <uf-w>fér</uf-w> with a noun in the <uf-s>abs</uf-s> was often used for this purpose, hence also the irregular <uf-s>fut</uf-s> and <uf-s>subj</uf-s>, e.g. *<uf-w>sfér cẹaû</uf-w> ‘It is hot’; similarly, weather conditions used to be their own verbs, e.g. *<uf-w>slýv́á</uf-w> ‘it rains’. </p><p>The latter were eventually replaced with a construction using <uf-w>b’hér</uf-w> in the passive with the noun in the <uf-s>part</uf-s>, e.g. *<uf-w>dŷnḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘some rain is being poured’). This was later extended to any state (of the weather), e.g. <uf-w>dŷncẹaû syb’hér</uf-w> (lit. ‘some heat is being poured’). The <uf-s>acc</uf-s> can be used instead as an intensifier, e.g. <uf-w>sc̣ẹaû syb’hér</uf-w> ‘it is scorching hot’. </p><p>With precipitation, the <uf-s>pl</uf-s> is most common in modern times, e.g. <uf-w>dýḷẹ syb’hér</uf-w> instead of older *<uf-w>dŷnḷẹ syb’hér</uf-w>. The old weather verbs, e.g. *<uf-w>lýv́á</uf-w>, are altogether obsolete.</p>",
@@ -5287,9 +5287,6 @@
             "word": "rásáḍy’ê"
         },
         {
-            "def": {
-                "def": "+<uf-s>aci</uf-s>."
-            },
             "def-search": "apparent be become clear come evident for it known light that to transpire",
             "etym": "<uf-pf>transpirer</uf-pf>",
             "forms": "<uf-s>fut</uf-s> râsírẹ́, <uf-s>subj</uf-s> râsírs",
@@ -5297,11 +5294,11 @@
             "pos": "v.",
             "senses": [
                 {
-                    "def": "To come to light, become known, transpire."
+                    "def": "+<uf-s>aci</uf-s> To come to light, become known, transpire."
                 },
                 {
                     "comment": "<p>Lit. ‘it has come to light that &hellip;’</p>",
-                    "def": "<uf-s>pres ant</uf-s> For it to be clear, apparent, evident that &hellip;"
+                    "def": "+<uf-s>aci</uf-s> <uf-s>pres ant</uf-s> For it to be clear, apparent, evident that &hellip;"
                 }
             ],
             "word": "râsír"
