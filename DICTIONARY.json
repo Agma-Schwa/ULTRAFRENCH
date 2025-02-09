@@ -1075,6 +1075,16 @@
         },
         {
             "def": {
+                "def": "Apple."
+            },
+            "def-search": "apple",
+            "etym": "<uf-pf>pomme</uf-pf>",
+            "hw-search": "bau",
+            "pos": "n.",
+            "word": "ḅaú"
+        },
+        {
+            "def": {
                 "def": "To forsake, abandon."
             },
             "def-search": "abandon forsake to",
@@ -1104,6 +1114,16 @@
             "hw-search": "baure",
             "pos": "n.",
             "word": "Baúré"
+        },
+        {
+            "def": {
+                "def": "Potato."
+            },
+            "def-search": "potato",
+            "etym": "<uf-pf>pomme de terre</uf-pf>",
+            "hw-search": "bauvder",
+            "pos": "n.",
+            "word": "ḅaúvḍér"
         },
         {
             "def": {
@@ -1549,6 +1569,17 @@
             "hw-search": "biwau",
             "pos": "n.",
             "word": "biwaú"
+        },
+        {
+            "def": {
+                "comment": "<p>This verb is construed from the peel’s point of view, i.e. the peel is removed ‘from around’ something, hence the use of the <uf-s>circabl</uf-s> for the object.</p>",
+                "def": "+<uf-s>circabl</uf-s> To peel."
+            },
+            "def-search": "peel to",
+            "etym": "<uf-pf>éplucher</uf-pf>",
+            "hw-search": "blyc",
+            "pos": "v. tr.",
+            "word": "ḅlyc̣"
         },
         {
             "def": {

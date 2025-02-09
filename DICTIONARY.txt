@@ -907,6 +907,12 @@ b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
             With precipitation, the \s{pl} is most common in modern times, e.g. \w{dýḷẹ syb’hér} instead
             of older *\w{dŷnḷẹ syb’hér}. The old weather verbs, e.g. *\w{lýv́á}, are altogether obsolete.
         |\s{fut} b’hẹ́, \s{subj} b’hés
+ḅlyc̣|v. tr.|éplucher|+\s{circabl} To peel \comment This verb is construed from the peel’s point of view, i.e.
+    the peel is removed ‘from around’ something, hence the use of the \s{circabl} for the object.
+ḅaúvḍér|n.|\pf{pomme de terre}|Potato
+ḅaú|n.|pomme|Apple
+
+
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
