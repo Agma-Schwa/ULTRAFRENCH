@@ -343,7 +343,7 @@ dy’ê|v.|tien|To be yours (\s{sg})|\s{fut} dy’êrẹ́, \s{subj} dy’ês
 sy’ê|v.|sien|To be his, hers, its|\s{fut} sy’êrẹ́, \s{subj} sy’ês
 naúḍ|v.|nôtre|To be ours|\s{fut} naúḍre, \s{subj} naús
 b’hauḍ|v.|vôtre|To be yours (\s{pl})|\s{fut} b’hauḍre, \s{subj} b’haus
-lýrḍ|v.|from \pf{leur}; the ‘ḍ’ was added in analogy with
+lýrḍ|v.|from \pf{leur}; the \w{ḍ} was added in analogy with
     \w{naúḍ} and \w{b’hauḍ}|To be theirs|\s{fut} lýrḍre, \s{subj} lýrs
 rzaúsḍ|v.|exhaustif|\\ To be exhaustive, comprehensive, complete \\ To be finished, completed|\s{fut} rzaúsḍre, \s{subj} rzaúsḍs
 y’ác’hraúníc’h|v.|diachronique|To be diachronic|\s{fut} y’ác’hraú\-níc’hre, \s{subj} y’ác’hraúníc’hes
@@ -911,6 +911,16 @@ b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
     the peel is removed ‘from around’ something, hence the use of the \s{circabl} for the object.
 ḅaúvḍér|n.|\pf{pomme de terre}|Potato
 ḅaú|n.|pomme|Apple
+Sehár|n.|César|Caesar
+várc|v.|marcher|To march, walk
+Raû|n|Rome|Rome
+lejy’aû|n.|légion|\textit{(Ancient Rome, military)} Legion
+ḅabh|n.|papa|Father
+ḅér|n.|père|\textit{(informal)} Father, dad
+advnés|v.|admonester|To admonish, reprimand, scold
+fis|n.|fils|Son
+fíy’|n.|fille|Daughter
+
 
 
 

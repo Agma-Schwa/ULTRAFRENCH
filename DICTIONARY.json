@@ -363,6 +363,16 @@
             "word": "ádróid"
         },
         {
+            "def": {
+                "def": "To admonish, reprimand, scold."
+            },
+            "def-search": "admonish reprimand scold to",
+            "etym": "<uf-pf>admonester</uf-pf>",
+            "hw-search": "advnes",
+            "pos": "v.",
+            "word": "advnés"
+        },
+        {
             "def-search": "entire entirety whole wholeness",
             "etym": "<uf-pf>entier</uf-pf>",
             "hw-search": "adye",
@@ -943,6 +953,16 @@
         },
         {
             "def": {
+                "def": "Father."
+            },
+            "def-search": "father",
+            "etym": "<uf-pf>papa</uf-pf>",
+            "hw-search": "babh",
+            "pos": "n.",
+            "word": "ḅabh"
+        },
+        {
+            "def": {
                 "def": "To beat, strike, hit (+<uf-s>acc</uf-s> sbd./sth.)."
             },
             "def-search": " beat hit strike to",
@@ -1155,6 +1175,16 @@
             "hw-search": "belbec",
             "pos": "n.",
             "word": "ḅelbec"
+        },
+        {
+            "def": {
+                "def": "<em>(informal)</em> Father, dad."
+            },
+            "def-search": "dad father",
+            "etym": "<uf-pf>père</uf-pf>",
+            "hw-search": "ber",
+            "pos": "n.",
+            "word": "ḅér"
         },
         {
             "def": {
@@ -3989,6 +4019,26 @@
         },
         {
             "def": {
+                "def": "Son."
+            },
+            "def-search": "son",
+            "etym": "<uf-pf>fils</uf-pf>",
+            "hw-search": "fis",
+            "pos": "n.",
+            "word": "fis"
+        },
+        {
+            "def": {
+                "def": "Daughter."
+            },
+            "def-search": "daughter",
+            "etym": "<uf-pf>fille</uf-pf>",
+            "hw-search": "fiy",
+            "pos": "n.",
+            "word": "fíy’"
+        },
+        {
+            "def": {
                 "def": "To inform (+<uf-s>acc</uf-s> sbd.) (+<uf-s>aci</uf-s> of sth.)."
             },
             "def-search": "inform of sbd sth to",
@@ -4407,6 +4457,16 @@
         },
         {
             "def": {
+                "def": "<em>(Ancient Rome, military)</em> Legion."
+            },
+            "def-search": "legion",
+            "etym": "<uf-pf>légion</uf-pf>",
+            "hw-search": "lejyau",
+            "pos": "n.",
+            "word": "lejy’aû"
+        },
+        {
+            "def": {
                 "def": "To be evident, obvious, frank, clear."
             },
             "def-search": "be clear evident frank obvious to",
@@ -4557,7 +4617,7 @@
                 "def": "To be theirs."
             },
             "def-search": "be theirs to",
-            "etym": "from <uf-pf>leur</uf-pf>; the ‘ḍ’ was added in analogy with <uf-w>naúḍ</uf-w> and <uf-w>b’hauḍ</uf-w>",
+            "etym": "from <uf-pf>leur</uf-pf>; the <uf-w>ḍ</uf-w> was added in analogy with <uf-w>naúḍ</uf-w> and <uf-w>b’hauḍ</uf-w>",
             "forms": "<uf-s>fut</uf-s> lýrḍre, <uf-s>subj</uf-s> lýrs",
             "hw-search": "lyrd",
             "pos": "v.",
@@ -5343,6 +5403,16 @@
             "hw-search": "rathe",
             "pos": "particle",
             "word": "rát’hẹ"
+        },
+        {
+            "def": {
+                "def": "Rome."
+            },
+            "def-search": "rome",
+            "etym": "<uf-pf>Rome</uf-pf>",
+            "hw-search": "rau",
+            "pos": "n",
+            "word": "Raû"
         },
         {
             "def": {
@@ -6777,6 +6847,16 @@
         },
         {
             "def": {
+                "def": "Caesar."
+            },
+            "def-search": "caesar",
+            "etym": "<uf-pf>César</uf-pf>",
+            "hw-search": "sehar",
+            "pos": "n.",
+            "word": "Sehár"
+        },
+        {
+            "def": {
                 "def": "To quarrel, argue, fight about (+<uf-s>part</uf-s>)."
             },
             "def-search": "about argue fight quarrel to",
@@ -7603,6 +7683,16 @@
                 }
             ],
             "word": "v́ár"
+        },
+        {
+            "def": {
+                "def": "To march, walk."
+            },
+            "def-search": "march to walk",
+            "etym": "<uf-pf>marcher</uf-pf>",
+            "hw-search": "varc",
+            "pos": "v.",
+            "word": "várc"
         },
         {
             "def": {
