@@ -193,7 +193,10 @@ rêd’hes|particle|\pf{bien sûr}|Of course, certainly, surely
 râhẹ|n.|français|Human, person
 fẹhab|v.|faisable|To be possible, feasible|\s{fut} fẹhabre, \s{subj} fẹhas
 sauz|n.|chose|Thing, object
-rrá|v.|croire|Believe (something or someone)|\s{fut} rrẹ́, \s{subj} rrás
+rrá|v.|croire|+\s{part} To believe, think that
+    \comment For ‘thinking’ in the sense of ‘thinking about something’ rather than ‘thinking
+        that something is the case’, see \w{c’hóhid’hẹ́}.
+    |\s{fut} rrẹ́, \s{subj} rrás
 ḅauhib|v.|impossible|To be impossible, unfeasible|\s{fut} ḅauhibre, \s{subj} ḅauh\-ibes
 C’hebèc’h|n.|Québec|The Promised Land
 ḅaú|n.|pont|Bridge
@@ -319,8 +322,11 @@ vás|n. \s{pl def}|masses|The masses, the people
 nór|v.|back-formation from *\w{nórâ} from \pf{ignorant}|To be ignorant,
     unaware, oblivious
 séy’ẹ́|v.|essayer|+\s{part} \textit{or} \s{inf} To try, attempt|\s{fut} séy’ẹ́rẹ́, \s{subj} séy’ẹ́s
-c’hóhid’hẹ́|v.|considérer|\\ +\s{part} To consider, think ab\-out, ponder. \\ +\s{acc} To think
-    through|\s{fut} c’hóhid’hẹ́rẹ́, \s{subj} c’hóhid’hés
+c’hóhid’hẹ́|v.|considérer|
+    \\ +\s{part} To consider, think ab\-out, ponder.
+        \comment For the sense of ‘thinking that something is the case’, see \w{rrá} instead.
+    \\ +\s{acc} To think through
+    |\s{fut} c’hóhid’hẹ́rẹ́, \s{subj} c’hóhid’hés
 nát’hýr|n.|nature|\\\textit{(chiefly)} \s{indef} Nature, the natural world. \\ \s{def} The way
     something is
 rê|v.|trine|To be composed of three parts or people; triune|\s{fut} rêrẹ́, \s{subj} rês
@@ -461,7 +467,9 @@ ub’h|v.|ouvrir|To open|\s{fut} uv́, \s{subj} ub’hs
 ḅaj|n.|page|Page
 ráb’háy’|v.|\pf{travailler}, \s{fut} and \s{subj} from \pf{bos\-ser}|To work|\s{fut} bohér, \s{subj} bos
 ýr|v.|heurter|To hit, strike|\s{fut} ýrḍ, \s{subj} ýrs
-rúb’h|v.|trouver|To find, discover
+rúb’h|v.|trouver|+\s{acc/part} To find, discover \comment The \s{acc} is generally preferred, but in cases where it is either
+    questionable who discovered something first, or whether something is ‘discovered’ as opposed to ‘invented’, the \s{part}
+    may be used instead.
 b’hid|v.|vide|To be empty
 rêdrsýrśẹ|v.|\pf{prendre sur soi}|
   \\ +\s{aci} To take upon onself to do sth.
@@ -623,12 +631,14 @@ rád’hyc’hsy’ô|n.|traduction|Translation
 
 révôt’hẹ|v.|remonter|To return, come back
 Ráb’h|n.|from earlier \w{Réáb’h}; presumably the name of some celebrity or local deity|
-    \\ \textit{indecl.} \s{def sg} \textit{always} \s{nom} \textit{or} \s{voc} Ráb’h. \comment Main god of the
+    \\ \textit{indecl.} \s{def sg} \textit{always} \s{nom/voc} Ráb’h. \comment Main god of the
         ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps \w{RÁB’H}.
         \ex \s{Snet’h}, \s{i.17}: \w{au lebálá daú RÁB’H} ‘and thus spake Ráb’h’
     \\ \w{Ráb’h sénýr} \s{def sg} Lord Ráb’h. \comment Used for \senseref{1} in all other cases; as with all names, only
         \w{sénýr} is inflected. Old-fashioned often \w{RÁB’H Sénýr}
         \ex \s{Snet’h}, \s{8.1}: \w{au labraúc RÁB’H naút B’héhénýr} ‘and they came to our Lord Ráb’h’
+    \\ \textit{(archaic) interj.} \w{Ráb’h hénýr} Oh god, oh my god \comment Old-fashioned form of \w{ráb’hénýr}. The
+        \s{voc} Ráb’h without \w{hénýr} is never used on its own other than to address the deity directly.
     \\ \textit{(rarely)} \w{réáb’h} The main god of another culture. \comment Only attested figuratively. Not
         capitalised in this sense, and declined like a regular word.
         \ex \s{Snet’h}, \s{ii.3}: \w{ledéraújá’z derévôt’he  láréáb’h} ‘their god demanded they return’
@@ -663,7 +673,7 @@ ré|v.|\pf{créer}, \s{subj} from \pf{fabriquer}|To create, make (\s{+acc} sth.)
     \s{fut} rẹ́éré, \s{subj} faríc’hs
 réaû|n.|from \w{ré}|Creation, making
 sufb’h|n.|\pf{souffle} + \pf{vie}|Life
-c’haúnéhás|.n|connaissance|Knowledge
+c’haúnéhás|n.|connaissance|Knowledge
 ausc’hýr|v.|obscur|To be dark
 rráḍraúc|n.|\pf{droit} + \pf{gauche}|Side
 réb’hní|v.|prévenir|
@@ -735,7 +745,7 @@ Aý’èc’hsád|n.|Alexandre|\textit{Male given name}
 c’haúb’héc’h|v.|convaincre|To persuade
 fihas|v.|efficace|To be efficient
 Zauḅ|n.|Ésope|Aesop
-c’hasḅesy’ál|n.|cas spécial|Exception
+c’hasḅesy’ál|n.|\pf{cas spécial}|Exception
 aír|v.|hair|To hate, abhor, detest, loathe, despise (+\s{acc} sbd./sth.)
 c’hèl|det. postpos.|quelques|Some, a few, a couple of
 válfèz|v.|malfaisant|To be malfeasant, evil, malevolent|\s{fut} válfèź, \s{subj} válfès
@@ -920,9 +930,27 @@ lejy’aû|n.|légion|\textit{(Ancient Rome, military)} Legion
 advnés|v.|admonester|To admonish, reprimand, scold
 fis|n.|fils|Son
 fíy’|n.|fille|Daughter
-
-
-
+cyc̣aut’h|n.|chuchoter|Secret
+at’hád|v.|attendre|
+    \\+\s{acc} To wait for, await
+    \\+\s{part} To expect
+dib’hat’hiv|n.|from earlier \w{dib’hbat’hiv}|
+    Building, edifice.
+        \comment Shortened to just \w{dib’hat’h’} before ordinals
+        \ex \w{dib’hat’h’ révy’ẹ́} ‘Building №1’
+dib’hbat’hiv|n.|from \pf{édifice} + \pf{bâtiment}|\textit{(obsolete)} Building, edifice.
+cás|n.|chance|Luck
+nír|v.|venir|To come
+dêr|adj.|dingue|(\textit{informal}) Crazy, mad, wild, nuts \comment The ‘ê’ may be repeated, e.g. \w{dêêêr} ‘craaazy’.
+naûb|n.|nombre|
+    \\ Amount, number
+    \\ \w{naûb vú} + \s{gen indef} So many, such a great amount of
+abhár|n.|apartement|House
+áḍrébh|n.|entrepôt|Warehouse, depot
+aut’heldývér|n.|\pf{hôtel (de ville) + du maire}|Town hall
+auu|interj.|\textit{onomatopoeic}|Wow, whoa, ooh \comment Pronounced as \w{au}, but lengthened. Written with as many
+    ‘u’s as necessary, e.g. \w{auuuuu}, but always at least two to differentiate it from \w{au}.
+ráb’hén(ýr)|interj.|contraction of earlier \w{Ráb’h hénýr}|Oh god, oh my god
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
@@ -952,6 +980,7 @@ p’h- > bh-
 t- > ḍ-
 Réáb’h > Ráb’h
 ábhírâ > ábhíré
+dib’hat’h’ > dib’hat’hiv
 
 ## Grammatical forms are only in the online dictionary because if you have
 ## the grammar you can just search it instead. We only include the most common

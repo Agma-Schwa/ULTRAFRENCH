@@ -89,6 +89,16 @@
         },
         {
             "def": {
+                "def": "House."
+            },
+            "def-search": "house",
+            "etym": "<uf-pf>apartement</uf-pf>",
+            "hw-search": "abhar",
+            "pos": "n.",
+            "word": "abhár"
+        },
+        {
+            "def": {
                 "def": "Aviation."
             },
             "def-search": "aviation",
@@ -354,6 +364,16 @@
         },
         {
             "def": {
+                "def": "Warehouse, depot."
+            },
+            "def-search": "depot warehouse",
+            "etym": "<uf-pf>entrepôt</uf-pf>",
+            "hw-search": "adrebh",
+            "pos": "n.",
+            "word": "áḍrébh"
+        },
+        {
+            "def": {
                 "def": "Android."
             },
             "def-search": "android",
@@ -583,6 +603,21 @@
             "word": "asý’ýâ"
         },
         {
+            "def-search": "await expect for to wait",
+            "etym": "<uf-pf>attendre</uf-pf>",
+            "hw-search": "athad",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<uf-s>acc</uf-s> To wait for, await."
+                },
+                {
+                    "def": "+<uf-s>part</uf-s> To expect."
+                }
+            ],
+            "word": "at’hád"
+        },
+        {
             "def": {
                 "def": "To hear, perceive (+<uf-s>part</uf-s> sbd./sth.)."
             },
@@ -780,6 +815,27 @@
             "hw-search": "auschyr",
             "pos": "v.",
             "word": "ausc’hýr"
+        },
+        {
+            "def": {
+                "def": "Town hall."
+            },
+            "def-search": "hall town",
+            "etym": "<uf-pf>hôtel (de ville) + du maire</uf-pf>",
+            "hw-search": "autheldyver",
+            "pos": "n.",
+            "word": "aut’heldývér"
+        },
+        {
+            "def": {
+                "comment": "<p>Pronounced as <uf-w>au</uf-w>, but lengthened. Written with as many ‘u’s as necessary, e.g. <uf-w>auuuuu</uf-w>, but always at least two to differentiate it from <uf-w>au</uf-w>.</p>",
+                "def": "Wow, whoa, ooh."
+            },
+            "def-search": "ooh whoa wow",
+            "etym": "<em>onomatopoeic</em>",
+            "hw-search": "auu",
+            "pos": "interj.",
+            "word": "auu"
         },
         {
             "def": {
@@ -1683,6 +1739,16 @@
         },
         {
             "def": {
+                "def": "Luck."
+            },
+            "def-search": "luck",
+            "etym": "<uf-pf>chance</uf-pf>",
+            "hw-search": "cas",
+            "pos": "n.",
+            "word": "cás"
+        },
+        {
+            "def": {
                 "comment": "<p>For weather, <uf-w>cẹaû</uf-w> is used instead; see also <uf-w>b’hér</uf-w>.</p>",
                 "def": "To be hot."
             },
@@ -2022,7 +2088,7 @@
                 "def": "Exception."
             },
             "def-search": "exception",
-            "etym": "cas spécial",
+            "etym": "<uf-pf>cas spécial</uf-pf>",
             "hw-search": "chasbesyal",
             "pos": "n.",
             "word": "c’hasḅesy’ál"
@@ -2229,7 +2295,7 @@
             "def-search": "knowledge",
             "etym": "<uf-pf>connaissance</uf-pf>",
             "hw-search": "chaunehas",
-            "pos": ".n",
+            "pos": "n.",
             "word": "c’haúnéhás"
         },
         {
@@ -2446,6 +2512,7 @@
             "pos": "v.",
             "senses": [
                 {
+                    "comment": "<p>For the sense of ‘thinking that something is the case’, see <uf-w>rrá</uf-w> instead.</p>",
                     "def": "+<uf-s>part</uf-s> To consider, think ab&shy;out, ponder."
                 },
                 {
@@ -2560,6 +2627,16 @@
             "hw-search": "chyr",
             "pos": "n.",
             "word": "c’hýr"
+        },
+        {
+            "def": {
+                "def": "Secret."
+            },
+            "def-search": "secret",
+            "etym": "<uf-pf>chuchoter</uf-pf>",
+            "hw-search": "cycauth",
+            "pos": "n.",
+            "word": "cyc̣aut’h"
         },
         {
             "def": {
@@ -2956,6 +3033,17 @@
         },
         {
             "def": {
+                "comment": "<p>The ‘ê’ may be repeated, e.g. <uf-w>dêêêr</uf-w> ‘craaazy’.</p>",
+                "def": "(<em>informal</em>) Crazy, mad, wild, nuts."
+            },
+            "def-search": "crazy mad nuts wild",
+            "etym": "<uf-pf>dingue</uf-pf>",
+            "hw-search": "der",
+            "pos": "adj.",
+            "word": "dêr"
+        },
+        {
+            "def": {
                 "def": "To silence, shut up."
             },
             "def-search": "shut silence to up",
@@ -3093,6 +3181,30 @@
             "hw-search": "deyebhathich",
             "pos": "v.",
             "word": "ḍeý’ebhat’hic’h"
+        },
+        {
+            "def": {
+                "comment": "<p>Shortened to just <uf-w>dib’hat’h’</uf-w> before ordinals.</p>",
+                "def": "Building, edifice.",
+                "examples": [
+                    "<uf-w>dib’hat’h’ révy’ẹ́</uf-w> ‘Building №1’."
+                ]
+            },
+            "def-search": "building edifice",
+            "etym": "from earlier <uf-w>dib’hbat’hiv</uf-w>",
+            "hw-search": "dibhathiv",
+            "pos": "n.",
+            "word": "dib’hat’hiv"
+        },
+        {
+            "def": {
+                "def": "<em>(obsolete)</em> Building, edifice."
+            },
+            "def-search": "building edifice",
+            "etym": "from <uf-pf>édifice</uf-pf> + <uf-pf>bâtiment</uf-pf>",
+            "hw-search": "dibhbathiv",
+            "pos": "n.",
+            "word": "dib’hbat’hiv"
         },
         {
             "def": {
@@ -4714,6 +4826,21 @@
             "word": "nát’hýr"
         },
         {
+            "def-search": "a amount great many number of so such",
+            "etym": "<uf-pf>nombre</uf-pf>",
+            "hw-search": "naub",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Amount, number."
+                },
+                {
+                    "def": "<uf-w>naûb vú</uf-w> + <uf-s>gen indef</uf-s> So many, such a great amount of."
+                }
+            ],
+            "word": "naûb"
+        },
+        {
             "def": {
                 "def": "To be ours."
             },
@@ -4801,6 +4928,16 @@
                 }
             ],
             "word": "níb’hẹ"
+        },
+        {
+            "def": {
+                "def": "To come."
+            },
+            "def-search": "come to",
+            "etym": "<uf-pf>venir</uf-pf>",
+            "hw-search": "nir",
+            "pos": "v.",
+            "word": "nír"
         },
         {
             "def": {
@@ -5036,14 +5173,14 @@
             "word": "rá₅"
         },
         {
-            "def-search": "another culture god lord main of rabh the",
+            "def-search": "another culture god lord main my of oh rabh the",
             "etym": "from earlier <uf-w>Réáb’h</uf-w>; presumably the name of some celebrity or local deity",
             "hw-search": "rabh",
             "pos": "n.",
             "senses": [
                 {
                     "comment": "<p>Main god of the ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps <uf-w>RÁB’H</uf-w>.</p>",
-                    "def": "<em>indecl.</em> <uf-s>def sg</uf-s> <em>always</em> <uf-s>nom</uf-s> <em>or</em> <uf-s>voc</uf-s> Ráb’h.",
+                    "def": "<em>indecl.</em> <uf-s>def sg</uf-s> <em>always</em> <uf-s>nom/voc</uf-s> Ráb’h.",
                     "examples": [
                         "<uf-s>Snet’h</uf-s>, <uf-s>i.17</uf-s>: <uf-w>au lebálá daú RÁB’H</uf-w> ‘and thus spake Ráb’h’."
                     ]
@@ -5054,6 +5191,10 @@
                     "examples": [
                         "<uf-s>Snet’h</uf-s>, <uf-s>8.1</uf-s>: <uf-w>au labraúc RÁB’H naút B’héhénýr</uf-w> ‘and they came to our Lord Ráb’h’."
                     ]
+                },
+                {
+                    "comment": "<p>Old-fashioned form of <uf-w>ráb’hénýr</uf-w>. The <uf-s>voc</uf-s> Ráb’h without <uf-w>hénýr</uf-w> is never used on its own other than to address the deity directly.</p>",
+                    "def": "<em>(archaic) interj.</em> <uf-w>Ráb’h hénýr</uf-w> Oh god, oh my god."
                 },
                 {
                     "comment": "<p>Only attested figuratively. Not capitalised in this sense, and declined like a regular word.</p>",
@@ -5085,6 +5226,16 @@
             "hw-search": "rabhay",
             "pos": "v.",
             "word": "ráb’háy’"
+        },
+        {
+            "def": {
+                "def": "Oh god, oh my god."
+            },
+            "def-search": "god my oh",
+            "etym": "contraction of earlier <uf-w>Ráb’h hénýr</uf-w>",
+            "hw-search": "rabhenyr",
+            "pos": "interj.",
+            "word": "ráb’hén(ýr)"
         },
         {
             "def": {
@@ -6157,9 +6308,10 @@
         },
         {
             "def": {
-                "def": "Believe (something or someone)."
+                "comment": "<p>For ‘thinking’ in the sense of ‘thinking about something’ rather than ‘thinking that something is the case’, see <uf-w>c’hóhid’hẹ́</uf-w>.</p>",
+                "def": "+<uf-s>part</uf-s> To believe, think that."
             },
-            "def-search": "believe or someone something",
+            "def-search": "believe that think to",
             "etym": "<uf-pf>croire</uf-pf>",
             "forms": "<uf-s>fut</uf-s> rrẹ́, <uf-s>subj</uf-s> rrás",
             "hw-search": "rra",
@@ -6301,7 +6453,8 @@
         },
         {
             "def": {
-                "def": "To find, discover."
+                "comment": "<p>The <uf-s>acc</uf-s> is generally preferred, but in cases where it is either questionable who discovered something first, or whether something is ‘discovered’ as opposed to ‘invented’, the <uf-s>part</uf-s> may be used instead.</p>",
+                "def": "+<uf-s>acc/part</uf-s> To find, discover."
             },
             "def-search": "discover find to",
             "etym": "<uf-pf>trouver</uf-pf>",
@@ -8784,6 +8937,11 @@
             "from": "ḍet’h",
             "from-search": "deth",
             "to": "eḍ"
+        },
+        {
+            "from": "dib’hat’h’",
+            "from-search": "dibhath",
+            "to": "dib’hat’hiv"
         },
         {
             "from": "ḍy’â",
