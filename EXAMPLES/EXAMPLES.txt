@@ -250,17 +250,19 @@ COMIC
 PAGE 1
 
 So many secrets, just waiting to be uncovered.
-Naûb vú sýcycaut’h, aúrâlýdesle jys at’hádâ.
-naûb vú sý-c̣yc̣aut’h, aúrâlýdeslẹ jys at’hádâ
+Sýcycaut’h naûvú, aúrâlýdesle jys at’hádâ.
+sý-c̣yc̣aut’h naûb vú, aúrâlýdeslẹ jys at’hádâ
 ‘Such a great number of secrets, asking only to be uncovered’
 
 This should be Building 3... I think.
-Dib’hat’h’ rrázy’ê sehssér ... jrrá
-dib’hat’h’ rrázy’ê seh-ss-ér ... jrrá (3n.cond.i of to be)
+Dib’hat’h’ rrázy’ê sehssér seh ... jrrá
+dib’hat’h’ rrázy’ê seh-ss-ér (3n.cond.i of ‘to be’) sẹh ... jrrá
+(the ‘sẹh’ is placed at the end because ‘seh sehssér’ is a bit awkward)
 
 So *that*
 Lásý’e dèl
 lá-sý’ẹ ḍèl
+(UF uses ‘dél’ rather than capitalising the word here as that is how you do emphasis properly)
 
 is our best shot.
 naúd cás révéy’ýrâ se.
@@ -268,28 +270,92 @@ naúḍ cás révéy’ýrâ se.
 ‘is our best luck’
 
 *Djaz*! I found books and I cannot read! Come here!
-D’hjaz! jrúb’hé sliv́uhé, jub’hrá’sý’ýâ vé delí! C’henír!
+D’hjaz ! jrúb’hé sliv́uhé ; jub’hrá’sý’ýâ vé delí ! c’henír !
 d’h\jaz! j-rúb’h-é s-liv́uhé j-ub’hrá ’sý’ýâ vé dẹlí! c’he-nír!
 ‘Djaz! I found books but I can’t read! Come!’
+
+(Vocative + ‘!’ already more or less communicates yelling, so
+we don’t need to write ‘D’hjaz’ in all-caps here. Also, UF doesn’t
+capitalise the letter after the ‘!’ in many cases.)
 
 Wow, this is wild.
 Auuuu, laseh dêêr se.
 Auu, la-sẹh dêr se.
 
 So much knowledge about the-
-Naûb vú sýc’haúnéhá—
-naûb vú sý-c’haúnéhás
+Sýc’haúnéhás naûv—
+sý-c’haúnéhás naûb vú
 
 *Oh god what is that!?*
-Ráb’hén! Sý’e a c’hesse!?
-
-ráb’hén! sý’ẹ a c’hesse?
-
+RÁB’HÉN ! SÝ’E A C’HESSE ‽
+ráb’hén sý’ẹ a c’hesse
 
 
+PAGE 2
+
+... Hi ... What’s your name?
+Say’e ! denvéc’h’s ?
+say’ẹ [a] ḍẹ-nvẹ́ -c’h’s
 
 
+That light...
+Sý’a lývy’ér ...
+sý’ẹ lývy’ér
+(‘sý’a’ is an old form of ‘sý’ẹ’)
 
+
+‘That light’, Hmm, archaic. Are you Pakoyan?
+« sý’a » ... aúú, narc’hais. Bac’hoy’á c’hes ?
+sý’a aúú, n-arc’hais [ḍẹ]ḅac’hoy’á (*ḅac’hoy’á* ‘to be Pakoyan’) c’hes?
+
+(In simple yes-no questions where the addressee is obvious, both person marking
+of adjective verbs as well as the copula can be dropped; only the question particle
+is required, e.g. ‘ḅac’hoy’á c’hes’ instead of ‘ḍẹḅac’hoy’á c’hes’
+
+
+Where did you get that *light*?
+Dwálýhes ilývy’ér tèl taudéác’h’s ?
+dwá-ḷýhes i-lývy’ér ḍèl ḍ-auḍé-á c’hes
+(instead of repeating the ‘that’, ‘light’ is emphasised using dèl)
+
+
+Oh, this light? I got it back in town...
+Aa, seh ilývy’ér ? jaudê dwáb’hil ...
+aa sẹh ilývy’ér j-auḍ\ê dwá-b’hil
+(Despite not being the object of a verb, ‘this light’ is still in the accusative
+here, mirroring the use in the accusative in the question)
+
+
+It’s a full moon, you know. I don’t know why you’d want to sit there reading in the dark...
+Dyraúvá, rát’he, léâ syb’hér. Jsav́ásý’ýâ c’hrá b’hásbéréśessa desyaśár dwédénéb líâ ...
+dy-raúvá, rát’hẹ, lé\â sy-b’hér j-sav́á sý’ýâ c’hrá b’há-sḅérẹ́-śe-ss\a dẹ-sy-aśár dwé-ḍénéb lí-â
+(‘you would want’ in an indirect question ends up being a subjunctive conditional I)
+
+
+We’re archaeologists, by the way; maybe you could help us out?
+Bhíy’ýrt’haúb ’só aub’hèd ; b’hásehúrreśessavé c’hes být’hèd ?
+bh\íy’ýrt’haúb aúsó aub’hèḍ b’há-sẹhúrre-śe-ssa-vé c’hes ḅýt’hèḍ
+(another subjunctive conditional I for ‘you could help’)
+
+
+Wait, no, don’t open that!
+C’hat’hád ! sá tesyub’hs !
+c’h-at’hád sá ḍẹ-sy-ub’hs
+
+
+So buddy, how long have you been inhabiting this locale?
+Véc’h se, c’haúy’ê sýná c’hes dauhybh seh dwá-ádrrá ?
+véc’h sẹ, c’haúy’ê sýná c’hes d-auhybh sẹh dwá-ádrrá
+
+
+Longer than you’ve been alive
+Tau ánéhás lelaút’há ...
+ḍau á-néhás lẹlaút’há.
+
+
+Now, the light.
+Lývy’ér se.
+lývy’ér sẹ
 
 
 TODO: ‘Anyone can cook’ from Ratatouille (request by Agma)

@@ -205,7 +205,10 @@ fér|v.|faire|\\ To do, make, build, construct, erect \\ \textit{Expletive; see
     §~\ref{subsubsec:personal-pronouns}}|\s{fut} fẹ́, \s{subj} fés
 sav́á|v.|savoir|To know (+\s{part/acc} sth.) \comment The case depends on the depth of the speaker’s
     understanding: the \s{acc} indicates ‘complete’ or expert-level understanding, the \s{part} only
-    some understanding|\s{fut} saúr, \s{subj} sac
+    some understanding. In questions, the \s{acc} is rather harsh (similar to ‘do you have even the
+    slightest idea ...’) with the \s{part} preferred if a more neutral tone is intended. In negated
+    statements, the \s{acc} indicates a complete lack of understanding (‘I have no idea whatsoever ...’),
+    whereas the \s{part} is again neutral.|\s{fut} saúr, \s{subj} sac
 ré|v.|vrai|To be true, correct, right|\s{fut} rẹ́, \s{subj} rés
 aû|particle|non|Not-. \comment Used to negate nouns, adjectives, and adverbs; see §~\ref{subsubsec:noun-negation}
 fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} faure, \s{subj} faus
@@ -237,7 +240,7 @@ swi|det.|celui|The one, that one, this one
 sẹh|det.|ceci|+\s{def} \textit{noun} This, these. \comment Precedes and is attached to nouns
 sý’ẹ|det.|cela|+\s{def} \textit{noun} That, those. \comment Precedes and is attached to nouns; often
     \w{sý’} before vowels, with one apostrophe, not two
-lývy’ér|n.|lumière|Light
+lývy’ér|n.|lumière|\\ Light, visible electromagnetic radiation \\ A source of light, such as a lamp or torch
 saúr|n.|sorte|\\ Kind, sort, type, form \\ \s{def + gen} (some) kind(s) of
 lec’hḍraúvnẹ́t’hic’h|v.|électromagnétique|To be electromagnetic|\s{fut} lec’hḍraúvnẹ́t’hic’hre,
     \s{subj} lec’hḍraúvnẹ́t’hic’hes
@@ -622,7 +625,7 @@ raúvá|n.|fromage|Moon
 y’úr|n.|jour|\\ Day \\\w{órdy’úr ád’y’úr} Day after day. \comment Contracted \s{ela} and \s{ill}
 y’í|n.|nuit|Night
 vúb’hvâ|n.|movement|Movement, motion
-dévýr|v.|demeurer|\\ To remain, stay. \\ To live, dwell (+\s{iness} somewhere)
+dévýr|v.|demeurer|\\ To remain, stay. \\ +\s{iness} To live in, dwell
 ḅét’hýr|v.|peinture|To paint
 rál|n.|toile|Canvas
 vérr|n.|mer|Sea, ocean
@@ -799,7 +802,7 @@ faú|adv.|fort|Very, right, really. \comment Postpositive intensifier placed aft
     in the comparative or superlative degrees.
 rés|n.|reste|Rest, remainder
 dẹb’hní|v.|devenir|To become, turn into (+\s{trans} sth./sbd.). \comment The subject is in the \s{abs} case
-sẹ|particle|ainsi|So, thus, as a result
+sẹ|particle|ainsi|So, thus, now, well then, as a result
 véc|n.|mèche|\\ A strand of hair \\\s{pl} Hair
 ḍaúb’h|v. intr.|tomber|To fall, drop
 lánẹ́|v.|flâner|To meander
@@ -868,6 +871,10 @@ nvẹ́|v. intr.|nommer|\textit{(refl. or intr.)} To be called, name oneself
         \comment Usually placed after the name. This word replaced \w{aḅ} in the reflexive sense in Early
             Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.
         \ex \w{Aý’èc’hsád j(v)nvé} ‘My name is Aý’èc’hsád’
+        \ex \w{(A) ḍẹnvẹ́c’h’s ?} ’What’s your name?’, lit. ‘What are you called?’. \textit{While \w{-c’h’s} for
+            \w{c’hes} is archaic nowadays, this is a set phrase that preserves this form. Because this renders this
+            phrase rather recognisable, the \w{a} is often dropped in informal speech. Note also that this is
+            a passive, with the plural being \w{A b’hýnvẹ́ c’hes}.}
 ád’húy’|n.|andouille|Fool, buffoon, idiot.
 áb’hé|adv.|enfin|Finally, at last, at the end.
 raúc’hlá|v.|proclamer|+\s{acc/aci} To proclaim, announce, declare
@@ -902,10 +909,9 @@ ḷẹ|n. pl.|pluie|Rain
     \ex \w{dýḷẹ syb’hér} ‘it rains’ (lit. ‘rains are being poured’).
 b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
     \\+\s{part} \textit{(archaic)} To pour out
-    \\\s{pass} + \s{part/acc} To be in a state or condition, to fall \textit{(of precipitation)}
+    \\\s{pass} + \s{part/acc} \textit{(of a state or condition)} to obtain; \textit{(of precipitation)} to fall
         \comment Exclusively used in the passive of the weather or a situation or state of affairs, with the noun
-            for the condition or preciptation as the ‘object’ and no subject, e.g. \w{dýḷẹ syb’hér} ‘it rains’,
-            \w{dŷncẹaû syb’hér} ‘it is hot’. \par
+            for the condition or preciptation as the ‘object’ and no subject (see examples below). \par
             In Middle UF, \w{fér} with a noun in
             the \s{abs} was often used for this purpose, hence also the irregular \s{fut} and \s{subj}, e.g.
             *\w{sfér cẹaû} ‘It is hot’; similarly, weather conditions
@@ -916,6 +922,9 @@ b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
             poured’). The \s{acc} can be used instead as an intensifier, e.g. \w{sc̣ẹaû syb’hér} ‘it is scorching hot’. \par
             With precipitation, the \s{pl} is most common in modern times, e.g. \w{dýḷẹ syb’hér} instead
             of older *\w{dŷnḷẹ syb’hér}. The old weather verbs, e.g. *\w{lýv́á}, are altogether obsolete.
+        \ex \w{dýḷẹ syb’hér} ‘it rains’
+        \ex \w{dŷncẹaû syb’hér} ‘it is hot’
+        \ex \w{dyraúvá léâ syb’hér} ‘it’s a full moon’
         |\s{fut} b’hẹ́, \s{subj} b’hés
 ḅlyc̣|v. tr.|éplucher|+\s{circabl} To peel \comment This verb is construed from the peel’s point of view, i.e.
     the peel is removed ‘from around’ something, hence the use of the \s{circabl} for the object.
@@ -944,13 +953,47 @@ nír|v.|venir|To come
 dêr|adj.|dingue|(\textit{informal}) Crazy, mad, wild, nuts \comment The ‘ê’ may be repeated, e.g. \w{dêêêr} ‘craaazy’.
 naûb|n.|nombre|
     \\ Amount, number
-    \\ \w{naûb vú} + \s{gen indef} So many, such a great amount of
+    \\ \w{naûb vú} + \s{gen indef} So many, so much, such a great amount of
+        \comment In informal speech often contracted to \w{naûvú}
 abhár|n.|apartement|House
 áḍrébh|n.|entrepôt|Warehouse, depot
 aut’heldývér|n.|\pf{hôtel (de ville) + du maire}|Town hall
 auu|interj.|\textit{onomatopoeic}|Wow, whoa, ooh \comment Pronounced as \w{au}, but lengthened. Written with as many
     ‘u’s as necessary, e.g. \w{auuuuu}, but always at least two to differentiate it from \w{au}.
 ráb’hén(ýr)|interj.|contraction of earlier \w{Ráb’h hénýr}|Oh god, oh my god
+say’ẹ|interj.|salut|\textit{(informal)} Hi, hello
+sý’a|pron.||\textit{Archaic form of \w{sý’ẹ}}
+arc’hais|n.|archaïsme|Archaism
+aúú|interj.|\textit{onomatopoeic}|Hmm \comment Written with as many ‘ú’s as necessary, e.g. \w{aúúúú}, but usually at
+    least two, paralleling \w{auu}.
+aa|interj.|\textit{onomatopoeic}|Ah, oh
+b’hil|n.|ville|Town, city
+lé|v.|plein|\\ To be full
+ḅúrc’hrá|pron.|pourquoi|\textit{(obsolete)} Why
+c’hrá|pron.|from earlier \w{ḅúrc’hrá}|Why
+aśár|v.|asseoir|\\ +\s{acc} To seat, sit sbd. down \\\textit{refl.} To sit, be seated
+ḅíy’ýrt’haúb|n.|\pf{pilleur de tombe}|Archaeologist
+aub’hèḍ|adv.|\pf{au fait}|By the way, btw, incidentally
+ḅýt’hèḍ|adv.|\pf{peut-être}|+\s{subj} Perhaps, maybe
+véc’h|n.|mec|\textit{(informal)} Dude, mate, guy, chap, bloke, bud, buddy
+c’haúy’ê|adv.|combien|
+    \\ +\s{gen} How much, how many
+    \\ \w{c’haúy’ê sýná} How long, for how long, since how long ago \comment Literally ‘how much time’. This is generally used with
+        either the present or future tense. The present tense is used when the focus is how long ago an ongoing event started in the
+        past, and the future tense when discussing how far it will extend into the future.
+aúłau|n.|horloge|Time \comment In the SD, this word has replaced earlier \w{ḍá} entirely except in set phrases.
+ḍá|n.|temps|\textit{(obsolete or ND)} Time \comment In the ND, this word never merged with \w{dá} ‘tooth’ and thus
+    remains in common use until today.
+auhybh|v.|occuper|+\s{iness} To inhabit, occupy
+ádrrá|n.|endroit|Location, place, locale
+laút’há|adv.|longtemps|
+    \\ Since long ago, for a long time, over a long period \comment When describing ongoing processes that started a long time ago, this
+        is construed with the present tense instead of the present anterior.
+        \ex \w{laút’há ḍaléraû vy’í} ‘I have been a carpenter for a long time’, lit. ‘I am a carpenter for a long time’.
+    \\ \textit{(with comparative prefix)} Since long before, For longer, for a longer time
+        \ex \w{dau lẹlaút’há ḍaléraû vy’í} ‘I have been a carpenter much longer than you’.
+néhás|n.|naissance|Birth
+’só|abbr.||\textit{Informal, abbreviated form of \w{aúsó}, \s{1pl} of \w{eḍ}}
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
@@ -981,6 +1024,7 @@ t- > ḍ-
 Réáb’h > Ráb’h
 ábhírâ > ábhíré
 dib’hat’h’ > dib’hat’hiv
+naûvú > naûb vú
 
 ## Grammatical forms are only in the online dictionary because if you have
 ## the grammar you can just search it instead. We only include the most common

@@ -32,6 +32,16 @@
             "word": "á"
         },
         {
+            "def": {
+                "def": "Ah, oh."
+            },
+            "def-search": "ah oh",
+            "etym": "<em>onomatopoeic</em>",
+            "hw-search": "aa",
+            "pos": "interj.",
+            "word": "aa"
+        },
+        {
             "def-search": "a be call called give name nominate oneself to",
             "etym": "<uf-pf>appeler</uf-pf>",
             "hw-search": "ab",
@@ -384,6 +394,16 @@
         },
         {
             "def": {
+                "def": "Location, place, locale."
+            },
+            "def-search": "locale location place",
+            "etym": "<uf-pf>endroit</uf-pf>",
+            "hw-search": "adrra",
+            "pos": "n.",
+            "word": "ádrrá"
+        },
+        {
+            "def": {
                 "def": "To admonish, reprimand, scold."
             },
             "def-search": "admonish reprimand scold to",
@@ -532,6 +552,16 @@
         },
         {
             "def": {
+                "def": "Archaism."
+            },
+            "def-search": "archaism",
+            "etym": "<uf-pf>archaïsme</uf-pf>",
+            "hw-search": "archais",
+            "pos": "n.",
+            "word": "arc’hais"
+        },
+        {
+            "def": {
                 "def": "Particle."
             },
             "def-search": "particle",
@@ -579,6 +609,21 @@
             "hw-search": "aryy",
             "pos": "v.",
             "word": "ârýý’"
+        },
+        {
+            "def-search": "be down sbd seat seated sit to",
+            "etym": "<uf-pf>asseoir</uf-pf>",
+            "hw-search": "asar",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<uf-s>acc</uf-s> To seat, sit sbd. down."
+                },
+                {
+                    "def": "<em>refl.</em> To sit, be seated."
+                }
+            ],
+            "word": "aśár"
         },
         {
             "def": {
@@ -691,6 +736,16 @@
         },
         {
             "def": {
+                "def": "By the way, btw, incidentally."
+            },
+            "def-search": "btw by incidentally the way",
+            "etym": "<uf-pf>au fait</uf-pf>",
+            "hw-search": "aubhed",
+            "pos": "adv.",
+            "word": "aub’hèḍ"
+        },
+        {
+            "def": {
                 "def": "To obey."
             },
             "def-search": "obey to",
@@ -779,6 +834,16 @@
         },
         {
             "def": {
+                "def": "+<uf-s>iness</uf-s> To inhabit, occupy."
+            },
+            "def-search": "inhabit occupy to",
+            "etym": "<uf-pf>occuper</uf-pf>",
+            "hw-search": "auhybh",
+            "pos": "v.",
+            "word": "auhybh"
+        },
+        {
+            "def": {
                 "comment": "<p>See also <uf-w>júrdy’í</uf-w>.</p>",
                 "def": "<em>(archaic)</em> Today, nowadays."
             },
@@ -839,6 +904,17 @@
         },
         {
             "def": {
+                "comment": "<p>Written with as many ‘ú’s as necessary, e.g. <uf-w>aúúúú</uf-w>, but usually at least two, paralleling <uf-w>auu</uf-w>.</p>",
+                "def": "Hmm."
+            },
+            "def-search": "hmm",
+            "etym": "<em>onomatopoeic</em>",
+            "hw-search": "auu",
+            "pos": "interj.",
+            "word": "aúú"
+        },
+        {
+            "def": {
                 "def": "Eleventh."
             },
             "def-search": "eleventh",
@@ -881,6 +957,17 @@
             "hw-search": "auzye",
             "pos": "num. ord.",
             "word": "aúzy’ê"
+        },
+        {
+            "def": {
+                "comment": "<p>In the SD, this word has replaced earlier <uf-w>ḍá</uf-w> entirely except in set phrases.</p>",
+                "def": "Time."
+            },
+            "def-search": "time",
+            "etym": "<uf-pf>horloge</uf-pf>",
+            "hw-search": "aułau",
+            "pos": "n.",
+            "word": "aúłau"
         },
         {
             "def": {
@@ -1463,7 +1550,7 @@
             "word": "b’hénvâ"
         },
         {
-            "def-search": "a be condition fall in or out pour state to",
+            "def-search": "fall obtain out pour to",
             "etym": "from <uf-pf>verser</uf-pf> and <uf-w>fér</uf-w>, see <uf-sense>2</uf-sense>",
             "forms": "<uf-s>fut</uf-s> b’hẹ́, <uf-s>subj</uf-s> b’hés",
             "hw-search": "bher",
@@ -1473,8 +1560,13 @@
                     "def": "+<uf-s>part</uf-s> <em>(archaic)</em> To pour out."
                 },
                 {
-                    "comment": "<p>Exclusively used in the passive of the weather or a situation or state of affairs, with the noun for the condition or preciptation as the ‘object’ and no subject, e.g. <uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’, <uf-w>dŷncẹaû syb’hér</uf-w> ‘it is hot’. </p><p>In Middle UF, <uf-w>fér</uf-w> with a noun in the <uf-s>abs</uf-s> was often used for this purpose, hence also the irregular <uf-s>fut</uf-s> and <uf-s>subj</uf-s>, e.g. *<uf-w>sfér cẹaû</uf-w> ‘It is hot’; similarly, weather conditions used to be their own verbs, e.g. *<uf-w>slýv́á</uf-w> ‘it rains’. </p><p>The latter were eventually replaced with a construction using <uf-w>b’hér</uf-w> in the passive with the noun in the <uf-s>part</uf-s>, e.g. *<uf-w>dŷnḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘some rain is being poured’). This was later extended to any state (of the weather), e.g. <uf-w>dŷncẹaû syb’hér</uf-w> (lit. ‘some heat is being poured’). The <uf-s>acc</uf-s> can be used instead as an intensifier, e.g. <uf-w>sc̣ẹaû syb’hér</uf-w> ‘it is scorching hot’. </p><p>With precipitation, the <uf-s>pl</uf-s> is most common in modern times, e.g. <uf-w>dýḷẹ syb’hér</uf-w> instead of older *<uf-w>dŷnḷẹ syb’hér</uf-w>. The old weather verbs, e.g. *<uf-w>lýv́á</uf-w>, are altogether obsolete.</p>",
-                    "def": "<uf-s>pass</uf-s> + <uf-s>part/acc</uf-s> To be in a state or condition, to fall <em>(of precipitation)</em>."
+                    "comment": "<p>Exclusively used in the passive of the weather or a situation or state of affairs, with the noun for the condition or preciptation as the ‘object’ and no subject (see examples below). </p><p>In Middle UF, <uf-w>fér</uf-w> with a noun in the <uf-s>abs</uf-s> was often used for this purpose, hence also the irregular <uf-s>fut</uf-s> and <uf-s>subj</uf-s>, e.g. *<uf-w>sfér cẹaû</uf-w> ‘It is hot’; similarly, weather conditions used to be their own verbs, e.g. *<uf-w>slýv́á</uf-w> ‘it rains’. </p><p>The latter were eventually replaced with a construction using <uf-w>b’hér</uf-w> in the passive with the noun in the <uf-s>part</uf-s>, e.g. *<uf-w>dŷnḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘some rain is being poured’). This was later extended to any state (of the weather), e.g. <uf-w>dŷncẹaû syb’hér</uf-w> (lit. ‘some heat is being poured’). The <uf-s>acc</uf-s> can be used instead as an intensifier, e.g. <uf-w>sc̣ẹaû syb’hér</uf-w> ‘it is scorching hot’. </p><p>With precipitation, the <uf-s>pl</uf-s> is most common in modern times, e.g. <uf-w>dýḷẹ syb’hér</uf-w> instead of older *<uf-w>dŷnḷẹ syb’hér</uf-w>. The old weather verbs, e.g. *<uf-w>lýv́á</uf-w>, are altogether obsolete.</p>",
+                    "def": "<uf-s>pass</uf-s> + <uf-s>part/acc</uf-s> <em>(of a state or condition)</em> to obtain; <em>(of precipitation)</em> to fall.",
+                    "examples": [
+                        "<uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’.",
+                        "<uf-w>dŷncẹaû syb’hér</uf-w> ‘it is hot’.",
+                        "<uf-w>dyraúvá léâ syb’hér</uf-w> ‘it’s a full moon’."
+                    ]
                 }
             ],
             "word": "b’hér"
@@ -1586,6 +1678,16 @@
         },
         {
             "def": {
+                "def": "Town, city."
+            },
+            "def-search": "city town",
+            "etym": "<uf-pf>ville</uf-pf>",
+            "hw-search": "bhil",
+            "pos": "n.",
+            "word": "b’hil"
+        },
+        {
+            "def": {
                 "def": "Vision."
             },
             "def-search": "vision",
@@ -1658,6 +1760,16 @@
         },
         {
             "def": {
+                "def": "Archaeologist."
+            },
+            "def-search": "archaeologist",
+            "etym": "<uf-pf>pilleur de tombe</uf-pf>",
+            "hw-search": "biyyrthaub",
+            "pos": "n.",
+            "word": "ḅíy’ýrt’haúb"
+        },
+        {
+            "def": {
                 "comment": "<p>This verb is construed from the peel’s point of view, i.e. the peel is removed ‘from around’ something, hence the use of the <uf-s>circabl</uf-s> for the object.</p>",
                 "def": "+<uf-s>circabl</uf-s> To peel."
             },
@@ -1679,6 +1791,16 @@
         },
         {
             "def": {
+                "def": "<em>(obsolete)</em> Why."
+            },
+            "def-search": "why",
+            "etym": "<uf-pf>pourquoi</uf-pf>",
+            "hw-search": "burchra",
+            "pos": "pron.",
+            "word": "ḅúrc’hrá"
+        },
+        {
+            "def": {
                 "def": "Dust."
             },
             "def-search": "dust",
@@ -1686,6 +1808,16 @@
             "hw-search": "busyer",
             "pos": "n.",
             "word": "ḅusy’ér"
+        },
+        {
+            "def": {
+                "def": "+<uf-s>subj</uf-s> Perhaps, maybe."
+            },
+            "def-search": "maybe perhaps",
+            "etym": "<uf-pf>peut-être</uf-pf>",
+            "hw-search": "bythed",
+            "pos": "adv.",
+            "word": "ḅýt’hèḍ"
         },
         {
             "def": {
@@ -2341,6 +2473,22 @@
             "word": "c’haúvnaút’hẹ"
         },
         {
+            "def-search": "how long many much",
+            "etym": "<uf-pf>combien</uf-pf>",
+            "hw-search": "chauye",
+            "pos": "adv.",
+            "senses": [
+                {
+                    "def": "+<uf-s>gen</uf-s> How much, how many."
+                },
+                {
+                    "comment": "<p>Literally ‘how much time’.</p>",
+                    "def": "<uf-w>c’haúy’ê sýná</uf-w> How long."
+                }
+            ],
+            "word": "c’haúy’ê"
+        },
+        {
             "def": {
                 "def": "Naught, absolutely no&shy;thing."
             },
@@ -2579,6 +2727,16 @@
         },
         {
             "def": {
+                "def": "Why."
+            },
+            "def-search": "why",
+            "etym": "from earlier <uf-w>ḅúrc’hrá</uf-w>",
+            "hw-search": "chra",
+            "pos": "pron.",
+            "word": "c’hrá"
+        },
+        {
+            "def": {
                 "def": "To write."
             },
             "def-search": "to write",
@@ -2666,6 +2824,17 @@
             "etym": "<uf-pf>tandis</uf-pf>",
             "hw-search": "da",
             "pos": "conj.",
+            "word": "ḍá"
+        },
+        {
+            "def": {
+                "comment": "<p>In the ND, this word never merged with <uf-w>dá</uf-w> ‘tooth’ and thus remains in common use until today.</p>",
+                "def": "<em>(obsolete or ND)</em> Time."
+            },
+            "def-search": "time",
+            "etym": "<uf-pf>temps</uf-pf>",
+            "hw-search": "da",
+            "pos": "n.",
             "word": "ḍá"
         },
         {
@@ -3147,7 +3316,7 @@
             "word": "déví"
         },
         {
-            "def-search": "dwell live remain somewhere stayto to",
+            "def-search": "dwell in live remain stay to",
             "etym": "<uf-pf>demeurer</uf-pf>",
             "hw-search": "devyr",
             "pos": "v.",
@@ -3156,7 +3325,7 @@
                     "def": "To remain, stay."
                 },
                 {
-                    "def": "To live, dwell (+<uf-s>iness</uf-s> somewhere)."
+                    "def": "+<uf-s>iness</uf-s> To live in, dwell."
                 }
             ],
             "word": "dévýr"
@@ -4466,6 +4635,28 @@
             "word": "laut’h"
         },
         {
+            "def-search": "a ago before for long longer over period since time",
+            "etym": "<uf-pf>longtemps</uf-pf>",
+            "hw-search": "lautha",
+            "pos": "adv.",
+            "senses": [
+                {
+                    "comment": "<p>When describing ongoing processes that started a long time ago, this is construed with the present tense instead of the present anterior.</p>",
+                    "def": "Since long ago, for a long time, over a long period.",
+                    "examples": [
+                        "<uf-w>laút’há ḍaléraû vy’í</uf-w> ‘I have been a carpenter for a long time’, lit. ‘I am a carpenter for a long time’."
+                    ]
+                },
+                {
+                    "def": "<em>(with comparative prefix)</em> Since long before, For longer, for a longer time.",
+                    "examples": [
+                        "<uf-w>dau lẹlaút’há ḍaléraû vy’í</uf-w> ‘I have been a carpenter much longer than you’."
+                    ]
+                }
+            ],
+            "word": "laút’há"
+        },
+        {
             "def": {
                 "comment": "<p>Used chiefly in questions or imperative.</p>",
                 "def": "To let, allow, permit."
@@ -4485,6 +4676,18 @@
             "etym": "<uf-pf>plaine</uf-pf>",
             "hw-search": "le",
             "pos": "n.",
+            "word": "lé"
+        },
+        {
+            "def-search": "be full to",
+            "etym": "<uf-pf>plein</uf-pf>",
+            "hw-search": "le",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To be full."
+                }
+            ],
             "word": "lé"
         },
         {
@@ -4759,13 +4962,18 @@
             "word": "lýv́á"
         },
         {
-            "def": {
-                "def": "Light."
-            },
-            "def-search": "light",
+            "def-search": "a as electromagnetic lamp light of or radiationa source such torch visible",
             "etym": "<uf-pf>lumière</uf-pf>",
             "hw-search": "lyvyer",
             "pos": "n.",
+            "senses": [
+                {
+                    "def": "Light, visible electromagnetic radiation."
+                },
+                {
+                    "def": "A source of light, such as a lamp or torch."
+                }
+            ],
             "word": "lývy’ér"
         },
         {
@@ -4826,7 +5034,7 @@
             "word": "nát’hýr"
         },
         {
-            "def-search": "a amount great many number of so such",
+            "def-search": "a amount great many much number of so such",
             "etym": "<uf-pf>nombre</uf-pf>",
             "hw-search": "naub",
             "pos": "n.",
@@ -4835,7 +5043,8 @@
                     "def": "Amount, number."
                 },
                 {
-                    "def": "<uf-w>naûb vú</uf-w> + <uf-s>gen indef</uf-s> So many, such a great amount of."
+                    "comment": "<p>In informal speech often contracted to <uf-w>naûvú</uf-w>.</p>",
+                    "def": "<uf-w>naûb vú</uf-w> + <uf-s>gen indef</uf-s> So many, so much, such a great amount of."
                 }
             ],
             "word": "naûb"
@@ -4862,6 +5071,16 @@
             "hw-search": "ned",
             "pos": "v. dep.",
             "word": "néḍ"
+        },
+        {
+            "def": {
+                "def": "Birth."
+            },
+            "def-search": "birth",
+            "etym": "<uf-pf>naissance</uf-pf>",
+            "hw-search": "nehas",
+            "pos": "n.",
+            "word": "néhás"
         },
         {
             "def": {
@@ -4975,7 +5194,8 @@
                 "comment": "<p>Usually placed after the name. This word replaced <uf-w>aḅ</uf-w> in the reflexive sense in Early Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.</p>",
                 "def": "<em>(refl. or intr.)</em> To be called, name oneself.",
                 "examples": [
-                    "<uf-w>Aý’èc’hsád j(v)nvé</uf-w> ‘My name is Aý’èc’hsád’."
+                    "<uf-w>Aý’èc’hsád j(v)nvé</uf-w> ‘My name is Aý’èc’hsád’.",
+                    "<uf-w>(A) ḍẹnvẹ́c’h’s ?</uf-w> ’What’s your name?’, lit. ‘What are you called?’. <em>While <uf-w>-c’h’s</uf-w> for <uf-w>c’hes</uf-w> is archaic nowadays, this is a set phrase that preserves this form. Because this renders this phrase rather recognisable, the <uf-w>a</uf-w> is often dropped in informal speech. Note also that this is a passive, with the plural being <uf-w>A b’hýnvẹ́ c’hes</uf-w>.</em>."
                 ]
             },
             "def-search": "be called name oneself to",
@@ -6791,7 +7011,7 @@
         },
         {
             "def": {
-                "comment": "<p>The case depends on the depth of the speaker’s understanding: the <uf-s>acc</uf-s> indicates ‘complete’ or expert-level understanding, the <uf-s>part</uf-s> only some understanding.</p>",
+                "comment": "<p>The case depends on the depth of the speaker’s understanding: the <uf-s>acc</uf-s> indicates ‘complete’ or expert-level understanding, the <uf-s>part</uf-s> only some understanding. In questions, the <uf-s>acc</uf-s> is rather harsh (similar to ‘do you have even the slightest idea ...’) with the <uf-s>part</uf-s> preferred if a more neutral tone is intended. In negated statements, the <uf-s>acc</uf-s> indicates a complete lack of understanding (‘I have no idea whatsoever ...’), whereas the <uf-s>part</uf-s> is again neutral.</p>",
                 "def": "To know (+<uf-s>part/acc</uf-s> sth.)."
             },
             "def-search": "know sth to",
@@ -6810,6 +7030,16 @@
             "hw-search": "savyyel",
             "pos": "n.",
             "word": "Sávýy’él"
+        },
+        {
+            "def": {
+                "def": "<em>(informal)</em> Hi, hello."
+            },
+            "def-search": "hello hi",
+            "etym": "<uf-pf>salut</uf-pf>",
+            "hw-search": "saye",
+            "pos": "interj.",
+            "word": "say’ẹ"
         },
         {
             "def-search": "desire sth to want wish",
@@ -6858,9 +7088,9 @@
         },
         {
             "def": {
-                "def": "So, thus, as a result."
+                "def": "So, thus, now, well then, as a result."
             },
-            "def-search": "a as result so thus",
+            "def-search": "a as now result so then thus well",
             "etym": "<uf-pf>ainsi</uf-pf>",
             "hw-search": "se",
             "pos": "particle",
@@ -7400,6 +7630,15 @@
         },
         {
             "def": {
+                "def": "<em>Informal, abbreviated form of <uf-w>ausó</uf-w>, <uf-s>1pl</uf-s> of <uf-w>eḍ</uf-w></em>."
+            },
+            "def-search": "",
+            "hw-search": "so",
+            "pos": "abbr.",
+            "word": "’só"
+        },
+        {
+            "def": {
                 "comment": "<p>The plural may be used to indicate a large quantity of soil.</p>",
                 "def": "Ground, floor, earth, soil."
             },
@@ -7484,6 +7723,15 @@
             "hw-search": "swi",
             "pos": "det.",
             "word": "swi"
+        },
+        {
+            "def": {
+                "def": "<em>Archaic form of <uf-w>sý’ẹ</uf-w></em>."
+            },
+            "def-search": "",
+            "hw-search": "sya",
+            "pos": "pron.",
+            "word": "sý’a"
         },
         {
             "def": {
@@ -8026,6 +8274,16 @@
                 }
             ],
             "word": "véc"
+        },
+        {
+            "def": {
+                "def": "<em>(informal)</em> Dude, mate, guy, chap, bloke, bud, buddy."
+            },
+            "def-search": "bloke bud buddy chap dude guy mate",
+            "etym": "<uf-pf>mec</uf-pf>",
+            "hw-search": "vech",
+            "pos": "n.",
+            "word": "véc’h"
         },
         {
             "def": {
@@ -9502,6 +9760,11 @@
             "from": "ly’era",
             "from-search": "lyera",
             "to": "eḍ"
+        },
+        {
+            "from": "naûvú",
+            "from-search": "nauvu",
+            "to": "naûb vú"
         },
         {
             "from": "p-",
