@@ -110,7 +110,7 @@ struct JsonBackend final : Backend {
         json& e = entries().emplace_back();
         e["word"] = current_word = TeXToHtml(word);
         e["pos"] = TeXToHtml(data.pos);
-        e["ipa"] = not data.ipa.empty() ? data.ipa : ipa::Translate(current_word, false);
+        e["ipa"] = Normalise(not data.ipa.empty() ? data.ipa : ipa::Translate(current_word, false), text::NormalisationForm::NFC).value();
 
         auto EmitSense = [&](const FullEntry::Sense& sense) {
             json s;
