@@ -968,8 +968,17 @@ auto Translate(std::string_view text, bool show_unsupported) -> std::string {
                 else ipa += U"ɰ";
                 break;
 
+            // 's' can start:
+            //   - ś
+            //   - ss
+            //   - śś
+            //   - s’h (northern dialect)
+            //   - ṣ’h (northern dialect)
             case U's':
-                if (s.consume(Acute)) {
+                (void) s.consume(DotBelow);
+                if (s.consume_any(apos) and s.consume('h')) {
+                    ipa += U"ʃ";
+                } else if (s.consume(Acute)) {
                     ipa += U"sʶ";
                     while (s.consume(U"ś")) ipa += U'ː';
                 } else {
@@ -983,8 +992,7 @@ auto Translate(std::string_view text, bool show_unsupported) -> std::string {
 
             // 't' is /t/ on its own (archaic spelling), and 't’h' otherwise.
             case U't':
-                if (s.consume_any(apos) and s.consume(U'h')) ipa += U'θ';
-                else ipa += U't';
+                HandleApostropheH(U't', U'θ');
                 break;
 
             case U'v':
