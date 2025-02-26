@@ -979,7 +979,7 @@ sý’a|pron.||\textit{Archaic form of \w{sý’ẹ}}
 arc’hais|n.|archaïsme|Archaism
 aúú|interj.|\textnf{onomatopoeic}|Hmm \comment Written with as many ‘ú’s as necessary, e.g. \w{aúúúú}, but usually at
     least two, paralleling \w{auu}.|\s{nd} aǔ|ɔ̃ː
-aa|interj.|\textnf{onomatopoeic}|Ah, oh|\s{nd} ā|aː
+aa|interj.|\textnf{onomatopoeic}|Ah, oh|\s{nd} ā|ɐː
 b’hil|n.|ville|Town, city
 lé|v.|plein|\\ To be full
 ḅúrc’hrá|pron.|pourquoi|\textit{(obsolete)} Why
