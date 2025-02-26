@@ -41,7 +41,7 @@
             "etym": "<uf-nf>onomatopoeic</uf-nf>",
             "forms": "<uf-s>nd</uf-s> ā",
             "hw-search": "aa",
-            "ipa": "ɐɐ",
+            "ipa": "aː",
             "pos": "interj.",
             "word": "aa"
         },
@@ -970,14 +970,14 @@
         },
         {
             "def": {
-                "comment": "<p>Pronounced as <uf-w>au</uf-w>, but lengthened. Written with as many ‘u’s as necessary, e.g. <uf-w>auuuuu</uf-w>, but always at least two to differentiate it from <uf-w>au</uf-w>.</p>",
+                "comment": "<p>Written with as many ‘u’s as necessary, e.g. <uf-w>auuuuu</uf-w>, but always at least two to differentiate it from <uf-w>au</uf-w>.</p>",
                 "def": "Wow, whoa, ooh."
             },
             "def-search": "ooh whoa wow",
             "etym": "<uf-nf>onomatopoeic</uf-nf>",
             "forms": "<uf-s>nd</uf-s> aū",
             "hw-search": "auu",
-            "ipa": "ou",
+            "ipa": "ɔː",
             "pos": "interj.",
             "word": "auu"
         },
@@ -990,7 +990,7 @@
             "etym": "<uf-nf>onomatopoeic</uf-nf>",
             "forms": "<uf-s>nd</uf-s> aǔ",
             "hw-search": "auu",
-            "ipa": "ɔ̃ũ",
+            "ipa": "ɔ̃ː",
             "pos": "interj.",
             "word": "aúú"
         },
@@ -4528,7 +4528,7 @@
             "etym": "<uf-nf>onomatopoeic</uf-nf>",
             "forms": "<uf-s>nd</uf-s> ē",
             "hw-search": "ee",
-            "ipa": "ee",
+            "ipa": "eː",
             "pos": "interj.",
             "word": "ee"
         },
@@ -7247,7 +7247,7 @@
             },
             "def-search": "screech to",
             "etym": "<uf-pf>crisser</uf-pf>",
-            "forms": "<uf-s>onom</uf-s> ríí",
+            "forms": "<uf-s>onom</uf-s> ríí <uf-nf>/ɰiː/</uf-nf>",
             "hw-search": "rih",
             "ipa": "ɰĩh",
             "pos": "v.",

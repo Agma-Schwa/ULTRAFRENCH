@@ -33,6 +33,11 @@
 ##
 ##     5. (optional) Grammatical forms of the word.
 ##
+##     6. (optional) The pronunciation of the word in IPA. This should be omitted unless the
+##        word is not pronounced as spelt as it will be generated from the spelling otherwise.
+##
+##        Do NOT wrap the pronunciation in // or []
+##
 ## EXAMPLE:
 ##
 ## dír|v. tr.|dire|+\s{acc} To say, tell (+\s{dat} someone) |\s{fut} dírẹ́, \s{subj} díss
@@ -966,15 +971,15 @@ naûb|n.|nombre|
 abhár|n.|apartement|House
 áḍrébh|n.|entrepôt|Warehouse, depot
 aut’heldývér|n.|\pf{hôtel (de ville) + du maire}|Town hall
-auu|interj.|\textnf{onomatopoeic}|Wow, whoa, ooh \comment Pronounced as \w{au}, but lengthened. Written with as many
-    ‘u’s as necessary, e.g. \w{auuuuu}, but always at least two to differentiate it from \w{au}.|\s{nd} aū
+auu|interj.|\textnf{onomatopoeic}|Wow, whoa, ooh \comment Written with as many
+    ‘u’s as necessary, e.g. \w{auuuuu}, but always at least two to differentiate it from \w{au}.|\s{nd} aū|ɔː
 ráb’hén(ýr)|interj.|contraction of earlier \w{Ráb’h hénýr}|Oh god, oh my god
 say’ẹ|interj.|salut|\textit{(informal)} Hi, hello
 sý’a|pron.||\textit{Archaic form of \w{sý’ẹ}}
 arc’hais|n.|archaïsme|Archaism
 aúú|interj.|\textnf{onomatopoeic}|Hmm \comment Written with as many ‘ú’s as necessary, e.g. \w{aúúúú}, but usually at
-    least two, paralleling \w{auu}.|\s{nd} aǔ
-aa|interj.|\textnf{onomatopoeic}|Ah, oh|\s{nd} ā
+    least two, paralleling \w{auu}.|\s{nd} aǔ|ɔ̃ː
+aa|interj.|\textnf{onomatopoeic}|Ah, oh|\s{nd} ā|aː
 b’hil|n.|ville|Town, city
 lé|v.|plein|\\ To be full
 ḅúrc’hrá|pron.|pourquoi|\textit{(obsolete)} Why
@@ -1016,13 +1021,13 @@ b’hał|v.|valoir|
     |\s{fut} b’hałárẹ́, \s{subj} b’hałás
 raúvúr|v.|from \w{raú-} + \w{vúr}|(+\s{acc}) To kill
 dehád|v.|descendre|\textit{(dated)} (+\s{acc}) To kill|\s{fut} dehád, \s{subj} dehás
-ee|interj.|\textnf{onomatopoeic}|Hey \comment Pronounced /eː/ Used to call for attention|\s{nd} ē
+ee|interj.|\textnf{onomatopoeic}|Hey \comment Pronounced /eː/ Used to call for attention|\s{nd} ē|eː
 y’úḅłẹ|particle|\pf{s’il vous plait}|Please
 raûlaú|n.|tromblon|Gun, firearm
 ráb’hẹ|interj.|bravo|Well done, bravo
 ehehe|interj.|\textnf{onomatopoeic}|Hehe \comment Mischievous laughter
 réḅ|interj.|ouaip|Yeah, yep, yes \comment Never used in response to a yes-no question.
-ríh|v.|crisser|To screech|\s{onom} ríí
+ríh|v.|crisser|To screech|\s{onom} ríí \textnf{/ɰiː/}
 
 ## TODO: Examples often have comments, so we should allow having a \comment within an \ex
 

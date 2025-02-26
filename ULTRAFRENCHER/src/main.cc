@@ -52,6 +52,9 @@ struct FullEntry {
     /// Etymology; may be empty.
     std::string etym;
 
+    /// Pronunciation; may be empty.
+    std::string ipa;
+
     /// Primary definition, before any sense actual sense. This is also used
     /// if there is only one sense.
     Sense primary_definition;
@@ -107,7 +110,7 @@ struct JsonBackend final : Backend {
         json& e = entries().emplace_back();
         e["word"] = current_word = TeXToHtml(word);
         e["pos"] = TeXToHtml(data.pos);
-        e["ipa"] = ipa::Translate(current_word, false);
+        e["ipa"] = not data.ipa.empty() ? data.ipa : ipa::Translate(current_word, false);
 
         auto EmitSense = [&](const FullEntry::Sense& sense) {
             json s;
@@ -414,75 +417,92 @@ struct Entry {
         init();
         auto& full = data.get<FullEntry>();
 
-        // Entry parts. note that the headword has already been removed from
-        // this, so the ‘first part’ here is the part of speech (which is the
-        // second field in the raw file) etc.
+        // Entry parts.
+        //
+        // Note that the headword has already been removed from this, so the ‘first
+        // part’ here is the part of speech (which is the second field in the raw file) etc.
         enum : usz {
-            POSPart = 0,
-            EtymPart = 1,
-            DefPart = 2,
-            FormsPart = 3,
+            POSPart,
+            EtymPart,
+            DefPart,
+            FormsPart,
+            IPAPart,
+
+            MaxParts,
+            MinParts = DefPart + 1,
         };
+
+        // Make sure we have enough parts.
+        if (parts.size() < MinParts) {
+            backend.error("An entry must have at least 4 parts: word, part of speech, etymology, definition");
+            return;
+        }
+
+        // Make sure we don’t have too many parts.
+        if (parts.size() > MaxParts) {
+            backend.error("An entry must have at most 6 parts: word, part of speech, etymology, definition, forms, IPA");
+            return;
+        }
 
         // Process the entry. This inserts things that are difficult to do in LaTeX, such as
         // full stops between senses, only if there isn’t already a full stop there. Of course,
         // this means we need to convert that to HTML for the JSON output, but we need to do
         // that anyway since the input is already LaTeX.
+        static_assert(MaxParts == 5, "Handle all parts below");
+
+        // Part of speech.
+        full.pos = text::ToUTF8(parts[POSPart]);
+
+        // Etymology.
         //
-        // FIXME: Why is this still a loop...?
-        for (auto [i, part] : parts | vws::enumerate) {
-            switch (i) {
-                case POSPart: full.pos = text::ToUTF8(part); break;
-
-                // If this is a single word, and the field contains no backslashes,
-                // wrap it with '\pf{}'. That takes care of this field for most words
-                // (conversely, more complex etymologies often don’t start w/ a PF word).
-                case EtymPart: {
-                    // Etymology is empty; don’t do anything here.
-                    if (part.empty()) break;
-
-                    // If the etymology contains no spaces or macros, it is likely just
-                    // a single French word, so insert \pf.
-                    if (not part.contains(U' ') and not part.contains(U'\\'))
-                        full.etym = "\\pf{" + text::ToUTF8(part) + "}"; // No Utf32 std::format :(
-                    else
-                        full.etym = text::ToUTF8(part);
-                } break;
-
-                // If the definition contains senses, delimit each one with a dot. We
-                // do this here because there isn’t really a good way to do that
-                // in LaTeX.
-                case DefPart: {
-                    // A sense may contain a comment and examples, in that order. A comment cannot
-                    // be placed after the examples.
-                    auto SplitSense = [](u32stream sense) {
-                        static constexpr std::u32string_view ex = U"\\ex";
-                        static constexpr std::u32string_view comment = U"\\comment";
-                        bool has_comment = sense.contains(comment);
-                        return FullEntry::Sense{
-                            .def = FullStopDelimited(sense.trim_front().take_until_and_drop(has_comment ? comment : ex)),
-                            .comment = has_comment ? FullStopDelimited(sense.trim_front().take_until_and_drop(ex)) : "",
-                            .examples = sense.trim_front().split(ex) | vws::transform(FullStopDelimited) | rgs::to<std::vector>(),
-                        };
-                    };
-
-                    // Process the primary definition. This is everything before the first sense
-                    // and doesn’t count as a sense because it is either the only one or, if there
-                    // are multiple senses, it denotes a more overarching definition that applies
-                    // to all or most senses.
-                    u32stream s{part};
-                    full.primary_definition = SplitSense(s.take_until_and_drop(SenseMacroU32));
-                    for (auto sense : s.split(SenseMacroU32))
-                        full.senses.push_back(SplitSense(sense));
-                } break;
-
-                // FIXME: The dot should be added here instead of by LaTeX.
-                case FormsPart: full.forms = text::ToUTF8(part); break;
-
-                // Shouldn’t happen.
-                default: backend.error("Too many fields in entry: {}", i); break;
-            }
+        // If this is a single word, and the field contains no backslashes,
+        // wrap it with '\pf{}'. That takes care of this field for most words
+        // (conversely, more complex etymologies often don’t start w/ a PF word).
+        // Etymology is empty; don’t do anything here.
+        if (auto& part = parts[EtymPart]; not part.empty()) {
+            // If the etymology contains no spaces or macros, it is likely just
+            // a single French word, so insert \pf.
+            if (not part.contains(U' ') and not part.contains(U'\\'))
+                full.etym = "\\pf{" + text::ToUTF8(part) + "}"; // No Utf32 std::format :(
+            else
+                full.etym = text::ToUTF8(part);
         }
+
+        // Definition and senses.
+        //
+        // If the definition contains senses, delimit each one with a dot. We
+        // do this here because there isn’t really a good way to do that
+        // in LaTeX.
+        //
+        // A sense may contain a comment and examples, in that order. A comment cannot
+        // be placed after the examples.
+        auto SplitSense = [](u32stream sense) {
+            static constexpr std::u32string_view ex = U"\\ex";
+            static constexpr std::u32string_view comment = U"\\comment";
+            bool has_comment = sense.contains(comment);
+            return FullEntry::Sense{
+                .def = FullStopDelimited(sense.trim_front().take_until_and_drop(has_comment ? comment : ex)),
+                .comment = has_comment ? FullStopDelimited(sense.trim_front().take_until_and_drop(ex)) : "",
+                .examples = sense.trim_front().split(ex) | vws::transform(FullStopDelimited) | rgs::to<std::vector>(),
+            };
+        };
+
+        // Process the primary definition. This is everything before the first sense
+        // and doesn’t count as a sense because it is either the only one or, if there
+        // are multiple senses, it denotes a more overarching definition that applies
+        // to all or most senses.
+        u32stream s{parts[DefPart]};
+        full.primary_definition = SplitSense(s.take_until_and_drop(SenseMacroU32));
+        for (auto sense : s.split(SenseMacroU32))
+            full.senses.push_back(SplitSense(sense));
+
+        // Forms.
+        //
+        // FIXME: The dot should be added here instead of by LaTeX.
+        if (parts.size() > FormsPart) full.forms = text::ToUTF8(parts[FormsPart]);
+
+        // IPA.
+        if (parts.size() > IPAPart) full.ipa = text::ToUTF8(parts[IPAPart]);
     }
 
     static auto FullStopDelimited(u32stream text) -> std::string {
