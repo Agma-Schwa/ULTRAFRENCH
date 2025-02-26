@@ -1028,6 +1028,8 @@ ríh|v.|crisser|To screech|\s{onom} ríí
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
 
+## For the online dictionary, auto-generate the pronunciation since the ULTRAFRENCHER already knows how to convert to IPA.
+
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
