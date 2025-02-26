@@ -30,6 +30,10 @@ auto ICUToUTF32(const icu::UnicodeString& us) -> std::u32string {
     return text;
 }
 
+namespace ipa {
+[[nodiscard]] auto Translate(std::string_view text, bool show_unsupported) -> std::string;
+}
+
 namespace dict {
 static constexpr std::u32string_view SenseMacroU32 = U"\\\\";
 static icu::Transliterator* Normaliser;
@@ -103,6 +107,7 @@ struct JsonBackend final : Backend {
         json& e = entries().emplace_back();
         e["word"] = current_word = TeXToHtml(word);
         e["pos"] = TeXToHtml(data.pos);
+        e["ipa"] = ipa::Translate(current_word, false);
 
         auto EmitSense = [&](const FullEntry::Sense& sense) {
             json s;
@@ -672,7 +677,7 @@ Nasal(char32_t c) {
     }
 }
 
-void Translate(std::string_view text, bool show_unsupported) {
+auto Translate(std::string_view text, bool show_unsupported) -> std::string {
     // Normalise the text before IPA conversion so we have
     // to deal with fewer cases. Also convert to lowercase
     // and convert ASCII apostrophes to '’'.
@@ -713,6 +718,13 @@ void Translate(std::string_view text, bool show_unsupported) {
             case U'—':
             case U'/':
             case U'\\':
+            case U'(':
+            case U')':
+            case U'₁':
+            case U'₂':
+            case U'₃':
+            case U'₄':
+            case U'₅':
                 break;
 
             // Skip these in the middle of words.
@@ -981,7 +993,7 @@ void Translate(std::string_view text, bool show_unsupported) {
         }
     }
 
-    std::print(stdout, "{}\n", text::ToUTF8(ipa));
+    return text::ToUTF8(ipa);
 }
 } // namespace ipa
 
@@ -1002,7 +1014,7 @@ int main(int argc, char** argv) {
     if (auto d = opts.get<"--dict">()) {
         if (opts.get<"--json">()) dict::Generate(d->contents, dict::JsonBackend(opts.get<"--minify">()));
         else dict::Generate(d->contents, dict::TeXBackend());
-    } else if (auto i = opts.get<"-i">()) ipa::Translate(*i, show_unsupp);
-    else if (auto f = opts.get<"-f">()) ipa::Translate(f->contents, show_unsupp);
+    } else if (auto i = opts.get<"-i">()) std::println("{}", ipa::Translate(*i, show_unsupp));
+    else if (auto f = opts.get<"-f">()) std::println("{}", ipa::Translate(f->contents, show_unsupp));
     else std::print("{} {}", argv[0], options::help());
 }
