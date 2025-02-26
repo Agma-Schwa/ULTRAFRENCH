@@ -726,6 +726,11 @@ auto Translate(std::string_view text, bool show_unsupported) -> std::string {
         else ipa += base;
     };
 
+    // Word-final schwa is always voiceless. This handles that.
+    const auto AtEndOfWord = [&] {
+        if (ipa.ends_with(U'ə')) ipa += VoicelessBelow;
+    };
+
     while (not s.empty()) {
         switch (c = s.take()[0]) {
             // Skip most punctuation marks.
@@ -745,6 +750,7 @@ auto Translate(std::string_view text, bool show_unsupported) -> std::string {
             case U'₃':
             case U'₄':
             case U'₅':
+                AtEndOfWord();
                 break;
 
             // Skip these in the middle of words.
@@ -772,6 +778,7 @@ auto Translate(std::string_view text, bool show_unsupported) -> std::string {
             case U'\r':
             case U'|':
                 while (s.consume_any(WSOrPipe));
+                AtEndOfWord();
                 ipa += U' ';
                 break;
 
@@ -1013,6 +1020,7 @@ auto Translate(std::string_view text, bool show_unsupported) -> std::string {
         }
     }
 
+    AtEndOfWord();
     return text::ToUTF8(ipa);
 }
 } // namespace ipa
