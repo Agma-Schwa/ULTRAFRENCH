@@ -78,6 +78,12 @@ y’ír|v. (in)tr.|ouïr|\\To understand, listen\\\textit{(rarely)} To hear|\s{f
 Cár|n.||\textit{Male given name, equivalent to English ‘Kyle’ or ‘Charles’. Often declined like
     a regular noun, e.g. \s{nom} \w{Lác̣ár}}
 ráhó|n.|poisson|Fish
+    \comment UF has a series of proverbs around fish drowning (in water!), despite the fact that fish quite
+    literally breathe water and therefore are incapable of ‘drowning’.
+    \ex \w{Láráhó slẹlúrá.} Now you’ve done it. \textit{Literally ‘the fish was too bulky [to swim to the
+        surface, so it drowned]’}
+    \ex \w{Áhaúr’sý’ýâ láráhó sráy’éá.} There is more to this. There is a story behind this. \textit{Literally ‘the
+        fish hasn’t drowned yet’.}
 act’he|v. tr.|from \w{ac}|
     \\ To cut or cleave with an axe.
     \\ +\s{acc} To bring an end to.
@@ -106,8 +112,10 @@ rá₁|n.|loi|Law, rule, regulation
 ḍẹ|adj.|tout|\\All, every, whole, entire \\\w{ḍẹ auḍ} Obsolete form of \w{ḍauḍ}.
 ḍauḍ|def. pron.|from earlier \w{ḍẹ auḍ}|Everything else, any other (one)
 c’hóný|adj.|connu|Known, familiar, well-kn\-own
-y’aúhý|part.|\pf{il n’y a aucun}|There is no, there are no, there is none
-ý’aúhý|part.|\pf{il y a aucun}|There is, there are
+y’aúhý|particle|\pf{il n’y a aucun}|There is no, there are no, there is none \comment See also \w{ý’aúhý}.
+ý’aúhý|particle|\pf{il y a aucun}|
+    \\ There is, there are \comment See also \w{y’aúhý}.
+    \\ \w{ý’aúhý c’hes} Is there?, are there?
 ráy’ê|n.|moyen|\\ Way, means, method. \\ \w{ráy’ê y’aúhý} + \s{aci} There is no way, that \ldots{}
     \\ \s{instr pl} \w{b’hehráy’ê} How, by what means, in this way
 
@@ -313,7 +321,7 @@ sybhẹ́rýr|v.|supérieur|\textit{intr. or} +\s{gen} To be superior to, better 
 níb’hẹ|n.|niveau|\\ Level, degree. \\ \s{def iness + gen} On the level of
 séḅ|v.|simple|To be plain, simple|\s{fut} séḅrẹ́, \s{subj} séḅs
 c’hrír|v.|écrire|To write|\s{fut} c’hrírẹ́, \s{subj} c’hrís
-dahaúr|particle|d’accord|Sure, ok, agreed, fine
+dahaúr|particle|d’accord|Sure, ok, agreed, fine|\s{abbr} da’
 jys|v.|injuste|To be unjust, unfair|\s{fut} jysre, \s{subj} jyss
 c’hóbhár|v.|comparer|To compare|\s{fut} c’hóbhárre, \s{subj} c’hó\-bhárs
 c’hóvâ|v.|commencer|
@@ -510,7 +518,7 @@ vêt’hnâ|adv.|from \pf{maintenant}, lenited for unknown reasons|Now
 lys|adv.|\pf{plus} /plys/|\textit{neg. only} No longer, not any more. \comment The meaning of this and
     \w{lẹ} swapped at some point for unknown reasons
 
-ḍédv́ér|interj.|\pf{putain de merde}|Fuck. \textit{Generic expletive}
+ḍédv́ér|interj.|\pf{putain de merde}|Fuck. \comment Generic expletive
 y’éjúré|n.|\pf{siège} + \pf{tabouret}|Chair, seat
 
 sẹhúr|v.|secourir|To help, succour, give aid (+\s{dat} to sb.) (+\s{aci}/\s{acc} with sth.)|\s{fut} sẹhúrre, \s{subj} sẹhús
@@ -810,7 +818,7 @@ néḍ|v. dep.|naître|To be born. \comment This is a deponent verb whose subjec
     which only takes passive affixes.|\s{sub} néhs
 raûc|n.|tronche|Head
 lèheb’h|v.|laisser-faire|+\s{aci} To let happen
-áhaúr|adv.|encore|\\\textit{(positive context)} Still, yet \\\textit{(negative context)} Again
+áhaúr|adv.|encore|\\\textit{(positive context)} Still, again \\\textit{(negative context)} Not yet
 raúhy’b’h|v.|from \w{raú-} + \w{sy’b’h}|To raise, lift up (+\s{acc} sth.) (+\s{ela} from sth.)
 rá₅|n.|bras|Arm.
 nésḍ|adj. archaic|senestre|Left (side), left-handed
@@ -958,15 +966,15 @@ naûb|n.|nombre|
 abhár|n.|apartement|House
 áḍrébh|n.|entrepôt|Warehouse, depot
 aut’heldývér|n.|\pf{hôtel (de ville) + du maire}|Town hall
-auu|interj.|\textit{onomatopoeic}|Wow, whoa, ooh \comment Pronounced as \w{au}, but lengthened. Written with as many
-    ‘u’s as necessary, e.g. \w{auuuuu}, but always at least two to differentiate it from \w{au}.
+auu|interj.|\textnf{onomatopoeic}|Wow, whoa, ooh \comment Pronounced as \w{au}, but lengthened. Written with as many
+    ‘u’s as necessary, e.g. \w{auuuuu}, but always at least two to differentiate it from \w{au}.|\s{nd} aū
 ráb’hén(ýr)|interj.|contraction of earlier \w{Ráb’h hénýr}|Oh god, oh my god
 say’ẹ|interj.|salut|\textit{(informal)} Hi, hello
 sý’a|pron.||\textit{Archaic form of \w{sý’ẹ}}
 arc’hais|n.|archaïsme|Archaism
-aúú|interj.|\textit{onomatopoeic}|Hmm \comment Written with as many ‘ú’s as necessary, e.g. \w{aúúúú}, but usually at
-    least two, paralleling \w{auu}.
-aa|interj.|\textit{onomatopoeic}|Ah, oh
+aúú|interj.|\textnf{onomatopoeic}|Hmm \comment Written with as many ‘ú’s as necessary, e.g. \w{aúúúú}, but usually at
+    least two, paralleling \w{auu}.|\s{nd} aǔ
+aa|interj.|\textnf{onomatopoeic}|Ah, oh|\s{nd} ā
 b’hil|n.|ville|Town, city
 lé|v.|plein|\\ To be full
 ḅúrc’hrá|pron.|pourquoi|\textit{(obsolete)} Why
@@ -994,6 +1002,32 @@ laút’há|adv.|longtemps|
         \ex \w{dau lẹlaút’há ḍaléraû vy’í} ‘I have been a carpenter much longer than you’.
 néhás|n.|naissance|Birth
 ’só|abbr.||\textit{Informal, abbreviated form of \w{aúsó}, \s{1pl} of \w{eḍ}}
+bár|v.|parier|
+    \\ To bet, wager
+    \\+\s{aci} To be sure of something
+raúb’ha|v.|probable|To be probable, likely
+sd’hehis|v.|\pf{se désister}|To withdraw, back out, stand down|\s{fut} sd’hehise, \s{subj} sd’hehiss
+lá|v.|lent|To be slow
+cabharḍrár|n.|échappatoire|\\ Escape route \\\textit{fig.} A way out, loophole, solution
+b’hał|v.|valoir|
+    \\+\s{gen} To be worth, equal in worth to
+    \\\textit{refl. pl.} To be the same or equivalent to each other
+    \\\textit{intr.} \w{b’hał áhuf} To be worth the trouble, worth it, worthwhile \comment Literally ‘to be worth the pain’.
+    |\s{fut} b’hałárẹ́, \s{subj} b’hałás
+raúvúr|v.|from \w{raú-} + \w{vúr}|(+\s{acc}) To kill
+dehád|v.|descendre|\textit{(dated)} (+\s{acc}) To kill|\s{fut} dehád, \s{subj} dehás
+ee|interj.|\textnf{onomatopoeic}|Hey \comment Pronounced /eː/ Used to call for attention|\s{nd} ē
+y’úḅłẹ|particle|\pf{s’il vous plait}|Please
+raûlaú|n.|tromblon|Gun, firearm
+ráb’hẹ|interj.|bravo|Well done, bravo
+ehehe|interj.|\textnf{onomatopoeic}|Hehe \comment Mischievous laughter
+réḅ|interj.|ouaip|Yeah, yep, yes \comment Never used in response to a yes-no question.
+ríh|v.|crisser|To screech|\s{onom} ríí
+
+## TODO: Examples often have comments, so we should allow having a \comment within an \ex
+
+## ‘noyer le poisson’ = ‘To drown the fish’
+
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the
 ## word as part of \entry.
@@ -1025,6 +1059,7 @@ Réáb’h > Ráb’h
 ábhírâ > ábhíré
 dib’hat’h’ > dib’hat’hiv
 naûvú > naûb vú
+da’ > dahaúr
 
 ## Grammatical forms are only in the online dictionary because if you have
 ## the grammar you can just search it instead. We only include the most common

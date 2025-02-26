@@ -36,7 +36,8 @@
                 "def": "Ah, oh."
             },
             "def-search": "ah oh",
-            "etym": "<em>onomatopoeic</em>",
+            "etym": "<uf-nf>onomatopoeic</uf-nf>",
+            "forms": "<uf-s>nd</uf-s> ā",
             "hw-search": "aa",
             "pos": "interj.",
             "word": "aa"
@@ -475,16 +476,16 @@
             "word": "áhaúr"
         },
         {
-            "def-search": "again still yet",
+            "def-search": "again not still yet",
             "etym": "<uf-pf>encore</uf-pf>",
             "hw-search": "ahaur",
             "pos": "adv.",
             "senses": [
                 {
-                    "def": "<em>(positive context)</em> Still, yet."
+                    "def": "<em>(positive context)</em> Still, again."
                 },
                 {
-                    "def": "<em>(negative context)</em> Again."
+                    "def": "<em>(negative context)</em> Not yet."
                 }
             ],
             "word": "áhaúr"
@@ -897,7 +898,8 @@
                 "def": "Wow, whoa, ooh."
             },
             "def-search": "ooh whoa wow",
-            "etym": "<em>onomatopoeic</em>",
+            "etym": "<uf-nf>onomatopoeic</uf-nf>",
+            "forms": "<uf-s>nd</uf-s> aū",
             "hw-search": "auu",
             "pos": "interj.",
             "word": "auu"
@@ -908,7 +910,8 @@
                 "def": "Hmm."
             },
             "def-search": "hmm",
-            "etym": "<em>onomatopoeic</em>",
+            "etym": "<uf-nf>onomatopoeic</uf-nf>",
+            "forms": "<uf-s>nd</uf-s> aǔ",
             "hw-search": "auu",
             "pos": "interj.",
             "word": "aúú"
@@ -1133,6 +1136,21 @@
             "hw-search": "baj",
             "pos": "n.",
             "word": "ḅaj"
+        },
+        {
+            "def-search": "be bet of something sure to wager",
+            "etym": "<uf-pf>parier</uf-pf>",
+            "hw-search": "bar",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To bet, wager."
+                },
+                {
+                    "def": "+<uf-s>aci</uf-s> To be sure of something."
+                }
+            ],
+            "word": "bár"
         },
         {
             "def": {
@@ -1436,6 +1454,26 @@
             "hw-search": "bhayer",
             "pos": "adv.",
             "word": "b’hây’ér"
+        },
+        {
+            "def-search": "be each equal equivalent in it or other same the to trouble worth worthwhile",
+            "etym": "<uf-pf>valoir</uf-pf>",
+            "forms": "<uf-s>fut</uf-s> b’hałárẹ́, <uf-s>subj</uf-s> b’hałás",
+            "hw-search": "bhał",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<uf-s>gen</uf-s> To be worth, equal in worth to."
+                },
+                {
+                    "def": "<em>refl. pl.</em> To be the same or equivalent to each other."
+                },
+                {
+                    "comment": "<p>Literally ‘to be worth the pain’.</p>",
+                    "def": "<em>intr.</em> <uf-w>b’hał áhuf</uf-w> To be worth the trouble, worth it, worthwhile."
+                }
+            ],
+            "word": "b’hał"
         },
         {
             "def": {
@@ -1828,6 +1866,21 @@
             "hw-search": "bze",
             "pos": "v.",
             "word": "bźé"
+        },
+        {
+            "def-search": "a escape loophole out route solution way",
+            "etym": "<uf-pf>échappatoire</uf-pf>",
+            "hw-search": "cabhardrar",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Escape route."
+                },
+                {
+                    "def": "<em>fig.</em> A way out, loophole, solution."
+                }
+            ],
+            "word": "cabharḍrár"
         },
         {
             "def": {
@@ -2473,7 +2526,7 @@
             "word": "c’haúvnaút’hẹ"
         },
         {
-            "def-search": "how long many much",
+            "def-search": "ago for how long many much since",
             "etym": "<uf-pf>combien</uf-pf>",
             "hw-search": "chauye",
             "pos": "adv.",
@@ -2482,8 +2535,8 @@
                     "def": "+<uf-s>gen</uf-s> How much, how many."
                 },
                 {
-                    "comment": "<p>Literally ‘how much time’.</p>",
-                    "def": "<uf-w>c’haúy’ê sýná</uf-w> How long."
+                    "comment": "<p>Literally ‘how much time’. This is generally used with either the present or future tense. The present tense is used when the focus is how long ago an ongoing event started in the past, and the future tense when discussing how far it will extend into the future.</p>",
+                    "def": "<uf-w>c’haúy’ê sýná</uf-w> How long, for how long, since how long ago."
                 }
             ],
             "word": "c’haúy’ê"
@@ -2853,6 +2906,7 @@
             },
             "def-search": "agreed fine ok sure",
             "etym": "<uf-pf>d’accord</uf-pf>",
+            "forms": "<uf-s>abbr</uf-s> da’",
             "hw-search": "dahaur",
             "pos": "particle",
             "word": "dahaúr"
@@ -3071,7 +3125,8 @@
         },
         {
             "def": {
-                "def": "Fuck. <em>Generic expletive</em>."
+                "comment": "<p>Generic expletive.</p>",
+                "def": "Fuck."
             },
             "def-search": "fuck",
             "etym": "<uf-pf>putain de merde</uf-pf>",
@@ -3107,6 +3162,17 @@
             "hw-search": "dehabhiy",
             "pos": "v. tr.",
             "word": "dehab’híy’"
+        },
+        {
+            "def": {
+                "def": "<em>(dated)</em> (+<uf-s>acc</uf-s>) To kill."
+            },
+            "def-search": "kill to",
+            "etym": "<uf-pf>descendre</uf-pf>",
+            "forms": "<uf-s>fut</uf-s> dehád, <uf-s>subj</uf-s> dehás",
+            "hw-search": "dehad",
+            "pos": "v.",
+            "word": "dehád"
         },
         {
             "def-search": "a body of sidesurface top upper water",
@@ -4068,6 +4134,29 @@
         },
         {
             "def": {
+                "comment": "<p>Pronounced /eː/ Used to call for attention.</p>",
+                "def": "Hey."
+            },
+            "def-search": "hey",
+            "etym": "<uf-nf>onomatopoeic</uf-nf>",
+            "forms": "<uf-s>nd</uf-s> ē",
+            "hw-search": "ee",
+            "pos": "interj.",
+            "word": "ee"
+        },
+        {
+            "def": {
+                "comment": "<p>Mischievous laughter.</p>",
+                "def": "Hehe."
+            },
+            "def-search": "hehe",
+            "etym": "<uf-nf>onomatopoeic</uf-nf>",
+            "hw-search": "ehehe",
+            "pos": "interj.",
+            "word": "ehehe"
+        },
+        {
+            "def": {
                 "def": "Shield."
             },
             "def-search": "shield",
@@ -4508,6 +4597,16 @@
             },
             "def-search": "fly to",
             "etym": "<uf-pf>planer</uf-pf>",
+            "hw-search": "la",
+            "pos": "v.",
+            "word": "lá"
+        },
+        {
+            "def": {
+                "def": "To be slow."
+            },
+            "def-search": "be slow to",
+            "etym": "<uf-pf>lent</uf-pf>",
             "hw-search": "la",
             "pos": "v.",
             "word": "lá"
@@ -5449,6 +5548,16 @@
         },
         {
             "def": {
+                "def": "Well done, bravo."
+            },
+            "def-search": "bravo done well",
+            "etym": "<uf-pf>bravo</uf-pf>",
+            "hw-search": "rabhe",
+            "pos": "interj.",
+            "word": "ráb’hẹ"
+        },
+        {
+            "def": {
                 "def": "Oh god, oh my god."
             },
             "def-search": "god my oh",
@@ -5635,7 +5744,12 @@
         },
         {
             "def": {
-                "def": "Fish."
+                "comment": "<p>UF has a series of proverbs around fish drowning (in water!), despite the fact that fish quite literally breathe water and therefore are incapable of ‘drowning’.</p>",
+                "def": "Fish.",
+                "examples": [
+                    "<uf-w>Láráhó slẹlúrá.</uf-w> Now you’ve done it. <em>Literally ‘the fish was too bulky [to swim to the surface, so it drowned]’</em>.",
+                    "<uf-w>Áhaúr’sý’ýâ láráhó sráy’éá.</uf-w> There is more to this. There is a story behind this. <em>Literally ‘the fish hasn’t drowned yet’.</em>."
+                ]
             },
             "def-search": "fish",
             "etym": "<uf-pf>poisson</uf-pf>",
@@ -5808,6 +5922,16 @@
         },
         {
             "def": {
+                "def": "To be probable, likely."
+            },
+            "def-search": "be likely probable to",
+            "etym": "<uf-pf>probable</uf-pf>",
+            "hw-search": "raubha",
+            "pos": "v.",
+            "word": "raúb’ha"
+        },
+        {
+            "def": {
                 "def": "<em>Causative prefix, see grammar</em>."
             },
             "def-search": "",
@@ -5894,6 +6018,16 @@
         },
         {
             "def": {
+                "def": "Gun, firearm."
+            },
+            "def-search": "firearm gun",
+            "etym": "<uf-pf>tromblon</uf-pf>",
+            "hw-search": "raulau",
+            "pos": "n.",
+            "word": "raûlaú"
+        },
+        {
+            "def": {
                 "def": "Moon."
             },
             "def-search": "moon",
@@ -5901,6 +6035,16 @@
             "hw-search": "rauva",
             "pos": "n.",
             "word": "raúvá"
+        },
+        {
+            "def": {
+                "def": "(+<uf-s>acc</uf-s>) To kill."
+            },
+            "def-search": "kill to",
+            "etym": "from <uf-w>raú-</uf-w> + <uf-w>vúr</uf-w>",
+            "hw-search": "rauvur",
+            "pos": "v.",
+            "word": "raúvúr"
         },
         {
             "def": {
@@ -6168,6 +6312,17 @@
             "hw-search": "reau",
             "pos": "n.",
             "word": "réaû"
+        },
+        {
+            "def": {
+                "comment": "<p>Never used in response to a yes-no question.</p>",
+                "def": "Yeah, yep, yes."
+            },
+            "def-search": "yeah yep yes",
+            "etym": "<uf-pf>ouaip</uf-pf>",
+            "hw-search": "reb",
+            "pos": "interj.",
+            "word": "réḅ"
         },
         {
             "def": {
@@ -6474,6 +6629,17 @@
             "hw-search": "ribhyer",
             "pos": "n.",
             "word": "ríb’hy’ér"
+        },
+        {
+            "def": {
+                "def": "To screech."
+            },
+            "def-search": "screech to",
+            "etym": "<uf-pf>crisser</uf-pf>",
+            "forms": "<uf-s>onom</uf-s> ríí",
+            "hw-search": "rih",
+            "pos": "v.",
+            "word": "ríh"
         },
         {
             "def": {
@@ -7079,6 +7245,17 @@
         },
         {
             "def": {
+                "def": "To withdraw, back out, stand down."
+            },
+            "def-search": "back down out stand to withdraw",
+            "etym": "<uf-pf>se désister</uf-pf>",
+            "forms": "<uf-s>fut</uf-s> sd’hehise, <uf-s>subj</uf-s> sd’hehiss",
+            "hw-search": "sdhehis",
+            "pos": "v.",
+            "word": "sd’hehis"
+        },
+        {
+            "def": {
                 "def": "Seventh."
             },
             "def-search": "seventh",
@@ -7630,7 +7807,7 @@
         },
         {
             "def": {
-                "def": "<em>Informal, abbreviated form of <uf-w>ausó</uf-w>, <uf-s>1pl</uf-s> of <uf-w>eḍ</uf-w></em>."
+                "def": "<em>Informal, abbreviated form of <uf-w>aúsó</uf-w>, <uf-s>1pl</uf-s> of <uf-w>eḍ</uf-w></em>."
             },
             "def-search": "",
             "hw-search": "so",
@@ -8646,22 +8823,29 @@
         },
         {
             "def": {
+                "comment": "<p>See also <uf-w>ý’aúhý</uf-w>.</p>",
                 "def": "There is no, there are no, there is none."
             },
             "def-search": "are is no none there",
             "etym": "<uf-pf>il n’y a aucun</uf-pf>",
             "hw-search": "yauhy",
-            "pos": "part.",
+            "pos": "particle",
             "word": "y’aúhý"
         },
         {
-            "def": {
-                "def": "There is, there are."
-            },
             "def-search": "are is there",
             "etym": "<uf-pf>il y a aucun</uf-pf>",
             "hw-search": "yauhy",
-            "pos": "part.",
+            "pos": "particle",
+            "senses": [
+                {
+                    "comment": "<p>See also <uf-w>y’aúhý</uf-w>.</p>",
+                    "def": "There is, there are."
+                },
+                {
+                    "def": "<uf-w>ý’aúhý c’hes</uf-w> Is there, are there."
+                }
+            ],
             "word": "ý’aúhý"
         },
         {
@@ -8919,6 +9103,16 @@
             "word": "yt’hiy’ihẹ"
         },
         {
+            "def": {
+                "def": "Please."
+            },
+            "def-search": "please",
+            "etym": "<uf-pf>s’il vous plait</uf-pf>",
+            "hw-search": "yubłe",
+            "pos": "particle",
+            "word": "y’úḅłẹ"
+        },
+        {
             "def-search": "after day",
             "etym": "<uf-pf>jour</uf-pf>",
             "hw-search": "yur",
@@ -9155,6 +9349,11 @@
             "from": "c’h’s",
             "from-search": "chs",
             "to": "c’hes"
+        },
+        {
+            "from": "da’",
+            "from-search": "da",
+            "to": "dahaúr"
         },
         {
             "from": "ḍâ",
