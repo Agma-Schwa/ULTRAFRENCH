@@ -133,35 +133,25 @@ endif()
 ## ============================================================================
 ##  Submodules and include dirs.
 ## ============================================================================
-include(FetchContent)
+target_include_directories(options INTERFACE include)
 
-FetchContent_Declare(libbase
-    GIT_REPOSITORY https://github.com/Sirraide/libbase
+include(FetchContent)
+FetchContent_Declare(dictgen
+    GIT_REPOSITORY https://github.com/Sirraide/dictionary-generator
     GIT_TAG master
-    SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libs/libbase"
 )
 
-FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
-
-FetchContent_MakeAvailable(libbase json)
-
-target_link_libraries(options INTERFACE libbase)
+FetchContent_MakeAvailable(dictgen)
 
 ## ============================================================================
 ##  Executables and libraries.
 ## ============================================================================
-## Everything in ‘src’ is part of the project.
-file(GLOB_RECURSE sources src/*.cc include/*.hh)
-
-## As well as everything in ‘include’, if it exists.
-if (EXISTS ${PROJECT_SOURCE_DIR}/include)
-    file(GLOB_RECURSE includes include/*.hh)
-    list(APPEND sources ${includes})
-endif()
+file(GLOB_RECURSE sources src/*.cc)
+file(GLOB_RECURSE headers include/*.hh)
 
 ## Add the executable.
 add_executable(ULTRAFRENCHER ${sources})
+target_sources(ULTRAFRENCHER PRIVATE FILE_SET HEADERS FILES ${headers})
 
 ## Link ICU.
-target_include_directories(ULTRAFRENCHER PRIVATE include)
-target_link_libraries(ULTRAFRENCHER PRIVATE options nlohmann_json::nlohmann_json)
+target_link_libraries(ULTRAFRENCHER PRIVATE options dictionary-generator)

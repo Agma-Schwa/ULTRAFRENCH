@@ -1,10 +1,10 @@
 #include <algorithm>
-#include <backends.hh>
 #include <base/Assert.hh>
 #include <base/Base.hh>
 #include <base/Text.hh>
 #include <clopts.hh>
-#include <frontend.hh>
+#include <dictgen/backends.hh>
+#include <dictgen/frontend.hh>
 #include <ipa.hh>
 #include <print>
 #include <string>
