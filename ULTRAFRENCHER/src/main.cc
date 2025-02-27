@@ -2,6 +2,7 @@
 #include <base/Assert.hh>
 #include <base/Base.hh>
 #include <base/Macros.hh>
+#include <base/Regex.hh>
 #include <base/Text.hh>
 #include <clopts.hh>
 #include <nlohmann/json.hpp>
@@ -40,10 +41,15 @@ static icu::Transliterator* Normaliser;
 
 using RefEntry = std::string;
 struct FullEntry {
+    struct Example {
+        std::string text;
+        std::string comment;
+    };
+
     struct Sense {
         std::string def;
         std::string comment;
-        std::vector<std::string> examples;
+        std::vector<Example> examples;
     };
 
     /// Part of speech.
@@ -118,8 +124,11 @@ struct JsonBackend final : Backend {
             if (not sense.comment.empty()) s["comment"] = std::format("<p>{}</p>", TeXToHtml(sense.comment));
             if (not sense.examples.empty()) {
                 auto& ex = s["examples"] = json::array();
-                for (auto& example : sense.examples)
-                    ex.push_back(TeXToHtml(example));
+                for (auto& example : sense.examples) {
+                    json& j = ex.emplace_back();
+                    j["text"] = TeXToHtml(example.text);
+                    if (not example.comment.empty()) j["comment"] = TeXToHtml(example.comment);
+                }
             }
             return s;
         };
@@ -363,7 +372,11 @@ struct TeXBackend final : Backend {
                 + (
                     s.examples.empty()
                     ? ""s
-                    : "\\ex " + utils::join(s.examples, "\\ex ")
+                    : s.examples | vws::transform([](const FullEntry::Example& ex) {
+                        auto s = std::format("\\ex {}", ex.text);
+                        if (not ex.comment.empty()) s += std::format(" {{\\itshape{{}}{}}}", ex.comment);
+                        return s;
+                    }) | vws::join | rgs::to<std::string>()
                 );
         };
 
@@ -474,17 +487,41 @@ struct Entry {
         // do this here because there isn’t really a good way to do that
         // in LaTeX.
         //
-        // A sense may contain a comment and examples, in that order. A comment cannot
-        // be placed after the examples.
-        auto SplitSense = [](u32stream sense) {
-            static constexpr std::u32string_view ex = U"\\ex";
-            static constexpr std::u32string_view comment = U"\\comment";
-            bool has_comment = sense.contains(comment);
-            return FullEntry::Sense{
-                .def = FullStopDelimited(sense.trim_front().take_until_and_drop(has_comment ? comment : ex)),
-                .comment = has_comment ? FullStopDelimited(sense.trim_front().take_until_and_drop(ex)) : "",
-                .examples = sense.trim_front().split(ex) | vws::transform(FullStopDelimited) | rgs::to<std::vector>(),
-            };
+        // A sense may contain a comment and examples; each example may also
+        // contain a comment. E.g.:
+        //
+        // \\ sense 1
+        //     \comment foo
+        //     \ex example 1
+        //          \comment comment for example 1
+        //     \ex example 2
+        //          \comment comment for example 2
+        auto SplitSense = [&](u32stream sense) {
+            static constexpr std::u32string_view Ex = U"\\ex";
+            static constexpr std::u32string_view Comment = U"\\comment";
+            static auto CommentOrEx = u32regex::create(U"\\\\(?:ex|comment)").value();
+
+            // Find the sense comment or first example, if any, and depending on which comes first.
+            FullEntry::Sense s;
+            s.def = FullStopDelimited(sense.trim_front().take_until(CommentOrEx));
+
+            // Sense has a comment.
+            if (sense.trim_front().consume(Comment))
+                s.comment = FullStopDelimited(sense.trim_front().take_until(Ex));
+
+            // At this point, we should either be at the end or at an example.
+            while (sense.trim_front().consume(Ex)) {
+                auto& ex = s.examples.emplace_back();
+                ex.text = FullStopDelimited(sense.trim_front().take_until(CommentOrEx));
+                if (sense.consume(Comment))
+                    ex.comment = FullStopDelimited(sense.trim_front().take_until(Ex));
+            }
+
+            // Two comments are invalid.
+            if (sense.trim_front().starts_with(Comment))
+                backend.error("Unexpected \\comment token");
+
+            return s;
         };
 
         // Process the primary definition. This is everything before the first sense

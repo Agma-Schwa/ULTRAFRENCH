@@ -56,7 +56,9 @@
                     "comment": "<p>In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the second accusative, denoting the name, naturally being replaced by the absolutive, likely to avoid ambiguity that was starting to manifest as a result of UF’s increasingly free word order.</p>",
                     "def": "+<uf-s>acc</uf-s> <em>and</em> <uf-s>abs</uf-s> To call, name, nominate, give a name to.",
                     "examples": [
-                        "<uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’; even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested."
+                        {
+                            "text": "<uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’; even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested."
+                        }
                     ]
                 },
                 {
@@ -347,7 +349,9 @@
                 {
                     "def": "+<uf-s>gen</uf-s> To desire, yearn for sbd./sth.",
                     "examples": [
-                        "<uf-s>Snet’h iv.17</uf-s> <uf-w>jad’hóré ávvaúríhe</uf-w> ‘I yearned to remember’ <em>(compare <uf-w>jad’hóré devvaúríhe</uf-w> ‘I loved to remember’)</em>."
+                        {
+                            "text": "<uf-s>Snet’h iv.17</uf-s> <uf-w>jad’hóré ávvaúríhe</uf-w> ‘I yearned to remember’ <em>(compare <uf-w>jad’hóré devvaúríhe</uf-w> ‘I loved to remember’)</em>."
+                        }
                     ]
                 }
             ],
@@ -937,7 +941,9 @@
                 {
                     "def": "<em>(usually pl.)</em> Storm, tempest, thunderstorm.",
                     "examples": [
-                        "<uf-s>Snet’h ii.7</uf-s> <uf-w>phárýaúráj téríbâ</uf-w> ‘like a terrible storm’."
+                        {
+                            "text": "<uf-s>Snet’h ii.7</uf-s> <uf-w>phárýaúráj téríbâ</uf-w> ‘like a terrible storm’."
+                        }
                     ]
                 },
                 {
@@ -1182,7 +1188,9 @@
                 "comment": "<p>Only the <uf-w>nórávíc’h</uf-w> is inflected; infixing of adj. is attested.</p>",
                 "def": "Druid.",
                 "examples": [
-                    "<uf-s>Snet’h</uf-s>, <uf-s>iii.2</uf-s>: <uf-w>derúb’h phá ráinórávíc’h</uf-w> ‘to find the great druid’, with infixed <uf-w>rá</uf-w>."
+                    {
+                        "text": "<uf-s>Snet’h</uf-s>, <uf-s>iii.2</uf-s>: <uf-w>derúb’h phá ráinórávíc’h</uf-w> ‘to find the great druid’, with infixed <uf-w>rá</uf-w>."
+                    }
                 ]
             },
             "def-search": "druid",
@@ -1743,9 +1751,15 @@
                     "comment": "<p>Exclusively used in the passive of the weather or a situation or state of affairs, with the noun for the condition or preciptation as the ‘object’ and no subject (see examples below). </p><p>In Middle UF, <uf-w>fér</uf-w> with a noun in the <uf-s>abs</uf-s> was often used for this purpose, hence also the irregular <uf-s>fut</uf-s> and <uf-s>subj</uf-s>, e.g. *<uf-w>sfér cẹaû</uf-w> ‘It is hot’; similarly, weather conditions used to be their own verbs, e.g. *<uf-w>slýv́á</uf-w> ‘it rains’. </p><p>The latter were eventually replaced with a construction using <uf-w>b’hér</uf-w> in the passive with the noun in the <uf-s>part</uf-s>, e.g. *<uf-w>dŷnḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘some rain is being poured’). This was later extended to any state (of the weather), e.g. <uf-w>dŷncẹaû syb’hér</uf-w> (lit. ‘some heat is being poured’). The <uf-s>acc</uf-s> can be used instead as an intensifier, e.g. <uf-w>sc̣ẹaû syb’hér</uf-w> ‘it is scorching hot’. </p><p>With precipitation, the <uf-s>pl</uf-s> is most common in modern times, e.g. <uf-w>dýḷẹ syb’hér</uf-w> instead of older *<uf-w>dŷnḷẹ syb’hér</uf-w>. The old weather verbs, e.g. *<uf-w>lýv́á</uf-w>, are altogether obsolete.</p>",
                     "def": "<uf-s>pass</uf-s> + <uf-s>part/acc</uf-s> <em>(of a state or condition)</em> to obtain; <em>(of precipitation)</em> to fall.",
                     "examples": [
-                        "<uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’.",
-                        "<uf-w>dŷncẹaû syb’hér</uf-w> ‘it is hot’.",
-                        "<uf-w>dyraúvá léâ syb’hér</uf-w> ‘it’s a full moon’."
+                        {
+                            "text": "<uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’."
+                        },
+                        {
+                            "text": "<uf-w>dŷncẹaû syb’hér</uf-w> ‘it is hot’."
+                        },
+                        {
+                            "text": "<uf-w>dyraúvá léâ syb’hér</uf-w> ‘it’s a full moon’."
+                        }
                     ]
                 }
             ],
@@ -2147,7 +2161,9 @@
                 {
                     "def": "<uf-s>part</uf-s> + <uf-s>pass</uf-s> of <uf-w>b’hér</uf-w> To be hot.",
                     "examples": [
-                        "<uf-w>Dŷncẹaû syb’hér.</uf-w> ‘It is hot.’"
+                        {
+                            "text": "<uf-w>Dŷncẹaû syb’hér.</uf-w> ‘It is hot.’"
+                        }
                     ]
                 }
             ],
@@ -2190,7 +2206,9 @@
                 {
                     "def": "<em>with <uf-w>áví</uf-w> ‘friend’</em> To be friends with.",
                     "examples": [
-                        "<uf-w>áví lẹcérvé</uf-w> ‘he is a (dear) friend of mine’."
+                        {
+                            "text": "<uf-w>áví lẹcérvé</uf-w> ‘he is a (dear) friend of mine’."
+                        }
                     ]
                 }
             ],
@@ -3542,7 +3560,9 @@
             "def": {
                 "def": "<em>Emphatic particle, used as an intensifier, often postpositive after the verb, but not so much intensifying the verb directly as it does the entire clause.</em>.",
                 "examples": [
-                    "<uf-s>Snet’h</uf-s>, <uf-s>ii.34</uf-s>: <uf-w>lá-árb srýlé dèl</uf-w> ‘so it was that the tree was burning’ or ‘the tree was burning fiercely’, or ‘indeed, the tree was burning’."
+                    {
+                        "text": "<uf-s>Snet’h</uf-s>, <uf-s>ii.34</uf-s>: <uf-w>lá-árb srýlé dèl</uf-w> ‘so it was that the tree was burning’ or ‘the tree was burning fiercely’, or ‘indeed, the tree was burning’."
+                    }
                 ]
             },
             "def-search": "",
@@ -3734,7 +3754,9 @@
                 "comment": "<p>Shortened to just <uf-w>dib’hat’h’</uf-w> before ordinals.</p>",
                 "def": "Building, edifice.",
                 "examples": [
-                    "<uf-w>dib’hat’h’ révy’ẹ́</uf-w> ‘Building №1’."
+                    {
+                        "text": "<uf-w>dib’hat’h’ révy’ẹ́</uf-w> ‘Building №1’."
+                    }
                 ]
             },
             "def-search": "building edifice",
@@ -4582,7 +4604,9 @@
                 "comment": "<p>Used in derivation, see grammar.</p>",
                 "def": "-maker, -wright.",
                 "examples": [
-                    "<uf-w>ḍaléraû</uf-w> ‘carpenter’ from <uf-w>ḍalẹ</uf-w> ‘table’."
+                    {
+                        "text": "<uf-w>ḍaléraû</uf-w> ‘carpenter’ from <uf-w>ḍalẹ</uf-w> ‘table’."
+                    }
                 ]
             },
             "def-search": "maker wright",
@@ -5185,13 +5209,17 @@
                     "comment": "<p>When describing ongoing processes that started a long time ago, this is construed with the present tense instead of the present anterior.</p>",
                     "def": "Since long ago, for a long time, over a long period.",
                     "examples": [
-                        "<uf-w>laút’há ḍaléraû vy’í</uf-w> ‘I have been a carpenter for a long time’, lit. ‘I am a carpenter for a long time’."
+                        {
+                            "text": "<uf-w>laút’há ḍaléraû vy’í</uf-w> ‘I have been a carpenter for a long time’, lit. ‘I am a carpenter for a long time’."
+                        }
                     ]
                 },
                 {
                     "def": "<em>(with comparative prefix)</em> Since long before, For longer, for a longer time.",
                     "examples": [
-                        "<uf-w>dau lẹlaút’há ḍaléraû vy’í</uf-w> ‘I have been a carpenter much longer than you’."
+                        {
+                            "text": "<uf-w>dau lẹlaút’há ḍaléraû vy’í</uf-w> ‘I have been a carpenter much longer than you’."
+                        }
                     ]
                 }
             ],
@@ -5239,7 +5267,9 @@
                 "comment": "<p>Starting in Early Modern UF, this noun only occurs in the plural.</p>",
                 "def": "Rain.",
                 "examples": [
-                    "<uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘rains are being poured’)."
+                    {
+                        "text": "<uf-w>dýḷẹ syb’hér</uf-w> ‘it rains’ (lit. ‘rains are being poured’)."
+                    }
                 ]
             },
             "def-search": "rain",
@@ -5781,8 +5811,12 @@
                 "comment": "<p>Usually placed after the name. This word replaced <uf-w>aḅ</uf-w> in the reflexive sense in Early Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.</p>",
                 "def": "<em>(refl. or intr.)</em> To be called, name oneself.",
                 "examples": [
-                    "<uf-w>Aý’èc’hsád j(v)nvé</uf-w> ‘My name is Aý’èc’hsád’.",
-                    "<uf-w>(A) ḍẹnvẹ́c’h’s ?</uf-w> ’What’s your name?’, lit. ‘What are you called?’. <em>While <uf-w>-c’h’s</uf-w> for <uf-w>c’hes</uf-w> is archaic nowadays, this is a set phrase that preserves this form. Because this renders this phrase rather recognisable, the <uf-w>a</uf-w> is often dropped in informal speech. Note also that this is a passive, with the plural being <uf-w>A b’hýnvẹ́ c’hes</uf-w>.</em>."
+                    {
+                        "text": "<uf-w>Aý’èc’hsád j(v)nvé</uf-w> ‘My name is Aý’èc’hsád’."
+                    },
+                    {
+                        "text": "<uf-w>(A) ḍẹnvẹ́c’h’s ?</uf-w> ’What’s your name?’, lit. ‘What are you called?’. <em>While <uf-w>-c’h’s</uf-w> for <uf-w>c’hes</uf-w> is archaic nowadays, this is a set phrase that preserves this form. Because this renders this phrase rather recognisable, the <uf-w>a</uf-w> is often dropped in informal speech. Note also that this is a passive, with the plural being <uf-w>A b’hýnvẹ́ c’hes</uf-w>.</em>."
+                    }
                 ]
             },
             "def-search": "be called name oneself to",
@@ -6010,14 +6044,18 @@
                     "comment": "<p>Main god of the ULTRAFRENCH pantheon; usually male. Old-fashioned also often all-caps <uf-w>RÁB’H</uf-w>.</p>",
                     "def": "<em>indecl.</em> <uf-s>def sg</uf-s> <em>always</em> <uf-s>nom/voc</uf-s> Ráb’h.",
                     "examples": [
-                        "<uf-s>Snet’h</uf-s>, <uf-s>i.17</uf-s>: <uf-w>au lebálá daú RÁB’H</uf-w> ‘and thus spake Ráb’h’."
+                        {
+                            "text": "<uf-s>Snet’h</uf-s>, <uf-s>i.17</uf-s>: <uf-w>au lebálá daú RÁB’H</uf-w> ‘and thus spake Ráb’h’."
+                        }
                     ]
                 },
                 {
                     "comment": "<p>Used for <uf-sense>1</uf-sense> in all other cases; as with all names, only <uf-w>sénýr</uf-w> is inflected. Old-fashioned often <uf-w>RÁB’H Sénýr</uf-w>.</p>",
                     "def": "<uf-w>Ráb’h sénýr</uf-w> <uf-s>def sg</uf-s> Lord Ráb’h.",
                     "examples": [
-                        "<uf-s>Snet’h</uf-s>, <uf-s>8.1</uf-s>: <uf-w>au labraúc RÁB’H naút B’héhénýr</uf-w> ‘and they came to our Lord Ráb’h’."
+                        {
+                            "text": "<uf-s>Snet’h</uf-s>, <uf-s>8.1</uf-s>: <uf-w>au labraúc RÁB’H naút B’héhénýr</uf-w> ‘and they came to our Lord Ráb’h’."
+                        }
                     ]
                 },
                 {
@@ -6028,7 +6066,9 @@
                     "comment": "<p>Only attested figuratively. Not capitalised in this sense, and declined like a regular word.</p>",
                     "def": "<em>(rarely)</em> <uf-w>réáb’h</uf-w> The main god of another culture.",
                     "examples": [
-                        "<uf-s>Snet’h</uf-s>, <uf-s>ii.3</uf-s>: <uf-w>ledéraújá’z derévôt’he láréáb’h</uf-w> ‘their god demanded they return’."
+                        {
+                            "text": "<uf-s>Snet’h</uf-s>, <uf-s>ii.3</uf-s>: <uf-w>ledéraújá’z derévôt’he láréáb’h</uf-w> ‘their god demanded they return’."
+                        }
                     ]
                 }
             ],
@@ -6277,8 +6317,12 @@
                 "comment": "<p>UF has a series of proverbs around fish drowning (in water!), despite the fact that fish quite literally breathe water and therefore are incapable of ‘drowning’.</p>",
                 "def": "Fish.",
                 "examples": [
-                    "<uf-w>Láráhó slẹlúrá.</uf-w> Now you’ve done it. <em>Literally ‘the fish was too bulky [to swim to the surface, so it drowned]’</em>.",
-                    "<uf-w>Áhaúr’sý’ýâ láráhó sráy’éá.</uf-w> There is more to this. There is a story behind this. <em>Literally ‘the fish hasn’t drowned yet’.</em>."
+                    {
+                        "text": "<uf-w>Láráhó slẹlúrá.</uf-w> Now you’ve done it. <em>Literally ‘the fish was too bulky [to swim to the surface, so it drowned]’</em>."
+                    },
+                    {
+                        "text": "<uf-w>Áhaúr’sý’ýâ láráhó sráy’éá.</uf-w> There is more to this. There is a story behind this. <em>Literally ‘the fish hasn’t drowned yet’.</em>."
+                    }
                 ]
             },
             "def-search": "fish",
@@ -6303,7 +6347,9 @@
             "def": {
                 "def": "Sword, blade.",
                 "examples": [
-                    "<uf-w>áráhut’h’t ilý ly b’haúr</uf-w> ‘the pen is mightier than the sword’. <em>This was originally a fossilised, obsolete ACI: <uf-w>á&shy;hut’h&shy;rá éḍ ilý lẹb’haúr</uf-w></em>."
+                    {
+                        "text": "<uf-w>áráhut’h’t ilý ly b’haúr</uf-w> ‘the pen is mightier than the sword’. <em>This was originally a fossilised, obsolete ACI: <uf-w>á&shy;hut’h&shy;rá éḍ ilý lẹb’haúr</uf-w></em>."
+                    }
                 ]
             },
             "def-search": "blade sword",
@@ -9021,7 +9067,9 @@
                 {
                     "def": "<uf-s>cond i + aci</uf-s> Even if.",
                     "examples": [
-                        "<uf-w>aúrdyssa dẹće</uf-w> ‘even if he should fail’."
+                        {
+                            "text": "<uf-w>aúrdyssa dẹće</uf-w> ‘even if he should fail’."
+                        }
                     ]
                 }
             ],
@@ -9212,7 +9260,9 @@
                     "comment": "<p>In this sense, <uf-w>vêvâ</uf-w> usually precedes the noun (phrase) it qualifies.</p>",
                     "def": "<uf-w>vêvâ</uf-w> Even.",
                     "examples": [
-                        "<uf-s>H. P. Lovecraft:</uf-s> <uf-w>Lavúrer’sý’ýâ là dwájávé sdaúr&nbsp;/ Ádȅr trâ vêvâ Dérny’éhuf laúv’raú.</uf-w> ‘That is not dead which can eternal lie&nbsp;/ And with strange æons even death may die’."
+                        {
+                            "text": "<uf-s>H. P. Lovecraft:</uf-s> <uf-w>Lavúrer’sý’ýâ là dwájávé sdaúr&nbsp;/ Ádȅr trâ vêvâ Dérny’éhuf laúv’raú.</uf-w> ‘That is not dead which can eternal lie&nbsp;/ And with strange æons even death may die’."
+                        }
                     ]
                 }
             ],
