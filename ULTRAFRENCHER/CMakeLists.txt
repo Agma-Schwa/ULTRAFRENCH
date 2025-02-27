@@ -151,7 +151,7 @@ target_link_libraries(options INTERFACE libbase)
 ##  Executables and libraries.
 ## ============================================================================
 ## Everything in ‘src’ is part of the project.
-file(GLOB_RECURSE sources src/*.cc src/*.hh)
+file(GLOB_RECURSE sources src/*.cc include/*.hh)
 
 ## As well as everything in ‘include’, if it exists.
 if (EXISTS ${PROJECT_SOURCE_DIR}/include)
@@ -163,4 +163,5 @@ endif()
 add_executable(ULTRAFRENCHER ${sources})
 
 ## Link ICU.
+target_include_directories(ULTRAFRENCHER PRIVATE include)
 target_link_libraries(ULTRAFRENCHER PRIVATE options nlohmann_json::nlohmann_json)
