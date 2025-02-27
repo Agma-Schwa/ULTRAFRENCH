@@ -71,8 +71,8 @@ ad’hór|v. tr.|adore|
     \\ To love, adore.
     \\ +\s{part} To be in love with, have a crush on.
     \\ +\s{gen} To desire, yearn for sbd./sth
-        \ex \s{Snet’h iv.17} \w{jad’hóré ávvaúríhe} ‘I yearned to remember’ \textit{(compare
-            \w{jad’hóré devvaúríhe} ‘I loved to remember’)}
+        \ex \s{Snet’h iv.17} \w{jad’hóré ávvaúríhe} ‘I yearned to remember’
+            \comment Compare \w{jad’hóré devvaúríhe} ‘I loved to remember’
     |\s{fut} ad’hórérẹ́, \s{subj} ad’hórs
 
 aub’heír|v. (in)tr.|obéir|To obey
@@ -85,10 +85,10 @@ Cár|n.||\textit{Male given name, equivalent to English ‘Kyle’ or ‘Charles
 ráhó|n.|poisson|Fish
     \comment UF has a series of proverbs around fish drowning (in water!), despite the fact that fish quite
     literally breathe water and therefore are incapable of ‘drowning’.
-    \ex \w{Láráhó slẹlúrá.} Now you’ve done it. \textit{Literally ‘the fish was too bulky [to swim to the
-        surface, so it drowned]’}
-    \ex \w{Áhaúr’sý’ýâ láráhó sráy’éá.} There is more to this. There is a story behind this. \textit{Literally ‘the
-        fish hasn’t drowned yet’.}
+    \ex \w{Láráhó slẹlúrá.} Now you’ve done it.
+        \comment Literally ‘the fish was too bulky [to swim to the surface, so it drowned]’
+    \ex \w{Áhaúr’sý’ýâ láráhó sráy’éá.} There is more to this. There is a story behind this.
+        \comment Literally ‘the fish hasn’t drowned yet’.
 act’he|v. tr.|from \w{ac}|
     \\ To cut or cleave with an axe.
     \\ +\s{acc} To bring an end to.
@@ -784,8 +784,8 @@ ady’ŷ|v. or interj.|adieu|
 rébh|v.|préparer|To anticipate (+\s{acc} sth.)
 lý|n.|plume|Pen, quill
 ráhut’h|n.|\pf{grand} + \pf{couteau}|Sword, blade
-    \ex \w{áráhut’h’t ilý ly b’haúr} ‘the pen is mightier than the sword’. \textit{This was originally a fossilised,
-        obsolete ACI: \w{á\-hut’h\-rá éḍ ilý lẹb’haúr}}
+    \ex \w{áráhut’h’t ilý ly b’haúr} ‘the pen is mightier than the sword’.
+        \comment This was originally a fossilised, obsolete \s{aci}: \w{á\-hut’h\-rá éḍ ilý lẹb’haúr}
 faúr|adj.|fort|\textit{obsolete, except in proverbs} Strong, mighty.
 ly|particle|plus|\textit{obsolete variant of \w{lẹ}, sometimes leniting}
 b’hért’he|n.|from \pf{vérité}; the /i/ disappeared during Early Middle UF|Truth
@@ -863,8 +863,8 @@ aḅ|v.|appeler|
         \comment In PF, this verb used to take a double accusative, but this usage disappeared early on in UF, with the
             second accusative, denoting the name, naturally being replaced by the absolutive, likely to avoid ambiguity
             that was starting to manifest as a result of UF’s increasingly free word order.
-        \ex \s{Snet’h v.2} \w{jdap rác’hsaý’adâ} ‘I call you a liar’; even in the writings of \s{Snet’h}, the double
-            accusative is no longer attested.
+        \ex \s{Snet’h v.2} \w{jdap rác’hsaý’adâ} ‘I call you a liar’.
+            \comment Even in the writings of \s{Snet’h}, the double accusative is no longer attested.
     \\\textit{(archaic)} To call oneself, be called.
         \comment Replaced by \w{nvẹ́} in Early Modern UF in the reflexive sense.
 ré|n.|souhait|Wish
@@ -882,12 +882,12 @@ c’haút’h|v.|content|To be content. \comment This is perceived as weaker tha
     c’haút’hé, c’haúss
 nvẹ́|v. intr.|nommer|\textit{(refl. or intr.)} To be called, name oneself
         \comment Usually placed after the name. This word replaced \w{aḅ} in the reflexive sense in Early
-            Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.
+            Modern UF. Outside of literature, this verb is frequently simply intransitive rather than reflexive.
         \ex \w{Aý’èc’hsád j(v)nvé} ‘My name is Aý’èc’hsád’
-        \ex \w{(A) ḍẹnvẹ́c’h’s ?} ’What’s your name?’, lit. ‘What are you called?’. \textit{While \w{-c’h’s} for
-            \w{c’hes} is archaic nowadays, this is a set phrase that preserves this form. Because this renders this
-            phrase rather recognisable, the \w{a} is often dropped in informal speech. Note also that this is
-            a passive, with the plural being \w{A b’hýnvẹ́ c’hes}.}
+        \ex \w{(A) ḍẹnvẹ́c’h’s ?} ’What’s your name?’, lit. ‘What are you called?’.
+            \comment While \w{-c’h’s} for \w{c’hes} is archaic nowadays, this is a set phrase that preserves this form.
+            Because this renders this phrase rather recognisable, the \w{a} is often dropped in informal speech. Note also
+            that this is a passive, with the plural being \w{A b’hýnvẹ́ c’hes}.
 ád’húy’|n.|andouille|Fool, buffoon, idiot.
 áb’hé|adv.|enfin|Finally, at last, at the end.
 raúc’hlá|v.|proclamer|+\s{acc/aci} To proclaim, announce, declare
@@ -1029,11 +1029,8 @@ ehehe|interj.|\textnf{onomatopoeic}|Hehe \comment Mischievous laughter
 réḅ|interj.|ouaip|Yeah, yep, yes \comment Never used in response to a yes-no question.
 ríh|v.|crisser|To screech|\s{onom} ríí \textnf{/ɰiː/}
 
-## TODO: Examples often have comments, so we should allow having a \comment within an \ex
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
-
-## For the online dictionary, auto-generate the pronunciation since the ULTRAFRENCHER already knows how to convert to IPA.
 
 
 ## TODO: Introduce a command that generates a link to a word (just generate unique label names by incoporating the

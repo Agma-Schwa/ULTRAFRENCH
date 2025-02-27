@@ -57,7 +57,8 @@
                     "def": "+<uf-s>acc</uf-s> <em>and</em> <uf-s>abs</uf-s> To call, name, nominate, give a name to.",
                     "examples": [
                         {
-                            "text": "<uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’; even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested."
+                            "comment": "Even in the writings of <uf-s>Snet’h</uf-s>, the double accusative is no longer attested.",
+                            "text": "<uf-s>Snet’h v.2</uf-s> <uf-w>jdap rác’hsaý’adâ</uf-w> ‘I call you a liar’."
                         }
                     ]
                 },
@@ -350,7 +351,8 @@
                     "def": "+<uf-s>gen</uf-s> To desire, yearn for sbd./sth.",
                     "examples": [
                         {
-                            "text": "<uf-s>Snet’h iv.17</uf-s> <uf-w>jad’hóré ávvaúríhe</uf-w> ‘I yearned to remember’ <em>(compare <uf-w>jad’hóré devvaúríhe</uf-w> ‘I loved to remember’)</em>."
+                            "comment": "Compare <uf-w>jad’hóré devvaúríhe</uf-w> ‘I loved to remember’.",
+                            "text": "<uf-s>Snet’h iv.17</uf-s> <uf-w>jad’hóré ávvaúríhe</uf-w> ‘I yearned to remember’."
                         }
                     ]
                 }
@@ -5808,14 +5810,15 @@
         },
         {
             "def": {
-                "comment": "<p>Usually placed after the name. This word replaced <uf-w>aḅ</uf-w> in the reflexive sense in Early Modern UF. Outside of literature, this verb is frequentsly simply intransitive rather than reflexive.</p>",
+                "comment": "<p>Usually placed after the name. This word replaced <uf-w>aḅ</uf-w> in the reflexive sense in Early Modern UF. Outside of literature, this verb is frequently simply intransitive rather than reflexive.</p>",
                 "def": "<em>(refl. or intr.)</em> To be called, name oneself.",
                 "examples": [
                     {
                         "text": "<uf-w>Aý’èc’hsád j(v)nvé</uf-w> ‘My name is Aý’èc’hsád’."
                     },
                     {
-                        "text": "<uf-w>(A) ḍẹnvẹ́c’h’s ?</uf-w> ’What’s your name?’, lit. ‘What are you called?’. <em>While <uf-w>-c’h’s</uf-w> for <uf-w>c’hes</uf-w> is archaic nowadays, this is a set phrase that preserves this form. Because this renders this phrase rather recognisable, the <uf-w>a</uf-w> is often dropped in informal speech. Note also that this is a passive, with the plural being <uf-w>A b’hýnvẹ́ c’hes</uf-w>.</em>."
+                        "comment": "While <uf-w>-c’h’s</uf-w> for <uf-w>c’hes</uf-w> is archaic nowadays, this is a set phrase that preserves this form. Because this renders this phrase rather recognisable, the <uf-w>a</uf-w> is often dropped in informal speech. Note also that this is a passive, with the plural being <uf-w>A b’hýnvẹ́ c’hes</uf-w>.",
+                        "text": "<uf-w>(A) ḍẹnvẹ́c’h’s ?</uf-w> ’What’s your name?’, lit. ‘What are you called?’."
                     }
                 ]
             },
@@ -6318,10 +6321,12 @@
                 "def": "Fish.",
                 "examples": [
                     {
-                        "text": "<uf-w>Láráhó slẹlúrá.</uf-w> Now you’ve done it. <em>Literally ‘the fish was too bulky [to swim to the surface, so it drowned]’</em>."
+                        "comment": "Literally ‘the fish was too bulky [to swim to the surface, so it drowned]’.",
+                        "text": "<uf-w>Láráhó slẹlúrá.</uf-w> Now you’ve done it."
                     },
                     {
-                        "text": "<uf-w>Áhaúr’sý’ýâ láráhó sráy’éá.</uf-w> There is more to this. There is a story behind this. <em>Literally ‘the fish hasn’t drowned yet’.</em>."
+                        "comment": "Literally ‘the fish hasn’t drowned yet’.",
+                        "text": "<uf-w>Áhaúr’sý’ýâ láráhó sráy’éá.</uf-w> There is more to this. There is a story behind this."
                     }
                 ]
             },
@@ -6348,7 +6353,8 @@
                 "def": "Sword, blade.",
                 "examples": [
                     {
-                        "text": "<uf-w>áráhut’h’t ilý ly b’haúr</uf-w> ‘the pen is mightier than the sword’. <em>This was originally a fossilised, obsolete ACI: <uf-w>á&shy;hut’h&shy;rá éḍ ilý lẹb’haúr</uf-w></em>."
+                        "comment": "This was originally a fossilised, obsolete <uf-s>aci</uf-s>: <uf-w>á&shy;hut’h&shy;rá éḍ ilý lẹb’haúr</uf-w>.",
+                        "text": "<uf-w>áráhut’h’t ilý ly b’haúr</uf-w> ‘the pen is mightier than the sword’."
                     }
                 ]
             },
