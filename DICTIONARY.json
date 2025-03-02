@@ -132,6 +132,18 @@
         },
         {
             "def": {
+                "def": "To coil, wind."
+            },
+            "def-search": "coil to wind",
+            "etym": "<uf-pf>emballer</uf-pf>",
+            "forms": "<uf-s>fut</uf-s> áb’haý’ẹ́, <uf-s>subj</uf-s> áb’haý’s",
+            "hw-search": "abhay",
+            "ipa": "ɑ̃βɐɥ̃",
+            "pos": "v.",
+            "word": "áb’haý’"
+        },
+        {
+            "def": {
                 "def": "Finally, at last, at the end."
             },
             "def-search": "at end finally last the",
@@ -775,7 +787,22 @@
                     "def": "And, also, as well, too."
                 },
                 {
-                    "def": "<uf-w>au</uf-w> &hellip; <uf-w>au</uf-w> &hellip; ‘both &hellip; and &hellip;’"
+                    "comment": "<p>When an adjective is to be applied to a conjunction consisting of noun phrases, the particle <uf-w>’ḍ</uf-w>, historically a reduced form of <uf-w>ḍẹ</uf-w> ‘all’, may be used to avoid repetition of the adjective.</p>",
+                    "def": "<uf-w>au</uf-w> &hellip; <uf-w>au</uf-w> &hellip; (<uf-w>’ḍ</uf-w>) ‘both &hellip; and &hellip;’",
+                    "examples": [
+                        {
+                            "text": "<uf-w>Au árb au raû rá</uf-w> ‘The tree and the big log’."
+                        },
+                        {
+                            "text": "<uf-w>Au árb rá au raû</uf-w> ‘The big tree and the log’."
+                        },
+                        {
+                            "text": "<uf-w>Au árb rá au raû rá</uf-w> ‘The big tree and the big log’."
+                        },
+                        {
+                            "text": "<uf-w>Au árb au raû’ḍ rá</uf-w> ‘The big tree and the big log’."
+                        }
+                    ]
                 }
             ],
             "word": "au"
@@ -953,6 +980,17 @@
                 }
             ],
             "word": "aúráj"
+        },
+        {
+            "def": {
+                "def": "Bone."
+            },
+            "def-search": "bone",
+            "etym": "<uf-pf>os</uf-pf>",
+            "hw-search": "aus",
+            "ipa": "os",
+            "pos": "n.",
+            "word": "aus"
         },
         {
             "def": {
@@ -1488,6 +1526,17 @@
         },
         {
             "def": {
+                "def": "To pierce, penetrate."
+            },
+            "def-search": "penetrate pierce to",
+            "etym": "<uf-pf>percer</uf-pf>",
+            "hw-search": "bers",
+            "ipa": "bɛ̃ɰs",
+            "pos": "v.",
+            "word": "ḅérs"
+        },
+        {
+            "def": {
                 "def": "To be small, little."
             },
             "def-search": "be little small to",
@@ -1951,6 +2000,17 @@
         },
         {
             "def": {
+                "def": "To sting."
+            },
+            "def-search": "sting to",
+            "etym": "<uf-pf>piquer</uf-pf>",
+            "hw-search": "bih",
+            "ipa": "bih",
+            "pos": "v.",
+            "word": "ḅih"
+        },
+        {
+            "def": {
                 "def": "Wine."
             },
             "def-search": "wine",
@@ -2214,6 +2274,17 @@
                     ]
                 }
             ],
+            "word": "cér"
+        },
+        {
+            "def": {
+                "def": "Flesh."
+            },
+            "def-search": "flesh",
+            "etym": "<uf-pf>chair</uf-pf>",
+            "hw-search": "cer",
+            "ipa": "ɕɛ̃ɰ",
+            "pos": "n.",
             "word": "cér"
         },
         {
@@ -2776,6 +2847,17 @@
             "word": "c’haúvnaút’hẹ"
         },
         {
+            "def": {
+                "def": "+<uf-s>subj</uf-s> As if, as though."
+            },
+            "def-search": "as if though",
+            "etym": "<uf-pf>comme si</uf-pf>",
+            "hw-search": "chauvs",
+            "ipa": "xɔ̃ʋ̃s",
+            "pos": "conj.",
+            "word": "c’haúvs"
+        },
+        {
             "def-search": "ago for how long many much since",
             "etym": "<uf-pf>combien</uf-pf>",
             "hw-search": "chauye",
@@ -2833,6 +2915,23 @@
             "hw-search": "chel",
             "ipa": "xɛɮ̃",
             "pos": "det. postpos.",
+            "word": "c’hèl"
+        },
+        {
+            "def": {
+                "comment": "<p>Used in exclamations, often infixed between a noun and its adjectives.</p>",
+                "def": "+<uf-s>abs</uf-s> What, what a.",
+                "examples": [
+                    {
+                        "text": "<uf-w>Árb c’hèl rá !</uf-w> ‘What a big tree!’"
+                    }
+                ]
+            },
+            "def-search": "a what",
+            "etym": "<uf-pf>quel</uf-pf>",
+            "hw-search": "chel",
+            "ipa": "xɛɮ̃",
+            "pos": "particle",
             "word": "c’hèl"
         },
         {
@@ -3105,6 +3204,17 @@
             "ipa": "xũɰ",
             "pos": "v.",
             "word": "c’húr"
+        },
+        {
+            "def": {
+                "def": "Tail."
+            },
+            "def-search": "tail",
+            "etym": "<uf-pf>queue</uf-pf>",
+            "hw-search": "chy",
+            "ipa": "xʏ̃",
+            "pos": "n.",
+            "word": "c’hý"
         },
         {
             "def": {
@@ -3862,6 +3972,18 @@
             "ipa": "dis",
             "pos": "num.",
             "word": "dis"
+        },
+        {
+            "def": {
+                "def": "To weave."
+            },
+            "def-search": "to weave",
+            "etym": "<uf-pf>tisser</uf-pf>",
+            "forms": "<uf-s>fut</uf-s> ḍiś, <uf-s>subj</uf-s> ḍiss",
+            "hw-search": "dis",
+            "ipa": "dis",
+            "pos": "v.",
+            "word": "ḍis"
         },
         {
             "def": {
@@ -4824,6 +4946,17 @@
         },
         {
             "def": {
+                "def": "Infinity, endlessness."
+            },
+            "def-search": "endlessness infinity",
+            "etym": "<uf-pf>infinité</uf-pf>",
+            "hw-search": "finith",
+            "ipa": "ɸĩnĩθ",
+            "pos": "n.",
+            "word": "fínít’h"
+        },
+        {
+            "def": {
                 "def": "Son."
             },
             "def-search": "son",
@@ -5737,14 +5870,26 @@
             "word": "ní"
         },
         {
-            "def": {
-                "def": "Neither, nor."
-            },
             "def-search": "neither nor",
             "etym": "<uf-pf>ni</uf-pf>",
             "hw-search": "ni",
             "ipa": "nĩ",
             "pos": "conj.",
+            "senses": [
+                {
+                    "comment": "<p>Requires a negative context and thus frequently appears as <uf-w>ní’sý’ýâ</uf-w>. If there is no verb, the negation may be ommitted. Often paired with another <em>ní</em> or preceding negated clause, in which case <uf-w>ní</uf-w> generally replaces the negation particle of the later clause.</p>",
+                    "def": "Neither, nor."
+                },
+                {
+                    "comment": "<p>Unlike <uf-w>au</uf-w> and <uf-w>u</uf-w>/<uf-w>ra</uf-w>, this conjunction is postpositive and usually appears in the same position as particles rather than before the things it joins.</p>",
+                    "def": "&hellip; <uf-w>ní(’sý’ýâ)</uf-w> &hellip; <uf-w>ní</uf-w> Neither &hellip; nor &hellip;.",
+                    "examples": [
+                        {
+                            "text": "<uf-w>Jsydyrár ní’sý’ýâ, jsydyát’hád ní</uf-w> ‘I neither see nor hear it’."
+                        }
+                    ]
+                }
+            ],
             "word": "ní"
         },
         {
@@ -6520,6 +6665,23 @@
         },
         {
             "def": {
+                "comment": "<p>Always used after a possessive pronoun.</p>",
+                "def": "Own.",
+                "examples": [
+                    {
+                        "text": "<uf-w>Ez raúḅ árb</uf-w> ‘His own tree’."
+                    }
+                ]
+            },
+            "def-search": "own",
+            "etym": "<uf-pf>propre</uf-pf>",
+            "hw-search": "raub",
+            "ipa": "ɰɔ̃b",
+            "pos": "det.",
+            "word": "raúḅ"
+        },
+        {
+            "def": {
                 "def": "To be probable, likely."
             },
             "def-search": "be likely probable to",
@@ -6528,6 +6690,22 @@
             "ipa": "ɰɔ̃βɐ",
             "pos": "v.",
             "word": "raúb’ha"
+        },
+        {
+            "def-search": "be deepto profound to",
+            "etym": "<uf-pf>profond</uf-pf>",
+            "hw-search": "raubhau",
+            "ipa": "ɰɑ̃uβɔ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To be deep."
+                },
+                {
+                    "def": "To be profound."
+                }
+            ],
+            "word": "ráub’haú"
         },
         {
             "def": {
@@ -6550,6 +6728,17 @@
             "ipa": "ɰɔ̃βə̥",
             "pos": "n.",
             "word": "raúb’hẹ"
+        },
+        {
+            "def": {
+                "def": "Fang."
+            },
+            "def-search": "fang",
+            "etym": "<uf-pf>crochet</uf-pf>",
+            "hw-search": "rauc",
+            "ipa": "ɰɔ̃ȷ̊",
+            "pos": "n.",
+            "word": "raúc̣"
         },
         {
             "def": {
@@ -6585,15 +6774,20 @@
             "word": "raûd’hárb"
         },
         {
-            "def": {
-                "def": "To tighten, make tighter (+<uf-s>acc</uf-s>)."
-            },
-            "def-search": "make tighten tighter to",
+            "def-search": "around make s sth tighten tighter to",
             "etym": "from <uf-w>raú-</uf-w> + <uf-w>sérẹ́</uf-w>",
             "forms": "<uf-s>fut</uf-s> raúhérrẹ́, <uf-s>subj</uf-s> raúhérẹ́s",
             "hw-search": "rauhere",
             "ipa": "ɰɔ̃hɛ̃ɰẽ",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<uf-s>acc</uf-s> To tighten sth., make tighter (+s<uf-w>circlat</uf-w> around sth.)."
+                },
+                {
+                    "def": "<em>(refl.)</em> To tighten."
+                }
+            ],
             "word": "raúhérẹ́"
         },
         {
@@ -6606,6 +6800,17 @@
             "ipa": "ɰɔ̃hɥβ",
             "pos": "v.",
             "word": "raúhy’b’h"
+        },
+        {
+            "def": {
+                "def": "+<uf-s>part</uf-s> To gnaw."
+            },
+            "def-search": "gnaw to",
+            "etym": "<uf-pf>ronger</uf-pf>",
+            "hw-search": "rauj",
+            "ipa": "ɰɔ̃ʑ",
+            "pos": "v.",
+            "word": "raúj"
         },
         {
             "def-search": "for language short speech word",
@@ -6633,6 +6838,17 @@
             "ipa": "ɰɔ̃̃ɮ̃ɔ̃",
             "pos": "n.",
             "word": "raûlaú"
+        },
+        {
+            "def": {
+                "def": "Serpent, snake."
+            },
+            "def-search": "serpent snake",
+            "etym": "<uf-pf>crotale</uf-pf>",
+            "hw-search": "rauthal",
+            "ipa": "ɰɔ̃θɐɮ̃",
+            "pos": "n.",
+            "word": "raút’hal"
         },
         {
             "def": {
@@ -6748,6 +6964,17 @@
                 }
             ],
             "word": "ráy’á"
+        },
+        {
+            "def": {
+                "def": "To be majestic."
+            },
+            "def-search": "be majestic to",
+            "etym": "<uf-pf>royal</uf-pf>",
+            "hw-search": "rayal",
+            "ipa": "ɰɑ̃ɥɑ̃ɮ̃",
+            "pos": "v.",
+            "word": "ráy’ál"
         },
         {
             "def": {
@@ -7058,9 +7285,9 @@
         },
         {
             "def": {
-                "def": "Of course, certainly, surely."
+                "def": "Of course, naturally, as a matter of course."
             },
-            "def-search": "certainly course of surely",
+            "def-search": "a as course matter naturally of",
             "etym": "<uf-pf>bien sûr</uf-pf>",
             "hw-search": "redhes",
             "ipa": "ɰɛ̃̃ðes",
@@ -7117,6 +7344,17 @@
             "ipa": "ɰɛ̃həβʶ",
             "pos": "v.",
             "word": "réhẹv́"
+        },
+        {
+            "def": {
+                "def": "Rebirth, renaissance."
+            },
+            "def-search": "rebirth renaissance",
+            "etym": "<uf-pf>renaissance</uf-pf>",
+            "hw-search": "renehas",
+            "ipa": "ɰɛ̃nɛ̃hɑ̃s",
+            "pos": "n.",
+            "word": "rénéhás"
         },
         {
             "def-search": "an article clothes clothing garment garments of piece",
@@ -7523,6 +7761,17 @@
         },
         {
             "def": {
+                "def": "Wheel."
+            },
+            "def-search": "wheel",
+            "etym": "<uf-pf>roue</uf-pf>",
+            "hw-search": "ru",
+            "ipa": "ɰũ",
+            "pos": "n.",
+            "word": "rú"
+        },
+        {
+            "def": {
                 "comment": "<p>The <uf-s>acc</uf-s> is generally preferred, but in cases where it is either questionable who discovered something first, or whether something is ‘discovered’ as opposed to ‘invented’, the <uf-s>part</uf-s> may be used instead.</p>",
                 "def": "+<uf-s>acc/part</uf-s> To find, discover."
             },
@@ -7699,6 +7948,17 @@
             "ipa": "sɑ̃",
             "pos": "num.",
             "word": "sá"
+        },
+        {
+            "def": {
+                "def": "To be endless, unending, infinite."
+            },
+            "def-search": "be endless infinite to unending",
+            "etym": "<uf-pf>sans fin</uf-pf>",
+            "hw-search": "sabhe",
+            "ipa": "sɑ̃βɛ̃",
+            "pos": "v.",
+            "word": "sáb’hé"
         },
         {
             "def": {
@@ -8793,6 +9053,26 @@
             "word": "syl"
         },
         {
+            "def-search": "be certain certainly sure surely sureto",
+            "etym": "<uf-pf>sûr</uf-pf>",
+            "hw-search": "syr",
+            "ipa": "sʏ̃ɰ",
+            "pos": "adj. or v.",
+            "senses": [
+                {
+                    "def": "Sure."
+                },
+                {
+                    "comment": "<p>This is both an adjective verb and an adjective: the adjective form is always <uf-w>sýr</uf-w>, not *<uf-w>sýrâ</uf-w>, but it can also be conjugated, e.g. <uf-w>jsýr</uf-w> ‘I am sure’.</p>",
+                    "def": "To be sure, certain."
+                },
+                {
+                    "def": "<em>adv.</em> <uf-w>sýr(é)vâ</uf-w> Surely, certainly."
+                }
+            ],
+            "word": "sýr"
+        },
+        {
             "def": {
                 "comment": "<p>Always <uf-w>t’h’<uf-mut><sup>N</sup></uf-mut></uf-w> before vowels, but does not nasalise if the ‘é’ is still present. This particle is used only in the optative; see also <uf-w>asý’ýâ</uf-w>, <uf-w>sá</uf-w>.</p>",
                 "def": "Not, no."
@@ -8963,6 +9243,17 @@
             "ipa": "ʋ̃ɑ̃",
             "pos": "n.",
             "word": "vá"
+        },
+        {
+            "def": {
+                "def": "Jaw, jawbone."
+            },
+            "def-search": "jaw jawbone",
+            "etym": "<uf-pf>mâchoire</uf-pf>",
+            "hw-search": "vacar",
+            "ipa": "ʋ̃ɑ̃ɕʶɑ̃ɰ",
+            "pos": "n.",
+            "word": "váćár"
         },
         {
             "def": {
@@ -9322,6 +9613,17 @@
             "ipa": "ʋ̃ɛ̃d",
             "pos": "n.",
             "word": "véḍ"
+        },
+        {
+            "def": {
+                "def": "Loom."
+            },
+            "def-search": "loom",
+            "etym": "<uf-pf>métier</uf-pf>",
+            "hw-search": "vedye",
+            "ipa": "ʋ̃ẽdɥẽ",
+            "pos": "n.",
+            "word": "vẹ́ḍy’ẹ́"
         },
         {
             "def": {
@@ -9857,6 +10159,17 @@
             "ipa": "ɥĩ",
             "pos": "n.",
             "word": "y’í"
+        },
+        {
+            "def": {
+                "def": "Ruin."
+            },
+            "def-search": "ruin",
+            "etym": "<uf-pf>n.</uf-pf>",
+            "hw-search": "yi",
+            "ipa": "ɥĩ̃",
+            "pos": "ruine",
+            "word": "y’î"
         },
         {
             "def": {

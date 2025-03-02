@@ -150,7 +150,15 @@ c’hd’hal|adv.|\pf{que dalle}|Naught, absolutely no\-thing
 jávé|adv.|jamais|\\\textit{neg.} Never, at no time \\\textit{pos.} Ever, always \\\w{dwájávé} For ever, forever
 ráv́â|adv.|rarement|\textit{neg. only} Seldom, rarely (ever)
 y’é|pron.|rien|Nothing. \comment Like most negative polarity items, this induces negation of the verb
-au|conj.|aussi|\\ And, also, as well, too \\ \w{au} \ldots{} \w{au} \ldots{} ‘both \ldots{} and \ldots’
+au|conj.|aussi|
+    \\ And, also, as well, too
+    \\ \w{au} \ldots{} \w{au} \ldots{} (\w{’ḍ}) ‘both \ldots{} and \ldots’
+        \comment When an adjective is to be applied to a conjunction consisting of noun phrases, the particle \w{’ḍ},
+            historically a reduced form of \w{ḍẹ} ‘all’, may be used to avoid repetition of the adjective.
+        \ex \w{Au árb au raû rá} ‘The tree and the big log’
+        \ex \w{Au árb rá au raû} ‘The big tree and the log’
+        \ex \w{Au árb rá au raû rá} ‘The big tree and the big log’
+        \ex \w{Au árb au raû’ḍ rá} ‘The big tree and the big log’
 ec̣|n.|péché|Sin, transgression, wrongdoing
 vaûd|n.|monde|World
 ânb’hé|adv.|\pf{en effet}, via metathesis from *\w{âné\-b’he}|Verily, indeed, in fact
@@ -202,7 +210,7 @@ véhýr|conj.|\pf{dans la mesure où}|Insofar as
 sḅé|v.|espérer|\\ To want (+\s{acc/inf} sth.) \\ +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
 rêd|v.|craindre|+\s{opt} To fear, lest \ldots \comment Construed with the negated optative|\s{fut}
     rêdrẹ́, \s{subj} rês
-rêd’hes|particle|\pf{bien sûr}|Of course, certainly, surely
+rêd’hes|particle|\pf{bien sûr}|Of course, naturally, as a matter of course
 râhẹ|n.|français|Human, person
 fẹhab|v.|faisable|To be possible, feasible|\s{fut} fẹhabre, \s{subj} fẹhas
 sauz|n.|chose|Thing, object
@@ -727,12 +735,23 @@ ní|v.|\pf{nier}, \s{fut} from \pf{contrer}, \s{subj} from \pf{oposer}|
     To deny, ref\-use, reject, rebut (+\s{acc} sbd./sth.)|\s{fut} c’haúḍé, \s{subj} aubhaus
 c’haúḍé > ní
 aubhaus > ní
-ní|conj.|ni|Neither, nor
+ní|conj.|ni|
+    \\ Neither, nor
+        \comment Requires a negative context and thus frequently appears as \w{ní’sý’ýâ}. If there is no verb, the
+            negation may be ommitted. Often paired with another \textit{ní} or preceding negated clause, in which
+            case \w{ní} generally replaces the negation particle of the later clause.
+    \\ \ldots{} \w{ní(’sý’ýâ)} \ldots{} \w{ní} Neither \ldots{} nor \ldots{}
+        \comment Unlike \w{au} and \w{u}/\w{ra}, this conjunction is postpositive and usually appears in the same
+            position as particles rather than before the things it joins.
+    \ex \w{Jsydyrár ní’sý’ýâ, jsydyát’hád ní} ‘I neither see nor hear it’
 rád|v. tr.|rendre|To surrender +\s{acc} sth. (\s{dat} to sbd.)
 sẹrád|v. intr.|\pf{se rendre}|To surrender
 ec’hlér|v.|éclairer|To shine
 iý’ývî|v.|illuminer|To light up, illuminate
-raúhérẹ́|v.|from \w{raú-} + \w{sérẹ́}|To tighten, make tighter (+\s{acc})|\s{fut} raúhérrẹ́, \s{subj} raúhérẹ́s
+raúhérẹ́|v.|from \w{raú-} + \w{sérẹ́}|
+    \\+\s{acc} To tighten sth., make tighter (+s\w{circlat} around sth.)
+    \\\textit{(refl.)} To tighten
+    |\s{fut} raúhérrẹ́, \s{subj} raúhérẹ́s
 raú(b’hc’h)-|prefix|from \w{rób’hoc’h}|\textit{Causative prefix, see
     §~\ref{subsec:diachrony-and-derivation}}
 vaúd’hér|v.|modérer|To be moderate
@@ -1028,7 +1047,38 @@ ráb’hẹ|interj.|bravo|Well done, bravo
 ehehe|interj.|\textnf{onomatopoeic}|Hehe \comment Mischievous laughter
 réḅ|interj.|ouaip|Yeah, yep, yes \comment Never used in response to a yes-no question.
 ríh|v.|crisser|To screech|\s{onom} ríí \textnf{/ɰiː/}
-
+ráy’ál|v.|royal|To be majestic
+raút’hal|n.|crotale|Serpent, snake
+c’hèl|particle|quel|+\s{abs} What, what a
+    \comment Used in exclamations, often infixed between a noun and its adjectives.
+    \ex \w{Árb c’hèl rá !} ‘What a big tree!’
+sýr|adj. or v.|sûr|
+    \\ Sure
+    \\ To be sure, certain
+        \comment This is both an adjective verb and an adjective: the adjective form is always \w{sýr}, not *\w{sýrâ},
+            but it can also be conjugated, e.g. \w{jsýr} ‘I am sure’.
+    \\ \textit{adv.} \w{sýr(é)vâ} Surely, certainly
+ḍis|v.|tisser|To weave|\s{fut} ḍiś, \s{subj} ḍiss
+vẹ́ḍy’ẹ́|n.|métier|Loom
+fínít’h|n.|infinité|Infinity, endlessness
+áb’haý’|v.|emballer|To coil, wind|\s{fut} áb’haý’ẹ́, \s{subj} áb’haý’s
+rú|n.|roue|Wheel
+sáb’hé|v.|\pf{sans fin}|To be endless, unending, infinite
+y’î|ruine|n.|Ruin
+rénéhás|n.|renaissance|Rebirth, renaissance
+váćár|n.|mâchoire|Jaw, jawbone
+cér|n.|chair|Flesh
+raúc̣|n.|crochet|Fang
+ḅih|v.|piquer|To sting
+ḅérs|v.|percer|To pierce, penetrate
+ráub’haú|v.|profond|\\To be deep \\ To be profound
+raúḅ|det.|propre|Own
+    \comment Always used after a possessive pronoun.
+    \ex \w{Ez raúḅ árb} ‘His own tree’
+c’hý|n.|queue|Tail
+raúj|v.|ronger|+\s{part} To gnaw
+aus|n.|os|Bone
+c’haúvs|conj.|\pf{comme si}|+\s{subj} As if, as though
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
 
