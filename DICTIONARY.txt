@@ -1051,7 +1051,7 @@ raûlaú|n.|tromblon|Gun, firearm
 ráb’hẹ|interj.|bravo|Well done, bravo
 ehehe|interj.|\textnf{onomatopoeic}|Hehe \comment Mischievous laughter
 réḅ|interj.|ouaip|Yeah, yep, yes \comment Never used in response to a yes-no question.
-ríh|v.|crisser|To screech|\s{onom} ríí \textnf{/ɰiː/}
+ríh|v.|crisser|To screech|\s{onom} ríí \textnf{/ɰĩː/}
 ráy’ál|v.|royal|To be majestic
 raút’hal|n.|crotale|Serpent, snake
 c’hèl|particle|quel|+\s{abs} What, what a

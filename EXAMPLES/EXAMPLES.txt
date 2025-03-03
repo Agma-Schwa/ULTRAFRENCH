@@ -399,7 +399,7 @@ sb’hał c’hes áhuf láséy’ẹ́ jub’hrá c’hes dẹ-sy-aḅrâ
 But I might need to kill for it. I know. Okay.
 B’hy’úréssé vé debźé dedehád aúrflijéśe. Jsav́á. Dahaúr.
 b’h-y’-úrẹ́-ss\é   vé  dẹ-bźé   dẹ-dehád aúr-flijé-śe
-1SG.OPT.COND2.can but INF-need INF-kill 3SG.SUBJ.FUT2
+1SG.OPT.COND2.can but INF-need INF-kill 3SG.FUT2-make.happen.FUT-SUBJ\CIRC
 (this is a rather horrifying grammatical construction: a future
 subjunctive of intent as an ACI; glossed just to demonstrate this)
 
