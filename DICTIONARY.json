@@ -699,6 +699,17 @@
         },
         {
             "def": {
+                "def": "Star."
+            },
+            "def-search": "star",
+            "etym": "<uf-pf>aster</uf-pf> + <uf-pf>étoile</uf-pf>",
+            "hw-search": "asdral",
+            "ipa": "ɐsdɰɑ̃ɮ̃",
+            "pos": "n.",
+            "word": "asḍrál"
+        },
+        {
+            "def": {
                 "def": "To be ancient."
             },
             "def-search": "ancient be to",
@@ -1169,6 +1180,34 @@
         },
         {
             "def": {
+                "comment": "<p>Typically postpositive, i.e. <uf-w>X Y aý’a</uf-w> ‘both X and Y’.</p>",
+                "def": "At the same time, at once, both.",
+                "examples": [
+                    {
+                        "text": "<uf-w>nárb ýrŷâ rísá aý’a</uf-w> ‘a tree both happy and sad’."
+                    }
+                ]
+            },
+            "def-search": "at both once same the time",
+            "etym": "from earlier <uf-w>aý’afrá</uf-w>",
+            "hw-search": "aya",
+            "ipa": "ɐɥ̃ɐ",
+            "pos": "particle",
+            "word": "aý’a"
+        },
+        {
+            "def": {
+                "def": "<em>Obsolete form of <uf-w>aý’a</uf-w></em>."
+            },
+            "def-search": "",
+            "etym": "<uf-pf>à la fois</uf-pf>",
+            "hw-search": "ayafra",
+            "ipa": "ɐɥ̃ɐɸɰɑ̃",
+            "pos": "particle",
+            "word": "aý’afrá"
+        },
+        {
+            "def": {
                 "def": "While, as (temporal), because."
             },
             "def-search": "as because temporal while",
@@ -1199,6 +1238,17 @@
             "ipa": "ɑ̃ɮ̃ʶ",
             "pos": "v.",
             "word": "áł"
+        },
+        {
+            "def": {
+                "def": "+<uf-s>acc</uf-s> To swallow up, engulf."
+            },
+            "def-search": "engulf swallow to up",
+            "etym": "<uf-pf>engloutir</uf-pf>",
+            "hw-search": "ałuth",
+            "ipa": "ɑ̃̃ɮ̃ʶuθ",
+            "pos": "v.",
+            "word": "âłut’h"
         },
         {
             "def": {
@@ -1490,6 +1540,17 @@
             "ipa": "bɑ̃ɮ̃ʶʏ̃ɰ",
             "pos": "n.",
             "word": "ḅáłýr"
+        },
+        {
+            "def": {
+                "def": "Beast."
+            },
+            "def-search": "beast",
+            "etym": "<uf-pf>bête</uf-pf>",
+            "hw-search": "bed",
+            "ipa": "bɛd",
+            "pos": "n.",
+            "word": "bèḍ"
         },
         {
             "def": {
@@ -2162,9 +2223,10 @@
         },
         {
             "def": {
-                "def": "<em>Male given name, equivalent to English ‘Kyle’ or ‘Charles’. Often declined like a regular noun, e.g. <uf-s>nom</uf-s> <uf-w>Lác̣ár</uf-w></em>."
+                "comment": "<p>Male given name. Often declined like a regular noun, i.e. with <uf-s>nom</uf-s> <uf-w>Lác̣ár</uf-w>.</p>",
+                "def": "Charles, Kyle."
             },
-            "def-search": "",
+            "def-search": "charles kyle",
             "hw-search": "car",
             "ipa": "ɕɑ̃ɰ",
             "pos": "n.",
@@ -2577,6 +2639,17 @@
         },
         {
             "def": {
+                "def": "Beaver."
+            },
+            "def-search": "beaver",
+            "etym": "<uf-pf>castor</uf-pf>",
+            "hw-search": "chasdaur",
+            "ipa": "xɐsdɔ̃ɰ",
+            "pos": "n.",
+            "word": "c’hasḍaúr"
+        },
+        {
+            "def": {
                 "def": "Fourteen."
             },
             "def-search": "fourteen",
@@ -2731,6 +2804,17 @@
             "ipa": "xɔ̃bɰɑ̃̃d",
             "pos": "v.",
             "word": "c’haúḅrâd"
+        },
+        {
+            "def": {
+                "def": "Rib."
+            },
+            "def-search": "rib",
+            "etym": "<uf-pf>côte</uf-pf>",
+            "hw-search": "chaud",
+            "ipa": "xod",
+            "pos": "n.",
+            "word": "c’haud"
         },
         {
             "def": {
@@ -2894,6 +2978,17 @@
             "ipa": "xɛ̃",
             "pos": "num. frac.",
             "word": "c’hé"
+        },
+        {
+            "def": {
+                "def": "Echo."
+            },
+            "def-search": "echo",
+            "etym": "<uf-pf>écho</uf-pf>",
+            "hw-search": "che",
+            "ipa": "xə̥",
+            "pos": "n.",
+            "word": "c’hẹ"
         },
         {
             "def": {
@@ -3478,6 +3573,17 @@
         },
         {
             "def": {
+                "def": "(<em>lit. and fig.</em>) To devour."
+            },
+            "def-search": "devour to",
+            "etym": "<uf-pf>dévorer</uf-pf>",
+            "hw-search": "debhaur",
+            "ipa": "deβɔ̃ɰ",
+            "pos": "v.",
+            "word": "deb’haúr"
+        },
+        {
+            "def": {
                 "comment": "<p>The subject is in the <uf-s>abs</uf-s> case.</p>",
                 "def": "To become, turn into (+<uf-s>trans</uf-s> sth./sbd.)."
             },
@@ -3754,6 +3860,17 @@
             "ipa": "dẽɰĩb",
             "pos": "v.",
             "word": "ḍẹ́ríb"
+        },
+        {
+            "def": {
+                "def": "Eternity."
+            },
+            "def-search": "eternity",
+            "etym": "<uf-pf>éternité</uf-pf>",
+            "hw-search": "dernith",
+            "ipa": "dɛ̃ɰnĩθ",
+            "pos": "n.",
+            "word": "ḍérnít’h"
         },
         {
             "def": {
@@ -4168,6 +4285,17 @@
             "ipa": "dɰɑ̃̃",
             "pos": "adj.",
             "word": "ḍrâ"
+        },
+        {
+            "def": {
+                "def": "Falling star, shooting star."
+            },
+            "def-search": "falling shooting star",
+            "etym": "<uf-pf>étoile filante</uf-pf>",
+            "hw-search": "dralfiya",
+            "ipa": "dɰɑ̃ɮ̃ɸiyɑ̃",
+            "pos": "n.",
+            "word": "ḍrálfi’yá"
         },
         {
             "def": {
@@ -4829,6 +4957,17 @@
                 }
             ],
             "word": "faúr₂"
+        },
+        {
+            "def": {
+                "def": "Fortune, destiny, faith."
+            },
+            "def-search": "destiny faith fortune",
+            "etym": "<uf-pf>fortune</uf-pf>",
+            "hw-search": "faurd",
+            "ipa": "ɸɔ̃ɰd",
+            "pos": "n.",
+            "word": "faúrḍ"
         },
         {
             "def": {
@@ -6235,6 +6374,17 @@
         },
         {
             "def": {
+                "def": "To slither."
+            },
+            "def-search": "slither to",
+            "etym": "<uf-pf>ramper</uf-pf>",
+            "hw-search": "rabh",
+            "ipa": "ɰɑ̃̃bʱ",
+            "pos": "v.",
+            "word": "râbh"
+        },
+        {
+            "def": {
                 "def": "To work."
             },
             "def-search": "to work",
@@ -6380,6 +6530,22 @@
             "ipa": "ɰɑ̃̃dʋ̃ɑ̃̃",
             "pos": "prefix",
             "word": "râdvâ-"
+        },
+        {
+            "def-search": "by drink drinking empty from to",
+            "etym": "<uf-pf>boisson</uf-pf>",
+            "hw-search": "rahau",
+            "ipa": "ɰɑ̃hɔ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "(+<uf-s>part</uf-s>) To drink, drink from."
+                },
+                {
+                    "def": "+<uf-s>acc</uf-s> To empty (by drinking)."
+                }
+            ],
+            "word": "ráhaú"
         },
         {
             "def": {
@@ -7347,6 +7513,17 @@
         },
         {
             "def": {
+                "def": "Marrow, bone marrow."
+            },
+            "def-search": "bone marrow",
+            "etym": "<uf-pf>moelle</uf-pf>",
+            "hw-search": "rel",
+            "ipa": "ɰɛ̃ɮ̃",
+            "pos": "n.",
+            "word": "rél"
+        },
+        {
+            "def": {
                 "def": "Rebirth, renaissance."
             },
             "def-search": "rebirth renaissance",
@@ -7553,6 +7730,17 @@
             "ipa": "ɰĩʑ",
             "pos": "v. tr.",
             "word": "ríj"
+        },
+        {
+            "def": {
+                "def": "To be sad."
+            },
+            "def-search": "be sad to",
+            "etym": "<uf-pf>triste</uf-pf>",
+            "hw-search": "ris",
+            "ipa": "ɰĩs",
+            "pos": "v.",
+            "word": "rís"
         },
         {
             "def": {
@@ -7816,6 +8004,17 @@
             "ipa": "ɰʏ̃d",
             "pos": "v.",
             "word": "rýd"
+        },
+        {
+            "def": {
+                "def": "To be cruel."
+            },
+            "def-search": "be cruel to",
+            "etym": "<uf-pf>cruel</uf-pf>",
+            "hw-search": "ryel",
+            "ipa": "ɰɥɛ̃ɮ̃",
+            "pos": "v.",
+            "word": "ry’él"
         },
         {
             "def-search": "burn scorch singe to",
@@ -8507,6 +8706,17 @@
         },
         {
             "def": {
+                "def": "To cease, stop."
+            },
+            "def-search": "cease stop to",
+            "etym": "<uf-pf>cesser</uf-pf>",
+            "hw-search": "ses",
+            "ipa": "sɛs",
+            "pos": "v.",
+            "word": "sès"
+        },
+        {
+            "def": {
                 "def": "Seven hundred."
             },
             "def-search": "hundred seven",
@@ -8698,6 +8908,18 @@
             "ipa": "sezɥɛ̃̃",
             "pos": "num. ord.",
             "word": "sezy’ê"
+        },
+        {
+            "def": {
+                "def": "<em>(lit. or fig.)</em> +<uf-s>part</uf-s> To siphon; to steal or remove small amounts of sth."
+            },
+            "def-search": "amounts of or remove siphon small steal sth to",
+            "etym": "<uf-pf>siphonner</uf-pf>",
+            "forms": "<uf-s>fut</uf-s> sib’haún, <uf-s>subj</uf-s> sib’haús",
+            "hw-search": "sibhau",
+            "ipa": "siβɔ̃",
+            "pos": "v.",
+            "word": "sib’haú"
         },
         {
             "def": {
@@ -9024,6 +9246,22 @@
             "word": "sý’ẹ"
         },
         {
+            "def-search": "rustling to whispering whisperwhisper",
+            "etym": "<uf-pf>susurrer</uf-pf>",
+            "hw-search": "syhyr",
+            "ipa": "syhʏ̃ɰ",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "To whisper."
+                },
+                {
+                    "def": "Whisper, whispering, rustling."
+                }
+            ],
+            "word": "syhýr"
+        },
+        {
             "def": {
                 "def": "To be succulent, delicious."
             },
@@ -9302,6 +9540,17 @@
         },
         {
             "def": {
+                "def": "To eat."
+            },
+            "def-search": "eat to",
+            "etym": "<uf-pf>manger</uf-pf>",
+            "hw-search": "vaj",
+            "ipa": "ʋ̃ɑ̃̃ʑ",
+            "pos": "v.",
+            "word": "vâj"
+        },
+        {
+            "def": {
                 "def": "Torture."
             },
             "def-search": "torture",
@@ -9544,7 +9793,7 @@
             "word": "vê₂"
         },
         {
-            "def-search": "alike be even identical same the to",
+            "def-search": "alike be even identical oneself same the to",
             "etym": "<uf-pf>même</uf-pf>",
             "hw-search": "ve",
             "ipa": "ʋ̃ɛ̃̃",
@@ -9552,6 +9801,19 @@
             "senses": [
                 {
                     "def": "To be the same, identical, alike."
+                },
+                {
+                    "comment": "<p>Placed either directly after a noun or infixed after (the prefix part of) a pronoun.</p>",
+                    "def": "<em>(emphatic)</em> Oneself.",
+                    "examples": [
+                        {
+                            "comment": "Lit. ‘Time itself ceased its movement’.",
+                            "text": "<uf-w>Aúłau vê ssèhá’z ivúb’hvâ</uf-w> ‘Time itself stood still’."
+                        },
+                        {
+                            "text": "<uf-w>Jvêsyráré</uf-w> ‘I saw it myself’."
+                        }
+                    ]
                 },
                 {
                     "comment": "<p>In this sense, <uf-w>vêvâ</uf-w> usually precedes the noun (phrase) it qualifies.</p>",
@@ -10303,6 +10565,17 @@
             "ipa": "ʏ̃ɰ",
             "pos": "v.",
             "word": "ýr"
+        },
+        {
+            "def": {
+                "def": "To be happy."
+            },
+            "def-search": "be happy to",
+            "etym": "<uf-pf>heureux</uf-pf>",
+            "hw-search": "yry",
+            "ipa": "ʏ̃ɰʏ̃̃",
+            "pos": "v.",
+            "word": "ýrŷ"
         },
         {
             "def": {

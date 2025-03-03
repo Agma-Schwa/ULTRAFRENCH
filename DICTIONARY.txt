@@ -80,8 +80,7 @@ aub’heír|v. (in)tr.|obéir|To obey
 dír|v. tr.|dire|+\s{acc} To say, tell (+\s{dat} someone) |\s{fut} dírẹ́, \s{subj} díss
 vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} vvaúríźe, \s{subj} vvaúríhes
 y’ír|v. (in)tr.|ouïr|\\To understand, listen\\\textit{(rarely)} To hear|\s{fut} aúré, \s{subj} rás
-Cár|n.||\textit{Male given name, equivalent to English ‘Kyle’ or ‘Charles’. Often declined like
-    a regular noun, e.g. \s{nom} \w{Lác̣ár}}
+Cár|n.||Charles, Kyle \comment Male given name. Often declined like a regular noun, i.e. with \s{nom} \w{Lác̣ár}
 ráhó|n.|poisson|Fish
     \comment UF has a series of proverbs around fish drowning (in water!), despite the fact that fish quite
     literally breathe water and therefore are incapable of ‘drowning’.
@@ -929,7 +928,13 @@ suh|n.|souci|Fear, dread
 vaú|v.|mot|Word
 vê₃|v.|même|
     \\ To be the same, identical, alike
-    \\ \w{vêvâ} Even \comment In this sense, \w{vêvâ} usually precedes the noun (phrase) it qualifies.
+    \\ \textit{(emphatic)} Oneself
+        \comment Placed either directly after a noun or infixed after (the prefix part of) a pronoun.
+        \ex \w{Aúłau vê ssèhá’z ivúb’hvâ} ‘Time itself stood still’
+            \comment Lit. ‘Time itself ceased its movement’
+        \ex \w{Jvêsyráré} ‘I saw it myself’
+    \\ \w{vêvâ} Even
+        \comment In this sense, \w{vêvâ} usually precedes the noun (phrase) it qualifies.
         \ex \s{H. P. Lovecraft:} \w{Lavúrer’sý’ýâ là dwájávé sdaúr~/ Ádȅr trâ vêvâ Dérny’éhuf laúv’raú.}
             ‘That is not dead which can eternal lie~/ And with strange æons even death may die’.
 daúr|v.|dormir|To sleep
@@ -1079,6 +1084,35 @@ c’hý|n.|queue|Tail
 raúj|v.|ronger|+\s{part} To gnaw
 aus|n.|os|Bone
 c’haúvs|conj.|\pf{comme si}|+\s{subj} As if, as though
+c’haud|n.|côte|Rib
+sès|v.|cesser|To cease, stop
+ráhaú|v.|boisson|
+    \\ (+\s{part}) To drink, drink from
+    \\ +\s{acc} To empty (by drinking)
+rél|n.|moelle|Marrow, bone marrow
+sib’haú|v.|siphonner|\textit{(lit. or fig.)} +\s{part} To siphon; to steal or remove small amounts of sth.
+    |\s{fut} sib’haún, \s{subj} sib’haús
+ḍérnít’h|n.|éternité|Eternity
+bèḍ|n.|bête|Beast
+aý’afrá|particle|\pf{à la fois}|\textit{Obsolete form of \w{aý’a}}
+aý’a|particle|from earlier \w{aý’afrá}|At the same time, at once, both
+    \comment Typically postpositive, i.e. \w{X Y aý’a} ‘both X and Y’
+    \ex \w{nárb ýrŷâ rísá aý’a} ‘a tree both happy and sad’
+ýrŷ|v.|heureux|To be happy
+rís|v.|triste|To be sad
+deb’haúr|v.|dévorer|(\textit{lit. and fig.}) To devour
+faúrḍ|n.|fortune|Fortune, destiny, faith
+ry’él|v.|cruel|To be cruel
+syhýr|v. or n.|susurrer|
+    \\ To whisper
+    \\ Whisper, whispering, rustling
+ḍrálfi’yá|n.|\pf{étoile filante}|Falling star, shooting star
+asḍrál|n.|\pf{aster} + \pf{étoile}|Star
+c’hasḍaúr|n.|castor|Beaver
+âłut’h|v.|engloutir|+\s{acc} To swallow up, engulf
+c’hẹ|n.|écho|Echo
+râbh|v.|ramper|To slither
+vâj|v.|manger|To eat
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
 
