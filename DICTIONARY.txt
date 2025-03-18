@@ -159,7 +159,7 @@ au|conj.|aussi|
         \ex \w{Au árb rá au raû rá} ‘The big tree and the big log’
         \ex \w{Au árb au raû’ḍ rá} ‘The big tree and the big log’
 ec̣|n.|péché|Sin, transgression, wrongdoing
-vaûd|n.|monde|World
+vaûd|n.|monde|\\ World \\ \w{vaûd ḍẹ} Everyone. \comment Other than literal ‘the whole world’.
 ânb’hé|adv.|\pf{en effet}, via metathesis from *\w{âné\-b’he}|Verily, indeed, in fact
 y’ŷ-|prefix|mieux|\textit{Denying comparative prefix. See grammar}
 lẹ-|prefix|plus|\textit{Affirming comparative prefix. See grammar}
@@ -1113,6 +1113,9 @@ c’hasḍaúr|n.|castor|Beaver
 c’hẹ|n.|écho|Echo
 râbh|v.|ramper|To slither
 vâj|v.|manger|To eat
+vẹ́t’he|n.|météo|Weather
+b’hac̣|v.|évacuer|To evacuate
+b’hac̣aû|v.|from \w{b’hac̣}|Evacuation
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
 

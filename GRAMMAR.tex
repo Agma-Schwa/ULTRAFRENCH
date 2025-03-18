@@ -14,6 +14,11 @@
 \usepackage{amsmath}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tikz}
+\usepackage[linguistics]{forest}
+
+\forestset{qtree/.style={for tree={parent anchor=south,
+           child anchor=north,align=center,inner sep=1pt}}}
+
 
 %\definecolor{bgcolor}{HTML}{2D2A2E}
 %\definecolor{fgcolor}{HTML}{FAFCFC}
@@ -380,6 +385,7 @@
 \let \Sl \textbackslash
 \let \Sub \textsubscript
 \let \Sup \textsuperscript
+\def \Bar #1 { \(\overline{\mathrm{#1}}\) }
 \def \parheading #1 { \noindent \textbf{#1} }
 \let\MC\multicolumn
 
@@ -2614,6 +2620,10 @@ In both phrases, the apposition \w{ḍaléraû} ‘carpenter’ is declined in t
 is a modifier, not an apposition, and thus assumes \s{abs} case rather than \s{dat} case, while in the second, it
 \textit{is} an apposition and thus assumes \s{dat} case as well.
 
+\section{Word Order}
+Word order in ULTRAFRENCH is largely free at the sentence level. As we’ve already seen, the phrase-internal structure
+is generally more rigid.\footnote{E.g. adjectives and appositions following nouns.} However, there are still some
+structural rules that must be abided by.
 
 \section{Independent Clauses}
 The UF independent clause typically consists of a finite verb together with a subject perhaps several
@@ -2744,7 +2754,7 @@ such as ‘it do be like that’ in English:
     \textit{Roughly:} ‘Rarely-not I bought a table.’
 }
 
-\section{Interrogative Clauses}
+\section{Interrogative Clauses}\label{sec:interrogative}
 In UF, questions are generally marked by one or more particles. Unlike in many other languages, the verb generally
 does not move, except perhaps for emphasis. The most fundamental kind of question is a yes-no question, which is
 marked by the interrogative particle \w{c’hes}.
@@ -2828,6 +2838,74 @@ The same applies to the negated version of such a question:
 
 Note the order of particles: negation precedes the question particle. Placing them the other way around
 makes it sound like you’re trying to correct yourself from \w{Jac̣t'hévá} to \w{Jac̣t'hé’sý’ýâ}.
+
+
+\section{Particles}
+UF has a great number of words which syntactically fulfill the role of complementisers, subordinators, etc. and which
+have certain characteristics in common. These words are jointly referred to as ‘particles’. Common to all particles is
+that the position they occupy is generally that of the second \textit{word} in—or alternatively right after—the phrase
+they modify. If multiple particles modify the same phrase, they are grouped together in that position.
+\begin{examples}
+    \item \w{Sa \b{c’hes} ḍad’hór?} ‘What do you love?’
+    \item \w{Rívnél \b{ḍèl} rá leb’h.} ‘He was a big \textit{scoundrel}.’
+    \item \w{Rívnél rá \b{ḍèl} leb’h.} ‘He was a \textit{big} scoundrel.’
+\end{examples}
+
+When multiple particles occur in the same sentence, they must be ordered such that a particle that modifies a phrase
+rather than the entire clause is placed next to the phrase it modifies, and only particles that modify the same or
+a nested phrase may precede it. The following are all equivalent:
+\begin{examples}
+    \item \w{Jlí\b{’sý’ýâ} \b{vé} \b{dývrê} iliv́uhé.} ‘But at least I don’t read the book.’
+    \item \w{Jlí\b{’sý’ýâ} \b{dývrê} \b{vé} iliv́uhé.}
+    \item \w{Iliv́uhé \b{vé} \b{dývrê} jlí\b{’sý’ýâ}.}
+    \item *\w{Jlí \b{vé}\b{’sý’ýâ} \b{dývrê} iliv́uhé.}
+\end{examples}
+Here, the negation particle \w{’sý’ýâ} modifies the verb \w{jub’hrá}, whereas \w{vé} ‘but’ modifies the entire sentence;
+thus, the former must appear closer to the verb, and the only correct particle order is \w{’sý’ýâvé}, with *\w{vé’sý’ýâ}
+being entirely ungrammatical.
+
+Syntactically, most particles can be analysed as adjuncts since the omission of a particle still yields a grammatical
+phrase or clause in nearly all cases. Unfortunately, modelling this using traditional syntactic means usually leads to
+some rather horrendous outcomes. Note that in UF syntax, ‘PP’ stands for ‘particle phrase’ rather than ‘prepositional
+phrase’, as there are no prepositions in UF.\medskip
+
+{\centering
+\begin{forest}, baseline, qtree
+[CP
+    [\Bar{C}
+        [\Bar{C}
+            [\Bar{C}
+                [VP
+                    [\Bar{V}
+                        [\Bar{V}
+                            [V\\\w{jlí}]
+                        ]
+                        [PP [\w{’sý’yâ}, roof]]
+                    ]
+                ]
+                [C\\\w{c’hes}]
+            ]
+            [PP [\w{vé}, roof]]
+        ]
+        [PP [\w{dývrê}, roof]]
+    ]
+    [NP [\w{iliv́uhé}, roof]]
+]
+\end{forest}\par\medskip
+A possible tree for \w{Jlí’sý’ýâ c’hes vé dývrê iliv́uhé ?} ‘But do I at least not read the book?’\par}\bigskip
+
+\noindent
+Notably, the VP+NP do not form a constituent in UF. Analysing the \Bar{C} particles as part of e.g. the VP
+doesn’t work since \Bar{C} particles can be reordered with respect to one another, but not with respect to any
+\Bar{V} particles (of which there may be several, and those in turn \textit{can} again be
+reordered with respect to each other).
+As the verb is the only part of an UF sentence that is required for it
+to be grammatical, it makes sense to model it as the complement of the CP, with the subject or object, if there
+is one, placed in spec-CP.
+
+The tree above also shows a crucial difference between question particles like \w{c’hes} and other kinds of particles:
+there can only be one question particle per clause, which can be explained by modelling it as the head of the CP. Thus,
+C is always empty in non-questions.
 
 \section{Subordination and Coordination}
 Subordinate dependent clauses clauses as well as coordinate independent clauses are typically introduced by conjunctions
@@ -3493,7 +3571,7 @@ Seh láistrár svaût lyp’hárdyt’há ihaúb’héc’h áy’aúý’á der
 
 ὁ λόγος δηλοῖ ὅτι πολλάκις τὸ πείθειν τοῦ βιάζεσθαι ἀνυτικώτερόν ἐστι.
 
-\Paragraph{Translation by Some Random Frenchman}\smallskip
+\Paragraph{Translation by Émile Chambry}\smallskip
 \noindent Borée et le Soleil contestaient de leur force. Ils décidèrent d’attribuer la palme à celui d’entre eux qui dépouillerait un voyageur de ses vêtements. Borée commença ; il souffla avec violence. Comme l’homme serrait sur lui son vêtement, il l’assaillit avec plus de force. Mais l’homme incommodé encore davantage par le froid, prit un vêtement de plus, si bien que, rebuté, Borée le livra au Soleil. Celui-ci tout d’abord luisit modérément ; puis, l’homme ayant ôté son vêtement supplémentaire, le Soleil darda des rayons plus ardents, jusqu’à ce que l’homme, ne pouvant plus résister à la chaleur, ôta ses habits et s’en alla prendre un bain dans la rivière voisine.
 
 Cette fable montre que souvent la persuasion est plus efficace que la violence.

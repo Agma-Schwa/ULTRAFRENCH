@@ -1642,6 +1642,28 @@
             "word": "b’há"
         },
         {
+            "def": {
+                "def": "To evacuate."
+            },
+            "def-search": "evacuate to",
+            "etym": "<f-pf>évacuer</f-pf>",
+            "hw-search": "bhac",
+            "ipa": "βɐȷ̊",
+            "pos": "v.",
+            "word": "b’hac̣"
+        },
+        {
+            "def": {
+                "def": "Evacuation."
+            },
+            "def-search": "evacuation",
+            "etym": "from <f-w>b’hac̣</f-w>",
+            "hw-search": "bhacau",
+            "ipa": "βɐȷ̊ɔ̃̃",
+            "pos": "v.",
+            "word": "b’hac̣aû"
+        },
+        {
             "def-search": "ripples undulations wave",
             "etym": "<f-pf>vague</f-pf>",
             "hw-search": "bhar",
@@ -9683,14 +9705,20 @@
             "word": "vaúb’hẹ"
         },
         {
-            "def": {
-                "def": "World."
-            },
-            "def-search": "world",
+            "def-search": "everyone world",
             "etym": "<f-pf>monde</f-pf>",
             "hw-search": "vaud",
             "ipa": "ʋ̃ɔ̃̃d",
             "pos": "n.",
+            "senses": [
+                {
+                    "def": "World."
+                },
+                {
+                    "comment": "<p>Other than literal ‘the whole world’.</p>",
+                    "def": "<f-w>vaûd ḍẹ</f-w> Everyone."
+                }
+            ],
             "word": "vaûd"
         },
         {
@@ -9963,6 +9991,17 @@
                 }
             ],
             "word": "vérs"
+        },
+        {
+            "def": {
+                "def": "Weather."
+            },
+            "def-search": "weather",
+            "etym": "<f-pf>météo</f-pf>",
+            "hw-search": "vethe",
+            "ipa": "ʋ̃ẽθe",
+            "pos": "n.",
+            "word": "vẹ́t’he"
         },
         {
             "def": {
