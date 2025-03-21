@@ -28,6 +28,14 @@ auto UFOps::handle_unknown_macro(dict::TeXToHtmlConverter& conv, std::string_vie
 }
 
 auto UFOps::preprocess_full_entry(std::vector<std::u32string>& parts) -> Result<> {
+    // Warn about non-typographic quotes, after comment deletion
+    // because it’s technically fine to have them in comments.
+    for (const auto& part : parts) {
+        if (part.contains(U'\'')) return Error(
+            "Non-typographic quote! Please use ‘’ (and “” for nested quotes) instead!"
+        );
+    }
+
     // If this is a single word, and the field contains no backslashes,
     // wrap it with '\pf{}'. That takes care of this field for most words
     // (conversely, more complex etymologies often don’t start w/ a PF word).
