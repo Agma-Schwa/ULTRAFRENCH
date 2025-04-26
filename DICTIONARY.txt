@@ -1116,6 +1116,8 @@ vâj|v.|manger|To eat
 vẹ́t’he|n.|météo|Weather
 b’hac̣|v.|évacuer|To evacuate
 b’hac̣aû|v.|from \w{b’hac̣}|Evacuation
+lac’h|n.|lac|Lake
+aúry’ât’hal|v.|oriental|To be eastern
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
 

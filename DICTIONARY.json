@@ -994,6 +994,17 @@
         },
         {
             "def": {
+                "def": "To be eastern."
+            },
+            "def-search": "be eastern to",
+            "etym": "<f-pf>oriental</f-pf>",
+            "hw-search": "auryathal",
+            "ipa": "ɔ̃ɰɥɑ̃̃θɐɮ̃",
+            "pos": "v.",
+            "word": "aúry’ât’hal"
+        },
+        {
+            "def": {
                 "def": "Bone."
             },
             "def-search": "bone",
@@ -5386,6 +5397,17 @@
             "ipa": "ɮ̃ɑ̃ɕ",
             "pos": "n.",
             "word": "Lác"
+        },
+        {
+            "def": {
+                "def": "Lake."
+            },
+            "def-search": "lake",
+            "etym": "<f-pf>lac</f-pf>",
+            "hw-search": "lach",
+            "ipa": "ɮ̃ɐx",
+            "pos": "n.",
+            "word": "lac’h"
         },
         {
             "def-search": "blade grass of",
