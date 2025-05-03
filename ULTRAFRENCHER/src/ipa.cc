@@ -39,7 +39,7 @@ constexpr char32_t Nasal(char32_t c) {
 auto ipa::Translate(std::string_view text, bool show_unsupported) -> std::string {
     // Convert it to a u32 string.
     // Map the text to IPA.
-    auto input = text::Normalise(text::ToLower(text::ToUTF32(text)), text::NormalisationForm::NFD).value();
+    auto input = text::Normalise(text::ToLower(text::ToUTF32(text)), text::NormalisationForm::NFD);
     std::u32string ipa;
     char32_t c{};
     u32stream s{input};
