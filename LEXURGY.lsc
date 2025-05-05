@@ -16,11 +16,13 @@ Class pk  {p, k, b, g}
 Class p   {p, t, k, b, d, g, b2, d2}
 Class cpf {@n, @pk, t, d, f, s, ʃ, ʁ, v, z, ʒ, l, j, ɥ, w}
 Class cuf {ɰ, ʎ, x, ɕ, ʑ, θ, ð, ɸ, β, ȷ̊, bʱ, sʶ, ɕʶ, zʶ, ʑʶ, vʶ, βʶ, ʀ}
+Class cvl {x, ɕ, θ, ɸ, ȷ̊, sʶ, ɕʶ, b2, d2, t, k, p, f, s, ʃ, h, ç}
 Class c   {@cn, @cpf, @cuf}
 Class vn  {ĩ, ỹ, ẽ, ɔ̃, õ, ɛ̃, ã, ɑ̃, ũ, ə̃}
 Class vnn {ĩ̃, ỹ̃, ẽ̃, ɔ̃̃, õ̃, ɛ̃̃, ã̃, ɑ̃̃, ũ̃, ə̃̃}
 Class vq  {i̥, ẙ, e̥, ɔ̥, o̥, ɛ̥, ḁ, ɑ̥, u̥, ə̥}
 Class vo  {i, y, e, ɔ, o, ɛ, a, ɑ, u, ə}
+Class vfr {i, y, ĩ, ĩ̃, ỹ, ỹ̃, e, ẽ, ẽ̃, ɛ, ɛ̃, ɛ̃̃, a} # Front vowels
 Class v   {@vn, @vnn, @vq, @vo}
 
 Class gnsnasal {@n, @cn, ɥ, ɰ}
@@ -89,6 +91,27 @@ FixNonsenseClusters:
   eɛ̃  => ẽ
   Then: d => * / _ θ
 
+NorthernDialect:
+  {z, ʑ} => {s, ʃ} / $ _
+  {z, ʑ} => {s, ʃ} / @cvl _
+  {z, ʑ} => {s, ʃ} / _ @cvl
+  Then: {ɕ, ȷ̊} => ʃ
+  Then:
+    x => ʃ / @vfr _
+    x => ʃ / _ @vfr
+  Then: ɮ̃ => ʃ / _ @v
+  Then: ɰ => ː / @v _
+  Then: ɰ̃ => ɰ
+  Then: ʀ => x
+  Then: {ɸ, β} => u / @v _
+  Then: b2 => b / @v _
+  Then: b => β
+  Then: {y, ỹ, ỹ̃} => {ʉ, ʉ̃̃, ʉ̃̃}
+  Then: {e, ɛ} => i̯ / @v _
+  Then: o => u / {a, ɑ̃, ɑ̃̃} _
+  Then: o => ɔ
+  Then: {s, ʃ, x, ɸ, β, z, ʑ, ɮ̃, x, h, θ, ð, ç} => ː / @v _ $
+  Then: h => * / @v _ @v
 
 Romaniser:
     {βʶ, sʶ, zʶ, ɮ̃ʶ} => {v́, ś, ź, ł}
