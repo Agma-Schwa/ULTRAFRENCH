@@ -36,7 +36,7 @@ constexpr char32_t Nasal(char32_t c) {
 }
 } // namespace
 
-auto ipa::Translate(std::string_view text, bool show_unsupported) -> std::string {
+auto ipa::Translate(std::string_view text) -> Result<std::string> {
     // Convert it to a u32 string.
     // Map the text to IPA.
     auto input = text::Normalise(text::ToLower(text::ToUTF32(text)), text::NormalisationForm::NFD);
@@ -342,16 +342,11 @@ auto ipa::Translate(std::string_view text, bool show_unsupported) -> std::string
                 if (s.consume(Acute)) ipa += U'ʶ';
                 break;
 
-            default: {
-                std::print(
-                    stderr,
-                    "[ULTRAFRENCHER] Warning: unsupported character U+{:04X}: {}\n",
-                    u32(c),
-                    text::ToUTF8(c)
-                );
-
-                if (show_unsupported) ipa += text::ToUTF32(std::format("\033[33m<U+{:04X}>\033[m", u32(c)));
-            } break;
+            default: return Error(
+                "Unsupported character U+{:04X}: {}\n",
+                u32(c),
+                text::ToUTF8(c)
+            );
         }
     }
 
