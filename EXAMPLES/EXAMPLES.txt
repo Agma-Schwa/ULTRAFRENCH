@@ -155,7 +155,7 @@ s-ec’hlér-á|révy’ẹ́-vâ|vaúd’hér-vâ
 \s{3n}-shine-\s{pres.ant}|first-\s{adv}|be.moderate-\s{adv}
 
 ráh-aú|dẹ́|w-êr|i-rêr|syḅlâ|Láhaul|s-dár-á|s-ré
-lá-aú|then|remove-\s{pres.ant.ptcp}|\s{acc}-clothing|supplementary|Láhaul|\s{3n}-throw-\s{pres.ant}|\s{acc.indef.pl}-ray
+\s{insv}-man|then|remove-\s{pres.ant.ptcp}|\s{acc}-clothing|supplementary|Láhaul|\s{3n}-throw-\s{pres.ant}|\s{acc.indef.pl}-ray
 
 lẹ-rýl-â|Láaú|jys|ub’hr\Sl â|’sý’ýâ|lys|d-ád’hýr|i\Sl t’hèrvíc’h|and
 \s{aff.comp}-burn-\s{ptcp}|Láaú|until|be.able-\s{ptcp}|not|no.longer|\s{inf}-resist|\s{acc}-heat|
@@ -270,13 +270,13 @@ naúḍ cás révéy’ýrâ se.
 ‘is our best luck’
 
 *Djaz*! I found books and I cannot read! Come here!
-D’hjaz ! jrúb’hé sliv́uhé ; jub’hrá’sý’ýâ vé delí ! c’henír !
+*D’hjaz* ! jrúb’hé sliv́uhé ; jub’hrá’sý’ýâ vé delí ! c’henír !
 d’h\jaz! j-rúb’h-é s-liv́uhé j-ub’hrá ’sý’ýâ vé dẹlí! c’he-nír!
 ‘Djaz! I found books but I can’t read! Come!’
 
 (Vocative + ‘!’ already more or less communicates yelling, so
-we don’t need to write ‘D’hjaz’ in all-caps here. Also, UF doesn’t
-capitalise the letter after the ‘!’ in many cases.)
+we don’t need to write ‘D’hjaz’ in all-caps here. Vocatives are
+often italicised instead.)
 
 Wow, this is wild.
 Auuuu, laseh dêêr se.
@@ -391,7 +391,7 @@ cabharḍrár ý’aúhý c’hes sraúb’ha ’sý’ýâ
 
 
 Worth trying? Can I learn it?
-Sb’hał c’hes áhuf láséy’é ? jub’hrá c’hes dẹ-sy-aḅrâ ?
+Sb’hał c’hes áhuf láséy’é ? jub’hrá c’hes desyaprâ ?
 sb’hał c’hes áhuf láséy’ẹ́ jub’hrá c’hes dẹ-sy-aḅrâ
 (lit. ‘Is it the attempt worth it’)
 
@@ -461,7 +461,7 @@ They also say we used to walk on all fours. Do you want to live like THAT? That�
 There’s a storm coming. A big one.
 
 
-Hopefully this traffic will ligthen up soon.
+Hopefully this traffic will lighten up soon.
 
 
 

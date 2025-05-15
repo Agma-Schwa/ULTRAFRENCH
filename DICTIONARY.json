@@ -4903,6 +4903,23 @@
         },
         {
             "def": {
+                "comment": "<p>Exclusively used in reference to a person. Diachronically, this verb was already obsolete in Middle UF and was rediscovered later on by a number of Early Modern UF poets, which led it to skip some initial sound changes. <f-w>ad’hór</f-w> is generally much preferred in common parlance in the <f-s>sd</f-s>, though <f-w>ẹ́v</f-w> is has entered common use in the <f-s>nd</f-s>.</p>",
+                "def": "<em>(poetic, <f-s>nd</f-s>)</em> +<f-s>acc</f-s> To love.",
+                "examples": [
+                    {
+                        "text": "<f-s>nd</f-s> <f-w>s’htẹ́v</f-w> ‘I love you’."
+                    }
+                ]
+            },
+            "def-search": "love to",
+            "etym": "from <f-pf>aime</f-pf>, <f-s>1sg</f-s> of <f-s>aimer</f-s>",
+            "hw-search": "ev",
+            "ipa": "ẽʋ̃",
+            "pos": "v.",
+            "word": "ẹ́v"
+        },
+        {
+            "def": {
                 "def": "Its, her, his, their."
             },
             "def-search": "her his its their",
@@ -9666,14 +9683,19 @@
             "word": "v́ár"
         },
         {
-            "def": {
-                "def": "To march, walk."
-            },
-            "def-search": "march to walk",
+            "def-search": "function march to walk work",
             "etym": "<f-pf>marcher</f-pf>",
             "hw-search": "varc",
             "ipa": "ʋ̃ɑ̃ɰɕ",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "To march, walk."
+                },
+                {
+                    "def": "<em>(fig.)</em> To work, function."
+                }
+            ],
             "word": "várc"
         },
         {

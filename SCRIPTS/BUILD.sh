@@ -5,5 +5,5 @@ set -eu
 cd "$(dirname "$0")"
 cd ..
 
-./SCRIPTS/GENERATE-DICTIONARY.sh > DICTIONARY.tex
+./SCRIPTS/GENERATE-DICTIONARY.sh
 latexmk -xelatex GRAMMAR.tex

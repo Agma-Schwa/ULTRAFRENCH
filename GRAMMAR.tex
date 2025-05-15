@@ -1,3 +1,4 @@
+%!LW recipe=latexmk (xelatex)
 \documentclass[a4paper, 12pt, twoside, openright, final]{book}
 \usepackage[margin=2cm]{geometry}
 \usepackage{fontspec}
@@ -291,6 +292,8 @@
 }
 
 \def \footnoterule {
+    \medskip %% To prevent the rule from colliding with text.
+    \vfill   %% To make sure it’s always at the bottom of the page.
     \kern -3\p@
     \hrule \@width .4\columnwidth
     \kern 2.6\p@
@@ -354,14 +357,18 @@
 
 \cs_new:Npn \examples {
     \ifvmode\else\unskip\par\fi
+    \penalty -500 \relax %% Before examples is a good place to break.
     \begingroup
-    \def \labelitemi { \(\diamond\) }
-    \items
+        \def \labelitemi { \(\diamond\) }
+        \let \olddoubleslash \\
+        \def \\ { \olddoubleslash \llap } %% Move '‘' of translation into the indentation margin.
+        \items
 }
 
 \cs_new:Npn \endexamples {
-    \enditems
+        \enditems
     \endgroup
+    \penalty -500 \relax %% After examples is a good place to break.
     \__uf_no_indent:
 }
 
@@ -388,6 +395,10 @@
 \def \Bar #1 { \(\overline{\mathrm{#1}}\) }
 \def \parheading #1 { \noindent \textbf{#1} }
 \let\MC\multicolumn
+
+%% No interrobang in Minion 3...
+\catcode`‽=13
+\def‽{{\ifvmode\leavevmode\fi\rlap{?}\kern.5pt!}}
 
 \newbox\BoxA
 \newbox\BoxB
@@ -704,7 +715,7 @@ a variety of different things, depending on the letter:
 \item \w{c} can be /ɕ/ or /j̊/.
 \end{items}
 
-\subsection{Other Punctuation Marks}\label{subsec:other-punct}
+\subsection{Hyphen}\label{subsec:other-punct}
 \noindent Elided initial /ɰ/ is indicated by omitting the \w{r} in writing and attaching the word to the previous one with a hyphen,
 e.g. \w{-vá} ‘alas’.
 
@@ -719,6 +730,16 @@ In poetry, as well as in the northern dialect, adjacent vowels may be contracted
 nasalised and nasal vowels, respectively, e.g. \w{lèl} for \w{lé-el}; coalescence is often inconsistent, e.g. both \w{làb’há}
 and \w{lȁb’há} are found for \w{lá-áb’há} ‘the child’. Modern dialects that coalesce e.g. \w{lá-áb’há} often simply spell it
 \w{lâb’há} instead.
+
+\subsection{Sentence Punctuation and Capitalisation}
+Only proper nouns (and often also any titles appertaining to them) as well as the first word of a sentence are capitalised.
+Exclamation marks, question marks, semicolons, colons—but not commas or full stops—and the interrobang are separated from
+the preceding word by a space.
+
+The only punctuation mark that forces capitalisation of the following word is the full stop; capitalisation after other
+punctuation marks, such as question marks and exclamation marks, is generally only done if what follows and what precedes
+the mark is a full sentence. E.g. it is common to write a vocative followed by an exclamation mark, and the rest of the
+sentence after that continues without capitalising the word after the exclamation mark.
 
 \section{Lenition and Nasalisation}
 Certain morphological elements subject surrounding context to lenition or nasalisation. Nasalisation affects vowels,
@@ -773,12 +794,12 @@ to which a level if nasalisation is added if possible.
 This chapter covers nouns in the broad sense, i.e. nouns substantive, adjectives, adverbs, numerals, and pronouns.
 
 \section{Declension}\label{subsubsec:declension}
-UF has 2 declensions: a definite declension and an indefinite declension. UF has no adpositions—a fact for which is
+UF has 2 declensions: a definite declension and an indefinite declension. UF has no adpositions—a fact for which it
 compensates with a vast array of cases—no gender distinction in nouns, and no morphologically separate articles—the old
 PF articles have been incorporated into the noun.
 
 The table below shows the most common cases of the definite and indefinite declensions.  Cases are divided into primary,
-secondary, and locative cases (see below).
+secondary, and tertiary/locative cases (see below).
 
 Some of the case prefixes cause lenition or nasalisation in the initial consonant of the noun, e.g. \w{ḍalẹ} ‘table’ to
 \s{def acc sg} \w{s’thalẹ}. Unlike verbal affixes, case prefixes never coalesce with the stem.
@@ -877,6 +898,12 @@ Perlative         & lý’aút’halẹ      & lý’aúḍalẹ          && Per
 In UF grammar, the term \w{cyḍ révy’ẹ́â} ‘primary case’ refers to the cases that are commonly used to mark complements
 of verbs, i.e. the \s{abs, nom, acc, part, gen, dat}, and participles, e.g. the \s{insv}.
 
+There are some general rules
+as to what cases are used in what situations, but this can often depend on the verb in question, e.g. the subject of a verb
+may be in the \s{abs}, \s{nom}, or even in the \s{acc} or \s{part}, or some other case, though the first two are by far
+the commonest. What cases are used with what verbs (in addition to the general rules below) is indicated for each verb
+in the dictionary.
+
 \subsection{Absolutive}
 The \s{abs} is the base form of the noun, with the \s{abs def} being identical to the uninflected root, which is also
 used as the citation form. It is used mainly in contexts where no case marking is otherwise assigned to noun.
@@ -929,6 +956,9 @@ The vocative is a rare case that is used to address someone or something, e.g. \
 only occurs in the definite and usually with proper nouns.\footnote{The indefinite \s{voc}
 does not exist, as that would be nonsense.} Note that the vocative is not marked by an affix, but
 rather by mutation only, e.g. \w{C̣ár} from \w{Cár}.
+
+In novels and other literary media, vocatives are often italicised since they can otherwise be hard to distinguish
+from absolutives in some cases.
 
 \subsection{Accusative and Partitive}
 These two cases, while often different in meaning, are almost identical in grammatical purpose: Their main use is to
@@ -1226,7 +1256,6 @@ use with verbs such as \w{ḅlyc̣} ‘to peel’.
 
 %% [TODO: Postelative (idea: ‘out of hiding’ from lit. ‘away from behind a bush’)]
 
-
 \section{Diachronic Comments}
 The diachrony of these forms is mostly from the PF definite and indefinite pronouns as well as from PF prepositions, though
 some forms, such as the
@@ -1235,6 +1264,37 @@ partitive forms are from the PF partitive article, and
 the indefinite forms are formed with an additional \w{d-} by analogy to the definite forms. The locative cases are combinations
 of the articles and PF prepositions. The ablative is from \pf{loin de} ‘away from’. The diachrony of the genitive singular
 is unclear.
+
+\section{Names, Titles, and Appositions}\label{subsubsec:names-and-titles}
+Proper nouns are declined in the definite form only. Unlike other nouns, the \s{nom} is almost always
+unmarked, i.e. identical to the \s{abs}, but this depends on the name:
+\begin{examples}
+    \item \w{Daúvníc’h} ‘Dominic (\s{abs})’
+    \item \w{Daúvníc’h} ‘Dominic (\s{nom})’
+    \item \w{Cár} ‘Charles (\s{abs})’
+    \item \w{Lác̣ár} ‘Charles (\s{nom})’
+\end{examples}
+
+Titles always follow the noun they qualify. When that noun is a proper noun, the title is declined instead of the name,
+which remains unmarked, i.e. as if in the \s{abs}. The only exception is the \s{nom}: if the \s{nom} of a proper noun
+is unmarked, then both the title and the noun itself are unmarked in the \s{nom}. If two titles are attached to the
+same (proper) noun, \textit{both} are declined.
+\begin{examples}
+    \item \w{Snet’h C’haúfrér} ‘Brother Smyth’
+    \item \w{Snet’h Ihaúfrér} ‘Brother Smyth (\s{acc})’
+    \item \w{Snet’h Ihaúfrér Ihaj} ‘Brother Smyth the Wise (\s{acc})’
+\end{examples}
+
+Appositions also follow these rules, except that if they modify a common noun, they \textit{agree} with
+the case and number of the noun instead of being declined \textit{instead} of it. Note that this is different
+from modifier nouns, which take the \s{abs} instead. Consider:
+\begin{examples}
+    \item \w{ashasḍaúr, ast’haléraû véḍ} ‘to the beaver, a master carpenter’
+    \item \w{ashasḍaúr, ast’haléraû, asvéḍ} ‘to the beaver, a carpenter, a master’
+\end{examples}
+In both phrases, the apposition \w{ḍaléraû} ‘carpenter’ is declined in the \s{dat}. In the first, \w{véḍ} ‘master’
+is a modifier, not an apposition, and thus assumes \s{abs} case rather than \s{dat} case, while in the second, it
+\textit{is} an apposition and thus assumes \s{dat} case as well.
 
 \section{Negation}\label{subsubsec:noun-negation}
 Nouns, as well as proper adjectives and adverbs (i.e. those which are not formed from an adjective verb) are negated
@@ -1271,19 +1331,20 @@ the referent at the time of speaking.
 Future participles, however, are a bit more complicated. There are generally two classes of adjective verbs: those that
 describe properties that
 could reasonably be known in advance, and those that describe properties that could not. This is a purely semantic distinction: e.g. \w{ad’hyl}
-‘adult’ can refer to a future situation, since if you know how old someone is and that they are not an adult yet, you
+‘adult’ can refer to a future situation: if you know how old someone is and that they are not an adult yet, you
 can reasonably conclude that they will be an adult at some future point in time and when; thus, e.g. \w{vaú áb’há ad’hylŷr}
 ‘my soon-to-be adult child’ is relative to the time of the utterance.
 
 By contrast, a future participle of e.g. \w{cér} ‘dear’ cannot be relative to the time of utterance, as there is no way of
 knowing whether something will be dear to you in advance. Thus, such a participle is only valid if the context is in
-the past, in which case its sense takes on that of a future-in-the-past, e.g. \w{jrâhaút’hé b’hŷnâví cérrŷvé} ‘I met a dear
+the past, in which case its sense is naturally that of a future-in-the-past, e.g. \w{jrâhaút’hé b’hŷnâví cérrŷvé} ‘I met a dear
 friend of mine’ more literally means ‘I met someone who would become (lit. “will be”) a dear friend to me’, whereas
-\#\w{jrâhaúḍ b’hŷnâví cérrŷvé} ‘I meet a friend that will be to me’ is semantically invalid.
+\#\w{jrâhaúḍ b’hŷnâví cérrŷvé} ‘I meet a friend that will be dear to me’ is semantically invalid.
 
 Such future participles specifically indicate that the property only started applying to the referent at some point in the
-past after the context that the utterance refers to. The above example \w{jrâhaút’hé b’hŷnâví cérrŷvé} indicates that the
-person I met was not dear to me, whereas a present participle, \w{jrâhaút’hé b’hŷnâví cérâvé}, would indicate that
+past after the context that the utterance refers to. The above example, \w{jrâhaút’hé b’hŷnâví cérrŷvé}, indicates that at
+the time of the meeting, the
+person I met was not dear to me yet, whereas a present participle, \w{jrâhaút’hé b’hŷnâví cérâvé}, would indicate that
 they were already dear to me, and that we simply came together at that point in time.
 
 Lastly, in hypothetical scenarios, future adjective-participles of the latter class can often be relative to the time of
@@ -1324,8 +1385,6 @@ To illustrate the difference between the three: We might say that an ant is ‘b
 an ant is still not big, all things considered. By contrast, an elephant may be ‘smaller’ than a mountain,
 but that doesn’t mean that an elephant is small. Finally, a human is small enough to fit through a regular-sized
 door.
-
-
 
 In UF, the comparatives are expressed by a total of eight infixes, which are prefixed directly to the stem. For positive comparatives, the affirming
 comparative prefix is \w{lẹ}, the denying comparative prefix is \w{y’ŷ}, the sufficient comparative prefix is \w{ah},
@@ -1371,17 +1430,12 @@ The standard of comparison (viz. the thing being compared against) is marked wit
 The comparative can be used together with an infinitive, \s{aci}, or \s{pci}. The affirming comparative here has the meaning
 of ‘too X to \ldots’, and the denying comparative has the meaning of ‘not X enough to \ldots’. A good illustrative
 example of this is the following UF proverb:
-
-\gloss {
-    Láráhó slẹlúrá b’héd’hẹhẹ dẹnájẹ.
-    Lá-ráhó|s-lẹ-lúr-á|b’hé\Sl d’hẹhẹ|dẹ-nájẹ
-    \s{nom}-fish|\s{3n}-\s{aff.comp}-bulky-\s{3sg.pres.ant}|\s{all}\Sl surface|\s{inf}-swim
-    ‘The fish was too bulky to swim to the surface’\footnotemark
-}
-
-\footnotetext{This is a very common proverb (often also just \textit{láráhó slẹlúr} ‘The fish is too bulky’)
-and roughly means that something has gone too far or gone on for too long (‘Now you’ve done it’ or ‘Now
-it’s too late’). Variations of it exists; in the optative, for instance, this proverb means ‘Let’s not overdo this’.}
+\begin{examples}
+    \item \w{Láráhó slẹlúrá b’héd’hẹhẹ dẹnájẹ.}  ‘The fish was too bulky to swim to the surface’\footnote{
+        This is a very common proverb (often also just \textit{láráhó slẹlúr} ‘The fish is too bulky’)
+        and roughly means that something has gone too far or gone on for too long (‘Now you’ve done it’ or ‘Now
+        it’s too late’). Variations of it exists; in the optative, for instance, this proverb means ‘Let’s not overdo this’.}
+\end{examples}
 
 The comparative forms can also be prefixed to verbs, in which case they precede the stem directly and have the meaning
 of ‘to X more’, etc., e.g. \w{jrêdír} ‘I say more’. In this sense, the affirming comparative is generally construed
@@ -1633,7 +1687,25 @@ Active&\nf Sg&\nf Pl& & Passive&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \caption{Active (left) and passive (right) verbal affixes.}\label{tab:active-passive-prefixes}
 \end{table}
 
-\noindent A great degree of syncretism can be observed in the third-person forms. The gender distinction in the
+\noindent
+Every finite verb form requires at least one finite affix. A verb form without any active, passive, or dative affix whatsoever
+would not be a finite verb form and could thus never be the predicate of a sentence.\footnote{Excluding of course the fact
+that infinitives could be considered to function as predicates of \s{aci}s and \s{pci}s (see §~\ref{subsec:aci-pci}).}
+It is possible for a verb to only have a passive affix; however, this doesn’t mean the verb is necessarily passive in
+meaning; see~\ref{subsec:passive} for more about that.
+
+A transitive verb that already has an active affix can take an additional passive affix onl if there is no explicit
+direct object in the clause. In other words, while verbs
+\textit{do} take active person marking even if there is an explicit subject e.g. \w{lávvâ llad’hór} ‘the mother loves’, they do
+\w{not} take passive person marking if there is an explicit object, e.g. \w{lávvâ llvad’hór} ‘the
+mother loves me’, vs \w{lávvâ llad’hór iáb’há} ‘the mother loves the child’, which has \w{llad’hór} ‘she loves’ instead of
+\w{llẹsyad’hór} ‘she loves it’.
+
+It is possible to combine both the active and passive infinitive marker to form a reflexive infinitive, e.g. \w{dẹhad’hór}
+‘to love oneself’. Lastly, ditransitive verbs and verbs governing the dative case generally take a dative affix (see
+§~\ref{subsubsec:dative-affixes}) iff there is no explicit indirect object.
+
+A great degree of syncretism can be observed in the third-person forms. The gender distinction in the
 \s{3sg} that diachronically resulted from gendered personal pronouns is almost non-existent in the
 plural; the reason for this development is that those forms are derived from the old dative form, which lacked
 this distinction altogether.
@@ -1641,22 +1713,6 @@ this distinction altogether.
 The \s{act 1pl, 2pl} forms are only distinguished from their passive counterparts by
 the presence of additional suffixes in the former. The \s{3sg n} in the active and passive is derived from the PF
 demonstrative \pf{ce} and its variants; the \s{3pl n} is derived from the other \s{3pl} forms.
-
-A verb can have a passive affix only if there is no other explicit direct object in the clause. In other words, while verbs
-\textit{do} take active person marking even if there is an explicit subject e.g. \w{lávvâ llad’hór} ‘the mother loves’, they do
-\w{not} take passive person marking if there is an explicit object (unless there is no subject), e.g. \w{lávvâ llvad’hór} ‘the
-mother loves me’, vs \w{lávvâ llad’hór iáb’há} ‘the mother loves the child’, which has \w{llad’hór} ‘she loves’ instead of
-\w{llsyad’hór} ‘she loves it’.
-
-Every finite verb form requires at least one finite affix. A verb form without any active, passive, or dative affix whatsoever
-would not be a finite verb form and could thus never be the predicate of a sentence.\footnote{Excluding of course the fact
-that infinitives could be considered to function as predicates of \s{aci}s and \s{pci}s (see §~\ref{subsec:aci-pci}).}
-It is possible for a verb to only have a passive affix; however, this doesn’t mean the verb is necessarily passive in
-meaning; see~\ref{subsec:passive} for more about that.
-
-It is possible to combine both the active and passive infinitive marker to form a reflexive infinitive, e.g. \w{dẹhad’hór}
-‘to love oneself’. Lastly, ditransitive verbs and verbs governing the dative case generally take a dative affix (see
-§~\ref{subsubsec:dative-affixes}) iff there is no explicit indirect object.
 
 \Paragraph{Usage Notes}
 \begin{items}
@@ -1814,12 +1870,13 @@ UF gets to an ‘agent in the passive’ is by forming a regular active, but pla
 
 One more thing to note is that the UF active/passive distinction is sometimes less of a syntactic and more of a semantic
 difference: the ‘active’ fundamentally corresponds to the \textit{agent}, and the ‘passive’ to the \textit{theme}. Thus, verbs
-that only take a theme may translate as ‘active’ (or really, middle) in meaning despite being ‘passive’ in form in UF:
+that only take a theme may translate as ‘active’ (or middle) in meaning despite being ‘passive’ in form:
 \begin{examples}
     \item \w{Vv́ár dẹḅarḍ.} ‘I must leave.’
 \end{examples}
 
-However, these verbs are rare; usually, a syntactic ‘passive’ has passive meaning in the traditional sense. Intransitive verbs
+Traditional grammar calls such verbs ‘deponent verbs’. Such verbs are fairly rare; usually, a syntactic ‘passive’ has
+passive meaning in the traditional sense. Intransitive verbs
 especially tend to prefer ‘active’ affixes even if their complement is a theme rather than an agent.
 
 Lastly, passive participles that are used as adjectives—like any other adjective—do \textit{not} govern any case and may
@@ -2045,7 +2102,7 @@ will still not be enough to get by, as the Conditional, a \textit{very} common t
 
 First, let us examine the former, simpler case, commonly called the Future I. The prefix is \w{aú-} if the verb form
 after it starts with a consonant (except glides), \w{aúr-} in all other cases; e.g. \w{aújad’hór} ‘I shall love’, but
-\w{aúrý’ad’hór} ‘it will love’. In the infinitive passive, it
+\w{aúrý’ad’hór} ‘he will be loved’. In the infinitive passive, it
 contracts with the initial \w{à-} or \w{á-} to \w{aú} or \w{aû}, e.g. \w{aûd’hór} ‘to be about to be loved’.\footnote{This too is
 hard to translate literally.} No contraction happens
 if the infinitive starts with \w{â}, e.g. \w{aúrânvé} ‘to be about to be animated’. Since
@@ -2060,7 +2117,7 @@ of the verb \emph{ad’hór}.
 \s{2nd}&aúḍad’hór&aúb’had’hóré &&\s{2nd} &aúḍad’hór&aúb’had’hór\\
 \s{3m}&aúlad’hór&aúlad’hór     &&\s{3m} &aúry’ad’hór&aúlýad’hór\\
 \s{3f}&aúllad’hór&aúllad’hór   &&\s{3f} &aúry’ad’hór &aúlýad’hór\\
-\s{3n}&aúrý’ad’hór&aúlad’hór   &&\s{3n} &aúrý’ad’hór&aúlýad’hór\\\cline{1-3}\cline{5-7}
+\s{3n}&aúsad’hór&aúlad’hór   &&\s{3n} &aúsyad’hór&aúlýad’hór\\\cline{1-3}\cline{5-7}
 \s{inf}&\multicolumn{2}{c}{\it aúdad’hór}&&\scshape inf&\multicolumn{2}{c}{\it aûd’hór}\\
 \s{ptcp}&\multicolumn{2}{c}{\it aúrad’hórâ}&&\s{ptcp}&\multicolumn{2}{c}{\it aúrâd’hór}\\
 \end{tabular}
@@ -2619,38 +2676,6 @@ very similar, but sometimes subtly different.
 UF syntax is unfortunately complicated in what morphological constructs are used in what situations, and
 the rules are not always clear. The following is a list of the most common constructions.
 
-\section{Noun Phrases}
-\subsection{Names, Titles, and Appositions}\label{subsubsec:names-and-titles}
-Proper nouns are declined in the definite form only. Unlike other nouns, the \s{nom} is almost always
-unmarked, i.e. identical to the \s{abs}, but this depends on the name:
-\begin{examples}
-    \item \w{Daúvníc’h} ‘Dominic (\s{abs})’
-    \item \w{Daúvníc’h} ‘Dominic (\s{nom})’
-    \item \w{Cár} ‘Charles (\s{abs})’
-    \item \w{Lác̣ár} ‘Charles (\s{nom})’
-\end{examples}
-
-Titles always follow the noun they qualify. When that noun is a proper noun, the title is declined instead of the name,
-which remains unmarked, i.e. as if in the \s{abs}. The only exception is the \s{nom}: if the \s{nom} of a proper noun
-is unmarked, then both the title and the noun itself are unmarked in the \s{nom}. If two titles are attached to the
-same (proper) noun, \textit{both} are declined.
-\begin{examples}
-    \item \w{Snet’h C’haúfrér} ‘Brother Smyth’
-    \item \w{Snet’h Ihaúfrér} ‘Brother Smyth (\s{acc})’
-    \item \w{Snet’h Ihaúfrér Ihaj} ‘Brother Smyth the Wise (\s{acc})’
-\end{examples}
-
-Appositions also follow these rules, except that if they modify a common noun, they \textit{agree} with
-the case and number of the noun instead of being declined \textit{instead} of it. Note that this is different
-from modifier nouns, which take the \s{abs} instead. Consider:
-\begin{examples}
-    \item \w{ashasḍaúr, ast’haléraû véḍ} ‘to the beaver, a master carpenter’
-    \item \w{ashasḍaúr, ast’haléraû, asvéḍ} ‘to the beaver, a carpenter, a master’
-\end{examples}
-In both phrases, the apposition \w{ḍaléraû} ‘carpenter’ is declined in the \s{dat}. In the first, \w{véḍ} ‘master’
-is a modifier, not an apposition, and thus assumes \s{abs} case rather than \s{dat} case, while in the second, it
-\textit{is} an apposition and thus assumes \s{dat} case as well.
-
 \section{Word Order}
 Word order in ULTRAFRENCH is largely free at the sentence level. As we’ve already seen, the phrase-internal structure
 is generally more rigid.\footnote{E.g. adjectives and appositions following nouns.} However, there are still some
@@ -2660,132 +2685,73 @@ structural rules that must be abided by.
 The UF independent clause typically consists of a finite verb together with a subject perhaps several
 objects. The verb is conjugated to agree with the subject in person, number, and gender in some cases.
 
-\gloss {
-    Rab’hadó iárb.
-    r-ab’haḍ-ó| i-árb
-    \s{1pl}-fell-\s{1pl}| \s{acc}-tree
-    ‘We are felling the tree.’
-}
-
 The unmarked tense in UF is the present tense, which can generally be translated as either a present or
 present continuous tense in English. For general truths and facts, the gnomic tense is generally used
 instead.
 
-\gloss {
-    Rab’hadjô sárb.
-    r-ab’haḍ-jô| s-árb
-    \s{1pl}-fell-\s{gnomic}\Sl\s{1pl}| \s{acc.indef}-tree
-    ‘We fell trees.’
-}
+\begin{examples}
+    \item \w{Rab’haḍó iárb.} ‘We are felling the tree.’
+    \item \w{Rab’haḍjô sárb.} ‘We fell trees.’
+\end{examples}
 
 The object is incorporated into the verb if it is a personal pronoun, in which case there are rules for
 the order in which these affixes occur (see Section~\ref{subsec:verbal-morphology}).
+\begin{examples}
+    \item \w{Lẹrab’hat’há.} ‘He felled us.’
+    \item \w{Llẹsyad’hór.} ‘She loves it.’
+\end{examples}
 
-\gloss {
-    Lerab’hat’há.
-    lẹ-r-ab’ha\Sl t’há.
-    \s{3sgm}-\s{1pl.pass}-fell\Sl\s{3sg.pres.ant}
-    ‘He felled us.’
-}
-
-Word order is rather lax due to the presence of case marking, and any constituent can be fronted for
-emphasis, but the default word order is SVO or SOV.
-
-\gloss {
-    B’hehýnác aúlýab’hat’hâ.
-    b’hehýn-ác| aú-lý-ab’ha\Sl t’hâ.
-    \s{instr.indef}-axe|\s{1pl}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}
-    ‘With an axe, we have felled them.’
-}
+Word order is rather lax due to the presence of case marking, and any constituent can be fronted, usually to convey
+focus,\footnote{For emphasis, the particle \w{dèl} is generally used instead.} though usually, the verb or the subject
+is placed first.
+\begin{examples}
+    \item \w{B’hehýnác aúlýab’hat’hâ.} ‘With an axe, we have felled them.’
+    \item \w{Iḷý dẹc’haúbhýrífá ḍẹv́ár.} ‘The place, you must have purified it.’
+\end{examples}
 
 Note that words belonging to the same phrase are typically juxtaposed as adjectives are not inflected. However,
 this rule may sometimes be broken, particularly in poetry. Consider, for example, the following passage in alexandrine
 metre, written by the renowned poet \s{J.\,Y.\,B.\,Snet’h}, where we can find the verb positioned between a possessive
 pronoun and its associated noun:
-
-\gloss {
-    Au lýr náý’acḍaúrâ sýec̣ asvaúr sýárb.
-    Au |lýr |náý’-acḍ-aúrâ|sý-ec̣|as-vaúr|sý-árb
-    And|their|\s{1pl.fut.ant}-cleave-\s{circ}|\s{acc.pl}-sin|\s{dat}-world|\s{acc}-tree
-    ‘And we shall indeed have revealed their sins to the world’\footnotemark
-}
-
-\footnotetext{See the dictionary entry for \w{act’he}, sense 4, for more information about the use of this word here,
-which normally means ‘cleave’. The literal meaning of this sentence is roughly: ‘And we shall have brought
-down the trees upon their sins, to (= for the benefit of) the world’.}
-
+\begin{examples}
+    \item \w{Au lýr náý’acḍaúrâ sýec̣ asvaúr sýárb.} ‘And we shall indeed have revealed their sins to the world’\footnote{See
+    the dictionary entry for \w{act’he}, sense 4, for more information about the use of this word here,
+    which normally means ‘cleave’. The literal meaning of this sentence is roughly: ‘And we shall have brought
+    down the trees upon their sins, to (= for the benefit of) the world’.}
+\end{examples}
 
 \section{Negated Clauses}
 Negation in the indicative is expressed using the particle \w{asý’ýâ} ‘not’, which is typically appended to verbs
 as \w{’sý’ýâ}. For a discussion of negation in the subjunctive, optative, and \s{aci}s/\s{pci}s see
 Sections~\ref{subsec:subjunctive},~\ref{subsec:optative},~and~\ref{subsec:aci-pci}.
-By default, the particle is placed right after the verb:
-\gloss {
-    Aúlýab’hat’hâ’sý’ýâ b’hehýnác.
-    aú-lý-ab’ha\Sl t’hâ|’sý’ýâ|b’hehýn-ác.
-    \s{1pl}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}|not|\s{instr.indef}-axe
-    ‘We have not felled them with an axe.’
-}
-
-In case of a fronted constituent in an independent clause (but not in dependent clauses), the particle is
-placed after that constituent:
-\gloss {
-    B’hehýnác asý’ýâ aúlýab’hat’hâ.
-    b’hehýn-ác|asý’ýâ|aú-lý-ab’ha\Sl t’hâ.
-    \s{instr.indef}-axe|not|\s{1pl}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}
-    ‘It is not with an axe that we have felled them.’
-}
-
-Note that it is not valid to both front a constituent and not move the negation. For example,
-the following sentence sounds very awkward and no UF speaker would ever say or write this,
-save perhaps to sound extremely ironic.
-\gloss {
-    \#B’hehýnác aúlýab’hat’hâ’sý’ýâ.
-    b’hehýn-ác|aú-lý-ab’ha\Sl t’hâ|’sý’ýâ.
-    \s{instr.indef}-axe|\s{1pl}-\s{3pl.pass}-fell\Sl\s{1pl.pres.ant}|not
-    \textit{Roughly:} ‘With an axe, we have not-felled them.’
-}
+By default, the particle is placed right after the verb, but if there is a fronted constituent, the particle is
+sometimes placed after that constituent in independent clauses:
+\begin{examples}
+    \item \w{Aúlýab’hat’hâ’sý’ýâ b’hehýnác.} ‘We have not felled them with an axe.’
+    \item \w{B’hehýnác asý’ýâ aúlýab’hat’hâ.} ‘It is not with an axe that we have felled them.’
+\end{examples}
 
 UF makes frequent use of double negation in conjunction with words that create a negative context
 such as \w{jávé} ‘never’, \w{y’ê} ‘nothing’, or \w{ráv́â} ‘seldom’. Typically, such words are frontend,
-and consequently, the negation particle then appears appended to them, e.g.:
-\gloss {
-    Ráv́â’sý’ýâ st’halẹ jac̣t'heá.
-    Ráv́â|’sý’ýâ |s\Sl t’halẹ |j-ac̣t'he- á
-    seldom|not |\s{acc.indef}\Sl table|\s{1sg}-buy-\s{3sg.pres.ant}
-    ‘Rarely have I ever bought a table.’
-}
+and consequently, the negation particle then appears appended to them, e.g. Note that double negation is
+required in this case:
+\begin{examples}
+    \item \w{Ráv́â’sý’ýâ st’halẹ jac̣t'heá.} ‘Rarely have I ever bought a table.’
+    \item \w{St’halẹ’sý’ýâ ráv́â jac̣t'heá.} ‘A table I have bought rarely.’
+    \item \w{\#Ráv́â st’halẹ jac̣t'heá.} ‘(roughly) I rarely-bought a table.’
+\end{examples}
 
-Note that double negation is required for the sentence to make sense; UF learners often forget
-about that, which can lead to rather awkward constructs such as:
-\gloss {
-    \#Ráv́â st’halẹ jac̣t'heá.
-    Ráv́â|s\Sl t’halẹ |j-ac̣t'he-á
-    seldom|\s{acc.indef}\Sl table|\s{1sg}-buy-\s{3sg.pres.ant}
-    \textit{Roughly:} ‘I rarely-bought a table.’
-}
-
-Still, if a fronted constituent is present, the negation particle is placed after that constituent:
-\gloss {
-    St’halẹ’sý’ýâ ráv́â  jac̣t'heá.
-    s\Sl t’halẹ|’sý’ýâ | ráv́â |j-ac̣t'he-á
-    \s{acc.indef}\Sl table|not| seldom |\s{1sg}-buy-\s{3sg.pres.ant}
-    ‘A table I have bought rarely.’
-}
-
-Foreigners often make the mistake of assuming that the negation particle is part of a word,
+Learners often make the mistake of assuming that the negation particle is part of a word,
 e.g. that \w{ráv́â’sý’ýâ} means ‘seldom’. As such, UF speakers, when imitating a foreigner, may
 sometimes use more than one negation particle in a single sentence. Note that this is very
 much not proper language; such constructions are summarily comedic and best compared to phrases
 such as ‘it do be like that’ in English:
-\gloss {
-    *Ráv́â’sý’ýâ st’halẹ jac̣t'heá’sý’ýâ
-    Ráv́â|’sý’ýâ |s\Sl t’halẹ |j-ac̣t'he-á|’sý’ýâ
-    seldom|not |\s{acc.indef}\Sl table|\s{1sg}-buy-\s{3sg.pres.ant}|not
-    \textit{Roughly:} ‘Rarely-not I bought a table.’
-}
+\begin{examples}
+    \item \w{*Ráv́â’sý’ýâ st’halẹ jac̣t'heá’sý’ýâ.} ‘(roughly) Rarely-not I bought a table.’
+\end{examples}
 
 \section{Interrogative Clauses}\label{sec:interrogative}
+\subsection{Yes-No Questions}
 In UF, questions are generally marked by one or more particles. Unlike in many other languages, the verb generally
 does not move, except perhaps for emphasis. The most fundamental kind of question is a yes-no question, which is
 marked by the interrogative particle \w{c’hes}.
@@ -2801,41 +2767,19 @@ end of the sentence:
     \item \w{Raúl baú \b{c’hes}se ?} ‘Is it a good language?’
 \end{examples}
 
+\subsubsection{Negation}
 Negation is placed in the usual position. A negated question is marked by the negation particle \w{sý’ýâ},
-and the expected answer is ‘yes’:
-\gloss {
-    St’halẹ c’hes jac̣t'heá’sý’ýâ?
-    s\Sl t’halẹ |c’hes |j-ac̣t'he-á|’sý’ýâ
-    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy-\s{3sg.pres.ant}|not
-    ‘Did I not buy a table?’
-}
-
-Alternatively, the particle \w{(r)vá} can be used to indicate that the speaker expects the answer to be ‘no’
-or to indicate disbelief, surprise, or amazement. Note that this particle \textit{replaces} the question particle.
-Attempting to use both particles in the same sentence is ungrammatical and will likely be interpreted as
-stuttering.
-\gloss {
-    St’halẹvá jac̣t'heá?
-    s\Sl t’halẹ |vá |j-ac̣t'he-á
-    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy-\s{3sg.pres.ant}
-    ‘I bought a table?’
-}
-
-Unlike \w{c’hes}, this particle remains there even if the verb is \w{eḍ} ‘to be’:
-\gloss {
-    Raúlvá baú se?
-    raúl|vá|baú|se
-    \s{abs}-language|\s{q}|good|\s{3n}.be
-    ‘It is a good language?’
-}
-
-Of course, these questions can also be negated:
-\gloss {
-    St’halẹvá jac̣t'heá’sý’ýâ?
-    s\Sl t’halẹ |vá |j-ac̣t'he-á|’sý’ýâ
-    \s{acc.indef}\Sl table|\s{q}|\s{1sg}-buy-\s{3sg.pres.ant}|not
-    ‘I didn’t buy a table?’
-}
+to which the expected answer is ‘yes’. Alternatively, the particle \w{(r)vá} can be used to indicate that
+the speaker expects the answer to be ‘no’ or to indicate disbelief, surprise, or amazement. \w{(r)vá}
+\textit{replaces} the question particle and unlike \w{c’hes} never merges with \w{eḍ} ‘to be’. It is also
+possible to combine both particles.
+\begin{examples}
+    \item \w{St’halẹ c’hes jac̣t'heá’sý’ýâ ?} ‘Did I not buy a table?’
+    \item \w{St’halẹvá jac̣t'heá ?} ‘I bought a table?’
+    \item \w{St’halẹvá jac̣t'heá’sý’ýâ?} ‘I didn’t buy a table?’
+    \item \w{Raúl baú c’hesse ?} ‘Is it a good language?’
+    \item \w{Raúlvá baú se ?} ‘It is a good language?’
+\end{examples}
 
 The precise meaning of these questions is as follows: In \w{St’halẹ c’hes jac̣t'heá?} (‘Did I buy a table?’),
 the speaker is asking whether they themselves bought a table; a plausible situation would be that they
@@ -2849,29 +2793,36 @@ Finally, its negation \w{St’halẹvá jac̣t'heá’sý’ýâ?} would most li
 over the fact that they can’t seem to find their table and asserting that, in fact, they know for sure that
 they did indeed buy a table (‘Did I not buy a table? I know I did!’).
 
+\subsubsection{Fronting the Verb}
 Fronting of the verb in the last two cases generally indicates confusion rather than amazement or anger and
 is most commonly used in response to someone else’s statement so as to ask for clarification (‘What do you mean
-“I bought a table”; what are you talking about?’).
-\gloss {
-    Jac̣t'heává st’halẹ?
-    j-ac̣t'he-á |vá|s\Sl t’halẹ
-    \s{1sg}-buy-\s{3sg.pres.ant}|\s{q}|\s{acc.indef}\Sl table
-    ‘I \textit{bought} a \textit{table}?!’
-}
+“I bought a table”; what are you talking about?’). The same applies to the negated version of such a question.
+\begin{examples}
+    \item \w{Jac̣t'heává st’halẹ ‽} ‘I \textit{bought} a \textit{table}?!’
+    \item \w{Jac̣t'heá’sý’ýâvá st’halẹ ‽} ‘I \textit{didn’t} buy a \textit{table}?!’
+\end{examples}
 
-The same applies to the negated version of such a question:
-\gloss {
-    Jac̣t'heá’sý’ýâvá st’halẹ?
-    j-ac̣t'he-á |’sý’ýâ|vá|s\Sl t’halẹ
-    \s{1sg}-buy-\s{3sg.pres.ant}|not|\s{q}|\s{acc.indef}\Sl table
-    ‘I \textit{didn’t} buy a \textit{table}?!’
-}
+Note the order of particles:\footnote{See §~\ref{sec:particles} for more information on particle order.} negation
+precedes the question particle. Placing them the other way around makes it sound like you’re trying to correct
+yourself from \w{Jac̣t'hévá} to \w{Jac̣t'hé’sý’ýâ}.
 
-Note the order of particles: negation precedes the question particle. Placing them the other way around
-makes it sound like you’re trying to correct yourself from \w{Jac̣t'hévá} to \w{Jac̣t'hé’sý’ýâ}.
+\subsubsection{Simplified Questions}
+In simple yes-no questions where the addressee is obvious, person marking of adjective verbs as well as the copula
+are often dropped; only the question particle is required. This is most common in speech and written dialog; it is
+seldom found in prose.
+\begin{examples}
+    \item \w{Ýrŷ c’hes ?} ‘Are you happy?’
+    \item \w{Sýr c’hes ?} ‘Are you sure?’
+    \item \w{C’hes ?} ‘Is it?’ / ‘Really?’
+\end{examples}
 
+Person marking is generally required if the addressee is not in the second person:
+\begin{examples}
+    \item \w{Sýr c’hes aúdẹvárc ?} ‘Are you sure that this will work?’
+    \item \w{Ausýró c’hes aúdẹvárc ?} ‘Are \textit{we} sure that this will work?’
+\end{examples}
 
-\section{Particles}
+\section{Particles}\label{sec:particles}
 UF has a great number of words which syntactically fulfill the role of complementisers, subordinators, etc. and which
 have certain characteristics in common. These words are jointly referred to as ‘particles’. Common to all particles is
 that the position they occupy is generally that of the second \textit{word} in—or alternatively right after—the phrase
@@ -2880,6 +2831,8 @@ they modify. If multiple particles modify the same phrase, they are grouped toge
     \item \w{Sa \b{c’hes} ḍad’hór?} ‘What do you love?’
     \item \w{Rívnél \b{ḍèl} rá leb’h.} ‘He was a big \textit{scoundrel}.’
     \item \w{Rívnél rá \b{ḍèl} leb’h.} ‘He was a \textit{big} scoundrel.’
+    \item \w{St’halẹ \b{vé} jad’hór.} ‘But I love a table.’
+    \item \w{U \b{vé} st’halẹ u sárb jad’hór.} ‘But I love a table or a tree.’
 \end{examples}
 
 When multiple particles occur in the same sentence, they must be ordered such that a particle that modifies a phrase
@@ -2937,27 +2890,6 @@ is one, placed in spec-CP.
 The tree above also shows a crucial difference between question particles like \w{c’hes} and other kinds of particles:
 there can only be one question particle per clause, which can be explained by modelling it as the head of the CP. Thus,
 C is always empty in non-questions.
-
-\section{Subordination and Coordination}
-Subordinate dependent clauses clauses as well as coordinate independent clauses are typically introduced by conjunctions
-or sentential particles; usually, these particles are placed in second position in the clause (i.e. after some other
-constituent), e.g. observe the position of \w{vé} ‘but’ in the following sentence:
-\gloss {
-    St’halẹ vé jad’hór.
-    s\Sl t’halẹ|vé|j-ad’hór
-    \s{acc.indef}\Sl table|but|\s{1sg}-love
-    ‘But I love a table.’
-}
-
-Note that particles may sometimes also be placed after the first word of a clause instead if the first constituent
-is too long; this is particularly common with conjunctions that come in pairs such as \w{u \ldots\ u \ldots} ‘\ldots\
-or \ldots (inclusive)’:
-\gloss {
-    U vé st’halẹ u sárb jad’hór.
-    u|vé|s\Sl t’halẹ|u|s-árb|j-ad’hór
-    or|but|\s{acc.indef}\Sl table|or|\s{acc.indef}-tree|\s{1sg}-love
-    ‘But I love a table or a tree.’
-}
 
 \section{ACI and PCI}\label{subsec:aci-pci}
 The term \s{aci} is Latin for \textit{accūsātīvus cum īnfīnītīvō} ‘accusative with infinitive’. As the name would suggest, this
@@ -3043,123 +2975,78 @@ In speech, this problem is more readily solved via intonation by placing emphasi
 
 \subsection{Negation}
 Negation of \s{aci}s and \s{pci}s uses the same particle as negation in the optative, viz. \w{t’hé} (see
-Section~\ref{subsubsec:negated-optative}), attached to the verb of the \s{aci}. For example:
-\gloss {
-    Lácár sbhaú t’h’àfér láȷ́éd’há.
-    lá\Sl c̣ár| s\Sl bhaú| t’h’-à-fér| l-áȷ́éd’h\Sl á
-    \s{nom}\Sl Charles|\s{acc.indef}\Sl bridge| \s{inf.pass}-build|\s{3m}-order\Sl \s{pres.ant}
-    ‘Charles ordered that no bridge be built.’
-}
-
-Note that this only applies to negating verb of the \s{aci} itself—the
-verb of the matrix clause is negated normally. Where the meaning of the two is equivalent, negating
-the verb of the \s{aci} is generally preferred.
-\gloss {
-    Lácár sbhaú àfér láȷ́éd’há’sý’ýâ.
-    lá\Sl c̣ár| s\Sl bhaú| à-fér| l-áȷ́éd’h\Sl á|’sý’ýâ
-    \s{nom}\Sl Charles|\s{acc.indef}\Sl bridge| \s{inf.pass}-build|\s{3m}-order\Sl \s{pres.ant}|not
-    ‘Charles did not order a bridge to be built.’
-}
+Section~\ref{subsubsec:negated-optative}), attached to the verb of the \s{aci}. Note that the
+matrix clause is negated normally. Where the meaning of the two is equivalent, negating
+the \s{aci} is generally preferred.
+\begin{examples}
+    \item \w{Lácár sbhaú \b{t’h’}àfér láȷ́éd’há.} ‘Charles ordered that no bridge be built.’
+    \item \w{Lácár sbhaú àfér láȷ́éd’há\b{’sý’ýâ}.} ‘Charles did not order a bridge to be built.’
+\end{examples}
 
 \subsection{Pronominal ACIs and PCIs}\label{subsubsec:pronominal-aci}
 One of the most counterintuitive constructions in UF is the pronominal \s{aci}, i.e an \s{aci} that is formed using
 an infinitive and a pronoun. However, since separate pronouns do not exist in the \s{acc} or \s{part} case (see
 §~\ref{subsubsec:personal-pronouns}), passive affixes are used instead, even if the form is intended to be active
-in meaning:
-\gloss {
-    Lácár delýbard láȷ́éd’há.
-    lá\Sl c̣ár| dẹ-lý-ḅarḍ| l-áȷ́éd’h\Sl á
-    \s{nom}\Sl Charles|\s{inf}-\s{3pl.pass}-leave|\s{3m}-order\Sl \s{pres.ant}
-    ‘Charles ordered them to leave.’
-}
+in meaning. If the meaning of the sentence is intended to be passive, the passive infinitive is used instead. This is one of
+the only cases where a verb can receive two affixes of the same voice.
+\begin{examples}
+    \item \w{Lác̣ár dẹ\b{lý}ḅarḍ láȷ́éd’há.} ‘Charles ordered them to leave.’
+    \item \w{Lác̣ár \b{àsy}fér láȷ́éd’há.} ‘Charles ordered it to be built.’
+\end{examples}
 
-If the meaning of the sentence is intended to be passive, the passive infinitive is used instead. This is one of
-the only cases where a verb can receive two markers of the same voice:
-\gloss {
-    Lácár àsyfér láȷ́éd’há.
-    lá\Sl c̣ár| à-sy-fér| l-áȷ́éd’h\Sl á
-    \s{nom}\Sl Charles|\s{inf.pass}-\s{3sg.pass}-build|\s{3m}-order\Sl \s{pres.ant}
-    ‘Charles ordered it to be built.’
-}
+Thus, the voice of a pronominal \s{aci} or \s{pci} depends on the voice of the infinitive affix, and not that of
+the finite affix. Finally, a pronominal \s{pci} is formed as expected, i.e. with the pronominal partitive infix
+\w{-dy-} (see §~\ref{subsubsec:personal-pronouns}).
+\begin{examples}
+    \item \w{Lác̣ár dẹlý\b{dy}ḅarḍ láȷ́éd’há.} ‘Charles ordered them to get going.’
+\end{examples}
 
-Thus, the voice of a pronominal \s{aci} or \s{pci} depends on the voice of the infinitive marker, and not that of
-the finite marker. Finally, a pronominal \s{pci} is formed as expected, i.e. with the pronominal partitive infix
-\w{-dy-} (see §~\ref{subsubsec:personal-pronouns})
-\gloss {
-    Lácár delýdybard láȷ́éd’há.
-    lá\Sl c̣ár| dẹ-lý-dy-ḅarḍ| l-áȷ́éd’h\Sl á
-    \s{nom}\Sl Charles|\s{inf}-\s{3pl.pass}-\s{part}-leave|\s{3m}-order\Sl \s{pres.ant}
-    ‘Charles ordered them to get going.’
-}
 
 \section{Conditionals}\label{subsec:conditionals}
-UF conditionals can broadly be divided into four categories: Simple (\s s), potential (\s p), counterfactual (\s c), and
+Traditional UF grammar divides conditionals into four categories: Simple (\s s), potential (\s p), counterfactual (\s c), and
 irrealis (\s i). In the examples below, the letter in brackets indicates the type of conditional.
 
-Unlike other languages, UF does not use any form of backshifting. Thus, a past tense is used in a conditional sentence if and
+UF does not use any form of backshifting. Thus, a past tense is used in a conditional sentence if and
 only if the action, from the speaker’s perspective, takes place in the past. Even counterfactual conditionals, if they
-appertain to the present, still use present tense. There are, however, other restrictions on tense in that not all kinds of
-conditionals appertain to all tenses. For instance, it is impossible to construct a potential conditional in the past tense—that
-would have to be a counterfactual conditional instead.
+appertain to the present, still use present tense.
+
+Still, there are restrictions on tense in that not all kinds of conditionals appertain to all tenses. For instance, it
+is impossible to construct a potential conditional in the past; it would have to be a counterfactual conditional
+instead.
 
 \subsection{Simple Conditionals}
 Simple conditionals indicate basic implications and logical truths. These conditionals use the indicative in both the protasis
 and apodosis, in the appropriate tense. The protasis is generally introduced by the particle \w{s} ‘if’.
-\gloss {
-    S {\bf r} sré, aû-{\bf r} sfe. \nf (\s s)
-    s|{\nf r}| s-ré| aû-|{\nf r}| s-fẹ
-    if|\w{r}|\s{3n}-be.true|non-|\w{r}|\s{3n}-be.false
-    ‘If \w{r} is true, then not-\w{r} is false.’\footnotemark
-}
-
-\footnotetext{UF does not use the letters \w{p} or \w{q}, and thus, discussions of propositional logic in UF tend to
-use \w{r} and \w{t} instead. \w{s} is not used either so as to not confuse it with \w{s} ‘if’.}
+\begin{examples}
+    \item[(\s s)] \w{S r sré, aû-r sfe.} ‘If \w{r} is true, then not-\w{r} is false.’\footnote{UF does not
+     use the letters \w{p} or \w{q}, and thus, discussions of propositional logic in UF tend to
+     use \w{r} and \w{t} instead. \w{s} is not used either so as to not confuse it with \w{s} ‘if’.}
+\end{examples}
 
 \subsection{Potential Conditionals}
 Potential conditionals indicate that something is possible or could happen in the present or future (but \textit{not} in
 the past), provided some condition is met, but which is not currently the case. These conditionals use the present
 indicative (\s p1) or the present (spoken) or Future II (literary) optative in the future (\s p2) in the protasis, and
 the Conditional I in the apodosis.
-\gloss {
-    S desehúrvé, aúrrzaúsdressa júrdy’í. \nf (\s p1)
-    s|ḍẹ-sẹhúr-vé|aúr-rzaúsḍre-ss\Sl a|júrdy’í
-    if|\s{2sg}-help-\s{dat.1st}|\s{3n.fut.ii₁}-be.complete–\s{cond}\Sl \s{circ₁}|today
-    ‘If you were to help me, it could be finished today.’
-}
-
-\gloss {
-    S vê dey’ehehúrvé, aúrrzaúsdressa abrdvê. \nf (\s p2)
-    s|vê|ḍẹ-y’ẹ\Sl hẹhúr-vé|aúr-rzaúsḍre-ss\Sl a|aḅrdvê
-    if|tomorrow|\s{2sg}-\s{opt}\Sl help-\s{dat.1st}|\s{3n.fut.ii₁}-be.complete–\s{cond}\Sl \s{circ₁}|day.after.tomorrow
-    ‘If you were to help me tomorrow, it could be finished the day after tomorrow.’
-}
+\begin{examples}
+    \item[(\s p1)] \w{S ḍẹsẹhúrvé, aúrrzaúsḍressa júrdy’í.} \\ ‘If you were to help me, it could be finished today.’
+    \item[(\s p2)] \w{S vê ḍẹy’ẹhẹhúrvé, aúrrzaúsḍressa aḍrdvê.} \\ ‘If you were to help me tomorrow, it could be finished the day after tomorrow.’
+\end{examples}
 
 This sentence indicates that the speaker believes that, if the addressee helps them, there is a \textit{possibility} that they
 could finish the task. If, by contrast, the speaker is certain that they will get the task done, a simple conditional is used
 instead:
-\gloss {
-    S desehúrvé, aúrrzaúsdre júrdy’í. \nf (\s s)
-    s|ḍẹ-sẹhúr-vé|aúr-rzaúsḍr\Sl e|júrdy’í
-    if|\s{2sg}-help-\s{dat.1st}|\s{3n.fut.ii₁}-be.complete\Sl \s{circ₁}|today
-    ‘If you help me, it will (with certainty) be finished today.’
-}
+\begin{examples}
+    \item[(\s s)] \w{S ḍẹsẹhúrvé, aúrrzaúsḍre júrdy’í.} \\ ‘If you help me, it will (with certainty) be finished today.’
+\end{examples}
 
 \subsection{Counterfactual Conditionals}
 Counterfactual conditionals are conditionals whose protasis is false. These conditionals exist only in the present
 and past and use the subjunctive in the present or any past tense in the protasis, and the Conditional II in the apodosis:
-\gloss {
-    S desehúsvé, aúrrzaúsdressá. \nf (\s c)
-    s|ḍẹ-sẹhús-vé|aúr-rzaúsḍre-ss\Sl á|
-    if|\s{2sg}-help.\s{subj}-\s{dat.1st}|\s{3n.fut.ant₁}-be.complete–\s{cond}\Sl \s{circ₁}
-    ‘If you were helping me, it would be finished.’
-}
-
-\gloss {
-    S desehúhávé, aúrrzaúsdressá y’ér. \nf (\s c)
-    s|ḍẹ-sẹhúh\Sl á-vé|aúr-rzaúsḍre-ss\Sl á|y’ér
-    if|\s{2sg}-help.\s{subj}\Sl \s{3rd.pres.ant}-\s{dat.1st}|\s{3n.fut.ant₁}-be.complete–\s{cond}\Sl \s{circ₁}|yesterday
-    ‘If you had helped me, it would have been finished yesterday.’
-}
+\begin{examples}
+    \item[(\s c)] \w{S ḍẹsẹhúsvé, aúrrzaúsḍressá.} \\ ‘If you were helping me, it would be finished.’
+    \item[(\s c)] \w{S ḍẹsẹhúhávé, aúrrzaúsḍressá y’ér.} \\ ‘If you had helped me, it would have been finished yesterday.’
+\end{examples}
 
 \subsection{Irrealis Conditionals}
 Irrealis conditionals are conditionals that describe a situation that could never be true. They are distinct from
@@ -3168,19 +3055,10 @@ either because it is not a statement, but rather a wish etc. (\s i1), or because
 irrealis conditionals are constrained to the present and future tense and are chiefly used to describe something that
 the speaker knows won’t happen. In a sense, they are often the opposite of potential conditionals. They use the
 optative in the protasis and the subjunctive in the apodosis.
-\gloss {
-    S dey’ehehúrvé, srzaúsdhá y’ér! \nf (\s i1)
-    s|ḍẹ-y’ẹ\Sl hẹhúr-vé|s-rzaúsḍh\Sl á|y’ér
-    if|\s{2sg}-\s{opt}\Sl help-\s{dat.1st}|\s{3n}-be.complete.\s{subj}\Sl \s{pres.ant.3sg}|yesterday
-    ‘If only you were helping me—it would have been finished yesterday!’
-}
-
-{\tabcolsep.5\tabcolsep\gloss {
-    S vê b’háy’ehehúrrevé, aúr-rzaúsdre-śe abrdvê. \nf (\s i2)
-    s|vê|b’há-y’ẹ\Sl hẹhúrre-vé|aúr-rzaúsḍre-śe|aḅrdvê
-    if|tomorrow|\s{2sg.fut.ii}-\s{opt}\Sl help.\s{fut}-\s{dat.1st}|\s{3n.fut.ii}-be.complete.\s{fut}-\s{fut.subj}|overmorrow
-    \textit{Roughly:} ‘If you had been able to help me tomorrow, it would have been finished the day after.’
-}}
+\begin{examples}
+    \item[(\s i1)] \w{S ḍẹy’ẹhẹhúrvé, srzaúst’há y’ér !} \\ ‘If only you were helping me—it would have been finished yesterday!’
+    \item[(\s i2)] \w{S vê b’háy’ẹhẹhúrrevé, aúr-rzaúsẹre-śe aḅrdvê.} \\ ‘(roughly) If you had been able to help me tomorrow, it would have been finished the day after.’
+\end{examples}
 
 The second example in particular is hard to translate since it communicates an irrealis in the future, at the same time
 using a morphological future in both the apodosis and the protasis. The tenses used in the translation here thus do not
@@ -3637,7 +3515,7 @@ s-ec’hlér-á|révy’ẹ́-vâ|vaúd’hér-vâ
 \s{3n}-shine-\s{pres.ant}|first-\s{adv}|be.moderate-\s{adv}
 
 ráh-aú|dẹ́|w-êr|i-rêr|syḅlâ|lá\Sl haul|s-dár-á|s-ré
-lá-aú|then|remove-\s{pres.ant.ptcp}|\s{acc}-clothing|supplementary|\s{def}\Sl sun|\s{3n}-throw-\s{pres.ant}|\s{acc.indef.pl}-ray
+\s{insv}-man|then|remove-\s{pres.ant.ptcp}|\s{acc}-clothing|supplementary|\s{def}\Sl sun|\s{3n}-throw-\s{pres.ant}|\s{acc.indef.pl}-ray
 
 lẹ-rýl-â|lá-aú|jys|ub’hr\Sl â|’sý’ýâ|lys|d-ád’hýr|i\Sl t’hèrvíc’h|and
 \s{aff.comp}-burn-\s{ptcp}|\s{def}-man|until|be.able-\s{ptcp}|not|no.longer|\s{inf}-resist|\s{acc}-heat|
