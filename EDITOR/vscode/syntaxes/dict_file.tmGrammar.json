@@ -1,0 +1,55 @@
+{
+    "scopeName": "source.dict_file",
+    "patterns": [
+        { "include": "#comment" },
+        { "include": "#delimiter" },
+        { "include": "#keyword" },
+        { "include": "#macro" },
+        { "include": "#macro_with_arg" },
+        { "include": "#escape" },
+        { "include": "#directive" },
+        { "include": "#invalid" }
+    ],
+    "repository": {
+        "comment": {
+            "match": "#[^\n]*",
+            "name": "comment.line"
+        },
+        "delimiter": {
+            "match": "\\||\\\\\\\\|>",
+            "name": "keyword.operator"
+        },
+        "keyword": {
+            "match": "\\\\(ex|comment)",
+            "name": "keyword.other"
+        },
+        "escape": {
+            "match": "\\\\( |&|\\$|%|#|\\{|\\})",
+            "name": "constant.character.escape"
+        },
+        "macro_with_arg": {
+            "begin": "\\\\(s|w|textit|textbf|textnf|senseref|Sup|Sub|ref|label|pf|psc)\\{",
+            "end": "\\}",
+            "beginCaptures": {
+                "0": { "name": "entity.name.function" }
+            },
+            "endCaptures": {
+                "0": { "name": "entity.name.function" }
+            },
+            "name": "macrocall",
+            "patterns": [{ "include": "$self" }]
+        },
+        "macro": {
+            "match": "\\\\(par|ldots|this|N|L|-)|~|\\{\\}",
+            "name": "entity.name.function"
+        },
+        "invalid": {
+            "match": "\\$|&|%|\\\\|\\^|_|\\{|\\}",
+            "name": "invalid.illegal"
+        },
+        "directive": {
+            "match": "\\$(backend) (all|json|tex)",
+            "name": "entity.name.section"
+        }
+    }
+}
