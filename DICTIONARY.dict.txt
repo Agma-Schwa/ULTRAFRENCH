@@ -634,9 +634,13 @@ víd’hẹ|n.|midi|Noon, midday
 áhâłát’hẹ|v.|ensanglanté|To be (very) bloody, bloodstained
 vá|n.|mât|Mast
 ḍèl|particle|tel|\textit{Emphatic particle, used as an intensifier, often postpositive after
-    the verb, but not so much intensifying the verb directly as it does the entire clause.} \ex
-    \s{Snet’h}, \s{ii.34}: \w{lá-árb srýlé dèl} ‘so it was that the tree was burning’ or ‘the tree
-    was burning fiercely’, or ‘indeed, the tree was burning’
+    the verb, but not so much intensifying the verb directly as it does the entire clause.}
+    \\ Such
+        \comment When placed after a noun phrase.
+    \\ So, indeed, verily
+        \comment When applied to a verb or an entire clause.
+        \ex \s{Snet’h}, \s{ii.34}: \w{lá-árb srýlé dèl} ‘so it was that the tree was burning’ or ‘the tree
+        was burning fiercely’, or ‘indeed, the tree was burning’
 
 lá|v.|planer|To fly
 b’haul|v.|voler|To hover, float
@@ -794,7 +798,7 @@ b’hérḍy’ŷ|v.|vertueux|To be virtuous
 rívnél|n.|criminel|Scoundrel, someone without virtue
 lér|v.|clair|To be evident, obvious, frank, clear
 lit’hijy’|v.|litigier|To litigate, be at law with (+\s{dat} sbd.)
-rê|n.|point|Point (in a score).
+rê|n.|point|\\ Point (small mark) \\ Point (in a score).
 ady’ŷ|v. or interj.|adieu|
     \\ Goodbye, farewell
     \\ +\s{gen} To say goodbye to sbd., bid sbd. farewell
@@ -1132,6 +1136,25 @@ aúry’ât’hal|v.|oriental|To be eastern
         in the \s{nd}.
     \ex \s{nd} \w{s’htẹ́v} ‘I love you’.
 raúlaú|v.|prolonger|\\\textit{intr.} To continue, persist \\+\s{aci} \textit{tr.} To continue|\s{fut} raúlaúr, \s{subj} raúlaús
+cac’h|adj.|chaque|Each, every
+áháb|adv.|ensemble|Together
+zu|v.|jouer|
+    \\(+\s{part}) To play (a game or role)
+    \\(\textit{refl.}) To be decided, be a matter of time
+    \\+\s{spress} To affect
+    \\+\s{gen} To take advantage of, make fun of
+ráy’ẹ́|n.|foyer|Home, homeland
+ḅaúr|n.|port|Port, harbour
+ḅeý’as|v.|épellation|To spell, spell out
+azut’h|v.|ajouter|To add, append
+auḍ|v.|from \pf{haute}, the \textit{fem.} form of \pf{haut}|To be high
+y’íb’h|v.|suivre|
+    \\(+\s{acc}) To follow
+        \comment In its literal sense.
+    \\(+\s{gen}) To follow, get, understand
+ac’h|n.|acte|Act, action
+ḍúrn|v.|tourner|To change|\s{fut} ḍúrnẹ́, \s{subj} ḍúrs
+ánvá|n.|animal|Animal
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
 

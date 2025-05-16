@@ -298,6 +298,17 @@
             "word": "ac"
         },
         {
+            "def": {
+                "def": "Act, action."
+            },
+            "def-search": "act action",
+            "etym": "<f-pf>acte</f-pf>",
+            "hw-search": "ach",
+            "ipa": "ɐx",
+            "pos": "n.",
+            "word": "ac’h"
+        },
+        {
             "def-search": "an axe bring chase cleave cut end get light or point reveal the to with",
             "etym": "from <f-w>ac</f-w>",
             "forms": "<f-s>fut</f-s> acḍe, <f-s>subj</f-s> act’hes",
@@ -523,6 +534,17 @@
         },
         {
             "def": {
+                "def": "Together."
+            },
+            "def-search": "together",
+            "etym": "<f-pf>ensemble</f-pf>",
+            "hw-search": "ahab",
+            "ipa": "ɑ̃hɑ̃b",
+            "pos": "adv.",
+            "word": "áháb"
+        },
+        {
+            "def": {
                 "def": "+<f-s>subj</f-s> Even though."
             },
             "def-search": "even though",
@@ -592,6 +614,17 @@
             "ipa": "ɑ̃̃nβɛ̃",
             "pos": "adv.",
             "word": "ânb’hé"
+        },
+        {
+            "def": {
+                "def": "Animal."
+            },
+            "def-search": "animal",
+            "etym": "<f-pf>animal</f-pf>",
+            "hw-search": "anva",
+            "ipa": "ɑ̃nʋ̃ɑ̃",
+            "pos": "n.",
+            "word": "ánvá"
         },
         {
             "def": {
@@ -921,6 +954,17 @@
             "word": "auḍ"
         },
         {
+            "def": {
+                "def": "To be high."
+            },
+            "def-search": "be high to",
+            "etym": "from <f-pf>haute</f-pf>, the <em>fem.</em> form of <f-pf>haut</f-pf>",
+            "hw-search": "aud",
+            "ipa": "od",
+            "pos": "v.",
+            "word": "auḍ"
+        },
+        {
             "def-search": "acquire distance from gain get height obtain on or purchase to",
             "etym": "<f-pf>obtenir</f-pf>",
             "forms": "<f-s>fut</f-s> auḍy’édrẹ́",
@@ -1241,6 +1285,17 @@
         },
         {
             "def": {
+                "def": "To add, append."
+            },
+            "def-search": "add append to",
+            "etym": "<f-pf>ajouter</f-pf>",
+            "hw-search": "azuth",
+            "ipa": "ɐzuθ",
+            "pos": "v.",
+            "word": "azut’h"
+        },
+        {
+            "def": {
                 "def": "To speak."
             },
             "def-search": "speak to",
@@ -1509,6 +1564,17 @@
         },
         {
             "def": {
+                "def": "Port, harbour."
+            },
+            "def-search": "harbour port",
+            "etym": "<f-pf>port</f-pf>",
+            "hw-search": "baur",
+            "ipa": "bɔ̃ɰ",
+            "pos": "n.",
+            "word": "ḅaúr"
+        },
+        {
+            "def": {
                 "def": "Boreas, the North Wind."
             },
             "def-search": "boreas north the wind",
@@ -1629,6 +1695,17 @@
             "ipa": "bɛ̃θʏ̃ɰ",
             "pos": "v.",
             "word": "ḅét’hýr"
+        },
+        {
+            "def": {
+                "def": "To spell, spell out."
+            },
+            "def-search": "out spell to",
+            "etym": "<f-pf>épellation</f-pf>",
+            "hw-search": "beyas",
+            "ipa": "beɥ̃ɐs",
+            "pos": "v.",
+            "word": "ḅeý’as"
         },
         {
             "def": {
@@ -2220,6 +2297,17 @@
                 }
             ],
             "word": "cabharḍrár"
+        },
+        {
+            "def": {
+                "def": "Each, every."
+            },
+            "def-search": "each every",
+            "etym": "<f-pf>chaque</f-pf>",
+            "hw-search": "cach",
+            "ipa": "ɕɐx",
+            "pos": "adj.",
+            "word": "cac’h"
         },
         {
             "def": {
@@ -3824,18 +3912,28 @@
         },
         {
             "def": {
-                "def": "<em>Emphatic particle, used as an intensifier, often postpositive after the verb, but not so much intensifying the verb directly as it does the entire clause.</em>.",
-                "examples": [
-                    {
-                        "text": "<f-s>Snet’h</f-s>, <f-s>ii.34</f-s>: <f-w>lá-árb srýlé dèl</f-w> ‘so it was that the tree was burning’ or ‘the tree was burning fiercely’, or ‘indeed, the tree was burning’."
-                    }
-                ]
+                "def": "<em>Emphatic particle, used as an intensifier, often postpositive after the verb, but not so much intensifying the verb directly as it does the entire clause.</em>."
             },
-            "def-search": "",
+            "def-search": "indeed suchso verily",
             "etym": "<f-pf>tel</f-pf>",
             "hw-search": "del",
             "ipa": "dɛɮ̃",
             "pos": "particle",
+            "senses": [
+                {
+                    "comment": "<p>When placed after a noun phrase.</p>",
+                    "def": "Such."
+                },
+                {
+                    "comment": "<p>When applied to a verb or an entire clause.</p>",
+                    "def": "So, indeed, verily.",
+                    "examples": [
+                        {
+                            "text": "<f-s>Snet’h</f-s>, <f-s>ii.34</f-s>: <f-w>lá-árb srýlé dèl</f-w> ‘so it was that the tree was burning’ or ‘the tree was burning fiercely’, or ‘indeed, the tree was burning’."
+                        }
+                    ]
+                }
+            ],
             "word": "ḍèl"
         },
         {
@@ -4391,6 +4489,18 @@
             "ipa": "dũɰ",
             "pos": "n.",
             "word": "ḍúr"
+        },
+        {
+            "def": {
+                "def": "To change."
+            },
+            "def-search": "change to",
+            "etym": "<f-pf>tourner</f-pf>",
+            "forms": "<f-s>fut</f-s> ḍúrnẹ́, <f-s>subj</f-s> ḍúrs",
+            "hw-search": "durn",
+            "ipa": "dũɰn",
+            "pos": "v.",
+            "word": "ḍúrn"
         },
         {
             "def": {
@@ -7247,6 +7357,17 @@
             "word": "ráy’é"
         },
         {
+            "def": {
+                "def": "Home, homeland."
+            },
+            "def-search": "home homeland",
+            "etym": "<f-pf>foyer</f-pf>",
+            "hw-search": "raye",
+            "ipa": "ɰɑ̃ɥẽ",
+            "pos": "n.",
+            "word": "ráy’ẹ́"
+        },
+        {
             "def-search": "by how in is means method no that there this way what",
             "etym": "<f-pf>moyen</f-pf>",
             "hw-search": "raye",
@@ -7402,14 +7523,19 @@
             "word": "rê"
         },
         {
-            "def": {
-                "def": "Point (in a score)."
-            },
-            "def-search": "a in point score",
+            "def-search": "a in markpoint point score small",
             "etym": "<f-pf>point</f-pf>",
             "hw-search": "re",
             "ipa": "ɰɛ̃̃",
             "pos": "n.",
+            "senses": [
+                {
+                    "def": "Point (small mark)."
+                },
+                {
+                    "def": "Point (in a score)."
+                }
+            ],
             "word": "rê"
         },
         {
@@ -10549,6 +10675,23 @@
             "word": "y’î"
         },
         {
+            "def-search": "follow get to understand",
+            "etym": "<f-pf>suivre</f-pf>",
+            "hw-search": "yibh",
+            "ipa": "ɥĩβ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "comment": "<p>In its literal sense.</p>",
+                    "def": "(+<f-s>acc</f-s>) To follow."
+                },
+                {
+                    "def": "(+<f-s>gen</f-s>) To follow, get, understand."
+                }
+            ],
+            "word": "y’íb’h"
+        },
+        {
             "def": {
                 "def": "Eight."
             },
@@ -10786,6 +10929,28 @@
             "ipa": "zob",
             "pos": "n.",
             "word": "Zauḅ"
+        },
+        {
+            "def-search": "a advantage affect be decided fun game make matter of or play role take time to",
+            "etym": "<f-pf>jouer</f-pf>",
+            "hw-search": "zu",
+            "ipa": "zu",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "(+<f-s>part</f-s>) To play (a game or role)."
+                },
+                {
+                    "def": "(<em>refl.</em>) To be decided, be a matter of time."
+                },
+                {
+                    "def": "+<f-s>spress</f-s> To affect."
+                },
+                {
+                    "def": "+<f-s>gen</f-s> To take advantage of, make fun of."
+                }
+            ],
+            "word": "zu"
         }
     ],
     "refs": [
