@@ -1006,8 +1006,8 @@ aúú|interj.|\textnf{onomatopoeic}|Hmm \comment Written with as many ‘ú’s 
 aa|interj.|\textnf{onomatopoeic}|Ah, oh|\s{nd} ā|ɐː
 b’hil|n.|ville|Town, city
 lé|v.|plein|\\ To be full
-ḅúrc’hrá|pron.|pourquoi|\textit{(obsolete)} Why
-c’hrá|pron.|from earlier \w{ḅúrc’hrá}|Why
+ḅúrc’hrá|pron.|pourquoi|\textit{(obsolete)} Why \comment For usage, see \w{c’hrá}.
+c’hrá|pron.|from earlier \w{ḅúrc’hrá}|Why \comment Replaces \w{c’hès} in questions.
 aśár|v.|asseoir|\\ +\s{acc} To seat, sit sbd. down \\\textit{refl.} To sit, be seated
 ḅíy’ýrt’haúb|n.|\pf{pilleur de tombe}|Archaeologist
 aub’hèḍ|adv.|\pf{au fait}|By the way, btw, incidentally
@@ -1054,9 +1054,16 @@ réḅ|interj.|ouaip|Yeah, yep, yes \comment Never used in response to a yes-no 
 ríh|v.|crisser|To screech|\s{onom} ríí \textnf{/ɰĩː/}
 ráy’ál|v.|royal|To be majestic
 raút’hal|n.|crotale|Serpent, snake
-c’hèl|particle|quel|+\s{abs} What, what a
-    \comment Used in exclamations, often infixed between a noun and its adjectives.
-    \ex \w{Árb c’hèl rá !} ‘What a big tree!’
+c’hèl|particle|quel|
+    \\ \s{indef} \textit{(interrog.)} Which
+        \comment Replaces \w{c’hes} in this sense.
+    \\ \s{def} \textit{(interrog.)} Which one
+        \comment Replaces \w{c’hes} in this sense.
+    \\ +\s{abs} What, what a
+        \comment Used in exclamations, always infixed between a noun and its adjectives; if no
+            adjective is present, \this{} is placed after the noun and followed by \w{ḍèl}.
+        \ex \w{Árb c’hèl rá !} ‘What a big tree!’ vs \w{Árb rá c’hèl ?} ‘Which big tree?’
+        \ex \w{Árb c’hèl ḍèl !} ‘What a tree!’ vs \w{Árb c’hèl ?} ‘Which tree?’
 sýr|adj. or v.|sûr|
     \\ Sure
     \\ To be sure, certain
@@ -1124,6 +1131,7 @@ aúry’ât’hal|v.|oriental|To be eastern
         \w{ad’hór} is generally much preferred in common parlance in the \s{sd}, though \this{} is has entered common use
         in the \s{nd}.
     \ex \s{nd} \w{s’htẹ́v} ‘I love you’.
+raúlaú|v.|prolonger|\\\textit{intr.} To continue, persist \\+\s{aci} \textit{tr.} To continue|\s{fut} raúlaúr, \s{subj} raúlaús
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
 

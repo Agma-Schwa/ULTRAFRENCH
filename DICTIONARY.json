@@ -2162,6 +2162,7 @@
         },
         {
             "def": {
+                "comment": "<p>For usage, see <f-w>c’hrá</f-w>.</p>",
                 "def": "<em>(obsolete)</em> Why."
             },
             "def-search": "why",
@@ -3046,20 +3047,33 @@
             "word": "c’hèl"
         },
         {
-            "def": {
-                "comment": "<p>Used in exclamations, often infixed between a noun and its adjectives.</p>",
-                "def": "+<f-s>abs</f-s> What, what a.",
-                "examples": [
-                    {
-                        "text": "<f-w>Árb c’hèl rá !</f-w> ‘What a big tree!’"
-                    }
-                ]
-            },
-            "def-search": "a what",
+            "def-search": "a one what which",
             "etym": "<f-pf>quel</f-pf>",
             "hw-search": "chel",
             "ipa": "xɛɮ̃",
             "pos": "particle",
+            "senses": [
+                {
+                    "comment": "<p>Replaces <f-w>c’hes</f-w> in this sense.</p>",
+                    "def": "<f-s>indef</f-s> <em>(interrog.)</em> Which."
+                },
+                {
+                    "comment": "<p>Replaces <f-w>c’hes</f-w> in this sense.</p>",
+                    "def": "<f-s>def</f-s> <em>(interrog.)</em> Which one."
+                },
+                {
+                    "comment": "<p>Used in exclamations, always infixed between a noun and its adjectives; if no adjective is present, <f-w>c’hèl</f-w> is placed after the noun and followed by <f-w>ḍèl</f-w>.</p>",
+                    "def": "+<f-s>abs</f-s> What, what a.",
+                    "examples": [
+                        {
+                            "text": "<f-w>Árb c’hèl rá !</f-w> ‘What a big tree!’ vs <f-w>Árb rá c’hèl ?</f-w> ‘Which big tree?’"
+                        },
+                        {
+                            "text": "<f-w>Árb c’hèl ḍèl !</f-w> ‘What a tree!’ vs <f-w>Árb c’hèl ?</f-w> ‘Which tree?’"
+                        }
+                    ]
+                }
+            ],
             "word": "c’hèl"
         },
         {
@@ -3279,6 +3293,7 @@
         },
         {
             "def": {
+                "comment": "<p>Replaces <f-w>c’hès</f-w> in questions.</p>",
                 "def": "Why."
             },
             "def-search": "why",
@@ -7054,6 +7069,23 @@
                 }
             ],
             "word": "raúl"
+        },
+        {
+            "def-search": "continue persist to",
+            "etym": "<f-pf>prolonger</f-pf>",
+            "forms": "<f-s>fut</f-s> raúlaúr, <f-s>subj</f-s> raúlaús",
+            "hw-search": "raulau",
+            "ipa": "ɰɔ̃ɮ̃ɔ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "<em>intr.</em> To continue, persist."
+                },
+                {
+                    "def": "+<f-s>aci</f-s> <em>tr.</em> To continue."
+                }
+            ],
+            "word": "raúlaú"
         },
         {
             "def": {
