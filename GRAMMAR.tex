@@ -308,6 +308,14 @@
     }
 }
 
+\def \subsection {
+    \@startsection
+        {subsection} {2} {\z@}
+        {-2ex plus \z@ minus 2pt}
+        {1.5ex \@plus .2ex}
+        {\normalfont \large \bfseries}
+}
+
 \newlength{\EnumItemSep} \EnumItemSep-3pt
 
 \newenvironment { enum } [1] [0] {
@@ -341,12 +349,12 @@
     \ifvmode\else\unskip\par\fi
     \addvspace\medskipamount
     \begingroup
-    \itemize\kern-\topsep
-    \itemsep0pt
+        \itemize\kern-\topsep
+        \itemsep0pt
 }
 
 \cs_new:Npn \enditems {
-    \enditemize\kern-\topsep
+        \enditemize\kern-\topsep
     \endgroup
     \addvspace\medskipamount
     \__uf_no_indent:
@@ -358,6 +366,7 @@
 
 \cs_new:Npn \examples {
     \ifvmode\else\unskip\par\fi
+    \vskip 0pt plus 6pt \relax
     \penalty -500 \relax %% Before examples is a good place to break.
     \begingroup
         \def \labelitemi { \(\diamond\) }
@@ -370,6 +379,7 @@
         \enditems
     \endgroup
     \penalty -500 \relax %% After examples is a good place to break.
+    \vskip 0pt plus 6pt \relax
     \__uf_no_indent:
 }
 
@@ -500,7 +510,6 @@
     \vfil\null
 \end{titlepage}
 \makeatother
-
 
 \setcounter{page}{1}
 \thispagestyle{empty}
@@ -2519,10 +2528,11 @@ t’hé b’háy’ẹbharẹ́} ‘I was afraid lest you might leave’.
 
 \section{The Copula \textit{eḍ}}\label{subsec:ed-paradigm}
 There is only one irregular verb in UF, namely the copula \w{eḍ}. All of its forms are highly irregular. The copula lacks
-passive forms, a gnomic, as well as the Future I.  The preterite anterior is a periphrastic construction of the preterite participle
+passive forms as well as the Future I.  The preterite anterior is a periphrastic construction of the preterite participle
 of \w{eḍ} and its present tense,\footnote{The original morphological preterite anterior tense of \textit{eḍ} was lost in
 Late Middle UF.} e.g. \w{t’hẹdâ vy’í} ‘I had been’. Note that only the participle is
-inflected for mood in this case, e.g. subjunctive \w{t’hẹrâ vy’í} ‘I should have been’.
+inflected for mood in this case, e.g. subjunctive \w{t’hẹrâ vy’í} ‘I should have been’. The gnomic is formed by
+appending \w{(j)ú} to the end of a form, with the \w{j} dropped if the form in question ends with a consonant.
 %\footnote{At the same time, the \s{1sg} forms seem to be derived from the \s{acc} of the PF \s{1sg} pronoun,
 %for unknown reasons.}
 
@@ -3072,6 +3082,12 @@ and apodosis, in the appropriate tense. The protasis is generally introduced by 
     \item[(\s s)] \w{S r sré, aû-r sfe.} ‘If \w{r} is true, then not-\w{r} is false.’\footnote{UF does not
      use the letters \w{p} or \w{q}, and thus, discussions of propositional logic in UF tend to
      use \w{r} and \w{t} instead. \w{s} is not used either so as to not confuse it with \w{s} ‘if’.}
+\end{examples}
+
+A variant of the simple conditional is the so-called ‘gnomic conditional’, which uses a gnomic form in the apodosis; this form
+expresses ‘if X, then Y must/should be too’. This is often found in formal specifications and legal documents.
+\begin{examples}
+    \item \w{S sfúr snaûb, ád’hý rêrá sejú.} ‘If a number is provided, it shall be greater than two.’
 \end{examples}
 
 \subsection{Potential Conditionals}
