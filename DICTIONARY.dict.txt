@@ -386,7 +386,7 @@ laú|v.|long|Long. \comment Often in compounds \w{laú-} ‘long-’
 lár|v.|large|Wide, broad
 ebhẹ|v.|épais|To be  thick|\s{fut} ebhrẹ, \s{subj} ebhes
 lúr|v.|lourd|To be bulky, oversized, heavy
-c’húr|v.|court|To shrink, reduce in size, narrow
+c’húr|v. tr.|court|To shrink, reduce in size, narrow \comment Always transitive or reflexive.
 eḍrrá|v.|étroit|Pointy
 c’hánár|n.|canard|\\ Ship, boat. \\ \s{instr indef} By boat
 c’hánaú|n.|canot|Duck (bird)
@@ -576,10 +576,10 @@ ahúr|v.|assurer|To ensure|\s{fut} ahúré, \s{subj} ahúrs
 fúr|v.|fournir|To deliver, provide (+\s{dat} sbd.) (+ \s{acc} with sth.)
 c’hulvâ|n.|écoulement|Flow
 sehul|v.|s’écouler|To flow
-c’húr|v.|courrir|To run
+c’húr|v. intr.|courrir|To run
 rób’hoc’h|v.|\pf{provoquer}; future from \pf{infliger}|\s{+acc} To cause, make happen|
     \s{fut} flijé, \s{subj} rób’hoc’hs
-aḅrâ|v.|apprendre|To learn|\s{fut} aḅrâdé, \s{subj} aḅrâs
+aḅrâ|v.|apprendre|\\+\s{part} \s{or intr.} To learn\\+\s{acc} To teach (+\s{dat} sbd.) \comment See also|\s{fut} aḅrâdé, \s{subj} aḅrâs
 ábhec|v.|empêcher|+\s{acc} To prevent, stop (sth. from happening)|\s{fut} ábhece, \s{subj} ábhecs
 válvê|v.|malmener|To mistreat, torture|\s{fut} válv́e, \s{subj} válvês
 válḍrét’hás|n.|maltraitance|Torture
@@ -785,7 +785,7 @@ fihas|v.|efficace|To be efficient
 Zauḅ|n.|Ésope|Aesop
 c’hasḅesy’ál|n.|\pf{cas spécial}|Exception
 aír|v.|hair|To hate, abhor, detest, loathe, despise (+\s{acc} sbd./sth.)
-c’hèl|det. postpos.|quelques|Some, a few, a couple of
+c’hèl|det. postpos.|quelques|Some, any, a few, a couple of
 válfèz|v.|malfaisant|To be malfeasant, evil, malevolent|\s{fut} válfèź, \s{subj} válfès
 c’haúḅlér|.v|complaire|To be complacent; to be accepting in the presence of
     +\s{gen} sbd./sth. perceived as negative|\s{fut} c’haúḅlére, \s{subj} c’haúḅlés
@@ -1138,7 +1138,7 @@ aúry’ât’hal|v.|oriental|To be eastern
 raúlaú|v.|prolonger|\\\textit{intr.} To continue, persist \\+\s{aci} \textit{tr.} To continue|\s{fut} raúlaúr, \s{subj} raúlaús
 cac’h|adj.|chaque|Each, every
 áháb|adv.|ensemble|Together
-zu|v.|jouer|
+ju|v.|jouer|
     \\(+\s{part}) To play (a game or role)
     \\(\textit{refl.}) To be decided, be a matter of time
     \\+\s{spress} To affect
@@ -1146,7 +1146,7 @@ zu|v.|jouer|
 ráy’ẹ́|n.|foyer|Home, homeland
 ḅaúr|n.|port|Port, harbour
 ḅeý’as|v.|épellation|To spell, spell out
-azut’h|v.|ajouter|To add, append
+ajut’h|v.|ajouter|To add, append
 auḍ|v.|from \pf{haute}, the \textit{fem.} form of \pf{haut}|To be high
 y’íb’h|v.|suivre|
     \\(+\s{acc}) To follow
@@ -1155,6 +1155,42 @@ y’íb’h|v.|suivre|
 ac’h|n.|acte|Act, action
 ḍúrn|v.|tourner|To change|\s{fut} ḍúrnẹ́, \s{subj} ḍúrs
 ánvá|n.|animal|Animal
+déry’é|v.|derrière|
+    \\+\s{gen} To be the back of
+        \comment For ‘\textit{at} the back of’, the \s{postess} is used instead.
+raû|v.|rond|To be round
+sévê|n.|semaine|Week
+ánẹ́|n.|année|Year
+ráz|n.|phrase|Sentence
+sát’hás|n.|sentence|Verdict, judgement, court sentence
+bẹ|v.|bas|To be low
+réý’í|n.|from \pf{trait} + \pf{ligne}|\\ Rope, thread \\ Line, straight path
+di’bhẹ́|v.|différer|\\(+\s{gen}) To differ, be different from sth.
+réhál|v.|ressembler|\\+\s{gen} To resemble \\\textit{refl.} To resemble each other
+ráhál|v.|rassembler|\\+\s{acc} \textit{or refl.} To assemble
+flij|n.|infliger|Cause
+b’hýd’hír|v.|from \pf{veut dire}, \s{1sg} of \pf{vouloir dire}|To mean, signify
+dẹ́vná|v.|déménager|\\+\s{acc} To move \\\textit{intr.} To move house
+rársaú|n.|garçon|Boy, young man
+fíy’é|n.|fillette|Girl, young woman
+jý|v.|jeune|To be young
+y’ŷ|v.|vieux|To be old
+rahúrs|v.|raccourcir|To be short
+aráráhúr|adj.|\pf{à bras raccourcis}|Ferocious, violent
+lávýr|n.|clameur|Sound, noise
+áraú|v.|haro|\\To cry for help \\\textit{interj.} A cry for help
+vájaúr|n.|majorité|\\ Majority (i.e. more than 50 \% of sth.) \\ Adulthood
+vnáur|n.|minorité|\\ Minority (i.e. less than 50 \% of sth.) \\ Youth
+ríy’ẹ́|v.|crier|\\ To call, cry out, yell, shout \\+\s{gen} To call for someone
+ḍréd’hb’h|v. intr.|\pf{être debout}|To stand, be upright
+c’haul|n.|école|School
+râd’h|n.|grandir|\\\textit{intr.} To grow, become larger \\+\s{acc} To magnify, increase, heighten
+ḍydy’ẹ́|v.|étudier|To study
+áhén|v.|enseigner|
+    \\\textit{intr.} To teach, be a teacher
+    \\ To teach (+\s{acc} sth.) (+\s{dat} to sbd.)
+        \comment Historically, this word used to govern the \s{part} instead, but it later
+            changed to the \s{acc}, most likely under influence from \w{aḅrâ}.
 
 ## Currently at entry 100 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/

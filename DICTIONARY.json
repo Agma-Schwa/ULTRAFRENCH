@@ -251,15 +251,21 @@
             "word": "áb’hóhẹ"
         },
         {
-            "def": {
-                "def": "To learn."
-            },
-            "def-search": "learn to",
+            "def-search": "learn sbd teach to",
             "etym": "<f-pf>apprendre</f-pf>",
             "forms": "<f-s>fut</f-s> aḅrâdé, <f-s>subj</f-s> aḅrâs",
             "hw-search": "abra",
             "ipa": "ɐbɰɑ̃̃",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>part</f-s> <f-s>or intr.</f-s> To learn."
+                },
+                {
+                    "comment": "<p>See also.</p>",
+                    "def": "+<f-s>acc</f-s> To teach (+<f-s>dat</f-s> sbd.)."
+                }
+            ],
             "word": "aḅrâ"
         },
         {
@@ -582,6 +588,23 @@
             "word": "áhâłát’hẹ"
         },
         {
+            "def-search": "a be sbd sth teach teacherto to",
+            "etym": "<f-pf>enseigner</f-pf>",
+            "hw-search": "ahen",
+            "ipa": "ɑ̃hɛ̃n",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "<em>intr.</em> To teach, be a teacher."
+                },
+                {
+                    "comment": "<p>Historically, this word used to govern the <f-s>part</f-s> instead, but it later changed to the <f-s>acc</f-s>, most likely under influence from <f-w>aḅrâ</f-w>.</p>",
+                    "def": "To teach (+<f-s>acc</f-s> sth.) (+<f-s>dat</f-s> to sbd.)."
+                }
+            ],
+            "word": "áhén"
+        },
+        {
             "def": {
                 "def": "To ensure."
             },
@@ -606,6 +629,17 @@
         },
         {
             "def": {
+                "def": "To add, append."
+            },
+            "def-search": "add append to",
+            "etym": "<f-pf>ajouter</f-pf>",
+            "hw-search": "ajuth",
+            "ipa": "ɐʑuθ",
+            "pos": "v.",
+            "word": "ajut’h"
+        },
+        {
+            "def": {
                 "def": "Verily, indeed, in fact."
             },
             "def-search": "fact in indeed verily",
@@ -614,6 +648,17 @@
             "ipa": "ɑ̃̃nβɛ̃",
             "pos": "adv.",
             "word": "ânb’hé"
+        },
+        {
+            "def": {
+                "def": "Year."
+            },
+            "def-search": "year",
+            "etym": "<f-pf>année</f-pf>",
+            "hw-search": "ane",
+            "ipa": "ɑ̃nẽ",
+            "pos": "n.",
+            "word": "ánẹ́"
         },
         {
             "def": {
@@ -636,6 +681,33 @@
             "ipa": "ɑ̃nʋ̃ɛ̃",
             "pos": "v. tr.",
             "word": "ánvé"
+        },
+        {
+            "def": {
+                "def": "Ferocious, violent."
+            },
+            "def-search": "ferocious violent",
+            "etym": "<f-pf>à bras raccourcis</f-pf>",
+            "hw-search": "ararahur",
+            "ipa": "ɐɰɑ̃ɰɑ̃hũɰ",
+            "pos": "adj.",
+            "word": "aráráhúr"
+        },
+        {
+            "def-search": "a cry for help to",
+            "etym": "<f-pf>haro</f-pf>",
+            "hw-search": "arau",
+            "ipa": "ɑ̃ɰɔ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To cry for help."
+                },
+                {
+                    "def": "<em>interj.</em> A cry for help."
+                }
+            ],
+            "word": "áraú"
         },
         {
             "def": {
@@ -1285,17 +1357,6 @@
         },
         {
             "def": {
-                "def": "To add, append."
-            },
-            "def-search": "add append to",
-            "etym": "<f-pf>ajouter</f-pf>",
-            "hw-search": "azuth",
-            "ipa": "ɐzuθ",
-            "pos": "v.",
-            "word": "azut’h"
-        },
-        {
-            "def": {
                 "def": "To speak."
             },
             "def-search": "speak to",
@@ -1617,6 +1678,17 @@
             "ipa": "bɑ̃ɮ̃ʶʏ̃ɰ",
             "pos": "n.",
             "word": "ḅáłýr"
+        },
+        {
+            "def": {
+                "def": "To be low."
+            },
+            "def-search": "be low to",
+            "etym": "<f-pf>bas</f-pf>",
+            "hw-search": "be",
+            "ipa": "bə̥",
+            "pos": "v.",
+            "word": "bẹ"
         },
         {
             "def": {
@@ -2145,6 +2217,17 @@
             "ipa": "βud",
             "pos": "n.",
             "word": "b’huḍ"
+        },
+        {
+            "def": {
+                "def": "To mean, signify."
+            },
+            "def-search": "mean signify to",
+            "etym": "from <f-pf>veut dire</f-pf>, <f-s>1sg</f-s> of <f-pf>vouloir dire</f-pf>",
+            "hw-search": "bhydhir",
+            "ipa": "βʏ̃ðĩɰ",
+            "pos": "v.",
+            "word": "b’hýd’hír"
         },
         {
             "def": {
@@ -2997,6 +3080,17 @@
         },
         {
             "def": {
+                "def": "School."
+            },
+            "def-search": "school",
+            "etym": "<f-pf>école</f-pf>",
+            "hw-search": "chaul",
+            "ipa": "xoɮ̃",
+            "pos": "n.",
+            "word": "c’haul"
+        },
+        {
+            "def": {
                 "def": "Knowledge."
             },
             "def-search": "knowledge",
@@ -3125,9 +3219,9 @@
         },
         {
             "def": {
-                "def": "Some, a few, a couple of."
+                "def": "Some, any, a few, a couple of."
             },
-            "def-search": "a couple few of some",
+            "def-search": "a any couple few of some",
             "etym": "<f-pf>quelques</f-pf>",
             "hw-search": "chel",
             "ipa": "xɛɮ̃",
@@ -3416,13 +3510,14 @@
         },
         {
             "def": {
+                "comment": "<p>Always transitive or reflexive.</p>",
                 "def": "To shrink, reduce in size, narrow."
             },
             "def-search": "in narrow reduce shrink size to",
             "etym": "<f-pf>court</f-pf>",
             "hw-search": "chur",
             "ipa": "xũɰ",
-            "pos": "v.",
+            "pos": "v. tr.",
             "word": "c’húr"
         },
         {
@@ -3433,7 +3528,7 @@
             "etym": "<f-pf>courrir</f-pf>",
             "hw-search": "chur",
             "ipa": "xũɰ",
-            "pos": "v.",
+            "pos": "v. intr.",
             "word": "c’húr"
         },
         {
@@ -4063,6 +4158,20 @@
             "word": "ḍèrvíc’h"
         },
         {
+            "def-search": "back be of the to",
+            "etym": "<f-pf>derrière</f-pf>",
+            "hw-search": "derye",
+            "ipa": "dɛ̃ɰɥɛ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "comment": "<p>For ‘<em>at</em> the back of’, the <f-s>postess</f-s> is used instead.</p>",
+                    "def": "+<f-s>gen</f-s> To be the back of."
+                }
+            ],
+            "word": "déry’é"
+        },
+        {
             "def": {
                 "def": "To detect, discover, uncover, reveal."
             },
@@ -4084,6 +4193,22 @@
             "ipa": "dɛ̃ʋ̃ĩ",
             "pos": "num. frac. or n.",
             "word": "déví"
+        },
+        {
+            "def-search": "house move to",
+            "etym": "<f-pf>déménager</f-pf>",
+            "hw-search": "devna",
+            "ipa": "dẽʋ̃nɑ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To move."
+                },
+                {
+                    "def": "<em>intr.</em> To move house."
+                }
+            ],
+            "word": "dẹ́vná"
         },
         {
             "def-search": "dwell in live remain stay to",
@@ -4151,6 +4276,19 @@
             "ipa": "diβbɐθiʋ̃",
             "pos": "n.",
             "word": "dib’hbat’hiv"
+        },
+        {
+            "def-search": "be differ different from sth to",
+            "etym": "<f-pf>différer</f-pf>",
+            "hw-search": "dibhe",
+            "ipa": "dibʱẽ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "(+<f-s>gen</f-s>) To differ, be different from sth."
+                }
+            ],
+            "word": "di’bhẹ́"
         },
         {
             "def": {
@@ -4445,6 +4583,17 @@
         },
         {
             "def": {
+                "def": "To stand, be upright."
+            },
+            "def-search": "be stand to upright",
+            "etym": "<f-pf>être debout</f-pf>",
+            "hw-search": "dredhbh",
+            "ipa": "dɰɛ̃ðβ",
+            "pos": "v. intr.",
+            "word": "ḍréd’hb’h"
+        },
+        {
+            "def": {
                 "def": "Twice."
             },
             "def-search": "twice",
@@ -4672,6 +4821,17 @@
             "ipa": "dʏ̃βɛ̃ɥɛ̃̃",
             "pos": "num. ord.",
             "word": "dýb’héy’ê"
+        },
+        {
+            "def": {
+                "def": "To study."
+            },
+            "def-search": "study to",
+            "etym": "<f-pf>étudier</f-pf>",
+            "hw-search": "dydye",
+            "ipa": "dydɥẽ",
+            "pos": "v.",
+            "word": "ḍydy’ẹ́"
         },
         {
             "def": {
@@ -5293,6 +5453,28 @@
         },
         {
             "def": {
+                "def": "Girl, young woman."
+            },
+            "def-search": "girl woman young",
+            "etym": "<f-pf>fillette</f-pf>",
+            "hw-search": "fiye",
+            "ipa": "ɸĩɥɛ̃",
+            "pos": "n.",
+            "word": "fíy’é"
+        },
+        {
+            "def": {
+                "def": "Cause."
+            },
+            "def-search": "cause",
+            "etym": "<f-pf>infliger</f-pf>",
+            "hw-search": "flij",
+            "ipa": "ɸɮ̃iʑ",
+            "pos": "n.",
+            "word": "flij"
+        },
+        {
+            "def": {
                 "def": "To inform (+<f-s>acc</f-s> sbd.) (+<f-s>aci</f-s> of sth.)."
             },
             "def-search": "inform of sbd sth to",
@@ -5448,6 +5630,28 @@
             "word": "Jed’háy’"
         },
         {
+            "def-search": "a advantage affect be decided fun game make matter of or play role take time to",
+            "etym": "<f-pf>jouer</f-pf>",
+            "hw-search": "ju",
+            "ipa": "ʑu",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "(+<f-s>part</f-s>) To play (a game or role)."
+                },
+                {
+                    "def": "(<em>refl.</em>) To be decided, be a matter of time."
+                },
+                {
+                    "def": "+<f-s>spress</f-s> To affect."
+                },
+                {
+                    "def": "+<f-s>gen</f-s> To take advantage of, make fun of."
+                }
+            ],
+            "word": "ju"
+        },
+        {
             "def": {
                 "def": "Today, nowadays."
             },
@@ -5457,6 +5661,17 @@
             "ipa": "ʑũɰdɥĩ",
             "pos": "adv.",
             "word": "júrdy’í"
+        },
+        {
+            "def": {
+                "def": "To be young."
+            },
+            "def-search": "be to young",
+            "etym": "<f-pf>jeune</f-pf>",
+            "hw-search": "jy",
+            "ipa": "ʑʏ̃",
+            "pos": "v.",
+            "word": "jý"
         },
         {
             "def": {
@@ -5684,6 +5899,17 @@
                 }
             ],
             "word": "laút’há"
+        },
+        {
+            "def": {
+                "def": "Sound, noise."
+            },
+            "def-search": "noise sound",
+            "etym": "<f-pf>clameur</f-pf>",
+            "hw-search": "lavyr",
+            "ipa": "ɮ̃ɑ̃ʋ̃ʏ̃ɰ",
+            "pos": "n.",
+            "word": "lávýr"
         },
         {
             "def": {
@@ -6650,6 +6876,22 @@
             "word": "râd"
         },
         {
+            "def-search": "become grow heighten increase larger magnify to",
+            "etym": "<f-pf>grandir</f-pf>",
+            "hw-search": "radh",
+            "ipa": "ɰɑ̃̃ð",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "<em>intr.</em> To grow, become larger."
+                },
+                {
+                    "def": "+<f-s>acc</f-s> To magnify, increase, heighten."
+                }
+            ],
+            "word": "râd’h"
+        },
+        {
             "def": {
                 "def": "Last month."
             },
@@ -6716,6 +6958,19 @@
             "ipa": "ɰɑ̃̃dʋ̃ɑ̃̃",
             "pos": "prefix",
             "word": "râdvâ-"
+        },
+        {
+            "def-search": "assemble to",
+            "etym": "<f-pf>rassembler</f-pf>",
+            "hw-search": "rahal",
+            "ipa": "ɰɑ̃hɑ̃ɮ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> <em>or refl.</em> To assemble."
+                }
+            ],
+            "word": "ráhál"
         },
         {
             "def-search": "by drink drinking empty from to",
@@ -6847,6 +7102,17 @@
         },
         {
             "def": {
+                "def": "To be short."
+            },
+            "def-search": "be short to",
+            "etym": "<f-pf>raccourcir</f-pf>",
+            "hw-search": "rahurs",
+            "ipa": "ɰɐhũɰs",
+            "pos": "v.",
+            "word": "rahúrs"
+        },
+        {
+            "def": {
                 "def": "Sword, blade.",
                 "examples": [
                     {
@@ -6901,6 +7167,17 @@
                 }
             ],
             "word": "rárd"
+        },
+        {
+            "def": {
+                "def": "Boy, young man."
+            },
+            "def-search": "boy man young",
+            "etym": "<f-pf>garçon</f-pf>",
+            "hw-search": "rarsau",
+            "ipa": "ɰɑ̃ɰsɔ̃",
+            "pos": "n.",
+            "word": "rársaú"
         },
         {
             "def": {
@@ -7013,6 +7290,17 @@
             "hw-search": "rau",
             "ipa": "ɰɔ̃̃",
             "pos": "interj.",
+            "word": "raû"
+        },
+        {
+            "def": {
+                "def": "To be round."
+            },
+            "def-search": "be round to",
+            "etym": "<f-pf>rond</f-pf>",
+            "hw-search": "rau",
+            "ipa": "ɰɔ̃̃",
+            "pos": "v.",
             "word": "raû"
         },
         {
@@ -7399,6 +7687,17 @@
         },
         {
             "def": {
+                "def": "Sentence."
+            },
+            "def-search": "sentence",
+            "etym": "<f-pf>phrase</f-pf>",
+            "hw-search": "raz",
+            "ipa": "ɰɑ̃z",
+            "pos": "n.",
+            "word": "ráz"
+        },
+        {
+            "def": {
                 "def": "To be true, correct, right."
             },
             "def-search": "be correct right to true",
@@ -7719,6 +8018,22 @@
             "word": "rẹ́flec̣"
         },
         {
+            "def-search": "each other resemble to",
+            "etym": "<f-pf>ressembler</f-pf>",
+            "hw-search": "rehal",
+            "ipa": "ɰɛ̃hɑ̃ɮ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>gen</f-s> To resemble."
+                },
+                {
+                    "def": "<em>refl.</em> To resemble each other."
+                }
+            ],
+            "word": "réhál"
+        },
+        {
             "def": {
                 "def": "To receive."
             },
@@ -7847,6 +8162,22 @@
             "word": "révy’ẹ́"
         },
         {
+            "def-search": "path rope straight threadline",
+            "etym": "from <f-pf>trait</f-pf> + <f-pf>ligne</f-pf>",
+            "hw-search": "reyi",
+            "ipa": "ɰɛ̃ɥ̃ĩ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Rope, thread."
+                },
+                {
+                    "def": "Line, straight path."
+                }
+            ],
+            "word": "réý’í"
+        },
+        {
             "def": {
                 "def": "Thirteenth."
             },
@@ -7971,6 +8302,22 @@
             "ipa": "ɰĩʋ̃nɛ̃ɮ̃",
             "pos": "n.",
             "word": "rívnél"
+        },
+        {
+            "def-search": "call cry for out shout someone to yell",
+            "etym": "<f-pf>crier</f-pf>",
+            "hw-search": "riye",
+            "ipa": "ɰĩɥẽ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To call, cry out, yell, shout."
+                },
+                {
+                    "def": "+<f-s>gen</f-s> To call for someone."
+                }
+            ],
+            "word": "ríy’ẹ́"
         },
         {
             "def": {
@@ -8497,6 +8844,17 @@
             "ipa": "sɑ̃sɥɛ̃ɮ̃",
             "pos": "v.",
             "word": "sásy’él"
+        },
+        {
+            "def": {
+                "def": "Verdict, judgement, court sentence."
+            },
+            "def-search": "court judgement sentence verdict",
+            "etym": "<f-pf>sentence</f-pf>",
+            "hw-search": "sathas",
+            "ipa": "sɑ̃θɑ̃s",
+            "pos": "n.",
+            "word": "sát’hás"
         },
         {
             "def": {
@@ -9065,6 +9423,17 @@
                 }
             ],
             "word": "set’hád"
+        },
+        {
+            "def": {
+                "def": "Week."
+            },
+            "def-search": "week",
+            "etym": "<f-pf>semaine</f-pf>",
+            "hw-search": "seve",
+            "ipa": "sɛ̃ʋ̃ɛ̃̃",
+            "pos": "n.",
+            "word": "sévê"
         },
         {
             "def": {
@@ -9769,6 +10138,22 @@
             "word": "vâj"
         },
         {
+            "def-search": "ie majority more of sthadulthood than",
+            "etym": "<f-pf>majorité</f-pf>",
+            "hw-search": "vajaur",
+            "ipa": "ʋ̃ɑ̃ʑɔ̃ɰ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Majority (i.e. more than 50 % of sth.)."
+                },
+                {
+                    "def": "Adulthood."
+                }
+            ],
+            "word": "vájaúr"
+        },
+        {
             "def": {
                 "def": "Torture."
             },
@@ -10377,6 +10762,22 @@
             "word": "vnásḍér"
         },
         {
+            "def-search": "ie less minority of sthyouth than",
+            "etym": "<f-pf>minorité</f-pf>",
+            "hw-search": "vnaur",
+            "ipa": "ʋ̃nɑ̃uɰ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Minority (i.e. less than 50 % of sth.)."
+                },
+                {
+                    "def": "Youth."
+                }
+            ],
+            "word": "vnáur"
+        },
+        {
             "def": {
                 "def": "Many, much, a lot of."
             },
@@ -10888,6 +11289,17 @@
         },
         {
             "def": {
+                "def": "To be old."
+            },
+            "def-search": "be old to",
+            "etym": "<f-pf>vieux</f-pf>",
+            "hw-search": "yy",
+            "ipa": "ɥʏ̃̃",
+            "pos": "v.",
+            "word": "y’ŷ"
+        },
+        {
+            "def": {
                 "def": "<em>Denying comparative prefix. See grammar</em>."
             },
             "def-search": "",
@@ -10929,28 +11341,6 @@
             "ipa": "zob",
             "pos": "n.",
             "word": "Zauḅ"
-        },
-        {
-            "def-search": "a advantage affect be decided fun game make matter of or play role take time to",
-            "etym": "<f-pf>jouer</f-pf>",
-            "hw-search": "zu",
-            "ipa": "zu",
-            "pos": "v.",
-            "senses": [
-                {
-                    "def": "(+<f-s>part</f-s>) To play (a game or role)."
-                },
-                {
-                    "def": "(<em>refl.</em>) To be decided, be a matter of time."
-                },
-                {
-                    "def": "+<f-s>spress</f-s> To affect."
-                },
-                {
-                    "def": "+<f-s>gen</f-s> To take advantage of, make fun of."
-                }
-            ],
-            "word": "zu"
         }
     ],
     "refs": [
