@@ -339,7 +339,7 @@ c’hóbhár|v.|comparer|To compare|\s{fut} c’hóbhárre, \s{subj} c’hó\-bh
 c’hóvâ|v.|commencer|
     \\ (\s{+ part}) To start, commence, begin.
     \\ \s{+ gen} To start out as
-    \\ \w{âc’hóvâ} \textit{def.} Beginning, start. \comment Lit. ‘that which is being begun’
+    \\ \w{âc’hóvâ} \s{def} Beginning, start. \comment Lit. ‘that which is being begun’
     |\s{fut} c’hóvârẹ́, \s{subj} c’hóv\-ás
 vás|n. \s{pl def}|masses|The masses, the people
 nór|v.|back-formation from *\w{nórâ} from \pf{ignorant}|To be ignorant,
@@ -393,7 +393,7 @@ c’hánaú|n.|canot|Duck (bird)
 rác’hánár|n.|from \w{ráhe} + \w{c’hánár}|Airship, dirigible
 ráhe|n.|oiseau|Bird
 ráhé|n.|from \w{ráhe} + \w{ráhó}|Flying fish
-raúl|n.|parole|\\ Language, speech, word. \\ \w{Raúl} \textit{(definite only)} Short for \w{T’hebhaú Raúl}.
+raúl|n.|parole|\\ Language, speech, word. \\ \w{Raúl} (\s{def} (\textit{only}) Short for \w{T’hebhaú Raúl}.
     \textit{\s{nom sg} irreg. \w{Raúl}; all other forms are regular}
 rét’hẹ|v.|traiter|To handle, take care of, deal with|\s{fut} rét’hẹre, \s{subj} rét’hes
 susy’é|v.|soucier|+\s{part, pci} To care about, worry about|\s{fut} susy’ére, \s{subj} susy’és
@@ -753,7 +753,7 @@ ec’hlér|v.|éclairer|To shine
 iý’ývî|v.|illuminer|To light up, illuminate
 raúhérẹ́|v.|from \w{raú-} + \w{sérẹ́}|
     \\+\s{acc} To tighten sth., make tighter (+s\w{circlat} around sth.)
-    \\\textit{(refl.)} To tighten
+    \\\textit{refl.} To tighten
     |\s{fut} raúhérrẹ́, \s{subj} raúhérẹ́s
 raú(b’hc’h)-|prefix|from \w{rób’hoc’h}|\textit{Causative prefix, see
     §~\ref{subsec:diachrony-and-derivation}}
@@ -771,7 +771,7 @@ w|v.|enlever|To remove (+\s{acc} sth.)
 sb’hé|v.|\pf{se baigner}|To bathe
 lab’h|v.|laver|
     \\ To wash, clean (+\s{acc} sth.)
-    \\ \textit{refl} To wash oneself, take a bath, have a shower
+    \\ \textit{refl.} To wash oneself, take a bath, have a shower
 ré|adj.|près|Near, close, nearby
 ráhé|n.|voisin|Neighbour
 vaûḍ|v.|montrer|To show, display (+\s{acc} sth.)
@@ -845,7 +845,7 @@ néḍ|v. dep.|naître|To be born. \comment This is a deponent verb whose subjec
     which only takes passive affixes.|\s{sub} néhs
 raûc|n.|tronche|Head
 lèheb’h|v.|laisser-faire|+\s{aci} To let happen
-áhaúr|adv.|encore|\\\textit{(positive context)} Still, again \\\textit{(negative context)} Not yet
+áhaúr|adv.|encore|\\\textit{pos.} Still, again \\\textit{neg.} Not yet
 raúhy’b’h|v.|from \w{raú-} + \w{sy’b’h}|To raise, lift up (+\s{acc} sth.) (+\s{ela} from sth.)
 rá₅|n.|bras|Arm.
 nésḍ|adj. archaic|senestre|Left (side), left-handed
@@ -972,7 +972,7 @@ b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
 ḅaúvḍér|n.|\pf{pomme de terre}|Potato
 ḅaú|n.|pomme|Apple
 Sehár|n.|César|Caesar
-várc|v.|marcher|\\ To march, walk \\ \textit{(fig.)} To work, function
+várc|v.|marcher|\\ To march, walk \\ \textit{fig.} To work, function
 Raû|n|Rome|Rome
 lejy’aû|n.|légion|\textit{(Ancient Rome, military)} Legion
 ḅabh|n.|papa|Father

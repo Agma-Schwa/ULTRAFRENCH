@@ -13,6 +13,7 @@
 \usepackage{wasysym}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{multicol}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tikz}
 \usepackage[linguistics]{forest}
@@ -279,6 +280,28 @@
     \endgroup
 }
 
+\def\glossaryformat{\s}
+\RenewDocumentEnvironment {glossary} {
+    m      %% Columns.
+    m      %% Term width.
+    O{1em} %% Column sep.
+} {
+    \begingroup
+        \def \g ##1 ##2 {
+            \noindent \leavevmode \hbox {
+                \hbox to 4em {\glossaryformat{##1}\hfil}
+                \enskip
+                ##2\hfil
+            } \par
+        }
+
+        \setlength \columnsep {#3}
+        \begin {multicols} {#1}
+} {
+        \end {multicols}
+    \endgroup
+}
+
 \renewenvironment {verse} {
     \ifvmode\else\unskip\par\fi
     \begingroup
@@ -513,6 +536,66 @@
 \setcounter{page}{1}
 \thispagestyle{empty}
 \tableofcontents
+
+\chapter*{Glossary}
+\begin{glossary}{3}{4em}
+    \g{abess}{abessive}
+    \g{abl}{ablative}
+    \g{abs}{absolutive}
+    \g{acc}{accusative}
+    \g{aci}{see §~\ref{subsec:aci-pci}}
+    \g{aff}{affirmative}
+    \g{all}{allative}
+    \g{antess}{antessive}
+    \g{caus}{causal}
+    \g{circ}{circumfix}
+    \g{circabl}{circumablative}
+    \g{circess}{circumessive}
+    \g{circlat}{circumlative}
+    \g{com}{comitative}
+    \g{comp}{comparative}
+    \g{cond}{conditional}
+    \g{cons}{considerative}
+    \g{contr}{contrative}
+    \g{dat}{dative}
+    \g{def}{definite}
+    \g{den}{denying}
+    \g{ela}{elative}
+    \g{ess}{essive}
+    \g{fut}{future}
+    \g{gen}{genitive}
+    \g{gn}{gnomic}
+    \g{ill}{illative}
+    \g{indef}{indefinite}
+    \g{iness}{inessive}
+    \g{inf}{infinitive}
+    \g{instr}{instrumental}
+    \g{insv}{instructive}
+    \g{intress}{interessive}
+    \g{nd}{northern dialect}
+    \g{nom}{nominative}
+    \g{opt}{optative}
+    \g{part}{partitive}
+    \g{pass}{passive}
+    \g{pci}{see §~\ref{subsec:aci-pci}}
+    \g{perl}{perlative}
+    \g{pl}{plural}
+    \g{pres ant}{present anterior}
+    \g{pres}{present}
+    \g{pret}{preterite}
+    \g{pstess}{postessive}
+    \g{pstlat}{postlative}
+    \g{ptcp}{participle}
+    \g{sd}{standard dialect}
+    \g{sg}{singular}
+    \g{spress}{superessive}
+    \g{sprlat}{superlative}
+    \g{subj}{subjunctive}
+    \g{superl}{superlative}
+    \g{trans}{translative}
+    \g{voc}{vocative}
+\end{glossary}
+
 
 \chapter{Phonology and Evolution from Modern Pseudo-French}\label{sec:phonology}
 \thispagestyle{empty}
@@ -3828,12 +3911,33 @@ as well as the entire paradigm of \w{eḍ} ‘to be’, are \textit{not} include
 already be found in the grammar. The reader is expected to either be familiar with them already or to search
 the rest of the grammar for them.
 
-%\Paragraph{Glossary}
-%Besides the usual abbreviations for cases, e.g. \s{acc}, \s{nom}, \s{part}, the dictionary uses a few more
-%abbreviations and annotations that aren’t too common elsewhere in this grammar:
-%\begin{description}
-%    \item[\textit{(serial)}] Serial verb construction, i.e. this verb is construed with another finite verb, which it modifies.
-%\end{description}
+\Paragraph{Glossary}
+In addition to the abbreviations shown at the start of the grammar, the dictionary uses an extended set of
+abbreviations, usually in italic.
+\begin{glossary}{3}{4em}
+    \let \glossaryformat \textit
+    \g{adj.}{adjective}
+    \g{adv.}{adverb}
+    \g{conj.}{conjunction}
+    \g{fem.}{feminine}
+    \g{fig.}{figurative}
+    \g{indecl.}{indeclinable\footnotemark}
+    \g{interj.}{interjection}
+    \g{interrog.}{interrogative}
+    \g{intr.}{intransitive}
+    \g{irreg.}{irregular}
+    \g{lit.}{literally}
+    \g{masc.}{masculine}
+    \g{n.}{noun}
+    \g{neg.}{negative}
+    \g{pos.}{positive}
+    \g{refl.}{reflexive}
+    \g{sbd.}{somebody}
+    \g{sth.}{something}
+    \g{tr.}{transitive}
+    \g{v.}{verb}
+\end{glossary}
+\footnotetext{Also used for things other than nouns to indicate that they are invariant.}
 
 \def\leftmark{\textbf{\firstmark}\ | \textbf{\botmark}}
 \let\rightmark\leftmark

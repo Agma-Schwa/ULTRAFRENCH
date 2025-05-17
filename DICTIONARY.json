@@ -590,10 +590,10 @@
             "pos": "adv.",
             "senses": [
                 {
-                    "def": "<em>(positive context)</em> Still, again."
+                    "def": "<em>pos.</em> Still, again."
                 },
                 {
-                    "def": "<em>(negative context)</em> Not yet."
+                    "def": "<em>neg.</em> Not yet."
                 }
             ],
             "word": "áhaúr"
@@ -3645,7 +3645,7 @@
                 },
                 {
                     "comment": "<p>Lit. ‘that which is being begun’.</p>",
-                    "def": "<f-w>âc’hóvâ</f-w> <em>def.</em> Beginning, start."
+                    "def": "<f-w>âc’hóvâ</f-w> <f-s>def</f-s> Beginning, start."
                 }
             ],
             "word": "c’hóvâ"
@@ -6192,7 +6192,7 @@
                     "def": "To wash, clean (+<f-s>acc</f-s> sth.)."
                 },
                 {
-                    "def": "<em>refl</em> To wash oneself, take a bath, have a shower."
+                    "def": "<em>refl.</em> To wash oneself, take a bath, have a shower."
                 }
             ],
             "word": "lab’h"
@@ -7970,7 +7970,7 @@
                     "def": "+<f-s>acc</f-s> To tighten sth., make tighter (+s<f-w>circlat</f-w> around sth.)."
                 },
                 {
-                    "def": "<em>(refl.)</em> To tighten."
+                    "def": "<em>refl.</em> To tighten."
                 }
             ],
             "word": "raúhérẹ́"
@@ -8008,7 +8008,7 @@
                     "def": "Language, speech, word."
                 },
                 {
-                    "def": "<f-w>Raúl</f-w> <em>(definite only)</em> Short for <f-w>T’hebhaú Raúl</f-w>. <em><f-s>nom sg</f-s> irreg. <f-w>Raúl</f-w>; all other forms are regular</em>."
+                    "def": "<f-w>Raúl</f-w> (<f-s>def</f-s> (<em>only</em>) Short for <f-w>T’hebhaú Raúl</f-w>. <em><f-s>nom sg</f-s> irreg. <f-w>Raúl</f-w>; all other forms are regular</em>."
                 }
             ],
             "word": "raúl"
@@ -11030,7 +11030,7 @@
                     "def": "To march, walk."
                 },
                 {
-                    "def": "<em>(fig.)</em> To work, function."
+                    "def": "<em>fig.</em> To work, function."
                 }
             ],
             "word": "várc"
