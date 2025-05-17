@@ -662,6 +662,17 @@
         },
         {
             "def": {
+                "def": "To poison."
+            },
+            "def-search": "poison to",
+            "etym": "<f-pf>enherber</f-pf>",
+            "hw-search": "anerb",
+            "ipa": "ɑ̃̃nɛ̃ɰb",
+            "pos": "v.",
+            "word": "ânérb"
+        },
+        {
+            "def": {
                 "def": "Animal."
             },
             "def-search": "animal",
@@ -1015,6 +1026,22 @@
             "word": "auc’hḍyḅâ"
         },
         {
+            "def-search": "be to west western",
+            "etym": "<f-pf>occident</f-pf>",
+            "hw-search": "auchsidh",
+            "ipa": "oxsið",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "<em>v.</em> To be western."
+                },
+                {
+                    "def": "<em>n.</em> <f-w>auc’hsid’h</f-w> West."
+                }
+            ],
+            "word": "auc’hsid’h"
+        },
+        {
             "def": {
                 "def": "Other, another."
             },
@@ -1066,6 +1093,17 @@
         },
         {
             "def": {
+                "def": "To be early."
+            },
+            "def-search": "be early to",
+            "etym": "<f-pf>aussitôt</f-pf>",
+            "hw-search": "auhith",
+            "ipa": "ohiθ",
+            "pos": "v.",
+            "word": "auhit’h"
+        },
+        {
+            "def": {
                 "def": "+<f-s>iness</f-s> To inhabit, occupy."
             },
             "def-search": "inhabit occupy to",
@@ -1110,6 +1148,18 @@
         },
         {
             "def": {
+                "def": "East."
+            },
+            "def-search": "east",
+            "etym": "from <f-w>aúry’ât’hal</f-w>",
+            "hw-search": "auryath",
+            "ipa": "ɔ̃ɰɥɑ̃̃θ",
+            "pos": "n.",
+            "word": "aúry’ât’h"
+        },
+        {
+            "def": {
+                "comment": "<p>See also <f-w>aúry’ât’h</f-w>.</p>",
                 "def": "To be eastern."
             },
             "def-search": "be eastern to",
@@ -1354,6 +1404,17 @@
             "ipa": "ɐɥ̃ɛxsɑ̃d",
             "pos": "n.",
             "word": "Aý’èc’hsád"
+        },
+        {
+            "def": {
+                "def": "Food."
+            },
+            "def-search": "food",
+            "etym": "<f-pf>alimenter</f-pf>",
+            "hw-search": "ayivath",
+            "ipa": "ɐɥ̃ĩʋ̃ɑ̃̃θ",
+            "pos": "n.",
+            "word": "aý’ívât’h"
         },
         {
             "def": {
@@ -1633,6 +1694,17 @@
             "ipa": "bɔ̃ɰ",
             "pos": "n.",
             "word": "ḅaúr"
+        },
+        {
+            "def": {
+                "def": "To carry, bear."
+            },
+            "def-search": "bear carry to",
+            "etym": "<f-pf>porter</f-pf>",
+            "hw-search": "baurd",
+            "ipa": "bɔ̃ɰd",
+            "pos": "v.",
+            "word": "ḅaúrḍ"
         },
         {
             "def": {
@@ -3533,6 +3605,17 @@
         },
         {
             "def": {
+                "def": "+<f-s>acc</f-s> To cover, cover up."
+            },
+            "def-search": "cover to up",
+            "etym": "<f-pf>couvrir</f-pf>",
+            "hw-search": "chuv",
+            "ipa": "xuβʶ",
+            "pos": "v.",
+            "word": "c’huv́"
+        },
+        {
+            "def": {
                 "def": "Tail."
             },
             "def-search": "tail",
@@ -3577,6 +3660,18 @@
         },
         {
             "def": {
+                "comment": "<p>This covers both the sense of ‘condition’ and ‘polity’. Originally, this was a <f-s>nd</f-s> word.</p>",
+                "def": "State."
+            },
+            "def-search": "state",
+            "etym": "Originally <f-s>nd</f-s>, from <f-pf>état</f-pf>",
+            "hw-search": "da",
+            "ipa": "dɐ",
+            "pos": "n.",
+            "word": "da"
+        },
+        {
+            "def": {
                 "def": "Tooth."
             },
             "def-search": "tooth",
@@ -3588,9 +3683,9 @@
         },
         {
             "def": {
-                "def": "Whereas."
+                "def": "Whereas, while."
             },
-            "def-search": "whereas",
+            "def-search": "whereas while",
             "etym": "<f-pf>tandis</f-pf>",
             "hw-search": "da",
             "ipa": "dɑ̃",
@@ -3675,6 +3770,39 @@
             "ipa": "dɑ̃ɰ",
             "pos": "v.",
             "word": "dár"
+        },
+        {
+            "def": {
+                "def": "To be late, belated."
+            },
+            "def-search": "be belated late to",
+            "etym": "<f-pf>tardif</f-pf>",
+            "hw-search": "dar",
+            "ipa": "dɑ̃ɰ",
+            "pos": "adj.",
+            "word": "ḍár"
+        },
+        {
+            "def": {
+                "def": "To tarry, delay."
+            },
+            "def-search": "delay tarry to",
+            "etym": "<f-pf>tarder</f-pf>",
+            "hw-search": "dard",
+            "ipa": "dɑ̃ɰd",
+            "pos": "v.",
+            "word": "ḍárd"
+        },
+        {
+            "def": {
+                "def": "Soon, presently."
+            },
+            "def-search": "presently soon",
+            "etym": "<f-pf>tantôt</f-pf>",
+            "hw-search": "dath",
+            "ipa": "dɑ̃θ",
+            "pos": "adv.",
+            "word": "ḍát’h"
         },
         {
             "def": {
@@ -3785,6 +3913,18 @@
             "ipa": "dẽ",
             "pos": "particle",
             "word": "dẹ́"
+        },
+        {
+            "def": {
+                "comment": "<p>Now replaced with <f-w>da</f-w>.</p>",
+                "def": "State."
+            },
+            "def-search": "state",
+            "etym": "<f-pf>état</f-pf>",
+            "hw-search": "de",
+            "ipa": "də̥",
+            "pos": "n. obsolete",
+            "word": "dẹ"
         },
         {
             "def-search": "all entire every form obsolete of whole",
@@ -3957,6 +4097,22 @@
             "ipa": "dehid",
             "pos": "v.",
             "word": "dehid"
+        },
+        {
+            "def-search": "appear draw shape sketch slowly take to",
+            "etym": "<f-pf>dessiner</f-pf>",
+            "hw-search": "dehin",
+            "ipa": "dehĩn",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To draw, sketch."
+                },
+                {
+                    "def": "<em>refl.</em> To appear slowly, take shape."
+                }
+            ],
+            "word": "dehín"
         },
         {
             "def": {
@@ -4388,6 +4544,17 @@
         },
         {
             "def": {
+                "def": "Distance."
+            },
+            "def-search": "distance",
+            "etym": "<f-pf>distance</f-pf>",
+            "hw-search": "disdas",
+            "ipa": "disdɐs",
+            "pos": "n.",
+            "word": "disḍas"
+        },
+        {
+            "def": {
                 "def": "Ten thousand."
             },
             "def-search": "ten thousand",
@@ -4591,6 +4758,17 @@
             "ipa": "dɰɛ̃ðβ",
             "pos": "v. intr.",
             "word": "ḍréd’hb’h"
+        },
+        {
+            "def": {
+                "def": "To be mild, gentle (e.g. of a slope or person)."
+            },
+            "def-search": "a be eg gentle mild of or person slope to",
+            "etym": "<f-pf>doux</f-pf>",
+            "hw-search": "du",
+            "ipa": "du",
+            "pos": "v.",
+            "word": "du"
         },
         {
             "def": {
@@ -4844,6 +5022,18 @@
             "ipa": "dɥɛ̃̃",
             "pos": "v.",
             "word": "dy’ê"
+        },
+        {
+            "def": {
+                "def": "To be hard, firm."
+            },
+            "def-search": "be firm hard to",
+            "etym": "<f-pf>dur</f-pf>",
+            "forms": "<f-s>nd</f-s> sy̌",
+            "hw-search": "dyr",
+            "ipa": "dʏ̃ɰ",
+            "pos": "v.",
+            "word": "dýr"
         },
         {
             "def": {
@@ -5228,6 +5418,17 @@
         },
         {
             "def": {
+                "def": "To be fake, artificial, false."
+            },
+            "def-search": "artificial be fake false to",
+            "etym": "<f-pf>factice</f-pf>",
+            "hw-search": "fach",
+            "ipa": "ɸɐx",
+            "pos": "v.",
+            "word": "fac’h"
+        },
+        {
+            "def": {
                 "def": "+<f-s>opt</f-s> In such a way that, such that, so much so."
             },
             "def-search": "a in much so such that way",
@@ -5374,6 +5575,17 @@
         },
         {
             "def": {
+                "def": "Farm."
+            },
+            "def-search": "farm",
+            "etym": "<f-pf>ferme</f-pf>",
+            "hw-search": "fer",
+            "ipa": "ɸɛ̃ɰ",
+            "pos": "v.",
+            "word": "fér"
+        },
+        {
+            "def": {
                 "def": "To make a big fuss a&shy;bout something."
             },
             "def-search": "a about big fuss make something to",
@@ -5394,6 +5606,17 @@
             "ipa": "ɸɛ̃ʀɰɑ̃sʋ̃ɑ̃θ",
             "pos": "n.",
             "word": "férr-rásvát’h"
+        },
+        {
+            "def": {
+                "def": "To close, shut."
+            },
+            "def-search": "close shut to",
+            "etym": "<f-pf>fermer</f-pf>",
+            "hw-search": "ferv",
+            "ipa": "ɸɛ̃ɰʋ̃",
+            "pos": "v.",
+            "word": "férv"
         },
         {
             "def": {
@@ -5506,6 +5729,17 @@
             "ipa": "ɸʏ̃",
             "pos": "n.",
             "word": "fý"
+        },
+        {
+            "def": {
+                "def": "Plant."
+            },
+            "def-search": "plant",
+            "etym": "<f-pf>feuille</f-pf>",
+            "hw-search": "fyy",
+            "ipa": "ɸʏ̃ɥ",
+            "pos": "n.",
+            "word": "fýy’"
         },
         {
             "def": {
@@ -6831,6 +7065,17 @@
         },
         {
             "def": {
+                "def": "+<f-s>perl</f-s> To traverse, cross, move cross."
+            },
+            "def-search": "cross move to traverse",
+            "etym": "<f-pf>traverser</f-pf>",
+            "hw-search": "rabher",
+            "ipa": "ɰɑ̃βɛ̃ɰ",
+            "pos": "v.",
+            "word": "ráb’hér"
+        },
+        {
+            "def": {
                 "def": "Airship, dirigible."
             },
             "def-search": "airship dirigible",
@@ -7945,6 +8190,17 @@
         },
         {
             "def": {
+                "def": "To be steep, abrupt."
+            },
+            "def-search": "abrupt be steep to",
+            "etym": "<f-pf>raide</f-pf>",
+            "hw-search": "red",
+            "ipa": "ɰɛ̃d",
+            "pos": "v.",
+            "word": "réd"
+        },
+        {
+            "def": {
                 "def": "To wish (+<f-s>acc/aci</f-s> for sth.)."
             },
             "def-search": "for sth to wish",
@@ -7979,6 +8235,22 @@
             "word": "rêd’hes"
         },
         {
+            "def-search": "back hold keep mainain of oneself possession restrain retain to",
+            "etym": "<f-pf>retenir</f-pf>",
+            "hw-search": "redni",
+            "ipa": "ɰɛ̃dnĩ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To keep, retain, mainain possession of."
+                },
+                {
+                    "def": "<em>refl.</em> To hold back, restrain oneself."
+                }
+            ],
+            "word": "réḍní"
+        },
+        {
             "def-search": "do doing oneself onself start sth take to upon",
             "etym": "<f-pf>prendre sur soi</f-pf>",
             "hw-search": "redrsyrse",
@@ -8005,6 +8277,17 @@
             "ipa": "ɰẽdɥĩ",
             "pos": "v.",
             "word": "rẹ́dy’í"
+        },
+        {
+            "def": {
+                "def": "<em>Archaic <f-s>sd</f-s> form of <f-w>rẹ́il</f-w></em>."
+            },
+            "def-search": "",
+            "etym": "<f-pf>réel</f-pf>",
+            "hw-search": "reel",
+            "ipa": "ɰẽeɮ̃",
+            "pos": "v. archaic",
+            "word": "rẹ́el"
         },
         {
             "def": {
@@ -8044,6 +8327,40 @@
             "ipa": "ɰɛ̃həβʶ",
             "pos": "v.",
             "word": "réhẹv́"
+        },
+        {
+            "def": {
+                "comment": "<p>Both <f-w>réhyý’</f-w> and <f-w>rêt’hé</f-w> can mean ‘far’, but they differ in perspective: <f-w>réhyý’</f-w> is used to describe a great distance or the crossing of one, whereas <f-w>rêt’hé</f-w> is used to describe something far away.</p>",
+                "def": "To be far.",
+                "examples": [
+                    {
+                        "text": "<f-w>Jráy’áé réhyý’vâ.</f-w> ‘I have travelled far.’"
+                    },
+                    {
+                        "text": "<f-w>Jráy’áé ádŷnḅéy’í rêt’hê.</f-w> ‘I travelled to a distant land.’"
+                    },
+                    {
+                        "text": "<f-w>disḍas réhyý’â</f-w> ‘a great distance’."
+                    }
+                ]
+            },
+            "def-search": "be far to",
+            "etym": "<f-pf>reculer</f-pf>",
+            "hw-search": "rehyy",
+            "ipa": "ɰɛ̃hyɥ̃",
+            "pos": "v.",
+            "word": "réhyý’"
+        },
+        {
+            "def": {
+                "def": "To be real, true, genuine, authentic."
+            },
+            "def-search": "authentic be genuine real to true",
+            "etym": "originally <f-s>nd</f-s>, compare <f-w>rẹ́el</f-w>",
+            "hw-search": "reil",
+            "ipa": "ɰẽiɮ̃",
+            "pos": "v.",
+            "word": "rẹ́il"
         },
         {
             "def": {
@@ -8117,6 +8434,18 @@
             "ipa": "ɰɛ̃θə̥",
             "pos": "v.",
             "word": "rét’hẹ"
+        },
+        {
+            "def": {
+                "comment": "<p>For usage, see <f-w>réhyý’</f-w>.</p>",
+                "def": "To be distant, far-off."
+            },
+            "def-search": "be distant faroff to",
+            "etym": "<f-pf>lointain</f-pf>",
+            "hw-search": "rethe",
+            "ipa": "ɰɛ̃̃θɛ̃",
+            "pos": "v.",
+            "word": "rêt’hé"
         },
         {
             "def-search": "actually draw it moving on pull sth to try withdraw without",
@@ -8364,6 +8693,17 @@
             "hw-search": "rra",
             "ipa": "ʀɑ̃",
             "pos": "v.",
+            "word": "rrá"
+        },
+        {
+            "def": {
+                "def": "Cross (shape)."
+            },
+            "def-search": "cross shape",
+            "etym": "<f-pf>croix</f-pf>",
+            "hw-search": "rra",
+            "ipa": "ʀɑ̃",
+            "pos": "n.",
             "word": "rrá"
         },
         {
@@ -8639,7 +8979,7 @@
             "etym": "<f-pf>rumeur</f-pf>",
             "hw-search": "ryvyr",
             "ipa": "ɰʏ̃ʋ̃ʏ̃ɰ",
-            "pos": ".n",
+            "pos": "n.",
             "word": "rývýr"
         },
         {
@@ -9126,6 +9466,28 @@
             "ipa": "sɛd",
             "pos": "num.",
             "word": "sèḍ"
+        },
+        {
+            "def": {
+                "def": "North."
+            },
+            "def-search": "north",
+            "etym": "from <f-w>seḍáḍríy’</f-w>",
+            "hw-search": "sedad",
+            "ipa": "sedɑ̃d",
+            "pos": "n.",
+            "word": "seḍáḍ"
+        },
+        {
+            "def": {
+                "def": "To be northern."
+            },
+            "def-search": "be northern to",
+            "etym": "<f-pf>septentrion</f-pf>",
+            "hw-search": "sedadriy",
+            "ipa": "sedɑ̃dɰĩɥ",
+            "pos": "v.",
+            "word": "seḍáḍríy’"
         },
         {
             "def": {
@@ -10543,6 +10905,28 @@
         },
         {
             "def": {
+                "def": "South."
+            },
+            "def-search": "south",
+            "etym": "from <f-w>vẹ́ríd’yê</f-w>",
+            "hw-search": "verid",
+            "ipa": "ʋ̃ẽɰĩd",
+            "pos": "n.",
+            "word": "vẹ́ríd"
+        },
+        {
+            "def": {
+                "def": "To be southern."
+            },
+            "def-search": "be southern to",
+            "etym": "<f-pf>méridien</f-pf>",
+            "hw-search": "veridye",
+            "ipa": "ʋ̃ẽɰĩdyɛ̃̃",
+            "pos": "v.",
+            "word": "vẹ́ríd’yê"
+        },
+        {
+            "def": {
                 "def": "To be vigorous, energetic."
             },
             "def-search": "be energetic to vigorous",
@@ -10786,6 +11170,17 @@
             "hw-search": "vu",
             "ipa": "ʋ̃ũ",
             "pos": "adj.",
+            "word": "vú"
+        },
+        {
+            "def": {
+                "def": "To be soft, squishy."
+            },
+            "def-search": "be soft squishy to",
+            "etym": "<f-pf>mou</f-pf>",
+            "hw-search": "vu",
+            "ipa": "ʋ̃ũ",
+            "pos": "v.",
             "word": "vú"
         },
         {
@@ -11122,6 +11517,17 @@
             "ipa": "ɥĩhɑ̃",
             "pos": "v.",
             "word": "y’íhá"
+        },
+        {
+            "def": {
+                "def": "Might, power."
+            },
+            "def-search": "might power",
+            "etym": "<f-pf>puissance</f-pf>",
+            "hw-search": "yihas",
+            "ipa": "ɥĩhɑ̃s",
+            "pos": "n.",
+            "word": "y’íhás"
         },
         {
             "def-search": "hear listen to understand",
@@ -12238,6 +12644,11 @@
             "from": "set’h",
             "from-search": "seth",
             "to": "eḍ"
+        },
+        {
+            "from": "sy̌",
+            "from-search": "sy",
+            "to": "dýr"
         },
         {
             "from": "sy’era",

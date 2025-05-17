@@ -183,7 +183,7 @@ laúrs|conj.|lorsque|When (temporal only)
 áhaúr|conj.|encore|+\s{subj} Even though
 ráhẹ|conj.|quoique|+\s{subj} Although, though
 aý’aúr|conj.|alors|While, as (temporal), because
-ḍá|conj.|tandis|Whereas
+ḍá|conj.|tandis|Whereas, while
 de|conj.|\pf{dès que}|+\s{subj} Once, when once, as soon as
 sá|conj.|\pf{sans que}|+\s{subj} Without (doing sth.)
 sauc’h|conj.|\pf{sauf que}|+\s{subj} Except that
@@ -686,7 +686,7 @@ dej|particle|from \w{dejẹ}|\textit{Emphatic particle; only used in the preteri
     \\ \s{pret} + \w{dej} \textit{roughly} To have ever done sth.
 rẹ́flec̣|v.|réfléchir|To think (+\s{part} sth.)
 isḍrár|n.|histoire|Story, tale
-rývýr|.n|rumeur|History
+rývýr|n.|rumeur|History
 nárrahóḍ|v.|\pf{raconter} + \pf{narrer}; subj. from \pf{filer}|To narrate, recount \s{+part sth.},
     tell (\s{+dat} sbd.) a story|\s{fut} nárrahóḍe, \s{subj} fils
 Jed’háy’|n.|Jedi|Jedi (Star Wars).
@@ -1128,7 +1128,7 @@ vẹ́t’he|n.|météo|Weather
 b’hac̣|v.|évacuer|To evacuate
 b’hac̣aû|v.|from \w{b’hac̣}|Evacuation
 lac’h|n.|lac|Lake
-aúry’ât’hal|v.|oriental|To be eastern
+aúry’ât’hal|v.|oriental|To be eastern \comment See also \w{aúry’ât’h}
 ẹ́v|v.|from \pf{aime}, \s{1sg} of \s{aimer}|\textit{(poetic, \s{nd})} +\s{acc} To love
     \comment Exclusively used in reference to a person. Diachronically, this verb was already obsolete in Middle UF and
         was rediscovered later on by a number of Early Modern UF poets, which led it to skip some initial sound changes.
@@ -1191,8 +1191,52 @@ râd’h|n.|grandir|\\\textit{intr.} To grow, become larger \\+\s{acc} To magnif
     \\ To teach (+\s{acc} sth.) (+\s{dat} to sbd.)
         \comment Historically, this word used to govern the \s{part} instead, but it later
             changed to the \s{acc}, most likely under influence from \w{aḅrâ}.
+ânérb|v.|enherber|To poison
+fýy’|n.|feuille|Plant
+c’huv́|v.|couvrir|+\s{acc} To cover, cover up
+aý’ívât’h|n.|alimenter|Food
+dẹ|n. obsolete|état|State \comment Now replaced with \w{da}
+da|n.|Originally \s{nd}, from \pf{état}|State
+    \comment This covers both the sense of ‘condition’ and ‘polity’. Originally, this was a \s{nd} word.
+réḍní|v.|retenir|
+    \\+\s{acc} To keep, retain, mainain possession of
+    \\\textit{refl.} To hold back, restrain oneself
+ráb’hér|v.|traverser|+\s{perl} To traverse, cross, move cross
+rrá|n.|croix|Cross (shape)
+fér|v.|ferme|Farm
+dýr|v.|dur|To be hard, firm|\s{nd} sy̌
+vú|v.|mou|To be soft, squishy
+du|v.|doux|To be mild, gentle (e.g. of a slope or person)
+réd|v.|raide|To be steep, abrupt
+y’íhás|n.|puissance|Might, power
+rêt’hé|v.|lointain|To be distant, far-off \comment For usage, see \w{réhyý’}
+réhyý’|v.|reculer|To be far
+    \comment Both \this{} and \w{rêt’hé} can mean ‘far’, but they differ in perspective: \this{} is used to
+        describe a great distance or the crossing of one, whereas \w{rêt’hé} is used to describe something
+        far away.
+    \ex \w{Jráy’áé réhyý’vâ.} ‘I have travelled far.’
+    \ex \w{Jráy’áé ádŷnḅéy’í rêt’hê.} ‘I travelled to a distant land.’
+    \ex \w{disḍas réhyý’â} ‘a great distance’
+disḍas|n.|distance|Distance
+dehín|v.|dessiner|\\ To draw, sketch \\\textit{refl.} To appear slowly, take shape
+ḍár|adj.|tardif|To be late, belated
+ḍárd|v.|tarder|To tarry, delay
+ḍát’h|adv.|tantôt|Soon, presently
+auhit’h|v.|aussitôt|To be early
+férv|v.|fermer|To close, shut
+rẹ́el|v. archaic|réel|\textit{Archaic \s{sd} form of \w{rẹ́il}}
+rẹ́il|v.|originally \s{nd}, compare \w{rẹ́el}|To be real, true, genuine, authentic
+fac’h|v.|factice|To be fake, artificial, false
+aúry’ât’h|n.|from \w{aúry’ât’hal}|East
+auc’hsid’h|v. or n.|occident|\\\textit{v.} To be western \\\textit{n.} \w{auc’hsid’h} West
+seḍáḍríy’|v.|septentrion|To be northern
+seḍáḍ|n.|from \w{seḍáḍríy’}|North
+vẹ́ríd’yê|v.|méridien|To be southern
+vẹ́ríd|n.|from \w{vẹ́ríd’yê}|South
+ḅaúrḍ|v.|porter|To carry, bear
 
-## Currently at entry 100 of the following page:
+
+## Currently at entry 252 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
@@ -1214,6 +1258,7 @@ c’h’s > c’hes
 ráb’h > v́ár
 daú’b’h > daú(c’h) \textnf{+} b’he
 vérvá > vér + vá
+sy̌ > dýr
 
 sauzaud > sauz-aud
 s’ > sá
