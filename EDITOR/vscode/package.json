@@ -2,7 +2,7 @@
   "name": "dictionary-file-format",
   "displayName": "dictionary-file-format",
   "description": "Syntax highlighting for the dictionary file format used by the ULTRAFRENCH dictionary",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.100.0"
   },
@@ -15,7 +15,8 @@
     "languages": [
       {
         "id": "dict_file",
-        "extensions": [".dict.txt"]
+        "extensions": [".dict.txt"],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
@@ -32,7 +33,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "package": "vsce package"
   },
   "devDependencies": {
     "@types/vscode": "^1.100.0",
