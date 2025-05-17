@@ -234,7 +234,7 @@ aû|particle|non|Not-. \comment Used to negate nouns, adjectives, and adverbs; s
 fẹ|v.|faux|To be false, incorrect, wrong|\s{fut} faure, \s{subj} faus
 R|adj.|from \pf{ré}|\textit{(Logic)} True. \comment Always capitalised
 F|adj.|from \pf{fẹ}|\textit{(Logic)} False. \comment Always capitalised
-rár|v.|voir|To see (+\s{part} sbd./sth.)|\s{fut} b’hérẹ́, \s{subj} rárs
+rár|v. tr.|voir|+\s{part} To see|\s{fut} b’hérẹ́, \s{subj} rárs
 rát’hẹ|particle|vois-tu|You see, you know
 ré|n.|rai|Ray, beam
 fèhẹ|n.|faisceau|\\ Bundle, bunch, cluster. \\ Beam, ray
@@ -1234,9 +1234,53 @@ seḍáḍ|n.|from \w{seḍáḍríy’}|North
 vẹ́ríd’yê|v.|méridien|To be southern
 vẹ́ríd|n.|from \w{vẹ́ríd’yê}|South
 ḅaúrḍ|v.|porter|To carry, bear
+y’âs|n.|science|Science
+cá|n.|chambre|Room
+id’h|n.|idée|Idea
+áré|n.|arrêt|Stop, stopping
+baz|n.|base|Base, bottom part of sth.
+cb’hal|n.|cheval|Horse
+c’hubh|v.|couper|
+    \\+\s{acc} To cut up, chop, sever
+    \\+\s{part} To cut into, incise
+    \\+\s{acc} \textit{fig.} To stop, prevent
+    \\+\s{acc} (\textit{of a river}) To flow through
+    \\+\s{perl} \textit{fig.} To take a shortcut through, cut through
+c’huý’ýr|n.|couleur|\\ Colour \\(\textit{card games}) Suit
+y’íhó|n.|buisson|Bush, shrub
+rád’hyr|n.|\pf{bois d’œuvre}|Wood
+rêhibhal|adj.|principal|Main, key, principal
+raúc̣é|v.|prochain|\\ To be upcoming \\ To be nearby
+ríb’há|v.|suivant|To be next
+rúj|v.|rouge|To be red
+jaú|v.|jaune|To be yellow
+áb|n.|ambre|Amber
+lý|v.|bleu|To be blue
+b’hér|v.|vert|To be green|\s{nd} b’haǐ
+aúrâ|v.|orange|To be orange
+lác|v.|blanche|To be white
+rár|v.|noir|To be black
+rís|v.|grise|To be grey
+váraû|v. or n.|marron|\\ To be brown \\\textit{n.} Chestnut
+ráuz|v.|rose|To be pink
+y’aúý’è|v.|violette|To be purple
+rzáḅ|n.|exemple|\\ Example \\\s{perl} \w{lý’ýnrzáḅ} For example, for instance
+fahiý’it’h|n.|facilité|Ease, easiness
+fasḍau|v.|fastoche|Easy
+ḅaḅrás|n.|paperasse|Paper
+rúḅ|n.|groupe|Group
+výhic’h|n.|musique|Music
+vár|n.|marque|Mark
+rát’hýr|n.|voiture|Car, wagon
+cár’yaú|n.|chariot|Cart, carriage
+ḅánár|n.|panard|Foot
+syb’hír|v.|suffire|To suffice, be enough \comment Governs the subjunctive when used when an \s{aci}.
+ab’hiḍy’él|v.|habituel|To be usual, customary
+sid’hẹ|v.|ci-dessus|To be above
+lis|n.|liste|List
+fávíy’|n.|famille|Family
 
-
-## Currently at entry 252 of the following page:
+## Currently at entry 318 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’

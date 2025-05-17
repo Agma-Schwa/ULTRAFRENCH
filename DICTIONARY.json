@@ -71,6 +71,17 @@
         },
         {
             "def": {
+                "def": "Amber."
+            },
+            "def-search": "amber",
+            "etym": "<f-pf>ambre</f-pf>",
+            "hw-search": "ab",
+            "ipa": "ɑ̃b",
+            "pos": "n.",
+            "word": "áb"
+        },
+        {
+            "def": {
                 "def": "+<f-s>opt</f-s> Before."
             },
             "def-search": "before",
@@ -214,6 +225,17 @@
             "ipa": "ɐβɛ̃ɥ",
             "pos": "n.",
             "word": "ab’héy’"
+        },
+        {
+            "def": {
+                "def": "To be usual, customary."
+            },
+            "def-search": "be customary to usual",
+            "etym": "<f-pf>habituel</f-pf>",
+            "hw-search": "abhidyel",
+            "ipa": "ɐβidɥɛ̃ɮ̃",
+            "pos": "v.",
+            "word": "ab’hiḍy’él"
         },
         {
             "def": {
@@ -755,6 +777,17 @@
         },
         {
             "def": {
+                "def": "Stop, stopping."
+            },
+            "def-search": "stop stopping",
+            "etym": "<f-pf>arrêt</f-pf>",
+            "hw-search": "are",
+            "ipa": "ɑ̃ɰɛ̃",
+            "pos": "n.",
+            "word": "áré"
+        },
+        {
+            "def": {
                 "def": "To arrive."
             },
             "def-search": "arrive to",
@@ -1126,6 +1159,17 @@
             "word": "aujúrdy’í"
         },
         {
+            "def": {
+                "def": "To be orange."
+            },
+            "def-search": "be orange to",
+            "etym": "<f-pf>orange</f-pf>",
+            "hw-search": "aura",
+            "ipa": "ɔ̃ɰɑ̃̃",
+            "pos": "v.",
+            "word": "aúrâ"
+        },
+        {
             "def-search": "crisis storm tempest thunderstorm turmoil upheaval",
             "etym": "<f-pf>orage</f-pf>",
             "hw-search": "auraj",
@@ -1491,6 +1535,17 @@
         },
         {
             "def": {
+                "def": "Paper."
+            },
+            "def-search": "paper",
+            "etym": "<f-pf>paperasse</f-pf>",
+            "hw-search": "babras",
+            "ipa": "bɐbɰɑ̃s",
+            "pos": "n.",
+            "word": "ḅaḅrás"
+        },
+        {
+            "def": {
                 "def": "To beat, strike, hit (+<f-s>acc</f-s> sbd./sth.)."
             },
             "def-search": " beat hit strike to",
@@ -1521,6 +1576,17 @@
             "ipa": "bɐʑ",
             "pos": "n.",
             "word": "ḅaj"
+        },
+        {
+            "def": {
+                "def": "Foot."
+            },
+            "def-search": "foot",
+            "etym": "<f-pf>panard</f-pf>",
+            "hw-search": "banar",
+            "ipa": "bɑ̃nɑ̃ɰ",
+            "pos": "n.",
+            "word": "ḅánár"
         },
         {
             "def-search": "be bet of something sure to wager",
@@ -1727,6 +1793,17 @@
             "ipa": "bɔ̃ʋ̃dɛ̃ɰ",
             "pos": "n.",
             "word": "ḅaúvḍér"
+        },
+        {
+            "def": {
+                "def": "Base, bottom part of sth."
+            },
+            "def-search": "base bottom of part sth",
+            "etym": "<f-pf>base</f-pf>",
+            "hw-search": "baz",
+            "ipa": "bɐz",
+            "pos": "n.",
+            "word": "baz"
         },
         {
             "def": {
@@ -2133,6 +2210,18 @@
         },
         {
             "def": {
+                "def": "To be green."
+            },
+            "def-search": "be green to",
+            "etym": "<f-pf>vert</f-pf>",
+            "forms": "<f-s>nd</f-s> b’haǐ",
+            "hw-search": "bher",
+            "ipa": "βɛ̃ɰ",
+            "pos": "v.",
+            "word": "b’hér"
+        },
+        {
+            "def": {
                 "def": "To be virtuous."
             },
             "def-search": "be to virtuous",
@@ -2438,6 +2527,17 @@
             "word": "bźé"
         },
         {
+            "def": {
+                "def": "Room."
+            },
+            "def-search": "room",
+            "etym": "<f-pf>chambre</f-pf>",
+            "hw-search": "ca",
+            "ipa": "ɕɑ̃",
+            "pos": "n.",
+            "word": "cá"
+        },
+        {
             "def-search": "a escape loophole out route solution way",
             "etym": "<f-pf>échappatoire</f-pf>",
             "hw-search": "cabhardrar",
@@ -2511,6 +2611,17 @@
         },
         {
             "def": {
+                "def": "Cart, carriage."
+            },
+            "def-search": "carriage cart",
+            "etym": "<f-pf>chariot</f-pf>",
+            "hw-search": "caryau",
+            "ipa": "ɕɑ̃ɰyɔ̃",
+            "pos": "n.",
+            "word": "cár’yaú"
+        },
+        {
+            "def": {
                 "def": "Luck."
             },
             "def-search": "luck",
@@ -2519,6 +2630,17 @@
             "ipa": "ɕɑ̃s",
             "pos": "n.",
             "word": "cás"
+        },
+        {
+            "def": {
+                "def": "Horse."
+            },
+            "def-search": "horse",
+            "etym": "<f-pf>cheval</f-pf>",
+            "hw-search": "cbhal",
+            "ipa": "ɕβɐɮ̃",
+            "pos": "n.",
+            "word": "cb’hal"
         },
         {
             "def": {
@@ -3570,6 +3692,31 @@
             "word": "c’hrír"
         },
         {
+            "def-search": "a chop cut flow incise into prevent sever shortcut stop take through to up",
+            "etym": "<f-pf>couper</f-pf>",
+            "hw-search": "chubh",
+            "ipa": "xubʱ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To cut up, chop, sever."
+                },
+                {
+                    "def": "+<f-s>part</f-s> To cut into, incise."
+                },
+                {
+                    "def": "+<f-s>acc</f-s> <em>fig.</em> To stop, prevent."
+                },
+                {
+                    "def": "+<f-s>acc</f-s> (<em>of a river</em>) To flow through."
+                },
+                {
+                    "def": "+<f-s>perl</f-s> <em>fig.</em> To take a shortcut through, cut through."
+                }
+            ],
+            "word": "c’hubh"
+        },
+        {
             "def": {
                 "def": "Flow."
             },
@@ -3613,6 +3760,22 @@
             "ipa": "xuβʶ",
             "pos": "v.",
             "word": "c’huv́"
+        },
+        {
+            "def-search": "colour suit",
+            "etym": "<f-pf>couleur</f-pf>",
+            "hw-search": "chuyyr",
+            "ipa": "xuɥ̃ʏ̃ɰ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Colour."
+                },
+                {
+                    "def": "(<em>card games</em>) Suit."
+                }
+            ],
+            "word": "c’huý’ýr"
         },
         {
             "def": {
@@ -5440,6 +5603,28 @@
         },
         {
             "def": {
+                "def": "Ease, easiness."
+            },
+            "def-search": "ease easiness",
+            "etym": "<f-pf>facilité</f-pf>",
+            "hw-search": "fahiyith",
+            "ipa": "ɸɐhiɥ̃iθ",
+            "pos": "n.",
+            "word": "fahiý’it’h"
+        },
+        {
+            "def": {
+                "def": "Easy."
+            },
+            "def-search": "easy",
+            "etym": "<f-pf>fastoche</f-pf>",
+            "hw-search": "fasdau",
+            "ipa": "ɸɐsdo",
+            "pos": "v.",
+            "word": "fasḍau"
+        },
+        {
+            "def": {
                 "comment": "<p>Postpositive intensifier placed after adjectives, particularly in the comparative or superlative degrees.</p>",
                 "def": "Very, right, really."
             },
@@ -5504,6 +5689,17 @@
             "ipa": "ɸɔ̃ɰd",
             "pos": "n.",
             "word": "faúrḍ"
+        },
+        {
+            "def": {
+                "def": "Family."
+            },
+            "def-search": "family",
+            "etym": "<f-pf>famille</f-pf>",
+            "hw-search": "faviy",
+            "ipa": "ɸɑ̃ʋ̃ĩɥ",
+            "pos": "n.",
+            "word": "fávíy’"
         },
         {
             "def": {
@@ -5765,6 +5961,17 @@
         },
         {
             "def": {
+                "def": "Idea."
+            },
+            "def-search": "idea",
+            "etym": "<f-pf>idée</f-pf>",
+            "hw-search": "idh",
+            "ipa": "ið",
+            "pos": "n.",
+            "word": "id’h"
+        },
+        {
+            "def": {
                 "def": "Story, tale."
             },
             "def-search": "story tale",
@@ -5816,6 +6023,17 @@
             "ipa": "ʑɐx",
             "pos": "n.",
             "word": "Jac’h"
+        },
+        {
+            "def": {
+                "def": "To be yellow."
+            },
+            "def-search": "be to yellow",
+            "etym": "<f-pf>jaune</f-pf>",
+            "hw-search": "jau",
+            "ipa": "ʑɔ̃",
+            "pos": "v.",
+            "word": "jaú"
         },
         {
             "def-search": "always at ever for forever never no time",
@@ -5988,6 +6206,17 @@
             "ipa": "ɮ̃ɑ̃ɕ",
             "pos": "n.",
             "word": "Lác"
+        },
+        {
+            "def": {
+                "def": "To be white."
+            },
+            "def-search": "be to white",
+            "etym": "<f-pf>blanche</f-pf>",
+            "hw-search": "lac",
+            "ipa": "ɮ̃ɑ̃ɕ",
+            "pos": "v.",
+            "word": "lác"
         },
         {
             "def": {
@@ -6323,6 +6552,17 @@
         },
         {
             "def": {
+                "def": "List."
+            },
+            "def-search": "list",
+            "etym": "<f-pf>liste</f-pf>",
+            "hw-search": "lis",
+            "ipa": "ɮ̃is",
+            "pos": "n.",
+            "word": "lis"
+        },
+        {
+            "def": {
                 "def": "To litigate, be at law with (+<f-s>dat</f-s> sbd.)."
             },
             "def-search": "at be law litigate sbd to with",
@@ -6385,6 +6625,17 @@
             "hw-search": "ly",
             "ipa": "ɮ̃ʏ̃",
             "pos": "n.",
+            "word": "lý"
+        },
+        {
+            "def": {
+                "def": "To be blue."
+            },
+            "def-search": "be blue to",
+            "etym": "<f-pf>bleu</f-pf>",
+            "hw-search": "ly",
+            "ipa": "ɮ̃ʏ̃",
+            "pos": "v.",
             "word": "lý"
         },
         {
@@ -7171,6 +7422,17 @@
         },
         {
             "def": {
+                "def": "Wood."
+            },
+            "def-search": "wood",
+            "etym": "<f-pf>bois d’œuvre</f-pf>",
+            "hw-search": "radhyr",
+            "ipa": "ɰɑ̃ðyɰ",
+            "pos": "n.",
+            "word": "rád’hyr"
+        },
+        {
+            "def": {
                 "def": "To run."
             },
             "def-search": "run to",
@@ -7386,11 +7648,22 @@
         },
         {
             "def": {
-                "def": "To see (+<f-s>part</f-s> sbd./sth.)."
+                "def": "+<f-s>part</f-s> To see."
             },
-            "def-search": " see to",
+            "def-search": "see to",
             "etym": "<f-pf>voir</f-pf>",
             "forms": "<f-s>fut</f-s> b’hérẹ́, <f-s>subj</f-s> rárs",
+            "hw-search": "rar",
+            "ipa": "ɰɑ̃ɰ",
+            "pos": "v. tr.",
+            "word": "rár"
+        },
+        {
+            "def": {
+                "def": "To be black."
+            },
+            "def-search": "be black to",
+            "etym": "<f-pf>noir</f-pf>",
             "hw-search": "rar",
             "ipa": "ɰɑ̃ɰ",
             "pos": "v.",
@@ -7502,6 +7775,17 @@
             "ipa": "ɰɑ̃θə̥",
             "pos": "particle",
             "word": "rát’hẹ"
+        },
+        {
+            "def": {
+                "def": "Car, wagon."
+            },
+            "def-search": "car wagon",
+            "etym": "<f-pf>voiture</f-pf>",
+            "hw-search": "rathyr",
+            "ipa": "ɰɑ̃θʏ̃ɰ",
+            "pos": "n.",
+            "word": "rát’hýr"
         },
         {
             "def": {
@@ -7635,6 +7919,22 @@
             "ipa": "ɰɔ̃̃ɕ",
             "pos": "n.",
             "word": "raûc"
+        },
+        {
+            "def-search": "be nearby to upcomingto",
+            "etym": "<f-pf>prochain</f-pf>",
+            "hw-search": "rauce",
+            "ipa": "ɰɔ̃ȷ̊ɛ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To be upcoming."
+                },
+                {
+                    "def": "To be nearby."
+                }
+            ],
+            "word": "raúc̣é"
         },
         {
             "def": {
@@ -7773,6 +8073,17 @@
             "ipa": "ɰɔ̃ʋ̃ũɰ",
             "pos": "v.",
             "word": "raúvúr"
+        },
+        {
+            "def": {
+                "def": "To be pink."
+            },
+            "def-search": "be pink to",
+            "etym": "<f-pf>rose</f-pf>",
+            "hw-search": "rauz",
+            "ipa": "ɰɑ̃uz",
+            "pos": "v.",
+            "word": "ráuz"
         },
         {
             "def": {
@@ -8330,6 +8641,17 @@
         },
         {
             "def": {
+                "def": "Main, key, principal."
+            },
+            "def-search": "key main principal",
+            "etym": "<f-pf>principal</f-pf>",
+            "hw-search": "rehibhal",
+            "ipa": "ɰɛ̃̃hibʱɐɮ̃",
+            "pos": "adj.",
+            "word": "rêhibhal"
+        },
+        {
+            "def": {
                 "comment": "<p>Both <f-w>réhyý’</f-w> and <f-w>rêt’hé</f-w> can mean ‘far’, but they differ in perspective: <f-w>réhyý’</f-w> is used to describe a great distance or the crossing of one, whereas <f-w>rêt’hé</f-w> is used to describe something far away.</p>",
                 "def": "To be far.",
                 "examples": [
@@ -8578,6 +8900,17 @@
         },
         {
             "def": {
+                "def": "To be next."
+            },
+            "def-search": "be next to",
+            "etym": "<f-pf>suivant</f-pf>",
+            "hw-search": "ribha",
+            "ipa": "ɰĩβɑ̃",
+            "pos": "v.",
+            "word": "ríb’há"
+        },
+        {
+            "def": {
                 "def": "River."
             },
             "def-search": "river",
@@ -8616,6 +8949,17 @@
             },
             "def-search": "be sad to",
             "etym": "<f-pf>triste</f-pf>",
+            "hw-search": "ris",
+            "ipa": "ɰĩs",
+            "pos": "v.",
+            "word": "rís"
+        },
+        {
+            "def": {
+                "def": "To be grey."
+            },
+            "def-search": "be grey to",
+            "etym": "<f-pf>grise</f-pf>",
             "hw-search": "ris",
             "ipa": "ɰĩs",
             "pos": "v.",
@@ -8866,6 +9210,17 @@
         },
         {
             "def": {
+                "def": "Group."
+            },
+            "def-search": "group",
+            "etym": "<f-pf>groupe</f-pf>",
+            "hw-search": "rub",
+            "ipa": "ɰũb",
+            "pos": "n.",
+            "word": "rúḅ"
+        },
+        {
+            "def": {
                 "comment": "<p>The <f-s>acc</f-s> is generally preferred, but in cases where it is either questionable who discovered something first, or whether something is ‘discovered’ as opposed to ‘invented’, the <f-s>part</f-s> may be used instead.</p>",
                 "def": "+<f-s>acc/part</f-s> To find, discover."
             },
@@ -8875,6 +9230,17 @@
             "ipa": "ɰũβ",
             "pos": "v.",
             "word": "rúb’h"
+        },
+        {
+            "def": {
+                "def": "To be red."
+            },
+            "def-search": "be red to",
+            "etym": "<f-pf>rouge</f-pf>",
+            "hw-search": "ruj",
+            "ipa": "ɰũʑ",
+            "pos": "v.",
+            "word": "rúj"
         },
         {
             "def": {
@@ -8992,6 +9358,22 @@
             "ipa": "ɰʏ̃ɥ̃ẽ",
             "pos": "v.",
             "word": "rýý’ẹ́"
+        },
+        {
+            "def-search": "example for instance",
+            "etym": "<f-pf>exemple</f-pf>",
+            "hw-search": "rzab",
+            "ipa": "ɰzɑ̃b",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Example."
+                },
+                {
+                    "def": "<f-s>perl</f-s> <f-w>lý’ýnrzáḅ</f-w> For example, for instance."
+                }
+            ],
+            "word": "rzáḅ"
         },
         {
             "def-search": "be completed completeto comprehensive exhaustive finished to",
@@ -9894,6 +10276,17 @@
         },
         {
             "def": {
+                "def": "To be above."
+            },
+            "def-search": "above be to",
+            "etym": "<f-pf>ci-dessus</f-pf>",
+            "hw-search": "sidhe",
+            "ipa": "siðə̥",
+            "pos": "v.",
+            "word": "sid’hẹ"
+        },
+        {
+            "def": {
                 "def": "Six."
             },
             "def-search": "six",
@@ -10153,6 +10546,18 @@
             "ipa": "sybʱẽɰʏ̃ɰ",
             "pos": "v.",
             "word": "sybhẹ́rýr"
+        },
+        {
+            "def": {
+                "comment": "<p>Governs the subjunctive when used when an <f-s>aci</f-s>.</p>",
+                "def": "To suffice, be enough."
+            },
+            "def-search": "be enough suffice to",
+            "etym": "<f-pf>suffire</f-pf>",
+            "hw-search": "sybhir",
+            "ipa": "syβĩɰ",
+            "pos": "v.",
+            "word": "syb’hír"
         },
         {
             "def-search": "additional extra sth supplement to with",
@@ -10562,6 +10967,17 @@
             "word": "válvê"
         },
         {
+            "def": {
+                "def": "Mark."
+            },
+            "def-search": "mark",
+            "etym": "<f-pf>marque</f-pf>",
+            "hw-search": "var",
+            "ipa": "ʋ̃ɑ̃ɰ",
+            "pos": "n.",
+            "word": "vár"
+        },
+        {
             "def-search": "be even have if must obliged owe sbd sth to",
             "etym": "<f-pf>devoir</f-pf>",
             "forms": "<f-s>cond i, ii</f-s> dy, <f-s>fut</f-s> dv́e, <f-s>subj</f-s> ráb’h",
@@ -10586,6 +11002,22 @@
                 }
             ],
             "word": "v́ár"
+        },
+        {
+            "def-search": "be brown chestnut to",
+            "etym": "<f-pf>marron</f-pf>",
+            "hw-search": "varau",
+            "ipa": "ʋ̃ɑ̃ɰɔ̃̃",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "To be brown."
+                },
+                {
+                    "def": "<em>n.</em> Chestnut."
+                }
+            ],
+            "word": "váraû"
         },
         {
             "def-search": "function march to walk work",
@@ -11265,6 +11697,17 @@
         },
         {
             "def": {
+                "def": "Music."
+            },
+            "def-search": "music",
+            "etym": "<f-pf>musique</f-pf>",
+            "hw-search": "vyhich",
+            "ipa": "ʋ̃ʏ̃hix",
+            "pos": "n.",
+            "word": "výhic’h"
+        },
+        {
+            "def": {
                 "def": "To remove (+<f-s>acc</f-s> sth.)."
             },
             "def-search": "remove sth to",
@@ -11295,6 +11738,17 @@
             "ipa": "ɥɑ̃xɰɔ̃nĩx",
             "pos": "v.",
             "word": "y’ác’hraúníc’h"
+        },
+        {
+            "def": {
+                "def": "Science."
+            },
+            "def-search": "science",
+            "etym": "<f-pf>science</f-pf>",
+            "hw-search": "yas",
+            "ipa": "ɥɑ̃̃s",
+            "pos": "n.",
+            "word": "y’âs"
         },
         {
             "def": {
@@ -11357,6 +11811,17 @@
             "ipa": "ɥɔ̃ɥ̃ɑ̃ʋ̃ɑ̃̃",
             "pos": "adv. archaic",
             "word": "y’aúý’ávâ"
+        },
+        {
+            "def": {
+                "def": "To be purple."
+            },
+            "def-search": "be purple to",
+            "etym": "<f-pf>violette</f-pf>",
+            "hw-search": "yauye",
+            "ipa": "ɥɔ̃ɥ̃ɛ",
+            "pos": "v.",
+            "word": "y’aúý’è"
         },
         {
             "def": {
@@ -11528,6 +11993,17 @@
             "ipa": "ɥĩhɑ̃s",
             "pos": "n.",
             "word": "y’íhás"
+        },
+        {
+            "def": {
+                "def": "Bush, shrub."
+            },
+            "def-search": "bush shrub",
+            "etym": "<f-pf>buisson</f-pf>",
+            "hw-search": "yiho",
+            "ipa": "ɥĩhɔ̃",
+            "pos": "n.",
+            "word": "y’íhó"
         },
         {
             "def-search": "hear listen to understand",
