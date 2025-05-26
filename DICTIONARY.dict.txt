@@ -971,7 +971,12 @@ b’hér|v.|from \pf{verser} and \w{fér}, see \senseref{2}|
     the peel is removed ‘from around’ something, hence the use of the \s{circabl} for the object.
 ḅaúvḍér|n.|\pf{pomme de terre}|Potato
 ḅaú|n.|pomme|Apple
-Sehár|n.|César|Caesar
+sehár|n.|César|
+    \\ King, queen, monarch \comment Usually used regardless of the person’s gender.
+    \\\w{Sehár} Caesar
+sehárê|n.|From \w{César} + \pf{reine}|Queen
+sehárês|n.|From \w{César} + \pf{prince}|Prince, princess \comment Usually used regardless of the person’s gender.
+sehárêsê|n.|From \w{sehárês}; the final \w{ê} was added in analogy with how \w{sehárê} derives from \w{sehár}.|Princess
 várc|v.|marcher|\\ To march, walk \\ \textit{fig.} To work, function
 Raû|n|Rome|Rome
 lejy’aû|n.|légion|\textit{(Ancient Rome, military)} Legion
@@ -1025,7 +1030,11 @@ c’haúy’ê|adv.|combien|
 aúłau|n.|horloge|Time \comment In the SD, this word has replaced earlier \w{ḍá} entirely except in set phrases.
 ḍá|n.|temps|\textit{(obsolete or ND)} Time \comment In the ND, this word never merged with \w{dá} ‘tooth’ and thus
     remains in common use until today.
-auhybh|v.|occuper|+\s{iness} To inhabit, occupy
+auhybh|v.|occuper|
+    \\ \textit{tr.} +\s{iness} To inhabit, occupy
+    \\ \textit{intr.} To be busy (engaged in an activity)
+    \\ \textit{intr.} To be crowded, busy (of an area or street)
+    \\ \textit{intr.} To be occupied, taken
 ádrrá|n.|endroit|Location, place, locale
 laút’há|adv.|longtemps|
     \\ Since long ago, for a long time, over a long period \comment When describing ongoing processes that started a long time ago, this
@@ -1087,7 +1096,7 @@ cér|n.|chair|Flesh
 raúc̣|n.|crochet|Fang
 ḅih|v.|piquer|To sting
 ḅérs|v.|percer|To pierce, penetrate
-ráub’haú|v.|profond|\\To be deep \\ To be profound
+raúb’haú|v.|profond|\\To be deep \\ To be profound
 raúḅ|det.|propre|Own
     \comment Always used after a possessive pronoun.
     \ex \w{Ez raúḅ árb} ‘His own tree’
@@ -1180,7 +1189,7 @@ aráráhúr|adj.|\pf{à bras raccourcis}|Ferocious, violent
 lávýr|n.|clameur|Sound, noise
 áraú|v.|haro|\\To cry for help \\\textit{interj.} A cry for help
 vájaúr|n.|majorité|\\ Majority (i.e. more than 50 \% of sth.) \\ Adulthood
-vnáur|n.|minorité|\\ Minority (i.e. less than 50 \% of sth.) \\ Youth
+vnaúr|n.|minorité|\\ Minority (i.e. less than 50 \% of sth.) \\ Youth
 ríy’ẹ́|v.|crier|\\ To call, cry out, yell, shout \\+\s{gen} To call for someone
 ḍréd’hb’h|v. intr.|\pf{être debout}|To stand, be upright
 c’haul|n.|école|School
@@ -1203,7 +1212,7 @@ réḍní|v.|retenir|
     \\\textit{refl.} To hold back, restrain oneself
 ráb’hér|v.|traverser|+\s{perl} To traverse, cross, move cross
 rrá|n.|croix|Cross (shape)
-fér|v.|ferme|Farm
+fér|n.|ferme|Farm
 dýr|v.|dur|To be hard, firm|\s{nd} sy̌
 vú|v.|mou|To be soft, squishy
 du|v.|doux|To be mild, gentle (e.g. of a slope or person)
@@ -1262,7 +1271,7 @@ lác|v.|blanche|To be white
 rár|v.|noir|To be black
 rís|v.|grise|To be grey
 váraû|v. or n.|marron|\\ To be brown \\\textit{n.} Chestnut
-ráuz|v.|rose|To be pink
+raúz|v.|rose|To be pink
 y’aúý’è|v.|violette|To be purple
 rzáḅ|n.|exemple|\\ Example \\\s{perl} \w{lý’ýnrzáḅ} For example, for instance
 fahiý’it’h|n.|facilité|Ease, easiness
@@ -1275,7 +1284,7 @@ rát’hýr|n.|voiture|Car, wagon
 cár’yaú|n.|chariot|Cart, carriage
 ḅánár|n.|panard|Foot
 syb’hír|v.|suffire|To suffice, be enough \comment Governs the subjunctive when used when an \s{aci}.
-ab’hiḍy’él|v.|habituel|To be usual, customary
+ab’hiḍy’él|v.|habituel|To be usual, customary, common
 sid’hẹ|v.|ci-dessus|To be above
 lis|n.|liste|List
 fávíy’|n.|famille|Family
@@ -1289,8 +1298,7 @@ las|n.|classe|Class, type
 c’heḍ|n.|quête|Question
 sybhérfih|n.|superficie|\\ Surface \\(\textit{maths}) Area
 rẹ́jy’aû|n.|région|Area, region \comment Usually geographical, see also \w{ḅéy’í}.
-róc|n.|roche|
-    \comment Spelt with \w{ó} to distinguish it from \w{raúc̣} ‘fang’.
+róc|n.|From \pf{roche}; spelt with \w{ó} to distinguish it from \w{raúc̣} ‘fang’.|
     \\ Rock, mass of stone \comment See also \w{róc̣}
     \\\s{indef} Rock (material)
 róc̣|n.|rocher|Boulder, large rock. \comment See also \w{róc}
@@ -1306,6 +1314,44 @@ aúrd|n.|ordre|
         \ex \w{áaúrd dizy’ê t’halẹ} ‘around 10 tables’, ‘10 or so tables’
             \comment Literally ‘tables of the 10th order’.
 raúlé|n.|problème|Problem, issue
+bárc’húr|v.|parcourir|
+    \\+\s{perl} To pass, pass through, move through
+    \\+\s{perl} To cross a border
+    \\\textit{intr.} To spend time
+    \\+\s{part} To take a test, sit an exam
+    \\To pass an exam
+c’haul|n.|col|Pass, mountain pass
+susḍré|v.|soustraire|To subtract
+výlḍiḅḷ|v.|multiplier|To multiply
+dib’hih|v.|diviser|To divide
+c’hur|n.|cours|Course (of events)
+b’hauý’ý|n.|volume|Volume
+il|n.|île|Island, isle|\s{nd} ī
+ḅrýb’h|n.|épreuve|\\ Test \comment For ‘exam’, see \w{ḍèsrzávê} instead. \\ Trial, challenge, ordeal
+ḍèsrzávê|n.|From \pf{test} + \pf{examen}|Test, exam, examination
+ârjisḍ|v.|enregistrer|To record, make a record of|\s{fut} ârjisḍrẹ́
+výḍy’él|v.|mutuel|To be mutual, reciprocal
+aúr|n.|or|Gold
+árjá|n.|argent|Silver
+raûz|n.|bronze|Bronze
+féráy’|n.|ferraille|Iron
+ríb|n.|bribe|Scrap, bit
+asy’ẹ́|n.|acier|Steel
+lá|n.|plan|
+    \\ Level or flat surface
+    \\ Map \comment Mainly used for street and city maps
+    \\\textit{(geometry)} Plane
+ráb’hau|n.|From \w{ráb’haut’h}|\textit{(woodworking)} Plane
+    \comment This refers to the tool used in woodworking. For the mathematical concept of a
+        plane, see \w{lá}.
+ráb’haut’h|n.|raboter|
+    \\ \textit{(woodworking)} +\s{acc} To plane, flatten with a plane
+    \\ \textit{(informal)} \w{c’heḍ’ráb’h’ !} Fuck off!, get lost!
+        \comment Abbreviated form of \w{c’heḍẹráb’haut’h}, literally ‘plane yourself’. First attested
+            in the works of the Early UF comedian \s{J. A. B. Snet’h}. The plural form is generally
+            \w{c’heb’hḍ’ráb’h’}
+
+# silver, copper, bronze, iron, steel, lead, mercury
 
 ## Currently at entry 336 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
@@ -1330,6 +1376,7 @@ ráb’h > v́ár
 daú’b’h > daú(c’h) \textnf{+} b’he
 vérvá > vér + vá
 sy̌ > dýr
+c’heḍ’ráb’h’, c’heb’hḍ’ráb’h’ > ráb’haut’h
 
 sauzaud > sauz-aud
 s’ > sá

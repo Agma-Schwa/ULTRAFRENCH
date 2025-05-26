@@ -228,9 +228,9 @@
         },
         {
             "def": {
-                "def": "To be usual, customary."
+                "def": "To be usual, customary, common."
             },
-            "def-search": "be customary to usual",
+            "def-search": "be common customary to usual",
             "etym": "<f-pf>habituel</f-pf>",
             "hw-search": "abhidyel",
             "ipa": "ɐβidɥɛ̃ɮ̃",
@@ -799,6 +799,29 @@
         },
         {
             "def": {
+                "def": "Silver."
+            },
+            "def-search": "silver",
+            "etym": "<f-pf>argent</f-pf>",
+            "hw-search": "arja",
+            "ipa": "ɑ̃ɰʑɑ̃",
+            "pos": "n.",
+            "word": "árjá"
+        },
+        {
+            "def": {
+                "def": "To record, make a record of."
+            },
+            "def-search": "a make of record to",
+            "etym": "<f-pf>enregistrer</f-pf>",
+            "forms": "<f-s>fut</f-s> ârjisḍrẹ́",
+            "hw-search": "arjisd",
+            "ipa": "ɑ̃̃ɰʑisd",
+            "pos": "v.",
+            "word": "ârjisḍ"
+        },
+        {
+            "def": {
                 "def": "Forest, woods, woodland."
             },
             "def-search": "forest woodland woods",
@@ -856,6 +879,17 @@
             "ipa": "ɐsdɰɑ̃ɮ̃",
             "pos": "n.",
             "word": "asḍrál"
+        },
+        {
+            "def": {
+                "def": "Steel."
+            },
+            "def-search": "steel",
+            "etym": "<f-pf>acier</f-pf>",
+            "hw-search": "asye",
+            "ipa": "ɐsɥẽ",
+            "pos": "n.",
+            "word": "asy’ẹ́"
         },
         {
             "def": {
@@ -1136,14 +1170,25 @@
             "word": "auhit’h"
         },
         {
-            "def": {
-                "def": "+<f-s>iness</f-s> To inhabit, occupy."
-            },
-            "def-search": "inhabit occupy to",
+            "def-search": "activity an area be busy crowded engaged in inhabit occupied occupy of or street taken to",
             "etym": "<f-pf>occuper</f-pf>",
             "hw-search": "auhybh",
             "ipa": "ohybʱ",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "<em>tr.</em> +<f-s>iness</f-s> To inhabit, occupy."
+                },
+                {
+                    "def": "<em>intr.</em> To be busy (engaged in an activity)."
+                },
+                {
+                    "def": "<em>intr.</em> To be crowded, busy (of an area or street)."
+                },
+                {
+                    "def": "<em>intr.</em> To be occupied, taken."
+                }
+            ],
             "word": "auhybh"
         },
         {
@@ -1157,6 +1202,17 @@
             "ipa": "oʑũɰdɥĩ",
             "pos": "adv.",
             "word": "aujúrdy’í"
+        },
+        {
+            "def": {
+                "def": "Gold."
+            },
+            "def-search": "gold",
+            "etym": "<f-pf>or</f-pf>",
+            "hw-search": "aur",
+            "ipa": "ɔ̃ɰ",
+            "pos": "n.",
+            "word": "aúr"
         },
         {
             "def": {
@@ -1648,6 +1704,31 @@
             "word": "ḅará"
         },
         {
+            "def-search": "a an border cross exam examto move pass sit spend take test through time to",
+            "etym": "<f-pf>parcourir</f-pf>",
+            "hw-search": "barchur",
+            "ipa": "bɑ̃ɰxũɰ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>perl</f-s> To pass, pass through, move through."
+                },
+                {
+                    "def": "+<f-s>perl</f-s> To cross a border."
+                },
+                {
+                    "def": "<em>intr.</em> To spend time."
+                },
+                {
+                    "def": "+<f-s>part</f-s> To take a test, sit an exam."
+                },
+                {
+                    "def": "To pass an exam."
+                }
+            ],
+            "word": "bárc’húr"
+        },
+        {
             "def": {
                 "def": "To leave, go away, depart."
             },
@@ -2076,6 +2157,17 @@
             "ipa": "βoɮ̃",
             "pos": "v.",
             "word": "b’haul"
+        },
+        {
+            "def": {
+                "def": "Volume."
+            },
+            "def-search": "volume",
+            "etym": "<f-pf>volume</f-pf>",
+            "hw-search": "bhauyy",
+            "ipa": "βoɥ̃ʏ̃",
+            "pos": "n.",
+            "word": "b’hauý’ý"
         },
         {
             "def": {
@@ -2535,6 +2627,23 @@
             "ipa": "bɰɛ̃",
             "pos": "conj.",
             "word": "ḅré"
+        },
+        {
+            "def-search": "challenge ordeal testtrial",
+            "etym": "<f-pf>épreuve</f-pf>",
+            "hw-search": "brybh",
+            "ipa": "bɰʏ̃β",
+            "pos": "n.",
+            "senses": [
+                {
+                    "comment": "<p>For ‘exam’, see <f-w>ḍèsrzávê</f-w> instead.</p>",
+                    "def": "Test."
+                },
+                {
+                    "def": "Trial, challenge, ordeal."
+                }
+            ],
+            "word": "ḅrýb’h"
         },
         {
             "def": {
@@ -3351,6 +3460,17 @@
         },
         {
             "def": {
+                "def": "Pass, mountain pass."
+            },
+            "def-search": "mountain pass",
+            "etym": "<f-pf>col</f-pf>",
+            "hw-search": "chaul",
+            "ipa": "xoɮ̃",
+            "pos": "n.",
+            "word": "c’haul"
+        },
+        {
+            "def": {
                 "def": "Knowledge."
             },
             "def-search": "knowledge",
@@ -3803,6 +3923,17 @@
             "ipa": "xuɮ̃ʋ̃ɑ̃̃",
             "pos": "n.",
             "word": "c’hulvâ"
+        },
+        {
+            "def": {
+                "def": "Course (of events)."
+            },
+            "def-search": "course events of",
+            "etym": "<f-pf>cours</f-pf>",
+            "hw-search": "chur",
+            "ipa": "xuɰ",
+            "pos": "n.",
+            "word": "c’hur"
         },
         {
             "def": {
@@ -4597,6 +4728,17 @@
         },
         {
             "def": {
+                "def": "Test, exam, examination."
+            },
+            "def-search": "exam examination test",
+            "etym": "From <f-pf>test</f-pf> + <f-pf>examen</f-pf>",
+            "hw-search": "desrzave",
+            "ipa": "dɛsɰzɑ̃ʋ̃ɛ̃̃",
+            "pos": "n.",
+            "word": "ḍèsrzávê"
+        },
+        {
+            "def": {
                 "def": "Half."
             },
             "def-search": "half",
@@ -4701,6 +4843,17 @@
                 }
             ],
             "word": "di’bhẹ́"
+        },
+        {
+            "def": {
+                "def": "To divide."
+            },
+            "def-search": "divide to",
+            "etym": "<f-pf>diviser</f-pf>",
+            "hw-search": "dibhih",
+            "ipa": "diβih",
+            "pos": "v.",
+            "word": "dib’hih"
         },
         {
             "def": {
@@ -5881,8 +6034,19 @@
             "etym": "<f-pf>ferme</f-pf>",
             "hw-search": "fer",
             "ipa": "ɸɛ̃ɰ",
-            "pos": "v.",
+            "pos": "n.",
             "word": "fér"
+        },
+        {
+            "def": {
+                "def": "Iron."
+            },
+            "def-search": "iron",
+            "etym": "<f-pf>ferraille</f-pf>",
+            "hw-search": "feray",
+            "ipa": "ɸɛ̃ɰɑ̃ɥ",
+            "pos": "n.",
+            "word": "féráy’"
         },
         {
             "def": {
@@ -6073,6 +6237,18 @@
             "ipa": "ið",
             "pos": "n.",
             "word": "id’h"
+        },
+        {
+            "def": {
+                "def": "Island, isle."
+            },
+            "def-search": "island isle",
+            "etym": "<f-pf>île</f-pf>",
+            "forms": "<f-s>nd</f-s> ī",
+            "hw-search": "il",
+            "ipa": "iɮ̃",
+            "pos": "n.",
+            "word": "il"
         },
         {
             "def": {
@@ -6283,6 +6459,26 @@
             "hw-search": "la",
             "ipa": "ɮ̃ɑ̃",
             "pos": "v.",
+            "word": "lá"
+        },
+        {
+            "def-search": "flat level or plane surfacemap",
+            "etym": "<f-pf>plan</f-pf>",
+            "hw-search": "la",
+            "ipa": "ɮ̃ɑ̃",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Level or flat surface."
+                },
+                {
+                    "comment": "<p>Mainly used for street and city maps.</p>",
+                    "def": "Map."
+                },
+                {
+                    "def": "<em>(geometry)</em> Plane."
+                }
+            ],
             "word": "lá"
         },
         {
@@ -7397,6 +7593,35 @@
         },
         {
             "def": {
+                "comment": "<p>This refers to the tool used in woodworking. For the mathematical concept of a plane, see <f-w>lá</f-w>.</p>",
+                "def": "<em>(woodworking)</em> Plane."
+            },
+            "def-search": "plane",
+            "etym": "From <f-w>ráb’haut’h</f-w>",
+            "hw-search": "rabhau",
+            "ipa": "ɰɑ̃βo",
+            "pos": "n.",
+            "word": "ráb’hau"
+        },
+        {
+            "def-search": "a flatten fuck get lost off plane sth to with",
+            "etym": "<f-pf>raboter</f-pf>",
+            "hw-search": "rabhauth",
+            "ipa": "ɰɑ̃βoθ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "<em>(woodworking)</em> +<f-s>acc</f-s> To plane, flatten sth. with a plane."
+                },
+                {
+                    "comment": "<p>Abbreviated form of <f-w>c’heḍẹráb’haut’h</f-w>, literally ‘plane yourself’. First attested in the works of the Early UF comedian <f-s>J. A. B. Snet’h</f-s>. The plural form is generally <f-w>c’heb’hḍ’ráb’h’ !</f-w>.</p>",
+                    "def": "<em>(informal)</em> <f-w>c’heḍ’ráb’h’ !</f-w> Fuck off!, get lost!"
+                }
+            ],
+            "word": "ráb’haut’h"
+        },
+        {
+            "def": {
                 "def": "To work."
             },
             "def-search": "to work",
@@ -7979,7 +8204,7 @@
             "def-search": "be deepto profound to",
             "etym": "<f-pf>profond</f-pf>",
             "hw-search": "raubhau",
-            "ipa": "ɰɑ̃uβɔ̃",
+            "ipa": "ɰɔ̃βɔ̃",
             "pos": "v.",
             "senses": [
                 {
@@ -7989,7 +8214,7 @@
                     "def": "To be profound."
                 }
             ],
-            "word": "ráub’haú"
+            "word": "raúb’haú"
         },
         {
             "def": {
@@ -8223,9 +8448,20 @@
             "def-search": "be pink to",
             "etym": "<f-pf>rose</f-pf>",
             "hw-search": "rauz",
-            "ipa": "ɰɑ̃uz",
+            "ipa": "ɰɔ̃z",
             "pos": "v.",
-            "word": "ráuz"
+            "word": "raúz"
+        },
+        {
+            "def": {
+                "def": "Bronze."
+            },
+            "def-search": "bronze",
+            "etym": "<f-pf>bronze</f-pf>",
+            "hw-search": "rauz",
+            "ipa": "ɰɔ̃̃z",
+            "pos": "n.",
+            "word": "raûz"
         },
         {
             "def": {
@@ -9034,6 +9270,17 @@
         },
         {
             "def": {
+                "def": "Scrap, bit."
+            },
+            "def-search": "bit scrap",
+            "etym": "<f-pf>bribe</f-pf>",
+            "hw-search": "rib",
+            "ipa": "ɰĩb",
+            "pos": "n.",
+            "word": "ríb"
+        },
+        {
+            "def": {
                 "def": "Thrice, three times."
             },
             "def-search": "three thrice times",
@@ -9182,7 +9429,7 @@
         },
         {
             "def-search": "mass material of rock stone",
-            "etym": "<f-pf>roche</f-pf>",
+            "etym": "From <f-pf>roche</f-pf>; spelt with <f-w>ó</f-w> to distinguish it from <f-w>raúc̣</f-w> ‘fang’.",
             "hw-search": "roc",
             "ipa": "ɰɔ̃ɕ",
             "pos": "n.",
@@ -10108,15 +10355,55 @@
             "word": "sẹh"
         },
         {
-            "def": {
-                "def": "Caesar."
-            },
-            "def-search": "caesar",
+            "def-search": "caesar king monarch queen",
             "etym": "<f-pf>César</f-pf>",
             "hw-search": "sehar",
             "ipa": "sehɑ̃ɰ",
             "pos": "n.",
-            "word": "Sehár"
+            "senses": [
+                {
+                    "comment": "<p>Usually used regardless of the person’s gender.</p>",
+                    "def": "King, queen, monarch."
+                },
+                {
+                    "def": "<f-w>Sehár</f-w> Caesar."
+                }
+            ],
+            "word": "sehár"
+        },
+        {
+            "def": {
+                "def": "Queen."
+            },
+            "def-search": "queen",
+            "etym": "From <f-w>César</f-w> + <f-pf>reine</f-pf>",
+            "hw-search": "sehare",
+            "ipa": "sehɑ̃ɰɛ̃̃",
+            "pos": "n.",
+            "word": "sehárê"
+        },
+        {
+            "def": {
+                "comment": "<p>Usually used regardless of the person’s gender.</p>",
+                "def": "Prince, princess."
+            },
+            "def-search": "prince princess",
+            "etym": "From <f-w>César</f-w> + <f-pf>prince</f-pf>",
+            "hw-search": "sehares",
+            "ipa": "sehɑ̃ɰɛ̃̃s",
+            "pos": "n.",
+            "word": "sehárês"
+        },
+        {
+            "def": {
+                "def": "Princess."
+            },
+            "def-search": "princess",
+            "etym": "From <f-w>sehárês</f-w>; the final <f-w>ê</f-w> was added in analogy with how <f-w>sehárê</f-w> derives from <f-w>sehár</f-w>.",
+            "hw-search": "seharese",
+            "ipa": "sehɑ̃ɰɛ̃̃sɛ̃̃",
+            "pos": "n.",
+            "word": "sehárêsê"
         },
         {
             "def": {
@@ -10673,6 +10960,17 @@
             "ipa": "suh",
             "pos": "n.",
             "word": "suh"
+        },
+        {
+            "def": {
+                "def": "To subtract."
+            },
+            "def-search": "subtract to",
+            "etym": "<f-pf>soustraire</f-pf>",
+            "hw-search": "susdre",
+            "ipa": "susdɰɛ̃",
+            "pos": "v.",
+            "word": "susḍré"
         },
         {
             "def": {
@@ -11780,7 +12078,7 @@
             "def-search": "ie less minority of sthyouth than",
             "etym": "<f-pf>minorité</f-pf>",
             "hw-search": "vnaur",
-            "ipa": "ʋ̃nɑ̃uɰ",
+            "ipa": "ʋ̃nɔ̃ɰ",
             "pos": "n.",
             "senses": [
                 {
@@ -11790,7 +12088,7 @@
                     "def": "Youth."
                 }
             ],
-            "word": "vnáur"
+            "word": "vnaúr"
         },
         {
             "def": {
@@ -11896,6 +12194,17 @@
         },
         {
             "def": {
+                "def": "To be mutual, reciprocal."
+            },
+            "def-search": "be mutual reciprocal to",
+            "etym": "<f-pf>mutuel</f-pf>",
+            "hw-search": "vydyel",
+            "ipa": "ʋ̃ʏ̃dɥɛ̃ɮ̃",
+            "pos": "v.",
+            "word": "výḍy’él"
+        },
+        {
+            "def": {
                 "def": "Music."
             },
             "def-search": "music",
@@ -11904,6 +12213,17 @@
             "ipa": "ʋ̃ʏ̃hix",
             "pos": "n.",
             "word": "výhic’h"
+        },
+        {
+            "def": {
+                "def": "To multiply."
+            },
+            "def-search": "multiply to",
+            "etym": "<f-pf>multiplier</f-pf>",
+            "hw-search": "vyldibl",
+            "ipa": "ʋ̃ʏ̃ɮ̃dibʎ̝̃",
+            "pos": "v.",
+            "word": "výlḍiḅḷ"
         },
         {
             "def": {
@@ -12605,6 +12925,11 @@
             "from": "c’haúḍé",
             "from-search": "chaude",
             "to": "ní"
+        },
+        {
+            "from": "c’heḍ’ráb’h’",
+            "from-search": "chedrabh",
+            "to": "ráb’haut’h"
         },
         {
             "from": "c’h’s",
