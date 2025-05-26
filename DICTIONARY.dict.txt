@@ -455,7 +455,7 @@ aúráj|n.|orage|
     \\ \textit{fig.} Upheaval, turmoil, crisis
 dec̣ír|v.|déchirer|\\ +\s{part} To tear, rip, rend. \\ +\s{acc} To rend asunder, tear to pieces
     |\s{fut} dec̣irrẹ, \s{subj} dec̣írs
-ḅéy’í|n.|pays|Country, land, region, nation
+ḅéy’í|n.|pays|Country, land, region, nation \comment Usually political, see also \w{rẹ́jy’aû}
 
 
 c’haúfrér|n.|confrère|Brother (religious). \comment Masc. or pl. only, see also
@@ -579,7 +579,7 @@ sehul|v.|s’écouler|To flow
 c’húr|v. intr.|courrir|To run
 rób’hoc’h|v.|\pf{provoquer}; future from \pf{infliger}|\s{+acc} To cause, make happen|
     \s{fut} flijé, \s{subj} rób’hoc’hs
-aḅrâ|v.|apprendre|\\+\s{part} \s{or intr.} To learn\\+\s{acc} To teach (+\s{dat} sbd.) \comment See also|\s{fut} aḅrâdé, \s{subj} aḅrâs
+aḅrâ|v.|apprendre|\\+\s{part} \textit{or} \s{intr.} To learn\\+\s{acc} To teach (+\s{dat} sbd.) \comment See also|\s{fut} aḅrâdé, \s{subj} aḅrâs
 ábhec|v.|empêcher|+\s{acc} To prevent, stop (sth. from happening)|\s{fut} ábhece, \s{subj} ábhecs
 válvê|v.|malmener|To mistreat, torture|\s{fut} válv́e, \s{subj} válvês
 válḍrét’hás|n.|maltraitance|Torture
@@ -1279,8 +1279,35 @@ ab’hiḍy’él|v.|habituel|To be usual, customary
 sid’hẹ|v.|ci-dessus|To be above
 lis|n.|liste|List
 fávíy’|n.|famille|Family
+díréc’h|v.|direct|To be direct
+ḅauz|n.|pose|Pose, posture
+cáhaú|n.|chanson|Song
+ḅaúr|n.|porte|Door, gate
+raúd’yí|v. or n.|produire|\\+\s{acc} To produce, yield \\ Product
+cif|n.|chiffre|\\Digit (number) \\ Cipher
+las|n.|classe|Class, type
+c’heḍ|n.|quête|Question
+sybhérfih|n.|superficie|\\ Surface \\(\textit{maths}) Area
+rẹ́jy’aû|n.|région|Area, region \comment Usually geographical, see also \w{ḅéy’í}.
+róc|n.|roche|
+    \comment Spelt with \w{ó} to distinguish it from \w{raúc̣} ‘fang’.
+    \\ Rock, mass of stone \comment See also \w{róc̣}
+    \\\s{indef} Rock (material)
+róc̣|n.|rocher|Boulder, large rock. \comment See also \w{róc}
+y’ér|n.|pierre|\\\s{indef} Stone (subtance) \\ Stone, pebble
+aúrd|n.|ordre|
+    \\ Order (arrangement)
+    \\ Order, tidiness
+    \\ Order, command, instruction
+    \\ Order (military group)
+    \\\s{def gen} In the region of, around, approximately.
+        \comment Always followed by an ordinal number in the \s{abs} and then by a noun phrase also
+            in the \s{abs}. Since the number is usually not 1, the noun phrase is usually in the \s{pl}.
+        \ex \w{áaúrd dizy’ê t’halẹ} ‘around 10 tables’, ‘10 or so tables’
+            \comment Literally ‘tables of the 10th order’.
+raúlé|n.|problème|Problem, issue
 
-## Currently at entry 318 of the following page:
+## Currently at entry 336 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’

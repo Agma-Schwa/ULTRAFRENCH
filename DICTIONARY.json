@@ -281,7 +281,7 @@
             "pos": "v.",
             "senses": [
                 {
-                    "def": "+<f-s>part</f-s> <f-s>or intr.</f-s> To learn."
+                    "def": "+<f-s>part</f-s> <em>or</em> <f-s>intr.</f-s> To learn."
                 },
                 {
                     "comment": "<p>See also.</p>",
@@ -1191,6 +1191,38 @@
             "word": "aúráj"
         },
         {
+            "def-search": "approximately around arrangementorder command group in instructionorder military of order region the tidinessorder",
+            "etym": "<f-pf>ordre</f-pf>",
+            "hw-search": "aurd",
+            "ipa": "ɔ̃ɰd",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Order (arrangement)."
+                },
+                {
+                    "def": "Order, tidiness."
+                },
+                {
+                    "def": "Order, command, instruction."
+                },
+                {
+                    "def": "Order (military group)."
+                },
+                {
+                    "comment": "<p>Always followed by an ordinal number in the <f-s>abs</f-s> and then by a noun phrase also in the <f-s>abs</f-s>. Since the number is usually not 1, the noun phrase is usually in the <f-s>pl</f-s>.</p>",
+                    "def": "<f-s>def gen</f-s> In the region of, around, approximately.",
+                    "examples": [
+                        {
+                            "comment": "Literally ‘tables of the 10th order’.",
+                            "text": "<f-w>áaúrd dizy’ê t’halẹ</f-w> ‘around 10 tables’, ‘10 or so tables’."
+                        }
+                    ]
+                }
+            ],
+            "word": "aúrd"
+        },
+        {
             "def": {
                 "def": "East."
             },
@@ -1763,6 +1795,17 @@
         },
         {
             "def": {
+                "def": "Door, gate."
+            },
+            "def-search": "door gate",
+            "etym": "<f-pf>porte</f-pf>",
+            "hw-search": "baur",
+            "ipa": "bɔ̃ɰ",
+            "pos": "n.",
+            "word": "ḅaúr"
+        },
+        {
+            "def": {
                 "def": "To carry, bear."
             },
             "def-search": "bear carry to",
@@ -1793,6 +1836,17 @@
             "ipa": "bɔ̃ʋ̃dɛ̃ɰ",
             "pos": "n.",
             "word": "ḅaúvḍér"
+        },
+        {
+            "def": {
+                "def": "Pose, posture."
+            },
+            "def-search": "pose posture",
+            "etym": "<f-pf>pose</f-pf>",
+            "hw-search": "bauz",
+            "ipa": "boz",
+            "pos": "n.",
+            "word": "ḅauz"
         },
         {
             "def": {
@@ -1930,6 +1984,7 @@
         },
         {
             "def": {
+                "comment": "<p>Usually political, see also <f-w>rẹ́jy’aû</f-w>.</p>",
                 "def": "Country, land, region, nation."
             },
             "def-search": "country land nation region",
@@ -2586,6 +2641,17 @@
             "ipa": "ɕɐh",
             "pos": "v.",
             "word": "cah"
+        },
+        {
+            "def": {
+                "def": "Song."
+            },
+            "def-search": "song",
+            "etym": "<f-pf>chanson</f-pf>",
+            "hw-search": "cahau",
+            "ipa": "ɕɑ̃hɔ̃",
+            "pos": "n.",
+            "word": "cáhaú"
         },
         {
             "def": {
@@ -3413,6 +3479,17 @@
         },
         {
             "def": {
+                "def": "Question."
+            },
+            "def-search": "question",
+            "etym": "<f-pf>quête</f-pf>",
+            "hw-search": "ched",
+            "ipa": "xed",
+            "pos": "n.",
+            "word": "c’heḍ"
+        },
+        {
+            "def": {
                 "def": "Some, any, a few, a couple of."
             },
             "def-search": "a any couple few of some",
@@ -3798,6 +3875,22 @@
             "ipa": "xʏ̃ɰ",
             "pos": "n.",
             "word": "c’hýr"
+        },
+        {
+            "def-search": "digit numbercipher",
+            "etym": "<f-pf>chiffre</f-pf>",
+            "hw-search": "cif",
+            "ipa": "ɕiɸ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Digit (number)."
+                },
+                {
+                    "def": "Cipher."
+                }
+            ],
+            "word": "cif"
         },
         {
             "def": {
@@ -4670,6 +4763,17 @@
             "ipa": "dĩɰ",
             "pos": "v. tr.",
             "word": "dír"
+        },
+        {
+            "def": {
+                "def": "To be direct."
+            },
+            "def-search": "be direct to",
+            "etym": "<f-pf>direct</f-pf>",
+            "hw-search": "direch",
+            "ipa": "dĩɰɛ̃x",
+            "pos": "v.",
+            "word": "díréc’h"
         },
         {
             "def": {
@@ -6287,6 +6391,17 @@
             "hw-search": "las",
             "ipa": "ɮ̃ɐs",
             "pos": "v.",
+            "word": "las"
+        },
+        {
+            "def": {
+                "def": "Class, type."
+            },
+            "def-search": "class type",
+            "etym": "<f-pf>classe</f-pf>",
+            "hw-search": "las",
+            "ipa": "ɮ̃ɐs",
+            "pos": "n.",
             "word": "las"
         },
         {
@@ -7959,6 +8074,22 @@
             "word": "raûd’hárb"
         },
         {
+            "def-search": "produce to yieldproduct",
+            "etym": "<f-pf>produire</f-pf>",
+            "hw-search": "raudyi",
+            "ipa": "ɰɔ̃dyĩ",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To produce, yield."
+                },
+                {
+                    "def": "Product."
+                }
+            ],
+            "word": "raúd’yí"
+        },
+        {
             "def-search": "around make s sth tighten tighter to",
             "etym": "from <f-w>raú-</f-w> + <f-w>sérẹ́</f-w>",
             "forms": "<f-s>fut</f-s> raúhérrẹ́, <f-s>subj</f-s> raúhérẹ́s",
@@ -8040,6 +8171,17 @@
             "ipa": "ɰɔ̃̃ɮ̃ɔ̃",
             "pos": "n.",
             "word": "raûlaú"
+        },
+        {
+            "def": {
+                "def": "Problem, issue."
+            },
+            "def-search": "issue problem",
+            "etym": "<f-pf>problème</f-pf>",
+            "hw-search": "raule",
+            "ipa": "ɰɔ̃ɮ̃ɛ̃",
+            "pos": "n.",
+            "word": "raúlé"
         },
         {
             "def": {
@@ -8686,6 +8828,18 @@
         },
         {
             "def": {
+                "comment": "<p>Usually geographical, see also <f-w>ḅéy’í</f-w>.</p>",
+                "def": "Area, region."
+            },
+            "def-search": "area region",
+            "etym": "<f-pf>région</f-pf>",
+            "hw-search": "rejyau",
+            "ipa": "ɰẽʑɥɔ̃̃",
+            "pos": "n.",
+            "word": "rẹ́jy’aû"
+        },
+        {
+            "def": {
                 "def": "Marrow, bone marrow."
             },
             "def-search": "bone marrow",
@@ -9025,6 +9179,35 @@
             "ipa": "ɰɔ̃βox",
             "pos": "v.",
             "word": "rób’hoc’h"
+        },
+        {
+            "def-search": "mass material of rock stone",
+            "etym": "<f-pf>roche</f-pf>",
+            "hw-search": "roc",
+            "ipa": "ɰɔ̃ɕ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "comment": "<p>See also <f-w>róc̣</f-w>.</p>",
+                    "def": "Rock, mass of stone."
+                },
+                {
+                    "def": "<f-s>indef</f-s> Rock (material)."
+                }
+            ],
+            "word": "róc"
+        },
+        {
+            "def": {
+                "comment": "<p>See also <f-w>róc</f-w>.</p>",
+                "def": "Boulder, large rock."
+            },
+            "def-search": "boulder large rock",
+            "etym": "<f-pf>rocher</f-pf>",
+            "hw-search": "roc",
+            "ipa": "ɰɔ̃ȷ̊",
+            "pos": "n.",
+            "word": "róc̣"
         },
         {
             "def": {
@@ -10536,6 +10719,22 @@
             "word": "sy’b’h"
         },
         {
+            "def-search": "area surface",
+            "etym": "<f-pf>superficie</f-pf>",
+            "hw-search": "sybherfih",
+            "ipa": "sybʱɛ̃ɰɸih",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Surface."
+                },
+                {
+                    "def": "(<em>maths</em>) Area."
+                }
+            ],
+            "word": "sybhérfih"
+        },
+        {
             "def": {
                 "def": "<em>intr. or</em> +<f-s>gen</f-s> To be superior to, better than, higher than."
             },
@@ -11890,6 +12089,22 @@
             "hw-search": "yer",
             "ipa": "ɥɛ̃ɰ",
             "pos": "adv.",
+            "word": "y’ér"
+        },
+        {
+            "def-search": "pebble stone subtancestone",
+            "etym": "<f-pf>pierre</f-pf>",
+            "hw-search": "yer",
+            "ipa": "ɥɛ̃ɰ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "<f-s>indef</f-s> Stone (subtance)."
+                },
+                {
+                    "def": "Stone, pebble."
+                }
+            ],
             "word": "y’ér"
         },
         {
