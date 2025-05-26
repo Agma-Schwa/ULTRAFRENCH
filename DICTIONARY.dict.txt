@@ -335,7 +335,7 @@ séḅ|v.|simple|To be plain, simple|\s{fut} séḅrẹ́, \s{subj} séḅs
 c’hrír|v.|écrire|To write|\s{fut} c’hrírẹ́, \s{subj} c’hrís
 dahaúr|particle|d’accord|Sure, ok, agreed, fine|\s{abbr} da’
 jys|v.|injuste|To be unjust, unfair|\s{fut} jysre, \s{subj} jyss
-c’hóbhár|v.|comparer|To compare|\s{fut} c’hóbhárre, \s{subj} c’hó\-bhárs
+c’hóbhár|v.|comparer|+\s{acc} To compare (+\s{gen} with sth.)|\s{fut} c’hóbhárre, \s{subj} c’hó\-bhárs
 c’hóvâ|v.|commencer|
     \\ (\s{+ part}) To start, commence, begin.
     \\ \s{+ gen} To start out as
@@ -595,7 +595,8 @@ c’haúbhýríf|n.|\w{c’haú} + \pf{purifier}|To purify (+\s{acc} sbd./sth.)
 râd|v.|prendre|+\s{acc} \textit{or} \s{part} To grab. \comment The \s{part} usually implies that only
     a part or some of a larger whole is grabbed, e.g. a handful of sand)
 aḍrá|v.|attraper|
-    \\ +\s{acc} \textit{or} \s{part} To take
+    \\ +\s{acc} To take
+    \\ +\s{part} To take or remove a part of
     \\ \w{aḍrá faúr} \textit{intr.} To take shape, take form
 ḅelbec|n.|\pf{pelle} + \pf{bêche}|Shovel
 raû|n. archaic|tronc|Log (of a tree)
@@ -606,7 +607,7 @@ b’heý’o|v.|back-formation from *\w{b’heý’os}, reanalysed as a subjunct
     quick, fast|\s{fut} b’heý’o\-se, \s{subj} b’heý’os
 b’heý’auhic’h|n. archaic|vélo-cycle|Bicycle
 b’heý’au|n.|from archaic \w{b’heý’auhic’h}|Bicycle
-bźé|v.|besoin|+\s{acc} \textit{or} \s{part} To need, require
+bźé|v.|besoin|+\s{part} To need, require
 
 vvâ|n.|moment|Moment, instant
 át’hád|v.|entendre|To hear, perceive (+\s{part} sbd./sth.)|\s{fut} át’hádé, \s{subj} át’hás
@@ -1361,8 +1362,26 @@ vúy’ẹ́|v.|mouillé|To be wet, moist
 sd’hévâd’h|v.|\pf{se demander}|+\s{pci} To wonder, ponder
 rír|v.|rire|To laugh (+\s{gen} at sbd./sth.)
 y’éc’h|n.|siècle|Century
+b’hẹ́ríf|v.|vérifier|To check, inspect, examine
+c’haúb’hír|v.|confirmer|To confirm, verify
+jý|n.|jeu|\\ Game \\ Play (theatrical)
+ahíví|v. tr.|assimiler|
+    \\+\s{acc} To assimilate
+    \\+\s{part} To liken, equate (+\s{gen} to sth.)
+    \\+\s{acc} (\textit{of food}) To digest
+    |\s{fut} ahívíý’ẹ́, \s{subj} ahívíý’s
+abhaúrḍ|v.|apporter|+\s{acc} To bring (+\s{all} to sbd.)
+nẹ́b’h|n.|névé|Snow
+lasy’ér|n.|glacière|Ice
+lahaú|n.|glaçon|Icicle
+b’hér|n.|verre|Glass (substance)
+b’hiḍ|n.|vitre|\\ Pane of glass \\\s{nd} Glass (substance)
+râḅ|v. tr.|remplir|
+    \\+\s{acc/part} To fill, fill up
+    \\+\s{acc/part} To fill in|\s{fut} râḅle, \s{subj} râḅles
+ráhír|v.|choisir|+\s{acc} To choose
 
-## Currently at entry 375 of the following page:
+## Currently at entry 399 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’

@@ -143,6 +143,17 @@
         },
         {
             "def": {
+                "def": "+<f-s>acc</f-s> To bring (+<f-s>all</f-s> to sbd.)."
+            },
+            "def-search": "bring sbd to",
+            "etym": "<f-pf>apporter</f-pf>",
+            "hw-search": "abhaurd",
+            "ipa": "ɐbʱɔ̃ɰd",
+            "pos": "v.",
+            "word": "abhaúrḍ"
+        },
+        {
+            "def": {
                 "def": "To coil, wind."
             },
             "def-search": "coil to wind",
@@ -445,14 +456,17 @@
             "word": "ád’hýr"
         },
         {
-            "def-search": "form shape take to",
+            "def-search": "a form of or part remove shape take to",
             "etym": "<f-pf>attraper</f-pf>",
             "hw-search": "adra",
             "ipa": "ɐdɰɑ̃",
             "pos": "v.",
             "senses": [
                 {
-                    "def": "+<f-s>acc</f-s> <em>or</em> <f-s>part</f-s> To take."
+                    "def": "+<f-s>acc</f-s> To take."
+                },
+                {
+                    "def": "+<f-s>part</f-s> To take or remove a part of."
                 },
                 {
                     "def": "<f-w>aḍrá faúr</f-w> <em>intr.</em> To take shape, take form."
@@ -625,6 +639,26 @@
                 }
             ],
             "word": "áhén"
+        },
+        {
+            "def-search": "assimilate digest equate liken sth to",
+            "etym": "<f-pf>assimiler</f-pf>",
+            "forms": "<f-s>fut</f-s> ahívíý’ẹ́, <f-s>subj</f-s> ahívíý’s",
+            "hw-search": "ahivi",
+            "ipa": "ɐhĩʋ̃ĩ",
+            "pos": "v. tr.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To assimilate."
+                },
+                {
+                    "def": "+<f-s>part</f-s> To liken, equate (+<f-s>gen</f-s> to sth.)."
+                },
+                {
+                    "def": "+<f-s>acc</f-s> (<em>of food</em>) To digest."
+                }
+            ],
+            "word": "ahíví"
         },
         {
             "def": {
@@ -2369,6 +2403,17 @@
         },
         {
             "def": {
+                "def": "Glass (substance)."
+            },
+            "def-search": "glass substance",
+            "etym": "<f-pf>verre</f-pf>",
+            "hw-search": "bher",
+            "ipa": "βɛ̃ɰ",
+            "pos": "n.",
+            "word": "b’hér"
+        },
+        {
+            "def": {
                 "def": "To be virtuous."
             },
             "def-search": "be to virtuous",
@@ -2377,6 +2422,17 @@
             "ipa": "βɛ̃ɰdɥʏ̃̃",
             "pos": "v.",
             "word": "b’hérḍy’ŷ"
+        },
+        {
+            "def": {
+                "def": "To check, inspect, examine."
+            },
+            "def-search": "check examine inspect to",
+            "etym": "<f-pf>vérifier</f-pf>",
+            "hw-search": "bherif",
+            "ipa": "βẽɰĩɸ",
+            "pos": "v.",
+            "word": "b’hẹ́ríf"
         },
         {
             "def": {
@@ -2492,6 +2548,22 @@
             "ipa": "βid",
             "pos": "v.",
             "word": "b’hid"
+        },
+        {
+            "def-search": "glass of pane substance",
+            "etym": "<f-pf>vitre</f-pf>",
+            "hw-search": "bhid",
+            "ipa": "βid",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Pane of glass."
+                },
+                {
+                    "def": "<f-s>nd</f-s> Glass (substance)."
+                }
+            ],
+            "word": "b’hiḍ"
         },
         {
             "def": {
@@ -2692,7 +2764,7 @@
         },
         {
             "def": {
-                "def": "+<f-s>acc</f-s> <em>or</em> <f-s>part</f-s> To need, require."
+                "def": "+<f-s>part</f-s> To need, require."
             },
             "def-search": "need require to",
             "etym": "<f-pf>besoin</f-pf>",
@@ -3357,6 +3429,17 @@
         },
         {
             "def": {
+                "def": "To confirm, verify."
+            },
+            "def-search": "confirm to verify",
+            "etym": "<f-pf>confirmer</f-pf>",
+            "hw-search": "chaubhir",
+            "ipa": "xɔ̃βĩɰ",
+            "pos": "v.",
+            "word": "c’haúb’hír"
+        },
+        {
+            "def": {
                 "def": "To purify (+<f-s>acc</f-s> sbd./sth.)."
             },
             "def-search": " purify to",
@@ -3787,9 +3870,9 @@
         },
         {
             "def": {
-                "def": "To compare."
+                "def": "+<f-s>acc</f-s> To compare (+<f-s>gen</f-s> with sth.)."
             },
-            "def-search": "compare to",
+            "def-search": "compare sth to with",
             "etym": "<f-pf>comparer</f-pf>",
             "forms": "<f-s>fut</f-s> c’hóbhárre, <f-s>subj</f-s> c’hó&shy;bhárs",
             "hw-search": "chobhar",
@@ -6417,6 +6500,22 @@
             "word": "jý"
         },
         {
+            "def-search": "gameplay theatrical",
+            "etym": "<f-pf>jeu</f-pf>",
+            "hw-search": "jy",
+            "ipa": "ʑʏ̃",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Game."
+                },
+                {
+                    "def": "Play (theatrical)."
+                }
+            ],
+            "word": "jý"
+        },
+        {
             "def": {
                 "def": "+<f-s>opt</f-s> Until."
             },
@@ -6558,6 +6657,17 @@
         },
         {
             "def": {
+                "def": "Icicle."
+            },
+            "def-search": "icicle",
+            "etym": "<f-pf>glaçon</f-pf>",
+            "hw-search": "lahau",
+            "ipa": "ɮ̃ɐhɔ̃",
+            "pos": "n.",
+            "word": "lahaú"
+        },
+        {
+            "def": {
                 "def": "To meander."
             },
             "def-search": "meander to",
@@ -6610,6 +6720,17 @@
             "ipa": "ɮ̃ɐs",
             "pos": "n.",
             "word": "las"
+        },
+        {
+            "def": {
+                "def": "Ice."
+            },
+            "def-search": "ice",
+            "etym": "<f-pf>glacière</f-pf>",
+            "hw-search": "lasyer",
+            "ipa": "ɮ̃ɐsɥɛ̃ɰ",
+            "pos": "n.",
+            "word": "lasy’ér"
         },
         {
             "def": {
@@ -7160,6 +7281,17 @@
         },
         {
             "def": {
+                "def": "Snow."
+            },
+            "def-search": "snow",
+            "etym": "<f-pf>névé</f-pf>",
+            "hw-search": "nebh",
+            "ipa": "nẽβ",
+            "pos": "n.",
+            "word": "nẹ́b’h"
+        },
+        {
+            "def": {
                 "comment": "<p>This is a deponent verb whose subject takes the <f-s>acc</f-s> and which only takes passive affixes.</p>",
                 "def": "To be born."
             },
@@ -7540,6 +7672,23 @@
             "word": "rá₅"
         },
         {
+            "def-search": "fill in to up",
+            "etym": "<f-pf>remplir</f-pf>",
+            "forms": "<f-s>fut</f-s> râḅle, <f-s>subj</f-s> râḅles",
+            "hw-search": "rab",
+            "ipa": "ɰɑ̃̃b",
+            "pos": "v. tr.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc/part</f-s> To fill, fill up."
+                },
+                {
+                    "def": "+<f-s>acc/part</f-s> To fill in."
+                }
+            ],
+            "word": "râḅ"
+        },
+        {
             "def-search": "another culture god lord main my of oh rabh the",
             "etym": "from earlier <f-w>Réáb’h</f-w>; presumably the name of some celebrity or local deity",
             "hw-search": "rabh",
@@ -7912,6 +8061,17 @@
             "ipa": "ɰɑ̃̃hə̥",
             "pos": "n.",
             "word": "râhẹ"
+        },
+        {
+            "def": {
+                "def": "+<f-s>acc</f-s> To choose."
+            },
+            "def-search": "choose to",
+            "etym": "<f-pf>choisir</f-pf>",
+            "hw-search": "rahir",
+            "ipa": "ɰɑ̃hĩɰ",
+            "pos": "v.",
+            "word": "ráhír"
         },
         {
             "def": {
