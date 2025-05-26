@@ -591,6 +591,7 @@
     \g{spress}{superessive}
     \g{sprlat}{superlative}
     \g{subj}{subjunctive}
+    \g{subst}{substitutive}
     \g{superl}{superlative}
     \g{trans}{translative}
     \g{voc}{vocative}
@@ -841,7 +842,9 @@ which case it is simply deleted.
 
 Lenition is more complicated; it affects only consonants and causes a softening similar to what happened diachronically
 between vowels. All ʁ-fricated consonants simply lose their ʁ-frication, and a number of other consonants are also
-affected by lenition (note the difference between \w{ḅ, ḍ} and \w{b, d} here):
+affected by lenition (note the difference between \w{ḅ, ḍ} and \w{b, d} here). Double consonants are typically unaffected
+by morphological lenition, e.g. \w{dír} ‘to say’, whose subjunctive stem is \w{díss}, forms \w{aúdíssâ} (rougly ‘we
+should have said’), not *\w{aúdíhhâ}.
 
 \begin{table}[H]
 \centering
@@ -854,12 +857,9 @@ affected by lenition (note the difference between \w{ḅ, ḍ} and \w{b, d} here
 \caption{Consonants Affected by Lenition}\label{tab:lenition}
 \end{table}
 
-\noindent Note that double consonants are typically unaffected by morphological lenition, e.g. \w{dír} ‘to say’,
-whose subjunctive stem is \w{díss}, forms \w{aúdíssâ} (rougly ‘we should have said’), not *\w{aúdíhhâ}.
-
-\subsection{Glossing}
-To simplify glosses, cases are assumed to be definite and singular unless otherwise stated, and verb forms are
-assumed to be indicative, present tense, and active, unless otherwise stated.
+\noindent Affixes, lemmas, etc. that cause lenition or nasalisation are marked in this grammar and in the dictionary
+by a superscript \L{} or \N{}, respectively, e.g. the accusative singular prefix, which causes lenition, is shown in
+the declension table as \w{lá-\L}.
 
 \section{Diachrony and Derivation}\label{subsec:diachrony-and-derivation}
 The PF infinitive endings (\w{-ir} etc.) became progressively more vestigial in Middle UF and were eventually
@@ -886,18 +886,42 @@ to which a level if nasalisation is added if possible.
 This chapter covers nouns in the broad sense, i.e. nouns substantive, adjectives, adverbs, numerals, and pronouns.
 
 \section{Declension}\label{subsubsec:declension}
-UF has 2 declensions: a definite declension and an indefinite declension. UF has no adpositions—a fact for which it
-compensates with a vast array of cases—no gender distinction in nouns, and no morphologically separate articles—the old
-PF articles have been incorporated into the noun.
+There are no adpositions in UF—a fact for which it compensates with a vast array of cases. There are 2 declensions:
+a definite declension and an indefinite declension. There is no grammatical gender distinction in nouns,\footnote{Some
+nouns \textit{do} exhibit natural gender, but this is only relevant for verbal inflexion.} and there are no
+morphologically separate articles.
 
-The table below shows the most common cases of the definite and indefinite declensions.  Cases are divided into primary,
-secondary, and tertiary/locative cases (see below).
+Throughout this grammar—as well as in the dictionary—cases, number, and definiteness will be abbreviated and set in small-caps,
+e.g. \s{def acc sg} for ‘definite accusative singular’.  See the glossary at the start of this grammar for an exaustive
+list of these abbreviations.
+
+For the sake of brevity, cases are assumed to be \s{def sg} unless otherwise stated, e.g. the \s{def acc sg} is written
+as just \s{acc}, and the \s{indef acc sg} and \s{def acc pl} as \s{acc indef} and \s{acc pl}, respectively. Number and
+definiteness are also omitted when they are irrelevant, e.g. in the dictionary, when a verb is stated to take an \s{acc}
+argument, it can be in any number or definiteness, so long as it is accusative.
+
+Table~\ref{tab:table-uf-declension} below shows the most common cases of the definite and indefinite declensions. Cases
+are divided into primary (§~\ref{sec:decl-primary}), secondary (§~\ref{sec:decl-secondary}), and tertiary
+cases (§~\ref{sec:decl-tertiary}).
 
 Some of the case prefixes cause lenition or nasalisation in the initial consonant of the noun, e.g. \w{ḍalẹ} ‘table’ to
-\s{def acc sg} \w{s’thalẹ}. Unlike verbal affixes, case prefixes never coalesce with the stem.
+\s{def acc sg} \w{s’thalẹ}. Unlike verbal affixes, case prefixes never coalesce with the stem in the standard
+dialect.\footnote{They do in the \s{nd}, see §~\ref{sec:nd-nouns}.}
+Table~\ref{tab:dale-declension} shows the paradigm of \w{ḍale} ‘table’ in its \s{def} and \s{indef} forms; this, of course,
+is a rather extreme example, as the initial \w{ḍ} means that it is subject to both lenition and nasalisation.
+
+The diachrony of these forms is mostly from the PF definite and indefinite pronouns as well as from PF prepositions, though
+some forms, such as the \s{acc}, are borrowed from demonstratives instead (\s{def} from \pf{celui} and \s{indef} from
+\pf{ce}); the \s{def part} forms are from the PF partitive article, and the indefinite forms are formed with an additional
+\w{d-} by analogy to the definite forms. The locative cases are combinations of the articles and PF prepositions. The
+\s{abl} is from \pf{loin de} ‘away from’. The diachrony of the \s{gen sg} is unclear.
 
 % Some ‘semi-secret’ or rather fairly irrelevant diachronic notes are given in comments, for anyone interested.
 % Note: indef pl had a hypercorrected ‘s’ in PF ‘ces’, hence no lenition
+\def\ufdeclensiontablestretch{1.4} % Set this to whatever is required to fill the page.
+\clearpage
+\begingroup
+\let\arraystretch\ufdeclensiontablestretch
 \noindent\begin{longtable}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
 Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \endhead
@@ -908,7 +932,8 @@ Partitive       & dy-\L          & dẹ-\L    && Partitive     & dŷn-\N       &
 Accusative      & i-\L           & sý-\L    && Accusative    & s-\L         & s-      \\
 Genitive        & á-\L           & abh-\L   && Genitive      & sý-\N        & sý-\L   \\
 Dative          & as-\L          & a-\L     && Dative        & an-\N        & an-\L   \\
-Instructive     & ráh-\L         & ráh-     && Instructive   & rút’hýn-\N   & rút’hýz- \\\cline{1-3}\cline{5-7}
+Instructive     & ráh-\L         & ráh-     && Instructive   & rút’hýn-\N   & rút’hýz- \\
+\cline{1-3}\cline{5-7}
 
 Essive          & ḅáł-           & ḅá-      && Essive        & ḅárýn-       & ḅárý-    \\
 Abessive        & sá-\L          & sá-\N    && Abessive      & sáhýn-       & sáhý-    \\
@@ -917,7 +942,9 @@ Considerative   & słá-           & słé-     && Considerative & sý’óýn- 
 Causal          & ah-\N          & áh-\N    && Causal        & ahýn-        & áhý-     \\ % ‘à cause de’ / ‘ensemble’ both give ah-/áh-
 Instrumental    & b’hel-         & b’he-    && Instrumental  & b’he(hý)(n)- & b’heh-   \\
 Comitative      & réd’h-         & ré-\L    && Comitative    & rén-         & réd’hý-  \\ % près de
-Contrative      & c’haú-\L       & c’haú-   && Contrative    & c’haút’hýn-  & c’haút’hý- \\\cline{1-3}\cline{5-7} % contre
+Contrative      & c’haú-\L       & c’haú-   && Contrative    & c’haút’hýn-  & c’haút’hý- \\ % contre
+Substitutive    & ḷý-\L          & lḷý-\N   && Substitutive  & ḷýn-         & lḷýn- \\
+\cline{1-3}\cline{5-7}
 
 Illative        & ádá-           & ádé-     && Illative      & ádŷn-        & ádŷ-     \\
 Inessive        & dwá-           & dwé-     && Inessive      & dáhŷn-       & dáhŷ-    \\
@@ -938,10 +965,10 @@ Perlative       & lý’aú-\L(d’h)- & lý’aú-   && Perlative     & lý’�
 \noalign{\medskip}
 \caption{UF Declension.}\label{tab:table-uf-declension}
 \end{longtable}
+\endgroup
 
-\noindent The table below shows the paradigm of \w{ḍale} ‘table’ in its definite and indefinite forms; this, of course,
-is a rather extreme example, as the initial \w{ḍ} means that it is subject to both lenition and nasalisation.
-
+\begingroup
+\let\arraystretch\ufdeclensiontablestretch
 \noindent\begin{longtable}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
 Definite    &\nf Sg&\nf Pl && Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
 \endhead
@@ -952,7 +979,8 @@ Partitive         & dyt’halẹ         & dẹt’halẹ           && Partitive
 Accusative        & it’halẹ          & sýt’halẹ           && Accusative      & st’halẹ         & sḍalẹ       \\
 Genitive          & át’halẹ          & abht’halẹ          && Genitive        & sýnalẹ          & sýt’halẹ    \\
 Dative            & ast’halẹ         & at’halẹ            && Dative          & analẹ           & ant’halẹ    \\
-Instructive       & ráht’halẹ        & ráhḍalẹ            && Instructive     & rút’hýnalẹ      & rút’hýzḍalẹ \\\cline{1-3}\cline{5-7}
+Instructive       & ráht’halẹ        & ráhḍalẹ            && Instructive     & rút’hýnalẹ      & rút’hýzḍalẹ \\
+\cline{1-3}\cline{5-7}
 
 Essive            & ḅáłḍalẹ          & ḅáḍalẹ             && Essive          & ḅárýnḍale       & ḅárýḍale    \\
 Abessive          & sát’halẹ         & sánalẹ             && Abessive        & sáhýnḍale       & sáhýḍale    \\
@@ -960,8 +988,10 @@ Translative       & cájḍalẹ          & cájvâḍalẹ          && Translat
 Considerative     & słáḍalẹ          & słéḍalẹ            && Considerative   & sý’óýnḍalẹ      & sý’óýḍalẹ   \\
 Causal            & ahnalẹ           & áhnalẹ             && Causal          & ahýnḍalẹ        & áhýḍalẹ     \\
 Instrumental      & b’helḍalẹ        & b’heḍalẹ           && Instrumental    & b’hehýḍalẹ      & b’hehḍalẹ   \\
-Comitative        & réd’hḍalẹ        & rét’halẹ           && Comitative      & rénḍalẹ         & réd’hýḍalẹ  \\ % près de
-Contrative        & c’haút’halẹ      & c’haúḍalẹ          && Contrative      & c’haút’hýnḍalẹ  & c’haút’hýḍalẹ \\\cline{1-3}\cline{5-7}
+Comitative        & réd’hḍalẹ        & rét’halẹ           && Comitative      & rénḍalẹ         & réd’hýḍalẹ  \\
+Contrative        & c’haút’halẹ      & c’haúḍalẹ          && Contrative      & c’haút’hýnḍalẹ  & c’haút’hýḍalẹ \\
+Substitutive      & ḷýt’halẹ         & lḷýnalẹ            && Substitutive    & ḷýnḍalẹ         & lḷýnḍalẹ \\
+\cline{1-3}\cline{5-7}
 
 Illative          & ádáḍalẹ          & ádéḍalẹ            && Illative        & ádŷnḍalẹ        & ádŷḍalẹ     \\
 Inessive          & dwáḍalẹ          & dwéḍalẹ            && Inessive        & dáhŷnḍalẹ       & dáhŷḍalẹ    \\
@@ -979,14 +1009,15 @@ Circumessive      & auḍúrt’halẹ      & auḍúrḍalẹ          && Circu
 Circumablative    & rêt’húrt’halẹ    & rêt’húrḍalẹ        && Circumablative  & rêt’húrýnḍalẹ   & rêt’húrŷḍalẹ \\
 Perlative         & lý’aút’halẹ      & lý’aúḍalẹ          && Perlative       & lý’ýnḍalẹ       & lý’ýḍalẹ     \\
 \noalign{\medskip}
-\caption{Paradigm of \w{ḍalẹ}.}\label{tab:vocalic-declension}
+\caption{Paradigm of \w{ḍalẹ}.}\label{tab:dale-declension}
 \end{longtable}
-
+\endgroup
+\clearpage
 
 %% Add ALL THE LOCATIVES. E.g. Circumessive/lative/ablative (circumablative -> e.g. take off a jacket,
 %% peel a fruit [from the PEEL’S point of view], e.g. unfurl). Antessive/antelative/anteablative
 
-\section{Primary Cases}
+\section{Primary Cases}\label{sec:decl-primary}
 In UF grammar, the term \w{cyḍ révy’ẹ́â} ‘primary case’ refers to the cases that are commonly used to mark complements
 of verbs, i.e. the \s{abs, nom, acc, part, gen, dat}, and participles, e.g. the \s{insv}.
 
@@ -1140,7 +1171,7 @@ omitted if it is obvious from context.
 Note that the \s{insv} is \textit{not} used for appositions, but rather to introduce an unrelated noun. For appositions and
 titles, see §~\ref{subsubsec:names-and-titles}. For the use of participles as adjectives, see §~\ref{subsec:participle-tense}.
 
-\section{Secondary Cases}
+\section{Secondary Cases}\label{sec:decl-secondary}
 The ‘secondary cases’ (UF \w{lcyḍ dýzy’êâ}) are cases that eschew broader classification; this category comprises anything
 that is not a primary or locative case.
 
@@ -1227,8 +1258,14 @@ The \s{contr} case has the meaning of ‘against’.
     \item \w{n \b{c’hau}vẹ} ‘hate against me’
 \end{examples}
 
+\subsection{Substitutive}
+The \s{subst} case can generally be translated as ‘instead of’ or ‘in lieu of’. Diachronically, this case is
+a fossilised form of \w{ḷý} ‘place’.
+\begin{examples}
+    \item \w{Sý’b’héḷý jad’hé \b{lḷý}vau.} ‘I went there instead of you.’
+\end{examples}
 
-\section{Tertiary Cases}
+\section{Tertiary Cases}\label{sec:decl-tertiary}
 The latives and locatives, often also called \w{lcyḍ rrázy’êâ} ‘tertiary cases’, are cases that indicate the position of
 or movement away from, towards, or in relation to an object.
 
@@ -1347,15 +1384,6 @@ use with verbs such as \w{ḅlyc̣} ‘to peel’.
 \end{examples}
 
 %% [TODO: Postelative (idea: ‘out of hiding’ from lit. ‘away from behind a bush’)]
-
-\section{Diachronic Comments}
-The diachrony of these forms is mostly from the PF definite and indefinite pronouns as well as from PF prepositions, though
-some forms, such as the
-accusative, are borrowed from demonstratives instead (\s{def} from \pf{celui} and \s{indef} from PF \pf{ce}); the definite
-partitive forms are from the PF partitive article, and
-the indefinite forms are formed with an additional \w{d-} by analogy to the definite forms. The locative cases are combinations
-of the articles and PF prepositions. The ablative is from \pf{loin de} ‘away from’. The diachrony of the genitive singular
-is unclear.
 
 \section{Names, Titles, and Appositions}\label{subsubsec:names-and-titles}
 Proper nouns are declined in the definite form only. Unlike other nouns, the \s{nom} is almost always
@@ -3339,7 +3367,7 @@ is \w{S’heuè}, which lost its final \w{c’h} before this change occurred.
     \caption{Examples of Northern Dialect words.}
 \end{table}
 
-\section{Nouns}
+\section{Nouns}\label{sec:nd-nouns}
 There are some differences in how noun declensions work in the ND. Most of the prefixes are the same, but unlike in the SD,
 they \textit{do} undergo coalescence, and some of them appear in a contracted form.
 
