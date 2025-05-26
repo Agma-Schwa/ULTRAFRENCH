@@ -552,6 +552,7 @@
     \g{circabl}{circumablative}
     \g{circess}{circumessive}
     \g{circlat}{circumlative}
+    \g{citr}{citressive}
     \g{com}{comitative}
     \g{comp}{comparative}
     \g{cond}{conditional}
@@ -593,7 +594,8 @@
     \g{subj}{subjunctive}
     \g{subst}{substitutive}
     \g{superl}{superlative}
-    \g{trans}{translative}
+    \g{transess}{transessive}
+    \g{transl}{translative}
     \g{voc}{vocative}
 \end{glossary}
 
@@ -918,7 +920,7 @@ some forms, such as the \s{acc}, are borrowed from demonstratives instead (\s{de
 
 % Some ‘semi-secret’ or rather fairly irrelevant diachronic notes are given in comments, for anyone interested.
 % Note: indef pl had a hypercorrected ‘s’ in PF ‘ces’, hence no lenition
-\def\ufdeclensiontablestretch{1.4} % Set this to whatever is required to fill the page.
+\def\ufdeclensiontablestretch{1.3} % Set this to whatever is required to fill the page.
 \clearpage
 \begingroup
 \let\arraystretch\ufdeclensiontablestretch
@@ -954,6 +956,8 @@ Ablative        & rê(d)-         & rês-     && Ablative      & rêdýn-       
 Postlative      & réh-\L         & réh-     && Postlative    & réhýn-\N     & réhyl-   \\ % reculer
 Postessive      & déry’          & dér-     && Postessive    & déry’ýn-     & déry’ý-  \\
 Antessive       & ab’há-         & ab’h-    && Antessive     & ab’hŷn-      & ab’hŷ-   \\ % avant
+Citressive      & dẹh-           & dẹs-     && Citressive    & dẹhŷn-       & dẹsŷ- \\ % deçà
+Transessive     & ḅár-           & ḅárd-    && Transessive   & ḅárŷn-       & ḅárŷ- \\ % par-delà
 Superlative     & áu-\footnote{Recall that \w{áu} /ɑ̃u/ is not the same as \w{aú} /ɔ̃/.}
                 & áud’h-   && Superessive   & án-          & ád’hý-   \\ % en haut de (in UF, /ɑ̃o/ > /ɑ̃u/)
 Superessive     & sýr-           & dẹ(h)-\L && Superessive   & dẹhýn-       & sýrŷ-    \\
@@ -1001,6 +1005,8 @@ Ablative          & rêḍalẹ           & rêsḍalẹ            && Ablative 
 Postlative        & réht’halẹ        & réhḍalẹ            && Postlative      & réhýnalẹ        & réhylḍalẹ   \\
 Postessive        & déry’ḍalẹ        & dérḍalẹ            && Postessive      & déry’ýnḍalẹ     & déry’ýḍalẹ  \\
 Antessive         & ab’háḍalẹ        & ab’hḍalẹ           && Antessive       & ab’hŷnḍalẹ      & ab’hŷḍalẹ   \\
+Citressive        & dẹhḍalẹ          & dẹsḍalẹ            && Citressive      & dẹhŷnḍalẹ       & dẹsŷḍalẹ \\
+Transessive       & ḅárḍalẹ          & ḅárdḍalẹ           && Transessive     & ḅárŷnḍalẹ       & ḅárŷḍalẹ \\
 Superlative       & áuḍalẹ           & áud’hḍalẹ          && Superessive     & ánḍalẹ          & ád’hýḍalẹ   \\
 Superessive       & sýrḍalẹ          & dẹt’halẹ           && Superessive     & dẹhýnḍalẹ       & sýrŷḍalẹ    \\
 Interessive       & aḍáḍalẹ          & aḍéḍalẹ            && Interessive     & aḍŷnḍalẹ        & aḍŷḍalẹ     \\
@@ -1206,7 +1212,7 @@ The \s{abess} case denotes the lack or absence of something.
 \end{examples}
 
 \subsection{Translative}
-The \s{trans} case indicates the end or target state of a process or transformation.
+The \s{transl} case indicates the end or target state of a process or transformation.
 \begin{examples}
     \item \w{Aú sdẹb’hní \b{cájŷn}árb.} ‘The man turned into a tree.’
 \end{examples}
@@ -1312,7 +1318,7 @@ or ‘X and X again’, signifying repetition.
 
 \subsection{Allative}
 The \s{all} indicates motion towards, but not inside of something. Note that this applies to concrete objects; for
-abstract concepts, the \s{trans} is used instead.
+abstract concepts, the \s{transl} is used instead.
 \begin{examples}
     \item \w{\b{B’hé}t’hebhaú} ‘in the general direction of France’
     \item \w{\b{b’hé}d’hẹhẹ dẹnájẹ} ‘to swim to the surface’
@@ -1331,9 +1337,33 @@ The \w{d} in the \s{def abl sg} and is omitted if the noun starts with a consona
 careful especially with words that start with \w{s}, whose \s{abl sg} is often mistaken for a plural, e.g. \w{rêsol}
 ‘from the floor’, but \w{rêssol} ‘from the floors’.
 
-\subsection{Postessive and Postlative}
-The \s{pstess} and \s{pstlat} cases are used to indicate that an object is positioned or moving behind another object,
-respectively.
+\subsection{Postessive}
+The \s{pstess} case indicates that an object is directly behind something else.
+
+\subsection{Postlative}
+The \s{pstlat} case indicates that an object is moving towards directly behind another object.
+
+\subsection{Antessive}
+The \s{antess} case denotes that an object is directly before or in front of something.
+
+\subsection{Citressive}
+The \s{citr} case indicates that an object is on the near side of another object. When used with an expression of time,
+it means ‘before’ or ‘ago’.
+\begin{examples}
+    \item \w{\b{dẹsŷ}y’éc’h dýsá} ‘two centuries ago’
+    \item \w{\b{dẹh}ríb’hy’ér} ‘on this side of the river’
+\end{examples}
+
+\subsection{Transessive}
+The \s{transess} case indicates that an object is on the far side of or beyond another object. When used with an expression
+of time, it means ‘after’.
+\begin{examples}
+    \item \w{\b{ḅárŷ}y’éc’h dýsá} ‘two centuries later’
+    \item \w{\b{ḅár}ríb’hy’ér} ‘across/beyond the river’
+\end{examples}
+
+Do not confuse this case with the \s{ess}, e.g. in the \s{indef pl}, we have
+\s{transess} \w{ḅárŷn-} but \s{ess} \w{ḅárýn-}.
 
 \subsection{Superessive}
 The \s{spress} case means ‘above’. Note that it normally does \textit{not} mean
