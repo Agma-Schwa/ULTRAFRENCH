@@ -2462,6 +2462,17 @@
         },
         {
             "def": {
+                "def": "Mercury, quicksilver."
+            },
+            "def-search": "mercury quicksilver",
+            "etym": "<f-pf>vif-argent</f-pf>",
+            "hw-search": "bhibharja",
+            "ipa": "βiβɑ̃ɰʑɑ̃",
+            "pos": "n.",
+            "word": "b’hib’hárjá"
+        },
+        {
+            "def": {
                 "def": "Victory."
             },
             "def-search": "victory",
@@ -4343,7 +4354,7 @@
         {
             "def": {
                 "comment": "<p>The subject is in the <f-s>abs</f-s> case.</p>",
-                "def": "To become, turn into (+<f-s>trans</f-s> sth./sbd.)."
+                "def": "To become, turn into (+<f-s>transl</f-s> sth./sbd.)."
             },
             "def-search": "become into sthsbd to turn",
             "etym": "<f-pf>devenir</f-pf>",
@@ -4708,7 +4719,7 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "<p>For ‘<em>at</em> the back of’, the <f-s>postess</f-s> is used instead.</p>",
+                    "comment": "<p>For ‘<em>at</em> the back of’, the <f-s>pstess</f-s> is used instead.</p>",
                     "def": "+<f-s>gen</f-s> To be the back of."
                 }
             ],
@@ -7604,17 +7615,17 @@
             "word": "ráb’hau"
         },
         {
-            "def-search": "a flatten fuck get lost off plane sth to with",
+            "def-search": "a flatten fuck get lost off plane to with",
             "etym": "<f-pf>raboter</f-pf>",
             "hw-search": "rabhauth",
             "ipa": "ɰɑ̃βoθ",
             "pos": "n.",
             "senses": [
                 {
-                    "def": "<em>(woodworking)</em> +<f-s>acc</f-s> To plane, flatten sth. with a plane."
+                    "def": "<em>(woodworking)</em> +<f-s>acc</f-s> To plane, flatten with a plane."
                 },
                 {
-                    "comment": "<p>Abbreviated form of <f-w>c’heḍẹráb’haut’h</f-w>, literally ‘plane yourself’. First attested in the works of the Early UF comedian <f-s>J. A. B. Snet’h</f-s>. The plural form is generally <f-w>c’heb’hḍ’ráb’h’ !</f-w>.</p>",
+                    "comment": "<p>Abbreviated form of <f-w>c’heḍẹráb’haut’h</f-w>, literally ‘plane yourself’. First attested in the works of the Early UF comedian <f-s>J. A. B. Snet’h</f-s>. The plural form is generally <f-w>c’heb’hḍ’ráb’h’</f-w>.</p>",
                     "def": "<em>(informal)</em> <f-w>c’heḍ’ráb’h’ !</f-w> Fuck off!, get lost!"
                 }
             ],
@@ -9346,6 +9357,17 @@
         },
         {
             "def": {
+                "def": "To laugh (+<f-s>gen</f-s> at sbd./sth.)."
+            },
+            "def-search": " at laugh to",
+            "etym": "<f-pf>rire</f-pf>",
+            "hw-search": "rir",
+            "ipa": "ɰĩɰ",
+            "pos": "v.",
+            "word": "rír"
+        },
+        {
+            "def": {
                 "def": "To be sad."
             },
             "def-search": "be sad to",
@@ -10010,6 +10032,17 @@
         },
         {
             "def": {
+                "def": "Lead (metal)."
+            },
+            "def-search": "lead metal",
+            "etym": "<f-pf>saturnin</f-pf>",
+            "hw-search": "sathyrn",
+            "ipa": "sɐθʏ̃ɰn",
+            "pos": "n.",
+            "word": "sat’hýrn"
+        },
+        {
+            "def": {
                 "def": "+<f-s>subj</f-s> Except that."
             },
             "def-search": "except that",
@@ -10167,6 +10200,17 @@
         },
         {
             "def": {
+                "def": "+<f-s>pci</f-s> To wonder, ponder."
+            },
+            "def-search": "ponder to wonder",
+            "etym": "<f-pf>se demander</f-pf>",
+            "hw-search": "sdhevadh",
+            "ipa": "sðɛ̃ʋ̃ɑ̃̃ð",
+            "pos": "v.",
+            "word": "sd’hévâd’h"
+        },
+        {
+            "def": {
                 "def": "Seventh."
             },
             "def-search": "seventh",
@@ -10238,6 +10282,17 @@
             "ipa": "sɛ̃ȷ̊ɛ̃",
             "pos": "num.",
             "word": "séc̣é"
+        },
+        {
+            "def": {
+                "def": "To be dry."
+            },
+            "def-search": "be dry to",
+            "etym": "<f-pf>sec</f-pf>",
+            "hw-search": "sech",
+            "ipa": "sɛx",
+            "pos": "v.",
+            "word": "sèc’h"
         },
         {
             "def": {
@@ -12148,6 +12203,17 @@
         },
         {
             "def": {
+                "def": "To be wet, moist."
+            },
+            "def-search": "be moist to wet",
+            "etym": "<f-pf>mouillé</f-pf>",
+            "hw-search": "vuye",
+            "ipa": "ʋ̃ũɥẽ",
+            "pos": "v.",
+            "word": "vúy’ẹ́"
+        },
+        {
+            "def": {
                 "def": "Mother."
             },
             "def-search": "mother",
@@ -12388,6 +12454,17 @@
             "ipa": "ɥɛ̃̃",
             "pos": "v.",
             "word": "y’ê"
+        },
+        {
+            "def": {
+                "def": "Century."
+            },
+            "def-search": "century",
+            "etym": "<f-pf>siècle</f-pf>",
+            "hw-search": "yech",
+            "ipa": "ɥɛ̃x",
+            "pos": "n.",
+            "word": "y’éc’h"
         },
         {
             "def": {
@@ -12925,6 +13002,11 @@
             "from": "c’haúḍé",
             "from-search": "chaude",
             "to": "ní"
+        },
+        {
+            "from": "c’heb’hḍ’ráb’h’",
+            "from-search": "chebhdrabh",
+            "to": "ráb’haut’h"
         },
         {
             "from": "c’heḍ’ráb’h’",

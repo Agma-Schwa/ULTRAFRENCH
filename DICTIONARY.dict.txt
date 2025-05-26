@@ -495,19 +495,23 @@ rúb’h|v.|trouver|+\s{acc/part} To find, discover \comment The \s{acc} is gene
     may be used instead.
 b’hid|v.|vide|To be empty
 rêdrsýrśẹ|v.|\pf{prendre sur soi}|
-  \\ +\s{aci} To take upon onself to do sth.
-  \\ +\s{pci} To take upon oneself to start doing sth.
+    \\ +\s{aci} To take upon onself to do sth.
+    \\ +\s{pci} To take upon oneself to start doing sth.
 c’haúḍrêd’hẹ|n.|compte-rendu|Account, rec\-ord
 c’haú|adj.|see sense 2|\\ Holy. \\ \w{c’haú-}\L{} \comment The so-called ‘religious prefix’ is prepended in derivation to nouns that
   have a religous connotation; this is historically a back-formation from \w{c’haúfrér} and \w{c’haúhýr}
   which happen to both start with this ‘prefix’
 ḷý|n.|lieu|\textit{Base of the spatial correlatives. In senses 2–5, case affixes are attached before \this, e.g.
     sense 2 \s{all} \w{sẹb’héḷý} ‘hither’}.
-  \\ Place, location
-  \\ \w{sẹ}\ldots\this{} \s{def} [from \w{sẹh}] Here, hither, hence, \&c. \comment Proximal demonstrative (all cases)
-  \\ \w{sý’\L}\ldots\this{} \s{def} [from \w{sý’ẹ}] There, thither, thence, \&c. \comment Distal demonstrative (all cases)
-  \\ \this\w{hes} \s{indef} [from \w{c’hes}] Where, whither, when\-ce, \&c. \comment Interrogative (locative cases only)
-  \\ \w{s’}/\w{sá\L}\ldots\this{} \s{indef} [from \w{sá}] No\-where, from no\-where, \&c. \comment Negative (locative cases only)
+    \\ Place, location
+    \\ \w{sẹ}\ldots\this{} \s{def} [from \w{sẹh}] Here, hither, hence, \&c.
+        \comment Proximal demonstrative (all cases)
+    \\ \w{sý’\L}\ldots\this{} \s{def} [from \w{sý’ẹ}] There, thither, thence, \&c.
+        \comment Distal demonstrative (all cases)
+    \\ \this\w{hes} \s{indef} [from \w{c’hes}] Where, whither, when\-ce, \&c.
+        \comment Interrogative (locative cases only)
+    \\ \w{s’}/\w{sá\L}\ldots\this{} \s{indef} [from \w{sá}] No\-where, from no\-where, \&c.
+        \comment Negative (locative cases only)
 c’haúbhárrás|n.|\w{c’haú} + \pf{paroisse}|Parish
 c’haúhaúvnaút’hẹ|n.|\w{c’haú} + \pf{com\-mu\-nau\-té}|Mo\-nastery
 c’haúvnaút’hẹ|n.|communauté|Community
@@ -836,7 +840,7 @@ sy’b’h|v. intr.|\pf{se lever}|To rise (+\s{ela} from sth.)
 faú|adv.|fort|Very, right, really. \comment Postpositive intensifier placed after adjectives, particularly
     in the comparative or superlative degrees.
 rés|n.|reste|Rest, remainder
-dẹb’hní|v.|devenir|To become, turn into (+\s{trans} sth./sbd.). \comment The subject is in the \s{abs} case
+dẹb’hní|v.|devenir|To become, turn into (+\s{transl} sth./sbd.). \comment The subject is in the \s{abs} case
 sẹ|particle|ainsi|So, thus, now, well then, as a result
 véc|n.|mèche|\\ A strand of hair \\\s{pl} Hair
 ḍaúb’h|v. intr.|tomber|To fall, drop
@@ -1166,7 +1170,7 @@ ac’h|n.|acte|Act, action
 ánvá|n.|animal|Animal
 déry’é|v.|derrière|
     \\+\s{gen} To be the back of
-        \comment For ‘\textit{at} the back of’, the \s{postess} is used instead.
+        \comment For ‘\textit{at} the back of’, the \s{pstess} is used instead.
 raû|v.|rond|To be round
 sévê|n.|semaine|Week
 ánẹ́|n.|année|Year
@@ -1350,10 +1354,15 @@ ráb’haut’h|n.|raboter|
         \comment Abbreviated form of \w{c’heḍẹráb’haut’h}, literally ‘plane yourself’. First attested
             in the works of the Early UF comedian \s{J. A. B. Snet’h}. The plural form is generally
             \w{c’heb’hḍ’ráb’h’}
+sat’hýrn|n.|saturnin|Lead (metal)
+b’hib’hárjá|n.|vif-argent|Mercury, quicksilver
+sèc’h|v.|sec|To be dry
+vúy’ẹ́|v.|mouillé|To be wet, moist
+sd’hévâd’h|v.|\pf{se demander}|+\s{pci} To wonder, ponder
+rír|v.|rire|To laugh (+\s{gen} at sbd./sth.)
+y’éc’h|n.|siècle|Century
 
-# silver, copper, bronze, iron, steel, lead, mercury
-
-## Currently at entry 336 of the following page:
+## Currently at entry 375 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
