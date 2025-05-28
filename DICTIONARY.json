@@ -132,6 +132,17 @@
         },
         {
             "def": {
+                "def": "To be the front of sth."
+            },
+            "def-search": "be front of sth the to",
+            "etym": "<f-pf>en face</f-pf>",
+            "hw-search": "abhas",
+            "ipa": "ɑ̃βɐs",
+            "pos": "v.",
+            "word": "áb’has"
+        },
+        {
+            "def": {
                 "def": "Aviation."
             },
             "def-search": "aviation",
@@ -486,6 +497,33 @@
             "word": "áḍrébh"
         },
         {
+            "def-search": "coach exercise to train",
+            "etym": "<f-pf>entraîner</f-pf>",
+            "hw-search": "adren",
+            "ipa": "ɑ̃dɰɛ̃n",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To train, coach."
+                },
+                {
+                    "def": "<em>refl.</em> To exercise."
+                }
+            ],
+            "word": "áḍrén"
+        },
+        {
+            "def": {
+                "def": "Property, attribute."
+            },
+            "def-search": "attribute property",
+            "etym": "<f-pf>atribut</f-pf>",
+            "hw-search": "adribh",
+            "ipa": "ɐdɰĩβ",
+            "pos": "n.",
+            "word": "aḍríb’h"
+        },
+        {
             "def": {
                 "def": "Android."
             },
@@ -761,6 +799,28 @@
             "word": "aráráhúr"
         },
         {
+            "def": {
+                "def": "+<f-s>acc</f-s> To annoy, anger."
+            },
+            "def-search": "anger annoy to",
+            "etym": "<f-pf>agacer</f-pf>",
+            "hw-search": "aras",
+            "ipa": "ɑ̃ɰɑ̃s",
+            "pos": "v.",
+            "word": "árás"
+        },
+        {
+            "def": {
+                "def": "Anger, wrath, ire."
+            },
+            "def-search": "anger ire wrath",
+            "etym": "from <f-w>árás</f-w>",
+            "hw-search": "arasau",
+            "ipa": "ɑ̃ɰɑ̃sɔ̃̃",
+            "pos": "n.",
+            "word": "árásaû"
+        },
+        {
             "def-search": "a cry for help to",
             "etym": "<f-pf>haro</f-pf>",
             "hw-search": "arau",
@@ -822,9 +882,9 @@
         },
         {
             "def": {
-                "def": "To arrive."
+                "def": "To arrive, reach a destination."
             },
-            "def-search": "arrive to",
+            "def-search": "a arrive destination reach to",
             "etym": "<f-pf>arriver</f-pf>",
             "hw-search": "aribh",
             "ipa": "ɑ̃ɰĩβ",
@@ -1787,13 +1847,29 @@
         },
         {
             "def": {
-                "def": "Part, portion, piece, faction of a whole."
+                "def": "Interest."
             },
-            "def-search": "a faction of part piece portion whole",
+            "def-search": "interest",
+            "etym": "From <f-w>ḅárḍáḍ</f-w>",
+            "hw-search": "bardadau",
+            "ipa": "bɑ̃ɰdɑ̃dɔ̃̃",
+            "pos": "n.",
+            "word": "ḅárḍáḍaû"
+        },
+        {
+            "def-search": "a eg fraction of part piece portion road wholestretch",
             "etym": "<f-pf>partie</f-pf>",
             "hw-search": "barde",
             "ipa": "bɑ̃ɰdə̥",
             "pos": "n.",
+            "senses": [
+                {
+                    "def": "Part, portion, piece, fraction of a whole."
+                },
+                {
+                    "def": "Stretch (e.g. of a road)."
+                }
+            ],
             "word": "ḅárḍẹ"
         },
         {
@@ -2021,6 +2097,17 @@
         },
         {
             "def": {
+                "def": "To be beautiful, attractive, pretty."
+            },
+            "def-search": "attractive be beautiful pretty to",
+            "etym": "<f-pf>belle</f-pf>",
+            "hw-search": "bel",
+            "ipa": "bɛɮ̃",
+            "pos": "v.",
+            "word": "bèl"
+        },
+        {
+            "def": {
                 "def": "Shovel."
             },
             "def-search": "shovel",
@@ -2062,6 +2149,17 @@
             "ipa": "bɛ̃ɰs",
             "pos": "v.",
             "word": "ḅérs"
+        },
+        {
+            "def": {
+                "def": "To be special."
+            },
+            "def-search": "be special to",
+            "etym": "<f-pf>spécial</f-pf>",
+            "hw-search": "besyal",
+            "ipa": "besɥɑ̃ɮ̃",
+            "pos": "v.",
+            "word": "besy’ál"
         },
         {
             "def": {
@@ -2414,6 +2512,17 @@
         },
         {
             "def": {
+                "def": "Verb."
+            },
+            "def-search": "verb",
+            "etym": "<f-pf>verbe</f-pf>",
+            "hw-search": "bher",
+            "ipa": "βɛ̃ɰ",
+            "pos": "n.",
+            "word": "b’hér"
+        },
+        {
+            "def": {
                 "def": "To be virtuous."
             },
             "def-search": "be to virtuous",
@@ -2435,14 +2544,19 @@
             "word": "b’hẹ́ríf"
         },
         {
-            "def": {
-                "def": "Truth."
-            },
-            "def-search": "truth",
+            "def-search": "truthfact",
             "etym": "from <f-pf>vérité</f-pf>; the /i/ disappeared during Early Middle UF",
             "hw-search": "bherthe",
             "ipa": "βɛ̃ɰθe",
             "pos": "n.",
+            "senses": [
+                {
+                    "def": "Truth."
+                },
+                {
+                    "def": "Fact."
+                }
+            ],
             "word": "b’hért’he"
         },
         {
@@ -2575,6 +2689,17 @@
             "ipa": "βiɮ̃",
             "pos": "n.",
             "word": "b’hil"
+        },
+        {
+            "def": {
+                "def": "Small Town."
+            },
+            "def-search": "small town",
+            "etym": "<f-pf>village</f-pf>",
+            "hw-search": "bhiya",
+            "ipa": "βiɥ̃ɐ",
+            "pos": "n.",
+            "word": "b’hiý’a"
         },
         {
             "def": {
@@ -2753,6 +2878,17 @@
         },
         {
             "def": {
+                "def": "Litre, liter (metric unit)."
+            },
+            "def-search": "liter litre metric unit",
+            "etym": "<f-pf>bouteille</f-pf>",
+            "hw-search": "buthey",
+            "ipa": "buθɛ̃ɥ",
+            "pos": "n.",
+            "word": "but’héy’"
+        },
+        {
+            "def": {
                 "def": "+<f-s>subj</f-s> Perhaps, maybe."
             },
             "def-search": "maybe perhaps",
@@ -2775,9 +2911,9 @@
         },
         {
             "def": {
-                "def": "Room."
+                "def": "Room, chamber."
             },
-            "def-search": "room",
+            "def-search": "chamber room",
             "etym": "<f-pf>chambre</f-pf>",
             "hw-search": "ca",
             "ipa": "ɕɑ̃",
@@ -2874,20 +3010,36 @@
             "def-search": "carriage cart",
             "etym": "<f-pf>chariot</f-pf>",
             "hw-search": "caryau",
-            "ipa": "ɕɑ̃ɰyɔ̃",
+            "ipa": "ɕɑ̃ɰɥɔ̃",
             "pos": "n.",
-            "word": "cár’yaú"
+            "word": "cáry’aú"
         },
         {
-            "def": {
-                "def": "Luck."
-            },
-            "def-search": "luck",
+            "def-search": "luckchance",
             "etym": "<f-pf>chance</f-pf>",
             "hw-search": "cas",
             "ipa": "ɕɑ̃s",
             "pos": "n.",
+            "senses": [
+                {
+                    "def": "Luck."
+                },
+                {
+                    "def": "Chance."
+                }
+            ],
             "word": "cás"
+        },
+        {
+            "def": {
+                "def": "To sing."
+            },
+            "def-search": "sing to",
+            "etym": "<f-pf>chanter</f-pf>",
+            "hw-search": "cath",
+            "ipa": "ɕɑ̃θ",
+            "pos": "v.",
+            "word": "cát’h"
         },
         {
             "def": {
@@ -3600,6 +3752,17 @@
         },
         {
             "def": {
+                "def": "Continent."
+            },
+            "def-search": "continent",
+            "etym": "<f-pf>continent</f-pf>",
+            "hw-search": "chauthina",
+            "ipa": "xɔ̃θĩnɑ̃̃",
+            "pos": "v.",
+            "word": "c’haút’hínâ"
+        },
+        {
+            "def": {
                 "def": "Magic."
             },
             "def-search": "magic",
@@ -3647,6 +3810,17 @@
                 }
             ],
             "word": "c’haúy’ê"
+        },
+        {
+            "def": {
+                "def": "(<em>architecture</em>) Column."
+            },
+            "def-search": "column",
+            "etym": "<f-pf>colonne</f-pf>",
+            "hw-search": "chauyo",
+            "ipa": "xoɥ̃ɔ̃",
+            "pos": "n.",
+            "word": "c’hauý’ó"
         },
         {
             "def": {
@@ -4064,14 +4238,14 @@
             "word": "c’huv́"
         },
         {
-            "def-search": "colour suit",
+            "def-search": "color colour suit",
             "etym": "<f-pf>couleur</f-pf>",
             "hw-search": "chuyyr",
             "ipa": "xuɥ̃ʏ̃ɰ",
             "pos": "n.",
             "senses": [
                 {
-                    "def": "Colour."
+                    "def": "Colour, color."
                 },
                 {
                     "def": "(<em>card games</em>) Suit."
@@ -4116,6 +4290,17 @@
                 }
             ],
             "word": "cif"
+        },
+        {
+            "def": {
+                "def": "Market."
+            },
+            "def-search": "market",
+            "etym": "<f-pf>échope</f-pf>",
+            "hw-search": "cob",
+            "ipa": "ɕob",
+            "pos": "n.",
+            "word": "coḅ"
         },
         {
             "def": {
@@ -4186,6 +4371,22 @@
             "word": "ḍá"
         },
         {
+            "def-search": "a in journeystage on process step stop",
+            "etym": "<f-pf>étape</f-pf>",
+            "hw-search": "dab",
+            "ipa": "dɐb",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Stop (on a journey)."
+                },
+                {
+                    "def": "Stage, step (in a process)."
+                }
+            ],
+            "word": "ḍaḅ"
+        },
+        {
             "def": {
                 "def": "Stand, stall, booth."
             },
@@ -4195,6 +4396,17 @@
             "ipa": "dɑ̃d",
             "pos": "n.",
             "word": "ḍád"
+        },
+        {
+            "def": {
+                "def": "Mole (SI unit)."
+            },
+            "def-search": "mole si unit",
+            "etym": "<f-pf>tas d’atomes</f-pf>",
+            "hw-search": "dadhathau",
+            "ipa": "dɐðɐθɔ̃",
+            "pos": "n.",
+            "word": "ḍad’hat’haú"
         },
         {
             "def": {
@@ -4354,6 +4566,18 @@
         },
         {
             "def": {
+                "comment": "<p>In an abstract sense; for an actual physical field, see <f-w>ráhó</f-w>.</p>",
+                "def": "Domain, field."
+            },
+            "def-search": "domain field",
+            "etym": "<f-pf>domaine</f-pf>",
+            "hw-search": "dauve",
+            "ipa": "dɔ̃ʋ̃ɛ̃̃",
+            "pos": "n.",
+            "word": "daúvê"
+        },
+        {
+            "def": {
                 "def": "<em>Male or female given name, equivalent to English ‘Dominic’</em>."
             },
             "def-search": "",
@@ -4433,6 +4657,18 @@
             "ipa": "deβɔ̃ɰ",
             "pos": "v.",
             "word": "deb’haúr"
+        },
+        {
+            "def": {
+                "def": "To develop."
+            },
+            "def-search": "develop to",
+            "etym": "<f-pf>développer</f-pf>",
+            "forms": "<f-s>fut</f-s> deb’hlaubhe, <f-s>subj</f-s> deb’hlaubhs",
+            "hw-search": "debhlau",
+            "ipa": "deβɮ̃o",
+            "pos": "v.",
+            "word": "deb’hlau"
         },
         {
             "def": {
@@ -4679,6 +4915,28 @@
             "ipa": "dɛ̃nɛ̃b",
             "pos": "n. pl.",
             "word": "ḍénéb"
+        },
+        {
+            "def": {
+                "def": "+<f-s>acc</f-s>To hold."
+            },
+            "def-search": "hold to",
+            "etym": "<f-pf>tenir</f-pf>",
+            "hw-search": "deni",
+            "ipa": "dɛ̃nĩ",
+            "pos": "v.",
+            "word": "ḍéní"
+        },
+        {
+            "def": {
+                "def": "To repeat, iterate."
+            },
+            "def-search": "iterate repeat to",
+            "etym": "<f-pf>de nouveau</f-pf>",
+            "hw-search": "denubh",
+            "ipa": "dɛ̃nũβ",
+            "pos": "v.",
+            "word": "dénúb’h"
         },
         {
             "def": {
@@ -5761,14 +6019,19 @@
             "word": "ec̣"
         },
         {
-            "def": {
-                "def": "To shine."
-            },
-            "def-search": "shine to",
+            "def-search": "glimmer shine to",
             "etym": "<f-pf>éclairer</f-pf>",
             "hw-search": "echler",
             "ipa": "exɮ̃ɛ̃ɰ",
-            "pos": "v.",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "To shine, glimmer."
+                },
+                {
+                    "def": "<em>n.</em> Shine, glimmer."
+                }
+            ],
             "word": "ec’hlér"
         },
         {
@@ -5976,6 +6239,17 @@
         },
         {
             "def": {
+                "def": "Mind."
+            },
+            "def-search": "mind",
+            "etym": "<f-pf>fantôme</f-pf>",
+            "hw-search": "fathau",
+            "ipa": "ɸɑ̃θɔ̃",
+            "pos": "n.",
+            "word": "fát’haú"
+        },
+        {
+            "def": {
                 "comment": "<p>Postpositive intensifier placed after adjectives, particularly in the comparative or superlative degrees.</p>",
                 "def": "Very, right, really."
             },
@@ -6062,6 +6336,18 @@
             "ipa": "ɸɛ̃",
             "pos": "n.",
             "word": "fé"
+        },
+        {
+            "def": {
+                "comment": "<p>This word is derived from a northern pronunciation of <f-pf>fin</f-pf>, unlike <f-w>fé</f-w>, which uses the southern pronunciation.</p>",
+                "def": "To be fine, thin, small."
+            },
+            "def-search": "be fine small thin to",
+            "etym": "<f-pf>fin</f-pf>",
+            "hw-search": "fe",
+            "ipa": "ɸẽ",
+            "pos": "v.",
+            "word": "fẹ́"
         },
         {
             "def": {
@@ -6178,6 +6464,17 @@
         },
         {
             "def": {
+                "def": "To shop, especially leisurely."
+            },
+            "def-search": "especially leisurely shop to",
+            "etym": "<f-pf>faire les boutiques</f-pf>",
+            "hw-search": "fełebhuthich",
+            "ipa": "ɸɛ̃ɮ̃ʶeβuθix",
+            "pos": "v.",
+            "word": "féłeb’hut’hic’h"
+        },
+        {
+            "def": {
                 "def": "To fix, set, establish."
             },
             "def-search": "establish fix set to",
@@ -6209,6 +6506,17 @@
             "ipa": "ɸĩnĩθ",
             "pos": "n.",
             "word": "fínít’h"
+        },
+        {
+            "def": {
+                "def": "Figure."
+            },
+            "def-search": "figure",
+            "etym": "<f-pf>figure</f-pf>",
+            "hw-search": "firyr",
+            "ipa": "ɸĩɰʏ̃ɰ",
+            "pos": "n.",
+            "word": "fírýr"
         },
         {
             "def": {
@@ -6572,7 +6880,7 @@
             "word": "lá"
         },
         {
-            "def-search": "flat level or plane surfacemap",
+            "def-search": "determining flat for is level levelmap or plane sth surfacetool used whether",
             "etym": "<f-pf>plan</f-pf>",
             "hw-search": "la",
             "ipa": "ɮ̃ɑ̃",
@@ -6582,6 +6890,9 @@
                     "def": "Level or flat surface."
                 },
                 {
+                    "def": "Tool used for determining whether sth. is level."
+                },
+                {
                     "comment": "<p>Mainly used for street and city maps.</p>",
                     "def": "Map."
                 },
@@ -6589,6 +6900,17 @@
                     "def": "<em>(geometry)</em> Plane."
                 }
             ],
+            "word": "lá"
+        },
+        {
+            "def": {
+                "def": "To be level or flat."
+            },
+            "def-search": "be flat level or to",
+            "etym": "<f-pf>plan</f-pf>",
+            "hw-search": "la",
+            "ipa": "ɮ̃ɑ̃",
+            "pos": "v.",
             "word": "lá"
         },
         {
@@ -6995,6 +7317,17 @@
         },
         {
             "def": {
+                "def": "Row (of a table)."
+            },
+            "def-search": "a of row table",
+            "etym": "<f-pf>ligne</f-pf>",
+            "hw-search": "li",
+            "ipa": "ɮ̃ĩ",
+            "pos": "n.",
+            "word": "lí"
+        },
+        {
+            "def": {
                 "def": "List."
             },
             "def-search": "list",
@@ -7173,6 +7506,17 @@
             "word": "lýv́á"
         },
         {
+            "def": {
+                "def": "To be light, bright, luminous."
+            },
+            "def-search": "be bright light luminous to",
+            "etym": "<f-pf>lumineux</f-pf>",
+            "hw-search": "lyvny",
+            "ipa": "ɮ̃ʏ̃ʋ̃nʏ̃",
+            "pos": "v.",
+            "word": "lývný"
+        },
+        {
             "def-search": "a as electromagnetic lamp light of or radiationa source such torch visible",
             "etym": "<f-pf>lumière</f-pf>",
             "hw-search": "lyvyer",
@@ -7251,6 +7595,22 @@
             "word": "nát’hýr"
         },
         {
+            "def-search": "namenoun",
+            "etym": "<f-pf>nom</f-pf>",
+            "hw-search": "nau",
+            "ipa": "nɔ̃",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Name."
+                },
+                {
+                    "def": "Noun."
+                }
+            ],
+            "word": "naú"
+        },
+        {
             "def-search": "a amount great many much number of so such",
             "etym": "<f-pf>nombre</f-pf>",
             "hw-search": "naub",
@@ -7281,6 +7641,28 @@
         },
         {
             "def": {
+                "def": "Note."
+            },
+            "def-search": "note",
+            "etym": "<f-pf>note</f-pf>",
+            "hw-search": "naud",
+            "ipa": "nɔ̃d",
+            "pos": "n.",
+            "word": "naúḍ"
+        },
+        {
+            "def": {
+                "def": "To be normal."
+            },
+            "def-search": "be normal to",
+            "etym": "<f-pf>normal</f-pf>",
+            "hw-search": "naurval",
+            "ipa": "nɔ̃ɰʋ̃ɑ̃ɮ̃",
+            "pos": "v.",
+            "word": "naúrvál"
+        },
+        {
+            "def": {
                 "def": "Snow."
             },
             "def-search": "snow",
@@ -7302,6 +7684,17 @@
             "ipa": "nɛ̃d",
             "pos": "v. dep.",
             "word": "néḍ"
+        },
+        {
+            "def": {
+                "def": "To hang by a thread."
+            },
+            "def-search": "a by hang thread to",
+            "etym": "<f-pf>ne tenir qu’à un fil</f-pf>",
+            "hw-search": "nednirchaybh",
+            "ipa": "nɛ̃dnĩɰxɐʏ̃β",
+            "pos": "v.",
+            "word": "néḍnírc’haýb’h"
         },
         {
             "def": {
@@ -7383,20 +7776,34 @@
             "word": "ní"
         },
         {
-            "def-search": "degree level of on the",
+            "def-search": "degree floor level of on the",
             "etym": "<f-pf>niveau</f-pf>",
             "hw-search": "nibhe",
             "ipa": "nĩβə̥",
             "pos": "n.",
             "senses": [
                 {
-                    "def": "Level, degree."
+                    "def": "Level, floor."
+                },
+                {
+                    "def": "<em>fig.</em> Level, degree."
                 },
                 {
                     "def": "<f-s>def iness + gen</f-s> On the level of."
                 }
             ],
             "word": "níb’hẹ"
+        },
+        {
+            "def": {
+                "def": "To level, flatten."
+            },
+            "def-search": "flatten level to",
+            "etym": "<f-pf>niveler</f-pf>",
+            "hw-search": "nibhy",
+            "ipa": "nĩβɥ̃",
+            "pos": "v.",
+            "word": "níb’hý’"
         },
         {
             "def": {
@@ -7794,6 +8201,17 @@
         },
         {
             "def": {
+                "def": "Ravine."
+            },
+            "def-search": "ravine",
+            "etym": "<f-pf>ravin</f-pf>",
+            "hw-search": "rabhe",
+            "ipa": "ɰɑ̃βɛ̃",
+            "pos": "n.",
+            "word": "ráb’hé"
+        },
+        {
+            "def": {
                 "def": "Well done, bravo."
             },
             "def-search": "bravo done well",
@@ -7861,10 +8279,21 @@
         },
         {
             "def": {
-                "comment": "<p>The <f-s>part</f-s> usually implies that only a part or some of a larger whole is grabbed, e.g. a handful of sand).</p>",
-                "def": "+<f-s>acc</f-s> <em>or</em> <f-s>part</f-s> To grab."
+                "def": "Box."
             },
-            "def-search": "grab to",
+            "def-search": "box",
+            "etym": "<f-pf>boîte</f-pf>",
+            "hw-search": "rad",
+            "ipa": "ɰɑ̃d",
+            "pos": "n.",
+            "word": "ráḍ"
+        },
+        {
+            "def": {
+                "comment": "<p>The <f-s>part</f-s> usually implies that only a part or some of a larger whole is grabbed, e.g. a handful of sand).</p>",
+                "def": "+<f-s>acc</f-s> <em>or</em> <f-s>part</f-s> To grab, grasp."
+            },
+            "def-search": "grab grasp to",
             "etym": "<f-pf>prendre</f-pf>",
             "hw-search": "rad",
             "ipa": "ɰɑ̃̃d",
@@ -8009,6 +8438,17 @@
         },
         {
             "def": {
+                "def": "Hour."
+            },
+            "def-search": "hour",
+            "etym": "<f-pf>soixante</f-pf> + <f-pf>minute</f-pf>",
+            "hw-search": "rahavnyd",
+            "ipa": "ɰɑ̃hɑ̃ʋ̃nʏ̃d",
+            "pos": "n.",
+            "word": "ráhávnýḍ"
+        },
+        {
+            "def": {
                 "def": "Bird."
             },
             "def-search": "bird",
@@ -8064,9 +8504,9 @@
         },
         {
             "def": {
-                "def": "+<f-s>acc</f-s> To choose."
+                "def": "+<f-s>acc</f-s> To choose, select."
             },
-            "def-search": "choose to",
+            "def-search": "choose select to",
             "etym": "<f-pf>choisir</f-pf>",
             "hw-search": "rahir",
             "ipa": "ɰɑ̃hĩɰ",
@@ -8259,6 +8699,17 @@
             "word": "rásáḍy’ê"
         },
         {
+            "def": {
+                "def": "To be transparent, clear."
+            },
+            "def-search": "be clear to transparent",
+            "etym": "<f-pf>transparent</f-pf>",
+            "hw-search": "rasbar",
+            "ipa": "ɰɑ̃̃sbɑ̃ɰ",
+            "pos": "v.",
+            "word": "râsḅár"
+        },
+        {
             "def-search": "apparent be become clear come evident for it known light that to transpire",
             "etym": "<f-pf>transpirer</f-pf>",
             "forms": "<f-s>fut</f-s> râsírẹ́, <f-s>subj</f-s> râsírs",
@@ -8411,6 +8862,33 @@
         },
         {
             "def": {
+                "def": "To be strong, powerful, mighty."
+            },
+            "def-search": "be mighty powerful strong to",
+            "etym": "<f-pf>robuste</f-pf>",
+            "hw-search": "raubhys",
+            "ipa": "ɰɔ̃βys",
+            "pos": "v.",
+            "word": "raúb’hys"
+        },
+        {
+            "def-search": "is ownedownership property something that",
+            "etym": "<f-pf>propriété</f-pf>",
+            "hw-search": "raubriyeth",
+            "ipa": "ɰɔ̃bɰĩɥɛ̃θ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Property, something that is owned."
+                },
+                {
+                    "def": "Ownership."
+                }
+            ],
+            "word": "raúḅríy’ét’h"
+        },
+        {
+            "def": {
                 "def": "Fang."
             },
             "def-search": "fang",
@@ -8525,6 +9003,17 @@
             "word": "raúj"
         },
         {
+            "def": {
+                "def": "Plan, project."
+            },
+            "def-search": "plan project",
+            "etym": "<f-pf>projet</f-pf>",
+            "hw-search": "rauj",
+            "ipa": "ɰɔ̃ʑ",
+            "pos": "n.",
+            "word": "raúj"
+        },
+        {
             "def-search": "for language short speech word",
             "etym": "<f-pf>parole</f-pf>",
             "hw-search": "raul",
@@ -8578,6 +9067,22 @@
             "ipa": "ɰɔ̃ɮ̃ɛ̃",
             "pos": "n.",
             "word": "raúlé"
+        },
+        {
+            "def-search": "be coarse rude to uncouth",
+            "etym": "<f-pf>grossier</f-pf>",
+            "hw-search": "rausye",
+            "ipa": "ɰɔ̃sɥɛ̃",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To be coarse."
+                },
+                {
+                    "def": "(<em>of a person</em>) To be rude, uncouth."
+                }
+            ],
+            "word": "raúsy’é"
         },
         {
             "def": {
@@ -8644,6 +9149,17 @@
             "ipa": "ɰɑ̃βʶɑ̃̃",
             "pos": "adv.",
             "word": "ráv́â"
+        },
+        {
+            "def": {
+                "def": "(+<f-s>acc</f-s>) To row (a boat)."
+            },
+            "def-search": "a boat row to",
+            "etym": "<f-pf>ramer</f-pf>",
+            "hw-search": "rave",
+            "ipa": "ɰɑ̃ʋ̃ẽ",
+            "pos": "v.",
+            "word": "rávẹ́"
         },
         {
             "def-search": "a describing grammar grammatical language languagea of rules textbook the",
@@ -8977,14 +9493,20 @@
             "word": "réḅ"
         },
         {
-            "def": {
-                "def": "To anticipate (+<f-s>acc</f-s> sth.)."
-            },
-            "def-search": "anticipate sth to",
+            "def-search": "anticipateto for prepare sbd to",
             "etym": "<f-pf>préparer</f-pf>",
             "hw-search": "rebh",
             "ipa": "ɰɛ̃bʱ",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>part</f-s> To anticipate."
+                },
+                {
+                    "comment": "<p>This verb can take up to two complements. Intransitively, it means ‘to be prepared’; with a direct object, the sense is ‘to prepare sbd./sth.’, with an indirect object ‘to prepare oneself for sth.’, and with both it becomes ‘to prepare sbd/sth. for sbd.’</p>",
+                    "def": "To prepare (+<f-s>acc</f-s> sbd./sth.) (+<f-s>dat</f-s> for sbd.)."
+                }
+            ],
             "word": "rébh"
         },
         {
@@ -9003,6 +9525,17 @@
                 }
             ],
             "word": "rẹ́b’h"
+        },
+        {
+            "def": {
+                "def": "+<f-s>acc</f-s> To claim ownership of."
+            },
+            "def-search": "claim of ownership to",
+            "etym": "<f-pf>revandiquer</f-pf>",
+            "hw-search": "rebhadhih",
+            "ipa": "ɰɛ̃βɑ̃ðih",
+            "pos": "v.",
+            "word": "réb’hád’hih"
         },
         {
             "def-search": "down place put relax repose rest set to",
@@ -9065,6 +9598,17 @@
             },
             "def-search": "for sth to wish",
             "etym": "<f-pf>souhaiter</f-pf>",
+            "hw-search": "red",
+            "ipa": "ɰɛ̃d",
+            "pos": "v.",
+            "word": "réḍ"
+        },
+        {
+            "def": {
+                "def": "To be cool, cold."
+            },
+            "def-search": "be cold cool to",
+            "etym": "<f-pf>frette</f-pf>",
             "hw-search": "red",
             "ipa": "ɰɛ̃d",
             "pos": "v.",
@@ -9224,6 +9768,17 @@
         },
         {
             "def": {
+                "def": "To gather, collect."
+            },
+            "def-search": "collect gather to",
+            "etym": "<f-pf>recueillir</f-pf>",
+            "hw-search": "rehyyir",
+            "ipa": "ɰɛ̃hʏ̃ɥĩɰ",
+            "pos": "v.",
+            "word": "réhýy’ír"
+        },
+        {
+            "def": {
                 "def": "To be real, true, genuine, authentic."
             },
             "def-search": "authentic be genuine real to true",
@@ -9293,6 +9848,17 @@
             "ipa": "ɰɛ̃s",
             "pos": "n.",
             "word": "rés"
+        },
+        {
+            "def": {
+                "def": "Peninsula."
+            },
+            "def-search": "peninsula",
+            "etym": "<f-pf>presqu’île</f-pf>",
+            "hw-search": "reschil",
+            "ipa": "ɰɛ̃sxiɮ̃",
+            "pos": "v.",
+            "word": "résc’hil"
         },
         {
             "def": {
@@ -9539,9 +10105,9 @@
         },
         {
             "def": {
-                "def": "To be grey."
+                "def": "To be grey, gray."
             },
-            "def-search": "be grey to",
+            "def-search": "be gray grey to",
             "etym": "<f-pf>grise</f-pf>",
             "hw-search": "ris",
             "ipa": "ɰĩs",
@@ -10308,6 +10874,17 @@
             "word": "say’ẹ"
         },
         {
+            "def": {
+                "def": "Space."
+            },
+            "def-search": "space",
+            "etym": "<f-pf>espace</f-pf>",
+            "hw-search": "sbas",
+            "ipa": "sbɐs",
+            "pos": "n.",
+            "word": "sḅas"
+        },
+        {
             "def-search": "desire sth to want wish",
             "etym": "<f-pf>espérer</f-pf>",
             "forms": "<f-s>fut</f-s> sḅérẹ́, <f-s>subj</f-s> sḅés",
@@ -10655,6 +11232,17 @@
             "word": "sẹhúr"
         },
         {
+            "def": {
+                "def": "Salt."
+            },
+            "def-search": "salt",
+            "etym": "<f-pf>sel</f-pf>",
+            "hw-search": "sel",
+            "ipa": "sɛɮ̃",
+            "pos": "n.",
+            "word": "sèl"
+        },
+        {
             "def-search": "lord",
             "etym": "<f-pf>seigneur</f-pf>",
             "hw-search": "senyr",
@@ -10709,6 +11297,33 @@
                 }
             ],
             "word": "sérẹ́"
+        },
+        {
+            "def-search": "a article column newspaper of tablecolumn",
+            "etym": "<f-pf>serie</f-pf>",
+            "hw-search": "seri",
+            "ipa": "sɛ̃ɰĩ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Column (of a table)."
+                },
+                {
+                    "def": "Column, newspaper article."
+                }
+            ],
+            "word": "sérí"
+        },
+        {
+            "def": {
+                "def": "Segment, line segment."
+            },
+            "def-search": "line segment",
+            "etym": "<f-pf>segment de droute</f-pf>",
+            "hw-search": "servadrrad",
+            "ipa": "sɛ̃ɰʋ̃ɑ̃̃dʀɑ̃d",
+            "pos": "n.",
+            "word": "sérvâdrráḍ"
         },
         {
             "def": {
@@ -10834,7 +11449,7 @@
             "word": "sèt’h"
         },
         {
-            "def-search": "expand extend oneself out sprawl spread stretch to",
+            "def-search": "expand extend for oneself out reach sprawl spread sth stretch to",
             "etym": "from <f-pf>s’étendre</f-pf>; see also <f-sense>3</f-sense>",
             "hw-search": "sethad",
             "ipa": "seθɑ̃d",
@@ -10845,7 +11460,7 @@
                     "def": "+<f-s>acc/part</f-s> To spread, extend, expand."
                 },
                 {
-                    "def": "<em>refl.</em> To sprawl, stretch out, extend oneself."
+                    "def": "<em>refl.</em> To sprawl, stretch out, extend oneself, reach for (+<f-s>dat</f-s> sth.)."
                 },
                 {
                     "def": "<em>intr. (archaic) Same as <f-sense>2</f-sense>, but implicitly reflexive even though it is morphologically only intransitive. This sense has been largely replaced by the morphological reflexive</em>."
@@ -10969,6 +11584,17 @@
             "ipa": "siðə̥",
             "pos": "v.",
             "word": "sid’hẹ"
+        },
+        {
+            "def": {
+                "def": "Nose."
+            },
+            "def-search": "nose",
+            "etym": "<f-pf>Cyrano (de Bergerac)</f-pf>",
+            "hw-search": "sirano",
+            "ipa": "siɰɑ̃nɔ̃",
+            "pos": "n.",
+            "word": "siránó"
         },
         {
             "def": {
@@ -11690,6 +12316,25 @@
             "word": "vár"
         },
         {
+            "def-search": "a ladder march musicstep of or stair walkingmarch way",
+            "etym": "<f-pf>marche</f-pf>",
+            "hw-search": "var",
+            "ipa": "ʋ̃ɑ̃ɰ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "March (way of walking)."
+                },
+                {
+                    "def": "March (music)."
+                },
+                {
+                    "def": "Step (of a stair or ladder)."
+                }
+            ],
+            "word": "vár"
+        },
+        {
             "def-search": "be even have if must obliged owe sbd sth to",
             "etym": "<f-pf>devoir</f-pf>",
             "forms": "<f-s>cond i, ii</f-s> dy, <f-s>fut</f-s> dv́e, <f-s>subj</f-s> ráb’h",
@@ -11714,6 +12359,17 @@
                 }
             ],
             "word": "v́ár"
+        },
+        {
+            "def": {
+                "def": "Shop, store."
+            },
+            "def-search": "shop store",
+            "etym": "<f-pf>magazin</f-pf>",
+            "hw-search": "varahe",
+            "ipa": "ʋ̃ɑ̃ɰɑ̃hɛ̃",
+            "pos": "n.",
+            "word": "váráhé"
         },
         {
             "def-search": "be brown chestnut to",
@@ -11849,6 +12505,17 @@
         },
         {
             "def": {
+                "def": "Molecule."
+            },
+            "def-search": "molecule",
+            "etym": "<f-pf>molécule</f-pf>",
+            "hw-search": "vauyehyl",
+            "ipa": "ʋ̃ɔ̃ɥ̃ehyɮ̃",
+            "pos": "n.",
+            "word": "vaúý’ehyl"
+        },
+        {
+            "def": {
                 "def": "Vice."
             },
             "def-search": "vice",
@@ -11949,7 +12616,7 @@
             "word": "vê₃"
         },
         {
-            "def-search": "a hair of strand",
+            "def-search": "a bomb candlefuse hair hairwick of strand",
             "etym": "<f-pf>mèche</f-pf>",
             "hw-search": "vec",
             "ipa": "ʋ̃ɛ̃ɕ",
@@ -11960,6 +12627,12 @@
                 },
                 {
                     "def": "<f-s>pl</f-s> Hair."
+                },
+                {
+                    "def": "Wick (of a candle)."
+                },
+                {
+                    "def": "Fuse (of a bomb)."
                 }
             ],
             "word": "véc"
@@ -12307,6 +12980,17 @@
         },
         {
             "def": {
+                "def": "Minute."
+            },
+            "def-search": "minute",
+            "etym": "<f-pf>minute</f-pf>",
+            "hw-search": "vnyd",
+            "ipa": "ʋ̃nʏ̃d",
+            "pos": "n.",
+            "word": "vnýḍ"
+        },
+        {
+            "def": {
                 "def": "Many, much, a lot of."
             },
             "def-search": "a lot many much of",
@@ -12450,6 +13134,17 @@
             "ipa": "ʋ̃ʏ̃ɮ̃dibʎ̝̃",
             "pos": "v.",
             "word": "výlḍiḅḷ"
+        },
+        {
+            "def": {
+                "def": "Plural."
+            },
+            "def-search": "plural",
+            "etym": "<f-pf>multiplicité</f-pf>",
+            "hw-search": "vyldiblihith",
+            "ipa": "ʋ̃ʏ̃ɮ̃dibɮ̃ihiθ",
+            "pos": "n.",
+            "word": "výlḍiḅlihit’h"
         },
         {
             "def": {
@@ -12676,6 +13371,28 @@
         },
         {
             "def": {
+                "def": "Machine, device."
+            },
+            "def-search": "device machine",
+            "etym": "<f-pf>usine</f-pf>",
+            "hw-search": "yhi",
+            "ipa": "yhĩ",
+            "pos": "n.",
+            "word": "yhí"
+        },
+        {
+            "def": {
+                "def": "Truck."
+            },
+            "def-search": "truck",
+            "etym": "From <f-w>yhí</f-w> + <f-w>cáry’aú</f-w>",
+            "hw-search": "yhicaryau",
+            "ipa": "yhĩɕɑ̃ɰɥɔ̃",
+            "pos": "n.",
+            "word": "yhícáry’aú"
+        },
+        {
+            "def": {
                 "def": "Night."
             },
             "def-search": "night",
@@ -12866,6 +13583,22 @@
             "ipa": "yɮ̃",
             "pos": "n.",
             "word": "yl"
+        },
+        {
+            "def-search": "unityunit",
+            "etym": "<f-pf>unité</f-pf>",
+            "hw-search": "ynith",
+            "ipa": "ʏ̃nĩθ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Unity."
+                },
+                {
+                    "def": "Unit."
+                }
+            ],
+            "word": "ýnít’h"
         },
         {
             "def": {

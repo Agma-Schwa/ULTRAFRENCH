@@ -307,7 +307,7 @@ vâhẹ|v.|manquer|\\ +\s{gen} To lack, want. \\ +\s{part} \textit{or} \s{pass} 
     subject of this verb are swapped compared to English ‘to miss’, e.g. \w{b’hývvâhé} (\s{2pl.act} + \s{1sg.pass})
     ‘I miss you (\s{pl})’, lit. roughly ‘you (\s{pl}) are wanting to me’). \\ +\s{acc} To
     miss out on|\s{fut} vâhérẹ́, \s{subj} vâhés
-ḅárḍẹ|n.|partie|Part, portion, piece, faction of a whole
+ḅárḍẹ|n.|partie|\\ Part, portion, piece, fraction of a whole \\ Stretch (e.g. of a road)
 sásy’él|v.|essentiel|To be essential|\s{fut} sásy’élẹ́, \s{subj} sásy’éls
 ráhis|v.|raciste|To be racist|\s{fut} ráhise, \s{subj} ráhiss
 ab’hèc’h|v.|affecter|+\s{acc} To affect, influence|\s{fut} ab’hèc’hre, \s{subj} ab’hè\-c’hes
@@ -330,7 +330,7 @@ sybhẹ́rýr|v.|supérieur|\textit{intr. or} +\s{gen} To be superior to, better 
     sybhẹ́rýrẹ́, \s{subj} sybhẹ́rýrs
 
 ḍèc’hníc’hvâ|adv.|techniquement|Technically
-níb’hẹ|n.|niveau|\\ Level, degree. \\ \s{def iness + gen} On the level of
+níb’hẹ|n.|niveau|\\ Level, floor \\\textit{fig.} Level, degree \\ \s{def iness + gen} On the level of
 séḅ|v.|simple|To be plain, simple|\s{fut} séḅrẹ́, \s{subj} séḅs
 c’hrír|v.|écrire|To write|\s{fut} c’hrírẹ́, \s{subj} c’hrís
 dahaúr|particle|d’accord|Sure, ok, agreed, fine|\s{abbr} da’
@@ -530,7 +530,7 @@ ráy’á|v. or n.|voyage|
     \\ To travel, go on a journey
     \\\textit{n.} Travel, voyage, journey
 vêt’hnâ|adv.|from \pf{maintenant}, lenited for unknown reasons|Now
-áríb’h|v.|arriver|To arrive
+áríb’h|v.|arriver|To arrive, reach a destination
 lys|adv.|\pf{plus} /plys/|\textit{neg. only} No longer, not any more. \comment The meaning of this and
     \w{lẹ} swapped at some point for unknown reasons
 
@@ -592,7 +592,7 @@ suf|n.|souffre|Pain
 válv́áy’|v.|malvoyant|To be blind
 av́árḷý|v.|\pf{avoir lieu}|To take place, happen|\s{fut} lav́árḷýé, \s{subj} lav́árḷýs
 c’haúbhýríf|n.|\w{c’haú} + \pf{purifier}|To purify (+\s{acc} sbd./sth.)
-râd|v.|prendre|+\s{acc} \textit{or} \s{part} To grab. \comment The \s{part} usually implies that only
+râd|v.|prendre|+\s{acc} \textit{or} \s{part} To grab, grasp. \comment The \s{part} usually implies that only
     a part or some of a larger whole is grabbed, e.g. a handful of sand)
 aḍrá|v.|attraper|
     \\ +\s{acc} To take
@@ -754,7 +754,7 @@ ní|conj.|ni|
     \ex \w{Jsydyrár ní’sý’ýâ, jsydyát’hád ní} ‘I neither see nor hear it’
 rád|v. tr.|rendre|To surrender +\s{acc} sth. (\s{dat} to sbd.)
 sẹrád|v. intr.|\pf{se rendre}|To surrender
-ec’hlér|v.|éclairer|To shine
+ec’hlér|v. or n.|éclairer|\\ To shine, glimmer \\\textit{n.} Shine, glimmer
 iý’ývî|v.|illuminer|To light up, illuminate
 raúhérẹ́|v.|from \w{raú-} + \w{sérẹ́}|
     \\+\s{acc} To tighten sth., make tighter (+s\w{circlat} around sth.)
@@ -808,14 +808,19 @@ ady’ŷ|v. or interj.|adieu|
     \\ Goodbye, farewell
     \\ +\s{gen} To say goodbye to sbd., bid sbd. farewell
 
-rébh|v.|préparer|To anticipate (+\s{acc} sth.)
+rébh|v.|préparer|
+    \\+\s{part} To anticipate
+    \\To prepare (+\s{acc} sbd./sth.) (+\s{dat} for sbd.)
+        \comment This verb can take up to two complements. Intransitively, it means ‘to be prepared’; with
+            a direct object, the sense is ‘to prepare sbd./sth.’, with an indirect object ‘to prepare oneself
+            for sth.’, and with both it becomes ‘to prepare sbd/sth. for sbd.’
 lý|n.|plume|Pen, quill
 ráhut’h|n.|\pf{grand} + \pf{couteau}|Sword, blade
     \ex \w{áráhut’h’t ilý ly b’haúr} ‘the pen is mightier than the sword’.
         \comment This was originally a fossilised, obsolete \s{aci}: \w{á\-hut’h\-rá éḍ ilý lẹb’haúr}
 faúr|adj.|fort|\textit{obsolete, except in proverbs} Strong, mighty.
 ly|particle|plus|\textit{obsolete variant of \w{lẹ}, sometimes leniting}
-b’hért’he|n.|from \pf{vérité}; the /i/ disappeared during Early Middle UF|Truth
+b’hért’he|n.|from \pf{vérité}; the /i/ disappeared during Early Middle UF|\\ Truth \\ Fact
 saut’h|v. intr. or tr.|sauter|To teleport, translocate, warp (+\s{acc} sth.)
 aublit’hér|v.|oblitérer|
     \\ To defeat, vanquish, obliterate (+\s{acc} sbd./sth.)
@@ -843,7 +848,7 @@ faú|adv.|fort|Very, right, really. \comment Postpositive intensifier placed aft
 rés|n.|reste|Rest, remainder
 dẹb’hní|v.|devenir|To become, turn into (+\s{transl} sth./sbd.). \comment The subject is in the \s{abs} case
 sẹ|particle|ainsi|So, thus, now, well then, as a result
-véc|n.|mèche|\\ A strand of hair \\\s{pl} Hair
+véc|n.|mèche|\\ A strand of hair \\\s{pl} Hair \\ Wick (of a candle) \\ Fuse (of a bomb)
 ḍaúb’h|v. intr.|tomber|To fall, drop
 lánẹ́|v.|flâner|To meander
 néḍ|v. dep.|naître|To be born. \comment This is a deponent verb whose subject takes the \s{acc} and
@@ -901,7 +906,7 @@ rébhauz|v.|reposer|\\+\s{acc} To set down, put down, place \\\textit{refl.} To 
 set’hád|v. chiefly trans.|from \pf{s’étendre}; see also \senseref{3}|
     \\+\s{acc/part} To spread, extend, expand. \comment The \s{acc} is used for concrete objects
         or substances, the \s{part} for abstract or intangible concepts
-    \\\textit{refl.} To sprawl, stretch out, extend oneself
+    \\\textit{refl.} To sprawl, stretch out, extend oneself, reach for (+\s{dat} sth.)
     \\\textit{intr. (archaic) Same as \senseref{2}, but implicitly reflexive even though it
         is morphologically only intransitive. This sense has been largely replaced by the morphological
         reflexive}
@@ -999,7 +1004,7 @@ dib’hat’hiv|n.|from earlier \w{dib’hbat’hiv}|
         \comment Shortened to just \w{dib’hat’h’} before ordinals
         \ex \w{dib’hat’h’ révy’ẹ́} ‘Building №1’
 dib’hbat’hiv|n.|from \pf{édifice} + \pf{bâtiment}|\textit{(obsolete)} Building, edifice.
-cás|n.|chance|Luck
+cás|n.|chance|\\ Luck \\ Chance
 nír|v.|venir|To come
 dêr|adj.|dingue|(\textit{informal}) Crazy, mad, wild, nuts \comment The ‘ê’ may be repeated, e.g. \w{dêêêr} ‘craaazy’.
 naûb|n.|nombre|
@@ -1249,7 +1254,7 @@ vẹ́ríd’yê|v.|méridien|To be southern
 vẹ́ríd|n.|from \w{vẹ́ríd’yê}|South
 ḅaúrḍ|v.|porter|To carry, bear
 y’âs|n.|science|Science
-cá|n.|chambre|Room
+cá|n.|chambre|Room, chamber
 id’h|n.|idée|Idea
 áré|n.|arrêt|Stop, stopping
 baz|n.|base|Base, bottom part of sth.
@@ -1260,7 +1265,7 @@ c’hubh|v.|couper|
     \\+\s{acc} \textit{fig.} To stop, prevent
     \\+\s{acc} (\textit{of a river}) To flow through
     \\+\s{perl} \textit{fig.} To take a shortcut through, cut through
-c’huý’ýr|n.|couleur|\\ Colour \\(\textit{card games}) Suit
+c’huý’ýr|n.|couleur|\\ Colour, color  \\(\textit{card games}) Suit
 y’íhó|n.|buisson|Bush, shrub
 rád’hyr|n.|\pf{bois d’œuvre}|Wood
 rêhibhal|adj.|principal|Main, key, principal
@@ -1274,7 +1279,7 @@ b’hér|v.|vert|To be green|\s{nd} b’haǐ
 aúrâ|v.|orange|To be orange
 lác|v.|blanche|To be white
 rár|v.|noir|To be black
-rís|v.|grise|To be grey
+rís|v.|grise|To be grey, gray
 váraû|v. or n.|marron|\\ To be brown \\\textit{n.} Chestnut
 raúz|v.|rose|To be pink
 y’aúý’è|v.|violette|To be purple
@@ -1286,7 +1291,7 @@ rúḅ|n.|groupe|Group
 výhic’h|n.|musique|Music
 vár|n.|marque|Mark
 rát’hýr|n.|voiture|Car, wagon
-cár’yaú|n.|chariot|Cart, carriage
+cáry’aú|n.|chariot|Cart, carriage
 ḅánár|n.|panard|Foot
 syb’hír|v.|suffire|To suffice, be enough \comment Governs the subjunctive when used when an \s{aci}.
 ab’hiḍy’él|v.|habituel|To be usual, customary, common
@@ -1344,8 +1349,10 @@ ríb|n.|bribe|Scrap, bit
 asy’ẹ́|n.|acier|Steel
 lá|n.|plan|
     \\ Level or flat surface
+    \\ Tool used for determining whether sth. is level
     \\ Map \comment Mainly used for street and city maps
     \\\textit{(geometry)} Plane
+lá|v.|plan|To be level or flat
 ráb’hau|n.|From \w{ráb’haut’h}|\textit{(woodworking)} Plane
     \comment This refers to the tool used in woodworking. For the mathematical concept of a
         plane, see \w{lá}.
@@ -1379,9 +1386,72 @@ b’hiḍ|n.|vitre|\\ Pane of glass \\\s{nd} Glass (substance)
 râḅ|v. tr.|remplir|
     \\+\s{acc/part} To fill, fill up
     \\+\s{acc/part} To fill in|\s{fut} râḅle, \s{subj} râḅles
-ráhír|v.|choisir|+\s{acc} To choose
+ráhír|v.|choisir|+\s{acc} To choose, select
+ýnít’h|n.|unité|\\ Unity \\ Unit
+b’hiý’a|n.|village|Small Town
+fẹ́|v.|fin|To be fine, thin, small
+    \comment This word is derived from a northern pronunciation of \pf{fin}, unlike
+        \w{fé}, which uses the southern pronunciation.
+raúsy’é|v.|grossier|\\ To be coarse \\(\textit{of a person}) To be rude, uncouth
+lývný|v.|lumineux|To be light, bright, luminous
+yhí|n.|usine|Machine, device
+naúḍ|n.|note|Note
+raúj|n.|projet|Plan, project
+fírýr|n.|figure|Figure
+ráḍ|n.|boîte|Box
+naú|n.|nom|\\ Name \\ Noun
+daúvê|n.|domaine|Domain, field \comment In an abstract sense; for an actual physical field, see \w{ráhó}.
+bèl|v.|belle|To be beautiful, attractive, pretty
+áḍrén|v.|entraîner|\\ +\s{acc} To train, coach \\\textit{refl.} To exercise
+áb’has|v.|\pf{en face}|To be the front of sth.
+deb’hlau|v.|développer|To develop|\s{fut} deb’hlaubhe, \s{subj} deb’hlaubhs
+réḍ|v.|frette|To be cool, cold
+vnýḍ|n.|minute|Minute
+raúb’hys|v.|robuste|To be strong, powerful, mighty
+naúrvál|v.|normal|To be normal
+besy’ál|v.|spécial|To be special
+fát’haú|n.|fantôme|Mind
+rávẹ́|v.|ramer|(+\s{acc}) To row (a boat)
+râsḅár|v.|transparent|To be transparent, clear
+sḅas|n.|espace|Space
+ráhávnýḍ|n.|\pf{soixante} + \pf{minute}|Hour
+ráb’hé|n.|ravin|Ravine
+vár|n.|marche|
+    \\ March (way of walking)
+    \\ March (music)
+    \\ Step (of a stair or ladder)
+ḍaḅ|n.|étape|\\ Stop (on a journey) \\ Stage, step (in a process)
+ḍéní|v.|tenir|+\s{acc}To hold
+néḍnírc’haýb’h|v.|\pf{ne tenir qu’à un fil}|To hang by a thread
+ḅárḍáḍaû|n.|From \w{ḅárḍáḍ}|Interest
+b’hér|n.|verbe|Verb
+cát’h|v.|chanter|(+\s{part}) To sing
+résc’hil|v.|presqu’île|Peninsula
+c’haút’hínâ|v.|continent|Continent
+réb’hád’hih|v.|revandiquer|+\s{acc} To claim ownership of
+árás|v.|agacer|+\s{acc} To annoy, anger
+árásaû|n.|from \w{árás}|Anger, wrath, ire
+výlḍiḅlihit’h|n.|multiplicité|Plural
+siránó|n.|\pf{Cyrano (de Bergerac)}|Nose
+sèl|n.|sel|Salt
+dénúb’h|v.|\pf{de nouveau}|\\+\s{acc} To repeat, iterate \\+\s{aci} To do sth. repeatedly
+vaúý’ehyl|n.|molécule|Molecule
+ḍad’hat’haú|n.|\pf{tas d’atomes}|Mole (SI unit)
+c’hauý’ó|n.|colonne|(\textit{architecture}) Column
+sérí|n.|serie|\\ Column (of a table) \\ Column, newspaper article
+lí|n.|ligne|Row (of a table)
+aḍríb’h|n.|atribut|Property, attribute
+raúḅríy’ét’h|n.|propriété|\\ Property, something that is owned \\ Ownership
+sérvâdrráḍ|n.|\pf{segment de droute}|Segment, line segment
+féłeb’hut’hic’h|v. intr.|\pf{faire les boutiques}|To shop, especially leisurely
+váráhé|n.|magazin|Shop, store
+coḅ|n.|échope|Market
+réhýy’ír|v.|recueillir|+\s{acc} To gather, collect
+níb’hý’|v.|niveler|+\s{acc} To level, flatten
+yhícáry’aú|n.|From \w{yhí} + \w{cáry’aú}|Truck
+but’héy’|n.|bouteille|Litre, liter (metric unit)
 
-## Currently at entry 399 of the following page:
+## Currently at entry 469 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
