@@ -407,15 +407,15 @@
             "word": "ad’he"
         },
         {
-            "def-search": " a adore be crush desire for have in love on to with yearn",
+            "def-search": "a adoration adore be crush desire for have in love on to with yearn",
             "etym": "<f-pf>adore</f-pf>",
             "forms": "<f-s>fut</f-s> ad’hórérẹ́, <f-s>subj</f-s> ad’hórs",
             "hw-search": "adhor",
             "ipa": "ɐðɔ̃ɰ",
-            "pos": "v. tr.",
+            "pos": "v. tr. or n.",
             "senses": [
                 {
-                    "def": "To love, adore."
+                    "def": "+<f-s>acc</f-s> To love, adore."
                 },
                 {
                     "def": "+<f-s>part</f-s> To be in love with, have a crush on."
@@ -428,6 +428,9 @@
                             "text": "<f-s>Snet’h iv.17</f-s> <f-w>jad’hóré ávvaúríhe</f-w> ‘I yearned to remember’."
                         }
                     ]
+                },
+                {
+                    "def": "<em>n.</em> Love, adoration."
                 }
             ],
             "word": "ad’hór"
@@ -778,7 +781,7 @@
         },
         {
             "def": {
-                "def": "To bring to life, animate."
+                "def": "+<f-s>acc</f-s> To bring to life, animate."
             },
             "def-search": "animate bring life to",
             "etym": "<f-pf>animer</f-pf>",
@@ -786,6 +789,17 @@
             "ipa": "ɑ̃nʋ̃ɛ̃",
             "pos": "v. tr.",
             "word": "ánvé"
+        },
+        {
+            "def": {
+                "def": "Weapon."
+            },
+            "def-search": "weapon",
+            "etym": "<f-pf>arme</f-pf>",
+            "hw-search": "ar",
+            "ipa": "ɑ̃ɰ",
+            "pos": "n.",
+            "word": "ár"
         },
         {
             "def": {
@@ -1120,6 +1134,17 @@
         },
         {
             "def": {
+                "def": "Dawn, sunrise, daybreak."
+            },
+            "def-search": "dawn daybreak sunrise",
+            "etym": "<f-pf>aube</f-pf>",
+            "hw-search": "aub",
+            "ipa": "ob",
+            "pos": "n.",
+            "word": "aub"
+        },
+        {
+            "def": {
                 "def": "By the way, btw, incidentally."
             },
             "def-search": "btw by incidentally the way",
@@ -1131,9 +1156,9 @@
         },
         {
             "def": {
-                "def": "To obey."
+                "def": "To obey (+<f-s>part</f-s> sbd.)."
             },
-            "def-search": "obey to",
+            "def-search": "obey sbd to",
             "etym": "<f-pf>obéir</f-pf>",
             "hw-search": "aubheir",
             "ipa": "oβeĩɰ",
@@ -1254,6 +1279,17 @@
         },
         {
             "def": {
+                "def": "Money."
+            },
+            "def-search": "money",
+            "etym": "From <f-pf>oseille</f-pf> + <f-pf>pognon</f-pf>",
+            "hw-search": "auheybhaun",
+            "ipa": "ohɛ̃ɥbʱɔ̃n",
+            "pos": "n.",
+            "word": "auhéy’bhaún"
+        },
+        {
+            "def": {
                 "def": "To be early."
             },
             "def-search": "be early to",
@@ -1339,6 +1375,22 @@
                 }
             ],
             "word": "aúráj"
+        },
+        {
+            "def-search": "dusk sunsetaurora",
+            "etym": "<f-pf>aurore</f-pf>",
+            "hw-search": "auraur",
+            "ipa": "ɔ̃ɰɔ̃ɰ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Dusk, sunset."
+                },
+                {
+                    "def": "Aurora."
+                }
+            ],
+            "word": "aúraúr"
         },
         {
             "def-search": "approximately around arrangementorder command group in instructionorder military of order region the tidinessorder",
@@ -1455,6 +1507,22 @@
             "word": "aúú"
         },
         {
+            "def-search": "shoulderscapula",
+            "etym": "<f-pf>omoplate</f-pf>",
+            "hw-search": "auvaublad",
+            "ipa": "ɔ̃ʋ̃ɔ̃bɮ̃ɐd",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Shoulder."
+                },
+                {
+                    "def": "Scapula."
+                }
+            ],
+            "word": "aúvaúḅlaḍ"
+        },
+        {
             "def": {
                 "def": "Eleventh."
             },
@@ -1515,6 +1583,17 @@
             "ipa": "ɔ̃ɮ̃ʶo",
             "pos": "n.",
             "word": "aúłau"
+        },
+        {
+            "def": {
+                "def": "To arm (+<f-s>acc</f-s> sbd.)."
+            },
+            "def-search": "arm sbd to",
+            "etym": "<f-pf>armer</f-pf>",
+            "hw-search": "av",
+            "ipa": "ɑ̃βʶ",
+            "pos": "v.",
+            "word": "áv́"
         },
         {
             "def": {
@@ -1674,6 +1753,17 @@
             "ipa": "ɑ̃ʑʶɛ̃d",
             "pos": "v.",
             "word": "áȷ́éd"
+        },
+        {
+            "def": {
+                "def": "Spouse, wife, husband, partner."
+            },
+            "def-search": "husband partner spouse wife",
+            "etym": "<f-pf>époux</f-pf>",
+            "hw-search": "b",
+            "ipa": "b",
+            "pos": "n.",
+            "word": "ḅ"
         },
         {
             "def": {
@@ -3171,6 +3261,28 @@
         },
         {
             "def": {
+                "def": "Camp."
+            },
+            "def-search": "camp",
+            "etym": "<f-pf>camp</f-pf>",
+            "hw-search": "cha",
+            "ipa": "xɑ̃",
+            "pos": "n.",
+            "word": "c’há"
+        },
+        {
+            "def": {
+                "def": "To camp."
+            },
+            "def-search": "camp to",
+            "etym": "<f-pf>camper</f-pf>",
+            "hw-search": "chabh",
+            "ipa": "xɑ̃bʱ",
+            "pos": "v. intr.",
+            "word": "c’hábh"
+        },
+        {
+            "def": {
                 "def": "Skill, capacity, ability."
             },
             "def-search": "ability capacity skill",
@@ -3610,7 +3722,7 @@
             "forms": "<f-s>fut</f-s> c’haúḅlére, <f-s>subj</f-s> c’haúḅlés",
             "hw-search": "chaubler",
             "ipa": "xɔ̃bɮ̃ɛ̃ɰ",
-            "pos": ".v",
+            "pos": "v.",
             "word": "c’haúḅlér"
         },
         {
@@ -3760,6 +3872,17 @@
             "ipa": "xɔ̃θĩnɑ̃̃",
             "pos": "v.",
             "word": "c’haút’hínâ"
+        },
+        {
+            "def": {
+                "def": "Cotton."
+            },
+            "def-search": "cotton",
+            "etym": "<f-pf>coton</f-pf>",
+            "hw-search": "chautho",
+            "ipa": "xoθɔ̃",
+            "pos": "n.",
+            "word": "c’haut’hó"
         },
         {
             "def": {
@@ -4957,6 +5080,17 @@
         },
         {
             "def": {
+                "def": "Term."
+            },
+            "def-search": "term",
+            "etym": "<f-pf>terme</f-pf>",
+            "hw-search": "der",
+            "ipa": "dɛ̃ɰ",
+            "pos": "n.",
+            "word": "ḍér"
+        },
+        {
+            "def": {
                 "def": "To silence, shut up."
             },
             "def-search": "shut silence to up",
@@ -5093,6 +5227,17 @@
             "ipa": "dɛsɰzɑ̃ʋ̃ɛ̃̃",
             "pos": "n.",
             "word": "ḍèsrzávê"
+        },
+        {
+            "def": {
+                "def": "To determine, figure out."
+            },
+            "def-search": "determine figure out to",
+            "etym": "<f-pf>determiner</f-pf>",
+            "hw-search": "dethervn",
+            "ipa": "deθɛ̃ɰʋ̃n",
+            "pos": "v.",
+            "word": "det’hérvn"
         },
         {
             "def": {
@@ -6769,6 +6914,17 @@
             "word": "Jed’háy’"
         },
         {
+            "def": {
+                "def": "To lie, rest in a horizontal position."
+            },
+            "def-search": "a horizontal in lie position rest to",
+            "etym": "<f-pf>gésir</f-pf>",
+            "hw-search": "jehir",
+            "ipa": "ʑehĩɰ",
+            "pos": "v. intr.",
+            "word": "jehír"
+        },
+        {
             "def-search": "a advantage affect be decided fun game make matter of or play role take time to",
             "etym": "<f-pf>jouer</f-pf>",
             "hw-search": "ju",
@@ -8001,6 +8157,18 @@
             "word": "r"
         },
         {
+            "def": {
+                "def": "+<f-s>acc</f-s> To invent, come up with."
+            },
+            "def-search": "come invent to up with",
+            "etym": "<f-pf>créer</f-pf>",
+            "forms": "<f-s>fut</f-s> re, <f-s>subj</f-s> ś",
+            "hw-search": "r",
+            "ipa": "ɰ",
+            "pos": "v.",
+            "word": "r"
+        },
+        {
             "def-search": "either or",
             "etym": "<f-pf>swa</f-pf> &gt; *<f-w>rá</f-w>",
             "hw-search": "ra",
@@ -8026,6 +8194,17 @@
             "hw-search": "ra",
             "ipa": "ɰɑ̃̃",
             "pos": "v.",
+            "word": "râ"
+        },
+        {
+            "def": {
+                "def": "Glove."
+            },
+            "def-search": "glove",
+            "etym": "<f-pf>gant</f-pf>",
+            "hw-search": "ra",
+            "ipa": "ɰɑ̃̃",
+            "pos": "n.",
             "word": "râ"
         },
         {
@@ -8320,6 +8499,18 @@
                 }
             ],
             "word": "râd’h"
+        },
+        {
+            "def": {
+                "comment": "<p>Literally ‘footglove’.</p>",
+                "def": "Shoe."
+            },
+            "def-search": "shoe",
+            "etym": "<f-pf>gant de pied</f-pf>",
+            "hw-search": "radhebye",
+            "ipa": "ɰɑ̃̃ðəbɥɛ̃",
+            "pos": "n.",
+            "word": "râd’hẹḅy’é"
         },
         {
             "def": {
@@ -9313,6 +9504,17 @@
         },
         {
             "def": {
+                "def": "Vowel."
+            },
+            "def-search": "vowel",
+            "etym": "<f-pf>voyelle</f-pf>",
+            "hw-search": "rayel",
+            "ipa": "ɰɑ̃ɥɛ̃ɮ̃",
+            "pos": "v.",
+            "word": "ráy’él"
+        },
+        {
+            "def": {
                 "def": "Sentence."
             },
             "def-search": "sentence",
@@ -9588,6 +9790,17 @@
         },
         {
             "def": {
+                "def": "Twilight."
+            },
+            "def-search": "twilight",
+            "etym": "<f-pf>crépuscule</f-pf>",
+            "hw-search": "rebhyschyl",
+            "ipa": "ɰẽbʱysxyɮ̃",
+            "pos": "n.",
+            "word": "rẹ́bhysc’hyl"
+        },
+        {
+            "def": {
                 "def": "To be steep, abrupt."
             },
             "def-search": "abrupt be steep to",
@@ -9828,6 +10041,17 @@
             "word": "rénéhás"
         },
         {
+            "def": {
+                "def": "War."
+            },
+            "def-search": "war",
+            "etym": "<f-pf>guerre</f-pf>",
+            "hw-search": "rer",
+            "ipa": "ɰɛ̃ɰ",
+            "pos": "n.",
+            "word": "rér"
+        },
+        {
             "def-search": "an article clothes clothing garment garments of piece",
             "etym": "<f-pf>fringues</f-pf>",
             "hw-search": "rer",
@@ -9864,6 +10088,17 @@
             "ipa": "ɰɛ̃sxiɮ̃",
             "pos": "v.",
             "word": "résc’hil"
+        },
+        {
+            "def": {
+                "def": "Contract, treaty, deal."
+            },
+            "def-search": "contract deal treaty",
+            "etym": "<f-pf>traité</f-pf>",
+            "hw-search": "reth",
+            "ipa": "ɰɛ̃θ",
+            "pos": "n.",
+            "word": "rét’h"
         },
         {
             "def": {
@@ -10009,6 +10244,17 @@
             "ipa": "ɰɛ̃zɥɛ̃̃",
             "pos": "num. ord.",
             "word": "rézy’ê"
+        },
+        {
+            "def": {
+                "def": "To be bitter."
+            },
+            "def-search": "be bitter to",
+            "etym": "<f-pf>réglisse</f-pf>",
+            "hw-search": "rełi",
+            "ipa": "ɰeɮ̃ʶi",
+            "pos": "v.",
+            "word": "rełi"
         },
         {
             "def": {
@@ -12432,6 +12678,17 @@
         },
         {
             "def": {
+                "def": "Morning."
+            },
+            "def-search": "morning",
+            "etym": "<f-pf>matin</f-pf>",
+            "hw-search": "vathe",
+            "ipa": "ʋ̃ɑ̃θɛ̃",
+            "pos": "n.",
+            "word": "vát’hé"
+        },
+        {
+            "def": {
                 "def": "Word."
             },
             "def-search": "word",
@@ -12488,6 +12745,17 @@
         },
         {
             "def": {
+                "def": "Model, pattern."
+            },
+            "def-search": "model pattern",
+            "etym": "<f-pf>modèle</f-pf>",
+            "hw-search": "vaudhel",
+            "ipa": "ʋ̃ɔ̃ðɛɮ̃",
+            "pos": "n.",
+            "word": "vaúd’hèl"
+        },
+        {
+            "def": {
                 "def": "To be moderate."
             },
             "def-search": "be moderate to",
@@ -12507,6 +12775,22 @@
             "ipa": "ʋ̃ɔ̃̃θɑ̃",
             "pos": "n.",
             "word": "vaût’há"
+        },
+        {
+            "def-search": "design motivemotif pattern",
+            "etym": "<f-pf>motif</f-pf>",
+            "hw-search": "vauthif",
+            "ipa": "ʋ̃ɔ̃θiɸ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Motive."
+                },
+                {
+                    "def": "Motif, pattern, design."
+                }
+            ],
+            "word": "vaút’hif"
         },
         {
             "def": {
@@ -12674,6 +12958,22 @@
             "ipa": "ʋ̃ɛ̃d",
             "pos": "n.",
             "word": "véḍ"
+        },
+        {
+            "def-search": "arrange for organise set to up",
+            "etym": "<f-pf>mettre en place</f-pf>",
+            "hw-search": "vedrabla",
+            "ipa": "ʋ̃ɛ̃dɰɑ̃̃bɮ̃ɐ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To organise, set up."
+                },
+                {
+                    "def": "+<f-s>aci</f-s> To arrange for."
+                }
+            ],
+            "word": "véḍrâḅla"
         },
         {
             "def": {
@@ -12946,14 +13246,19 @@
             "word": "víwaúy’ê"
         },
         {
-            "def": {
-                "def": "To be central, in the middle of."
-            },
-            "def-search": "be central in middle of the to",
+            "def-search": "be center central centre in middle of the to",
             "etym": "<f-pf>milieu</f-pf>",
             "hw-search": "viwy",
             "ipa": "ʋ̃ĩɰ̃ʏ̃",
-            "pos": "v.",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "To be central, in the middle of."
+                },
+                {
+                    "def": "<em>n.</em> Centre, center."
+                }
+            ],
             "word": "víwý"
         },
         {
@@ -13092,7 +13397,7 @@
             "forms": "<f-s>fut</f-s> vvaúríźe, <f-s>subj</f-s> vvaúríhes",
             "hw-search": "vvaurihe",
             "ipa": "ʋ̃ːɔ̃ɰĩhe",
-            "pos": "v. (in)tr.",
+            "pos": "v.",
             "word": "vvaúríhe"
         },
         {
@@ -13500,18 +13805,18 @@
             "word": "y’íhó"
         },
         {
-            "def-search": "hear listen to understand",
+            "def-search": "hear listen sbd to understand",
             "etym": "<f-pf>ouïr</f-pf>",
             "forms": "<f-s>fut</f-s> aúré, <f-s>subj</f-s> rás",
             "hw-search": "yir",
             "ipa": "ɥĩɰ",
-            "pos": "v. (in)tr.",
+            "pos": "v.",
             "senses": [
                 {
-                    "def": "To understand, listen."
+                    "def": "To understand, listen (+<f-s>part</f-s> to sbd.)."
                 },
                 {
-                    "def": "<em>(rarely)</em> To hear."
+                    "def": "<em>(rarely)</em> +<f-s>acc</f-s> To hear."
                 }
             ],
             "word": "y’ír"
@@ -14565,6 +14870,11 @@
             "from": "s’",
             "from-search": "s",
             "to": "sá"
+        },
+        {
+            "from": "ś",
+            "from-search": "s",
+            "to": "r"
         },
         {
             "from": "sauzaud",

@@ -67,19 +67,22 @@
 ##
 ## A `$backend` directive (search for occurrences in this file to see how it’s used)
 ## can be used to restrict a set of entries to the printed or online dictionary.
-ad’hór|v. tr.|adore|
-    \\ To love, adore.
+ad’hór|v. tr. or n.|adore|
+    \\ +\s{acc} To love, adore.
     \\ +\s{part} To be in love with, have a crush on.
     \\ +\s{gen} To desire, yearn for sbd./sth
         \ex \s{Snet’h iv.17} \w{jad’hóré ávvaúríhe} ‘I yearned to remember’
             \comment Compare \w{jad’hóré devvaúríhe} ‘I loved to remember’
+    \\\textit{n.} Love, adoration
     |\s{fut} ad’hórérẹ́, \s{subj} ad’hórs
 
-aub’heír|v. (in)tr.|obéir|To obey
-ánvé|v. tr.|animer|To bring to life, animate
+aub’heír|v. (in)tr.|obéir|To obey (+\s{part} sbd.)
+ánvé|v. tr.|animer|+\s{acc} To bring to life, animate
 dír|v. tr.|dire|+\s{acc} To say, tell (+\s{dat} someone) |\s{fut} dírẹ́, \s{subj} díss
-vvaúríhe|v. (in)tr.|mémoriser|To remember|\s{fut} vvaúríźe, \s{subj} vvaúríhes
-y’ír|v. (in)tr.|ouïr|\\To understand, listen\\\textit{(rarely)} To hear|\s{fut} aúré, \s{subj} rás
+vvaúríhe|v.|mémoriser|To remember|\s{fut} vvaúríźe, \s{subj} vvaúríhes
+y’ír|v.|ouïr|
+    \\To understand, listen (+\s{part} to sbd.)
+    \\\textit{(rarely)} +\s{acc} To hear|\s{fut} aúré, \s{subj} rás
 Cár|n.||Charles, Kyle \comment Male given name. Often declined like a regular noun, i.e. with \s{nom} \w{Lác̣ár}
 ráhó|n.|poisson|Fish
     \comment UF has a series of proverbs around fish drowning (in water!), despite the fact that fish quite
@@ -792,7 +795,7 @@ c’hasḅesy’ál|n.|\pf{cas spécial}|Exception
 aír|v.|hair|To hate, abhor, detest, loathe, despise (+\s{acc} sbd./sth.)
 c’hèl|det. postpos.|quelques|Some, any, a few, a couple of
 válfèz|v.|malfaisant|To be malfeasant, evil, malevolent|\s{fut} válfèź, \s{subj} válfès
-c’haúḅlér|.v|complaire|To be complacent; to be accepting in the presence of
+c’haúḅlér|v.|complaire|To be complacent; to be accepting in the presence of
     +\s{gen} sbd./sth. perceived as negative|\s{fut} c’haúḅlére, \s{subj} c’haúḅlés
 n|n.|haine|Hate, hatred, loathing
 vérjet’hic’h|v.|énergétique|To be vigorous, energetic
@@ -930,7 +933,7 @@ ríj|v. tr.|ériger|+\s{acc} To erect, raise, set up
 ḍaléraû|n.|from \w{ḍalẹ} + \w{-(é)raû}|Carpenter
 várḍeý’|v.|marteler|+\s{acc} To forge
 rábh|v.|frapper|+\s{acc} To smite, strike down
-víwý|v.|milieu|To be central, in the middle of
+víwý|v. or n.|milieu|\\To be central, in the middle of \\\textit{n.} Centre, center
 lẹ|n.|clef|Key
 véḍ|n.|maître|Master, expert
 c’hah|v.|casser|\\+\s{acc} To break, shatter, smash \\+\s{part} To crack, make a crack in
@@ -1450,6 +1453,33 @@ réhýy’ír|v.|recueillir|+\s{acc} To gather, collect
 níb’hý’|v.|niveler|+\s{acc} To level, flatten
 yhícáry’aú|n.|From \w{yhí} + \w{cáry’aú}|Truck
 but’héy’|n.|bouteille|Litre, liter (metric unit)
+det’hérvn|v.|determiner|To determine, figure out
+áv́|v.|armer|To arm (+\s{acc} sbd.)
+ár|n.|arme|Weapon
+vát’hé|n.|matin|Morning
+aub|n.|aube|Dawn, sunrise, daybreak
+aúraúr|n.|aurore|\\ Dusk, sunset \\ Aurora
+rẹ́bhysc’hyl|n.|crépuscule|Twilight
+r|v.|créer|+\s{acc} To invent, come up with|\s{fut} re, \s{subj} ś
+ráy’él|v.|voyelle|Vowel
+rér|n.|guerre|War
+jehír|v. intr.|gésir|To lie, rest in a horizontal position
+vaúd’hèl|n.|modèle|Model, pattern
+vaút’hif|n.|motif|\\ Motive \\ Motif, pattern, design
+c’haut’hó|n.|coton|Cotton
+c’há|n.|camp|Camp
+c’hábh|v. intr.|camper|To camp
+véḍrâḅla|v.|\pf{mettre en place}|
+    \\+\s{acc} To organise, set up
+    \\+\s{aci} To arrange for
+aúvaúḅlaḍ|n.|omoplate|\\ Shoulder \\ Scapula
+râ|n.|gant|Glove
+râd’hẹḅy’é|n.|\pf{gant de pied}|Shoe \comment Literally ‘footglove’.
+ḅ|n.|époux|Spouse, wife, husband, partner
+auhéy’bhaún|n.|From \pf{oseille} + \pf{pognon}|Money
+rełi|v.|réglisse|To be bitter
+ḍér|n.|terme|Term
+rét’h|n.|traité|Contract, treaty, deal
 
 ## Currently at entry 469 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
@@ -1475,6 +1505,7 @@ daú’b’h > daú(c’h) \textnf{+} b’he
 vérvá > vér + vá
 sy̌ > dýr
 c’heḍ’ráb’h’, c’heb’hḍ’ráb’h’ > ráb’haut’h
+ś > r
 
 sauzaud > sauz-aud
 s’ > sá
