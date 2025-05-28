@@ -659,7 +659,7 @@
             },
             "def-search": "be bloodstained bloody to very",
             "etym": "<f-pf>ensanglanté</f-pf>",
-            "hw-search": "ahałathe",
+            "hw-search": "ahalathe",
             "ipa": "ɑ̃hɑ̃̃ɮ̃ʶɑ̃θə̥",
             "pos": "v.",
             "word": "áhâłát’hẹ"
@@ -1579,7 +1579,7 @@
             },
             "def-search": "time",
             "etym": "<f-pf>horloge</f-pf>",
-            "hw-search": "aułau",
+            "hw-search": "aulau",
             "ipa": "ɔ̃ɮ̃ʶo",
             "pos": "n.",
             "word": "aúłau"
@@ -1727,7 +1727,7 @@
             },
             "def-search": "speak to",
             "etym": "from earlier *<f-w>ḅał</f-w> &lt; <f-pf>parler</f-pf>",
-            "hw-search": "ał",
+            "hw-search": "al",
             "ipa": "ɑ̃ɮ̃ʶ",
             "pos": "v.",
             "word": "áł"
@@ -1738,7 +1738,7 @@
             },
             "def-search": "engulf swallow to up",
             "etym": "<f-pf>engloutir</f-pf>",
-            "hw-search": "ałuth",
+            "hw-search": "aluth",
             "ipa": "ɑ̃̃ɮ̃ʶuθ",
             "pos": "v.",
             "word": "âłut’h"
@@ -1749,7 +1749,7 @@
             },
             "def-search": "command enjoin order to",
             "etym": "<f-pf>enjoindre</f-pf>",
-            "hw-search": "aed",
+            "hw-search": "ajed",
             "ipa": "ɑ̃ʑʶɛ̃d",
             "pos": "v.",
             "word": "áȷ́éd"
@@ -1975,6 +1975,17 @@
         },
         {
             "def": {
+                "def": "Particular, specific."
+            },
+            "def-search": "particular specific",
+            "etym": "<f-pf>particulier</f-pf>",
+            "hw-search": "bardihyw",
+            "ipa": "bɑ̃ɰdihyɰ̃",
+            "pos": "n.",
+            "word": "ḅárḍihyw"
+        },
+        {
+            "def": {
                 "def": "To seem, appear."
             },
             "def-search": "appear seem to",
@@ -2147,7 +2158,7 @@
             "def-search": "speak talk to",
             "etym": "<f-pf>parler</f-pf>",
             "forms": "<f-s>fut</f-s> báłérẹ́",
-            "hw-search": "bał",
+            "hw-search": "bal",
             "ipa": "bɑ̃ɮ̃ʶ",
             "pos": "v.",
             "word": "ḅáł"
@@ -2158,7 +2169,7 @@
             },
             "def-search": "interlocutor speaker",
             "etym": "<f-pf>parleur</f-pf>",
-            "hw-search": "bałyr",
+            "hw-search": "balyr",
             "ipa": "bɑ̃ɮ̃ʶʏ̃ɰ",
             "pos": "n.",
             "word": "ḅáłýr"
@@ -2407,7 +2418,7 @@
             "def-search": "be each equal equivalent in it or other same the to trouble worth worthwhile",
             "etym": "<f-pf>valoir</f-pf>",
             "forms": "<f-s>fut</f-s> b’hałárẹ́, <f-s>subj</f-s> b’hałás",
-            "hw-search": "bhał",
+            "hw-search": "bhal",
             "ipa": "βɐɮ̃ʶ",
             "pos": "v.",
             "senses": [
@@ -3642,7 +3653,7 @@
             },
             "def-search": "prophecy",
             "etym": "<f-w>c’haú</f-w> + <f-w>áł</f-w>",
-            "hw-search": "chauał",
+            "hw-search": "chaual",
             "ipa": "xɔ̃ɑ̃ɮ̃ʶ",
             "pos": "n.",
             "word": "c’haúáł"
@@ -3686,7 +3697,7 @@
             },
             "def-search": "pilgrimage",
             "etym": "<f-w>c’haú</f-w> + <f-pf>pèlerinage</f-pf>",
-            "hw-search": "chaubhełinaj",
+            "hw-search": "chaubhelinaj",
             "ipa": "xɔ̃bʱɛɮ̃ʶĩnɑ̃ʑ",
             "pos": "n.",
             "word": "c’haúbhèłínáj"
@@ -6618,7 +6629,7 @@
             },
             "def-search": "especially leisurely shop to",
             "etym": "<f-pf>faire les boutiques</f-pf>",
-            "hw-search": "fełebhuthich",
+            "hw-search": "felebhuthich",
             "ipa": "ɸɛ̃ɮ̃ʶeβuθix",
             "pos": "v. intr.",
             "word": "féłeb’hut’hic’h"
@@ -10251,7 +10262,7 @@
             },
             "def-search": "be bitter to",
             "etym": "<f-pf>réglisse</f-pf>",
-            "hw-search": "rełi",
+            "hw-search": "reli",
             "ipa": "ɰeɮ̃ʶi",
             "pos": "v.",
             "word": "rełi"
@@ -11806,6 +11817,17 @@
         },
         {
             "def": {
+                "def": "Civilian, layperson."
+            },
+            "def-search": "civilian layperson",
+            "etym": "<f-pf>civil</f-pf>",
+            "hw-search": "sibhil",
+            "ipa": "siβiɮ̃",
+            "pos": "n.",
+            "word": "sib’hil"
+        },
+        {
+            "def": {
                 "def": "Sixth."
             },
             "def-search": "sixth",
@@ -12445,7 +12467,7 @@
             "def-search": "depend future of on predictions the to",
             "etym": "<f-pf>vendre la peau de ours avant de avoir tué</f-pf>",
             "forms": "<f-s>fut</f-s> vád&shy;ła&shy;bhau&shy;d’há&shy;vúr&shy;sa&shy;b’há&shy;d’há&shy;vá&shy;b’hrár&shy;ḍu&shy;re, <f-s>s</f-s> vád&shy;ła&shy;bhau&shy;d’há&shy;vúr&shy;sa&shy;b’há&shy;d’há&shy;vá&shy;b’hrár&shy;ḍus",
-            "hw-search": "vadłabhaudhavursabhadhavabhrardue",
+            "hw-search": "vadlabhaudhavursabhadhavabhrardue",
             "ipa": "ʋ̃ɑ̃dɮ̃ʶɐbʱoðɑ̃ʋ̃ũɰsɐβɑ̃ðɑ̃ʋ̃ɑ̃βɰɑ̃ɰduə̥",
             "pos": "v.",
             "word": "vádłabhaud’hávúrsab’hád’háváb’hrárḍuẹ"
@@ -12831,7 +12853,7 @@
             },
             "def-search": "despite in of spite that",
             "etym": "<f-pf>malgré que</f-pf>",
-            "hw-search": "vałe",
+            "hw-search": "vale",
             "ipa": "ʋ̃ɑ̃ɮ̃ʶɛ̃",
             "pos": "conj.",
             "word": "váłé"
@@ -13951,7 +13973,7 @@
             },
             "def-search": "please",
             "etym": "<f-pf>s’il vous plait</f-pf>",
-            "hw-search": "yubłe",
+            "hw-search": "yuble",
             "ipa": "ɥũbɮ̃ʶə̥",
             "pos": "particle",
             "word": "y’úḅłẹ"
@@ -14023,7 +14045,7 @@
             },
             "def-search": "eyes",
             "etym": "<f-pf>yeux de merlan frit</f-pf>",
-            "hw-search": "yyvełafri",
+            "hw-search": "yyvelafri",
             "ipa": "ɥʏ̃̃ʋ̃ɛ̃ɮ̃ʶɑ̃ɸɰĩ",
             "pos": "n. pl. archaic",
             "word": "y’ŷvéłáfrí"
