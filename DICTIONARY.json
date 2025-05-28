@@ -3032,7 +3032,7 @@
         },
         {
             "def": {
-                "def": "To sing."
+                "def": "(+<f-s>part</f-s>) To sing."
             },
             "def-search": "sing to",
             "etym": "<f-pf>chanter</f-pf>",
@@ -4928,14 +4928,19 @@
             "word": "ḍéní"
         },
         {
-            "def": {
-                "def": "To repeat, iterate."
-            },
-            "def-search": "iterate repeat to",
+            "def-search": "do iterate repeat repeatedly sth to",
             "etym": "<f-pf>de nouveau</f-pf>",
             "hw-search": "denubh",
             "ipa": "dɛ̃nũβ",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "+<f-s>acc</f-s> To repeat, iterate."
+                },
+                {
+                    "def": "+<f-s>aci</f-s> To do sth. repeatedly."
+                }
+            ],
             "word": "dénúb’h"
         },
         {
@@ -6470,7 +6475,7 @@
             "etym": "<f-pf>faire les boutiques</f-pf>",
             "hw-search": "fełebhuthich",
             "ipa": "ɸɛ̃ɮ̃ʶeβuθix",
-            "pos": "v.",
+            "pos": "v. intr.",
             "word": "féłeb’hut’hic’h"
         },
         {
@@ -7796,7 +7801,7 @@
         },
         {
             "def": {
-                "def": "To level, flatten."
+                "def": "+<f-s>acc</f-s> To level, flatten."
             },
             "def-search": "flatten level to",
             "etym": "<f-pf>niveler</f-pf>",
@@ -9768,7 +9773,7 @@
         },
         {
             "def": {
-                "def": "To gather, collect."
+                "def": "+<f-s>acc</f-s> To gather, collect."
             },
             "def-search": "collect gather to",
             "etym": "<f-pf>recueillir</f-pf>",
