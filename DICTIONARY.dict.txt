@@ -333,7 +333,7 @@ sybhẹ́rýr|v.|supérieur|\textit{intr. or} +\s{gen} To be superior to, better 
     sybhẹ́rýrẹ́, \s{subj} sybhẹ́rýrs
 
 ḍèc’hníc’hvâ|adv.|techniquement|Technically
-níb’hẹ|n.|niveau|\\ Level, floor \\\textit{fig.} Level, degree \\ \s{def iness + gen} On the level of
+níb’hẹ|n.|niveau|\\ Level, floor \\\textit{fig.} Level, degree \\ +\s{gen} \w{dwáníb’hẹ} On the level of
 séḅ|v.|simple|To be plain, simple|\s{fut} séḅrẹ́, \s{subj} séḅs
 c’hrír|v.|écrire|To write|\s{fut} c’hrírẹ́, \s{subj} c’hrís
 dahaúr|particle|d’accord|Sure, ok, agreed, fine|\s{abbr} da’
@@ -391,7 +391,7 @@ ebhẹ|v.|épais|To be  thick|\s{fut} ebhrẹ, \s{subj} ebhes
 lúr|v.|lourd|To be bulky, oversized, heavy
 c’húr|v. tr.|court|To shrink, reduce in size, narrow \comment Always transitive or reflexive.
 eḍrrá|v.|étroit|Pointy
-c’hánár|n.|canard|\\ Ship, boat. \\ \s{instr indef} By boat
+c’hánár|n.|canard|\\ Ship, boat. \\\textit{adv.} \w{b’henc’hánár} By boat
 c’hánaú|n.|canot|Duck (bird)
 rác’hánár|n.|from \w{ráhe} + \w{c’hánár}|Airship, dirigible
 ráhe|n.|oiseau|Bird
@@ -654,7 +654,11 @@ lá|v.|planer|To fly
 b’haul|v.|voler|To hover, float
 raúvá|n.|fromage|Moon
 
-y’úr|n.|jour|\\ Day \\\w{órdy’úr ád’y’úr} Day after day. \comment Contracted \s{ela} and \s{ill}
+y’úr|n.|jour|
+    \\ Day
+    \\\textit{adj.} \w{cahýny’úr} Every day, daily.
+    \\\textit{adv.} \w{órdy’úr ád’y’úr} Day after day.
+        \comment Contracted \s{ela} and \s{ill}
 y’í|n.|nuit|Night
 vúb’hvâ|n.|movement|Movement, motion
 dévýr|v.|demeurer|\\ To remain, stay. \\ +\s{iness} To live in, dwell
@@ -1481,9 +1485,11 @@ rełi|v.|réglisse|To be bitter
 ḍér|n.|terme|Term
 rét’h|n.|traité|Contract, treaty, deal
 sib’hil|n.|civil|Civilian, layperson
-ḅárḍihyw|n.|particulier|Particular, specific
+ḅárḍihyw|v.|particulier|\\ To be particular \\ To be specific
+raút’h|n.|rôtie|\\\s{sg} A loaf of bread \\\s{pl} Bread
+réhèḍ|n.|recette|Income
 
-## Currently at entry 469 of the following page:
+## Currently at entry 489/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’

@@ -1974,14 +1974,19 @@
             "word": "ḅárḍihibhá"
         },
         {
-            "def": {
-                "def": "Particular, specific."
-            },
-            "def-search": "particular specific",
+            "def-search": "be particularto specific to",
             "etym": "<f-pf>particulier</f-pf>",
             "hw-search": "bardihyw",
             "ipa": "bɑ̃ɰdihyɰ̃",
-            "pos": "n.",
+            "pos": "v.",
+            "senses": [
+                {
+                    "def": "To be particular."
+                },
+                {
+                    "def": "To be specific."
+                }
+            ],
             "word": "ḅárḍihyw"
         },
         {
@@ -3470,7 +3475,7 @@
                     "def": "Ship, boat."
                 },
                 {
-                    "def": "<f-s>instr indef</f-s> By boat."
+                    "def": "<em>adv.</em> <f-w>b’henc’hánár</f-w> By boat."
                 }
             ],
             "word": "c’hánár"
@@ -7961,7 +7966,7 @@
                     "def": "<em>fig.</em> Level, degree."
                 },
                 {
-                    "def": "<f-s>def iness + gen</f-s> On the level of."
+                    "def": "+<f-s>gen</f-s> <f-w>dwáníb’hẹ</f-w> On the level of."
                 }
             ],
             "word": "níb’hẹ"
@@ -9292,6 +9297,22 @@
             "word": "raúsy’é"
         },
         {
+            "def-search": "a bread loaf of",
+            "etym": "<f-pf>rôtie</f-pf>",
+            "hw-search": "rauth",
+            "ipa": "ɰɔ̃θ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "<f-s>sg</f-s> A loaf of bread."
+                },
+                {
+                    "def": "<f-s>pl</f-s> Bread."
+                }
+            ],
+            "word": "raút’h"
+        },
+        {
             "def": {
                 "def": "Serpent, snake."
             },
@@ -9948,6 +9969,17 @@
                 }
             ],
             "word": "réhál"
+        },
+        {
+            "def": {
+                "def": "Income."
+            },
+            "def-search": "income",
+            "etym": "<f-pf>recette</f-pf>",
+            "hw-search": "rehed",
+            "ipa": "ɰɛ̃hɛd",
+            "pos": "n.",
+            "word": "réhèḍ"
         },
         {
             "def": {
@@ -13979,7 +14011,7 @@
             "word": "y’úḅłẹ"
         },
         {
-            "def-search": "after day",
+            "def-search": "after daily day every",
             "etym": "<f-pf>jour</f-pf>",
             "hw-search": "yur",
             "ipa": "ɥũɰ",
@@ -13989,8 +14021,11 @@
                     "def": "Day."
                 },
                 {
+                    "def": "<em>adj.</em> <f-w>cahýny’úr</f-w> Every day, daily."
+                },
+                {
                     "comment": "<p>Contracted <f-s>ela</f-s> and <f-s>ill</f-s>.</p>",
-                    "def": "<f-w>órdy’úr ád’y’úr</f-w> Day after day."
+                    "def": "<em>adv.</em> <f-w>órdy’úr ád’y’úr</f-w> Day after day."
                 }
             ],
             "word": "y’úr"
