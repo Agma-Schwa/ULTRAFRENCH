@@ -1393,7 +1393,7 @@
             "word": "aúraúr"
         },
         {
-            "def-search": "approximately around arrangementorder command group in instructionorder military of order region the tidinessorder",
+            "def-search": "approximately around arrangementorder command group in instructionorder military of order orderly region the tidinessorder tidy",
             "etym": "<f-pf>ordre</f-pf>",
             "hw-search": "aurd",
             "ipa": "ɔ̃ɰd",
@@ -1410,6 +1410,9 @@
                 },
                 {
                     "def": "Order (military group)."
+                },
+                {
+                    "def": "<f-s>orn</f-s> <f-w>vé(t’hý)naúrd</f-w> Orderly, tidy."
                 },
                 {
                     "comment": "<p>Always followed by an ordinal number in the <f-s>abs</f-s> and then by a noun phrase also in the <f-s>abs</f-s>. Since the number is usually not 1, the noun phrase is usually in the <f-s>pl</f-s>.</p>",
@@ -2397,14 +2400,20 @@
             "word": "b’haul"
         },
         {
-            "def": {
-                "def": "Volume."
-            },
-            "def-search": "volume",
+            "def-search": "fat obese overweight volume",
             "etym": "<f-pf>volume</f-pf>",
             "hw-search": "bhauyy",
             "ipa": "βoɥ̃ʏ̃",
             "pos": "n.",
+            "senses": [
+                {
+                    "def": "Volume."
+                },
+                {
+                    "comment": "<p>Lit. ‘voluminous’.</p>",
+                    "def": "<f-s>orn</f-s> <f-w>vé(t’hý)nb’hauý’ý</f-w> Overweight, obese, fat."
+                }
+            ],
             "word": "b’hauý’ý"
         },
         {
@@ -3025,6 +3034,17 @@
             "ipa": "ɕɑ̃",
             "pos": "n.",
             "word": "cá"
+        },
+        {
+            "def": {
+                "def": "Hat."
+            },
+            "def-search": "hat",
+            "etym": "<f-pf>chapeau</f-pf>",
+            "hw-search": "cabh",
+            "ipa": "ɕɐbʱ",
+            "pos": "n.",
+            "word": "cabh"
         },
         {
             "def-search": "a escape loophole out route solution way",
@@ -4367,6 +4387,17 @@
         },
         {
             "def": {
+                "def": "Crown."
+            },
+            "def-search": "crown",
+            "etym": "<f-pf>couronne</f-pf>",
+            "hw-search": "churau",
+            "ipa": "xũɰɔ̃̃",
+            "pos": "n.",
+            "word": "c’húraû"
+        },
+        {
+            "def": {
                 "def": "+<f-s>acc</f-s> To cover, cover up."
             },
             "def-search": "cover to up",
@@ -4810,15 +4841,21 @@
             "word": "deb’hlau"
         },
         {
-            "def": {
-                "comment": "<p>The subject is in the <f-s>abs</f-s> case.</p>",
-                "def": "To become, turn into (+<f-s>transl</f-s> sth./sbd.)."
-            },
-            "def-search": "become into sthsbd to turn",
+            "def-search": "become being cease into to turn",
             "etym": "<f-pf>devenir</f-pf>",
             "hw-search": "debhni",
             "ipa": "dəβnĩ",
             "pos": "v.",
+            "senses": [
+                {
+                    "comment": "<p>The subject is in the <f-s>abs</f-s> case.</p>",
+                    "def": "+<f-s>transl</f-s> To become, turn into."
+                },
+                {
+                    "comment": "<p>The subject is in the <f-s>abs</f-s> case.</p>",
+                    "def": "+<f-s>exess</f-s> To cease being."
+                }
+            ],
             "word": "dẹb’hní"
         },
         {
@@ -10729,6 +10766,18 @@
         },
         {
             "def": {
+                "comment": "<p>River in Italy.</p>",
+                "def": "Rubicon."
+            },
+            "def-search": "rubicon",
+            "etym": "<f-pf>Rubicon</f-pf>",
+            "hw-search": "rybhihau",
+            "ipa": "ɰʏ̃βihɔ̃",
+            "pos": "n.",
+            "word": "Rýb’hihaú"
+        },
+        {
+            "def": {
                 "def": "To ask, question."
             },
             "def-search": "ask question to",
@@ -13396,6 +13445,17 @@
             "hw-search": "vur",
             "ipa": "ʋ̃ũɰ",
             "pos": "v.",
+            "word": "vúr"
+        },
+        {
+            "def": {
+                "def": "Wall."
+            },
+            "def-search": "wall",
+            "etym": "Most likely borrowed from Friulian <f-w>mûr</f-w>",
+            "hw-search": "vur",
+            "ipa": "ʋ̃ũɰ",
+            "pos": "n.",
             "word": "vúr"
         },
         {

@@ -853,7 +853,9 @@ sy’b’h|v. intr.|\pf{se lever}|To rise (+\s{ela} from sth.)
 faú|adv.|fort|Very, right, really. \comment Postpositive intensifier placed after adjectives, particularly
     in the comparative or superlative degrees.
 rés|n.|reste|Rest, remainder
-dẹb’hní|v.|devenir|To become, turn into (+\s{transl} sth./sbd.). \comment The subject is in the \s{abs} case
+dẹb’hní|v.|devenir|
+    \\+\s{transl} To become, turn into \comment The subject is in the \s{abs} case
+    \\+\s{exess} To cease being \comment The subject is in the \s{abs} case
 sẹ|particle|ainsi|So, thus, now, well then, as a result
 véc|n.|mèche|\\ A strand of hair \\\s{pl} Hair \\ Wick (of a candle) \\ Fuse (of a bomb)
 ḍaúb’h|v. intr.|tomber|To fall, drop
@@ -1325,6 +1327,7 @@ aúrd|n.|ordre|
     \\ Order, tidiness
     \\ Order, command, instruction
     \\ Order (military group)
+    \\\s{orn} \w{vé(t’hý)naúrd} Orderly, tidy
     \\\s{def gen} In the region of, around, approximately.
         \comment Always followed by an ordinal number in the \s{abs} and then by a noun phrase also
             in the \s{abs}. Since the number is usually not 1, the noun phrase is usually in the \s{pl}.
@@ -1342,7 +1345,7 @@ susḍré|v.|soustraire|To subtract
 výlḍiḅḷ|v.|multiplier|To multiply
 dib’hih|v.|diviser|To divide
 c’hur|n.|cours|Course (of events)
-b’hauý’ý|n.|volume|Volume
+b’hauý’ý|n.|volume|\\Volume \\\s{orn} \w{vé(t’hý)nb’hauý’ý} Overweight, obese, fat \comment Lit. ‘voluminous’
 il|n.|île|Island, isle|\s{nd} ī
 ḅrýb’h|n.|épreuve|\\ Test \comment For ‘exam’, see \w{ḍèsrzávê} instead. \\ Trial, challenge, ordeal
 ḍèsrzávê|n.|From \pf{test} + \pf{examen}|Test, exam, examination
@@ -1488,6 +1491,10 @@ sib’hil|n.|civil|Civilian, layperson
 ḅárḍihyw|v.|particulier|\\ To be particular \\ To be specific
 raút’h|n.|rôtie|\\\s{sg} A loaf of bread \\\s{pl} Bread
 réhèḍ|n.|recette|Income
+Rýb’hihaú|n.|Rubicon|Rubicon \comment River in Italy.
+vúr|n.|Most likely borrowed from Friulian \w{mûr}|Wall
+c’húraû|n.|couronne|Crown
+cabh|n.|chapeau|Hat
 
 ## Currently at entry 489/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/

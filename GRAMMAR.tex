@@ -388,7 +388,7 @@
 
 \cs_new:Npn \examples {
     \ifvmode\else\unskip\par\fi
-    \vskip 0pt plus 6pt \relax
+    \vskip 3pt plus 3pt \relax
     \penalty -500 \relax %% Before examples is a good place to break.
     \begingroup
         \def \labelitemi { \(\diamond\) }
@@ -401,7 +401,7 @@
         \enditems
     \endgroup
     \penalty -500 \relax %% After examples is a good place to break.
-    \vskip 0pt plus 6pt \relax
+    \vskip 3pt plus 3pt \relax
     \__uf_no_indent:
 }
 
@@ -549,6 +549,8 @@ also has an extended set of abbreviations in italics; for those, see Chapter~\re
     \g{adess}{adessive}
     \g{aff}{affirmative}
     \g{all}{allative}
+    \g{antabl}{antablative}
+    \g{antall}{antallative}
     \g{antess}{antessive}
     \g{caus}{causal}
     \g{circ}{circumfix}
@@ -564,10 +566,12 @@ also has an extended set of abbreviations in italics; for those, see Chapter~\re
     \g{contress}{contressive}
     \g{dat}{dative}
     \g{def}{definite}
+    \g{del}{delative}
     \g{den}{denying}
     \g{distr}{distributive}
     \g{ela}{elative}
     \g{ess}{essive}
+    \g{exess}{exessive}
     \g{fut}{future}
     \g{gen}{genitive}
     \g{gn}{gnomic}
@@ -581,6 +585,7 @@ also has an extended set of abbreviations in italics; for those, see Chapter~\re
     \g{nd}{northern dialect}
     \g{nom}{nominative}
     \g{opt}{optative}
+    \g{orient}{orientative}
     \g{part}{partitive}
     \g{pass}{passive}
     \g{pci}{see §~\ref{subsec:aci-pci}}
@@ -589,6 +594,7 @@ also has an extended set of abbreviations in italics; for those, see Chapter~\re
     \g{pres ant}{present anterior}
     \g{pres}{present}
     \g{pret}{preterite}
+    \g{pstela}{postela}
     \g{pstess}{postessive}
     \g{pstlat}{postlative}
     \g{ptcp}{participle}
@@ -596,9 +602,12 @@ also has an extended set of abbreviations in italics; for those, see Chapter~\re
     \g{sg}{singular}
     \g{spress}{superessive}
     \g{sprlat}{superlative}
+    \g{subess}{subessive}
     \g{subj}{subjunctive}
+    \g{subl}{sublative}
     \g{subst}{substitutive}
     \g{superl}{superlative}
+    \g{surl}{surlative}
     \g{transess}{transessive}
     \g{transl}{translative}
     \g{voc}{vocative}
@@ -890,11 +899,16 @@ creating or constructing the noun in question, e.g. \w{ḍalẹ} ‘table’ $\t
 if the noun ends with a consonant; it replaces word-final \w{ẹ}, and is dropped itself if the word ends with any other vowel,
 to which a level if nasalisation is added if possible.
 
+The \s{indef orn} affix \w{vén-} can be attached to nouns to form something that behaves more or less like an adjective,
+though this technically a case affix and not derivation; a more detailed description of this phenomenon is given
+in §~\ref{subsec:ornative}.
+
+
 \chapter{Nouns}\label{sec:accidence}
 This chapter covers nouns in the broad sense, i.e. nouns substantive, adjectives, adverbs, numerals, and pronouns.
 
 \section{Declension}\label{subsubsec:declension}
-There are no adpositions in UF—a fact for which it compensates with a vast array of cases. There are 2 declensions:
+There are no adpositions in UF—a fact for which it compensates with a total of 49 cases. There are 2 declensions:
 a definite declension and an indefinite declension. There is no grammatical gender distinction in nouns,\footnote{Some
 nouns \textit{do} exhibit natural gender, but this is only relevant for verbal inflexion.} and there are no
 morphologically separate articles.
@@ -924,121 +938,155 @@ some forms, such as the \s{acc}, are borrowed from demonstratives instead (\s{de
 \w{d-} by analogy to the definite forms. The locative cases are combinations of the articles and PF prepositions. The
 \s{abl} is from \pf{loin de} ‘away from’. The diachrony of the \s{gen sg} is unclear.
 
-% TODO: Postelative, Antallative, Antablative (can’t use ‘Antelative’ since that could be
-% ‘Ante-lative’ or ‘Ant-elative’), Citrablative, Citrallative, Transablative, Transallative,
-% Delative, Interlative, Interelative, Contrallative, Contrablative, Sublative, Subelative,
-% Subessive, Exessive (transition out of a state), Orientative, Revertive, Ornative
+% There are no ablative/allative variants of the citressive/transessive/contressive; there’s also
+% no interelative as the elative is just used instead.
 
 % Some ‘semi-secret’ or rather fairly irrelevant diachronic notes are given in comments, for anyone interested.
 % Note: indef pl had a hypercorrected ‘s’ in PF ‘ces’, hence no lenition
-\def\ufdeclensiontablestretch{1.25} % Set this to whatever is required to fill the page.
 \clearpage
+\def\ufdeclensiontablestretch{1} % Set this to whatever is required to fill the page.
 \begingroup
+%\topskip-6pt
 \let\arraystretch\ufdeclensiontablestretch
+\null \vskip-4em
+\vbox to 0pt {
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
-Definite    &\nf Sg&\nf Pl && Indefinite       &\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-Absolutive      & $\emptyset$            & l-       && Absolutive    & $\emptyset$-\N       & $\emptyset$-\L  \\
-Nominative      & lá-\L          & lé-\L    && Nominative    & ŷn-\N        & ý-\L    \\
-Vocative        & $\emptyset$-\L         & $\emptyset$-\N   && Vocative      & /            & /       \\
-Partitive       & dy-\L          & dẹ-\L    && Partitive     & dŷn-\N       & dý-\L   \\
-Accusative      & i-\L           & sý-\L    && Accusative    & s-\L         & s-      \\
-Genitive        & á-\L           & abh-\L   && Genitive      & sý-\N        & sý-\L   \\
-Dative          & as-\L          & a-\L     && Dative        & an-\N        & an-\L   \\
-Instructive     & ráh-\L         & ráh-     && Instructive   & rút’hýn-\N   & rút’hýz- \\
+Definite        &\nf Sg            &\nf Pl          && Indefinite    &\nf Sg          &\nf Pl          \\
 \cline{1-3}\cline{5-7}
 
-Essive          & ḅáł-           & ḅá-      && Essive        & ḅárýn-       & ḅárý-    \\
-Abessive        & sá-\L          & sá-\N    && Abessive      & sáhýn-       & sáhý-    \\
-Translative     & cáj-           & cájvâ-   && Translative   & cájŷn-       & cájvý-   \\ % change(ments)
-Considerative   & słá-           & słé-     && Considerative & sý’óýn-      & sý’óý-   \\
-Causal          & ah-\N          & áh-\N    && Causal        & ahýn-        & áhý-     \\ % ‘à cause de’ / ‘ensemble’ both give ah-/áh-
-Instrumental    & b’hel-         & b’he-    && Instrumental  & b’he(hý)(n)- & b’heh-   \\
-Comitative      & réd’h-         & ré-\L    && Comitative    & rén-         & réd’hý-  \\ % près de
-Contrative      & c’haú-\L       & c’haú-   && Contrative    & c’haút’hýn-  & c’haút’hý- \\ % contre
-Substitutive    & ḷý-\L          & lḷý-\N   && Substitutive  & ḷýn-         & lḷýn- \\
-Distributive    & ca\L-          & cac’h-   && Distributive  & cahýn-       & cahý- \\ % chaque
+Absolutive      & $\emptyset$      & l-             && Absolutive    & $\emptyset$-\N & $\emptyset$-\L \\
+Nominative      & lá-\L            & lé-\L          && Nominative    & ŷn-\N          & ý-\L           \\
+Vocative        & $\emptyset$-\L   & $\emptyset$-\N && Vocative      & /              & /              \\
+Partitive       & dy-\L            & dẹ-\L          && Partitive     & dŷn-\N         & dý-\L          \\
+Accusative      & i-\L             & sý-\L          && Accusative    & s-\L           & s-             \\
+Genitive        & á-\L             & abh-\L         && Genitive      & sý-\N          & sý-\L          \\
+Dative          & as-\L            & a-\L           && Dative        & an-\N          & an-\L          \\
+Instructive     & ráh-\L           & ráh-           && Instructive   & rút’hýn-\N     & rút’hýz-       \\
 \cline{1-3}\cline{5-7}
 
-Illative        & ádá-           & ádé-     && Illative      & ádŷn-        & ádŷ-     \\
-Inessive        & dwá-           & dwé-     && Inessive      & dáhŷn-       & dáhŷ-    \\
-Elative         & órd-           & aúr-     && Elative       & órdŷn-       & aúrŷ-    \\
-Allative        & b’hé-\L        & b’hér-   && Allative      & b’hŷn-\N     & b’hý-\L  \\
-Adessive        & raú-           & raúc-    && Adessive      & raúcŷn-      & raúcý-   \\ % proche
-Ablative        & rê(d)-         & rês-     && Ablative      & rêdýn-       & rêdý-    \\
-Postlative      & réh-\L         & réh-     && Postlative    & réhýn-\N     & réhyl-   \\ % reculer
-Postessive      & déry’          & dér-     && Postessive    & déry’ýn-     & déry’ý-  \\
-Antessive       & ab’há-         & ab’h-    && Antessive     & ab’hŷn-      & ab’hŷ-   \\ % avant
-Citressive      & dẹh-           & dẹs-     && Citressive    & dẹhŷn-       & dẹsŷ- \\ % deçà
-Transessive     & ḅár-           & ḅárd-    && Transessive   & ḅárŷn-       & ḅárŷ- \\ % par-delà
-Superlative     & áu-            & áud’h-   && Superessive   & án-          & ád’hý-   \\ % en haut de (in UF, /ɑ̃o/ > /ɑ̃u/)
-Superessive     & sýr-           & dẹ(h)-\L && Superessive   & dẹhýn-       & sýrŷ-    \\
-Interessive     & aḍá-           & aḍé-     && Interessive   & aḍŷn-        & aḍŷ-     \\
-Contressive     & át’h-\L        & át’h-    && Contressive   & át’hýn-      & át’hý- \\
-Circumlative    & ḍúr-\L(d’h)-   & ḍúr-     && Circumlative  & ḍúrýn-       & ḍúrŷ-    \\ % autour de
-Circumessive    & auḍúr-\L(d’h)- & auḍúr-   && Circumlative  & auḍúrýn-     & auḍúrŷ-  \\ % autour de
-Circumablative  & rêt’húr-\L(d’h)- & rêt’húr- && Circumlative  & rêt’húrýn- & rêt’húrŷ- \\ % loin de autour de
-Perlative       & lý’aú-\L(d’h)- & lý’aú-   && Perlative     & lý’ýn-       & lý’ý-    \\ % le long de
+Essive          & ḅáł-             & ḅá-            && Essive        & ḅárýn-         & ḅárý-          \\
+Abessive        & sá-\L            & sá-\N          && Abessive      & sáhýn-         & sáhý-          \\
+Translative     & cáj-             & cájvâ-         && Translative   & cájŷn-         & cájvý-         \\ % change(ments)
+Exessive        & saú-             & saúr-          && Exessive      & saút’hŷn-      & saút’hý-       \\ % sortir
+Considerative   & słá-             & słé-           && Considerative & sý’óýn-        & sý’óý-         \\
+Causal          & ah-\N            & áh-\N          && Causal        & ahýn-          & áhý-           \\ % ‘à cause de’ / ‘ensemble’ both give ah-/áh-
+Instrumental    & b’hel-           & b’he-          && Instrumental  & b’he(hý)(n)-   & b’heh-         \\
+Comitative      & réd’h-           & ré-\L          && Comitative    & rén-           & réd’hý-        \\ % près de
+Contrative      & c’haú-\L         & c’haú-         && Contrative    & c’haút’hýn-    & c’haút’hý-     \\ % contre
+Substitutive    & ḷý-\L            & lḷý-\N         && Substitutive  & ḷýn-           & lḷýn-          \\
+Distributive    & ca\L-            & cac’h-         && Distributive  & cahýn-         & cahý-          \\ % chaque
+Ornative        & vé-\L            & véḍ-           && Ornative      & vé(t’hý)n-     & vét’hý-        \\ % mettre
+\cline{1-3}\cline{5-7}
+
+Illative        & ádá-             & ádé-           && Illative      & ádŷn-          & ádŷ-           \\
+Inessive        & dwá-             & dwé-           && Inessive      & dáhŷn-         & dáhŷ-          \\
+Elative         & órd-             & aúr-           && Elative       & órdŷn-         & aúrŷ-          \\
+Allative        & b’hé-\L          & b’hér-         && Allative      & b’hŷn-\N       & b’hý-\L        \\
+Adessive        & raú-             & raúc-          && Adessive      & raúcŷn-        & raúcý-         \\ % proche
+Ablative        & rê(d)-           & rês-           && Ablative      & rêdýn-         & rêdý-          \\
+Postlative      & réh-\L           & réh-           && Postlative    & réhýn-\N       & réhyl-         \\ % reculer
+Postessive      & déry’            & dér-           && Postessive    & déry’ýn-       & déry’ý-        \\
+Postelative     & dý’ab’h-         & dý’a-          && Postelative   & dý’ab’hýn-     & dý’ab’hý-      \\ % de l’avant
+Antallative     & rab’há-          & rab’h-         && Antallative   & rab’hŷn-       & rab’hŷ-        \\ % ANTESS + ‘r-’ from PSTLAT
+Antessive       & ab’há-           & ab’h-          && Antessive     & ab’hŷn-        & ab’hŷ-         \\ % avant
+Antablative     & dab’há-          & dab’h-         && Antablative   & dab’hŷn-       & dab’hŷ-        \\ % ANTESS + ‘d-’ from PSTELA
+Superlative     & áu-              & áud’h-         && Superessive   & án-            & ád’hý-         \\ % en haut de (in UF, /ɑ̃o/ > /ɑ̃u/)
+Superessive     & sýr-             & dẹ(h)-\L       && Superessive   & dẹhýn-         & sýrŷ-          \\
+Delative        & áb’há-           & áb’h-          && Delative      & áb’hýn-        & áb’hŷ-         \\ % en bas
+Sublative       & c’huý’-          & c’hu-          && Sublative     & c’hýn-         & c’hý-          \\ % couler
+Subessive       & faú-             & fau-           && Subessive     & faúýn-         & faúý-          \\ % fond
+Surlative       & vaû-             & vaût’h-        && Surlative     & vaût’hýn-      & vaût’hý-       \\ % monter
+Interlative     & sér-             & sé-\L          && Interlative   & sérýn-         & sérý-          \\ % insérer
+Interessive     & aḍá-             & aḍé-           && Interessive   & aḍŷn-          & aḍŷ-           \\ % entre
+Circumlative    & ḍúr-\L(d’h)-     & ḍúr-           && Circumlative  & ḍúrýn-         & ḍúrŷ-          \\ % autour de
+Circumessive    & auḍúr-\L(d’h)-   & auḍúr-         && Circumlative  & auḍúrýn-       & auḍúrŷ-        \\ % autour de
+Circumablative  & rêt’húr-\L(d’h)- & rêt’húr-       && Circumlative  & rêt’húrýn-     & rêt’húrŷ-      \\ % loin de autour de
+Citressive      & dẹh-             & dẹs-           && Citressive    & dẹhŷn-         & dẹsŷ-          \\ % deçà
+Transessive     & ḅár-             & ḅárd-          && Transessive   & ḅárŷn-         & ḅárŷ-          \\ % par-delà
+Contressive     & át’h-\L          & át’h-          && Contressive   & át’hýn-        & át’hý-         \\
+Orientative     & fér-             & férf-          && Orientative   & férýn-         & férý-          \\ % faire face
+Revertive       & det’h-           & det’hú-        && Revertive     & det’hýn-       & det’hý-        \\ % détourner
+Perlative       & lý’aú-\L(d’h)-   & lý’aú-         && Perlative     & lý’ýn-         & lý’ý-          \\ % le long de
 \end{tabular}
-\medskip
 \caption{UF Declension.}\label{tab:table-uf-declension}
 \end{center}
 \end{table}
+\vss
+}
 \endgroup
 
+\clearpage
 \begingroup
 \let\arraystretch\ufdeclensiontablestretch
+\null \vskip-4em
+\vbox to 0pt {
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
-Definite    &\nf Sg&\nf Pl && Indefinite&\nf Sg&\nf Pl\\\cline{1-3}\cline{5-7}
-Absolutive        & ḍalẹ             & lḍalẹ              && Absolutive      & ḍalẹ́            & ḍalẹ        \\
-Nominative        & lát’halẹ         & lét’halẹ           && Nominative      & ŷnalẹ           & ýt’halẹ     \\
-Vocative          & t’halẹ           & nalẹ               && Vocative        & /               & /           \\
-Partitive         & dyt’halẹ         & dẹt’halẹ           && Partitive       & dŷnalẹ          & dýt’halẹ    \\
-Accusative        & it’halẹ          & sýt’halẹ           && Accusative      & st’halẹ         & sḍalẹ       \\
-Genitive          & át’halẹ          & abht’halẹ          && Genitive        & sýnalẹ          & sýt’halẹ    \\
-Dative            & ast’halẹ         & at’halẹ            && Dative          & analẹ           & ant’halẹ    \\
-Instructive       & ráht’halẹ        & ráhḍalẹ            && Instructive     & rút’hýnalẹ      & rút’hýzḍalẹ \\
+Definite          &\nf Sg            &\nf Pl              && Indefinite      &\nf Sg           &\nf Pl        \\
 \cline{1-3}\cline{5-7}
 
-Essive            & ḅáłḍalẹ          & ḅáḍalẹ             && Essive          & ḅárýnḍale       & ḅárýḍale    \\
-Abessive          & sát’halẹ         & sánalẹ             && Abessive        & sáhýnḍale       & sáhýḍale    \\
-Translative       & cájḍalẹ          & cájvâḍalẹ          && Translative     & cájŷnḍalẹ       & cájvýḍalẹ   \\
-Considerative     & słáḍalẹ          & słéḍalẹ            && Considerative   & sý’óýnḍalẹ      & sý’óýḍalẹ   \\
-Causal            & ahnalẹ           & áhnalẹ             && Causal          & ahýnḍalẹ        & áhýḍalẹ     \\
-Instrumental      & b’helḍalẹ        & b’heḍalẹ           && Instrumental    & b’hehýḍalẹ      & b’hehḍalẹ   \\
-Comitative        & réd’hḍalẹ        & rét’halẹ           && Comitative      & rénḍalẹ         & réd’hýḍalẹ  \\
+Absolutive        & ḍalẹ             & lḍalẹ              && Absolutive      & ḍalẹ́            & ḍalẹ          \\
+Nominative        & lát’halẹ         & lét’halẹ           && Nominative      & ŷnalẹ           & ýt’halẹ       \\
+Vocative          & t’halẹ           & nalẹ               && Vocative        & /               & /             \\
+Partitive         & dyt’halẹ         & dẹt’halẹ           && Partitive       & dŷnalẹ          & dýt’halẹ      \\
+Accusative        & it’halẹ          & sýt’halẹ           && Accusative      & st’halẹ         & sḍalẹ         \\
+Genitive          & át’halẹ          & abht’halẹ          && Genitive        & sýnalẹ          & sýt’halẹ      \\
+Dative            & ast’halẹ         & at’halẹ            && Dative          & analẹ           & ant’halẹ      \\
+Instructive       & ráht’halẹ        & ráhḍalẹ            && Instructive     & rút’hýnalẹ      & rút’hýzḍalẹ   \\
+\cline{1-3}\cline{5-7}
+
+Essive            & ḅáłḍalẹ          & ḅáḍalẹ             && Essive          & ḅárýnḍale       & ḅárýḍale      \\
+Abessive          & sát’halẹ         & sánalẹ             && Abessive        & sáhýnḍale       & sáhýḍale      \\
+Translative       & cájḍalẹ          & cájvâḍalẹ          && Translative     & cájŷnḍalẹ       & cájvýḍalẹ     \\
+Exessive          & saúḍalẹ          & saúrḍalẹ           && Exessive        & saút’hŷnḍalẹ    & saút’hýḍalẹ   \\
+Considerative     & słáḍalẹ          & słéḍalẹ            && Considerative   & sý’óýnḍalẹ      & sý’óýḍalẹ     \\
+Causal            & ahnalẹ           & áhnalẹ             && Causal          & ahýnḍalẹ        & áhýḍalẹ       \\
+Instrumental      & b’helḍalẹ        & b’heḍalẹ           && Instrumental    & b’hehýḍalẹ      & b’hehḍalẹ     \\
+Comitative        & réd’hḍalẹ        & rét’halẹ           && Comitative      & rénḍalẹ         & réd’hýḍalẹ    \\
 Contrative        & c’haút’halẹ      & c’haúḍalẹ          && Contrative      & c’haút’hýnḍalẹ  & c’haút’hýḍalẹ \\
-Substitutive      & ḷýt’halẹ         & lḷýnalẹ            && Substitutive    & ḷýnḍalẹ         & lḷýnḍalẹ \\
-Distributive      & cat’halẹ         & cac’hḍalẹ          && Distributive    & cahýnḍalẹ       & c’hahýḍalẹ \\ % chaque
+Substitutive      & ḷýt’halẹ         & lḷýnalẹ            && Substitutive    & ḷýnḍalẹ         & lḷýnḍalẹ      \\
+Distributive      & cat’halẹ         & cac’hḍalẹ          && Distributive    & cahýnḍalẹ       & c’hahýḍalẹ    \\
+Ornative          & vét’halẹ         & véḍḍalẹ            && Ornative        & vénḍalẹ         & vét’hýḍalẹ    \\
 \cline{1-3}\cline{5-7}
 
-Illative          & ádáḍalẹ          & ádéḍalẹ            && Illative        & ádŷnḍalẹ        & ádŷḍalẹ     \\
-Inessive          & dwáḍalẹ          & dwéḍalẹ            && Inessive        & dáhŷnḍalẹ       & dáhŷḍalẹ    \\
-Elative           & órdḍalẹ          & aúrḍalẹ            && Elative         & órdŷnḍalẹ       & aúrŷḍalẹ    \\
-Allative          & b’hét’halẹ       & b’hérḍalẹ          && Allative        & b’hŷnalẹ        & b’hýt’halẹ  \\
-Adessive          & raúḍalẹ          & raúcḍalẹ           && Adessive        & raúcŷnḍalẹ      & raúcýḍalẹ   \\
-Ablative          & rêḍalẹ           & rêsḍalẹ            && Ablative        & rêdýnḍalẹ       & rêdýḍalẹ    \\
-Postlative        & réht’halẹ        & réhḍalẹ            && Postlative      & réhýnalẹ        & réhylḍalẹ   \\
-Postessive        & déry’ḍalẹ        & dérḍalẹ            && Postessive      & déry’ýnḍalẹ     & déry’ýḍalẹ  \\
-Antessive         & ab’háḍalẹ        & ab’hḍalẹ           && Antessive       & ab’hŷnḍalẹ      & ab’hŷḍalẹ   \\
-Citressive        & dẹhḍalẹ          & dẹsḍalẹ            && Citressive      & dẹhŷnḍalẹ       & dẹsŷḍalẹ \\
-Transessive       & ḅárḍalẹ          & ḅárdḍalẹ           && Transessive     & ḅárŷnḍalẹ       & ḅárŷḍalẹ \\
-Superlative       & áuḍalẹ           & áud’hḍalẹ          && Superessive     & ánḍalẹ          & ád’hýḍalẹ   \\
-Superessive       & sýrḍalẹ          & dẹt’halẹ           && Superessive     & dẹhýnḍalẹ       & sýrŷḍalẹ    \\
-Interessive       & aḍáḍalẹ          & aḍéḍalẹ            && Interessive     & aḍŷnḍalẹ        & aḍŷḍalẹ     \\
-Contressive       & át’ht’halẹ       & át’hḍalẹ           && Contressive     & át’hýnḍalẹ      & át’hýḍalẹ \\
-Circumlative      & ḍúrt’halẹ        & ḍúrḍalẹ            && Circumlative    & ḍúrýnḍalẹ       & ḍúrŷḍalẹ    \\
-Circumessive      & auḍúrt’halẹ      & auḍúrḍalẹ          && Circumessive    & auḍúrýnḍalẹ     & auḍúrŷḍalẹ  \\
-Circumablative    & rêt’húrt’halẹ    & rêt’húrḍalẹ        && Circumablative  & rêt’húrýnḍalẹ   & rêt’húrŷḍalẹ \\
-Perlative         & lý’aút’halẹ      & lý’aúḍalẹ          && Perlative       & lý’ýnḍalẹ       & lý’ýḍalẹ     \\
+Illative          & ádáḍalẹ          & ádéḍalẹ            && Illative        & ádŷnḍalẹ        & ádŷḍalẹ       \\
+Inessive          & dwáḍalẹ          & dwéḍalẹ            && Inessive        & dáhŷnḍalẹ       & dáhŷḍalẹ      \\
+Elative           & órdḍalẹ          & aúrḍalẹ            && Elative         & órdŷnḍalẹ       & aúrŷḍalẹ      \\
+Allative          & b’hét’halẹ       & b’hérḍalẹ          && Allative        & b’hŷnalẹ        & b’hýt’halẹ    \\
+Adessive          & raúḍalẹ          & raúcḍalẹ           && Adessive        & raúcŷnḍalẹ      & raúcýḍalẹ     \\
+Ablative          & rêḍalẹ           & rêsḍalẹ            && Ablative        & rêdýnḍalẹ       & rêdýḍalẹ      \\
+Postlative        & réht’halẹ        & réhḍalẹ            && Postlative      & réhýnalẹ        & réhylḍalẹ     \\
+Postessive        & déry’ḍalẹ        & dérḍalẹ            && Postessive      & déry’ýnḍalẹ     & déry’ýḍalẹ    \\
+Postelative       & dý’ab’hḍalẹ      & dý’aḍalẹ           && Postelative     & dý’ab’hýnḍalẹ   & dý’ab’hýḍalẹ  \\
+Antallative       & rab’háḍalẹ       & rab’hḍalẹ          && Antallative     & rab’hŷnḍalẹ     & rab’hŷḍalẹ    \\
+Antessive         & ab’háḍalẹ        & ab’hḍalẹ           && Antessive       & ab’hŷnḍalẹ      & ab’hŷḍalẹ     \\
+Antablative       & dab’háḍalẹ       & dab’hḍalẹ          && Antablative     & dab’hŷnḍalẹ     & dab’hŷḍalẹ    \\
+Superlative       & áuḍalẹ           & áud’hḍalẹ          && Superessive     & ánḍalẹ          & ád’hýḍalẹ     \\
+Superessive       & sýrḍalẹ          & dẹt’halẹ           && Superessive     & dẹhýnḍalẹ       & sýrŷḍalẹ      \\
+Delative          & áb’háḍalẹ        & áb’hḍalẹ           && Delative        & áb’hýnḍalẹ      & áb’hŷḍalẹ     \\
+Sublative         & c’huý’ḍalẹ       & c’huḍalẹ           && Sublative       & c’hýnḍalẹ       & c’hýḍalẹ      \\
+Subessive         & faúḍalẹ          & fauḍalẹ            && Subessive       & faúýnḍalẹ       & faúýḍalẹ      \\
+Surlative         & vaûḍalẹ          & vaût’hḍalẹ         && Surlative       & vaût’hýnḍalẹ    & vaût’hýḍalẹ   \\
+Interlative       & sérḍalẹ          & sét’halẹ           && Interlative     & sérýnḍalẹ       & sérýḍalẹ      \\
+Interessive       & aḍáḍalẹ          & aḍéḍalẹ            && Interessive     & aḍŷnḍalẹ        & aḍŷḍalẹ       \\
+Circumlative      & ḍúrt’halẹ        & ḍúrḍalẹ            && Circumlative    & ḍúrýnḍalẹ       & ḍúrŷḍalẹ      \\
+Circumessive      & auḍúrt’halẹ      & auḍúrḍalẹ          && Circumessive    & auḍúrýnḍalẹ     & auḍúrŷḍalẹ    \\
+Circumablative    & rêt’húrt’halẹ    & rêt’húrḍalẹ        && Circumablative  & rêt’húrýnḍalẹ   & rêt’húrŷḍalẹ  \\
+Citressive        & dẹhḍalẹ          & dẹsḍalẹ            && Citressive      & dẹhŷnḍalẹ       & dẹsŷḍalẹ      \\
+Transessive       & ḅárḍalẹ          & ḅárdḍalẹ           && Transessive     & ḅárŷnḍalẹ       & ḅárŷḍalẹ      \\
+Contressive       & át’ht’halẹ       & át’hḍalẹ           && Contressive     & át’hýnḍalẹ      & át’hýḍalẹ     \\
+Orientative       & férḍalẹ          & férfḍalẹ           && Orientative     & férýnḍalẹ       & férýḍalẹ      \\
+Revertive         & det’hḍalẹ        & det’húḍalẹ         && Revertive       & det’hýnḍalẹ     & det’hýḍalẹ    \\
+Perlative         & lý’aút’halẹ      & lý’aúḍalẹ          && Perlative       & lý’ýnḍalẹ       & lý’ýḍalẹ      \\
 \end{tabular}
-\medskip
 \caption{Paradigm of \w{ḍalẹ}.}\label{tab:dale-declension}
 \end{center}
 \end{table}
+\vss
+}
 \endgroup
 \clearpage
 
@@ -1202,7 +1250,8 @@ that is not a primary or locative case.
 
 \subsection{Essive}
 The \s{ess} case is used to mean ‘as X’, ‘like X’, ‘in the form of X’, or ‘in the role of X’. It can also be used to
-communicate the state of mind or material of something. In Middle UF, and sometimes still in poetry, the \s{ess} may be
+communicate the state of mind or material of something. See also §~\ref{subsec:ornative} on the \s{orn} case below,
+which can sometimes overlap with the \s{ess} in meaning. In Middle UF, and sometimes still in poetry, the \s{ess} may be
 used interchangeably with the \s{iness} to indicate specifically an ongoing temporal state.
 \begin{examples}
     \item \w{Lẹt’hiy’e dyt’halẹ \b{ḅárýn}y’éjúré.} ‘He uses the table as a chair.’
@@ -1216,12 +1265,11 @@ The last example, \w{Laḅraúc̣á ḅárýnsuh b’hévẹ}, specifically mean
 with a similar sentence that uses the \s{instr} instead, \w{Laḅraúc̣á b’hensuh b’hévẹ}, which can also be translated as
 ‘He approached me with fear’.
 
-Specifically, both the \s{ess} and \s{instr}
-can be used to translate English ‘with’—not just in this particular case—but there is a difference: The \s{instr} variant
-is more accurately translated
+The \s{instr} variant is more accurately translated
 as ‘He was fear while approaching me’ (‘was fear’, \textit{not} ‘was in fear‘, as in he was fear itself). The \s{ess}
 indicates that he was afraid, the \s{instr} that either he used fear in some manner to facilitate his approach
-or that his approach caused me fear.
+or that his approach caused me fear. More generally speaking, the \s{instr} always indicates a medium or tool by means
+of which or utilising which something is accomplished.
 
 \subsection{Abessive}
 The \s{abess} case denotes the lack or absence of something.
@@ -1234,6 +1282,12 @@ The \s{abess} case denotes the lack or absence of something.
 The \s{transl} case indicates the end or target state of a process or transformation.
 \begin{examples}
     \item \w{Aú sdẹb’hní \b{cájŷn}árb.} ‘The man turned into a tree.’
+\end{examples}
+
+\subsection{Exessive}
+The \s{exess} case indicates a transition out of a state.
+\begin{examples}
+    \item \w{Aú sdẹb’hní \b{saút’hŷn}árb.} ‘The man ceased being a tree.’
 \end{examples}
 
 \subsection{Considerative}
@@ -1296,6 +1350,53 @@ The \s{distr} case can be translated as ‘per’ or ‘for each one’.
     \item \w{raút’h \b{cac’h}ly} ‘a loaf of bread for each of them’
     \item \w{réhèḍ \b{cahýn}db’hid’h} ‘income per capita’
     \item \w{b’hénvâ \b{cahýn}y’úr} ‘a daily occurrence’
+\end{examples}
+
+\subsection{Ornative}\label{subsec:ornative}
+The \s{orn} case indicates that something possesses a quality or is endowed with something. Nouns in the
+\s{orn} function much like adjectives, and in a sense, the \s{indef orn} can instead be thought of as a
+derivational marker that turns nouns into adjectives and which functions much like English \textit{-ly}.
+
+Traditionally,
+the \s{indef orn} affix was \w{vét’hýn-}, but since it is such a common case, it is usually shortened to \w{vén-}
+in Modern UF, even in academic or literary writing.
+
+\begin{examples}
+    \item \w{aú \b{vén}faúr} ‘the powerful man’ (lit. ‘the man endowed with force’)
+    \item \w{sehár \b{vén}c’húraû} ‘a king bearing a crown’
+\end{examples}
+
+The \s{orn} can be similar in meaning to the \s{ess}; the exact difference between the two depends on the word:
+for abstract concepts, the \s{orn} is generally preferred and denotes that the quality or concept in question
+appertains to the object qualified by the \s{orn}, whereas the \s{ess} indicates that the object serves as a
+stand-in or is in some way equivalent to the concept.\footnote{The \s{ess} is sometimes also used in the former
+sense in poetry, but such usage is rare and rather archaic.} Abstract concepts in the \s{orn} are generally
+\s{indef}.
+\begin{examples}
+    \item \w{\b{vén}b’hauý’ý} ‘voluminous’ (lit. ‘endowed with volume’; a euphemism for ‘overweight’)
+    \item \w{vár \b{vén}aúrd} ‘an orderly march’
+\end{examples}
+
+However, the \s{ess} is preferred in metaphors and figurative descriptions, as well as to indicate the (primary)
+material that something is made of.
+\begin{examples}
+    \item \w{dáhŷnáẹ \b{ḅárýn}rê} ‘in a copper sky’
+    \item \w{lvúr \b{ḅárý}vaût’há} ‘walls [which are] like mountains’
+    \item \w{ḍalẹ \b{ḅárýn}rád’hyr} ‘the wooden table’
+\end{examples}
+
+With concrete objects, the difference between the two becomes more obvious: a concrete object in the \s{orn}
+signifies physical attachment or decoration, whereas an \s{ess} communicates likeness, resemblance, or
+that an object is used as a stand-in for something else.
+
+Note that word order can matter here: if the \s{ess} is separated from the noun it qualifies by an adjective,
+it ends up qualifying the adjective instead. While this is technically also the case for the \s{orn}, the two
+interpretations are more likely to be semantically equivalent than in the \s{ess}.
+\begin{examples}
+    \item \w{abhár ec’hlérâ \b{vén}aúr} ‘a glimmering house decorated with gold’
+    \item \w{abhár \b{vén}aúr ec’hlérâ} ‘a house decorated with glimmering gold’
+    \item \w{abhár ec’hlérâ \b{ḅárýn}aúr} ‘a house shining like gold (but not actually made of gold)’
+    \item \w{abhár \b{ḅárýn}aúr ec’hlérâ} ‘a glimmering house made entirely of gold’
 \end{examples}
 
 \section{Tertiary Cases}\label{sec:decl-tertiary}
@@ -1378,27 +1479,28 @@ The \s{pstess} case indicates that an object is directly behind something else.
 \subsection{Postlative}
 The \s{pstlat} case indicates that an object is moving towards directly behind another object.
 
+\subsection{Postelative}
+The \s{pstela} case indicates motion away from behind an object.
+
+\subsection{Antallative}
+The \s{antall} case indicates motion towards in front of an object.
+
 \subsection{Antessive}
 The \s{antess} case denotes that an object is directly before or in front of something.
 
-\subsection{Citressive}
-The \s{citr} case indicates that an object is on the near side of another object. When used with an expression of time,
-it means ‘before’ or ‘ago’.
+% Not ‘antelative’ because that could be ‘ante-lative’ or ‘ant-elative’.
+\subsection{Antablative}
+The \s{antabl} case denotes motion away from in front of an object.
+
+\subsection{Superlative}
+The \s{super} case—not to be confused with the superlative degree of comparison—indicates motion to the top of or on
+top of an object.
 \begin{examples}
-    \item \w{\b{dẹsŷ}y’éc’h dýsá} ‘two centuries ago’
-    \item \w{\b{dẹh}ríb’hy’ér} ‘on this side of the river’
+    \item \w{\b{áu}ḍalẹ} ‘(towards) atop the table’
 \end{examples}
 
-\subsection{Transessive}
-The \s{transess} case indicates that an object is on the far side of or beyond another object. When used with an expression
-of time, it means ‘after’.
-\begin{examples}
-    \item \w{\b{ḅárŷ}y’éc’h dýsá} ‘two centuries later’
-    \item \w{\b{ḅár}ríb’hy’ér} ‘across/beyond the river’
-\end{examples}
-
-Do not confuse this case with the \s{ess}, e.g. in the \s{indef pl}, we have
-\s{transess} \w{ḅárŷn-} but \s{ess} \w{ḅárýn-}.
+This case is one of the few places in the standard dialect where we can observe \w{áu} /ɑ̃u/ which is \textit{not} the
+same as \w{aú} /ɔ̃/.
 
 \subsection{Superessive}
 The \s{spress} case means ‘above’. Note that it normally does \textit{not} mean
@@ -1419,23 +1521,59 @@ It can also be used figuratively with \w{eḍ} to indicate that someone is about
 The \w{h} in the \s{spress def pl} is omitted if the following sound is a consonant, e.g. \w{dẹhárb} ‘above the trees’
 but \w{dẹt’halẹ} ‘above the tables’.
 
-\subsection{Superlative}
-The \s{super} case—not to be confused with the superlative degree of comparison—indicates motion to the top of or on
-top of an object.
-\begin{examples}
-    \item \w{\b{áu}ḍalẹ} ‘(towards) atop the table’
-\end{examples}
+\subsection{Delative}
+The \s{del} case denotes downwards motion.
 
-This case is one of the few places in the standard dialect where we can observe \w{áu} /ɑ̃u/ which is \textit{not} the
-same as \w{aú} /ɔ̃/.
+\subsection{Sublative}
+The \s{subl} case denotes motion down towards an object.
+
+\subsection{Subessive}
+The \s{subess} case denotes positioning below an object.
+
+\subsection{Surlative}
+The \s{sur} case denotes upwards motion.
 
 \subsection{Interessive}
 The \s{interess} case conveys the meaning of ‘among’ or ‘between’.
+
+\subsection{Circumablative}
+The \s{circabl} case denotes motion away from around something. It is a fairly rare case, but despite this, it sees common
+use with verbs such as \w{ḅlyc̣} ‘to peel’.
+\begin{examples}
+    \item \w{Jḅlyc̣ \b{rêt’húr}bhaú.} ‘I peel the apple.’
+\end{examples}
+
+%% [TODO: Postelative (idea: ‘out of hiding’ from lit. ‘away from behind a bush’)]
+
+\subsection{Citressive}
+The \s{citr} case indicates that an object is on the near side of another object. When used with an expression of time,
+it means ‘before’ or ‘ago’.
+\begin{examples}
+    \item \w{\b{dẹsŷ}y’éc’h dýsá} ‘two centuries ago’
+    \item \w{\b{dẹh}ríb’hy’ér} ‘on this side of the river’
+\end{examples}
+
+\subsection{Transessive}
+The \s{transess} case indicates that an object is on the far side of or beyond another object. When used with an expression
+of time, it means ‘after’.
+\begin{examples}
+    \item \w{\b{ḅárŷ}y’éc’h dýsá} ‘two centuries later’
+    \item \w{\b{ḅár}ríb’hy’ér} ‘across/beyond the river’
+\end{examples}
+
+Do not confuse this case with the \s{ess}, e.g. in the \s{indef pl}, we have
+\s{transess} \w{ḅárŷn-} but \s{ess} \w{ḅárýn-}.
 
 \subsection{Contressive}
 The \s{contress} case denotes positioning opposite something.
 \begin{examples}
     \item \w{abhár \b{át’h}árb} ‘the house opposite the tree’
+\end{examples}
+
+\subsection{Orientative}
+The \s{orient} case denotes that an object is facing towards something.
+\begin{examples}
+    \item \w{\b{fér}saul} ‘facing the sun’
 \end{examples}
 
 \subsection{Perlative}
@@ -1452,15 +1590,6 @@ be used figuratively.
 The formation \s{perl def sg} deserves some explanation: the \w{d’h} is dropped if the word starts with a consonant, in
 which case the prefix causes lenition, e.g. \w{lý’aút’halẹ} ‘across the table’; conversely, it is retained if the word
 starts with a vowel, e.g. \w{lý’aúd’háẹ} ‘across the sky’.
-
-\subsection{Circumablative}
-The \s{circabl} case denotes motion away from around something. It is a fairly rare case, but despite this, it sees common
-use with verbs such as \w{ḅlyc̣} ‘to peel’.
-\begin{examples}
-    \item \w{Jḅlyc̣ \b{rêt’húr}bhaú.} ‘I peel the apple.’
-\end{examples}
-
-%% [TODO: Postelative (idea: ‘out of hiding’ from lit. ‘away from behind a bush’)]
 
 \section{Names, Titles, and Appositions}\label{subsubsec:names-and-titles}
 Proper nouns are declined in the definite form only. Unlike other nouns, the \s{nom} is almost always
@@ -1492,6 +1621,18 @@ from modifier nouns, which take the \s{abs} instead. Consider:
 In both phrases, the apposition \w{ḍaléraû} ‘carpenter’ is declined in the \s{dat}. In the first, \w{véḍ} ‘master’
 is a modifier, not an apposition, and thus assumes \s{abs} case rather than \s{dat} case, while in the second, it
 \textit{is} an apposition and thus assumes \s{dat} case as well.
+
+\section{Declension Stacking}
+UF nouns can be declined more than once by taking an inflected noun form and declining it again. Generally, only a
+select few cases, particularly the \s{gen}, \s{orn}, and \s{ess}, are eligible for this. This is referred to as \textit{declension
+stacking}. In many cases, what is actually intended to be declined is an implied ‘the one(s)’, or a noun that is omitted
+and obvious from context. The hyphens used here are only for clarity; they are omitted in actual UF writing.
+\begin{examples}
+    \item \w{\b{B’hér-á-}c̣ár jrâhaút’hé.} ‘I met with Charles’ [family/children].’
+    \item \w{Laráb’hérér \b{Lé-á-}hehár Lý’aúrýb’hihaú.} ‘Caesar’s [legions/soldiers] crossed the Rubicon.’
+    \item \w{cabh \b{á-ḅárý-}vaût’há} ‘Giant’s Hat’\footnote{A species of mushroom.} (lit. ‘hat of the mountain-like one’)
+    %\item \w{vénaúrd}
+\end{examples}
 
 \section{Negation}\label{subsubsec:noun-negation}
 Nouns, as well as proper adjectives and adverbs (i.e. those which are not formed from an adjective verb) are negated
