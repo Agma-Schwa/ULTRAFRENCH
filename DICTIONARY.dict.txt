@@ -1289,7 +1289,7 @@ jaú|v.|jaune|To be yellow
 áb|n.|ambre|Amber
 lý|v.|bleu|To be blue
 b’hér|v.|vert|To be green|\s{nd} b’haǐ
-aúrâ|v.|orange|To be orange
+aúrâ|v. or n.|orange|\\ To be orange \\ Orange (fruit) \\ Orange (colour)
 lác|v.|blanche|To be white
 rár|v.|noir|To be black
 rís|v.|grise|To be grey, gray
@@ -1499,8 +1499,36 @@ Rýb’hihaú|n.|Rubicon|Rubicon \comment River in Italy.
 vúr|n.|Most likely borrowed from Friulian \w{mûr}|Wall
 c’húraû|n.|couronne|Crown
 cabh|n.|chapeau|Hat
+ráhaú|n.|joyau|Jewel, gemstone
+réná|n.|grenat|Garnet
+ávẹ́t’his|n.|améthyste|Amethyst
+sab’hír|n.|saphir|Sapphire
+c’haúrêd’haú|n.|corindon|Corundum
+áráḍ|n.|agate|Agate
+aubhal|n.|opale|Opal
+y’ávâ|n.|diamant|Diamond
+v́aúd|n.|émeraude|Emerald
+aúníc’h|n.|onyx|Onyx
+ḅẹ́ríd’h|n.|péridot|Peridot
+labhislahyý’|n.|lapis-lazuli|Lapis lazuli
+bẹ́ríl|n.|béryl|Beryl
+ḍaubhaz|n.|topaze|Topaz
+rýb’h|n.|rubis|Ruby
+rísḍaldraú|n.|\pf{cristal de roche}|Quartz
+rísḍal|n.|cristal|Crystal
+siý’èc’h|n.|silex|Flint
+c’halsedrâ|n.|calcédoine|Chalcedony
+nác’h|n.|nacre|\\ Pearl \\ Nacre, mother-of-pearl
+ḅíríḍ|n.|pyrite|Pyrite
+váý’ahiḍ|n.|malachite|Malachite
+jad|n.|jade|Jade
+auhidy’ê|n.|obsidienne|Obsidian
+y’érdý’ý|n.|\pf{pierre de lune}|Moonstone
+sérb’h|v.|+\s{acc}|To serve (a meal)
+vníb’hès|n. intr.|\pf{se manifester}|To manifest, appear, become visible
+rúḍ|n.|route|\\ Road \\\textit{esp.} Trail, footpath
 
-## Currently at entry 489/959 of the following page:
+## Currently at entry 492/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’

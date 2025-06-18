@@ -803,6 +803,17 @@
         },
         {
             "def": {
+                "def": "Agate."
+            },
+            "def-search": "agate",
+            "etym": "<f-pf>agate</f-pf>",
+            "hw-search": "arad",
+            "ipa": "ɑ̃ɰɑ̃d",
+            "pos": "n.",
+            "word": "áráḍ"
+        },
+        {
+            "def": {
                 "def": "Ferocious, violent."
             },
             "def-search": "ferocious violent",
@@ -1151,6 +1162,17 @@
         },
         {
             "def": {
+                "def": "Opal."
+            },
+            "def-search": "opal",
+            "etym": "<f-pf>opale</f-pf>",
+            "hw-search": "aubhal",
+            "ipa": "obʱɐɮ̃",
+            "pos": "n.",
+            "word": "aubhal"
+        },
+        {
+            "def": {
                 "def": "By the way, btw, incidentally."
             },
             "def-search": "btw by incidentally the way",
@@ -1296,6 +1318,17 @@
         },
         {
             "def": {
+                "def": "Obsidian."
+            },
+            "def-search": "obsidian",
+            "etym": "<f-pf>obsidienne</f-pf>",
+            "hw-search": "auhidye",
+            "ipa": "ohidɥɛ̃̃",
+            "pos": "n.",
+            "word": "auhidy’ê"
+        },
+        {
+            "def": {
                 "def": "To be early."
             },
             "def-search": "be early to",
@@ -1341,6 +1374,17 @@
         },
         {
             "def": {
+                "def": "Onyx."
+            },
+            "def-search": "onyx",
+            "etym": "<f-pf>onyx</f-pf>",
+            "hw-search": "aunich",
+            "ipa": "ɔ̃nĩx",
+            "pos": "n.",
+            "word": "aúníc’h"
+        },
+        {
+            "def": {
                 "def": "Gold."
             },
             "def-search": "gold",
@@ -1351,14 +1395,22 @@
             "word": "aúr"
         },
         {
-            "def": {
-                "def": "To be orange."
-            },
-            "def-search": "be orange to",
+            "def-search": "be colour fruitorange orangeorange to",
             "etym": "<f-pf>orange</f-pf>",
             "hw-search": "aura",
             "ipa": "ɔ̃ɰɑ̃̃",
-            "pos": "v.",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "To be orange."
+                },
+                {
+                    "def": "Orange (fruit)."
+                },
+                {
+                    "def": "Orange (colour)."
+                }
+            ],
             "word": "aúrâ"
         },
         {
@@ -1646,6 +1698,17 @@
                 }
             ],
             "word": "áv́áy’é"
+        },
+        {
+            "def": {
+                "def": "Amethyst."
+            },
+            "def-search": "amethyst",
+            "etym": "<f-pf>améthyste</f-pf>",
+            "hw-search": "avethis",
+            "ipa": "ɑ̃ʋ̃ẽθis",
+            "pos": "n.",
+            "word": "ávẹ́t’his"
         },
         {
             "def": {
@@ -2253,6 +2316,28 @@
             "ipa": "bɛɰdɰɑ̃",
             "pos": "n.",
             "word": "Bèrḍrá"
+        },
+        {
+            "def": {
+                "def": "Peridot."
+            },
+            "def-search": "peridot",
+            "etym": "<f-pf>péridot</f-pf>",
+            "hw-search": "beridh",
+            "ipa": "bẽɰĩð",
+            "pos": "n.",
+            "word": "ḅẹ́ríd’h"
+        },
+        {
+            "def": {
+                "def": "Beryl."
+            },
+            "def-search": "beryl",
+            "etym": "<f-pf>béryl</f-pf>",
+            "hw-search": "beril",
+            "ipa": "bẽɰĩɮ̃",
+            "pos": "n.",
+            "word": "bẹ́ríl"
         },
         {
             "def": {
@@ -2913,6 +2998,17 @@
         },
         {
             "def": {
+                "def": "Pyrite."
+            },
+            "def-search": "pyrite",
+            "etym": "<f-pf>pyrite</f-pf>",
+            "hw-search": "birid",
+            "ipa": "bĩɰĩd",
+            "pos": "n.",
+            "word": "ḅíríḍ"
+        },
+        {
+            "def": {
                 "comment": "<p>Replaced with modern <f-w>dýwaú</f-w>).</p>",
                 "def": "<em>(obsolete)</em> Billion (long scale, i.e. 10<sup>12</sup>)."
             },
@@ -3491,6 +3587,17 @@
             "word": "c’hah"
         },
         {
+            "def": {
+                "def": "Chalcedony."
+            },
+            "def-search": "chalcedony",
+            "etym": "<f-pf>calcédoine</f-pf>",
+            "hw-search": "chalsedra",
+            "ipa": "xɐɮ̃sedɰɑ̃̃",
+            "pos": "n.",
+            "word": "c’halsedrâ"
+        },
+        {
             "def-search": "boat by ship",
             "etym": "<f-pf>canard</f-pf>",
             "hw-search": "chanar",
@@ -3890,6 +3997,17 @@
             "ipa": "xɔ̃ɰ",
             "pos": "conj.",
             "word": "c’haúr"
+        },
+        {
+            "def": {
+                "def": "Corundum."
+            },
+            "def-search": "corundum",
+            "etym": "<f-pf>corindon</f-pf>",
+            "hw-search": "chauredhau",
+            "ipa": "xɔ̃ɰɛ̃̃ðɔ̃",
+            "pos": "n.",
+            "word": "c’haúrêd’haú"
         },
         {
             "def": {
@@ -4694,6 +4812,17 @@
             "ipa": "dɔ̃β",
             "pos": "v. intr.",
             "word": "ḍaúb’h"
+        },
+        {
+            "def": {
+                "def": "Topaz."
+            },
+            "def-search": "topaz",
+            "etym": "<f-pf>topaze</f-pf>",
+            "hw-search": "daubhaz",
+            "ipa": "dobʱɐz",
+            "pos": "n.",
+            "word": "ḍaubhaz"
         },
         {
             "def": {
@@ -6917,6 +7046,17 @@
         },
         {
             "def": {
+                "def": "Jade."
+            },
+            "def-search": "jade",
+            "etym": "<f-pf>jade</f-pf>",
+            "hw-search": "jad",
+            "ipa": "ʑɐd",
+            "pos": "n.",
+            "word": "jad"
+        },
+        {
+            "def": {
                 "def": "To be yellow."
             },
             "def-search": "be to yellow",
@@ -7148,6 +7288,17 @@
                 }
             ],
             "word": "lab’h"
+        },
+        {
+            "def": {
+                "def": "Lapis lazuli."
+            },
+            "def-search": "lapis lazuli",
+            "etym": "<f-pf>lapis-lazuli</f-pf>",
+            "hw-search": "labhislahyy",
+            "ipa": "ɮ̃ɐbʱisɮ̃ɐhyɥ̃",
+            "pos": "n.",
+            "word": "labhislahyý’"
         },
         {
             "def": {
@@ -7773,6 +7924,22 @@
             "ipa": "n",
             "pos": "n.",
             "word": "n"
+        },
+        {
+            "def-search": "motherofpearl pearlnacre",
+            "etym": "<f-pf>nacre</f-pf>",
+            "hw-search": "nach",
+            "ipa": "nɑ̃x",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Pearl."
+                },
+                {
+                    "def": "Nacre, mother-of-pearl."
+                }
+            ],
+            "word": "nác’h"
         },
         {
             "def": {
@@ -8677,6 +8844,17 @@
                     "def": "+<f-s>acc</f-s> To empty (by drinking)."
                 }
             ],
+            "word": "ráhaú"
+        },
+        {
+            "def": {
+                "def": "Jewel, gemstone."
+            },
+            "def-search": "gemstone jewel",
+            "etym": "<f-pf>joyau</f-pf>",
+            "hw-search": "rahau",
+            "ipa": "ɰɑ̃hɔ̃",
+            "pos": "n.",
             "word": "ráhaú"
         },
         {
@@ -10117,6 +10295,17 @@
         },
         {
             "def": {
+                "def": "Garnet."
+            },
+            "def-search": "garnet",
+            "etym": "<f-pf>grenat</f-pf>",
+            "hw-search": "rena",
+            "ipa": "ɰɛ̃nɑ̃",
+            "pos": "n.",
+            "word": "réná"
+        },
+        {
+            "def": {
                 "def": "Rebirth, renaissance."
             },
             "def-search": "rebirth renaissance",
@@ -10453,6 +10642,28 @@
         },
         {
             "def": {
+                "def": "Crystal."
+            },
+            "def-search": "crystal",
+            "etym": "<f-pf>cristal</f-pf>",
+            "hw-search": "risdal",
+            "ipa": "ɰĩsdɐɮ̃",
+            "pos": "n.",
+            "word": "rísḍal"
+        },
+        {
+            "def": {
+                "def": "Quartz."
+            },
+            "def-search": "quartz",
+            "etym": "<f-pf>cristal de roche</f-pf>",
+            "hw-search": "risdaldrau",
+            "ipa": "ɰĩsdɐɮ̃dɰɔ̃",
+            "pos": "n.",
+            "word": "rísḍaldraú"
+        },
+        {
+            "def": {
                 "def": "Scoundrel, someone without virtue."
             },
             "def-search": "scoundrel someone virtue without",
@@ -10747,6 +10958,22 @@
             "word": "rúb’h"
         },
         {
+            "def-search": "footpath road trail",
+            "etym": "<f-pf>route</f-pf>",
+            "hw-search": "rud",
+            "ipa": "ɰũd",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "Road."
+                },
+                {
+                    "def": "<em>esp.</em> Trail, footpath."
+                }
+            ],
+            "word": "rúḍ"
+        },
+        {
             "def": {
                 "def": "To be red."
             },
@@ -10769,6 +10996,17 @@
             "ipa": "ɰʋ̃ɑ̃",
             "pos": "interj.",
             "word": "rvá"
+        },
+        {
+            "def": {
+                "def": "Ruby."
+            },
+            "def-search": "ruby",
+            "etym": "<f-pf>rubis</f-pf>",
+            "hw-search": "rybh",
+            "ipa": "ɰʏ̃β",
+            "pos": "n.",
+            "word": "rýb’h"
         },
         {
             "def": {
@@ -10973,6 +11211,17 @@
             "ipa": "sɑ̃βɛ̃",
             "pos": "v.",
             "word": "sáb’hé"
+        },
+        {
+            "def": {
+                "def": "Sapphire."
+            },
+            "def-search": "sapphire",
+            "etym": "<f-pf>saphir</f-pf>",
+            "hw-search": "sabhir",
+            "ipa": "sɐβĩɰ",
+            "pos": "n.",
+            "word": "sab’hír"
         },
         {
             "def": {
@@ -11620,6 +11869,17 @@
         },
         {
             "def": {
+                "def": "To serve (a meal)."
+            },
+            "def-search": "a meal serve to",
+            "etym": "+<f-s>acc</f-s>",
+            "hw-search": "serbh",
+            "ipa": "sɛ̃ɰβ",
+            "pos": "v.",
+            "word": "sérb’h"
+        },
+        {
+            "def": {
                 "def": "Certain, particular but not specified."
             },
             "def-search": "but certain not particular specified",
@@ -12059,6 +12319,17 @@
             "ipa": "sĩʋ̃ɥ̃ɛ̃ɰ",
             "pos": "v.",
             "word": "sívý’ér"
+        },
+        {
+            "def": {
+                "def": "Flint."
+            },
+            "def-search": "flint",
+            "etym": "<f-pf>silex</f-pf>",
+            "hw-search": "siyech",
+            "ipa": "siɥ̃ɛx",
+            "pos": "n.",
+            "word": "siý’èc’h"
         },
         {
             "def": {
@@ -12854,6 +13125,17 @@
         },
         {
             "def": {
+                "def": "Emerald."
+            },
+            "def-search": "emerald",
+            "etym": "<f-pf>émeraude</f-pf>",
+            "hw-search": "vaud",
+            "ipa": "βʶɔ̃d",
+            "pos": "n.",
+            "word": "v́aúd"
+        },
+        {
+            "def": {
                 "def": "Model, pattern."
             },
             "def-search": "model pattern",
@@ -12911,6 +13193,17 @@
             "ipa": "ʋ̃ɔ̃ɥ̃ehyɮ̃",
             "pos": "n.",
             "word": "vaúý’ehyl"
+        },
+        {
+            "def": {
+                "def": "Malachite."
+            },
+            "def-search": "malachite",
+            "etym": "<f-pf>malachite</f-pf>",
+            "hw-search": "vayahid",
+            "ipa": "ʋ̃ɑ̃ɥ̃ɐhid",
+            "pos": "n.",
+            "word": "váý’ahiḍ"
         },
         {
             "def": {
@@ -13399,6 +13692,17 @@
         },
         {
             "def": {
+                "def": "To manifest, appear, become visible."
+            },
+            "def-search": "appear become manifest to visible",
+            "etym": "<f-pf>se manifester</f-pf>",
+            "hw-search": "vnibhes",
+            "ipa": "ʋ̃nĩβɛs",
+            "pos": "n. intr.",
+            "word": "vníb’hès"
+        },
+        {
+            "def": {
                 "def": "Minute."
             },
             "def-search": "minute",
@@ -13706,6 +14010,17 @@
         },
         {
             "def": {
+                "def": "Diamond."
+            },
+            "def-search": "diamond",
+            "etym": "<f-pf>diamant</f-pf>",
+            "hw-search": "yava",
+            "ipa": "ɥɑ̃ʋ̃ɑ̃̃",
+            "pos": "n.",
+            "word": "y’ávâ"
+        },
+        {
+            "def": {
                 "comment": "<p>Like most negative polarity items, this induces negation of the verb.</p>",
                 "def": "Nothing."
             },
@@ -13798,6 +14113,17 @@
             "ipa": "ɥɛ̃ɰ",
             "pos": "num. frac.",
             "word": "y’ér"
+        },
+        {
+            "def": {
+                "def": "Moonstone."
+            },
+            "def-search": "moonstone",
+            "etym": "<f-pf>pierre de lune</f-pf>",
+            "hw-search": "yerdyy",
+            "ipa": "ɥɛ̃ɰdɥ̃ʏ̃",
+            "pos": "n.",
+            "word": "y’érdý’ý"
         },
         {
             "def": {
