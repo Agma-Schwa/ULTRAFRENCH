@@ -1012,15 +1012,21 @@
             "word": "ásy’ê"
         },
         {
-            "def": {
-                "comment": "<p>Commonly <f-w>’sý’ýâ</f-w> after vowels and verbs. This particle is used only in the indicative; see also <f-w>sá</f-w>, <f-w>t’hé</f-w>.</p>",
-                "def": "Not, no."
-            },
-            "def-search": "no not",
+            "def-search": "a indicative negates no particle that verbs",
             "etym": "<f-pf>pas absolument</f-pf>",
             "hw-search": "asyya",
             "ipa": "ɐsɥ̃ʏ̃ɑ̃̃",
             "pos": "particle",
+            "senses": [
+                {
+                    "comment": "<p>Almost always <f-w>’sý’ýâ</f-w> after verbs—irrespective of whether they end with a vowel or not. This particle is used only in the indicative; see also <f-w>sá</f-w>, <f-w>t’hé</f-w>.</p>",
+                    "def": "A particle that negates indicative verbs."
+                },
+                {
+                    "comment": "<p>Never abbreviated. See grammar.</p>",
+                    "def": "<em>interj.</em> No."
+                }
+            ],
             "word": "asý’ýâ"
         },
         {

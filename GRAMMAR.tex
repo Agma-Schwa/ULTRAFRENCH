@@ -924,7 +924,7 @@ argument, it can be in any number or definiteness, so long as it is accusative.
 
 Table~\ref{tab:table-uf-declension} below shows the most common cases of the definite and indefinite declensions. Cases
 are divided into primary (§~\ref{sec:decl-primary}), secondary (§~\ref{sec:decl-secondary}), and tertiary
-cases (§~\ref{sec:decl-tertiary}).
+cases (§~\ref{sec:decl-tertiary}). There is also an extended set of affixes only used in stacking; for that, see §~\ref{sec:declension-stacking}.
 
 Some of the case prefixes cause lenition or nasalisation in the initial consonant of the noun, e.g. \w{ḍalẹ} ‘table’ to
 \s{def acc sg} \w{s’thalẹ}. Unlike verbal affixes, case prefixes never coalesce with the stem in the standard
@@ -1105,7 +1105,8 @@ in the dictionary.
 
 \subsection{Absolutive}
 The \s{abs} is the base form of the noun, with the \s{abs def} being identical to the uninflected root, which is also
-used as the citation form. It is used mainly in contexts where no case marking is otherwise assigned to noun.
+used as the citation form. It is used mainly in contexts where no case marking is otherwise assigned to noun. There is
+an additional set of ‘augmented’ \s{abs} affixes; see §~\ref{sec:declension-stacking} for that.
 
 \Paragraph{Verbs of Being and Becoming}
 The \s{abs} is used for the subject and predicate noun of predicative sentences,
@@ -1151,10 +1152,11 @@ that start with a vowel e.g. \w{ehyó} ‘shield’ to \w{ŷnéhyó} ‘a shield
 blocked in rarer forms, e.g. \s{indef iness} \w{dáhŷnḍalẹ} ‘on a table’.
 
 \subsection{Vocative}
-The vocative is a rare case that is used to address someone or something, e.g. \w{C̣ár!} ‘O Charles!’. The vocative
+The vocative is a rare case that is used to address someone or something, e.g. \w{C̣ár !} ‘O Charles!’. The vocative
 only occurs in the definite and usually with proper nouns.\footnote{The indefinite \s{voc}
 does not exist, as that would be nonsense.} Note that the vocative is not marked by an affix, but
-rather by mutation only, e.g. \w{C̣ár} from \w{Cár}.
+rather by mutation only, e.g. \w{C̣ár} from \w{Cár}. There is also an additional set of ‘augmented’ \s{voc} affixes;
+see §~\ref{sec:declension-stacking} for that.
 
 In novels and other literary media, vocatives are often italicised since they can otherwise be hard to distinguish
 from absolutives in some cases.
@@ -1622,7 +1624,7 @@ In both phrases, the apposition \w{ḍaléraû} ‘carpenter’ is declined in t
 is a modifier, not an apposition, and thus assumes \s{abs} case rather than \s{dat} case, while in the second, it
 \textit{is} an apposition and thus assumes \s{dat} case as well.
 
-\section{Declension Stacking}
+\section{Declension Stacking}\label{sec:declension-stacking}
 UF nouns can be declined more than once by taking an inflected noun form and declining it again. Generally the inner
 inflected form must be in one of a select few cases, particularly the \s{gen}, \s{orn}, and \s{ess}. This phenomenon is
 referred to as \textit{declension stacking} or \textit{case stacking}. In many cases, what is actually intended to be declined
@@ -1645,11 +1647,22 @@ crown, and thus \w{véhúraû} ‘bearing the crown’ is \s{def sg}. Likewise, 
 \w{ávéhúraû} is \s{def sg} as well. Finally, the royal family in question presumably has more than one member, so
 \w{dẹávéhúraû} is \s{def pl}.
 
-The \s{abs} and \s{voc} can’t be stacked since they are mostly unmarked. While this is sometimes done humorously, such
-interpretations are generally purposefully ungrammatical. In contexts where a stacked \s{abs} would be required, an
-explicit demonstrative, such as \w{swi} ‘the one’, is used instead. The only exception to this is the \s{def abs pl},
-which always has an overt realisation and can thus be stacked, but this is exceedingly rare.
+The usual \s{abs} and \s{voc} affixes, excepting the \s{def abs pl}, are not suitable for stacking since they are
+largely unmarked or only marked by mutations. Because of this, there is a special set of \s{abs} and \s{voc} affixes,
+usually referred to as the \textit{augmented} \s{abs/voc}, that are only used in stacking:
+\begin{center}
+\begin{tabular}{l|>{\it}l|>{\it}lll|>{\it}l|>{\it}l}
+Definite   &\nf Sg   &\nf Pl && Indefinite &\nf Sg &\nf Pl \\
+\cline{1-3}\cline{5-7}
 
+Absolutive & sw-     & l-    && Absolutive & w-\N  & ź-    \\
+Vocative   & au-\L   & aú-   && Vocative   & /     & /     \\
+\end{tabular}
+\end{center}
+
+\noindent
+Note that the augmented \s{def abs pl} is identical to the base \s{def abs pl}. In Middle and Early Modern UF, the
+augmented affixes were sometimes used for emphasis or metre in poetry, but this is considered very archaic nowadays.
 
 \section{Negation}\label{subsubsec:noun-negation}
 Nouns, as well as proper adjectives and adverbs (i.e. those which are not formed from an adjective verb) are negated
@@ -3114,7 +3127,7 @@ pronoun and its associated noun:
     down the trees upon their sins, to (= for the benefit of) the world’.}
 \end{examples}
 
-\section{Negated Clauses}
+\section{Negated Clauses}\label{sec:negated-clauses}
 Negation in the indicative is expressed using the particle \w{asý’ýâ} ‘not’, which is typically appended to verbs
 as \w{’sý’ýâ}—even if the verb ends with a consonant. For a discussion of negation in the subjunctive, optative,
 and \s{aci}s/\s{pci}s see §§~\ref{subsec:subjunctive},~\ref{subsec:optative},~\ref{subsec:aci-pci}.
@@ -3143,6 +3156,10 @@ such as ‘it do be like that’ in English:
 \begin{examples}
     \item \w{*Ráv́â’sý’ýâ st’halẹ jac̣t'heá’sý’ýâ.} ‘(roughly) Rarely-not I bought a table.’
 \end{examples}
+
+On its own, the negation particle can be used to mean ‘no’. Its literal meaning in this use is really ‘it is
+not / I am not / etc.’, in all numbers and tenses. This word is generally used as a reply and is only
+appropriate in contexts in which ‘it is not / I am not / etc.’ would also be a valid reply.
 
 \section{Interrogative Clauses}\label{sec:interrogative}
 \subsection{Yes-No Questions}

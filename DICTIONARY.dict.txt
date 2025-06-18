@@ -146,8 +146,12 @@ c’hór|n.|corps|Body
 ab’haḍ|v.|abattre|\\ To cut down, fell, knock down, shoot down. \\ To butcher, cut apart violently|\s{fut} ab’haḍrẹ́, \s{subj} ab’has
 árb|n.|arbre|Tree
 ac|n.|hache|Axe, hatchet
-asý’ýâ|particle|\pf{pas absolument}|Not, no. \comment Commonly \w{’sý’ýâ} after vowels and
-    verbs. This particle is used only in the indicative; see also \w{sá}, \w{t’hé}
+asý’ýâ|particle|\pf{pas absolument}|
+    \\ A particle that negates indicative verbs
+        \comment Almost always \w{’sý’ýâ} after verbs—irrespective of whether they end with a vowel or not. This particle
+            is used only in the indicative; see also \w{sá}, \w{t’hé}
+    \\ \textit{interj.} No
+        \comment Never abbreviated. See §~\ref{sec:negated-clauses}
 c’hd’hal|adv.|\pf{que dalle}|Naught, absolutely no\-thing
 jávé|adv.|jamais|\\\textit{neg.} Never, at no time \\\textit{pos.} Ever, always \\\w{dwájávé} For ever, forever
 ráv́â|adv.|rarement|\textit{neg. only} Seldom, rarely (ever)
