@@ -179,7 +179,9 @@ dẹhẹ|n.|dessus|\\ Top, upper side. \\ Surface of a body of water
 b’he|conj.|envers|+\s{subj} So that, so as to, to, in order to. \comment Commonly enclitic
     \w{’b’h} after vowels
 ḅarḍ|v.|partir|To leave, go away, depart|\s{fut} ḅarẹ́, \s{subj} ḅars
-ad’he|v.|vader|To go|\s{fut} í, \s{subj} al
+ad’he|v. irreg.|vader|To go
+    \comment This verb is highly irregular. The imperative stem is \w{b’ha}.
+    |\s{fut} í, \s{subj} al, \s{imper} b’ha
 sá|particle|sans|Not, no. \comment Always enclitic \w{s’} before vowels.
     This particle is used only in the subjunctive; see also \w{asý’ýâ}, \w{t’hé}
 s|conj.|si|If, when, whenever
@@ -576,8 +578,8 @@ dá|n.|dent|Tooth
 
 ḅáréḍ|v.|\pf{parraitre}; future stem from \pf{sembler}|To seem, appear|\s{fut} sáb
 c’hlýr|v.|inclure|\\ +\s{part} To include. \\ +\s{acc} To possess, have
-    \textit{(alienably)}. \\ +\s{gen} \textit{usually} \s{indef} To sell, offer,
-    have in stock|\s{fut} c’hlýré, \s{subj} c’hlýrs
+    \textit{(alienably)}. \\ +\s{gen} \textit{usually} \s{indef} To offer,
+    have in stock, sell|\s{fut} c’hlýré, \s{subj} c’hlýrs
 rá₄|n.|voix|Voice
 b’hénvâ|n.|évènement|Event, occurrence
 ḅá nórávíc’h|n. archaic|Panoramix|Druid. \comment Only the \w{nórávíc’h} is inflected; infixing of adj. is
@@ -1525,10 +1527,39 @@ jad|n.|jade|Jade
 auhidy’ê|n.|obsidienne|Obsidian
 y’érdý’ý|n.|\pf{pierre de lune}|Moonstone
 sérb’h|v.|+\s{acc}|To serve (a meal)
-vníb’hès|n. intr.|\pf{se manifester}|To manifest, appear, become visible
+vníb’hès|v. intr.|\pf{se manifester}|To manifest, appear, become visible
 rúḍ|n.|route|\\ Road \\\textit{esp.} Trail, footpath
+c’hár|n.|carte|Map
+rúb’hérn|v.|gouverner|To govern
+révárc’h|v.|+\s{part}|To notice, perceive, observe, become aware of
+naút’hif|v. tr.|notifier|+\s{dat} To notify sbd. (+\s{gen} of sth.)
+balda|n.|baldaquin|Bed
+ḅus|n.|pousse|Grain
+saul|n.|solder|+\s{part} To sell (+\s{dat} to sbd.)|\s{fut} sauldé, \s{subj} saulds
+réb’hiý’|v.|refiler|+\s{acc} To gift, give away
+sebhár|v. tr. or refl.|séparar|+\s{acc} To contrast sth. (+\s{gen} with sth.)|\s{subj} sebhás, \s{fut} sebháre
+lasc’h|n.|Lascaux|Cave, cavern
+buý’b’hbhẹ́ríb’h|n.|from \pf{boulevard périphérique}|Road
+vnsḍér|n.|Münster|Cheese
+ríhaul|v.|bricoler|+\s{acc} To repair
+sahávê|n.|from \pf{sac à main}|Small bag, pouch
+ḅauc̣èḍ|n.|pochette|Bag, sack
+liv́uhínís|n.|from \pf{livre} + \pf{bouquiniste}|Library
+béd’hhauý’éy’|v.|from \pf{bain de soleil}|
+    \\ To bask, sunbathe
+        \comment Often construed with the \s{subess}.
+        \ex \w{faúsaul béd’hhauý’éy’} ‘to bask in the sun’
+áḍv́é|n.|entremet|Meal (food)
+nêbhc’há|pron|from \w{nêbh-} + \w{c’há}|Whenever
+c’há|interrog. pron.|quand|When?
+nêbh-|prefix|\w{n’importe}|-ever \comment Attached to interrogative forms.
+nêbhc’hèl|particle|from \w{nêbh-} + \w{c’hèl}|
+    Whichever \comment For usage, see \w{c’hèl}.
+sḅrár|n.|espoir|Hope
+jèc’h|v.|éjecter|To expulse, oust
+rét’hévâ|n.|traitement|Failure
 
-## Currently at entry 492/959 of the following page:
+## Currently at entry 499/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
 
 ## ‘noyer le poisson’ = ‘To drown the fish’
@@ -1553,6 +1584,7 @@ vérvá > vér + vá
 sy̌ > dýr
 c’heḍ’ráb’h’, c’heb’hḍ’ráb’h’ > ráb’haut’h
 ś > r
+í, al, b’ha > ad’he
 
 sauzaud > sauz-aud
 s’ > sá

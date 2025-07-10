@@ -396,14 +396,15 @@
         },
         {
             "def": {
+                "comment": "<p>This verb is highly irregular. The imperative stem is <f-w>b’ha</f-w>.</p>",
                 "def": "To go."
             },
             "def-search": "go to",
             "etym": "<f-pf>vader</f-pf>",
-            "forms": "<f-s>fut</f-s> í, <f-s>subj</f-s> al",
+            "forms": "<f-s>fut</f-s> í, <f-s>subj</f-s> al, <f-s>imper</f-s> b’ha",
             "hw-search": "adhe",
             "ipa": "ɐðe",
-            "pos": "v.",
+            "pos": "v. irreg.",
             "word": "ad’he"
         },
         {
@@ -547,6 +548,17 @@
             "ipa": "ɑ̃dʀɑ̃",
             "pos": "n.",
             "word": "ádrrá"
+        },
+        {
+            "def": {
+                "def": "Meal (food)."
+            },
+            "def-search": "food meal",
+            "etym": "<f-pf>entremet</f-pf>",
+            "hw-search": "adve",
+            "ipa": "ɑ̃dβʶɛ̃",
+            "pos": "n.",
+            "word": "áḍv́é"
         },
         {
             "def": {
@@ -1923,6 +1935,17 @@
         },
         {
             "def": {
+                "def": "Bed."
+            },
+            "def-search": "bed",
+            "etym": "<f-pf>baldaquin</f-pf>",
+            "hw-search": "balda",
+            "ipa": "bɐɮ̃dɐ",
+            "pos": "n.",
+            "word": "balda"
+        },
+        {
+            "def": {
                 "def": "Foot."
             },
             "def-search": "foot",
@@ -2129,6 +2152,17 @@
         },
         {
             "def": {
+                "def": "Bag, sack."
+            },
+            "def-search": "bag sack",
+            "etym": "<f-pf>pochette</f-pf>",
+            "hw-search": "bauced",
+            "ipa": "boȷ̊ɛd",
+            "pos": "n.",
+            "word": "ḅauc̣èḍ"
+        },
+        {
+            "def": {
                 "def": "To forsake, abandon."
             },
             "def-search": "abandon forsake to",
@@ -2272,6 +2306,25 @@
             "ipa": "bɛd",
             "pos": "n.",
             "word": "bèḍ"
+        },
+        {
+            "def-search": "bask sunbathe to",
+            "etym": "from <f-pf>bain de soleil</f-pf>",
+            "hw-search": "bedhhauyey",
+            "ipa": "bɛ̃ðhoɥ̃ɛ̃ɥ",
+            "pos": "v.",
+            "senses": [
+                {
+                    "comment": "<p>Often construed with the <f-s>subess</f-s>.</p>",
+                    "def": "To bask, sunbathe.",
+                    "examples": [
+                        {
+                            "text": "<f-w>faúsaul béd’hhauý’éy’</f-w> ‘to bask in the sun’."
+                        }
+                    ]
+                }
+            ],
+            "word": "béd’hhauý’éy’"
         },
         {
             "def": {
@@ -3084,6 +3137,17 @@
         },
         {
             "def": {
+                "def": "Grain."
+            },
+            "def-search": "grain",
+            "etym": "<f-pf>pousse</f-pf>",
+            "hw-search": "bus",
+            "ipa": "bus",
+            "pos": "n.",
+            "word": "ḅus"
+        },
+        {
+            "def": {
                 "def": "Dust."
             },
             "def-search": "dust",
@@ -3103,6 +3167,17 @@
             "ipa": "buθɛ̃ɥ",
             "pos": "n.",
             "word": "but’héy’"
+        },
+        {
+            "def": {
+                "def": "Road."
+            },
+            "def-search": "road",
+            "etym": "from <f-pf>boulevard périphérique</f-pf>",
+            "hw-search": "buybhbheribh",
+            "ipa": "buɥ̃βbʱẽɰĩβ",
+            "pos": "n.",
+            "word": "buý’b’hbhẹ́ríb’h"
         },
         {
             "def": {
@@ -3410,6 +3485,17 @@
         },
         {
             "def": {
+                "def": "When?"
+            },
+            "def-search": "when",
+            "etym": "<f-pf>quand</f-pf>",
+            "hw-search": "cha",
+            "ipa": "xɑ̃",
+            "pos": "interrog. pron.",
+            "word": "c’há"
+        },
+        {
+            "def": {
                 "def": "To camp."
             },
             "def-search": "camp to",
@@ -3623,6 +3709,17 @@
             "ipa": "xɑ̃nɔ̃",
             "pos": "n.",
             "word": "c’hánaú"
+        },
+        {
+            "def": {
+                "def": "Map."
+            },
+            "def-search": "map",
+            "etym": "<f-pf>carte</f-pf>",
+            "hw-search": "char",
+            "ipa": "xɑ̃ɰ",
+            "pos": "n.",
+            "word": "c’hár"
         },
         {
             "def": {
@@ -4320,7 +4417,7 @@
                     "def": "+<f-s>acc</f-s> To possess, have <em>(alienably)</em>."
                 },
                 {
-                    "def": "+<f-s>gen</f-s> <em>usually</em> <f-s>indef</f-s> To sell, offer, have in stock."
+                    "def": "+<f-s>gen</f-s> <em>usually</em> <f-s>indef</f-s> To offer, have in stock, sell."
                 }
             ],
             "word": "c’hlýr"
@@ -7103,6 +7200,17 @@
         },
         {
             "def": {
+                "def": "To expulse, oust."
+            },
+            "def-search": "expulse oust to",
+            "etym": "<f-pf>éjecter</f-pf>",
+            "hw-search": "jech",
+            "ipa": "ʑɛx",
+            "pos": "v.",
+            "word": "jèc’h"
+        },
+        {
+            "def": {
                 "def": "Jedi (Star Wars)."
             },
             "def-search": "jedi star wars",
@@ -7413,6 +7521,17 @@
             "ipa": "ɮ̃ɐs",
             "pos": "n.",
             "word": "las"
+        },
+        {
+            "def": {
+                "def": "Cave, cavern."
+            },
+            "def-search": "cave cavern",
+            "etym": "<f-pf>Lascaux</f-pf>",
+            "hw-search": "lasch",
+            "ipa": "ɮ̃ɐsx",
+            "pos": "n.",
+            "word": "lasc’h"
         },
         {
             "def": {
@@ -7743,6 +7862,17 @@
         },
         {
             "def": {
+                "def": "Library."
+            },
+            "def-search": "library",
+            "etym": "from <f-pf>livre</f-pf> + <f-pf>bouquiniste</f-pf>",
+            "hw-search": "livuhinis",
+            "ipa": "ɮ̃iβʶuhĩnĩs",
+            "pos": "n.",
+            "word": "liv́uhínís"
+        },
+        {
+            "def": {
                 "def": "To be bulky, oversized, heavy."
             },
             "def-search": "be bulky heavy oversized to",
@@ -8050,6 +8180,17 @@
         },
         {
             "def": {
+                "def": "+<f-s>dat</f-s> To notify sbd. (+<f-s>gen</f-s> of sth.)."
+            },
+            "def-search": "notify of sbd sth to",
+            "etym": "<f-pf>notifier</f-pf>",
+            "hw-search": "nauthif",
+            "ipa": "nɔ̃θiɸ",
+            "pos": "v. tr.",
+            "word": "naút’hif"
+        },
+        {
+            "def": {
                 "def": "Snow."
             },
             "def-search": "snow",
@@ -8058,6 +8199,41 @@
             "ipa": "nẽβ",
             "pos": "n.",
             "word": "nẹ́b’h"
+        },
+        {
+            "def": {
+                "comment": "<p>Attached to interrogative forms.</p>",
+                "def": "-ever."
+            },
+            "def-search": "ever",
+            "etym": "<f-w>n’importe</f-w>",
+            "hw-search": "nebh",
+            "ipa": "nɛ̃̃bʱ",
+            "pos": "prefix",
+            "word": "nêbh-"
+        },
+        {
+            "def": {
+                "def": "Whenever."
+            },
+            "def-search": "whenever",
+            "etym": "from <f-w>nêbh-</f-w> + <f-w>c’há</f-w>",
+            "hw-search": "nebhcha",
+            "ipa": "nɛ̃̃bʱxɑ̃",
+            "pos": "pron",
+            "word": "nêbhc’há"
+        },
+        {
+            "def": {
+                "comment": "<p>For usage, see <f-w>c’hèl</f-w>.</p>",
+                "def": "Whichever."
+            },
+            "def-search": "whichever",
+            "etym": "from <f-w>nêbh-</f-w> + <f-w>c’hèl</f-w>",
+            "hw-search": "nebhchel",
+            "ipa": "nɛ̃̃bʱxɛɮ̃",
+            "pos": "particle",
+            "word": "nêbhc’hèl"
         },
         {
             "def": {
@@ -10014,6 +10190,17 @@
             "word": "rébhauz"
         },
         {
+            "def": {
+                "def": "+<f-s>acc</f-s> To gift, give away."
+            },
+            "def-search": "away gift give to",
+            "etym": "<f-pf>refiler</f-pf>",
+            "hw-search": "rebhiy",
+            "ipa": "ɰɛ̃βiɥ̃",
+            "pos": "v.",
+            "word": "réb’hiý’"
+        },
+        {
             "def-search": "forewarn from happeningto of prevent sth stop to",
             "etym": "<f-pf>prévenir</f-pf>",
             "forms": "<f-s>fut</f-s> réb’hníre, <f-s>subj</f-s> réb’hnís",
@@ -10412,6 +10599,17 @@
             "word": "rêt’hé"
         },
         {
+            "def": {
+                "def": "Failure."
+            },
+            "def-search": "failure",
+            "etym": "<f-pf>traitement</f-pf>",
+            "hw-search": "retheva",
+            "ipa": "ɰɛ̃θɛ̃ʋ̃ɑ̃̃",
+            "pos": "n.",
+            "word": "rét’hévâ"
+        },
+        {
             "def-search": "actually draw it moving on pull sth to try withdraw without",
             "etym": "<f-pf>retirer</f-pf>",
             "forms": "<f-s>fut</f-s> rét’hírẹ́, <f-s>subj</f-s> rét’hírs",
@@ -10427,6 +10625,17 @@
                 }
             ],
             "word": "rét’hír"
+        },
+        {
+            "def": {
+                "def": "To notice, perceive, observe, become aware of."
+            },
+            "def-search": "aware become notice observe of perceive to",
+            "etym": "+<f-s>part</f-s>",
+            "hw-search": "revarch",
+            "ipa": "ɰɛ̃ʋ̃ɑ̃ɰx",
+            "pos": "v.",
+            "word": "révárc’h"
         },
         {
             "def": {
@@ -10595,6 +10804,17 @@
             "ipa": "ɰĩh",
             "pos": "v.",
             "word": "ríh"
+        },
+        {
+            "def": {
+                "def": "+<f-s>acc</f-s> To repair."
+            },
+            "def-search": "repair to",
+            "etym": "<f-pf>bricoler</f-pf>",
+            "hw-search": "rihaul",
+            "ipa": "ɰĩhoɮ̃",
+            "pos": "v.",
+            "word": "ríhaul"
         },
         {
             "def": {
@@ -10958,6 +11178,17 @@
             "word": "rúb’h"
         },
         {
+            "def": {
+                "def": "To govern."
+            },
+            "def-search": "govern to",
+            "etym": "<f-pf>gouverner</f-pf>",
+            "hw-search": "rubhern",
+            "ipa": "ɰũβɛ̃ɰn",
+            "pos": "v.",
+            "word": "rúb’hérn"
+        },
+        {
             "def-search": "footpath road trail",
             "etym": "<f-pf>route</f-pf>",
             "hw-search": "rud",
@@ -11276,6 +11507,17 @@
         },
         {
             "def": {
+                "def": "Small bag, pouch."
+            },
+            "def-search": "bag pouch small",
+            "etym": "from <f-pf>sac à main</f-pf>",
+            "hw-search": "sahave",
+            "ipa": "sɐhɑ̃ʋ̃ɛ̃̃",
+            "pos": "n.",
+            "word": "sahávê"
+        },
+        {
+            "def": {
                 "def": "To be preposterous, absurd, nonsensical."
             },
             "def-search": "absurd be nonsensical preposterous to",
@@ -11382,6 +11624,18 @@
             },
             "def-search": "sun",
             "etym": "<f-pf>sol</f-pf>",
+            "hw-search": "saul",
+            "ipa": "soɮ̃",
+            "pos": "n.",
+            "word": "saul"
+        },
+        {
+            "def": {
+                "def": "+<f-s>part</f-s> To sell (+<f-s>dat</f-s> to sbd.)."
+            },
+            "def-search": "sbd sell to",
+            "etym": "<f-pf>solder</f-pf>",
+            "forms": "<f-s>fut</f-s> sauldé, <f-s>subj</f-s> saulds",
             "hw-search": "saul",
             "ipa": "soɮ̃",
             "pos": "n.",
@@ -11512,6 +11766,17 @@
         },
         {
             "def": {
+                "def": "Hope."
+            },
+            "def-search": "hope",
+            "etym": "<f-pf>espoir</f-pf>",
+            "hw-search": "sbrar",
+            "ipa": "sbɰɑ̃ɰ",
+            "pos": "n.",
+            "word": "sḅrár"
+        },
+        {
+            "def": {
                 "def": "Soul."
             },
             "def-search": "soul",
@@ -11596,6 +11861,18 @@
             "ipa": "sɛ̃bɑ̃̃",
             "pos": "num.",
             "word": "séḅâ"
+        },
+        {
+            "def": {
+                "def": "+<f-s>acc</f-s> To contrast sth. (+<f-s>gen</f-s> with sth.)."
+            },
+            "def-search": "contrast sth to with",
+            "etym": "<f-pf>séparar</f-pf>",
+            "forms": "<f-s>subj</f-s> sebhás, <f-s>fut</f-s> sebháre",
+            "hw-search": "sebhar",
+            "ipa": "sebʱɑ̃ɰ",
+            "pos": "v. tr. or refl.",
+            "word": "sebhár"
         },
         {
             "def": {
@@ -13698,8 +13975,19 @@
             "etym": "<f-pf>se manifester</f-pf>",
             "hw-search": "vnibhes",
             "ipa": "ʋ̃nĩβɛs",
-            "pos": "n. intr.",
+            "pos": "v. intr.",
             "word": "vníb’hès"
+        },
+        {
+            "def": {
+                "def": "Cheese."
+            },
+            "def-search": "cheese",
+            "etym": "<f-pf>Münster</f-pf>",
+            "hw-search": "vnsder",
+            "ipa": "ʋ̃nsdɛ̃ɰ",
+            "pos": "n.",
+            "word": "vnsḍér"
         },
         {
             "def": {
@@ -14506,6 +14794,11 @@
             "to": "<f-w>a</f-w> + <f-w>c’hes</f-w>"
         },
         {
+            "from": "al",
+            "from-search": "al",
+            "to": "ad’he"
+        },
+        {
             "from": "aubhaus",
             "from-search": "aubhaus",
             "to": "ní"
@@ -14569,6 +14862,11 @@
             "from": "aúsó",
             "from-search": "auso",
             "to": "eḍ"
+        },
+        {
+            "from": "b’ha",
+            "from-search": "bha",
+            "to": "ad’he"
         },
         {
             "from": "b’heḍ",
@@ -14899,6 +15197,11 @@
             "from": "hérarâ",
             "from-search": "herara",
             "to": "eḍ"
+        },
+        {
+            "from": "í",
+            "from-search": "i",
+            "to": "ad’he"
         },
         {
             "from": "ís",
