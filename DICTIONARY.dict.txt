@@ -346,8 +346,8 @@ dahaúr|particle|d’accord|Sure, ok, agreed, fine|\s{abbr} da’
 jys|v.|injuste|To be unjust, unfair|\s{fut} jysre, \s{subj} jyss
 c’hóbhár|v.|comparer|+\s{acc} To compare (+\s{gen} with sth.)|\s{fut} c’hóbhárre, \s{subj} c’hó\-bhárs
 c’hóvâ|v.|commencer|
-    \\ (\s{+ part}) To start, commence, begin.
-    \\ \s{+ gen} To start out as
+    \\ (+\s{part/inf/pci}) To start, commence, begin.
+    \\ +\s{gen} To start out as
     \\ \w{âc’hóvâ} \s{def} Beginning, start. \comment Lit. ‘that which is being begun’
     |\s{fut} c’hóvârẹ́, \s{subj} c’hóv\-ás
 vás|n. \s{pl def}|masses|The masses, the people
@@ -480,7 +480,7 @@ c’hýr|n.|cœur|Heart
     fail, flunk, not pass|\s{fut} ćere, \s{subj} ćes
 v́ár|v. irreg.|devoir|
     \\ \s{pass} +\s{aci} Must, have to, be obliged to. \comment The subject is always
-        in the passive in this sense only.
+        in the passive in this sense.
     \\ +\s{dat} To owe sbd. (+\s{acc} sth.).
     \\ \s{cond i + aci} Even if. \ex \w{aúrdyssa dẹće} ‘even if he should fail’|\s{cond i, ii} dy,
         \s{fut} dv́e, \s{subj} ráb’h
@@ -572,6 +572,7 @@ cah|v.|chasser|To hunt|\s{fut} cahe, \s{subj} cas
 ríb’hy’ér|n.|rivière|River
 syl|v.|seul|
     \\ To be the only one.
+    \\ \textit{(of multiple things)} To be one, a united whole.
     \\ To be lone, alone|\s{fut} syle, \s{subj} syls
 dá|n.|dent|Tooth
 ḅará|n.|parent|Parent
@@ -590,8 +591,14 @@ fúr|v.|fournir|To deliver, provide (+\s{dat} sbd.) (+ \s{acc} with sth.)
 c’hulvâ|n.|écoulement|Flow
 sehul|v.|s’écouler|To flow
 c’húr|v. intr.|courrir|To run
-rób’hoc’h|v.|\pf{provoquer}; future from \pf{infliger}|\s{+acc} To cause, make happen|
-    \s{fut} flijé, \s{subj} rób’hoc’hs
+rób’hoc’h|v.|\pf{provoquer}; future from \pf{infliger}|
+    \\ \s{+acc} To cause sth., make sth. happen
+    \\ (\textit{serial}) To cause sbd. to do sth.
+        \comment This is a serial verb construction, i.e. the verb that is modified by
+            this is finite as well.
+        \ex \w{jrób’hoc’h láḍalẹ sḍaúb’h} ‘I cause the table to fall’ / ‘I make the table fall’
+            \comment Lit. ‘I cause the table falls’.
+    |\s{fut} flijé, \s{subj} rób’hoc’hs
 aḅrâ|v.|apprendre|\\+\s{part} \textit{or} \s{intr.} To learn\\+\s{acc} To teach (+\s{dat} sbd.) \comment See also|\s{fut} aḅrâdé, \s{subj} aḅrâs
 ábhec|v.|empêcher|+\s{acc} To prevent, stop (sth. from happening)|\s{fut} ábhece, \s{subj} ábhecs
 válvê|v.|malmener|To mistreat, torture|\s{fut} válv́e, \s{subj} válvês
@@ -697,7 +704,7 @@ rét’hír|v.|retirer|
 váj|n.|from \w{íváj}|Image, picture
 
 váý’ýr|n.|malheur|Tragedy, misfortune
-saj|v.|sage|To be wise, prudent
+saj|v. or n.|sage|\\\textit{v.} To be wise, prudent \\\textit{n.} Sage, wise one
 sajès|n.|sagesse|Wisdom
 dejẹ|adv.|déjà|Already
 dej|particle|from \w{dejẹ}|\textit{Emphatic particle; only used in the preterite}
@@ -1537,7 +1544,7 @@ balda|n.|baldaquin|Bed
 ḅus|n.|pousse|Grain
 saul|n.|solder|+\s{part} To sell (+\s{dat} to sbd.)|\s{fut} sauldé, \s{subj} saulds
 réb’hiý’|v.|refiler|+\s{acc} To gift, give away
-sebhár|v. tr. or refl.|séparar|+\s{acc} To contrast sth. (+\s{gen} with sth.)|\s{subj} sebhás, \s{fut} sebháre
+sebhár|v. tr. or refl.|séparar|+\s{acc} To contrast sth. (+\s{gen} with sth.)|\s{fut} sebháre, \s{subj} sebhás
 lasc’h|n.|Lascaux|Cave, cavern
 buý’b’hbhẹ́ríb’h|n.|from \pf{boulevard périphérique}|Road
 vnsḍér|n.|Münster|Cheese
@@ -1557,7 +1564,14 @@ nêbhc’hèl|particle|from \w{nêbh-} + \w{c’hèl}|
     Whichever \comment For usage, see \w{c’hèl}.
 sḅrár|n.|espoir|Hope
 jèc’h|v.|éjecter|To expulse, oust
-rét’hévâ|n.|traitement|Failure
+rét’hévâ|n.|traitement|Medicine
+y’éd|v.|tiède|To be warm
+ḅaéb’hát’heý’oḍy’éd|v.|from \pf{pas inventé l’eau tiède}|To be stupid, an idiot, a moron
+ḅis|n.|piste|Path, trail, track
+rèhaúd’hèḍ|n.|\pf{raison d’être}|Purpose
+ráhaz|v. tr.|rassasier|+\s{acc} To satisfy (+\s{gen} with sth. / using sth.)
+    |\s{fut} ráhar, \s{subj} ráhas
+ḍih|n.|tissu|Cloth, fabric
 
 ## Currently at entry 499/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
@@ -1572,7 +1586,7 @@ rét’hévâ|n.|traitement|Failure
 ##       do cross-referencing). The ULTRAFRENCHER should complain if there are unannotated homographs.
 
 # To be is a rather complicated entry.
-eḍ|v. irreg. |être|To be \comment Active only, see §~\ref{subsec:ed-paradigm}
+eḍ|v. irreg. |être|To be \comment Active only.|All forms of this verb are irregular; see §~\ref{subsec:ed-paradigm}.
 
 véy’ýr > baú
 bír > vaúb’hẹ
@@ -1600,6 +1614,7 @@ Réáb’h > Ráb’h
 dib’hat’h’ > dib’hat’hiv
 naûvú > naûb vú
 da’ > dahaúr
+ráhar, ráhas > ráhaz
 
 ## Grammatical forms are only in the online dictionary because if you have
 ## the grammar you can just search it instead. We only include the most common

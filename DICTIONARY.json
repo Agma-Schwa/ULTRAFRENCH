@@ -1913,6 +1913,17 @@
         },
         {
             "def": {
+                "def": "To be stupid, an idiot, a moron."
+            },
+            "def-search": "a an be idiot moron stupid to",
+            "etym": "from <f-pf>pas inventé l’eau tiède</f-pf>",
+            "hw-search": "baebhatheyodyed",
+            "ipa": "bɐɛ̃βɑ̃θeɥ̃odɥɛ̃d",
+            "pos": "v.",
+            "word": "ḅaéb’hát’heý’oḍy’éd"
+        },
+        {
+            "def": {
                 "def": "Thought, reflection, meditation, faculty of thinking."
             },
             "def-search": "faculty meditation of reflection thinking thought",
@@ -3059,6 +3070,17 @@
             "ipa": "bĩɰĩd",
             "pos": "n.",
             "word": "ḅíríḍ"
+        },
+        {
+            "def": {
+                "def": "Path, trail, track."
+            },
+            "def-search": "path track trail",
+            "etym": "<f-pf>piste</f-pf>",
+            "hw-search": "bis",
+            "ipa": "bis",
+            "pos": "n.",
+            "word": "ḅis"
         },
         {
             "def": {
@@ -4483,10 +4505,10 @@
             "pos": "v.",
             "senses": [
                 {
-                    "def": "(<f-s>+ part</f-s>) To start, commence, begin."
+                    "def": "(+<f-s>part/inf/pci</f-s>) To start, commence, begin."
                 },
                 {
-                    "def": "<f-s>+ gen</f-s> To start out as."
+                    "def": "+<f-s>gen</f-s> To start out as."
                 },
                 {
                     "comment": "<p>Lit. ‘that which is being begun’.</p>",
@@ -5644,6 +5666,17 @@
         },
         {
             "def": {
+                "def": "Cloth, fabric."
+            },
+            "def-search": "cloth fabric",
+            "etym": "<f-pf>tissu</f-pf>",
+            "hw-search": "dih",
+            "ipa": "dih",
+            "pos": "n.",
+            "word": "ḍih"
+        },
+        {
+            "def": {
                 "def": "Seventeenth."
             },
             "def-search": "seventeenth",
@@ -6482,11 +6515,12 @@
         },
         {
             "def": {
-                "comment": "<p>Active only, see grammar.</p>",
+                "comment": "<p>Active only.</p>",
                 "def": "To be."
             },
             "def-search": "be to",
             "etym": "<f-pf>être</f-pf>",
+            "forms": "All forms of this verb are irregular; see grammar.",
             "hw-search": "ed",
             "ipa": "ed",
             "pos": "v. irreg.",
@@ -9058,6 +9092,18 @@
         },
         {
             "def": {
+                "def": "+<f-s>acc</f-s> To satisfy (+<f-s>gen</f-s> with sth. / using sth.)."
+            },
+            "def-search": "satisfy sth to using with",
+            "etym": "<f-pf>rassasier</f-pf>",
+            "forms": "<f-s>fut</f-s> ráhar, <f-s>subj</f-s> ráhas",
+            "hw-search": "rahaz",
+            "ipa": "ɰɑ̃hɐz",
+            "pos": "v. tr.",
+            "word": "ráhaz"
+        },
+        {
+            "def": {
                 "def": "Bird."
             },
             "def-search": "bird",
@@ -10380,6 +10426,17 @@
         },
         {
             "def": {
+                "def": "Purpose."
+            },
+            "def-search": "purpose",
+            "etym": "<f-pf>raison d’être</f-pf>",
+            "hw-search": "rehaudhed",
+            "ipa": "ɰɛhɔ̃ðɛd",
+            "pos": "n.",
+            "word": "rèhaúd’hèḍ"
+        },
+        {
+            "def": {
                 "def": "Income."
             },
             "def-search": "income",
@@ -10600,9 +10657,9 @@
         },
         {
             "def": {
-                "def": "Failure."
+                "def": "Medicine."
             },
-            "def-search": "failure",
+            "def-search": "medicine",
             "etym": "<f-pf>traitement</f-pf>",
             "hw-search": "retheva",
             "ipa": "ɰɛ̃θɛ̃ʋ̃ɑ̃̃",
@@ -10932,15 +10989,27 @@
             "word": "rjẹ"
         },
         {
-            "def": {
-                "def": "<f-s>+acc</f-s> To cause, make happen."
-            },
-            "def-search": "cause happen make to",
+            "def-search": "cause do happen make sbd sth to",
             "etym": "<f-pf>provoquer</f-pf>; future from <f-pf>infliger</f-pf>",
             "forms": "<f-s>fut</f-s> flijé, <f-s>subj</f-s> rób’hoc’hs",
             "hw-search": "robhoch",
             "ipa": "ɰɔ̃βox",
             "pos": "v.",
+            "senses": [
+                {
+                    "def": "<f-s>+acc</f-s> To cause sth., make sth. happen."
+                },
+                {
+                    "comment": "<p>This is a serial verb construction, i.e. the verb that is modified by this is finite as well.</p>",
+                    "def": "(<em>serial</em>) To cause sbd. to do sth.",
+                    "examples": [
+                        {
+                            "comment": "Lit. ‘I cause the table falls’.",
+                            "text": "<f-w>jrób’hoc’h láḍalẹ sḍaúb’h</f-w> ‘I cause the table to fall’ / ‘I make the table fall’."
+                        }
+                    ]
+                }
+            ],
             "word": "rób’hoc’h"
         },
         {
@@ -11540,14 +11609,19 @@
             "word": "sáhyẹ"
         },
         {
-            "def": {
-                "def": "To be wise, prudent."
-            },
-            "def-search": "be prudent to wise",
+            "def-search": "be one prudent sage to wise",
             "etym": "<f-pf>sage</f-pf>",
             "hw-search": "saj",
             "ipa": "sɐʑ",
-            "pos": "v.",
+            "pos": "v. or n.",
+            "senses": [
+                {
+                    "def": "<em>v.</em> To be wise, prudent."
+                },
+                {
+                    "def": "<em>n.</em> Sage, wise one."
+                }
+            ],
             "word": "saj"
         },
         {
@@ -11868,7 +11942,7 @@
             },
             "def-search": "contrast sth to with",
             "etym": "<f-pf>séparar</f-pf>",
-            "forms": "<f-s>subj</f-s> sebhás, <f-s>fut</f-s> sebháre",
+            "forms": "<f-s>fut</f-s> sebháre, <f-s>subj</f-s> sebhás",
             "hw-search": "sebhar",
             "ipa": "sebʱɑ̃ɰ",
             "pos": "v. tr. or refl.",
@@ -12875,7 +12949,7 @@
             "word": "syhyý’á"
         },
         {
-            "def-search": "alone be lone oneto only the to",
+            "def-search": "a alone be lone one only the to united wholeto",
             "etym": "<f-pf>seul</f-pf>",
             "forms": "<f-s>fut</f-s> syle, <f-s>subj</f-s> syls",
             "hw-search": "syl",
@@ -12884,6 +12958,9 @@
             "senses": [
                 {
                     "def": "To be the only one."
+                },
+                {
+                    "def": "<em>(of multiple things)</em> To be one, a united whole."
                 },
                 {
                     "def": "To be lone, alone."
@@ -13251,7 +13328,7 @@
             "pos": "v. irreg.",
             "senses": [
                 {
-                    "comment": "<p>The subject is always in the passive in this sense only.</p>",
+                    "comment": "<p>The subject is always in the passive in this sense.</p>",
                     "def": "<f-s>pass</f-s> +<f-s>aci</f-s> Must, have to, be obliged to."
                 },
                 {
@@ -14353,6 +14430,17 @@
             "ipa": "ɥɛ̃x",
             "pos": "n.",
             "word": "y’éc’h"
+        },
+        {
+            "def": {
+                "def": "To be warm."
+            },
+            "def-search": "be to warm",
+            "etym": "<f-pf>tiède</f-pf>",
+            "hw-search": "yed",
+            "ipa": "ɥɛ̃d",
+            "pos": "v.",
+            "word": "y’éd"
         },
         {
             "def": {
@@ -15607,6 +15695,16 @@
             "from": "ráb’h",
             "from-search": "rabh",
             "to": "v́ár"
+        },
+        {
+            "from": "ráhar",
+            "from-search": "rahar",
+            "to": "ráhaz"
+        },
+        {
+            "from": "ráhas",
+            "from-search": "rahas",
+            "to": "ráhaz"
         },
         {
             "from": "Réáb’h",
