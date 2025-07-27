@@ -1572,6 +1572,10 @@ rèhaúd’hèḍ|n.|\pf{raison d’être}|Purpose
 ráhaz|v. tr.|rassasier|+\s{acc} To satisfy (+\s{gen} with sth. / using sth.)
     |\s{fut} ráhar, \s{subj} ráhas
 ḍih|n.|tissu|Cloth, fabric
+vát’hẹ́r|n.|matériau|Material
+    \comment Generic material of any kind.
+    \ex \w{vát’hér c’haúdrýc’h} ‘building material’
+c’haúḍrýc’h|n.|construction|Construction
 
 ## Currently at entry 499/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/

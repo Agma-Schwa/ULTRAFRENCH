@@ -4029,6 +4029,17 @@
         },
         {
             "def": {
+                "def": "Construction."
+            },
+            "def-search": "construction",
+            "etym": "<f-pf>construction</f-pf>",
+            "hw-search": "chaudrych",
+            "ipa": "xɔ̃dɰʏ̃x",
+            "pos": "n.",
+            "word": "c’haúḍrýc’h"
+        },
+        {
+            "def": {
                 "def": "To contain."
             },
             "def-search": "contain to",
@@ -13420,6 +13431,23 @@
             "ipa": "ʋ̃ɑ̃θɛ̃",
             "pos": "n.",
             "word": "vát’hé"
+        },
+        {
+            "def": {
+                "comment": "<p>Generic material of any kind.</p>",
+                "def": "Material.",
+                "examples": [
+                    {
+                        "text": "<f-w>vát’hér c’haúdrýc’h</f-w> ‘building material’."
+                    }
+                ]
+            },
+            "def-search": "material",
+            "etym": "<f-pf>matériau</f-pf>",
+            "hw-search": "vather",
+            "ipa": "ʋ̃ɑ̃θẽɰ",
+            "pos": "n.",
+            "word": "vát’hẹ́r"
         },
         {
             "def": {
