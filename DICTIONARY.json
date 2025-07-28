@@ -2830,6 +2830,22 @@
             "word": "b’hért’he"
         },
         {
+            "def-search": "julytare plant vetch",
+            "etym": "<f-pf>vesce</f-pf>",
+            "hw-search": "bhes",
+            "ipa": "βes",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "<f-w>B’hes</f-w> 16 July."
+                },
+                {
+                    "def": "Tare, vetch (plant)."
+                }
+            ],
+            "word": "b’hes"
+        },
+        {
             "def-search": "an eye guard keep on over to watch",
             "etym": "<f-pf>veiller</f-pf>",
             "hw-search": "bhey",
@@ -4486,14 +4502,20 @@
             "word": "c’hóhid’hẹ́"
         },
         {
-            "def": {
-                "def": "Known, familiar, well-kn&shy;own."
-            },
-            "def-search": "familiar known wellknown",
+            "def-search": "a as familiar famously in is known manner wellknown widely",
             "etym": "<f-pf>connu</f-pf>",
             "hw-search": "chony",
             "ipa": "xɔ̃nʏ̃",
             "pos": "adj.",
+            "senses": [
+                {
+                    "def": "Known, familiar, well-kn&shy;own."
+                },
+                {
+                    "comment": "<p>Other than literal.</p>",
+                    "def": "<f-w>c’hónývâ</f-w> <em>adv</em> In a well-known manner, famously, as is widely known."
+                }
+            ],
             "word": "c’hóný"
         },
         {
@@ -5174,15 +5196,21 @@
             "word": "dec̣ír"
         },
         {
-            "def": {
-                "comment": "<p>Generic expletive.</p>",
-                "def": "Fuck."
-            },
-            "def-search": "fuck",
+            "def-search": "bloody damnfuck fucking",
             "etym": "<f-pf>putain de merde</f-pf>",
             "hw-search": "dedver",
             "ipa": "dɛ̃dβʶɛ̃ɰ",
-            "pos": "interj.",
+            "pos": "adj.",
+            "senses": [
+                {
+                    "comment": "<p>Intensifier.</p>",
+                    "def": "Fucking, bloody, damn."
+                },
+                {
+                    "comment": "<p>Generic expletive.</p>",
+                    "def": "Fuck."
+                }
+            ],
             "word": "ḍédv́ér"
         },
         {
@@ -7277,6 +7305,22 @@
             "word": "jehír"
         },
         {
+            "def-search": "julyclover",
+            "etym": "<f-pf>girofle</f-pf>",
+            "hw-search": "jirauf",
+            "ipa": "ʑĩɰɔ̃ɸ",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "<f-w>Jíraúf</f-w> 1 July."
+                },
+                {
+                    "def": "Clover."
+                }
+            ],
+            "word": "jíraúf"
+        },
+        {
             "def-search": "a advantage affect be decided fun game make matter of or play role take time to",
             "etym": "<f-pf>jouer</f-pf>",
             "hw-search": "ju",
@@ -8314,6 +8358,17 @@
             "ipa": "nɛ̃hɑ̃s",
             "pos": "n.",
             "word": "néhás"
+        },
+        {
+            "def": {
+                "def": "Nerd."
+            },
+            "def-search": "nerd",
+            "etym": "<f-pf>nerd</f-pf>",
+            "hw-search": "nerd",
+            "ipa": "nɛ̃ɰd",
+            "pos": "n.",
+            "word": "nérd"
         },
         {
             "def": {
@@ -11777,6 +11832,19 @@
         },
         {
             "def": {
+                "comment": "<p>Literally ‘It is big time that...’.</p>",
+                "def": "+<f-s>pci</f-s> It’s about time that..."
+            },
+            "def-search": "about its that time",
+            "etym": "A contraction of <f-w>se aúłau rá</f-w>",
+            "forms": "<f-s>pres</f-s> s’aúłau’r, <f-s>pres ant</f-s> b’h’aúłau’r, <f-s>pret</f-s> t’h’aúłau’r, <f-s>fut ii</f-s> h’aúłau’r. <f-nf>These forms are indicative only; all other tenses and moods of this are formed with the corresponding <f-s>3n</f-s> of</f-nf> eḍ <f-nf>followed by</f-nf> aúłau’r.",
+            "hw-search": "saulaur",
+            "ipa": "sɔ̃ɮ̃ʶoɰ",
+            "pos": "v. <f-s>3n sg act</f-s> only",
+            "word": "s’aúłau’r"
+        },
+        {
+            "def": {
                 "comment": "<p>The case depends on the depth of the speaker’s understanding: the <f-s>acc</f-s> indicates ‘complete’ or expert-level understanding, the <f-s>part</f-s> only some understanding. In questions, the <f-s>acc</f-s> is rather harsh (similar to ‘do you have even the slightest idea ...’) with the <f-s>part</f-s> preferred if a more neutral tone is intended. In negated statements, the <f-s>acc</f-s> indicates a complete lack of understanding (‘I have no idea whatsoever ...’), whereas the <f-s>part</f-s> is again neutral.</p>",
                 "def": "To know (+<f-s>part/acc</f-s> sth.)."
             },
@@ -12534,6 +12602,22 @@
             "ipa": "siβiɮ̃",
             "pos": "n.",
             "word": "sib’hil"
+        },
+        {
+            "def-search": "februarycyclamen plant",
+            "etym": "<f-pf>cyclamen</f-pf>",
+            "hw-search": "sichlave",
+            "ipa": "sixɮ̃ɑ̃ʋ̃ɛ̃̃",
+            "pos": "n.",
+            "senses": [
+                {
+                    "def": "<f-w>Sic’hlávê</f-w> 16 February."
+                },
+                {
+                    "def": "Cyclamen (plant)."
+                }
+            ],
+            "word": "sic’hlávê"
         },
         {
             "def": {
@@ -14585,7 +14669,7 @@
             "word": "y’î"
         },
         {
-            "def-search": "follow get to understand",
+            "def-search": "after come follow get to understand",
             "etym": "<f-pf>suivre</f-pf>",
             "hw-search": "yibh",
             "ipa": "ɥĩβ",
@@ -14593,7 +14677,7 @@
             "senses": [
                 {
                     "comment": "<p>In its literal sense.</p>",
-                    "def": "(+<f-s>acc</f-s>) To follow."
+                    "def": "(+<f-s>acc</f-s>) To follow, come after."
                 },
                 {
                     "def": "(+<f-s>gen</f-s>) To follow, get, understand."
@@ -14985,6 +15069,11 @@
             "to": "ad’he"
         },
         {
+            "from": "b’h’aúłau’r",
+            "from-search": "bhaulaur",
+            "to": "s’aúłau’r"
+        },
+        {
             "from": "b’heḍ",
             "from-search": "bhed",
             "to": "eḍ"
@@ -15298,6 +15387,11 @@
             "from": "fyy’â",
             "from-search": "fyya",
             "to": "eḍ"
+        },
+        {
+            "from": "h’aúłau’r",
+            "from-search": "haulaur",
+            "to": "s’aúłau’r"
         },
         {
             "from": "hérâ",
@@ -15848,6 +15942,11 @@
             "from": "t-",
             "from-search": "t",
             "to": "ḍ-"
+        },
+        {
+            "from": "t’h’aúłau’r",
+            "from-search": "thaulaur",
+            "to": "s’aúłau’r"
         },
         {
             "from": "t’hẹáâ",

@@ -118,7 +118,10 @@ ab’hásy’ô|n.|aviation|Aviation
 rá₁|n.|loi|Law, rule, regulation
 ḍẹ|adj.|tout|\\All, every, whole, entire \\\w{ḍẹ auḍ} Obsolete form of \w{ḍauḍ}.
 ḍauḍ|def. pron.|from earlier \w{ḍẹ auḍ}|Everything else, any other (one)
-c’hóný|adj.|connu|Known, familiar, well-kn\-own
+c’hóný|adj.|connu|
+    \\ Known, familiar, well-kn\-own
+    \\ \w{c’hónývâ} \textit{adv} In a well-known manner, famously, as is widely known
+        \comment Other than literal
 y’aúhý|particle|\pf{il n’y a aucun}|There is no, there are no, there is none \comment See also \w{ý’aúhý}.
 ý’aúhý|particle|\pf{il y a aucun}|
     \\ There is, there are \comment See also \w{y’aúhý}.
@@ -543,7 +546,9 @@ vêt’hnâ|adv.|from \pf{maintenant}, lenited for unknown reasons|Now
 lys|adv.|\pf{plus} /plys/|\textit{neg. only} No longer, not any more. \comment The meaning of this and
     \w{lẹ} swapped at some point for unknown reasons
 
-ḍédv́ér|interj.|\pf{putain de merde}|Fuck. \comment Generic expletive
+ḍédv́ér|adj.|\pf{putain de merde}|
+    \\ Fucking, bloody, damn \comment Intensifier
+    \\ Fuck. \comment Generic expletive
 y’éjúré|n.|\pf{siège} + \pf{tabouret}|Chair, seat
 
 sẹhúr|v.|secourir|To help, succour, give aid (+\s{dat} to sb.) (+\s{aci}/\s{acc} with sth.)|\s{fut} sẹhúrre, \s{subj} sẹhús
@@ -1190,7 +1195,7 @@ ráy’ẹ́|n.|foyer|Home, homeland
 ajut’h|v.|ajouter|To add, append
 auḍ|v.|from \pf{haute}, the \textit{fem.} form of \pf{haut}|To be high
 y’íb’h|v.|suivre|
-    \\(+\s{acc}) To follow
+    \\(+\s{acc}) To follow, come after
         \comment In its literal sense.
     \\(+\s{gen}) To follow, get, understand
 ac’h|n.|acte|Act, action
@@ -1576,6 +1581,22 @@ vát’hẹ́r|n.|matériau|Material
     \comment Generic material of any kind.
     \ex \w{vát’hér c’haúdrýc’h} ‘building material’
 c’haúḍrýc’h|n.|construction|Construction
+s’aúłau’r|v. \s{3n sg act} only|A contraction of \w{se aúłau rá}|
+    +\s{pci} It’s about time that...
+        \comment Literally ‘It is big time that...’.
+    |\s{pres} s’aúłau’r, \s{pres ant} b’h’aúłau’r, \s{pret} t’h’aúłau’r, \s{fut ii} h’aúłau’r.
+        \textnf{These forms are indicative only; all other tenses and moods of this are formed with the
+        corresponding \s{3n} of} eḍ \textnf{followed by} aúłau’r.
+nérd|n.|nerd|Nerd
+jíraúf|n.|girofle|
+    \\ \w{Jíraúf} 1 July
+    \\ Clover
+sic’hlávê|n.|cyclamen|
+    \\ \w{Sic’hlávê} 16 February
+    \\ Cyclamen (plant)
+b’hes|n.|vesce|
+    \\ \w{B’hes} 16 July
+    \\ Tare, vetch (plant)
 
 ## Currently at entry 499/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
@@ -1619,6 +1640,7 @@ dib’hat’h’ > dib’hat’hiv
 naûvú > naûb vú
 da’ > dahaúr
 ráhar, ráhas > ráhaz
+b’h’aúłau’r, t’h’aúłau’r, h’aúłau’r > s’aúłau’r
 
 ## Grammatical forms are only in the online dictionary because if you have
 ## the grammar you can just search it instead. We only include the most common
