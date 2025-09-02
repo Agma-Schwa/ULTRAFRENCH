@@ -14,8 +14,8 @@ constexpr char32_t Tilde = U'̃';
 constexpr char32_t VoicelessBelow = U'̥';
 constexpr char32_t Diaeresis = U'̈';
 constexpr char32_t DotBelow = U'̣';
-constexpr std::u32string_view WSOrPipe = U" \t\v\f\n\r|";
-constexpr std::u32string_view Apostrophe = U"'`’\N{MODIFIER LETTER APOSTROPHE}";
+constexpr str32 WSOrPipe = U" \t\v\f\n\r|";
+constexpr str32 Apostrophe = U"'`’\N{MODIFIER LETTER APOSTROPHE}";
 
 // Convert a sound to its nasal equivalent (but without
 // any diacritics)
@@ -36,13 +36,13 @@ constexpr char32_t Nasal(char32_t c) {
 }
 } // namespace
 
-auto ipa::Translate(std::string_view text) -> Result<std::string> {
+auto ipa::Translate(str text) -> Result<std::string> {
     // Convert it to a u32 string.
     // Map the text to IPA.
     auto input = text::Normalise(text::ToLower(text::ToUTF32(text)), text::NormalisationForm::NFD);
     std::u32string ipa;
     char32_t c{};
-    u32stream s{input};
+    str32 s{input};
 
     // Helper to handle apostrophe-h combinations. Some letters
     // may be followed by '’h', which turns them into fricatives;

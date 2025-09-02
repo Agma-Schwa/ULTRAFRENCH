@@ -11,20 +11,24 @@
 
 using namespace base;
 
+
 struct UFOps : dict::LanguageOps {
-    auto handle_unknown_macro(dict::TeXToHtmlConverter& conv, std::string_view macro) -> Result<> override;
+    auto handle_unknown_macro(dict::TexParser&, str macro) -> Result<dict::Node::Ptr> override;
     auto preprocess_full_entry(std::vector<std::u32string>&) -> Result<> override;
-    auto to_ipa(std::string_view word) -> Result<std::string> override {
+    auto to_ipa(str word) -> Result<std::string> override {
         return ipa::Translate(word);
     }
 };
 
-auto UFOps::handle_unknown_macro(dict::TeXToHtmlConverter& conv, std::string_view macro) -> Result<> {
-    if (macro == "pf") Try(conv.single_argument_macro_to_tag("f-pf"));
-    else if (macro == "L") conv.drop_empty_and_append_raw("<f-mut><sup>L</sup></f-mut>");
-    else if (macro == "N") conv.drop_empty_and_append_raw("<f-mut><sup>N</sup></f-mut>");
-    else return LanguageOps::handle_unknown_macro(conv, macro);
-    return {};
+auto UFOps::handle_unknown_macro(dict::TexParser& p, str macro) -> Result<dict::Node::Ptr> {
+    if (macro == "pf") {
+        auto a = Try(p.parse_arg());
+        return p.group(p.formatting("<f-pf>"), std::move(a), p.formatting("</f-pf>"));
+    }
+
+    if (macro == "L") return p.formatting("<f-mut><sup>L</sup></f-mut>");
+    if (macro == "N") return p.formatting("<f-mut><sup>N</sup></f-mut>");
+    return LanguageOps::handle_unknown_macro(p, macro);
 }
 
 auto UFOps::preprocess_full_entry(std::vector<std::u32string>& parts) -> Result<> {

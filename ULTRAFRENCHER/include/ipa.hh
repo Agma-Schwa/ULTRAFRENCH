@@ -5,7 +5,7 @@
 #include <string>
 
 namespace ipa {
-[[nodiscard]] auto Translate(std::string_view text) -> base::Result<std::string>;
+[[nodiscard]] auto Translate(base::str text) -> base::Result<std::string>;
 }
 
 #endif
