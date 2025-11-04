@@ -1347,8 +1347,8 @@ aúrd|n.|ordre|
     \\ Order (military group)
     \\\s{orn} \w{vé(t’hý)naúrd} Orderly, tidy
     \\\s{def gen} In the region of, around, approximately.
-        \comment Always followed by an ordinal number in the \s{abs} and then by a noun phrase also
-            in the \s{abs}. Since the number is usually not 1, the noun phrase is usually in the \s{pl}.
+        \comment Always followed by an ordinal number in the \s{abs} and then by a noun phrase.
+            Since the number is usually not 1, the noun phrase is usually in the \s{pl}.
         \ex \w{áaúrd dizy’ê t’halẹ} ‘around 10 tables’, ‘10 or so tables’
             \comment Literally ‘tables of the 10th order’.
 raúlé|n.|problème|Problem, issue
@@ -1597,6 +1597,7 @@ sic’hlávê|n.|cyclamen|
 b’hes|n.|vesce|
     \\ \w{B’hes} 16 July
     \\ Tare, vetch (plant)
+vérvá|perticle|from \w{vé} + \w{rvá}|But alas
 
 ## Currently at entry 499/959 of the following page:
 ## https://strommeninc.com/1000-most-common-french-words-frequency-vocabulary/
@@ -1619,7 +1620,6 @@ rêd > ḅẹt’hẹ
 c’h’s > c’hes
 ráb’h > v́ár
 daú’b’h > daú(c’h) \textnf{+} b’he
-vérvá > vér + vá
 sy̌ > dýr
 c’heḍ’ráb’h’, c’heb’hḍ’ráb’h’ > ráb’haut’h
 ś > r

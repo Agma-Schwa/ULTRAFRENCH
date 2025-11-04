@@ -92,7 +92,7 @@
                 ]
             ]
         },
-        "input.text": "",
+        "input.text": "ʒwajo",
         "notes": {
             "files": [
                 {
@@ -110,14 +110,14 @@
             ],
             "splitter.sizes": "AAAA/wAAAAEAAAACAAAAswAABI0B/////wEAAAABAA=="
         },
-        "output.text": "",
+        "output.text": "ɰɑ̃ɥɔ̃\n",
         "sca": {
             "cbox.changes.norm.choice": 2,
             "cbox.input.norm.choice": 2,
             "cbox.output.norm.choice": 1,
             "cbox.start.after": "",
             "cbox.stop.before": "NorthernDialect",
-            "chbox.details": 2,
+            "chbox.details": 0,
             "chbox.enable.js": 0,
             "splitter.sizes": "AAAA/wAAAAEAAAADAAABZgAAA0cAAAEmAf////8BAAAAAQA="
         },
