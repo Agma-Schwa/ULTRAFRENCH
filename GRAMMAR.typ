@@ -374,9 +374,40 @@ by a superscript #L or #N, respectively, e.g. the accusative singular prefix, wh
 the declension table as #w[lá-#L].
 
 
+== Diachrony and Derivation <subsec:diachrony-and-derivation>
+The PF infinitive endings (#w[-ir] etc.) became progressively more vestigial in Middle UF and were eventually
+often dropped completely in derivation, e.g. #w[auḍé] ‘obtain’ from earlier \*#w[auḅḍénír], later resulting in
+a need for new infinitive affixes to be formed to distinguish infinitives from the base form, thus giving
+rise to e.g. #w[dauḍé] ‘to obtain’.
 
+The suffix #w[-t’he], #s[fut] #w[-ḍe], #s[subj] #w[-t’hes], is a productive derivational suffix that can be used to turn a
+noun ‘X’ into a verb that roughly means ‘to use X’, e.g. #w[ac] ‘axe’ $arrow$ #w[act’he] ‘to cut with an axe’.
+
+The prefix #w[raú(b’hc’h)-] can be prepended to the stem of a verb to turn it into a causative, additionally takes the
+dative, e.g. #w[jraúb’hc’had’hór asaú]
+‘I cause the man to love’. The #w[-b’hc’h-] is dropped if the word starts with a consonant, in which case it also
+lenites, e.g. #w[raúd’hír] ‘make someone say’. This is rather archaic; the preferred way to express a causative in
+modern UF is with the verb #w[rób’hoc’h].
+
+The suffixes #w[-aû] and #w[#L;-vâ] can be appended to any verb that expresses an action with a result to denote that
+result. Generally, the former is used if the result is an abstract concept, e.g. #w[iý’ývî] ‘illuminate’ $arrow$ #w[iý’ývîaû]
+‘illumination’, and the latter for concrete objects, but this may vary depending on the verb in question and on dialect.
+
+The suffix #w[-(é)raû] can be appended to a noun to denote a profession, specifically someone who regularly engages in
+creating or constructing the noun in question, e.g. #w[ḍalẹ] ‘table’ $arrow$ #w[ḍaléraû] ‘carpenter’. The #w[é] is retained
+if the noun ends with a consonant; it replaces word-final #w[ẹ], and is dropped itself if the word ends with any other vowel,
+to which a level if nasalisation is added if possible.
+
+The #s[indef orn] affix #w[vén-] can be attached to nouns to form something that behaves more or less like an adjective,
+though this technically a case affix and not derivation; a more detailed description of this phenomenon is given
+in @subsec:ornative.
+
+// Temporary chapter and sections because the document doesn’t compile if there
+// are missing references; remove these once we convert the sections that contain
+// these labels.
 #chapter("TEMP", "temp")
 == TEMP <subsec:aci-pci>
+== TEMP <subsec:ornative>
 
 // ============================================================================
 //  Backmatter
