@@ -7,3 +7,6 @@
 [submodule "ULTRAFRENCHER/libs/SQLiteCpp"]
 	path = ULTRAFRENCHER/libs/SQLiteCpp
 	url = https://github.com/SRombauts/SQLiteCpp
+[submodule "BASE"]
+	path = BASE
+	url = git@github.com:Agma-Schwa/typst-base
