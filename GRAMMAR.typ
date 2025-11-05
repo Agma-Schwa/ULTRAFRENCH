@@ -447,7 +447,7 @@ some forms, such as the #s[acc], are borrowed from demonstratives instead (#s[de
 #let declension-table(caption, lbl, ..cells) = {
     pagebreak()
     v(-.4em)
-    show : italic-table-body.with(header: (0, 4))
+    show : italic-table-body.with(cols: (0, 4))
     [
         #figure(caption: caption, rowtable(
             ..vlinesat(1, 2, 5, 6),
@@ -1106,7 +1106,7 @@ largely unmarked or only marked by mutations. Because of this, there is a specia
 affixes that are usually referred to as the _augmented_ #s[abs/voc] and which are only used in stacking:
 
 #[
-#show : italic-table-body.with(header: (0, 4))
+#show : italic-table-body.with(cols: (0, 4))
 #center-table(
     caption: [Augmented #s[abs/voc] affixes.],
     align: left,
@@ -1273,7 +1273,246 @@ Pronouns in UF are a rather complicated subject matter since they are becoming i
 a set of personal pronouns which only exist in oblique cases; a set of simple possessive pronouns, a set of demonstrative
 pronouns, as well as interrogative and relative pronouns.
 
+=== Personal pronouns <subsubsec:personal-pronouns>
+@tab:personal-pronouns below lists all forms of the UF personal pronouns.
 
+#[
+#show : italic-table-body.with(rows: (0, 1))
+#center-table(
+    caption: [Personal Pronouns],
+    align: left,
+    vlineat(1),
+    vlineat(5),
+    hlineat(1, start: 1),
+    hlineat(2),
+    [               & #table.cell(colspan: 4, align(center)[Sg]) & #table.cell(colspan: 3, align(center)[Pl]) ],
+    [               & #s[1st] & #s[2nd]  & #s[3c] & #s[ 3n] & #s[1st] & #s[2nd] & #s[3rd] ],
+    [ Absolutive    & vè  & t’hè  & lè  & sè        & aú    & vaú  & y   ],
+    [ Vocative      & /   & et’hè & /   & /         & /     & evaú & /   ],
+    [ Genitive      & vaú & ḍaú   & #col2[ez/z’/’z] & naúḍ  & vaúd & lýr ],
+    [ Prepositional & vẹ  & t’hẹ  & lẹ  & sẹ        & aun   & vau   & ly ],
+) <tab:personal-pronouns>
+]
+
+#partitle[Nominative and Accusative]
+There are a few things that need to be noted here: there are no #s[nom] and #s[acc] pronouns; those
+forms have been incorporated into the verb and cannot be used without a verb. For instance, when answering a question,
+typically, either the same verb that was used to ask the question
+is repeated or an appropriate form of the verb #w[fér] ‘to do’ is used, e.g. if asked #w[U c’hes ḍẹvad’hór ra ḍẹy’ad’hór?]
+‘Do you love me or him?’, an UF speaker might respond with #w[ḍad’hór] ‘I love you’ or #w[ḍẹfér] ‘you’ (lit. ‘I do you’).
+
+On that note, there are several ways of shortening the question itself: In sentences that contain the same verb with the same
+affix twice, the second occurrence of that affix may be omitted, e.g. #w[U c’hes ḍẹvad’hór ra y’ad’hór?]; the verb #w[fér] may be used
+to avoid repetition, e.g. #w[U c’hes ḍẹvad’hór ra y’fér?]; and, finally, the entire first occurrence of the verb sans the person markers may
+be omitted, leaving said affixes stranded in the sentence, e.g. #w[U c’hes ḍẹv- ra y’ad’hór?]. This last option is generally
+preferred since it it is the shortest option, but, of course, it is only possible if the first verb form contains only prefixes.
+
+#partitle[Partitive]
+The #s[part] forms of the personal pronoun are rather strange; generally, verbs that govern the #s[part] simply take regular
+passive affixes instead. However, verbs that can be formed with both the #s[acc] and #s[part] as well as #s[pci]s employ
+special partitive forms of the passive affixes that are constructed by infixing #w[-dy-] after the prefix part
+of the corresponding passive affix—or before the suffix part if there is no prefix part:#footnote[The only passive forms that do
+not have prefix parts are imperatives.]
+
+- #w[jsylí] ‘I peruse it’
+- #w[jsy#b[dy]lí] ‘I read from it’
+- #w[lírá] ‘be perused!’
+- #w[lí#b[dy]rá] ‘be read from!’
+
+#partitle[Genitive]
+The possessees of #s[gen] pronouns can be definite or indefinite, e.g. #w[vaú lát’halẹ] ‘my table’ vs #w[vaú ŷnalẹ] ‘a table
+of mine’. In cases where the possession is obvious, e.g. family members in relation to one another, body parts, etc. the
+#s[gen] pronoun is generally omitted:#footnote[With body parts, this use of the #[gen] is entirely obsolete in Modern UF,
+and even in Early Modern UF outside of poetry.]
+
+- #w[Lábhabh ladvnéhá(#b[\%’z]) ib’his.] ‘The father reprimanded his son.’
+- #w[Lẹraúhy’b’há(#b[\*’z]) irá nés ádér.] ‘He raised his left arm up in the air.’
+- #w[Svéc (#b[\*z’])órdraûc llarét’hírá.] ‘She pulled a strand of hair from her head.’
+
+Most #s[gen] pronouns are not particularly special and behave just like regular genitives; the exception is the
+#s[3sg] pronoun that is used for all three genders: its base form is #w[ez], e.g. #w[ez lát’halẹ] ‘his/her/its table’, but
+after a word that ends with a vowel, the #w[e] is dropped, and it is instead written #w[’z], e.g. #w[ḍevvaúríhe’z st’halẹ] ‘to
+remember a table of his/hers/its’. If the following word starts with a vowel, it is somtimes written #w[z’],#footnote[The
+apostrophe in #w[z’] makes no sense in that position,
+but it probably came about in imitation of similar forms that affix to the following word, e.g. the #s[opt] negation particle
+#w[t’hé], which becomes #w[t’h’] before vowels.] e.g. #w[ḍevvaúríhe z’it’halẹ] ‘to remember his/her/its table’, though
+#w[ḍevvaúríhe’z it’halẹ] is also common and preferred in traditional literature.
+
+In Early Modern UF, #w[ez] was sometimes infixed between a case affix and the stem of its noun, e.g.
+#w[dwá’zárb] ‘in his tree’.
+
+#partitle[Prepositional]
+The ‘prepositional’ form is not a case, but rather a form that case prefixes attach to to form all the other cases, e.g.
+the #s[2sg instr] would be #w[b’helt’hẹ] ‘with you’. Note that personal pronouns use the _definite_ case prefixes of the
+appropriate number. All remaining cases can be formed this way, but of course not the #s[abs, nom, acc, part, voc], and
+#s[gen]. The prepositional form is never used in isolation.
+
+=== Possessive Pronouns
+UF does not really have possessive pronouns; instead, it has a series of possessive adjectives, which—just like most other
+‘adjectives’—are really just a series of adjective verbs: #w[y’ê] ‘to be mine’, #w[dy’ê] ’to be yours (#s[sg]),
+#w[sy’ê] ‘to be his/hers/its’, #w[naúḍ] ‘to be ours’, #w[vauḍ] ‘to be yours (#s[pl])’, and #w[lýrḍ] ‘to be theirs’. These verbs
+are chiefly used as verbs, e.g. #w[ŷnalẹ sy’ê] ‘it is a table of mine’; for just expressing ‘my’ etc., the #s[gen] of the
+corresponding possessive pronoun is used instead, as indicated above.
+
+=== Demonstrative Pronouns
+UF has three main demonstrative pronouns: #w[swi] ‘the one, that one, this one’, #w[sẹh] ‘this’, and #w[sý’ẹ] ‘that’. All
+three are normally indeclinable and precede whatever they qualify: the first generally occurs in isolation, in which
+case it is declined as a definite noun, or indeclinably with an adjective or pronoun, e.g. #w[swi ḅẹt’hâ] ‘the small one’
+or #w[swi a lẹḅẹt’hẹ] ‘the one who is small’. The latter usually precede a definite noun, e.g. #w[sẹh lát’halẹ] ‘this table’,
+and are themselves declined only when they occur in isolation. It is not possible to combine demonstratives with one another.
+
+=== Relative Pronoun
+The UF relative pronoun is #w[a] ‘which, who, that’. Its most obvious and direct use is to form relative
+clauses and agrees in definiteness and number with the noun it qualifies, e.g. #w[lát’halẹ, ia jad’hór] ‘the
+table that I love’ or #w[ŷnalẹ, sa jad’hór] ‘a table that I love’.
+
+If the antecedent is too far away from the relative clause, it may be repeated in the relative clause,
+usually in the definite, typically at the very beginning, in which case the relative pronoun follows it and is not inflected at
+all, e.g. #w[lát’halẹ, it’halẹ a jad’hór] ‘the table, which table I love’. In literary language, this
+construction is generally preferred over inflecting the relative pronoun if the two are far apart.
+
+If there is no single antecedent (e.g. because it is ‘A and B’), or no antecedent at all (e.g. ‘that which’) then the
+relative pronoun may be used on its own, and is always inflected in that case, e.g. #s[dat] #w[asa jad’hór] ‘to the
+one I love’.
+
+=== Interrogative Pronoun
+The interrogative pronoun is the same as the relative pronoun, except that it is also followed by the
+question particle #w[c’hes]. Unlike the relative pronoun, it is always declined. On its own, it takes
+indefinite case when it refers to a thing, e.g. #w[Sa c’hes ḍad’hór ?] ‘What do you love?’, and definite
+case when it refers to a person, e.g. #w[Ia c’hes ḍad’hór ?] ‘Whom do you love?’ For more information, see
+@subsubsec:aches-who-what.
+
+=== Reflexive Pronouns
+The reflexive pronouns are formed by appending #w[-rá]#footnote[Likely a remnant of #pf[soi].] to the
+personal pronouns, e.g. #w[vèrá] ‘myself’, #w[vaúrá] ‘of myself’. The reflexive pronouns don’t have #s[voc] forms,
+but unlike the normal personal pronouns, they _do_ have #s[nom], #s[acc], and #s[part] forms that are formed
+from the #s[abs], e.g. #w[ivèrá] ‘myself #s[acc]’.
+
+Note that reflexivity is primarily expressed by using both an active and passive affix in the same person. The reflexive
+pronouns are generally used to add emphasis. They can be combined with #w[dèl] for an even greater degree of emphasis.
+
+- #w[Llẹlýad’hór.] ‘She loves herself.’
+- #w[Llẹlýad’hór ilè.] ‘She loves herself very much.’
+- #w[Llẹlýad’hór ilè dèl.] ‘She loves herself very much indeed.’
+
+The reflexive pronouns are also employed for disambiguation, as well as in conjunctions—mainly when the pronouns already
+incorporated into the verb are insufficient to convey the intended meaning (accurately). Note again that reflexive pronouns
+are not needed if there is no other referrent that a passive affix could possibly refer to.
+
+- #w[Llẹlýad’hór.] ‘She loves her (someone else).’
+- #w[Llẹlýad’hór ilè.] ‘She loves herself.’
+- #w[Llẹvad’hór au ilè.] ‘She loves me and herself.’
+
+// [TODO, spatial and other correlatives]
+// == Correlatives
+// #w[nêbh-] = ‘-ever’
+
+== Numerals <subsec:numerals>
+A list of numerals is given in @tab:numerals below. UF has four sets of numerals:
+cardinals, e.g. #w[dý] ‘two’; ordinals, e.g. #w[dýzy’ê] ‘second’; multipliers, e.g. #w[dub] ‘twice’;
+and fractions, e.g. #w[déví] ‘half’.
+
+#[
+#show figure : set block(breakable: true)
+#show : italic-table-body
+#center-table(
+    caption: [Numbers],
+    align: left,
+    ..hlinesat(1, 10, 20, 30, 40,),
+    ..vlinesat(..range(1, 5)),
+    table.header[ № &  Cardinal &  Ordinal &  Multiplier &  Fractional ],
+    [    1      & ý               & révy’ẹ́             & séḅ               & áḍy’ẹ́           ],
+    [    2      & dý              & dýzy’ê             & dub               & déví            ],
+    [    3      & rrá             & rrázy’ê            & ríḅ               & y’ér            ],
+    [    4      & c’haḍ           & c’haḍríy’ê         & c’hadrýḅ          & c’hár           ],
+    [    5      & séc’h           & séc̣é               & c’hét’hyḅ         & c’hé            ],
+    [    6      & sis             & sizy’ê             & sec’hsḍyḅ         & sic’hs          ],
+    [    7      & sèḍ             & sèḍy’ê             & sèḍyḅ             & sè              ],
+    [    8      & y’íḍ            & y’íḍy’ê            & auc’hḍyḅ          & auc’h           ],
+    [    9      & nýt’h           & nýb’hy’ê           & nýḅ               & ny              ],
+    [    10     & dis             & dizy’ê             & dehyḅ             & deh             ],
+    [    11     & aúz             & aúzy’ê             & aúzyḅ             & auz             ],
+    [    12     & duz             & duzy’ê             & duzyḅ             & duz             ],
+    [    13     & réz             & rézy’ê             & rézyḅ             & rez             ],
+    [    14     & c’hat’haúr      & c’hat’haúrzy’ê     & c’hat’haúrzyḅ     & c’hat’haurz     ],
+    [    15     & c’héz           & c’hézy’ê           & c’hézyḅ           & c’hez           ],
+    [    16     & sez             & sezy’ê             & sezyḅ             & sez             ],
+    [    17     & dihèḍ           & dihèḍy’ê           & dihèḍyḅ           & dihè            ],
+    [    18     & dizy’íḍ         & dizy’íḍy’ê         & dizy’íḍyḅ         & dizy’i          ],
+    [    19     & diznýt’h        & diznýb’hy’ê        & diznýt’hyḅ        & diznyb’h        ],
+    [    20     & b’hé            & b’héy’ê            & b’héḍyḅ           & b’he            ],
+    [    21     & b’hé’d ý        & b’hé’d rév’yẹ́      & b’hé’d séḅ        & b’hé’d áḍy’ẹ́    ],
+    [    30     & b’hé’d dis      & b’hé’d dizy’ê      & b’hé’d dehyḅ      & b’hé’d deh      ],
+    [    31     & b’hé’d aúz      & b’hé’d aúzy’ê      & b’hé’d aúzyḅ      & b’hé’d auz      ],
+    [    40     & dýb’hé          & dýb’héy’ê          & dýb’héḍyḅ         & dýb’he          ],
+    [    50     & dýb’hé’d dis    & dýb’hé’d dizy’ê    & dýb’hé’d dehyḅ    & dýb’hé’d deh    ],
+    [    60     & rráb’hé         & rráb’héy’ê         & rráb’héḍyḅ        & rráb’he         ],
+    [    70     & rráb’hé’d dis   & rráb’hé’d dizy’ê   & rráb’hé’d dehyḅ   & rráb’hé’d deh   ],
+    [    80     & c’haḍb’hé       & c’haḍb’héy’ê       & c’haḍb’héḍyḅ      & c’haḍb’he       ],
+    [    90     & c’haḍb’hé’d dis & c’haḍb’hé’d dizy’ê & c’haḍb’hé’d dehyḅ & c’haḍb’hé’d deh ],
+    [    100    & sá              & sáḍy’ê             & sáḍyḅ             & sáḍ             ],
+    [    101    & sá’d ý          & sá’d rév’yẹ́        & sá’d séḅ          & sá’d áḍy’ẹ́      ],
+    [    200    & dýsá            & dýsáḍy’ê           & dýsáḍyḅ           & dýsáḍ           ],
+    [    300    & rásá            & rásáḍy’ê           & rásáḍyḅ           & rásáḍ           ],
+    [    400    & c’hasá          & c’hasáḍy’ê         & c’hasáḍyḅ         & c’hasáḍ         ],
+    [    500    & sésá            & sésáḍy’ê           & sésáḍyḅ           & sésáḍ           ],
+    [    600    & sisá            & sisáḍy’ê           & sisáḍyḅ           & sisáḍ           ],
+    [    700    & sèsá            & sèsáḍy’ê           & sèsáḍyḅ           & sèsáḍ           ],
+    [    800    & y’ísá           & y’ísáḍy’ê          & y’ísáḍyḅ          & y’ísáḍ          ],
+    [    900    & nýsá            & nýsáḍy’ê           & nýsáḍyḅ           & nýsáḍ           ],
+    [    1 000  & víl             & víly’ê             & vílḍyḅ            & víláḍ           ],
+    [    1 001  & víl ed ý        & víl ed rév’yẹ́      & víl ed séb        & vil ed áḍy’ẹ́    ],
+    [    2 000  & dý víl          & dý víly’ê          & dý vílḍyḅ         & dý víláḍ        ],
+    [    10 000 & dis víl         & dis víly’ê         & dis vílḍyḅ        & dis víláḍ       ],
+    [    $10^6$ & víwaú           & víwaúy’ê           & víwaúḍyḅ          & víwaúḍ          ],
+    [    $10^12$& dýwaú         & dýwaúy’ê           & dýwaúḍyḅ          & dýwaúḍ          ],
+    [    $10^18$& ráwaú         & ráwaúy’ê           & ráwaúḍyḅ          & ráwaúḍ          ],
+) <tab:numerals>
+]
+
+=== Compound Numbers and Abbreviations
+The numbers 1–20 are irregular;
+after that, ordinals are formed by adding #w[-y’ê] to the cardinal and multipliers by adding #w[-ḍyḅ] to the cardinal;
+fractionals are more irregular: the tens lose nasalisation of the final vowel, e.g. #w[dýb’hé] ‘forty’ vs #w[dýb’he]
+‘(a) fortieth’; in the hundreds and after, a final #w[-(á)ḍ] is added instead. Extra syllables added by non-cardinal
+forms do not count as part of the stem for the purpose of stress.
+
+After 20, numbers of different orders of magnitude are combined with the particle #w[ed], which is solely used for this
+exact purpose. After a vowel, it is reduced to #w[’d], e.g. #w[sá’d ý] ‘101’ or #w[sá’d b’hé’d ý] ‘121’ from #w[sá] ‘100’,
+#w[b’hé] ‘20’ and #w[ý] ‘one’. In non-cardinals, only the last part is of ordinal, multiplier,
+or fractional form, e.g. #w[sá’d b’hé’d séḅ] ‘121 times’.
+
+In writing, non-cardinals are frequently abbreviated, preferably with superscripts if possible. Ordinals are abbreviated
+with #w[#super[y’ê]], e.g. #w[27#super[y’ê]] ‘27th’, except for numbers ending
+with #w[révy’ẹ́] ‘first’, which are abbreviated with #w[#super[y’ẹ́]] instead, e.g. #w[21#super[y’ẹ́]] ‘21st’, as
+well as numbers ending with #w[séc̣é] ‘fifth’, which are abbreviated with #w[#super[c̣é]] instead, e.g. #w[25#super[c̣é]]
+‘25th’.
+
+_Adverbial_ multipliers (sometimes also called _multiplicative_ numerals) shown in the table above are abbreviated with
+subscripts if possible; those ending with #w[séḅ] ‘once’ to #w[nýḅ] ‘nine times’ are abbreviated with the last two letters of that
+word, e.g. #w[23#sub[íḅ]] ‘23 times’. All other adverbial multipliers are abbreviated with #w[#sub[yḅ]], e.g. #w[31#sub[yḅ]]
+‘31 times’.#footnote[Note that ‘31’ in UF is not really ‘thirty-one’, but rather ‘twenty-eleven’ and thus doesn’t
+end with ‘one’.] The derived _adjective_ multipliers (see @subsec:multipliers below) are instead abbreviated with a single
+subscript #w[#sub[â]], e.g. #w[23#sub[â]] ‘23-fold’.
+
+Fractions are typically abbreviated with the usual notation, e.g. #w[½], #w[¼], etc.
+
+=== Cardinals
+Cardinals are proper adjectives. That is, they are not inflected and follow the noun or noun phrase they qualify.
+
+=== Ordinals
+Ordinals are strange in that they can either be used in their base form, in which case they, too, act like proper
+adjectives. In addition to that, however, they can also be inflected like adjective verbs to form e.g. #w[révy’ẹ́â] ‘primary’.
+
+Similarly, ‘Firstly’/‘at first’, ‘secondly’, etc. are constructed from the ordinals using the usual adverb suffix, e.g.
+#w[révy’ẹ́vâ] ‘at first’.
+
+=== Multipliers <subsec:multipliers>
+Multipliers are adverbs by default. The marker #w[-â], presumably a fossilised form of the #s[pres ptcp] affix,
+is used to turn adverbial multipliers into adjectives, e.g. #w[dehyḅ] ‘ten times’ becomes #w[dehyḅâ] ‘tenfold’.
+
+=== Fractions
+Fractions don’t have any derived forms.
 
 // Temporary chapter and sections because the document doesn’t compile if there
 // are missing references; remove these once we convert the sections that contain
@@ -1282,6 +1521,7 @@ pronouns, as well as interrogative and relative pronouns.
 == TEMP <subsec:aci-pci>
 == TEMP <sec:nd-nouns>
 == TEMP <subsubsec:dative-affixes>
+== TEMP <subsubsec:aches-who-what>
 
 // ============================================================================
 //  Backmatter
