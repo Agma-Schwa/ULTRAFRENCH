@@ -1485,7 +1485,7 @@
                     "def": "<f-s>orn</f-s> <f-w>vé(t’hý)naúrd</f-w> Orderly, tidy."
                 },
                 {
-                    "comment": "<p>Always followed by an ordinal number in the <f-s>abs</f-s> and then by a noun phrase also in the <f-s>abs</f-s>. Since the number is usually not 1, the noun phrase is usually in the <f-s>pl</f-s>.</p>",
+                    "comment": "<p>Always followed by an ordinal number in the <f-s>abs</f-s> and then by a noun phrase. Since the number is usually not 1, the noun phrase is usually in the <f-s>pl</f-s>.</p>",
                     "def": "<f-s>def gen</f-s> In the region of, around, approximately.",
                     "examples": [
                         {
@@ -13955,6 +13955,17 @@
         },
         {
             "def": {
+                "def": "But alas."
+            },
+            "def-search": "alas but",
+            "etym": "from <f-w>vé</f-w> + <f-w>rvá</f-w>",
+            "hw-search": "verva",
+            "ipa": "ʋ̃ɛ̃ɰʋ̃ɑ̃",
+            "pos": "perticle",
+            "word": "vérvá"
+        },
+        {
+            "def": {
                 "def": "Weather."
             },
             "def-search": "weather",
@@ -16017,11 +16028,6 @@
             "from": "vẹra",
             "from-search": "vera",
             "to": "eḍ"
-        },
-        {
-            "from": "vérvá",
-            "from-search": "verva",
-            "to": "vér + vá"
         },
         {
             "from": "vẹsa",

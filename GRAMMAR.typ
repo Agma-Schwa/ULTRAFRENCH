@@ -10,6 +10,25 @@
 #let pf(it) = [#s[pf] #w(it)]
 #set list(spacing: 1em)
 
+#let conjugation-table(caption: [], ..rows) = figure(
+    caption: caption,
+    placement: none,
+    [
+        #show : italic-table-body.with(cols: (0, 4))
+        #show table.cell: it => if (it.x in (0, 4) and it.y != 0) { smallcaps(it) } else { it }
+        #rowtable(
+            table.header[ Active & Sg & Pl && Passive & Sg & Pl ],
+            ..(1, 6).map(it => hlineat(it, end: 3)),
+            ..(1, 6).map(it => hlineat(it, start: 4)),
+            ..vlinesat(1, 2, 5, 6),
+            align: (x, y) => {
+                if x in (1, 5) and y in (6, 7) { center } else { left }
+            },
+            ..rows.pos()
+        )
+    ]
+)
+
 // ============================================================================
 //  Frontmatter
 // ============================================================================
@@ -1491,7 +1510,7 @@ well as numbers ending with #w[séc̣é] ‘fifth’, which are abbreviated with
 _Adverbial_ multipliers (sometimes also called _multiplicative_ numerals) shown in the table above are abbreviated with
 subscripts if possible; those ending with #w[séḅ] ‘once’ to #w[nýḅ] ‘nine times’ are abbreviated with the last two letters of that
 word, e.g. #w[23#sub[íḅ]] ‘23 times’. All other adverbial multipliers are abbreviated with #w[#sub[yḅ]], e.g. #w[31#sub[yḅ]]
-‘31 times’.#footnote[Note that ‘31’ in UF is not really ‘thirty-one’, but rather ‘twenty-eleven’ and thus doesn’t
+‘31 times’.#footnote[Note that ‘31’ in UF is not actually ‘thirty-one’, but rather ‘twenty-eleven’, and thus doesn’t
 end with ‘one’.] The derived _adjective_ multipliers (see @subsec:multipliers below) are instead abbreviated with a single
 subscript #w[#sub[â]], e.g. #w[23#sub[â]] ‘23-fold’.
 
@@ -1514,14 +1533,924 @@ is used to turn adverbial multipliers into adjectives, e.g. #w[dehyḅ] ‘ten t
 === Fractions
 Fractions don’t have any derived forms.
 
+
+
+#chapter([Verbs], "verbs")
+Verbs in UF are inflected for person, number, tense, aspect, mood, and voice. Verbal inflexion is mainly done
+by means of concatenating a vast set of affixes. This chapter details these affixes, their meanings, uses,
+forms, and restrictions in their use.
+
+== Fundamental Forms
+This section discusses the concept of active/passive affixes, a distinction that is found in every tense in UF, though
+the affixes themselves often differ greatly between tenses, their present-tense forms, as well as their uses, and how
+to combine them. Other fundamental aspects of the UF verb and forms that don’t really warrant their own section, such as
+the dative affixes or the imperative, are also introduced here.
+
+=== Active/Passive Affixes <subsubsec:active-passive-affixes>
+The most fundamental affixes in UF are a set of active/subject/agent and passive/object/theme affixes (often referred to as the
+‘active/passive affixes’) which can be used on their own or in combination
+with one another, though at most one active and one passive affix may be combined in any one finite verb form.#footnote[Doubly
+passive forms can occur in rare cases if infinitives are involved; see @subsubsec:pronominal-aci.]
+@tab:active-passive-prefixes below lists those affixes.
+
+#conjugation-table(
+    caption: [Active (left) and passive (right) verbal affixes.],
+    [#s[1st]  &j-     &aú-/r-/w- -(y’)ó      &&#s[1st]  &v-    &aú-/r-/w- ],
+    [#s[2nd]  &ḍ(ẹ)-  &b’h(y)- -(y’)é        &&#s[2nd]  &ḍ(ẹ)- &b’h(y)-   ],
+    [#s[3m]   &l(ẹ)-  &l(ẹ)-                 &&#s[3m]   &y’-   &lý-       ],
+    [#s[3f]   &ll(a)- &ll(ẹ)-                &&#s[3f]   &y’-   &lý-       ],
+    [#s[3n]   &s-     &l(a)-                 &&#s[3n]   &sy-   &lý-       ],
+    [#s[inf]  &#col2[d(ẹ)-]                  &&#s[inf]  &#col2[à-/h-]     ],
+    [#s[ptcp] &#col2[-â]                     &&#s[ptcp] &#col2[â-]        ],
+) <tab:active-passive-prefixes>
+
+Every finite verb form requires at least one finite affix. A verb form without any active, passive, or dative affix whatsoever
+would not be a finite verb form and could thus never be the predicate of a sentence.#footnote[Excluding of course the fact
+that infinitives could be considered to function as predicates of #s[aci]s and #s[pci]s (see @subsec:aci-pci).]
+It is possible for a verb to only have a passive affix; however, this doesn’t mean the verb is necessarily passive in
+meaning; see @subsec:passive for more about that.
+
+A transitive verb that already has an active affix can take an additional passive affix onl if there is no explicit
+direct object in the clause. In other words, while verbs
+_do_ take active person marking even if there is an explicit subject e.g. #w[lávvâ llad’hór] ‘the mother loves’, they do
+#w[not] take passive person marking if there is an explicit object, e.g. #w[lávvâ llvad’hór] ‘the
+mother loves me’, vs #w[lávvâ llad’hór iáb’há] ‘the mother loves the child’, which has #w[llad’hór] ‘she loves’ instead of
+#w[llẹsyad’hór] ‘she loves it’.
+
+It is possible to combine both the active and passive infinitive marker to form a reflexive infinitive, e.g. #w[dẹhad’hór]
+‘to love oneself’. Lastly, ditransitive verbs and verbs governing the dative case generally take a dative affix (see
+@subsubsec:dative-affixes) iff there is no explicit indirect object.
+
+A great degree of syncretism can be observed in the third-person forms. The gender distinction in the
+#s[3sg] that diachronically resulted from gendered personal pronouns is almost non-existent in the
+plural; the reason for this development is that those forms are derived from the old dative form, which lacked
+this distinction altogether.
+
+The #s[act 1pl, 2pl] forms are only distinguished from their passive counterparts by
+the presence of additional suffixes in the former. The #s[3sg n] in the active and passive is derived from the PF
+demonstrative #pf[ce] and its variants; the #s[3pl n] is derived from the other #s[3pl] forms.
+
+#partitle[Usage Notes]
+#[
+#show grid.cell.where(x: 0): it => strong(smallcaps(it))
+#grid(
+    columns: 2,
+    row-gutter: 1em,
+    column-gutter: .5em,
+    [2sg], [
+        Watch out for the #s[2sg act], which in verbs that start with a vowel is indistinguishable from the #s[inf act] in
+        actual writing, e.g. #w[ḍad’hór] ‘you love’ vs #w[dad’hór] ‘to love’; since the dot is omitted in writing, both forms
+        look the same: #w[dad’hór]. Moreover, the #s[2sg pass] is identical to the #s[2sg act] in any case.
+
+        Which form is intended can often be inferred from context: if the clause already has a finite verb, especially one
+        that takes an infinitive or ACI, it is more likely to be an infinitive; by contrast, if it is the only (possibly finite)
+        verb in the clause, then it is probably a #s[2sg]. Whether it is active or passive can then be deduced based on whether
+        the verb is transitive and whether there is an explicit object in the clause.
+    ],
+
+    [1pl], [
+        The #s[1pl] prefix varies if there is a vowel following it: if it is
+        any vowel that is _not_ a variant of ‘o’, the prefix is realised as #w[r-] instead, e.g. #w[ad’hór] ‘love’ to
+        #w[rad’hóró] ‘we love’. If the vowel a variant of ‘o’, the prefix is realised as #w[w-] instead, e.g. #w[aub’heír] ‘obey’
+        to #w[wob’heíró] ‘we obey’.#footnote[Diachronically, the base form of this prefix is \*[o-], whence e.g.
+        *#w[oad’hóró] > #w[rad’hóró] and *#w[oob’heíró] > #w[wob’heíró].] Note that this also leads to a change
+        in spelling: stem-initial ⟨au⟩ is changed to ⟨o⟩.
+    ],
+
+    [1,2 pl], [
+        The #w[y’] in the suffix parts of the #s[1pl, 2pl act] are dropped if the verb ends with a consonant, e.g. #w[ad’hór]
+        to #w[b’hád’hóré], or if it ends with a vowel that is a variant of ‘o’ in the case of the #s[1pl] and ‘e’ in the case
+        of the #s[2pl], in which cases the vowels are contracted and a level of nasalisation is added, e.g. #w[vvaúríhe]
+        ‘to remember’ to #w[b’hyvvaúríhé] ‘you (#s[pl]) remember’ (not \*#w[b’hyvvaúríhy’é]). In all other cases, the #w[y’]
+        is retained, e.g. #w[aúvvaúríhey’ó] ‘we remember’.
+    ],
+
+    [inf], [
+        The #s[inf pass] prefix #w[à-] coalesces with any vowel following it: it becomes #w[á] if it
+        is followed by a non-nasal variant of ‘a’, e.g. #w[ad’hór] to #w[ád’hór] ‘to be loved’; #w[â] if it is
+        followed by a nasal variant of ‘a’, e.g. #w[ánvé] ‘give life to’ to #w[ânvé] ‘to be animated’; and #w[h-] if it is
+        followed by any other vowel, e.g. #w[aub’heír] to #w[haub’heír] ‘to be obeyed’.
+
+        In the present tense, the base form—and not the #s[inf]—of the verb is inflected to form gerunds, e.g. #w[ŷnád’hór] ‘a
+        loving’, not \*#w[ŷndad’hór]. However, the #s[inf] _is_ used as the base form for gerunds in other tenses, e.g.
+        #w[ŷndad’hórá] ‘a having loved’.
+    ],
+
+    [part], [
+        The participle affixes are commonly used to form adjectives since the vast majority of adjectives in UF are actually
+        ‘adjective verbs’ with a meaning of ‘to be X’. The participle can be used to convert such a verb back into a regular
+        adjective, e.g. #w[lár] ‘to be wide’ to #w[lárâ] ‘wide’. Like the passive infinitive affix, the participle affixes
+        coalesce with vowels and always form a maximally nasal vowel, e.g. #w[vvaúríhe] ‘to remember’ forms #w[vvaúríhê]
+        ‘remembering’, and #w[ad’hór] forms #w[âd’hór] ‘being loved’. As with other coalescence rules, the #w[-â] instead
+        _replaces_ final or initial #w[ẹ], and #w[ẹ] only: e.g. #w[ḅẹt’hẹ] ‘to be small’ becomes #w[ḅẹt’hâ] ‘being
+        small’. Note that if the word already ends with a maximally nasal vowel, no coalescence occurs, e.g. #w[rê]
+        ‘to be triune’ becomes #w[rêâ] ‘triune’.
+    ],
+
+    [_-ẹ-_], [
+        The parenthesised vowels are used if the prefix is followed by a consonant, e.g. #w[dír] ‘say’ to #w[llẹ{]dír}
+        ‘they (#s[f]) say’ and #w[b’hydíré] ‘you (#s[pl]) say’, but #w[ad’hór] to #w[llad’hór] ‘they (#s[f]) love’
+        and #w[b’had’hóré] ‘you (#s[pl]) love’. The prefixes #w[aú-] and #w[à-] retain their main forms if followed
+        by a consonant, e.g. #w[dír] ‘say’ to #w[aúdíró] ‘We say’ and #w[àdír] ‘to be said’.
+    ],
+
+    [_-y-_], [
+        The exception to this is that #s[2pl] #w[b’h(y)-] drops the #w[y] if followed by a glide, e.g. #w[y’ír]
+        ‘to hear’ to #w[b’hy’íré] ‘you (#s[pl]) hear’ (not \*#w[b’hyy’íré]).
+    ]
+)
+]
+
+#partitle[Combining Prefixes]
+When multiple prefixes are used together, active prefixes precede passive prefixes, except that infinitive and participle
+prefixes always come first, e.g. #w[ad’hór] ‘love’ to #w[jvad’hór] ‘I love myself’ (not \*#w[vjad’hór]) and #w[b’hy’ad’hóré]
+‘you (#s[pl]) love him/her’, but #w[dẹvad’hór] ‘to love me’ and #w[àb’had’hóré] ‘to be loved by you (#s[pl])’. Recall that
+at most one infinitive prefix and at most one participle affix may be used.
+
+#partitle[Impersonal Forms]
+UF does not use the #s[2nd] person in sentences such as ‘when _one_ considers / when _you_ consider that...’,
+instead preferring the #s[1pl] (lit. ‘when _we_ consider that...’) to express such impersonal constructions.
+There also is no expletive form or pronoun in UF; for verbs that don’t really have a subject, e.g. ‘rain’, the verb #w[b’hér]
+is usually used instead, e.g. #w[dýḷẹ syb’hér] ‘it rains’.#footnote[See the dictionary entry for #w[b’hér] for a more
+detailed explanation.]
+
+#partitle[Gender]
+UF verbs (and pronouns) inflect for gender in the #s[3sg] and sometimes in the #s[3pl]. This is _not_ grammatical gender,
+but rather natural gender, as UF nouns no longer have grammatical gender. The #s[3n] is used if the gender of the referent or
+complement is not known or indeterminable, or if gender-neutral expression is desired.
+
+#partitle[Example Paradigms]
+By way of illustration, consider the paradigm of the verb #w[ad’hór] as shown in @tab:adhor-paradigm below.
+Since this word starts with a vowel, the parenthesised vowels in @tab:active-passive-prefixes above
+are not used. Furthermore, since it starts with a non-nasal ‘a’-like vowel, the #w[aú-] prefix is realised as #w[r-]
+and the #w[à-] prefix coalesces with the initial ‘a’ of the stem to form #w[á].
+
+#conjugation-table(
+    caption: [Paradigm of the Verb #w[ad’hór]],
+    [1st&jad’hór&rad’hóró    &&1st&vad’hór&rad’hór],
+    [2nd&ḍad’hór&b’had’hóré  &&2nd&ḍad’hór&b’had’hór],
+    [3m&lad’hór&lad’hór      &&3m&y’ad’hór&lýad’hór],
+    [3f&llad’hór&llad’hór    &&3f&y’ad’hór &lýad’hór],
+    [3n&sad’hór&lad’hór      &&3n&syad’hór&lýad’hór],
+    [#s[inf]&#col2[dad’hór]&&inf&#col2[ád’hór]],
+    [#s[ptcp]&#col2[ad’hórâ]&&#s[ptcp]&#col2[âd’hór]],
+) <tab:adhor-paradigm>
+
+For comparison, the paradigm of the verb #w[vvaúríhe] ‘remember’ is shown in @tab:vvorihe-paradigm below.
+Since it starts with a consonant, the parenthesised vowels in @tab:active-passive-prefixes are used, and any
+prefixes that end with a vowel remain unchanged.
+
+#conjugation-table(
+    caption: [Paradigm of the Verb #w[vvaúríhe]],
+    [1st&jvvaúríhe&aúvvaúríhey’ó &&1st&vvvaúríhe&aúvvaúríhe],
+    [2nd&ḍẹvvaúríhe&b’hyvvóríhé  &&2nd&ḍẹvvaúríhe&b’hyvvaúríhe],
+    [3m&lẹvvaúríhe&lẹvvaúríhe    &&3m&y’vvaúríhe&lývvaúríhe],
+    [3f&llavvaúríhe&llẹvvaúríhe  &&3f&y’vvaúríhe&lývvaúríhe],
+    [3n&svvaúríhe&lavvaúríhe    &&3n&syvvaúríhe&lývvaúríhe],
+    [#s[inf]&#col2[dẹvvaúríhe]&&inf&#col2[àvvaúríhe]],
+    [#s[ptcp]&#col2[vvaúríhê]&&#s[ptcp]&#col2[âvvaúríhe]],
+) <tab:vvorihe-paradigm>
+
+
+=== Dative Affixes <subsubsec:dative-affixes>
+The dative affixes #w[-vé] ‘me, us’, #w[-b’hẹ] ‘you’, and #w[-ḷẹ] ‘him, her, it, them’ are used in conjunction with
+ditransitive verbs and are invariant to tense, gender, number, and mood. A verb can only have one dative affix, and
+the dative affix is always placed last after all other affixes and does not coalesce, lenite, or otherwise modify
+the rest of the verb, e.g. #w[dedónẹ́] ‘to bestow’ to #w[dedónẹ́ḷẹ] ‘to bestow upon him’.
+
+These affixes are generally not used if the #s[dat] assumes the sense of ‘for someone’, or ‘to someone’; for instance, while
+#w[fúr] ‘to provide’ takes a #s[dat] as its indirect object, e.g. #w[jfúrb’hẹ] ‘I provide you (with something)’, the verb
+#w[fér] ‘to do, make’ does not, and thus, it is not e.g. \*#w[jsyférvé], but rather #w[jsyfér asvẹ] ‘I did it for me/us’, where
+#w[asvè] is the #s[dat] inflexion of the #s[1sg] pronoun.
+
+Lastly, which one—the #s[dat] affixes or a #s[dat] pronoun—is ultimately used often depends on the verb in question. Some speakers prefer
+one over the other with certain verbs, and some verbs regularly admit both, albeit with different meanings, e.g. #w[jsydíréḷẹ]
+‘I said it to him’ vs #w[jsydíré aslẹ] ‘I said it for his sake’.
+
+=== Passive <subsec:passive>
+If the active affix of a finite verb omitted, the verb has to have at least a passive or dative marker.
+Such a construction is the closest equivalent to a ‘passive voice’ in UF; there is no true distinct syntactical or
+morphological passive. One difference between such a construction and how passive affixes are normally used, however, is
+that in a ‘passive’ clause, the verb _does_ take a passive affix even if there is an explicit object.
+
+- #w[Y’ad’hór ivvâ.] ‘The mother is loved.’
+- #w[Sylí dýliv́uhé.] ‘The book is being read.’
+- #w[Dyyl syc’hahé.] ‘The window has been broken.’
+
+As a result, it is impossible to express the agent in the ‘passive’ by any
+means other than reintroducing an active affix, which would render the form no longer a passive.#footnote[The closest
+UF gets to an ‘agent in the passive’ is by forming a regular active, but placing the agent last in the clause.]
+
+One more thing to note is that the UF active/passive distinction is sometimes less of a syntactic and more of a semantic
+difference: the ‘active’ fundamentally corresponds to the _agent_, and the ‘passive’ to the _theme_. Thus, verbs
+that only take a theme may translate as ‘active’ (or middle) in meaning despite being ‘passive’ in form:
+
+- #w[Vv́ár dẹḅarḍ.] ‘I must leave.’
+
+Traditional grammar calls such verbs ‘deponent verbs’. Such verbs are fairly rare; usually, a syntactic ‘passive’ has
+passive meaning in the traditional sense. Intransitive verbs
+especially tend to prefer ‘active’ affixes even if their complement is a theme rather than an agent.
+
+Lastly, passive participles that are used as adjectives—like any other adjective—do _not_ govern any case and may
+indeed appear next to even #s[nom] nouns (see @sec:adjectives).
+
+=== The Gnomic <subsubsec:gnomic>
+The gnomic tense is marked by the infix #w[-j(ú)-] after the stem: #w[ad’hór] ‘to love’ to #w[rad’hórjô] ‘We love (for ever)’.
+The #w[ú] is omitted if the infix is followed by the vowel, in which case it causes nasalisation. The presence of the gnomic
+is does not affect how verbs are negated.
+
+The gnomic is used to express general truths, habitual actions, or timeless statements. It is more common in
+literary language than in speech, which prefers to substitute the present tense instead. Northern dialects
+of UF also tend to not make use of the gnomic at all.
+
+=== Imperative
+The imperative mood exists only in the present tense, and only in the second and third person. It is formed by
+affixing the following suffixes to the stem.
+
+#center-table(
+    caption: [Imperative Affixes],
+    align: left,
+    hlineat(1, end: 3),
+    hlineat(2, end: 3),
+    hlineat(1, start: 4),
+    hlineat(2, start: 4),
+    ..(1, 2, 5, 6).map(vlineat),
+    table.header[Active & Sg & Pl && Passive & Sg & Pl ],
+    [#s[2nd] &_c’h(e)-_&_c’heb’h(y)-_            &&#s[2nd]& _-rá_ &_-nú_],
+    [#s[3rd] &#col2(align(center,[_c’hel(ẹ)-_])) &&#s[3rd]& _-ḷẹ_ &_-b’hẹ_],
+) <tab:imperative-affixes>
+
+The diachrony of these forms is likely from subjunctive constructions with #pf[que] in the active
+and from suffixed pronouns in the passive. Note that imperative affixes are added _in place_ of
+present active/passive affixes, e.g. #w[c’hedír!] ‘speak!’, not \*#w[c’heḍẹdír]. As usual, the parenthesised
+vowels are omitted if the verb form starts with a vowel, e.g. #w[c’had’hór!] ‘love!’.
+
+Imperative affixes can be combined with active/passive affixes, though, as usual, an active imperative prefix
+can only be paired with a passive present affix, and vice versa. Active imperative prefixes are always placed
+first, e.g. #w[c’hevad’hór!] ‘love me!’, and passive affixes are placed last, e.g. #w[b’had’hórérá] ‘be loved by
+us!’. The negation of the imperative uses the subjunctive and is explained in @subsubsec:negated-subjunctive.
+
+== Past Tenses <subsec:tense-and-aspect-marking>
+Uf has three past tenses, which are marked by additional sets of affixes that are appended to the verb in addition
+to the active/passive affixes:
+
+- the Present Anterior, which has a perfect or perfective aspect and is commonly used
+      to describe events that are completed or extend to the present—particularly events that occurred recently, hence the name;
+- the Preterite, which has an imperfective aspect and is used to describe events that are ongoing or habitual;
+- the Preterite Anterior, which functions as a pluperfect.
+
+=== Present Anterior and Preterite <subsubsec:suffixed-tenses>
+The present anterior and preterite are formed by appending a set of suffixes to the verb. These affixes are appended
+‘on top of’ the present-tense active/passive affixes whose suffix parts they replace or coalesce with; the prefix parts
+of the present-tense affixes remain unchanged. These #s[pres ant] and #s[pret] suffixes, as well as precombined forms,
+are shown in @tab:pres-ant-combined and @tab:pret-combined below.
+
+#[
+#let pres-ant-pret-table(caption: [], ..rows) = figure(
+    caption: caption ,
+    [
+        #show : italic-table-body.with(cols: (0, 4, 8))
+        #show table.cell: it => if (it.x in (0, 4) and it.y != 0) { smallcaps(it) } else { it }
+        #rowtable(
+            table.header[ Suffix & Sg & Pl && Active & Sg & Pl && Passive & Sg & Pl ],
+            ..(1, 6).map(it => hlineat(it, end: 3)),
+            ..(1, 6).map(it => hlineat(it, start: 4, end: 7)),
+            ..(1, 6).map(it => hlineat(it, start: 8)),
+            ..vlinesat(1, 2, 5, 6, 9),
+            align: (x, y) => {
+                if x in (1, 5) and y in (6, 7) { center } else { left }
+            },
+            ..rows.pos()
+        )
+    ]
+)
+
+#pres-ant-pret-table(
+    caption: [Present Anterior Affixes],
+    [ #s[1st]  & -#L é & -#L â      && #s[1st]  &j- -#L é     &aú-/r-/w- -#L â  &&#s[1st]  &v- -#L é    &aú-/r-/w- -#L â ],
+    [ #s[2nd]  & -#L á & -#L áḍ     && #s[2nd]  &ḍ(ẹ)- -#L á  &b’h(y)- -#L áḍ   &&#s[2nd]  &ḍ(ẹ)- -#L á &b’h(y)- -#L áḍ  ],
+    [ #s[3m]   & -#L á & -#L ér     && #s[3m]   &l(ẹ)- -#L á  &l(ẹ)- -#L ér     &&#s[3m]   &y’- -#L á   &lý- -#L ér      ],
+    [ #s[3f]   & -#L á & -#L ér     && #s[3f]   &ll(a)- -#L á &ll(ẹ)- -#L ér    &&#s[3f]   &y’- -#L á   &lý- -#L ér      ],
+    [ #s[3n]   & -#L á & -#L ér     && #s[3n]   &s- -#L á     &l(a)- -#L ér     &&#s[3n]   &sy- -#L á   &lý- -#L ér      ],
+    [ #s[inf]  & #col2[-á]  && #s[inf]  &#col2[d(ẹ)- -á] &&#s[inf]  &#col2[à-/h- -á]],
+    [ #s[ptcp] & #col2[-ér] && #s[ptcp] &#col2[-êr]      &&#s[ptcp] &#col2[â- -ér]],
+) <tab:pres-ant-combined>
+
+#pres-ant-pret-table(
+    caption: [Preterite Affixes],
+    [ #s[1st]  & -#L á  & -y’aû     && #s[1st]  &j- -#L á     &aú-/r-/w- -#L y’aû  &&#s[1st]  &v- -#L é    &aú-/r-/w- -#L y’aû ],
+    [ #s[2nd]  & -#L é  & -y’ẹ́      && #s[2nd]  &ḍ(ẹ)- -#L é  &b’h(y)- -#L y’ẹ́     &&#s[2nd]  &ḍ(ẹ)- -#L é &b’h(y)- -#L y’ẹ́    ],
+    [ #s[3m]   & -#L é  & -#L é     && #s[3m]   &l(ẹ)- -#L é  &l(ẹ)- -#L é         &&#s[3m]   &y’- -#L é   &lý- -#L é          ],
+    [ #s[3f]   & -#L é  & -#L é     && #s[3f]   &ll(a)- -#L é &ll(ẹ)- -#L é        &&#s[3f]   &y’- -#L é   &lý- -#L é          ],
+    [ #s[3n]   & -#L é  & -#L é     && #s[3n]   &s- -#L é     &l(a)- -#L é         &&#s[3n]   &sy- -#L é   &lý- -#L é          ],
+    [ #s[inf]  & #col2[-é]  && #s[inf]  &#col2[d(ẹ)- -é]           &&#s[inf]  &#col2[à-/h- -é]],
+    [ #s[ptcp] & #col2[-ár] && #s[ptcp] &#col2[-âr]                &&#s[ptcp] &#col2[â- -ár]],
+) <tab:pret-combined>
+]
+
+#partitle[Lenition]
+All #s[pres ant] and #s[pret] suffixes, except for the infinitive and #s[1pl, 2pl pret], lenite any consonant _before_ them, e.g.
+#w[ḅárḍáḍ] ‘to be willing’ to #w[jḅárḍát’hé] ‘I was willing’ but #w[dẹḅárḍáḍá] ‘to have been willing’.
+
+#partitle[Coalescence]
+In both tenses, the initial vowel of suffixes coalesces with any preceding vowel according to the following rules; note
+that all of these except the first describe distinct cases.
+
+- First, if the preceding vowel is #w[ẹ], it is simply deleted, e.g. #w[jrévôt’hẹ] ‘I return’ becomes #w[jrévôt’hé]
+          ‘I returned’. This case takes precedence over all other cases.
+- If either vowel is fully nasal, no coalescence occurs, e.g. #w[jvŷ] ‘I lead’ becomes #w[jvŷé] ‘I led’.
+- If the preceding vowel is #w[è] or #w[ẹ́] and the suffix vowel is #w[é], they merge into #w[ẹ́] or #w[ệ].
+- If both vowels have the same quality (and neither is fully nasal), they merge into a vowel with that
+          quality, and a level of nasalisation is added,#footnote[All suffixes are either nasalised or nasal, so there
+          can never be a case where we’d end up with two oral vowels coalescing here.] e.g.
+          #w[jvvaúríhe] ‘I remember’ becomes #w[jvvaúríhé] ‘I remembered’.
+- In any other case (i.e. if the vowels differ in quality), hiatus is maintained, e.g. #w[ní] ‘to deny’ becomes
+          #w[âníér] ‘having been denied’.
+
+#partitle[Multiple Affixes]
+If a verb takes both and active and a passive person affix, the suffix aligns with the active affix; thus
+#s[pres ant] ‘she loved me’ is #w[llavad’hórá]. Note that #w[llavád’hóré], while also grammatical, is the
+corresponding #s[pret] form instead since the #w[-é] indicates a #s[pret] in the #s[3f].
+
+#partitle[Diachrony]
+Diachronically, the #s[1sg pret] is an interesting case; in EUF, it was originally \*#w[-é], but it later changed to #w[-á]
+to distinguish it from the #s[2sg, 3sg pres ant]. The remaining forms—save the infinitives, which are derived from the
+tenses’ definite endings by analogy—originated from the PF simple past tenses.
+
+#partitle[Examples]
+The table below lists the example paradigm of the verb #w[ad’hór] in the present anterior and preterite tenses.
+Observe that there is no difference between the #s[1pl, 2pl] active and passive.
+
+#conjugation-table(
+    caption: [Present Anterior Paradigm of the Verb #w[ad’hór]],
+    [#s[1st]        & jad’hóré  & rad’hórâ     &     & #s[1st]         & vad’hóré  & rad’hórâ   ],
+    [#s[2nd]        & ḍad’hórá  & b’had’hóráḍ  &     & #s[2nd]         & ḍad’hórá  & b’had’hóráḍ ],
+    [#s[3m]         & lad’hórá  & lad’hórér    &     & #s[3m]       & y’ad’hórá & lýad’hórér  ],
+    [#s[3f]         & llad’hórá & llad’hórér   &     & #s[3f]       & y’ad’hórá & lýad’hórér  ],
+    [#s[3n]         & sad’hórá & lad’hórér    &     & #s[3n]       & syad’hórá & lýad’hórér  ],
+    [#s[inf] &#col2[dad’hórá] & & #s[inf] & #col2[ád’hórá] ],
+    [#s[ptcp]&#col2[ad’hórêr]&&#s[ptcp]&#col2[âd’hórér]],
+) <tab:adhor-paradigm-pres-ant>
+
+#conjugation-table(
+    caption: [Preterite Paradigm of the Verb #w[ad’hór]],
+    [#s[1st]        & jad’hórá  & rad’hóry’aû   && #s[1st]     & vad’hórá  & rad’hóry’aû   ],
+    [#s[2nd]        & ḍad’hóré  & b’had’hóry’ẹ́  && #s[2nd]      & ḍad’hóré  & b’had’hóry’ẹ́ ],
+    [#s[3m]         & lad’hóré  & lad’hóré      && #s[3m]      & y’ad’hóré & lýad’hóré  ],
+    [#s[3f]         & llad’hóré & llad’hóré     && #s[3f]      & y’ad’hóré & lýad’hóré  ],
+    [#s[3n]         & sad’hóré & lad’hóré      && #s[3n]       & syad’hóré & lýad’hóré  ],
+    [#s[inf] & #col2[dad’hóré] & & #s[inf] & #col2[ád’hóré] ],
+    [#s[ptcp]&#col2[ad’hórâr]&&#s[ptcp]&#col2[âd’hórár]],
+) <tab:adhor-paradigm-pret>
+
+
+=== Preterite Anterior
+The preterite anterior tense, sometimes also called the ‘pluperfect’, is used to describe events that happened before
+another event in the past, e.g. #w[jyád’hórâr] ‘I had loved’; it is formed using coalesced forms of the preterite participle
+and the preterite form of the verb #w[av́ár] ‘to have’.#footnote[Note that the modern preterite stem of #w[av́ár] is #w[y].]
+The following table illustrates the underlying construction using #w[ad’hór], though it is worth noting that these
+forms are not actually grammatical:
+
+#conjugation-table(
+    caption: [Preterite Anterior Construction],
+    [#s[1st] &\*jyá ad’hórâr  &\*ryy’aû ad’hórâr   &&#s[1st] &\*vyá âd’hórár  &\*ryy’aû âd’hórár],
+    [#s[2nd] &\*ḍyé ad’hórâr  &\*b’hyy’ẹ́ ad’hórâr  &&#s[2nd] &\*ḍyé âd’hórár  &\*b’hyy’ẹ́ âd’hórár],
+    [#s[3m]  &\*lyé ad’hórâr  &\*lyé ad’hórâr      &&#s[3m]  &\*y’yé âd’hórár &\*lýÿé âd’hórár],
+    [#s[3f]  &\*llyé ad’hórâr &\*llyé ad’hórâr     &&#s[3f]  &\*y’yé âd’hórár &\*lýÿé âd’hórár],
+    [#s[3n]  &\*syé ad’hórâr  &\*lyé ad’hórâr      &&#s[3n]  &\*syÿé âd’hórár &\*lýÿé âd’hórár],
+    [#s[inf]&#col2[\*dyé ad’hórâr]&&inf&#col2[\*hyé âd’hórár]],
+    [#s[ptcp]&#col2[\*yâr ad’hórâr]&&#s[ptcp]&#col2[\*âyár âd’hórár]],
+) <tab:preterite-ant>
+
+Based on this underlying principle, the actual preterite anterior forms can be constructed using a series of coalescence
+rules: first, if the participle starts with a consonant (which is only possible in the active as the passive will always have
+the passive participle prefix #w[â-] prepended to it), or the form of #w[av́ár] ends with a consonant (which is only the case
+in the participle) the two verbs forms are simply written as one word, e.g. #w[jyávvaúríhê] ‘I had remembered’.
+
+Otherwise, we have a collision of two vowels. The first vowel of the participle is erased. If it was nasal(ised),
+a _single_ level of nasalisation is added to the last vowel of the form of #w[av́ár], then, the two forms are concatenated as
+by the first rule, e.g. #w[ḍyéd’hórâr] ‘you had loved’, and #w[ḍyêd’hórár] ‘you had been loved’. Thus, the actual paradigm
+of #w[ad’hór] in the preterite anterior is as shown in @tab:adhor-paradigm-pret-ant below.
+
+#conjugation-table(
+    caption: [Preterite Anterior Paradigm of #w[ad’hór]],
+    [#s[1st] &jyád’hórâr  &ryy’aûd’hórâr   &&#s[1st] &vyâd’hórár  &ryy’aûd’hórár],
+    [#s[2nd] &ḍyéd’hórâr  &b’hyy’ẹ́d’hórâr  &&#s[2nd] &ḍyêd’hórár  &b’hyy’ệd’hórár],
+    [#s[3m]  &lyéd’hórâr  &lyéd’hórâr      &&#s[3m]  &y’yêd’hórár &lýÿêd’hórár],
+    [#s[3f]  &llyéd’hórâr &llyéd’hórâr     &&#s[3f]  &y’yêd’hórár &lýÿêd’hórár],
+    [#s[3n]  &syéd’hórâr  &lyéd’hórâr      &&#s[3n]  &syÿêd’hórár &lýÿêd’hórár],
+    [#s[inf]&#col2[dyéd’hórâr]&&inf&#col2[hyêd’hórár]],
+    [#s[ptcp]&#col2[yârad’hórâr]&&#s[ptcp]&#col2[âyárâd’hórár]],
+) <tab:adhor-paradigm-pret-ant>
+
+Note that the active participle is used with active prefixes and the passive participle with passive prefixes. If both
+are present, either may be used, depending on the dialect; for example, the passive participle is preferred in
+literary language, whereas the active participle is more common in speech.
+
+The subjunctive and optative paradigms can be obtained using the same construction and follow the same coalescence
+rules: first, construct the appropriate form of #w[av́ár], and the perform the merging with the appropriate _indicative_
+participle, e.g. \*#w[jèsá ad’hórâr] > #w[jèsád’hórâr] (roughly ‘I should have had loved’#footnote[This is another of
+those forms that has no real equivalent in English and is fairly untranslatable.]).
+
+Finally, as always, these forms are stressed on the last syllable of the stem of the actual verb; the coalesced form
+of #w[av́ár] is unstressed.
+
+== Future Tenses
+UF has two paradigms of future tenses: The Future I is a more modern construction and is only used in spoken informal
+language. The Future II is an older, more literary tense that uses a separate stem, which is also used to form other future
+tenses such as the Future Anterior and the Conditionals.
+
+=== Future I <subsubsec:future-i>
+The future tenses, i.e. the Future I and II, Future Anterior (a tense similar to the future perfect), as well
+as the Conditional I and II, are formed by adding prefixes to the present forms. The prefix is the same in all persons and numbers,
+except that there is a separate prefix for the infinitive.
+
+In the Future, much to the UF learner’s dismay, this prefix can go in two separate positions: either before the person marker(s) or
+inbetween the person marker(s) and the stem. The former case is more common in speech, while the later is more literary
+and strongly preferred in writing and poetry as well as in formal speech. But even in informal speech, the Future I alone
+will still not be enough to get by, as the Conditional, a _very_ common tense, is formed using the Future II.
+
+First, let us examine the former, simpler case, commonly called the Future I. The prefix is #w[aú-] if the verb form
+after it starts with a consonant (except glides), #w[aúr-] in all other cases; e.g. #w[aújad’hór] ‘I shall love’, but
+#w[aúrý’ad’hór] ‘he will be loved’. In the infinitive passive, it
+contracts with the initial #w[à-] or #w[á-] to #w[aú] or #w[aû], e.g. #w[aûd’hór] ‘to be about to be loved’.#footnote[This too is
+hard to translate literally.] No contraction happens
+if the infinitive starts with #w[â], e.g. #w[aúrânvé] ‘to be about to be animated’. Since
+there is little point in writing a table for just the prefixes, @tab:adhor-paradigm-future-1 instead shows the Future I paradigm
+of the verb #w[ad’hór].
+
+#conjugation-table(
+    caption: [Future I Paradigm of the Verb #w[ad’hór]],
+    [#s[1st]&aújad’hór&aúrad’hóró   &&#s[1st] &aúvad’hór&aúrad’hór],
+    [#s[2nd]&aúḍad’hór&aúb’had’hóré &&#s[2nd] &aúḍad’hór&aúb’had’hór],
+    [#s[3m]&aúlad’hór&aúlad’hór     &&#s[3m] &aúry’ad’hór&aúlýad’hór],
+    [#s[3f]&aúllad’hór&aúllad’hór   &&#s[3f] &aúry’ad’hór &aúlýad’hór],
+    [#s[3n]&aúsad’hór&aúlad’hór   &&#s[3n] &aúsyad’hór&aúlýad’hór],
+    [#s[inf]&#col2[aúdad’hór]&&inf&#col2[aûd’hór]],
+    [#s[ptcp]&#col2[aúrad’hórâ]&&#s[ptcp]&#col2[aúrâd’hór]],
+) <tab:adhor-paradigm-future-1>
+
+
+=== Future II <subsubsec:future-ii>
+The Future I paradigm is fairly straight-forward; unfortunately, the Future II is a lot worse: not only do the affixes
+vary a lot more, but they are different depending on whether verb form following them starts with a vowel or a
+consonant.#footnote[This also means that e.g. adding a consonantal passive prefix before a vocalic stem will change the
+future inflexion to be consonantal; compare #w[b’had’hórérẹ́] ‘I will love’ as opposed to #w[jaúsyad’hórérệ] ‘I will love it’.]
+The vocalic and consonantal Future II affixes are shown in @tab:future-2-vocalic and @tab:future-2-consonantal below, respectively.
+
+The diachrony of these forms is somewhat unclear—especially that of the participles. It would appear, however, that they result
+from a coalescence of the personal pronouns with forms of some auxiliary (likely PF #pf[avoir] and #pf[aller]) as well as
+the PF future. It appears that the #s[2sg] is derived from the formal PF #s[2pl] pronoun, which is in line with the fact that
+the Future II is generally considered more formal than the almost colloquial Future I. The #w[v́] in the #s[2pl act] seems to
+be the result of metathesis.
+
+#conjugation-table(
+    caption: [Vocalic Future II Affixes],
+    [#s[1st]   &b’h- -(ẹ)  &náý’- -aú      &&#s[1st]    &v- -é    &náý’-     ],
+    [#s[2nd]   &ḍír- -(ẹ)  &b’haý’- -(r)ẹ́  &&#s[2nd]    &ḍír-     &b’haý’-   ],
+    [#s[3m] &ł-  -(ẹ)   &lb’h- -aú         &&#s[3m]   &l-       &lb’h- -(r)e ],
+    [#s[3f] &èł-  -(ẹ)  &lb’h- -aú         &&#s[3f]   &l-       &lb’h- -(r)e ],
+    [#s[3n] &aúł-  -(ẹ) &lb’h- -aú         &&#s[3n]   &s-       &lb’h- -(r)e ],
+    [#s[inf]&#col2[d- -è]&&inf&#col2[h-]],
+    [#s[ptcp]&#col2[-ŷr]&&#s[ptcp]&#col2[á- -ýr]],
+) <tab:future-2-vocalic>
+
+#conjugation-table(
+    caption: [Consonantal Future II Affixes],
+    [#s[1st]   &jaú- -ẹ́  &aúnraû- -aú &&#s[1st]   &vaú- -é  &naú-    ],
+    [#s[2nd]   &b’há- -(ẹ) &v́aú- -e   &&#s[2nd]   &ḍá-  &b’haú-      ],
+    [#s[3m] &aúr-  -(ẹ) &laú- -aú     &&#s[3m]  &y’aúr-  &laú- -(r)e ],
+    [#s[3f] &aúr-  -(ẹ) &laú- -aú     &&#s[3f]  &y’aúr-  &laú- -(r)e ],
+    [#s[3n] &aúr-  -(ẹ) &laú- -aú     &&#s[3n]  &saúr-   &laú- -(r)e ],
+    [#s[inf]&#col2[dẹ- -è]&&inf&#col2[haú-]],
+    [#s[ptcp]&#col2[-(r)ŷ]&&#s[ptcp]&#col2[á- -(r)ý]],
+) <tab:future-2-consonantal>
+
+#partitle[Future Stem]
+Many verbs have a different future stem that is used in all future tenses (except the Future I); for example, the future
+stem of #w[vvaúríhe] ‘to remember’, is #w[vvaúríźe]; thus, we have
+#w[jvvaúríhe] ‘to remember’ but #w[jaúvvaúríźẹ́] ‘I shall remember’.
+
+Note also that these forms already include the
+active/passive affixes, which is why it’s #w[jaúvvaúríźẹ́] and not \*#w[jaújvvaúríźẹ́] or \*#w[jjaúvvaúríźẹ́].
+As in the present, the dictionary form of the future
+stem is a verbal noun; thus, #w[vvaúríźe] roughly means ‘the act of being about to remember’.#footnote[As noted before, infinitive
+and gerund forms of future tenses are difficult to translate into English.]
+
+The future _subjunctive_ uses a different stem; for that, see @subsec:subjunctive.
+
+#partitle[Stem-final vowel elision and #w[-(ẹ)]]
+If the future stem ends with #w[e], #w[ẹ], #w[é], #w[ẹ́], or #w[è], that vowel is dropped if any future suffix or a suffix that starts with a vowel is added, e.g.
+#w[laúvvaúríźaú] ‘they will remember’, not \*#w[laúvvaúríźeaú]. Note that in the case of future suffixes, even those that start
+with a consonant cause the vowel to be dropped. The only exception to this is the suffix #w[-(ẹ)], which is found in a number of
+Future II forms; that suffix is dropped instead, e.g. #w[aúrvvaúríźe] ‘she will remember’, not \*#w[aúrvvaúríźẹ].
+
+#partitle[Nasal Stems]
+Some future stems are nasalising, which is the case if the final vowel is a nasal vowel; in such cases, that vowel
+is still dropped if a suffix is added, but if that suffix starts with a vowel, nasalisation is applied to it, e.g.
+in the case of #w[dír], whose future stem is #w[dírẹ́], we have #w[aúnraûdíraû] ‘we shall say’: the #w[-aú] suffix merges
+with the nasalisation of the final vowel to become #w[aû]. Unlike with regular stems, the Future II #w[-(ẹ)] _does_
+replace the final vowel and becomes #w[-ẹ́] for such verbs, e.g. #w[aúrdírẹ́] ‘he will say’, and #s[1sg fut pass]
+vocalic #w[-é] becomes #w[-ê].
+
+#partitle[#w[r-] Dropping]
+Initial #w[r] in Future II suffixes is dropped if the
+last consonant before the final vowel of the future stem is #w[w], or an ʁ-coloured consonant such as #w[ź], e.g.
+#w[laúvvaúríźe] ‘they will be remembered’, not \*#w[laúvvaúríźre]. If the last consonant of the future stem is #w[r], since
+any following vowel (whether nasalised or not) is deleted when a Future II suffix is added, the final #w[r] of the stem and
+the initial #w[-r] of the Future II suffixes that have one coalesce to #w[rr], e.g. #w[b’haý’ad’hórérre] ‘you (#s[pl]) will
+love’.
+
+#partitle[Affix Stacking]
+Note that when more than one affix is used, at most one can be a future affix, e.g. #w[jaúsyvvaúríźẹ́] ‘I shall remember it’
+and not \*#w[jaúsaúrvvaúríźẹ́]. Generally, the active prefix will be the future affix, but it is possible to use the
+passive future affixes instead for emphasis e.g. #w[jy’aúrvvaúríźe] roughly ‘him, I shall remember’; often, this is
+also used to aid in establishing a contrast to some other part of the sentence that does not have this inversion.
+
+Finally, as always, infinitive prefixes come first. If combined with other affixes, it will generally be the future affix,
+e.g. #w[haújvvaúríźe] roughly ‘them to be about to be remembered by me’ but, as with passive affixes, variations are possible for emphasis
+or contrastive power, e.g. #w[dẹjaúvvaúríźẹ́], which puts more emphasis on ‘me’.
+
+#partitle[Examples]
+@tab:future-2-adhor below shows the complete (vocalic) Future II paradigm of the verb #w[ad’hór] ‘to love’, and
+@tab:future-2-vvaurihe the complete (consonantal) Future II paradigm of II #w[vvaúríhe] ‘to remember’; recall
+that the future stems of these verbs are #w[ad’hórérẹ́] and #w[vvaúríźe].
+
+#conjugation-table(
+    caption: [Vocalic Future II Paradigm of #w[ad’hór]],
+    [#s[1st]   &b’had’hórérẹ́  &náý’ad’hóréraû   &&#s[1st]    &vad’hórérệ    &náý’ad’hórérẹ́   ],
+    [#s[2nd]   &ḍírad’hórérẹ́  &b’haý’ad’hórérrẹ́ &&#s[2nd]    &ḍírad’hórérẹ́  &b’haý’ad’hórérẹ́ ],
+    [#s[3m] &ład’hórérẹ́    &lb’had’hóréraû      &&#s[3m]   &lad’hórérẹ́    &lb’had’hórérre  ],
+    [#s[3f] &èład’hórérẹ́   &lb’had’hóréraû      &&#s[3f]   &lad’hórérẹ́    &lb’had’hórérre  ],
+    [#s[3n] &aúład’hórérẹ́  &lb’had’hóréraû      &&#s[3n]   &sad’hórérẹ́    &lb’had’hórérre  ],
+    [#s[inf]&#col2[dad’hóréré]&&inf&#col2[had’hórérẹ́]],
+    [#s[ptcp]&#col2[ad’hórérŷr]&&#s[ptcp]&#col2[ád’hórérýr]],
+) <tab:future-2-adhor>
+
+#conjugation-table(
+    caption: [Consonantal Future II Paradigm of #w[vvaúríhe]],
+    [#s[1st]   &jaúvvaúríźẹ́  &aúnraûvvaúríźaú &&#s[1st]   &vaúvvaúríźé    &naúvvaúríźe ],
+    [#s[2nd]   &b’hávvaúríźe &v́aúvvaúríźe     &&#s[2nd]   &ḍávvaúríźe  &b’haúvvaúríźe  ],
+    [#s[3m] &aúrvvaúríźe  &laúvvaúríźaú       &&#s[3m] &y’aúrvvaúríźe  &laúvvaúríźe ],
+    [#s[3f] &aúrvvaúríźe  &laúvvaúríźaú       &&#s[3f] &y’aúrvvaúríźe  &laúvvaúríźe ],
+    [#s[3n] &aúrvvaúríźe  &laúvvaúríźaú       &&#s[3n] &saúrvvaúríźe   &laúvvaúríźe ],
+    [#s[inf]&#col2[dẹvvaúríźè]&&inf&#col2[haúvvaúríźe]],
+    [#s[ptcp]&#col2[vvaúríźŷ]&&ptcp&#col2[ávvaúríźý]],
+) <tab:future-2-vvaurihe>
+
+=== Future Anterior
+The Future Anterior tense is formed by combining the Future II and the Present Anterior affixes. The #s[pres ant] suffixes
+are applied after the #s[fut ii] affixes. The vocalic and consonantal affixes are shown in
+@tab:future-anterior-vocalic and @tab:future-anterior-consonantal.
+
+#conjugation-table(
+    caption: [Vocalic Future Anterior Affixes],
+    [#s[1st]   &b’h- -#L é  &náý’- -aúrâ    &&#s[1st]    &v- -#L ê    &náý’- -#L â    ],
+    [#s[2nd]   &ḍír- -#L á  &b’haý’- -(r)ệḍ &&#s[2nd]    &ḍír- -#L á  &b’haý’- -#L áḍ ],
+    [#s[3m] &ł-   -#L á  &lb’h- -aûr        &&#s[3m]  &l- -#L á    &lb’h- -(r)ér   ],
+    [#s[3f] &èł-  -#L á  &lb’h- -aûr        &&#s[3f]  &l- -#L á    &lb’h- -(r)ér   ],
+    [#s[3n] &aúł- -#L á  &lb’h- -aûr        &&#s[3n]  &s- -#L á    &lb’h- -(r)ér   ],
+    [#s[inf]&#col2[d- -á]&&inf&#col2[h- -á]],
+    [#s[ptcp]&#col2[-ŷrér]&&#s[ptcp]&#col2[á- -ýrér]],
+) <tab:future-anterior-vocalic>
+
+#conjugation-table(
+    caption: [Consonantal Future Anterior Affixes],
+    [#s[1st]   &jaú-  -#L ệ  &aúnraû- -aúrâ  &&#s[1st]   &vaú- -#L ê    &naú- -#L â  ],
+    [#s[2nd]   &b’há- -#L á  &v́aú- -éḍ       &&#s[2nd]   &ḍá- -#L á  &b’haú- -#L áḍ  ],
+    [#s[3m] &aúr-  -#L á  &laú- -aûr         &&#s[3m] &y’aúr- -#L á  &laú- -(r)ér ],
+    [#s[3f] &aúr-  -#L á  &laú- -aûr         &&#s[3f] &y’aúr- -#L á  &laú- -(r)ér ],
+    [#s[3n] &aúr-  -#L á  &laú- -aûr         &&#s[3n] &saúr-  -#L á  &laú- -(r)ér ],
+    [#s[inf]&#col2[dẹ- -á]&&inf&#col2[haú- -á]],
+    [#s[ptcp]&#col2[-(r)ŷr]&&#s[ptcp]&#col2[á- -(r)ýr]],
+) <tab:future-anterior-consonantal>
+
+
+Note that again, nasalised stems add another level of nasalisation, and vowel-dropping still applies, but
+this time, there is no #w[-ẹ] dropping, since none of the affixes end with #w[ẹ] anymore.
+
+#partitle[Coalescence]
+All vowel suffixes coalesce with the final vowel of the stem; if the suffix vowel is nasal, a level of nasalisation is
+added, e.g. #w[aúrvvaúrízá] ‘he will have remembered’ from the future stem #w[vvaúríźe]. Note also that the #w[ź] is lenited
+to #w[z]; the quality of the suffix vowel overrides that of the stem vowel. #w[r] contraction still happens as in the
+Future II.
+
+@tab:future-ant-adhor and @tab:future-ant-vvaurihe below show
+the paradigm of the verbs #w[ad’hór] ‘to love’ and #w[vvaúríhe] ‘to remember’ in the Future Anterior tense. Note that
+both the rules for the Future Anterior tense as well as the Present Anterior tense apply here.
+
+#conjugation-table(
+    caption: [Vocalic Future Anterior Paradigm of #w[ad’hór]],
+    [#s[1st]   &b’had’hórérệ  &náý’ad’hóréraûrâ  &&#s[1st]    &vad’hórérệ    &náý’ad’hórérậ    ],
+    [#s[2nd]   &ḍírad’hórérậ  &b’haý’ad’hórérrệḍ &&#s[2nd]    &ḍírad’hórérậ  &b’haý’ad’hórérậḍ ],
+    [#s[3m] &ład’hórérậ    &lb’had’hóréraûr      &&#s[3m]  &lad’hórérậ    &lb’had’hórérrér  ],
+    [#s[3f] &èład’hórérậ   &lb’had’hóréraûr      &&#s[3f]  &lad’hórérậ    &lb’had’hórérrér  ],
+    [#s[3n] &aúład’hórérậ  &lb’had’hóréraûr      &&#s[3n]  &sad’hórérậ    &lb’had’hórérrér  ],
+    [#s[inf]&#col2[dad’hórérâ]&&inf&#col2[had’hórérậ]],
+    [#s[ptcp]&#col2[ad’hórérŷrér]&&#s[ptcp]&#col2[ád’hórérýrér]],
+) <tab:future-ant-adhor>
+
+#conjugation-table(
+    caption: [Consonantal Future Anterior Paradigm of#w[vvaúríhe]],
+    [#s[1st] &jaúvvaúrízệ  &aúnraûvvaúríźaúrâ &&#s[1st] &vaúvvaúrízê   &naúvvaúrízâ    ],
+    [#s[2nd] &b’hávvaúrízá &v́aúvvaúríźéḍ      &&#s[2nd] &ḍávvaúrízá    &b’haúvvaúrízáḍ ],
+    [#s[3m]  &aúrvvaúrízá  &laúvvaúríźaûr     &&#s[3m]  &y’aúrvvaúrízá &laúvvaúríźér   ],
+    [#s[3f]  &aúrvvaúrízá  &laúvvaúríźaûr     &&#s[3f]  &y’aúrvvaúrízá &laúvvaúríźér   ],
+    [#s[3n]  &aúrvvaúrízá  &laúvvaúríźaûr     &&#s[3n]  &saúrvvaúrízá  &laúvvaúríźér ],
+    [#s[inf]&#col2[dẹvvaúríźá]&&inf&#col2[haúvvaúríźá]],
+    [#s[ptcp]&#col2[vvaúríźŷr]&&ptcp&#col2[ávvaúríźýr]],
+) <tab:future-ant-vvaurihe>
+
+
+=== Conditional I and II <subsubsec:conditional>
+The Conditional tenses are fairly simple—so long as you know the Future II and Future Anterior, that is. Both Conditionals
+are formed by adding the #w[-ss(a)-] infix between the Future II stem and any suffixes.
+
+#conjugation-table(
+    caption: [Consonantal Conditional II Paradigm of#w[vvaúríhe]],
+    [#s[1st]   &jaúvvaúríźessệ  &aúnraûvvaúríźessaúrâ &&#s[1st]   &vaúvvaúríźessê    &naúvvaúríźessâ ],
+    [#s[2nd]   &b’hávvaúríźessá &v́aúvvaúríźesséḍ      &&#s[2nd]   &ḍávvaúríźessá  &b’haúvvaúríźessáḍ ],
+    [#s[3m] &aúrvvaúríźessá  &laúvvaúríźessaûr        &&#s[3m]  &y’aúrvvaúríźessá  &laúvvaúríźessrér ],
+    [#s[3f] &aúrvvaúríźessá  &laúvvaúríźessaûr        &&#s[3f]  &y’aúrvvaúríźessá  &laúvvaúríźessrér ],
+    [#s[3n] &aúrvvaúríźessá  &laúvvaúríźessaûr        &&#s[3n]  &saúrvvaúríźessá   &laúvvaúríźessrér ],
+    [#s[inf]&#col2[dẹvvaúríźessá]&& #s[inf]&#col2[haúvvaúríźesse]],
+    [#s[ptcp]&#col2[vvaúríźessŷr]&&#s[ptcp]&#col2[ávvaúríźessý]],
+) <tab:cond-ii-vvaurihe>
+
+The Conditional I is formed from
+the Future II, and the Conditional II from the Future Anterior. The #w[a] in #w[-ss(a)-] is omitted if
+the suffix after the infix starts with a vowel, except for #w[ẹ], which it replaces. @tab:cond-ii-vvaurihe
+shows the consonantal Conditional II paradigm of #w[vvaúríhe] ‘to remember’. Note that the #w[ss] in this form
+is _never_ lenited.
+
+The conditional tenses are mainly used in the apodoses of conditional clauses. On their own, their meaning
+is similar to that of the English ‘would’ (I) or ‘could’ (II), e.g. #w[jaúvvaúríźessẹ́] ‘I would remember’. The Conditional I
+can be combined with the gnomic to express a general observation of someone’s disposition, e.g.
+#w[laúsynárrahódejússaub’he’sý’ýâ] ‘they wouldn’t narrate it to you (implied: because they just don’t do things like that)’.
+
+The Conditional I can also be used to express a future-in-the-past, and the Conditional II, even though it is
+morphologically a future tense, is used to express a hypothetical past, e.g. #w[jaúvvaúríźessệ] ‘I could have loved’.
+In reported speech, this can lead to a subjunctive conditional construction.
+
+== Subjunctive <subsec:subjunctive>
+The UF subjunctive forms are fortunately fairly simple: they use the same affixes as the present, past, and future
+forms, except that each verb has a different, often irregular, subjunctive stem, which is generally formed
+by adding an #w[-s] to the end of the corresponding indicative stem, e.g. #w[ad’hór] ‘to love’ to #w[ad’hórs];
+thus we have, e.g. #w[jad’hórs] ‘I may love’, and #w[rád’hórsó] ‘We may love’.
+
+The future subjunctive stem is always regular and formed by adding the desinence #w[-śe] to the end of the future stem. For example,
+the future stem of #w[ad’hór] is #w[ad’hórérẹ́], so the future subjunctive stem is #w[ad’hórérẹ́śe]; similarly, the future
+stem of #w[vvaúríhe] is #w[vvaúríźe], so the future subjunctive stem is #w[vvaúríźeśe]. The subjunctive stem coalesces like
+a regular non-nasal future stem. Note that in the future anterior, the stem is often subject to lenition, and thus, the signature
+#w[ś] of the future subjunctive often becomes #w[s].
+
+There are several main uses of the UF subjunctive, each of which we shall examine in more detail below:
+
+- in reported speech and indirect questions, e.g. #w[lladírá vad’hórhé] ‘she said she loved me’;
+- with certain subordinating conjunctions, such as #w[b’he] ‘so that’;
+- to express deontic modality, e.g. #w[ḍẹḅars] ‘you may leave’;
+- as a jussive, e.g. #w[rad’hesó] ‘let’s go’;
+- as a negative imperative, e.g. #w[sá ḍẹḅars] ‘don’t leave’;
+- irrealis conditionals (see @subsec:conditionals);
+- in a serial verb construction in the future, expressing purpose;
+- with certain adverbs, e.g. #w[ḅýt’hèḍ] ‘maybe’;
+- in #s[aci]s and #s[pci]s.
+
+=== Reported Speech
+UF does not use backshifting in reported speech, but rather, the corresponding subjunctive form is used. For instance,
+#w[jḍad’hór] ‘I love you’ becomes #w[jdíré jḍad’hórs] ‘I said I love you’. Note that the tense stays the same in this
+example: present indicative becomes present subjunctive. Accordingly, #w[jḍad’hóré] ‘I loved you’ becomes #w[jdíré
+jḍad’hórsé] ‘I said I loved you’.
+
+Consequently, the tense of the verb in reported speech is independent of the tense of the matrix clause, e.g.
+#w[b’had’hrệ] ‘I shall go’ becomes #w[jdíré b’had’hrẹ́sé] ‘I said I would go’,#footnote[Note the lenition here because
+of the present anterior suffix: #w[b’had’hrẹ́sé], not \*#w[b’had’hrẹ́śé].] with #w[b’had’hrẹ́sé] being the Future II
+subjunctive form of #w[b’had’hrẹ́].
+
+=== Dependent Clauses
+#let subordinators(body) = {
+    smallskip
+    move(dx: 1em, columns(2, [
+        #show strong: emph
+        #body
+    ]))
+    smallskip
+}
+
+The following subordinating conjunctions take the subjunctive:
+
+#subordinators[
+    / áhaúr: ‘even though’
+    / ḅas: ‘because’
+    / b’he: ‘so that’
+    / c’haúr: ‘as’ (viz. ‘because’)
+    / de: ‘once’
+    / ráhẹ: ‘though’
+    #colbreak()
+    / rê: ‘although’
+    / s: ‘if’ (see @subsec:conditionals)
+    / sá: ‘without’
+    / sauc’h: ‘except that’
+    / váłé: ‘despite that’
+    / c’haúvs: ‘as if’, ‘as though’
+]
+
+Note that not all subordinating conjunctions take the subjunctive. For instance, the conjunction #w[y’is]
+‘because’ takes the indicative: #w[jḍad’hórs c’haúr] ‘as I love you’, but #w[jḍad’hór y’ís] ‘because I love you’.
+
+=== Deontic Modality
+The subjunctive can also be used on its own, in which case it assumes a deontic or jussive meaning;
+in the first person, it is generally a jussive, e.g. #w[rad’hesó] ‘let’s go’, but the jussive sense is not restricted
+to the first person, e.g. #w[lẹsyrét’hes] ‘he take care of it’ (in the sense of ‘let him take care of it’).
+
+The deontic sense is also apparent from that last example: #w[lẹsyrét’hes] can also be interpreted to mean ‘he
+may take care of it’, which can either be a statement of permission or a condescending order. Note that even
+though UF also has a word for ‘let’ (namely #w[le]), it is mostly used in questions or commands, while the
+deontic subjunctive is used to grant permission.
+
+=== Negation <subsubsec:negated-subjunctive>
+The subjunctive is negated with the particle #w[sá], rather than with #w[asý’ýâ]. The particle #w[sá] is placed
+immediately before the verb form it negates, e.g. #w[sá jḍad’hórs c’haúr] ‘as I don’t love you’. It is reduced
+to #w[s’] before vowels, but interestingly, it does not cause nasalisation in that case, e.g. #w[s’aúsydíssâ c’haúr]
+‘as we didn’t say it’.
+
+On its own, the negated subjunctive is used to express a negative imperative in the second and third person,
+e.g. #w[sá ḍẹḅars] ‘don’t leave’, and a negative jussive in the first person e.g. #w[sá rad’hesó], ‘let’s not go’.
+
+=== Infinitive
+Most curiously, UF has a _subjunctive infinitive_. This form is almost exclusively used to express deontic modality
+in #s[aci]s and #s[pci]s. For example, the form #w[dad’hórs], the subjunctive infinitive of #w[ad’hór], while defying any attempt
+at translation on its own,#footnote[The best attempt one could make to translate this would be something along the
+lines of ‘to should love’, but that is not exactly grammatical in English.] can be translated as ‘should’ when combined
+with an #s[acc] or #s[part], e.g. #w[sráhó dad’hórs] roughly means ‘that fish should love’, though this form can only
+occur as the complement of a verb.
+
+=== Future Subjunctive of Intent or Purpose
+The future subjunctive is used in a serial verb construction with another verb to express purpose or intent: a
+serial verb construction is a clause with two finite verbs; in this case, one combines any verb#footnote[The verb is
+_usually_ a finite verb, but it may also be e.g. an infinitive if the future subjunctive of intent is nested
+in an #s[aci].] with a finite subjunctive Future II, e.g. #w[jsyc’hrír jaúvvaúríźeśẹ́] ‘I’m writing
+it down so I don’t forget’; the two needn’t agree in person, and word order, as ever with inflected forms, is not fixed,
+e.g. #w[náý’aúréśaú sybźâ] ‘It was needed
+for us to understand’.#footnote[Lit. ‘I write it [down]; I should-will remember’ and ‘It was needed, so that we
+should-will understand’, respectively.]
+
+The main semantic difference between this construction and #w[b’he] is that the latter strictly means ‘in order to’ or ‘so that’,
+whereas this can be a bit broader in meaning; however, the future subjunctive of intent is also sometimes used to mean ‘in order to’
+or ‘so that’.
+
+== Optative <subsec:optative>
+The UF optative is used to express wishes, hopes, as well as in certain conditional constructions. It is formed
+by prefixing #w[y’(ẹ)#L] to the indicative (or future) stem,#footnote[The use of the (future) subjunctive stem to form the optative, with
+no change in overall meaning, is fairly archaic and only encountered in poetry in modern UF.] e.g. #w[dẹvy’ẹvvaúríhe] ‘may
+you remember me’. As ever, the #w[(ẹ)] is omitted if the stem starts with a vowel.
+
+In the future, this generally does _not_ change whether the consonantal or vocalic affixes are used! If the stem was
+vocalic, the vocalic affixes are also used in the optative. This is because the optative is conceptually appended to the prefix rather than
+prepended to the stem. Moreover, some prefixes in the future end with
+#w[ý’], which this is dropped in the optative: e.g. #w[náý’ad’hóraú] ‘we shall love’ becomes #w[náy’ad’hóraú] ‘may we love’ (the
+difference is minor: #w[ý’] vs #w[y’]). A bare optative is difficult to translate into English; a more precise explanation of what
+these forms actually mean will be given below. Uses of the optative include:
+
+- wishes, hopes, dreams, and aspirations;
+- with certain subordinating conjunctions, such as #w[auha] ‘in case’;
+- talking about fears;
+- counterfactual conditionals (see @subsec:conditionals).
+
+=== Wishes and Hopes
+The most traditional use of the optative is to express wishes and hopes, e.g. #w[dẹvy’ẹvvaúríhe] ‘may you remember me’. In
+the present or future tense, this use indicates a wish for something to happen; in the present tense, its meaning is
+that of a wish for a condition to be true in the present in the face of uncertainty or lack of knowledge; thus, the
+actual meaning of #w[dẹvy’ẹvvaúríhe] is roughly ‘I hope that you remember me’.#footnote[The context of this could be e.g.
+meeting someone again after a long time apart and hoping that they still remember you.] In the future tense, it indicates a wish
+that a situation will be true in the future, e.g. #w[b’hávy’ẹvvaúríźe] ‘may you remember me’.
+
+In the past tenses, the optative indicates dismay, regret, or disappointment that something did not happen, e.g.
+#s[pres ant] #w[dẹvy’ẹvvaúríhá] ‘if only you had remembered me’. The optative can also be combined with the Conditional I
+to convey uncertainty about a future wish, as well as with the Conditional II to express extreme regret over a past event;
+certain verbs, e.g. #w[ub’hrá] ‘can, may, might’, also have constructions with the optative.
+
+=== Dependent Clauses
+The following subordinating conjunctions take the optative:
+
+#subordinators[
+    / auha: ‘in case’
+    / ab’há: ‘before’
+    / ávrê: ‘unless’
+    / ḅré: ‘after’
+    #colbreak()
+    / fahaú: ‘in such a way that’
+    / jys: ‘until’
+    / sit’há: ‘supposing that’
+    / úrbh: ‘provided that’
+]
+
+=== Negation and Verbs of Fearing <subsubsec:negated-optative>
+As with the negated subjunctive, the negated optative also has a separate negation particle, namely #w[t’hé#N{]}
+(#w[t’h’] with no nasalisation before vowels). Note that a negated optative indicates that the speaker wishes that something does
+or had not happened, e.g. #w[t’hé dẹvy’ẹvvaúríhá] ‘if only you had not remembered me’. The negation thus negates
+the wish, and not the act of wishing; for the latter, the indicative or subjunctive together with a verb such
+as #w[sḅé] ‘to wish’ are used instead.
+
+Verbs of fearing are typically construed with a dependent clause in the negated optative, e.g. #w[jréd’hé
+t’hé b’háy’ẹbharẹ́] ‘I was afraid lest you might leave’.
+
+== The Copula _eḍ_ <subsec:ed-paradigm>
+There is only one irregular verb in UF, namely the copula #w[eḍ]. All of its forms are highly irregular. The copula lacks
+passive forms as well as the Future I.  The preterite anterior is a periphrastic construction of the preterite participle
+of #w[eḍ] and its present tense,#footnote[The original morphological preterite anterior tense of _eḍ_ was lost in
+Late Middle UF.] e.g. #w[t’hẹdâ vy’í] ‘I had been’. Note that only the participle is
+inflected for mood in this case, e.g. subjunctive #w[t’hẹrâ vy’í] ‘I should have been’. The gnomic is formed by
+appending #w[(j)ú] to the end of a form, with the #w[j] dropped if the form in question ends with a consonant.
+
+//#footnote[At the same time, the \s{1sg] forms seem to be derived from the #s[acc] of the PF #s[1sg] pronoun,
+//for unknown reasons.}
+#let ed-table(caption: [], ..rows) = figure(
+    caption: caption,
+    placement: none,
+    [
+        #show : italic-table-body.with(cols: (0,), rows: (0, 1))
+        #rowtable(
+            table.header[ &#col2[Present]&#col2[Pres. Ant.]&#col2[Preterite]&#col2[Future II]&#col2[Fut. Ant.]],
+            hlineat(1, start: 1),
+            hlineat(2),
+            hlineat(7),
+            ..vlinesat(..range(1, 11)),
+            align: (x, y) => {
+                if x != 0 and y in (0, 7, 8) { center } else { left }
+            },
+            ..rows.pos()
+        )
+    ]
+)
+
+#ed-table(
+    caption: [Indicative Paradigm of #w[eḍ]],
+    [ #s[ind] &Sg&Pl  & Sg &Pl & Sg &Pl & Sg &Pl & Sg &Pl ],
+    [ #s[1st] & vy’í  & aúsó   & vẹ     & aúfý   & vet’h  & weḍy’ó   & vẹ́hér  & aúhér   & vẹhér    & aúfêr ],
+    [ #s[2nd] & ḍe    & b’heḍ  & ḍyf    & b’hu   & ḍet’h  & b’heḍy’é & dyhér  & b’hehér & ḍyfér    & b’huhér ],
+    [ #s[3m]  & le    & lẹsó   & leb’h  & lẹfýr  & let’h  & let’he   & lehér  & lẹhér   & leb’hér  & lẹfêr ],
+    [ #s[3f]  & lle   & llẹsó  & lleb’h & llẹfýr & llet’h & llet’he  & llehér & llẹhér  & lleb’hér & llẹfêr ],
+    [ #s[3n]  & se    & lasó   & seb’h  & lafýr  & set’h  & laet’h   & sehér  & lahér   & seb’hér  & lafêr ],
+    [ #s[inf]& #col2[éḍ] &#col2[éfyḍ] & #col2[ét’hẹd] & #col2[éhér] & #col2[éfér] ],
+    [ #s[ptcp]& #col2[ḍâ] &#col2[fyḍâ] & #col2[t’hẹdâ] & #col2[hérâ] & #col2[férâ] ],
+) <tab:ed-paradigm-ind>
+
+#ed-table(
+    caption: [Subjunctive Paradigm of #w[eḍ]],
+    [ #s[subj] &Sg&Pl  & Sg &Pl   & Sg &Pl & Sg &Pl & Sg &Pl ],
+    [ #s[1st] & vy’íra  & aúra   & vẹsa   & aúfýs  & veḍra  & weḍra      & vẹ́héra  & aúhéra   & vẹhéra    & aúfêra ],
+    [ #s[2nd] & ḍera    & b’hera & ḍys    & b’hus  & ḍeḍra  & b’heḍra    & dyhéra  & b’hehéra & ḍyféra    & b’huhéra ],
+    [ #s[3m]  & lera    & lẹra   & les    & lẹfýs  & leḍra  & le’thra    & lehéra  & lẹhéra   & leb’héra  & lẹfêra ],
+    [ #s[3f]  & llera   & llẹra  & lles   & llẹfýs & lleḍra & llet’hra   & llehéra & llẹhéra  & lleb’héra & llẹfêra ],
+    [ #s[3n]  & sera    & lara   & ses    & lafýs  & seḍra  & laet’hra   & sehéra  & lahéra   & seb’héra  & lafêra ],
+    [ #s[inf]& #col2[éḍra] &#col2[éfysa] & #col2[ét’hẹra] & #col2[éhéra] & #col2[éféra] ],
+    [ #s[ptcp]& #col2[ḍerâ] &#col2[fysâ] & #col2[t’hẹrâ] & #col2[hérarâ] & #col2[férarâ] ],
+) <tab:ed-paradigm-subj>
+
+#ed-table(
+    caption: [Optative Paradigm of #w[eḍ]],
+    [ #s[opt] &Sg&Pl  & Sg &Pl   & Sg &Pl & Sg &Pl & Sg &Pl ],
+    [ #s[1st] & víra      & aúry’a   & vẹsy’a    & aúfýy’a  & veḍraä  & weḍraä      & vẹ́ra  & aúra   & vẹra     & aúfrá ],
+    [ #s[2nd] & ḍy’era    & b’hery’a & ḍysy’a    & b’huy’a  & ḍeḍraä  & b’heḍraä    & dyra  & b’hera & ḍyra     & b’hura ],
+    [ #s[3m]  & ly’era    & lẹry’a   & lesy’a    & lẹfýy’a  & leḍraä  & le’thraä    & lera  & lẹra   & leb’hra  & lẹfrá ],
+    [ #s[3f]  & lly’era   & llẹry’a  & llesy’a   & llẹfýy’a & lleḍraä & llet’hraä   & lléra & llẹra  & lleb’hra & llẹfrá ],
+    [ #s[3n]  & sy’era    & lary’a   & sesy’a    & lafýy’a  & seḍraä  & laet’hraä   & sera  & lara   & seb’hra  & lafrá ],
+    [ #s[inf]& #col2[éḍy’a] &#col2[éfyy’a] & #col2[ét’hẹä] & #col2[éhérá] & #col2[éférá] ],
+    [ #s[ptcp]& #col2[ḍy’â] &#col2[fyy’â] & #col2[t’hẹáâ] & #col2[héráâ] & #col2[féráâ] ],
+) <tab:ed-paradigm-opt>
+
+All forms of the copula are shown in  @tab:ed-paradigm-ind to @tab:ed-paradigm-opt, except for the Conditional I and II,
+which are formed by infixing #w[-ss-] before the #w[-ér], #w[-êr] desinences and #w[-ssa-] before the #w[-ra] and #w[-rá]
+desinences of the Future II and Future Anterior forms, respectively.
+
+Unlike nearly every other word in the language, disyllabic forms of the copula are stressed on
+the first syllable, and trisyllabic forms are stressed on the second syllable—except for #w[hérarâ], #w[férarâ], #w[héráâ],
+and #w[féráâ], which are stressed on the first syllable. All other participle forms are stressed on the last syllable.
+In forms of the copula, #w[ae] is pronounced /ai̯/.
+
+The etymology of these forms is mostly from a gradual simplification of coalesced forms of the personal
+pronouns with the PF copula. To compensate for the fact that PF lacks certain forms that are present in UF, some
+of the forms were coined by analogy. For instance, the #s[pres ant inf] #w[éfyḍ] is derived from the #s[pres ant]
+stem \*#w[fy] and the #s[pres inf] #w[éḍ], and the same is true for the #s[pret inf] #w[ét’hẹd].
+
+// The coalescence rule table is a terrible abomination that isn’t even fully up-to-date and
+// is way too dense; I’m not even going to try converting or updating that.
+
+#chapter([Syntax], "syntax")
+UF syntax is unfortunately complicated in what morphological constructs are used in what situations, and
+the rules are not always clear. The following is a list of the most common constructions.
+
 // Temporary chapter and sections because the document doesn’t compile if there
 // are missing references; remove these once we convert the sections that contain
 // these labels.
 #chapter("TEMP", "temp")
 == TEMP <subsec:aci-pci>
 == TEMP <sec:nd-nouns>
-== TEMP <subsubsec:dative-affixes>
 == TEMP <subsubsec:aches-who-what>
+== TEMP <subsubsec:pronominal-aci>
+== TEMP <subsec:conditionals>
+
 
 // ============================================================================
 //  Backmatter
