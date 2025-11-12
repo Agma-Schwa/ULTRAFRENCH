@@ -1,4 +1,5 @@
 #import "BASE/src/lib.typ" : *
+#import "@preview/arborly:0.3.2": tree, a as tree-attr
 
 // ============================================================================
 //  Preamble
@@ -9,6 +10,7 @@
 #let N = super[N]
 #let pf(it) = [#s[pf] #w(it)]
 #set list(spacing: 1em)
+#gloss-show-numbers(false)
 
 #let conjugation-table(caption: [], ..rows) = figure(
     caption: caption,
@@ -2441,15 +2443,499 @@ stem \*#w[fy] and the #s[pres inf] #w[éḍ], and the same is true for the #s[pr
 UF syntax is unfortunately complicated in what morphological constructs are used in what situations, and
 the rules are not always clear. The following is a list of the most common constructions.
 
+== Word Order
+Word order in ULTRAFRENCH is largely free at the sentence level. As we’ve already seen, the phrase-internal structure
+is generally more rigid.#footnote[E.g. adjectives and appositions following nouns.] However, there are still some
+structural rules that must be abided by.
+
+== Coordination
+Coordination in UF is accomplished by a set of conjunctive particles, chiefly #w[au] ‘and’, #w[u] ‘or (inclusive)’, and
+#w[ra] ‘or (exclusive)’. When possible, it is preferred to place a particle before every conjunct.
+
+- #w[au árb au raû] ‘the tree and the log’
+- #w[Lasẹhérélé au láb’haúré au láhaul.] \ ‘The Sun and the North Wind were quarreling.’
+- #w[Sav́áré lávaûd de au iraúl syl au sývaú vêâ.] \ ‘The entire world had one language and the same words.’
+
+When a coordinated phrase is the subject or object of a verb, if either part is a pronoun, it is incorporated into the
+verb as a singular active/passive affix, with the other noun declined in the appropiate case. If neither part is a pronoun,
+the active/passive prefix, if required at all, is plural. If both parts are pronouns, the verb may have to be repeated—or
+#w[fér] may be used instead, see @subsubsec:personal-pronouns—as there are no isolated personal pronouns in the
+#s[nom], #s[acc], or #s[part].
+
+- #w[Llẹvad’hór au ilè.] ‘She loves me and herself.’
+- #w[Llad’hór au ivvâ au ibhabh.] ‘She loves her mother and her father.’
+- #w[Lýy’ad’hór au’z lávvâ au’z lábhabh.] ‘Her mother her father love her.’
+- #w[Llẹvad’hór au y’fér.] ‘She loves me and her.’
+- #w[Llẹy’ad’hór au vfér.] ‘She loves her and me.’
+
+== Independent Clauses
+The UF independent clause typically consists of a finite verb together with a subject perhaps several
+objects. The verb is conjugated to agree with the subject in person, number, and gender in some cases.
+
+The unmarked tense in UF is the present tense, which can generally be translated as either a present or
+present continuous tense in English. For general truths and facts, the gnomic tense is generally used
+instead.
+
+
+- #w[Rab’haḍó iárb.] ‘We are felling the tree.’
+- #w[Rab’haḍjô sárb.] ‘We fell trees.’
+
+The object is incorporated into the verb if it is a personal pronoun, in which case there are rules for
+the order in which these affixes occur (see @subsec:verbal-morphology).
+
+- #w[Lẹrab’hat’há.] ‘He felled us.’
+- #w[Llẹsyad’hór.] ‘She loves it.’
+
+Word order is rather lax due to the presence of case marking, and any constituent can be fronted, usually to convey
+focus,#footnote[For emphasis, the particle #w[dèl] is generally used instead.] though usually, the verb or the subject
+is placed first.
+
+- #w[B’hehýnác aúlýab’hat’hâ.] ‘With an axe, we have felled them.’
+- #w[Iḷý dẹc’haúbhýrífá ḍẹv́ár.] ‘The place, you must have purified it.’
+
+Note that words belonging to the same phrase are typically juxtaposed as adjectives are not inflected. However,
+this rule may sometimes be broken, particularly in poetry. Consider, for example, the following passage in alexandrine
+metre, written by the renowned poet #s[J.#thinsp();Y.#thinsp();B.#thinsp();Snet’h], where we can find the verb positioned between a possessive
+pronoun and its associated noun:
+
+- #w[Au lýr náý’acḍaúrâ sýec̣ asvaúr sýárb.] ‘And we shall indeed have revealed their sins to the world’#footnote[See
+    the dictionary entry for #w[act’he], sense 4, for more information about the use of this word here,
+    which normally means ‘cleave’. The literal meaning of this sentence is roughly: ‘And we shall have brought
+    down the trees upon their sins, to (= for the benefit of) the world’.]
+
+== Negated Clauses <sec:negated-clauses>
+Negation in the indicative is expressed using the particle #w[asý’ýâ] ‘not’, which is typically appended to verbs
+as #w[’sý’ýâ]—even if the verb ends with a consonant. For a discussion of negation in the subjunctive, optative,
+and #s[aci]s/#s[pci]s see @subsec:subjunctive, @subsec:optative, @subsec:aci-pci.
+By default, the particle is placed right after the verb, but if there is a fronted constituent, the particle is
+sometimes placed after that constituent in independent clauses:
+
+- #w[Aúlýab’hat’hâ’sý’ýâ b’hehýnác.] ‘We have not felled them with an axe.’
+- #w[B’hehýnác asý’ýâ aúlýab’hat’hâ.] ‘It is not with an axe that we have felled them.’
+
+UF makes frequent use of double negation in conjunction with words that create a negative context
+such as #w[jávé] ‘never’, #w[y’ê] ‘nothing’, or #w[ráv́â] ‘seldom’. Typically, such words are frontend,
+and consequently, the negation particle then appears appended to them, e.g. Note that double negation is
+required in this case:
+
+- #w[Ráv́â’sý’ýâ st’halẹ jac̣t'heá.] ‘Rarely have I ever bought a table.’
+- #w[St’halẹ’sý’ýâ ráv́â jac̣t'heá.] ‘A table I have bought rarely.’
+- #w[\#Ráv́â st’halẹ jac̣t'heá.] ‘(roughly) I rarely-bought a table.’
+
+Learners often make the mistake of assuming that the negation particle is part of a word,
+e.g. that #w[ráv́â’sý’ýâ] means ‘seldom’. As such, UF speakers, when imitating a foreigner, may
+sometimes use more than one negation particle in a single sentence. Note that this is very
+much not proper language; such constructions are summarily comedic and best compared to phrases
+such as ‘it do be like that’ in English:
+
+- #w[\*Ráv́â’sý’ýâ st’halẹ jac̣t'heá’sý’ýâ.] ‘(roughly) Rarely-not I bought a table.’
+
+On its own, the negation particle can be used to mean ‘no’. Its literal meaning in this use is really ‘it is
+not / I am not / etc.’, in all numbers and tenses. This word is generally used as a reply and is only
+appropriate in contexts in which ‘it is not / I am not / etc.’ would also be a valid reply.
+
+== Interrogative Clauses <sec:interrogative>
+=== Yes-No Questions
+In UF, questions are generally marked by one or more particles. Unlike in many other languages, the verb generally
+does not move, except perhaps for emphasis. The most fundamental kind of question is a yes-no question, which is
+marked by the interrogative particle #w[c’hes].
+
+In yes-no questions, the particle typically occurs in second position in the sentence.#footnote[That is, after the
+first _constituent_, not after the first word.] The main exception to this is with forms of #w[eḍ] ‘to be’,
+which are typically immediately preceded by the question particle, the two forming a single word, placed at the very
+end of the sentence:
+
+
+- #w[St’halẹ #b[c’hes] jac̣t'heá ?] ‘Did I buy a table?’
+- #w[Dwáḷýhes ilývy’ér ḍauḍéá #b[c’hes] ?] ‘Where did you get the light?’
+- #w[Raúl baú #b[c’hes]se ?] ‘Is it a good language?’
+
+==== Negation
+Negation is placed in the usual position. A negated question is marked by the negation particle #w[sý’ýâ],
+to which the expected answer is ‘yes’. Alternatively, the particle #w[(r)vá] can be used to indicate that
+the speaker expects the answer to be ‘no’ or to indicate disbelief, surprise, or amazement. #w[(r)vá]
+_replaces_ the question particle and unlike #w[c’hes] never merges with #w[eḍ] ‘to be’. It is also
+possible to combine both particles.
+
+- #w[St’halẹ c’hes jac̣t'heá’sý’ýâ ?] ‘Did I not buy a table?’
+- #w[St’halẹvá jac̣t'heá ?] ‘I bought a table?’
+- #w[St’halẹvá jac̣t'heá’sý’ýâ?] ‘I didn’t buy a table?’
+- #w[Raúl baú c’hesse ?] ‘Is it a good language?’
+- #w[Raúlvá baú se ?] ‘It is a good language?’
+
+The precise meaning of these questions is as follows: In #w[St’halẹ c’hes jac̣t'heá?] (‘Did I buy a table?’),
+the speaker is asking whether they themselves bought a table; a plausible situation would be that they
+simply forgot whether they did. Its negation, #w[St’halẹ c’hes jac̣t'heá’sý’ýâ?] (‘Did I not buy a table?’),
+could be used if the speaker is sure they bought a table sometime ago, but they can’t seem to find it and
+are starting to doubt themselves (‘Did I not buy a table? I’m sure I did.’).
+
+By contrast, the question #w[St’halẹvá jac̣t'heá?]) would be an assertion of disbelief; maybe the speaker
+found a table in their loft, and they can’t seem to remember buying it, but the price tag is still there.
+Finally, its negation #w[St’halẹvá jac̣t'heá’sý’ýâ?] would most likely be the speaker expressing their frustration
+over the fact that they can’t seem to find their table and asserting that, in fact, they know for sure that
+they did indeed buy a table (‘Did I not buy a table? I know I did!’).
+
+==== Fronting the Verb
+Fronting of the verb in the last two cases generally indicates confusion rather than amazement or anger and
+is most commonly used in response to someone else’s statement so as to ask for clarification (‘What do you mean
+“I bought a table”; what are you talking about?’). The same applies to the negated version of such a question.
+
+- #w[Jac̣t'heává st’halẹ ‽] ‘I _bought_ a _table_?!’
+- #w[Jac̣t'heá’sý’ýâvá st’halẹ ‽] ‘I _didn’t_ buy a _table_?!’
+
+Note the order of particles:#footnote[See @sec:particles for more information on particle order.] negation
+precedes the question particle. Placing them the other way around makes it sound like you’re trying to correct
+yourself from #w[Jac̣t'hévá] to #w[Jac̣t'hé’sý’ýâ].
+
+==== Simplified Questions
+In simple yes-no questions where the addressee is obvious, person marking of adjective verbs as well as the copula
+are often dropped; only the question particle is required. This is most common in speech and written dialog; it is
+seldom found in prose.
+
+- #w[Ýrŷ c’hes ?] ‘Are you happy?’
+- #w[Sýr c’hes ?] ‘Are you sure?’
+- #w[C’hes ?] ‘Is it?’ / ‘Really?’
+
+Person marking is generally required if the addressee is not in the second person:
+
+- #w[Sýr c’hes aúdẹvárc ?] ‘Are you sure that this will work?’
+- #w[Ausýró c’hes aúdẹvárc ?] ‘Are _we_ sure that this will work?’
+
+=== Wh-Questions
+UF has two kinds of wh-questions which differ in whether the wh-word replaces the question particle or not. The following
+wh-words do _not_ replace the question particle; in fact, they can also be used without the question particle in
+which case they act more like relative pronouns.
+
+- All variants of the locative pronoun #w[ḷýhes] ‘where, whither, whence, ...’
+- #w[a] ‘who, what, whom, whose’.
+- #w[c’haúy’ê] ‘how much, how many’.
+- #w[c’há] ‘when’.
+- #w[b’hehráy’ê] ‘by what means’.
+
+Conversely, there are a few wh-words that act more like particles and replace #w[c’hes] in questions:
+
+- #w[c’hèl] ‘which, which one’.
+- #w[c’hrá] ‘why’.
+
+==== #w[a c’hes] — ‘who, what, whom’ <subsubsec:aches-who-what>
+The actual interrogative pronoun here is #w[a], which is actually the relative pronoun turned interrogative by the
+the question particle #w[c’hes]. The two cannot be separated: the #w[a] must always precede the #w[c’hes]. It is
+used to mean both ‘who’ (if #s[def]) and ‘what’ (if #s[indef]). While most wh-words are immutable, #w[a] can be
+declined arbitrarily.
+
+- #w[Sa c’hes ḍad’hór ?] ‘What do you love?’
+- #w[Ia c’hes ḍad’hór ?] ‘Whom do you love?’
+- #w[Asa c’hes sydír ?] ‘To whom is it said?’
+- #w[Sý’ẹ a c’hesse ?] ‘What is that?’
+- #w[Árb áa c’hesse ?] ‘Whose tree is it?’
+
+This pronoun is used to mean both ‘who’ and ‘what’. It takes indefinite case when it refers to a thing and definite
+case when it refers to a person.
+
+- #w[Sa c’hes ḍad’hór ?] ‘What do you love?’
+- #w[Ia c’hes ḍad’hór ?] ‘Whom do you love?’
+
+If the subject of the question is a noun phrase that contains more than just the interrogative pronoun,
+pronoun and question particle are added after the entire phrase, and the pronoun is not declined, e.g. In
+informal speech, the #w[a] is sometimes even omitted entirely.
+
+- #w[Ŷnalẹ a c’hes ḍad’hór ?] ‘What table do you love?’
+- #w[Árb a c’hesse ?] ‘What tree is it?’
+
+A common variant spelling in older literature is to write the pronoun and question particle as one
+word, e.g. #w[sac’hes] instead of #w[sa c’hes] or to contract the ‘e’, e.g. #w[sac’h’s].
+
+==== #w[c’haúy’ê] ‘how much, how many’
+This particle first and foremost means ‘how much’ or ‘how many’. It also occurs frequently in set phrases such as
+#w[c’haúy’ê sýná] ‘how long’ (lit. ‘how much time’).
+
+- #w[C’haúy’ê sýná c’hes dauhybh seh dwá-ádrrá ?] ‘How long have you been living in this place?’
+- #w[Aúłraúlaúrẹ c’haúy’ê sýná c’hes láhẹh ?] ‘How long will this go on?’
+
+== Particles <sec:particles>
+UF has a great number of words which syntactically fulfill the role of complementisers, subordinators, etc. and which
+have certain characteristics in common. These words are jointly referred to as ‘particles’. Common to all particles is
+that the position they occupy is generally that of the second _word_ in—or alternatively right after—the phrase
+they modify. If multiple particles modify the same phrase, they are grouped together in that position.
+
+- #w[Sa #b[c’hes] ḍad’hór?] ‘What do you love?’
+- #w[Rívnél #b[ḍèl] rá leb’h.] ‘He was a big _scoundrel_.’
+- #w[Rívnél rá #b[ḍèl] leb’h.] ‘He was a _big_ scoundrel.’
+- #w[St’halẹ #b[vé] jad’hór.] ‘But I love a table.’
+- #w[U #b[vé] st’halẹ u sárb jad’hór.] ‘But I love a table or a tree.’
+
+When multiple particles occur in the same sentence, they must be ordered such that a particle that modifies a phrase
+rather than the entire clause is placed next to the phrase it modifies, and only particles that modify the same or
+a nested phrase may precede it. The following are all equivalent:
+
+- #w[Jlí#b[’sý’ýâ] #b[vé] #b[dývrê] iliv́uhé.] ‘But at least I don’t read the book.’
+- #w[Jlí#b[’sý’ýâ] #b[dývrê] #b[vé] iliv́uhé.]
+- #w[Iliv́uhé #b[vé] #b[dývrê] jlí#b[’sý’ýâ].]
+- \*#w[Jlí #b[vé]#b[’sý’ýâ] #b[dývrê] iliv́uhé.]
+Here, the negation particle #w[’sý’ýâ] modifies the verb #w[jub’hrá], whereas #w[vé] ‘but’ modifies the entire sentence;
+thus, the former must appear closer to the verb, and the only correct particle order is #w[’sý’ýâvé], with \*#w[vé’sý’ýâ]
+being entirely ungrammatical.
+
+Syntactically, most particles can be analysed as adjuncts since the omission of a particle still yields a grammatical
+phrase or clause in nearly all cases. Unfortunately, modelling this using traditional syntactic means usually leads to
+some rather horrendous outcomes. Note that in UF syntax, ‘PP’ stands for ‘particle phrase’ rather than ‘prepositional
+phrase’, as there are no prepositions in UF.
+
+#figure[
+    #show regex(".\u{0304}") : it => [#Bar(it.text.slice(0, 1))]
+    #tree[CP
+        [C̄
+            [C̄
+                [C̄
+                    [VP
+                        [V̄
+                            [V̄
+                                [V\ #w[jlí]]
+                            ]
+                            [PP [#w[’sý’yâ] #tree-attr(triangle: true)]]
+                        ]
+                    ]
+                    [C\ #w[c’hes]]
+                ]
+                [PP [#w[vé] #tree-attr(triangle: true)]]
+            ]
+            [PP [#w[dývrê] #tree-attr(triangle: true)]]
+        ]
+        [NP [#w[iliv́uhé] #tree-attr(triangle: true)]]
+    ]
+    A possible tree for #w[Jlí’sý’ýâ c’hes vé dývrê iliv́uhé ?] ‘But do I at least not read the book?’
+]
+
+Notably, the VP+NP do not form a constituent in UF. Analysing the #Bar[C] particles as part of e.g. the VP
+doesn’t work since #Bar[C] particles can be reordered with respect to one another, but not with respect to any
+#Bar[V] particles (of which there may be several, and those in turn _can_ again be
+reordered with respect to each other).
+As the verb is the only part of an UF sentence that is required for it
+to be grammatical, it makes sense to model it as the complement of the CP, with the subject or object, if there
+is one, placed in spec-CP.
+
+The tree above also shows a crucial difference between question particles like #w[c’hes] and other kinds of particles:
+there can only be one question particle per clause, which can be explained by modelling it as the head of the CP. Thus,
+C is always empty in non-questions.
+
+== ACI and PCI <subsec:aci-pci>
+The term #s[aci] is Latin for _accūsātīvus cum īnfīnītīvō_ ‘accusative with infinitive’. As the name would suggest, this
+grammatical construction consists of a dependent clause formed by an #s[acc] noun together with an infinitive; the
+noun is the subject or object of the clause, and the infinitive the predicate. This construction is most well-known
+from Classical languages such as Latin or Ancient Greek, but it is also found in various other languages, including
+English and, of course, UF:
+#gloss("
+    Lácár sbhaú àfér láȷ́éd’há.
+    lá\c̣ár s\bhaú à-fér l-áȷ́éd’h\á
+    {nom}\Charles {acc.indef}\bridge {inf.pass}-build {3m}-order\{pres.ant}
+    Charles ordered a bridge to be built.
+")
+
+In this sentence, the matrix clause is #w[Lácár láȷ́éd’há] ‘Charles ordered’, and the dependent clause is formed by
+the #s[aci] #w[sbhaú àfér] ‘a bridge to be built’. Since ‘a bridge’ is the object in this case, the passive infinitive
+is used. Observe how this sentence’s translation also uses an #s[aci] with a passive infinitive in both English (‘Charles
+ordered a bridge to be built’) as well as Latin (_Carolus pontem fierī iussit_).
+
+UF does not have a word for ‘that’ as in ‘I think that ...’ or ‘I know that ...’; instead, it uses
+#s[aci]s in these cases. Just how multiple ‘that’ clauses can be chained in English, so can multiple #s[aci]s in UF.
+#gloss("
+    Icár sbhaú àfér dáȷ́édá jsav́á.
+    i\c̣ár s\bhaú à-fér d-áȷ́éd-á j-sav́á
+    {acc}\Charles {acc.indef}\bridge {inf.pass}-build {inf}-order-{pres.ant} {1sg}-know
+    I know that Charles ordered a bridge to be built.
+")
+
+Whenever a word is marked as taking an #s[aci] in the dictionary, it may also take a #s[pci] instead if
+that makes sense semantically; there are no words that syntactically may take an #s[aci], but not a #s[pci].
+Finally, note that ‘that’ is not always expressed with an #s[aci] or #s[pci]. Certain verbs, e.g. verbs of fearing, may
+take a dependent clause in the subjunctive or optative instead (see @subsec:subjunctive, @subsec:optative).
+
+=== Nested ACIs
+When multiple #s[aci]s are chained together, they are nested such that #s[acc] comes first and the infinitive
+last or vice versa, and any nested #s[aci]s are placed inbetween; observe that, in the sentence above, the #s[aci]
+#w[sbhaú àfér] ‘a bridge to be built’ is nested inside #w[Icár dáȷ́édá] ‘Charles to have ordered’. The literal
+translation of this sentence would thus be ‘I know Charles to have ordered a bridge to be built’.
+
+Furthermore, note that the finite verb of the matrix clause of an #s[aci] receives only a subject marker if the
+#s[aci] is the object and vice versa. Thus, we have #w[jsav́á] ‘I know’ in the example above instead of e.g.
+#w[jsysav́á] ‘I know it’. It _would_ be possible to add the object marker in the example above, but it would
+sound a bit strange, roughly ‘I know it: that Charles ordered a bridge to be built’, and the verb would
+probably have to be fronted for the sentence to make sense that way.
+
+The exception, of course, is if the matrix clause is in the passive, in which case, as ever, the passive affix
+is added regardless, seeing as the verb would not be finite otherwise, e.g. #w[sysav́á] ‘it is known that’.
+
+=== PCIs
+In addition to #s[aci]s, UF also has #s[pci]s, which use the #s[part] case instead. The #s[part] is used with verbs
+that govern the #s[part] or in some cases to indicate that an action is incomplete (see @subsubsec:declension).
+#gloss("
+    Lácár dŷnbaú àfér láȷ́éd’há.
+    lá\c̣ár dŷn-ḅaú à-fér l-áȷ́éd’h\á
+    {nom}\Charles {part.indef}-bridge {inf.pass}-build {3m}-order\{pres.ant}
+    ‘Charles ordered to start building a bridge.’
+")
+
+The translation of the sentence above isn’t the best, but we start to run into a problem here, since UF uses
+#s[aci]s and #s[pci]s much more prolifically than English does. A somewhat literal translation of this sentence would be
+something along the lines of ‘Charles ordered the building of a bridge to be started’, but it isn’t perfect
+either since ‘building’ is a gerund but in the sentence above, it’s an infinitive. In modern English, there simply
+is no good literal translation for this sentence that preserves the passive infinitive.
+
+=== Resolving Ambiguity
+When dealing with #s[aci]s and #s[pci]s that involve verbs that also take #s[acc] and #s[part] arguments, respectively, or
+other infinitives which do, one must be careful not to construct garden-path sentences. For instance, take #w[*sḅáłýr*
+sýc̣ahý dýbháhẹ dylí *dub’hrá*]. Here, the #s[pci] is marked in bold, and the intended meaning is ‘for speakers to be
+able to read each other’s thoughts’. Unfortunately, however, ‘read’ also takes a #s[part] here, and thus, it is
+possible to construct a different #s[pci], namely #w[*sḅáłýr* sýc̣ahý dýbháhẹ *dylí* dub’hrá] ‘for speakers
+to read each other’s thoughts’, and #w[dub’hrá] ‘to be able to’ is awkwardly left hanging at the end of the sentence.
+
+To fix this problem, rearrange the sentence so the infinitive of the #s[aci] or #s[pci] is placed first and put the verbs of any
+enclosed verb phrases first in those phrases to indicate that any immediately following #s[acc] or #s[part] nouns are part
+of that verb rather than of the #s[aci] or #s[pci]: #w[*dub’hrá* dylí sýc̣ahý dýbháhẹ *sḅáłýr*].
+This rule is sometimes intentionally subverted in cases where the double meaning is desirable, or in poetry, where word order
+is a lot looser, but it would be very awkward to do so in prose.
+
+In speech, this problem is more readily solved via intonation by placing emphasis and separating the ‘contents’ of the
+#s[aci] or #s[pci] from the infinitive and noun with short pauses, e.g. #w[*sḅáłýr* ‖ sýc̣ahý dýbháhẹ dylí ‖ *dub’hrá*].
+
+=== Negation
+Negation of #s[aci]s and #s[pci]s uses the same particle as negation in the optative, viz. #w[t’hé] (see
+Section@subsubsec:negated-optative), attached to the verb of the #s[aci]. Note that the
+matrix clause is negated normally. Where the meaning of the two is equivalent, negating
+the #s[aci] is generally preferred.
+
+- #w[Lácár sbhaú #b[t’h’]àfér láȷ́éd’há.] ‘Charles ordered that no bridge be built.’
+- #w[Lácár sbhaú àfér láȷ́éd’há#b[’sý’ýâ].] ‘Charles did not order a bridge to be built.’
+
+=== Pronominal ACIs and PCIs <subsubsec:pronominal-aci>
+One of the most counterintuitive constructions in UF is the pronominal #s[aci], i.e an #s[aci] that is formed using
+an infinitive and a pronoun. However, since separate pronouns do not exist in the #s[acc] or #s[part] case (see
+@subsubsec:personal-pronouns), passive affixes are used instead, even if the form is intended to be active
+in meaning. If the meaning of the sentence is intended to be passive, the passive infinitive is used instead. This is one of
+the only cases where a verb can receive two affixes of the same voice.
+
+- #w[Lác̣ár dẹ#b[lý]ḅarḍ láȷ́éd’há.] ‘Charles ordered them to leave.’
+- #w[Lác̣ár #b[àsy]fér láȷ́éd’há.] ‘Charles ordered it to be built.’
+
+Thus, the voice of a pronominal #s[aci] or #s[pci] depends on the voice of the infinitive affix, and not that of
+the finite affix. Finally, a pronominal #s[pci] is formed as expected, i.e. with the pronominal partitive infix
+#w[-dy-] (see @subsubsec:personal-pronouns).
+
+- #w[Lác̣ár dẹlý#b[dy]ḅarḍ láȷ́éd’há.] ‘Charles ordered them to get going.’
+
+
+== Conditionals <subsec:conditionals>
+#let cond-examples(..els) = {
+    show grid.cell.where(x: 0) : it => [*(#s[#it])*]
+    show grid: set block(above: 1em, below: 1em)
+    grid(
+        columns: (auto, 1fr),
+        column-gutter: .5em,
+        row-gutter: .75em,
+        ..els.pos()
+    )
+}
+
+Traditional UF grammar divides conditionals into four categories: Simple (#s[s]), potential (#s[p]), counterfactual (#s[c]),
+and irrealis (#s[i]). In the examples below, the letter in brackets indicates the type of conditional.
+
+UF does not use any form of backshifting. Thus, a past tense is used in a conditional sentence if and
+only if the action, from the speaker’s perspective, takes place in the past. Even counterfactual conditionals, if they
+appertain to the present, still use present tense.
+
+Still, there are restrictions on tense in that not all kinds of conditionals appertain to all tenses. For instance, it
+is impossible to construct a potential conditional in the past; it would have to be a counterfactual conditional
+instead.
+
+=== Simple Conditionals
+Simple conditionals indicate basic implications and logical truths. These conditionals use the indicative in both the protasis
+and apodosis, in the appropriate tense. The protasis is generally introduced by the particle #w[s] ‘if’.
+
+#cond-examples[s][
+    #w[S r sré, aû-r sfe.] ‘If #w[r] is true, then not-#w[r] is false.’#footnote[UF does not
+    use the letters #w[p] or #w[q], and thus, discussions of propositional logic in UF tend to
+    use #w[r] and #w[t] instead. #w[s] is not used either so as to not confuse it with #w[s] ‘if’.]
+]
+
+A variant of the simple conditional is the so-called ‘gnomic conditional’, which uses a gnomic form in the apodosis; this form
+expresses ‘if X, then Y must/should be too’. This is often found in formal specifications and legal documents.
+
+- #w[S sfúr snaûb, ád’hý rêrá sejú.] ‘If a number is provided, it shall be greater than two.’
+
+=== Potential Conditionals
+Potential conditionals indicate that something is possible or could happen in the present or future (but _not_ in
+the past), provided some condition is met, but which is not currently the case. These conditionals use the present
+indicative (#s[p1]) or the present (spoken) or Future II (literary) optative in the future (#s[p2]) in the protasis, and
+the Conditional I in the apodosis.
+
+#cond-examples(
+    [p1], [
+        #w[S ḍẹsẹhúrvé, aúrrzaúsḍressa júrdy’í.] \
+        ‘If you were to help me, it could be finished today.’
+    ],
+
+    [p2], [
+        #w[S vê ḍẹy’ẹhẹhúrvé, aúrrzaúsḍressa aḍrdvê.] \
+        ‘If you were to help me tomorrow, it could be finished the day after tomorrow.’
+    ],
+)
+
+This sentence indicates that the speaker believes that, if the addressee helps them, there is a _possibility_ that they
+could finish the task. If, by contrast, the speaker is certain that they will get the task done, a simple conditional is used
+instead:
+
+#cond-examples[s][
+    #w[S ḍẹsẹhúrvé, aúrrzaúsḍre júrdy’í.] \
+    ‘If you help me, it will (with certainty) be finished today.’
+]
+
+=== Counterfactual Conditionals
+Counterfactual conditionals are conditionals whose protasis is false. These conditionals exist only in the present
+and past and use the subjunctive in the present or any past tense in the protasis, and the Conditional II in the apodosis:
+
+#cond-examples(
+    [c], [
+        #w[S ḍẹsẹhúsvé, aúrrzaúsḍressá.] \
+        ‘If you were helping me, it would be finished.’
+    ],
+
+    [c], [
+        #w[S ḍẹsẹhúhávé, aúrrzaúsḍressá y’ér.] \
+        ‘If you had helped me, it would have been finished yesterday.’
+    ],
+)
+
+=== Irrealis Conditionals
+Irrealis conditionals are conditionals that describe a situation that could never be true. They are distinct from
+potential conditionals in that they cannot possibly happen, and from counterfactuals in that the apodosis is not ‘false’,
+either because it is not a statement, but rather a wish etc. (\s i1), or because it hasn’t happened yet (\s i2). This also
+means that irrealis conditionals are constrained to the present and future tense and are chiefly used to describe something that
+the speaker knows won’t happen. In a sense, they are often the opposite of potential conditionals. They use the
+optative in the protasis and the subjunctive in the apodosis.
+
+#cond-examples(
+    [i1], [
+        #w[S ḍẹy’ẹhẹhúrvé, srzaúst’há y’ér !] \
+        ‘If only you were helping me—it would have been finished yesterday!’
+    ],
+
+    [i2], [
+        #w[S vê b’háy’ẹhẹhúrrevé, aúr-rzaúsẹre-śe aḅrdvê.] \
+        ‘(roughly) If you had been able to help me tomorrow, it would have been finished the day after.’
+    ]
+)
+
+The second example in particular is hard to translate since it communicates an irrealis in the future, at the same time
+using a morphological future in both the apodosis and the protasis. The tenses used in the translation here thus do not
+reflect the tense actually used in UF.
+
+
 // Temporary chapter and sections because the document doesn’t compile if there
 // are missing references; remove these once we convert the sections that contain
 // these labels.
 #chapter("TEMP", "temp")
-== TEMP <subsec:aci-pci>
 == TEMP <sec:nd-nouns>
-== TEMP <subsubsec:aches-who-what>
-== TEMP <subsubsec:pronominal-aci>
-== TEMP <subsec:conditionals>
+== TEMP <subsec:verbal-morphology>
 
 
 // ============================================================================
