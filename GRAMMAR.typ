@@ -133,6 +133,15 @@
 // ============================================================================
 #show : mainmatter
 #chapter([Phonology and Evolution from\ Modern Pseudo-French], "phonology")
+#let format-sound-changes(sound-changes, break-at: ()) = columns(2, {
+    let num = 1
+    for (i, (title, changes)) in sound-changes.enumerate() {
+        if (i in break-at) { colbreak() }
+        if title != [] { partitle(title) }
+        enum(start: num, ..changes)
+        num += changes.len()
+    }
+})
 
 #rowtable(
     columns: 10,
@@ -212,14 +221,7 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
     ))
 )
 
-#columns(2, {
-    let num = 1
-    for (title, changes) in sound-changes {
-        partitle(title)
-        enum(start: num, ..changes)
-        num += changes.len()
-    }
-})
+#format-sound-changes(sound-changes)
 #pagebreak()
 ]
 
@@ -2929,12 +2931,135 @@ The second example in particular is hard to translate since it communicates an i
 using a morphological future in both the apodosis and the protasis. The tenses used in the translation here thus do not
 reflect the tense actually used in UF.
 
+#chapter([Northern Dialect], "nd")
+What we have discussed so far is the standard dialect (SD) of UF. The main other established dialect or language
+variant of UF is the so-called Northern Dialect (ND), or #w[Raúl Áheb’hèc’h],
+#s[nd] #w[Raúl á-S’heuè].
+
+== Phonology and Orthography
+The divergence of this variety began in Late Middle UF; however, it should also be noted
+that the SD is fairly conservative: not many sound changes happened in the around 400 years between the Early
+Modern and Modern period, whereas the ND continued to evolve. As such, ND forms often seem more like descendants of
+their SD counterparts rather than of Middle UF, though of course, there are exceptions.
+
+=== Phonemic Changes
+These changes can be conceived of as taking place after Early Modern UF, even though that may not be fully diachronically
+correct for some of them, but experts are still unsure about that. Note that changes of the form ‘X > ː’ indicate
+compensatory lengthening.
+#[
+#let sound-changes = (
+    ([], (
+        [ð > ð̞ [ð̺˕]],
+        [z, ʑ > s, ʃ / \#\_, C[-voice]\_, \_C[-voice]],
+        [ɕ, ȷ̊ > ʃ],
+        [x > ʃ / V[+front]\_, \_V[+front]],
+        [ɮ̃ > ɬ̃ > ʃ  / \_V],
+        [ɰ > ː / V\_],
+        [ɰ̃ > ɰ],
+        [ʀ > x],
+        [ɸ, β > u / V\_],
+    )),
+    ([], (
+        [ḅ > b / V\_],
+        [b > β],
+        [y, ỹ, ỹ̃ > ʉ, ʉ̃, ʉ̃̃],
+        [e, ɛ > i̯ / V\_],
+        [o > u / a\_, ã\_, ã̃\_],
+        [o > ɔ],
+        [C[+fricative] > ː / V\_\#],
+        [h > $emptyset$ / V\_V],
+    ))
+)
+#smallskip
+#format-sound-changes(sound-changes, break-at: (1,))
+]
+
+=== Phonetic Changes and Earlier Developments
+These changes are either phonetic or allophonic differences, as well as earlier changes that took place in the Late
+Middle UF period.
+
+- Voiceless vowels are simply oral instead, and /ə̥/ does not exist, with it dropped entirely in some words
+  and retaining its original Middle UF quality in others.
+- #w[t’h] /θ/ is really [θ͡ɸ] instead of standard [θ].
+- #w[sw] lenites to #w[hw] /ʍ/ instead of #w[ź].
+- /t/ > /d/ never happened; thus, #w[ḍ] is still spelt and pronounced /t/ ⟨t⟩.
+
+=== Spelling
+The ND uses the grave to differentiate between #w[au] /ɔ/ and #w[aù] /au̯/. When nasalised, this becomes #w[aú] /ɔ/
+vs #w[àú] /aũ̯/, #w[áu] /ãu̯/, #w[áú] /ãũ̯/. Do not confuse this with the use of the grave to mark contractions in poetry.
+A contraction of two /u/s does not occur anywhere in the ND.
+
+The northern /ʃ/ is diachronically derived from /ɕ, ʑ, ȷ̊, ɮ̃/ ⟨c, j, c̣, l⟩ as well as in some cases ⟨c’h⟩ /x/, which,
+even in the standard dialect, is already [ɕ] around front vowels. All of these are spelt #w[s’h], but any instances of
+it that were historically /ȷ̊/ ⟨c̣⟩ or /ɮ̃/ ⟨l⟩ do not lenite and are thus written #w[ṣ’h] in this grammar. Otherwise,
+#w[s’h] lenites to #w[h] as one would expect. By contrast, /x/ derived diachronically from /ʀ/ _does_ lenite exactly
+like regular /x/, and thus, both are written ⟨c’h⟩.
+
+On the subject of vowels, instead of having both #w[o] and #w[au] for /ɔ/, the ND only retains the more sensible spelling,
+that being #w[au]. The letter #w[o] is not used at all. Furthermore, the loss of word-final fricatives and coda /ɰ/ gives
+rise to phonemic vowel length. This is marked with a macron in spelling, e.g. #w[ab’hèc’h] > #w[aùḕ] /au̯ˈɛː/, though #w[x̄́]
+is written #w[x̌] instead, e.g. #w[aḅraúc̣] > #w[ab’hraǔ] /aˈβɰɔ̃ː/. A notable exception to this process is #w[S’heuè], which
+lost its final #w[c’h] before this change occurred.
+
+#[
+#show : italic-table-body.with(cols: (2,))
+#center-table(
+    caption: [Examples of Northern Dialect words.],
+    align: left,
+    hlineat(1),
+    ..vlinesat(1, 2),
+    table.header[Standard & Northern & Pronunciation],
+    [jad’hór         & s’had’haǔ      & /ʃaˈð̞ɔ̃ː/       ],
+    [Raúl Áheb’hèc’h & Raúl á-S’heuè  & /ˌɰɔ̃ɮ̃ ɑ̃ˈheu̯.ɛ/ ],
+    [c’hes           & s’hē           & /ʃeː/          ],
+    [nárrahóḍ        & nác’hàút       & /nɑ̃xaũ̯t/       ],
+    [láel            & ṣ’háil         & /ʃɑ̃i̯ɮ̃/         ],
+    [ḍalẹ            & taṣ’hau        & /taʃɔ/         ],
+)
+]
+
+== Nouns <sec:nd-nouns>
+There are some differences in how noun declensions work in the ND. Most of the prefixes are the same, but unlike in the SD,
+they _do_ undergo coalescence, and some of them appear in a contracted form.
+
+When proper nouns are declined, there are two things to note. First, the SD capitalises the prefix, whereas the ND maintains capitalisation
+of the first letter of the noun proper and attaches prefixes with a hyphen, e.g. #w[C’heb’hèc’h] which in the ND is #w[S’heuè]
+becomes #s[all] #s[sd] #w[Ádác’heb’hèc’h] but #s[nd] #w[â-S’heuè] /ɑ̃̃ˈʃeu̯.ɛ/. Secondly, lenition of proper nouns is not
+written at all, even though it is still pronounced, e.g. the #s[gen] of #w[S’heuè] is written #w[á-S’heuè] even though it is
+still pronounced /ɑ̃ˈheu̯.ɛ/.
+
+The following northern case prefixes undergo irregular changes in addition to the regular sound changes above. Note that the
+latter still apply to these prefixes, e.g. the #s[nom] affix #w[lá-#L] is #w[ṣ’há-#L] instead. Entries marked with _/_
+are _not_ irregular.
+#[
+#show : italic-table-body.with(cols: (0, 4))
+#center-table(
+    caption: [Northern Dialect Declension],
+    align: left,
+    ..vlinesat(1, 2, 5, 6),
+    hlineat(1, end: 3),
+    hlineat(1, start: 4),
+    table.header[Definite    &Sg&Pl && Indefinite       &Sg&Pl],
+    [Allative         & â-            & ê-       && Allative  & aŷn-       & aŷ-  ],
+    [Ablative         & /             & /        && Ablative  & rêýn-      & rêý-  ],
+)
+]
+
+
+Lastly, noun prefixes coalesce with any initial stem vowels of the same quality. Earlier varieties of the ND used the
+same vowel contraction rules described in @subsec:other-punct everywhere, but in modern times, there are a few
+differences:
+
+- Such contractions are restricted to declensions only, e.g. #s[sd] #w[lá-áb’há] > #s[nd] #w[ṣ’hâuá].
+- Two nasalised vowels are contracted to a nasal vowel, i.e. #w[ṣ’hâuá], not \*#w[ṣ’hàuá].#footnote[Even in
+        poetry, the latter would be unusual in the ND.]
+- The double grave variant, i.e. #w[ṣ’hȁuá], is archaic nowadays, with the circumflex used instead.
+
 
 // Temporary chapter and sections because the document doesn’t compile if there
 // are missing references; remove these once we convert the sections that contain
 // these labels.
 #chapter("TEMP", "temp")
-== TEMP <sec:nd-nouns>
 == TEMP <subsec:verbal-morphology>
 
 
