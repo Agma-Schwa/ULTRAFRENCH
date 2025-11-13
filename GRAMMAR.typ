@@ -3219,11 +3219,6 @@ of The Language, it has transpired that,#footnote[‘To become clear’ is expre
 at least in spoken communication with non-android participants, UF is the best of the terrestrial languages.
 
 === Two Stanzas from ‘The Rime of the Ancient Mariner’
-#let verse(lines, parsep: 2em) = {
-    set par(first-line-indent: 0pt, spacing: parsep)
-    block(align(left, lines))
-}
-
 #align(center, grid(
     columns:2,
     column-gutter: 2em,
