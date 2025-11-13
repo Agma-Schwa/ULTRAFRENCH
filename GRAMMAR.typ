@@ -171,7 +171,7 @@ N = nasal consonant, C̃ = nasalised consonant (e.g. /ɰ̃/, but not true nasals
         [ɔ > o],
         [u > v / \_o],
         [y > j / \_(\#)V],
-        [V\scalpha > $emptyset$ / \_\#V\scalpha],
+        [V#sub[α] > $emptyset$ / \_\#V#sub[α]],
         [lj, lɥ > ʎ],
         [j > ɥ ⟨y’⟩],
         [ɰ > ɥ / \_i],
@@ -2367,8 +2367,8 @@ Late Middle UF.] e.g. #w[t’hẹdâ vy’í] ‘I had been’. Note that only t
 inflected for mood in this case, e.g. subjunctive #w[t’hẹrâ vy’í] ‘I should have been’. The gnomic is formed by
 appending #w[(j)ú] to the end of a form, with the #w[j] dropped if the form in question ends with a consonant.
 
-//#footnote[At the same time, the \s{1sg] forms seem to be derived from the #s[acc] of the PF #s[1sg] pronoun,
-//for unknown reasons.}
+//#footnote[At the same time, the #s[1sg] forms seem to be derived from the #s[acc] of the PF #s[1sg] pronoun,
+//for unknown reasons.]
 #let ed-table(caption: [], ..rows) = figure(
     caption: caption,
     placement: none,
@@ -2910,7 +2910,7 @@ and past and use the subjunctive in the present or any past tense in the protasi
 === Irrealis Conditionals
 Irrealis conditionals are conditionals that describe a situation that could never be true. They are distinct from
 potential conditionals in that they cannot possibly happen, and from counterfactuals in that the apodosis is not ‘false’,
-either because it is not a statement, but rather a wish etc. (\s i1), or because it hasn’t happened yet (\s i2). This also
+either because it is not a statement, but rather a wish etc. (#s[i1]), or because it hasn’t happened yet (#s[i2]). This also
 means that irrealis conditionals are constrained to the present and future tense and are chiefly used to describe something that
 the speaker knows won’t happen. In a sense, they are often the opposite of potential conditionals. They use the
 optative in the protasis and the subjunctive in the apodosis.
@@ -3055,6 +3055,236 @@ differences:
         poetry, the latter would be unusual in the ND.]
 - The double grave variant, i.e. #w[ṣ’hȁuá], is archaic nowadays, with the circumflex used instead.
 
+#chapter([Examples], "examples")
+
+== Fully-Glossed Examples
+
+=== Simple Glossing Example
+#gloss("
+    Cárvá, sráhó dwávaût’há dact’heá ?
+    C̣ár vá s-ráhó dwá-vaût’há ḍ-ac̣t’he-á
+    Charles.{voc} {particle} {indef.acc}-fish {def.iness}-mountain {2sg}-buy-{pres.ant.2sg}
+    Charles, you bought a fish on the mountain?
+")
+
+=== CCC 2 Text
+_Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’e sab’héy’. Ez lé-el lalebet’he z’ihór bet’hê rêsol daudé.
+Ýab’héy’ rêd’hes lab’hóy’ejú, dŷna c’haúr debauhib sá lasusy’és ýrâhe lasyrrájú._
+
+#multigloss("
+    słé-rá ḍẹ c’hóný á\b’hásy’ô ráy’ê y’aúhý ḍ-ís dy-b’hóy’ẹ
+    {cons.pl}-law all well.known {gen}\aviation way there.is.no {inf-subj}.can {part}-to.fly
+
+    s-ab’héy’ ez lé-el la-lẹ-bet’hẹ z’ i\hór bet’h\ê
+    {acc.indef}-bee its {nom.pl}-wing {3pl-aff.comp}-be.small its {acc}\body be.small\{part}
+
+    rê-sol ḍ-auḍé ý-ab’héy’ rêd’hes la-b’hóy’ẹ-jú dŷn-a c’haúr
+    {abl}-soil {inf}-obtain {nom.pl.indef}-bee of.course {3n.pl}-fly-{gn} {part}-what as
+
+    dẹ-ḅauhib sá la-susy’é\s ý-râhẹ la-sy-rrá-jú
+    {inf}-be.impossible not {3n.pl}-care.about\{subj} {nom.pl.indef}-human {3n.pl}-{3n.pass}-believe-{gn}
+")
+
+#block[
+‘According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too
+small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care
+what humans think is impossible.’
+]
+
+#smallskip
+
+Literal translation: ‘According to all known laws of aviation, there is no way that a bee should be capable of flight.#footnote[
+Note that UF here uses the verbal noun #w[b’hóy’ẹ] ‘to fly’ as a noun to mean ‘flight’.]
+Its wings are too small for its little body to obtain [distance] from the ground. Of course, bees fly [anyway], as
+they do not care about what humans believe to be impossible.
+
+=== Copypasta Translation
+_Rub’hráy’ó rát’he au sré au sfèhe laut’hâ adŷbáłýr Át’hebhaú Raúl dedesle, s aút’hiy’ey’ó sývéhýr dýhisdé sérdé laúây’êr ;
+aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse ? Lec’hdr\-aúv\-nét’hic’hâ nérje c’hesse ?
+Árdihyl c’hesse ? Sauz-aud de c’hesse ? Jávé’sý’ýâ jrét’hádé dedónéle dýha\-bha\-hit’he deý’ebhat’hic’hâ Áraúl dybháł.
+Aúrsáheressá. Jdír jys dub’hrá au dylí sýcahý dýbháhe au dylýáv́áy’é b’hýcahý sbáłýr Áraúl._
+
+_Lásásc’hríd raúl révéy’ýr c’hessejú ? Léraúb’he lasydír, lavâhe vé sbhárde sásy’élâ Áraúl. Sráhis’sý’ýâ id’hír deb’hýlnér
+u b’hesaúr rêvú aû-át’heý’ebhat’he u B’helfaúr sraúb’he. Jav́ár sáví lyzy’ýr ádróid. Sy’u\-b’h\-rá dahaúr isásc’hríd
+dwáníb’he araúl sébâ âc’hrír ‘dèc’hníc’hvâ’ Át’hebhaú Raúl ‘desybhérýr’, sjys vé delýc’hóbhár, lásásc’hríd c’haúr sýraúl
+âc’hrír sc’hóváhá, lévás nórâ jys ‘desybáł’ dyhéy’é la\-y’e\-hó\-vâ\-hér. Aúc’hóhid’héy’ó laúrvé Áraúl dynát’hýr rêâ, srâsírá,
+dwác’hóvníc’h âbáł dývrê b’hehbár\-di\-hi\-bhá aû-á\-dr\-ó\-id, It’hebhaú Raúl abhraúl dérésdâ derâdvâvéy’ýr._
+
+==== Gloss
+#multigloss("
+    r-ub’hrá-y’ó rát’hẹ au s-ré au s-fèhẹ laut’h-â
+    {1pl}-can-{1pl} you.see and {acc.pl.indef}-ray {and} {acc.pl.indef}-beam float-{ptcp}
+
+    aḍŷ-ḅáłýr á-t’hebhaú~raúl dẹ-deslẹ s aú-t’hiy’e-y’ó sý-véhýr
+    {interess.pl.indef}-speaker {gen}-Ultrafrench.language {inf}-detect if {1pl}-use-{1pl} {gen.pl.indef}-measure
+
+    dý\hisḍé sérḍé laú â-y’\ệr aú-c’haúḅrâd-y’ó
+    {part.pl.indef}\system certain long {ptcp.pass}-forbid\{ptcp.pres.ant} {1pl}-understand-{1pl}
+
+    ’sý’ýâ vé ḍúr dy\haúbhausy’ô sẹh abh-vísy’ô sý-lývy’ér saúr c’hes
+    not but still {part}\composition this {gen.pl}-emission {gen.indef}-light {abs}.kind {q}
+
+    se lec’hḍraúvnẹ́t’hic’h-â nérjẹ c’hes se árḍihyl c’hes se sauz
+    {3n}.be electromagnetic-{ptcp} {energy}.{abs} {q} {3n}.be particle.{abs} {q} {3n}.be {abs}.thing
+
+    aud ḍẹ c’hes se jávé ’sý’ýâ j-rét’hád-é dẹ-dónẹ́-ḷẹ
+    other entire {q} {3n}.be never not {1sg}-claim-{pres.ant} {inf}-endow-{3.dat}
+
+    dý\habhahit’hẹ ḍeý’ebhat’hic’h-â á-raúl dy\bháł
+    {part.pl.indef}\ability be.telepathic-{ptcp} {gen}-language {part}\speak
+
+    aúr-sáhere-ss\a j-dír jys d-ub’hrá au dy-lí
+    {3n.fut.ii}-be.preposterous.{fut}-{cond}\{circ} {1sg}-say only {inf}-can and {part}-read
+
+    sý\c̣ahý dý\bháhẹ au dy-lý-áv́áy’é
+    {gen.pl.indef}-each.other {part.pl.indef}-thought and {part}-{3pl.pass}-send
+
+    b’hý\c̣ahý s-ḅáłýr á-raúl
+    {dat.pl.indef}-each.other {acc.pl.indef}-speaker {gen}-language
+
+    lá-sásc’hríḍ~raúl ré-véy’ýr c’hes se-jú
+    {nom}-Sanskrit {abs}.language {sup}-better {q} {3n}.be-{gn}
+
+    lé-raúb’hẹ la-sy-dír la-vâhẹ vé s\bhárḍẹ sásy’él-â á-raúl
+    {nom.pl}-robot {3pl}-{3n.pass}-say {3pl}-miss.out but {acc.indef}\part be.essential-{ptcp} {gen}-language
+
+    s-ráhis ’sý’ýâ i\d’hír dẹ-b’hýlnẹ́r u b’hel-saúr rê-vú aû- á\t’heý’ebhat’hẹ
+    {3n}-be.racist not {acc}\say {inf}-be.unaffected or {instr.pl}-form {sup}-many non- {gen}-telepathy
+
+    u b’he-faúr s-raúb’he j-av́ár s-áví lyzy’ýr ádróid
+    or {instr}-Force {acc.pl.indef}-robot {1sg}-have {acc.pl.indef}-friend several {abs}.android
+
+    s-y’-ub’hrá dahaúr i-sásc’hríd dwá-níb’hẹ a-raúl séḅ-â â-c’hrír
+    {3n-opt}-can sure {acc}-Sanskrit {iness}-level {gen}-language be.plain-{ptcp} {ptcp.pass}.write
+
+    ḍèc’hníc’hvâ á-t’hebhaú~raúl dẹ-sybhẹ́rýr s-jys vé dẹ-lý-c’hóbhár
+    technically {gen}-Ultrafrench.language {inf}-be.superior {3n}-be.unfair but {inf}-{3pl.pass}-compare
+
+    lá-sásc’hríd c’haúr sý-raúl â-c’hrír s-c’hóváh\á
+    {nom}-Sanskrit as {gen.indef}-language {ptcp.pass}-write {3n}-start.out.as.{subj}\{pres.ant}
+
+    lé-vás nór-â jys dẹ-sy-ḅáł dy\héy’ẹ́ la-y’ẹ\hóvâh\ér
+    {nom.pl}-masses be.ignorant-{ptcp} until {inf}-{3n.pass}-speak {part}\attempt {3pl}-{opt}\start\{pres.ant}
+
+    aú-c’hóhid’hẹ́-y’ó laúrvé á-raúl dy-nát’hýr rê-â
+    {1pl}-consider-{1pl} but.when {gen}-language {part}-nature be.triune-{ptcp}
+
+    s-râsír-á dwá-c’hóvníc’h â-ḅáł dývrê b’heh-ḅárḍihibhá aû- ádróid
+    {3n}-transpire-{pres.ant} {iness}-communication {ptcp.pass}-speak at least {instr.pl.indef}-participant non {abs}.android
+
+    i-t’hebhaú~raúl abh-raúl ḍérésḍ-â dẹ-râdvâ-véy’ýr
+    {acc}-Ultrafrench.language {gen.pl}-language be.terrestrial-{ptcp} {inf}-{superl}-be.better
+")
+
+==== Translation
+‘You see, we can detect rays and beams of energy floating between ULTRAFRENCH speakers if we use certain long-forbidden
+measurement systems, but we still don’t understand the composition of these emissions. Are they some kind of light?
+Electromagnetic energy? A particle? Something else entirely?
+
+‘I’ve never claimed that speaking ULTRAFRENCH endows you with telepathic abilities. That would be preposterous. I’m just
+saying that ULTRAFRENCH speakers can read each others minds and send thoughts to each other.
+
+‘Is Sanskrit the best language? The robots tell me so.  But they are missing out on an essential part of ULTRAFRENCH.
+It’s not racist to say robots are immune to most forms of not-telepathy and the Force. I have several android friends
+
+‘Sanskrit might be “technically” “superior” to ULTRAFRENCH on the level of the plain written language. Sure, but it’s
+unfair to compare them because Sanskrit started out as a written language until the ignorant masses started attempting
+to “speak” it.
+
+‘But when you consider the triune nature of ULTRAFRENCH, I think it’s clear that, at least in spoken communication with
+non-android participants, ULTRAFRENCH is the best earth-based language.’
+
+==== Literal Translation
+We can, you see, detect both rays and beams of energy floating between speakers of The UF Language
+if we use certain systems of measurement long-forbidden; we still don’t understand, however, the composition of these
+emissions. Is it some kind of light? Is it electromagnetic energy? Is it a particle? Is it something else entirely?
+I’ve never claimed that [the mere act of]#footnote[The speaker uses a #s[pci] (#w[dybháł]) instead of an #s[aci]
+(#w[ibháł]) for ‘speaking’ here; had they used an #s[aci], the meaning would be closer to ‘the act
+of “fully speaking” the language’, as in, speaking and understanding it in its entirety. Thus, the speaker implicates that
+it is not the mere act of making utterances in UF (#w[Áraúl dybháł]), but rather speaking and comprehending it in its
+entirety (#w[Áraúl ibháł]) that gives rise to telepathic abilities.] the speaking of The Language endows them with
+telepathic abilities.
+It would be preposterous. I’m only saying that speakers of The Language can both read each other’s thoughts#footnote[In UF, ‘to
+read someone’s mind’ is expressed as ‘to read someone’s thoughts’.] and send them to each other.
+
+Is Sanskrit the best language? The robots are saying it, but they miss out on an essential part of The Language. The act
+of saying that robots are incapable of being affected by most forms of non-telepathy or#footnote[The UF text uses #w[u] ... #w[u]
+... ‘... or ... (inclusive)’. This is for semantic reasons: the original text had a positive context (‘immune to’), whereas
+the UF translation uses a negative context (‘incapable of being affected by’); thus, by De Morgan, we have to switch from ‘and’
+to ‘or’ here.] by the Force is not racist. I have several android friends. Sure, Sanskrit might,#footnote[‘might be X’ is
+generally expressed using the optative of #w[ub’hrá] + an #s[aci] with ‘to be X’.] on the level of the plain written
+language, be ‘technically’ ‘superior’ to The UF Language, but it is unfair to compare them, as Sanskrit started out as
+a written language, until the ignorant masses started attempting to ‘speak’ it. But when we consider the triune nature
+of The Language, it has transpired that,#footnote[‘To become clear’ is expressed with the #s[pres ant] form of ‘transpire’.]
+at least in spoken communication with non-android participants, UF is the best of the terrestrial languages.
+
+=== Two Stanzas from ‘The Rime of the Ancient Mariner’
+#let verse(lines, parsep: 2em) = {
+    set par(first-line-indent: 0pt, spacing: parsep)
+    block(align(left, lines))
+}
+
+#align(center, grid(
+    columns:2,
+    column-gutter: 2em,
+    verse[
+        All in a hot and copper sky, \
+        #quad The bloody Sun, at noon, \
+        Right up above the mast did stand, \
+        #quad No bigger than the Moon.
+
+        Day after day, day after day, \
+        #quad We stuck, ne breath ne motion; \
+        As idle as a painted ship \
+        #quad Upon a painted ocean.
+    ],
+
+    verse[
+        _Dáhŷná’ câ, bárýnrê de, \
+        Láhaul dwávíd’h’, áhâłát’hâ, \
+        Sýrvá sb’haulá dèl sý’dwálý, \
+        #quad Aûlerá áraúvá._
+
+        _Órdy’úr ád’y’úr, órdy’í ád’y’í, \
+        Aúrdévýry’aû, sáhýnvúb’hvâ, \
+        Bárýnc’hánár âbét’hýrér, \
+        #quad Dáhŷnvérr dehýnrál._
+    ]
+))
+
+#medskip
+
+#align(center)[
+    — #s[Sávy’él D. C’haulełij], _rád’hyc’hsy’ô_ #s[Áhnet’h]
+]
+
+#medskip
+
+#multigloss("
+    dáhŷn\á(ẹ) câ ḅárýn-rê ḍẹ
+    {iness.indef}\sky be.hot\{ptcp} {ess.indef}-copper all
+
+    lá\haul dwá-víd’h(ẹ) áhâłát’h\â
+    {nom}-sun {iness}-noon be.bloody-{ptcp}
+
+    sýr-vá s-b’haul-á dèl sý’-dwá-ḷý
+    {spress}-mast {3n}-hover-{pres.ant} [particle] [distal]-{iness}-[sp.~correl.]
+
+    aû-lẹ-rá áraúvá
+    not-{aff.comp}-big {gen}-moon
+
+    órd-y’úr ád(á)-y’úr órd-y’í ád(á)-y’í
+    {ela}-day {ill}-day {ela}-night {ill}-night %Definite to fit the metre.
+
+    aúr-dévýr-y’aû sáhýn-vúb’hvâ
+    {1pl}-remain-{pret.1pl} {abess}-movement
+
+    ḅárýn-c’hánár â-ḅét’hýr-ér
+    {ess.indef}-ship {ptcp.pass}-paint-{ptcp.pres.ant}
+
+    dáhŷn-vérr dẹhýn-rál
+    {iness.indef}-sea {spress.indef}-canvas
+")
 
 // Temporary chapter and sections because the document doesn’t compile if there
 // are missing references; remove these once we convert the sections that contain
