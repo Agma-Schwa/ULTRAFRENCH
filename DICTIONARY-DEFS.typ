@@ -47,6 +47,6 @@
   #text(size:13pt, weight: "semibold", ref) $arrow$ #word
 ]
 
-#let lemma(x) = text(weight: "bold", style: "italic", x)
-#let sense(x) = x
+#let lemma(x) = text(weight: "semibold", x)
+#let sense(x) = [sense~#x]
 
