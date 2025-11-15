@@ -244,7 +244,7 @@ are nasalised, e.g. the pronunciation of #w[ad’hór], which we just transcribe
 Word-final voiceless #w[ẹ] is always /ə̥/. Finally, non-back vowels that are followed by /ɰ/ or /ɰ̃/ are retracted, e.g. #w[y’ẹ́rẹ́], the future
 stem of #w[y’ẹ́] ‘forbid’, is phonemically /ɥẽˈɰẽ/, but pronounced [ɥɘ̃ˈɰẽ].
 
-Oral vowels have a nasalised and nasal counterpart. /i/ and /u/ do not vary in quality when na\-sa\-lis\-ed.
+Oral vowels have a nasalised and nasal counterpart. /i/ and /u/ do not vary in quality when na-?sa-?lis-?ed.
 /a/ is normally [ɐ], but becomes [ɑ] when nasalised or nasal. Similarly, /e/ becomes [ɛ],
 /y/ becomes [ʏ], and /o/ becomes [ɔ]. Note that nasalised [ẽ] exists, but it’s
 rare. The quality never changes when going from nasalised to nasal. The schwa has no nasal(lised) counterpart. Lastly, oral vowel
@@ -2483,7 +2483,7 @@ instead.
 - #w[Rab’haḍjô sárb.] ‘We fell trees.’
 
 The object is incorporated into the verb if it is a personal pronoun, in which case there are rules for
-the order in which these affixes occur (see @subsec:verbal-morphology).
+the order in which these affixes occur (see @subsubsec:active-passive-affixes).
 
 - #w[Lẹrab’hat’há.] ‘He felled us.’
 - #w[Llẹsyad’hór.] ‘She loves it.’
@@ -2726,12 +2726,12 @@ grammatical construction consists of a dependent clause formed by an #s[acc] nou
 noun is the subject or object of the clause, and the infinitive the predicate. This construction is most well-known
 from Classical languages such as Latin or Ancient Greek, but it is also found in various other languages, including
 English and, of course, UF:
-#gloss("
+#gloss(`
     Lácár sbhaú àfér láȷ́éd’há.
     lá\c̣ár s\bhaú à-fér l-áȷ́éd’h\á
     {nom}\Charles {acc.indef}\bridge {inf.pass}-build {3m}-order\{pres.ant}
     Charles ordered a bridge to be built.
-")
+`)
 
 In this sentence, the matrix clause is #w[Lácár láȷ́éd’há] ‘Charles ordered’, and the dependent clause is formed by
 the #s[aci] #w[sbhaú àfér] ‘a bridge to be built’. Since ‘a bridge’ is the object in this case, the passive infinitive
@@ -2740,12 +2740,12 @@ ordered a bridge to be built’) as well as Latin (_Carolus pontem fierī iussit
 
 UF does not have a word for ‘that’ as in ‘I think that ...’ or ‘I know that ...’; instead, it uses
 #s[aci]s in these cases. Just how multiple ‘that’ clauses can be chained in English, so can multiple #s[aci]s in UF.
-#gloss("
+#gloss(`
     Icár sbhaú àfér dáȷ́édá jsav́á.
     i\c̣ár s\bhaú à-fér d-áȷ́éd-á j-sav́á
     {acc}\Charles {acc.indef}\bridge {inf.pass}-build {inf}-order-{pres.ant} {1sg}-know
     I know that Charles ordered a bridge to be built.
-")
+`)
 
 Whenever a word is marked as taking an #s[aci] in the dictionary, it may also take a #s[pci] instead if
 that makes sense semantically; there are no words that syntactically may take an #s[aci], but not a #s[pci].
@@ -2770,12 +2770,12 @@ is added regardless, seeing as the verb would not be finite otherwise, e.g. #w[s
 === PCIs
 In addition to #s[aci]s, UF also has #s[pci]s, which use the #s[part] case instead. The #s[part] is used with verbs
 that govern the #s[part] or in some cases to indicate that an action is incomplete (see @subsubsec:declension).
-#gloss("
+#gloss(`
     Lácár dŷnbaú àfér láȷ́éd’há.
     lá\c̣ár dŷn-ḅaú à-fér l-áȷ́éd’h\á
     {nom}\Charles {part.indef}-bridge {inf.pass}-build {3m}-order\{pres.ant}
     ‘Charles ordered to start building a bridge.’
-")
+`)
 
 The translation of the sentence above isn’t the best, but we start to run into a problem here, since UF uses
 #s[aci]s and #s[pci]s much more prolifically than English does. A somewhat literal translation of this sentence would be
@@ -3060,18 +3060,18 @@ differences:
 == Fully-Glossed Examples
 
 === Simple Glossing Example
-#gloss("
+#gloss(`
     Cárvá, sráhó dwávaût’há dact’heá ?
     C̣ár vá s-ráhó dwá-vaût’há ḍ-ac̣t’he-á
     Charles.{voc} {particle} {indef.acc}-fish {def.iness}-mountain {2sg}-buy-{pres.ant.2sg}
     Charles, you bought a fish on the mountain?
-")
+`)
 
 === CCC 2 Text
 _Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy’e sab’héy’. Ez lé-el lalebet’he z’ihór bet’hê rêsol daudé.
 Ýab’héy’ rêd’hes lab’hóy’ejú, dŷna c’haúr debauhib sá lasusy’és ýrâhe lasyrrájú._
 
-#multigloss("
+#multigloss(`
     słé-rá ḍẹ c’hóný á\b’hásy’ô ráy’ê y’aúhý ḍ-ís dy-b’hóy’ẹ
     {cons.pl}-law all well.known {gen}\aviation way there.is.no {inf-subj}.can {part}-to.fly
 
@@ -3083,7 +3083,7 @@ _Słérá de c’hóný áb’hásy’ô, ráy’ê y’aúhý dís dyb’hóy�
 
     dẹ-ḅauhib sá la-susy’é\s ý-râhẹ la-sy-rrá-jú
     {inf}-be.impossible not {3n.pl}-care.about\{subj} {nom.pl.indef}-human {3n.pl}-{3n.pass}-believe-{gn}
-")
+`)
 
 #block[
 ‘According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too
@@ -3100,18 +3100,18 @@ they do not care about what humans believe to be impossible.
 
 === Copypasta Translation
 _Rub’hráy’ó rát’he au sré au sfèhe laut’hâ adŷbáłýr Át’hebhaú Raúl dedesle, s aút’hiy’ey’ó sývéhýr dýhisdé sérdé laúây’êr ;
-aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse ? Lec’hdr\-aúv\-nét’hic’hâ nérje c’hesse ?
-Árdihyl c’hesse ? Sauz-aud de c’hesse ? Jávé’sý’ýâ jrét’hádé dedónéle dýha\-bha\-hit’he deý’ebhat’hic’hâ Áraúl dybháł.
+aúc’haúbrâdy’ó’sý’ýâ vé dúr dyhaúbhausy’ô sehabhvísy’ô. Sýlývy’ér saúr c’hesse ? Lec’hdr-?aúv-?nét’hic’hâ nérje c’hesse ?
+Árdihyl c’hesse ? Sauz-aud de c’hesse ? Jávé’sý’ýâ jrét’hádé dedónéle dýha-?bha-?hit’he deý’ebhat’hic’hâ Áraúl dybháł.
 Aúrsáheressá. Jdír jys dub’hrá au dylí sýcahý dýbháhe au dylýáv́áy’é b’hýcahý sbáłýr Áraúl._
 
 _Lásásc’hríd raúl révéy’ýr c’hessejú ? Léraúb’he lasydír, lavâhe vé sbhárde sásy’élâ Áraúl. Sráhis’sý’ýâ id’hír deb’hýlnér
-u b’hesaúr rêvú aû-át’heý’ebhat’he u B’helfaúr sraúb’he. Jav́ár sáví lyzy’ýr ádróid. Sy’u\-b’h\-rá dahaúr isásc’hríd
+u b’hesaúr rêvú aû-át’heý’ebhat’he u B’helfaúr sraúb’he. Jav́ár sáví lyzy’ýr ádróid. Sy’u-?b’h-?rá dahaúr isásc’hríd
 dwáníb’he araúl sébâ âc’hrír ‘dèc’hníc’hvâ’ Át’hebhaú Raúl ‘desybhérýr’, sjys vé delýc’hóbhár, lásásc’hríd c’haúr sýraúl
-âc’hrír sc’hóváhá, lévás nórâ jys ‘desybáł’ dyhéy’é la\-y’e\-hó\-vâ\-hér. Aúc’hóhid’héy’ó laúrvé Áraúl dynát’hýr rêâ, srâsírá,
-dwác’hóvníc’h âbáł dývrê b’hehbár\-di\-hi\-bhá aû-á\-dr\-ó\-id, It’hebhaú Raúl abhraúl dérésdâ derâdvâvéy’ýr._
+âc’hrír sc’hóváhá, lévás nórâ jys ‘desybáł’ dyhéy’é la-?y’e-?hó-?vâ-?hér. Aúc’hóhid’héy’ó laúrvé Áraúl dynát’hýr rêâ, srâsírá,
+dwác’hóvníc’h âbáł dývrê b’hehbár-?di-?hi-?bhá aû-á-?dr-?ó-?id, It’hebhaú Raúl abhraúl dérésdâ derâdvâvéy’ýr._
 
 ==== Gloss
-#multigloss("
+#multigloss(`
     r-ub’hrá-y’ó rát’hẹ au s-ré au s-fèhẹ laut’h-â
     {1pl}-can-{1pl} you.see and {acc.pl.indef}-ray {and} {acc.pl.indef}-beam float-{ptcp}
 
@@ -3174,7 +3174,7 @@ dwác’hóvníc’h âbáł dývrê b’hehbár\-di\-hi\-bhá aû-á\-dr\-ó\-i
 
     i-t’hebhaú~raúl abh-raúl ḍérésḍ-â dẹ-râdvâ-véy’ýr
     {acc}-Ultrafrench.language {gen.pl}-language be.terrestrial-{ptcp} {inf}-{superl}-be.better
-")
+`)
 
 ==== Translation
 ‘You see, we can detect rays and beams of energy floating between ULTRAFRENCH speakers if we use certain long-forbidden
@@ -3255,7 +3255,7 @@ at least in spoken communication with non-android participants, UF is the best o
 
 #medskip
 
-#multigloss("
+#multigloss(`
     dáhŷn\á(ẹ) câ ḅárýn-rê ḍẹ
     {iness.indef}\sky be.hot\{ptcp} {ess.indef}-copper all
 
@@ -3279,13 +3279,327 @@ at least in spoken communication with non-android participants, UF is the best o
 
     dáhŷn-vérr dẹhýn-rál
     {iness.indef}-sea {spress.indef}-canvas
-")
+`)
 
-// Temporary chapter and sections because the document doesn’t compile if there
-// are missing references; remove these once we convert the sections that contain
-// these labels.
-#chapter("TEMP", "temp")
-== TEMP <subsec:verbal-morphology>
+=== The Tragedy of Darth Plagueis the Wise
+
+#partitle[_Láváý’ýr Blac’his Ád’hart’h Áhaj_]#smallskip
+_Dát’hád’hé dej dyváý’ýr Blac’his Ád’hart’h Áhaj. Jréflecé’sý’ýâ dyźi. Isdrár se a dyisdrár léjed’háy’
+laúnárrahódejússaub’he’sý’ýâ. Î se Abhhit’h. Sénýr Abht’hénéb Abhhit’h le Blac’his Dart’h; leb’h au ahy’íhâ
+au ahsajâ líhá dab’hèc’h àré shufb’h sývíd’hic’hlaúry’ê. Lyá sahc’haúnéhás árrádraúc ausc’hýrâ lihá
+id’hérny’éhuf abhźi la lacérérle deréb’hní._
+
+#multigloss(`
+    ḍ-át’hád’h\é dej dy-váý’ýr Ḅlac’his Á\d’hart’h á\haj
+    {2sg}-hear\{pret} {particle} {part}-tragedy Plagueis {gen}\Darth {gen}\be.wise
+
+    j-rẹ́flec̣-é ’sý’ýâ dy\źi
+    {1sg}-think-{pres.ant} not {part}\this.one
+
+    se isḍrár a dy-isḍrár lé-jed’háy’ laú-nárrahóḍe-jú-ss\au-b’hẹ ’sý’ýâ
+    be.{3n} story.{abs} {rel} {part}-story {nom.pl}-Jedi {3pl}-{narrate.fut}-{gnomic}-{cond}\{circ}-{2.dat} not
+
+    se î abh\hit’h
+    be.{3n} legend.{abs.indef} {gen.pl}-Sith
+
+    Sénýr abh\t’hénéb abh\hit’h le Blac’his Dart’h
+    lord.{abs.indef} {gen.pl}-darkness {gen.pl}-Sith be.{3m} Darth Plagueis
+
+    leb’h au ah-y’íh\â au ah-saj-â l-ih\á
+    be.{3m.pres.ant} and {suff.comp}-be.powerful\{ptcp} and {suff.comp}-be.wise-{ptcp} {3m}-be.able.to.{subj}\{pres.ant}
+
+    d-ab’hèc’h à-ré s\hufb’h sý-víd’hic’hlaúry’ê
+    {inf}-influence {inf.pass}-create {acc.indef}-life {acc.pl}-Midichlorian
+
+    l-y-á s-ah-c’haúnéhás á-rráḍraúc ausc’hýr-â l-ih\á
+    {3m}-have-{pres.ant} {acc.indef}-such-knowledge {gen}-side be.dark-{ptcp} {3m}-be.able.to.{subj}\{pres.ant}
+
+    i\d’hérny’ẹ́huf abh\źi l-a la-cér-ér-ḷẹ dẹ-réb’hní
+    {acc}\death {gen.pl}-the.one {abs.pl}-{rel} {3pl}-be.dear-{pres.ant}-{3dat} {inf}-prevent
+`)
+
+=== The North Wind and the Sun
+_Lasehérélé au Láb’haúré au Láhaul dŷnfaúr. Ladehid’hér haúdóné dýb’hic’htrár asa aúrdehab’híy’á ráy’á sráy’â.
+Sc’hóvâá láb’haúré, b’hát’hiý’at’hýrâ y’aúý’ávâ. Phas láaú’z sýrêr leraúhéréhá, sárslá b’hefaúr levú. Lárrád’hahánár
+vé dèl y’áb’hedêr, srêr syplâ latrâ, fahaú dèl, âníér, Láb’haúré sy’y’erádá Ashaul. Sec’hlérá révy’évâ vaúd’hérvâ.
+Ráhaú dé wêr irêr syplâ, Láhaul sdárá sré lerýlâ, Láaú jys, ub’hrâ’sý’ýâ lys dád’hýr it’hèrvíc’h, au ly’y’edehab’híy’á
+au ly’ad’há desb’hé dáhŷnríb’hy’ér ré._
+
+_Seh láistrár svaût lyp’hárdyt’há ihaúb’héc’h áy’aúý’á derêfihasjú._
+
+#smallskip
+#align(center)[—#[Zaub],#footnote[#w[Zauḅ] is the UF name for Aesop.] rád’hyc’hsy’ô #s[Áhnet’h]]
+
+==== Original Text
+Βορέας καὶ Ἥλιος περὶ δυνάμεως ἤριζον. ἔδοξε δὲ αὐτοῖς ἐκείνῳ τὴν νίκην ἀπονεῖμαι, ὃς ἂν αὐτῶν ἄνθρωπον ὁδοιπόρον
+ἀποδύσῃ. καὶ ὁ Βορέας ἀρξάμενος σφοδρὸς ἦν· τοῦ δὲ ἀνθρώπου ἀντεχομένου τῆς ἐσθῆτος μᾶλλον ἐπέκειτο. ὁ δὲ ὑπὸ τοῦ ψύχους
+καταπονούμενος ἔτι μᾶλλον, καὶ περιττοτέραν ἐσθῆτα προσελάμβανεν, ἕως ἀποκαμὼν ⟨ὁ Βορέας⟩ τῷ Ἡλίῳ αὐτὸν παρέδωκε. κἀκεῖνος
+τὸ μὲν πρῶτον μετρίως προσέλαμψε· τοῦ δὲ ἀνθρώπου τὰ περισσὰ τῶν ἱματίων ἀποτιθεμένου, σφοδρότερον τὸ καῦμα ἐπέτεινεν, ἕως
+οὗ πρὸς τὴν ἀλέαν ἀντέχειν μὴ δυνάμενος, ἀποδυσάμενος, ποταμοῦ παραρρέοντος ἐπὶ λουτρὸν ἀπῄει.
+
+ὁ λόγος δηλοῖ ὅτι πολλάκις τὸ πείθειν τοῦ βιάζεσθαι ἀνυτικώτερόν ἐστι.
+
+==== Translation by Émile Chambry
+Borée et le Soleil contestaient de leur force. Ils décidèrent d’attribuer la palme à celui d’entre eux qui dépouillerait
+un voyageur de ses vêtements. Borée commença ; il souffla avec violence. Comme l’homme serrait sur lui son vêtement, il
+l’assaillit avec plus de force. Mais l’homme incommodé encore davantage par le froid, prit un vêtement de plus, si bien
+que, rebuté, Borée le livra au Soleil. Celui-ci tout d’abord luisit modérément ; puis, l’homme ayant ôté son vêtement
+supplémentaire, le Soleil darda des rayons plus ardents, jusqu’à ce que l’homme, ne pouvant plus résister à la chaleur,
+ôta ses habits et s’en alla prendre un bain dans la rivière voisine.
+
+Cette fable montre que souvent la persuasion est plus efficace que la violence.
+
+==== Gloss
+#multigloss(`
+    la-sẹhérél-é au lá\b’haúré au lá\haul dŷn-faúr
+    {3pl}-quarrel-{pret} and {def}\North.Wind and {def}-Sun {indef.part}-strength.
+
+    La-dehid’h\ér haú-dónẹ́ dý-b’hic’hḍrár as-a
+    {3pl}-decide.{3pl.pres.ant} {pass.inf.fut.ii}-give {part.def}-victory {dat-rel.pron}
+
+    aúr-dehab’híy’-á s-ráy’\â
+    {3n.fut.ant}-undress-{circ} {acc.indef}-travel-{ptcp}
+
+    s-c’hóvâ-á lá\b’haúré b’hát’hiý’at’hýr-â y’aúý’ávâ
+    {3n}-begin-{pres.ant} {def}\North.Wind blow-{ptcp} violently
+
+    ḅas lá-aú ’z sý-rêr lẹ-raúhérẹ́h\á
+    because {def}-man his {acc.pl}-clothing {3m}-{tighten}-{pres.ant}
+
+    s-ársl-á b’he-faúr lẹ-vú
+    {3n}-{attack}-{pres.ant} {instr.indef}-force {aff.comp}-much
+
+    lá-rrád’hahánár vé ḍèl y’-áb’hẹḍ-êr s-rêr syḅlâ l-aḍr\â
+    {def}-cold but {particle} {3m.pass}-inconvenience-{pres.ant.ptcp} {acc.indef}-clothing additional {3m}-take-{pres.ant}
+
+    fahaú dèl â-ní-ér lá\b’haúré s-y’-y’ẹ-rád-á as\haul
+    so.much.so emphatic {ptcp.pass}-rebut-{pres.ant} {def}\North.Wind {3n}-{3m.pass}-{opt}-surrender-{pres.ant} {dat}-sun
+
+    s-ec’hlér-á révy’ẹ́-vâ vaúd’hér-vâ
+    {3n}-shine-{pres.ant} first-{adv} be.moderate-{adv}
+
+    ráh-aú dẹ́ w-êr i-rêr syḅlâ lá\haul s-dár-á s-ré
+    {insv}-man then remove-{pres.ant.ptcp} {acc}-clothing supplementary {def}\sun {3n}-throw-{pres.ant} {acc.indef.pl}-ray
+
+    lẹ-rýl-â lá-aú jys ub’hr\â ’sý’ýâ lys d-ád’hýr i\t’hèrvíc’h and
+    {aff.comp}-burn-{ptcp} {def}-man until be.able-{ptcp} not no.longer {inf}-resist {acc}-heat
+
+    au l-y’-y’ẹ-dehab’híy’-á au l-y’-ad’h\á dẹ-sb’hé
+    and {3m}-{3m.pass}-{opt}-undress-{pres.ant} and {3m}-{opt}-go\{pres.ant} {inf}-bathe
+
+    dáhŷn-ríb’hy’ér sẹh lá-isḍrár s-vaût lybhárdyt’há i\haúb’héc’h á-y’aúý’á dẹ-rê-fihas-jú
+    {iness}-river this {nom}-tale {3n}-show often {acc}-persuade {gen}-be.violent {inf}-{comp}-be.efficient-{gnomic}
+`)
+
+=== 2024 YouTube Conlang Relay
+==== Original English Text
+Suddenly, you (sg.) experienced a vision and felt like prey. In this vision, that (distal) one-toothed river-baby
+was torn asunder by its parents.
+
+Verily! Your dream appears to have included the parents. You ask: How can you hear the voice of the river? What
+could have caused this to happen—to you, when you can dream? Must what the river hears be true?
+For whom is it intended?
+
+And in this moment, in order to hear the river again, you may rip apart the baby’s hands.
+
+That druid would have said: In order to ensure their prophecies, the river quickly delivers its flow. How did that
+(dist.) druid hear that you have learnt? The druids do not want prophecies. And in order to stop the act of tearing
+apart the hands, I flow to torture this river. However, in order to see prophecies, druids are needed.
+
+Thus, in order to prevent the prophecies and the suffering upon the blind druid, for his prophecies to happen, you
+should have torn apart your hands. Hear me! You must have purified the place. Thus, you grabbed a shovel in all your
+hands, and buried a log with much moss.
+
+==== Translation
+_Sb’hizy’ô sud’hénvâ deréhevá au desèt’há âcahár. Seh dwáb’hizy’ô sý’e iáb’há ríb’hy’ér, lá-áb’há a syá sd’há sylâ,
+lasydecírér ez lébará.
+Ânb’hé, daú láréb’h debhará dec’hlýrá sbáréd. Derýcér : B’hehráy’ê c’hes dub’hrá dyrá áríb’hy’ér dát’hád? Ŷna c’hesse
+a aúrflijéssá iźi ast’he, dís váłé deréb’h? Syv́ár c’hes dŷná láríb’hy’ér sát’hád deré? Asa c’hes sydír?_
+
+_Au seh dwávvâ, b’hŷnnúb’hâ’b’h dyríb’hy’ér syát’hás, á-áb’há sývê dedecír díry’úréssa.
+Sý’e bá lá-?nó-?rá-?víc’h aúrdíréssá : Lýahúrs b’he lýr sýhaúáł, b’heý’ovâ’z ihulvâ láríb’hy’ér sfúr. B’hehráy’ê sý’e lá-?nó-?ráv
+sát’hád’há dedabrâá. Lasbéjú’sý’ýâ lénóráv sýhaúáł. Syábhecs b’he id’hecír abhvê, seh iríb’hy’ér jaúválv́eśé jsehul.
+Laúb’héréśe vé dýhaúáł dýnóráv lýbźéjú._
+
+_Lýábhecs daú’b’h au sýhaúáł au id’huý’ýr bá válv́áy’â ánórávíc’h, lav́árlýs b’he’z léhaúáł,
+b’há-?de-?cir-?res-?sá daú sývê. C’hát’hád! Ilý dec’haúbhýrífá dev́ár. Derâd’há daúc’h sbhelbec daú b’hevê de, au dát’hérá
+sraûd’hárb dáhŷnvúslihé vú._
+
+==== Gloss
+#multigloss(`
+    Sud’hénvâ s-b’hizy’ô ḍẹ-réhẹv\á au
+    Suddenly {acc.indef}-vision {2sg}-receive\{pres.ant.2sg} and
+
+    ḍẹ-sèt’h\á â-cah-ár
+    {2sg}-feel\{pres.ant.2sg} {ptcp.pass}-hunt-{pret}
+
+    sẹh dwá-b’hizy’ô sý’ẹ i-áb’há ríb’hy’ér lá-áb’há a s-y-á
+    this {iness}-vision that {acc}-child river.{abs} {nom}-child {rel} {3n}-have-{pres.ant}
+
+    s\d’há syl-â la-sy-dec̣ír-ér ez lé-ḅará
+    {acc.indef}\tooth to.be.the.only.one-{part} {3n.pl}-{3n.pass}-tear-{pres.ant.3pl} its {nom.pl}-parent
+
+    ânb’hé daú lá-rẹ́b’h dẹ\bhará dẹ-c’hlýr-á s-ḅáréḍ
+    verily your {nom}-dream {part.pl}\parent {inf}-include-{inf.pres.ant} {3sg}-seem
+
+    ḍẹ-rýc̣ér b’hehráy’ê c’hes ḍ-ub’hrá dy-rá á-ríb’hy’ér d-át’hád
+    {2sg}-ask by.what.means {q} {2sg}-can {part}-voice {gen}-river {inf}-hear
+
+    ŷn-a c’hes se a aúr-flijé-ss\á i\źi as-t’hẹ
+    {nom.indef}-what {q} be.{3n.sg} {rel} {3n-fut.ant₁}-cause.{fut}-{cond}\{circ₁} this.{acc} {dat}-you
+
+    ḍ-ís váłé dẹ-rẹ́b’h
+    {2sg}-can.{subj} despite.that {inf}-dream
+
+    sy-v́ár c’hes dŷn-á lá-ríb’hy’ér s-át’hád dẹ-ré
+    {3n.pass}-must {q} {part.indef}-what {nom}-river {3n}-hear {inf}-be.true
+
+    as-a c’hes sy-dír
+    {dat}-who {q} {3n.pass}-say
+
+    Au sẹh dwá-vvâ b’hŷnnúb’hâ ’b’h dy-ríb’hy’ér sy-át’hás á-áb’há sý-vê
+    and this {iness}-moment anew in.order.to {part}-river {3s.pass}-hear.{subj} {gen}-child {acc.pl}-hand
+
+    dẹ-dec̣ír ḍír-y’-úrẹ́-ssa
+    {inf}-tear.apart {2sg.fut.ii}-{opt}-can.{fut}-{cond}
+
+    sý’ẹ ḅá-lá-nórávíc’h aúr-dírẹ́-ss\á
+    that {circ}₁-{nom}-druid₁ {3n.fut.ant}₁-say.{fut}-{cond}-{circ}₁
+
+    lý-ahúrs b’he lýr sý\haúáł b’heý’o-vâ ’z i\hulvâ
+    {3pl.pass}-ensure.{subj} in.order.to their {acc.pl}-prophecies to.be.quick-{adv} its {acc}\flow
+
+    lá-ríb’hy’ér s-fúr
+    {nom}-river {3n}-deliver
+
+    b’hehráy’ê sý’ẹ lá-nóráv s-át’há\d’há dẹ-ḍ-aḅrâ-á
+    how that {nom}-druid {3sg.n}-hear\{pres.ant.3sg.n} {inf₁}-{2sg.pass}-learn-{pres.ant₁}
+
+    la-sḅé-jú ’sý’ýâ lé-nóráv sý\haúáł
+    {3pl}-want-{gnomic} not {nom.pl}-druid {acc.pl.indef}-prophecy
+
+    sy-ábhecs b’he i\d’hec̣ír abh-vê sẹh i-ríb’hy’ér
+    {3n.pass}-stop.{subj} so.that {acc}-tear.apart {gen.pl}-hand this {acc}-river
+
+    jaú-válv́e-ś\ẹ́ j-sehul
+    {1sg.fut.ii₁}-torture-{subj}\{circ₁} {1sg}-flow
+
+    laú-b’hérẹ́-ś\e vé dý\haúáł dýnóráv
+    {3pl.pass.fut.ii₁}-see.{fut}-{subj}\{circ₁} however {part.pl.indef}-prophecy {part.pl.indef}-druid
+
+    lý-bźé-jú
+    {3pl.pass}-need-{gnomic}
+
+    lý-ábhecs daú ’b’h au sý\haúáł au i\d’huý’ýr
+    {3pl.pass}-prevent.{subj} thus so.that and {acc.pl}\prophecy and {acc}\suffer
+
+    ḅá- válv́áy’-â á-nórávíc’h l-av́árḷýs b’he ’z lé\haúáł
+    {circ₁}- be.blind-{part} {gen}-druid₁ {3pl.n}-happen.{subj} so.that his {nom.pl}-prophecy
+
+    b’há-dec̣irrẹ-ss\á daú sý-vê
+    {2sg.fut.ant₁}-tear.asunder.{fut}-{cond}\{circ₁} your {acc.pl}-hand
+
+    c’h-át’hád
+    {2sg.imper}-hear
+
+    i-ḷý dẹ-c’haúbhýríf-á ḍẹ-v́ár
+    {acc}-place {inf}-purify-{pres.ant} {2sg.pass}-must
+
+    ḍẹ-râd’h\á thus s\bhelbec daú b’he-vê ḍẹ au ḍ-át’hér-á
+    {2sg}-grab\{pres.ant} {acc.indef}-shovel your {instr.pl}-hand all and {2sg}-bury-{pres.ant}
+
+    s-raûd’hárb dáhŷn-vúslihé vú
+    {acc}-log {iness.indef}-moss much
+`)
+
+== Unglossed Translations
+=== The Misanthrope – #s[Molière]
+#verse[
+    _C’hasbesy’ál y’aúhý, jaír ivaûd de : \
+    Sýhèl bas labíres laválfès, \
+    Sýaud bas abhvaúb’hâ lac’haúblés, \
+    Au sá lac’hlýrs dyn vérjet’hic’hâ \
+    A dyn sdónés láváý’eb’his anhbrí b’hérdy’ŷâ. \
+    Aúráró ijys rá seh áhaúblér \
+    Árívnél lérâ asa jlit’hijy’._
+]
+
+#partitle[Original Text]
+#verse(parsep: 0pt)[
+    Non, elle est générale, et je hais tous les hommes : \
+    Les uns, parce qu’ils sont méchants et malfaisants, \
+    Et les autres, pour être aux méchants complaisant, \
+    Et n’avoir pas pour eux ces haines vigoureuses \
+    Que doit donner le vice aux âmes vertueuses. \
+    De cette complaisance on voit l’injuste excès \
+    Pour le franc scélérat avec qui j’ai procès.
+]
+
+#partitle[English Translation]
+#verse(parsep: 0pt)[
+    There’s no exception, and I hate all men: \
+    A part, because they’re wicked and do evil; \
+    The rest, because they fawn upon the wicked, \
+    And fail to feel for them that healthy hatred \
+    Which vice should always rouse in virtuous hearts. \
+    You see the rank injustice of this fawning, \
+    Shown toward the bare-faced scoundrel I’m at law with.
+]
+
+#chapter([Dictionary], "dictionary")
+What follows is the UF dictionary: a complete list of UF words, their etymology and definitions, complete with
+select examples from UF literature and simple phrases to illustrate variations. The following conventions apply
+in the dictionary:
+
+#partitle[Case of Verb Complements]
+If the definition or a sense of a transitive verb starts with ‘+#s[case]’, then the direct object of
+that verb has case #s[case]. Similarly, if the definition of a ditransitive verb starts with ‘+#s[case1] and
+#s[case2]’, then the direct object has #s[case1], the indirect object #s[case2].
+
+#partitle[Examples]
+Examples (from literature) are introduced by a $diamond.small$ and usually contain UF text illustrating the word’s
+usage, as well as a translation, and possibly explanation. Note that a lot of these examples may use archaic
+spellings, e.g. #w[tèl] for #w[ḍèl].
+
+#partitle[Comments]
+Roman in the primary definition or a sense of a word indicates that word’s meaning, while italic text is used
+to add a comment explaining the word’s usage or etymology.
+
+#partitle[Grammatical Forms]
+A lot of grammatical forms, including verb and noun affixes, irregular forms of pronouns, most larger numbers,
+as well as the entire paradigm of #w[eḍ] ‘to be’, are _not_ included in the dictionary since they can
+already be found in the grammar. The reader is expected to either be familiar with them already or to search
+the rest of the grammar for them.
+
+#partitle[Glossary]
+In addition to the abbreviations shown at the start of the grammar, the dictionary uses an extended set of
+abbreviations, usually in italics. For verbs, _tr._ and _intr._ next to the part of speech may be
+used to indicate that all senses of a verb are transitive or intransitive; however, the absence of either does not
+mean that a verb can be both transitive and intransitive.
+
+#glossary(
+    ([_adj._],[adjective]),
+    ([_adv._],[adverb]),
+    ([_conj._],[conjunction]),
+    ([_esp._],[especially]),
+    ([_fem._],[feminine]),
+    ([_fig._],[figurative]),
+    ([_indecl._],[indeclinable#footnote[Also used for things other than nouns to indicate that they are invariant.]]),
+    ([_interj._],[interjection]),
+    ([_interrog._],[interrogative]),
+    ([_intr._],[intransitive]),
+    ([_irreg._],[irregular]),
+    ([_lit._],[literally]),
+    ([_masc._],[masculine]),
+    ([_n._],[noun]),
+    ([_neg._],[negative]),
+    ([_pos._],[positive]),
+    ([_refl._],[reflexive]),
+    ([_sbd._],[somebody]),
+    ([_sth._],[something]),
+    ([_tr._],[transitive]),
+    ([_v._],[verb]),
+)
 
 
 // ============================================================================
