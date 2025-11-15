@@ -21,13 +21,26 @@ struct UFOps : dict::LanguageOps {
 };
 
 auto UFOps::handle_unknown_macro(dict::TexParser& p, str macro) -> Result<dict::Node::Ptr> {
-    if (macro == "pf") {
-        auto a = Try(p.parse_arg());
-        return p.group(p.formatting("<f-pf>"), std::move(a), p.formatting("</f-pf>"));
+    if (p.backend_is<dict::JsonBackend>()) {
+        if (macro == "pf") {
+            auto a = Try(p.parse_arg());
+            return p.group(p.formatting("<f-pf>"), std::move(a), p.formatting("</f-pf>"));
+        }
+
+        if (macro == "L") return p.formatting("<f-mut><sup>L</sup></f-mut>");
+        if (macro == "N") return p.formatting("<f-mut><sup>N</sup></f-mut>");
+    } else if (p.backend_is<dict::TypstBackend>()) {
+        if (macro == "pf") {
+            auto a = Try(p.parse_arg());
+            return p.group(p.formatting("#s[pf]~#emph["), std::move(a), p.formatting("]"));
+        }
+
+        if (macro == "L") return p.formatting("#super[L]");
+        if (macro == "N") return p.formatting("#super[N]");
+    } else {
+        Unreachable();
     }
 
-    if (macro == "L") return p.formatting("<f-mut><sup>L</sup></f-mut>");
-    if (macro == "N") return p.formatting("<f-mut><sup>N</sup></f-mut>");
     return LanguageOps::handle_unknown_macro(p, macro);
 }
 
@@ -72,7 +85,7 @@ int main(int argc, char** argv) {
         UFOps ops;
         auto backend = opts.get<"--json">()
             ? Backend::New<JsonBackend>(ops, opts.get<"--minify">())
-            : Backend::New<TeXBackend>(ops, d->path.filename().string());
+            : Backend::New<TypstBackend>(ops);
 
         std::print(stderr, "[ULTRAFRENCHER] Generating dictionary...\n");
         Generator generator{*backend};

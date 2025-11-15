@@ -2356,7 +2356,7 @@ or had not happened, e.g. #w[t’hé dẹvy’ẹvvaúríhá] ‘if only you had
 the wish, and not the act of wishing; for the latter, the indicative or subjunctive together with a verb such
 as #w[sḅé] ‘to wish’ are used instead.
 
-Verbs of fearing are typically construed with a dependent clause in the negated optative, e.g. #w[jréd’hé
+Verbs of fearing typically take a dependent clause in the negated optative, e.g. #w[jréd’hé
 t’hé b’háy’ẹbharẹ́] ‘I was afraid lest you might leave’.
 
 == The Copula _eḍ_ <subsec:ed-paradigm>
@@ -3601,6 +3601,12 @@ mean that a verb can be both transitive and intransitive.
     ([_v._],[verb]),
 )
 
+#__draft-mode.update(false)
+#pagebreak()
+#set page(columns: 2)
+#set columns(gutter: 1em)
+#show : dictionary-mark
+#include "DICTIONARY.typ"
 
 // ============================================================================
 //  Backmatter
