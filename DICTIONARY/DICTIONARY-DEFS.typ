@@ -1,5 +1,10 @@
 #import "../BASE/src/lib.typ" : *
 
+//
+// TODO: This dictionary code is currently duplicated across 3 different
+//       projects; we should really move it into 'base'.
+//
+
 // This doesn’t stop #s from working unlike #emph.
 #let italic(x) = text(style: "italic", x)
 
