@@ -3606,7 +3606,7 @@ mean that a verb can be both transitive and intransitive.
 #set page(columns: 2)
 #set columns(gutter: 1em)
 #show : dictionary-mark
-#include "DICTIONARY.typ"
+#include "DICTIONARY/DICTIONARY.typ"
 
 // ============================================================================
 //  Backmatter

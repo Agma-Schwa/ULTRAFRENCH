@@ -1,4 +1,4 @@
-#import "BASE/src/lib.typ" : *
+#import "../BASE/src/lib.typ" : *
 
 // This doesn’t stop #s from working unlike #emph.
 #let italic(x) = text(style: "italic", x)
