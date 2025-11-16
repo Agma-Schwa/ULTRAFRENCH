@@ -2326,7 +2326,7 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "<p>Often construed with the <f-s>subess</f-s>.</p>",
+                    "comment": "<p>Usually takes the <f-s>subess</f-s>.</p>",
                     "def": "To bask, sunbathe.",
                     "examples": [
                         {
@@ -3474,7 +3474,7 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "<p>Possession of a noun qualified with this adjective verb is generally construed with the dative rather than the genitive, e.g. <f-w>asvẹ áví cérâ</f-w> or <f-w>áví cérâvé</f-w> ‘my dear friend’, rather than *<f-w>vaú áví cérâ</f-w>.</p>",
+                    "comment": "<p>Possession of a noun qualified with this adjective verb is generally expressed with the <f-s>dat</f-s> rather than the <f-s>gen</f-s>, e.g. <f-w>asvẹ áví cérâ</f-w> or <f-w>áví cérâvé</f-w> ‘my dear friend’, rather than *<f-w>vaú áví cérâ</f-w>.</p>",
                     "def": "To be dear, important (+<f-s>dat</f-s> to sbd.)."
                 },
                 {
@@ -7688,7 +7688,7 @@
             "pos": "adv.",
             "senses": [
                 {
-                    "comment": "<p>When describing ongoing processes that started a long time ago, this is construed with the present tense instead of the present anterior.</p>",
+                    "comment": "<p>When describing ongoing processes that started a long time ago, the complement is in the present tense instead of the present anterior.</p>",
                     "def": "Since long ago, for a long time, over a long period.",
                     "examples": [
                         {
@@ -9494,7 +9494,7 @@
         },
         {
             "def": {
-                "comment": "<p>This is grammatically a vocative—not that one could tell since it looks identical to the absolutive.</p>",
+                "comment": "<p>This is grammatically a <f-s>voc</f-s>—not that one could tell since it looks identical to the <f-s>abs</f-s>.</p>",
                 "def": "Kid."
             },
             "def-search": "kid",
@@ -10386,7 +10386,7 @@
         },
         {
             "def": {
-                "comment": "<p>Construed with the negated optative.</p>",
+                "comment": "<p>Takes the negated optative.</p>",
                 "def": "+<f-s>opt</f-s> To fear, lest &hellip;"
             },
             "def-search": "fear lest to",
@@ -11837,7 +11837,7 @@
             },
             "def-search": "about its that time",
             "etym": "A contraction of <f-w>se aúłau rá</f-w>",
-            "forms": "<f-s>pres</f-s> s’aúłau’r, <f-s>pres ant</f-s> b’h’aúłau’r, <f-s>pret</f-s> t’h’aúłau’r, <f-s>fut ii</f-s> h’aúłau’r. <f-nf>These forms are indicative only; all other tenses and moods of this are formed with the corresponding <f-s>3n</f-s> of</f-nf> eḍ <f-nf>followed by</f-nf> aúłau’r.",
+            "forms": "<f-s>pres</f-s> s’aúłau’r, <f-s>pres ant</f-s> b’h’aúłau’r, <f-s>pret</f-s> t’h’aúłau’r, <f-s>fut ii</f-s> h’aúłau’r. <f-nf>These forms are indicative only; all other tenses and moods are formed with the corresponding <f-s>3n</f-s> of</f-nf> eḍ <f-nf>followed by</f-nf> aúłau’r.",
             "hw-search": "saulaur",
             "ipa": "sɔ̃ɮ̃ʶoɰ",
             "pos": "v. <f-s>3n sg act</f-s> only",
@@ -13181,14 +13181,14 @@
             "pos": "v.",
             "senses": [
                 {
-                    "comment": "<p>Never construed with an <f-s>inf</f-s> if it in and of itself is the infinitive of an <f-s>aci</f-s> or <f-s>pci</f-s>, in which case the variant with the <f-s>part</f-s> (<f-sense>2</f-sense>) is used instead.</p>",
+                    "comment": "<p>Never takes an <f-s>inf</f-s> if it in and of itself is the infinitive of an <f-s>aci</f-s> or <f-s>pci</f-s>, in which case the variant with the <f-s>part</f-s> (<f-sense>2</f-sense>) is used instead.</p>",
                     "def": "+<f-s>inf/aci</f-s> To be able to, can."
                 },
                 {
                     "def": "+<f-s>part</f-s> To be capable of &hellip;"
                 },
                 {
-                    "comment": "<p>Dynamic or epistemic, never deontic; this and sense 4 are essentially a more emphatic optative.</p>",
+                    "comment": "<p>Dynamic or epistemic, never deontic; this and <f-sense>4</f-sense> are essentially a more emphatic optative.</p>",
                     "def": "<f-s>opt cond i + aci</f-s> To be possible; may."
                 },
                 {
