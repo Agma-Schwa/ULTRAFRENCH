@@ -131,10 +131,10 @@ ráy’ê|n.|moyen|\\ Way, means, method. \\ \w{ráy’ê y’aúhý} + \s{aci} 
 
 ub’hrá|v.|pouvoir|
     \\ +\s{inf/aci} To be able to, can.
-        \comment Never construed with an \s{inf} if it in and of itself is the infinitive of an \s{aci} or
+        \comment Never takes an \s{inf} if it in and of itself is the infinitive of an \s{aci} or
         \s{pci}, in which case the variant with the \s{part} (\senseref{2}) is used instead.
     \\ +\s{part} To be capable of \ldots
-    \\ \s{opt cond i + aci} To be possible; may. \comment Dynamic or epistemic, never deontic; this and sense 4 are essentially a
+    \\ \s{opt cond i + aci} To be possible; may. \comment Dynamic or epistemic, never deontic; this and \senseref{4} are essentially a
         more emphatic optative.
     \\ \s{opt cond ii + aci} Might. \comment Dynamic or epistemic, never deontic|\s{fut} úrẹ́, \s{subj} ís
 ab’héy’|n.|abeille|Bee
@@ -219,7 +219,7 @@ sit’há|conj.|\pf{si tant est que}|+\s{opt} Supposing that; if, assuming that
 fahaú|conj.|\pf{de façon que}|+\s{opt} In such a way that, such that, so much so
 véhýr|conj.|\pf{dans la mesure où}|Insofar as
 sḅé|v.|espérer|\\ To want (+\s{acc/inf} sth.) \\ +\s{opt} To wish, want, desire|\s{fut} sḅérẹ́, \s{subj} sḅés
-rêd|v.|craindre|+\s{opt} To fear, lest \ldots \comment Construed with the negated optative|\s{fut}
+rêd|v.|craindre|+\s{opt} To fear, lest \ldots \comment Takes the negated optative|\s{fut}
     rêdrẹ́, \s{subj} rês
 rêd’hes|particle|\pf{bien sûr}|Of course, naturally, as a matter of course
 râhẹ|n.|français|Human, person
@@ -739,7 +739,7 @@ réb’hní|v.|prévenir|
 dérny’ẹ́huf|n.|\pf{dernier} + \pf{souffle}|Death
 cér|v.|cher|
     \\ To be dear, important (+\s{dat} to sbd.). \comment Possession of a noun qualified with
-    this adjective verb is generally construed with the dative rather than the genitive, e.g. \w{asvẹ
+    this adjective verb is generally expressed with the \s{dat} rather than the \s{gen}, e.g. \w{asvẹ
     áví cérâ} or \w{áví cérâvé} ‘my dear friend’, rather than *\w{vaú áví cérâ}
     \\ \textit{with \w{áví} ‘friend’} To be friends with.
         \ex \w{áví lẹcérvé} ‘he is a (dear) friend of mine’|\s{fut} céré, \s{subj} cés
@@ -851,8 +851,8 @@ aublit’hér|v.|oblitérer|
     \\ To defeat, vanquish, obliterate (+\s{acc} sbd./sth.)
     \\ To be better than, ‘beat’ (+\s{inf} sbd/sth.)
 baḍ|v.|battre|To beat, strike, hit (+\s{acc} sbd./sth.)
-raû|interj.|gône|Kid. \comment This is grammatically a vocative—not that
-    one could tell since it looks identical to the absolutive
+raû|interj.|gône|Kid. \comment This is grammatically a \s{voc}—not that
+    one could tell since it looks identical to the \s{abs}
 ráhó|n.|gazon|Grassland, grassy field, meadow
 b’há|n.|vent|Wind, breeze
 lé|n.|plaine|Plain, plains
@@ -1074,8 +1074,8 @@ auhybh|v.|occuper|
     \\ \textit{intr.} To be occupied, taken
 ádrrá|n.|endroit|Location, place, locale
 laút’há|adv.|longtemps|
-    \\ Since long ago, for a long time, over a long period \comment When describing ongoing processes that started a long time ago, this
-        is construed with the present tense instead of the present anterior.
+    \\ Since long ago, for a long time, over a long period \comment When describing ongoing processes that started a long time ago,
+        the complement is in the present tense instead of the present anterior.
         \ex \w{laút’há ḍaléraû vy’í} ‘I have been a carpenter for a long time’, lit. ‘I am a carpenter for a long time’.
     \\ \textit{(with comparative prefix)} Since long before, For longer, for a longer time
         \ex \w{dau lẹlaút’há ḍaléraû vy’í} ‘I have been a carpenter much longer than you’.
@@ -1559,7 +1559,7 @@ sahávê|n.|from \pf{sac à main}|Small bag, pouch
 liv́uhínís|n.|from \pf{livre} + \pf{bouquiniste}|Library
 béd’hhauý’éy’|v.|from \pf{bain de soleil}|
     \\ To bask, sunbathe
-        \comment Often construed with the \s{subess}.
+        \comment Usually takes the \s{subess}.
         \ex \w{faúsaul béd’hhauý’éy’} ‘to bask in the sun’
 áḍv́é|n.|entremet|Meal (food)
 nêbhc’há|pron|from \w{nêbh-} + \w{c’há}|Whenever
@@ -1585,7 +1585,7 @@ s’aúłau’r|v. \s{3n sg act} only|A contraction of \w{se aúłau rá}|
     +\s{pci} It’s about time that...
         \comment Literally ‘It is big time that...’.
     |\s{pres} s’aúłau’r, \s{pres ant} b’h’aúłau’r, \s{pret} t’h’aúłau’r, \s{fut ii} h’aúłau’r.
-        \textnf{These forms are indicative only; all other tenses and moods of this are formed with the
+        \textnf{These forms are indicative only; all other tenses and moods are formed with the
         corresponding \s{3n} of} eḍ \textnf{followed by} aúłau’r.
 nérd|n.|nerd|Nerd
 jíraúf|n.|girofle|
