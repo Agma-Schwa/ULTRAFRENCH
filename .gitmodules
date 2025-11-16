@@ -1,12 +1,3 @@
-[submodule "ULTRAFRENCHER/libs/fmt"]
-	path = ULTRAFRENCHER/libs/fmt
-	url = https://github.com/fmtlib/fmt
-[submodule "ULTRAFRENCHER/libs/clopts"]
-	path = ULTRAFRENCHER/libs/clopts
-	url = git@github.com:Sirraide/clopts
-[submodule "ULTRAFRENCHER/libs/SQLiteCpp"]
-	path = ULTRAFRENCHER/libs/SQLiteCpp
-	url = https://github.com/SRombauts/SQLiteCpp
 [submodule "BASE"]
 	path = BASE
 	url = git@github.com:Agma-Schwa/typst-base
