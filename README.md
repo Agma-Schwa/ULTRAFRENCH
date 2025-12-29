@@ -29,4 +29,4 @@ For Unix systems, various scripts to generate the dictionary and build the gramm
 ./SCRIPTS/BUILD.sh
 ```
 
-No-one working on this project uses Windows, so if you do, figure it out yourself. Note that XeLaTeX is required the build the grammar. PDFLaTeX or LuaLaTeX will not work!
+No-one working on this project uses Windows, so if you do, figure it out yourself.
