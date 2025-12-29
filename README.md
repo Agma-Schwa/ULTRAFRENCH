@@ -14,7 +14,7 @@ Specifically,
 ## Building the grammar
 This project has several dependencies:
 - CMake 3.28 or later;
-- An up-to-date C++ compiler (Clang 20 is used by the project authors);
+- An up-to-date C++ compiler (Clang 21 is used by the project authors);
 - Typst.
 
 To compile the grammar to a PDF document, first build the ULTRAFRENCHER by running the following
