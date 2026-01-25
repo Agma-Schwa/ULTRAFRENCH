@@ -11,6 +11,8 @@
 *.synctex.gz
 cmake-build-debug/
 /gendict/gendict
+/PLUGIN/target
+
 
 ## The regular dictionary is already in the repository to make sure
 ## the generator doesn’t break randomly; no need to include the minified

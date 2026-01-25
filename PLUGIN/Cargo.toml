@@ -1,0 +1,19 @@
+[package]
+name = "plugin"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "plugin"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ULTRAFRENCHER"
+path = "src/ULTRAFRENCHER.rs"
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.54", features = ["derive"] }
+dictgen = { git = "https://github.com/Agma-Schwa/dictionary-generator" }
+wasm-minimal-protocol = "0.1.0"

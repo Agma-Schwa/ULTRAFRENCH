@@ -3,15 +3,14 @@
 set -eu
 
 GENERATE() {
-    ./ULTRAFRENCHER/ULTRAFRENCHER --dict DICTIONARY/DICTIONARY.dict.txt "$@"
+    ./PLUGIN/target/release/ULTRAFRENCHER DICTIONARY/DICTIONARY.dict.txt "$@"
 }
 
-## Generate JSON Dictionary.
-GENERATE --json          > DICTIONARY/DICTIONARY.json
-GENERATE --json --minify > DICTIONARY/DICTIONARY.min.json
+## Build the ULTRAFRENCHER.
+pushd PLUGIN
+cargo build --release --bin ULTRAFRENCHER
+popd
 
-## Generate Typst Dictionary.
-DICTIONARY_CONTENTS='#import "DICTIONARY-DEFS.typ" : *'
-DICTIONARY_CONTENTS+=$'\n'
-DICTIONARY_CONTENTS+="$(GENERATE)"
-echo "$DICTIONARY_CONTENTS" > DICTIONARY/DICTIONARY.typ
+## Generate JSON Dictionary.
+GENERATE          > DICTIONARY/DICTIONARY.json
+GENERATE --minify > DICTIONARY/DICTIONARY.min.json

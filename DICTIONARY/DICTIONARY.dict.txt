@@ -1676,7 +1676,6 @@ ríḅâ|num.||Threefold
     object. \\\textit{n.} Entirety, wholeness
 déví|num. frac. or n.|demi|Half
 
-$backend json
 vy’í, aúsó, vẹ, aúfý, vet’h, weḍy’ó, vẹ́hér, aúhér, vẹhér, aúfêr,
     ḍe, b’heḍ, ḍyf, b’hu, ḍet’h, b’heḍy’é, dyhér, b’hehér, ḍyfér, b’huhér,
     le, lẹsó, leb’h, lẹfýr, let’h, let’he, lehér, lẹhér, leb’hér, lẹfêr,
@@ -1887,4 +1886,3 @@ disvíláḍ|num. frac.||Ten-thousandth
 víwaúḍ|num. frac.||Millionth
 dýwaúḍ|num. frac.||Trillionth
 ráwaúḍ|num. frac.||Quintillionth
-$backend all
