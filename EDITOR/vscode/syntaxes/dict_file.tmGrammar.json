@@ -28,7 +28,7 @@
             "name": "constant.character.escape"
         },
         "macro_with_arg": {
-            "begin": "\\\\(s|w|textit|textbf|textnf|senseref|Sup|Sub|ref|label|pf|psc)\\{",
+            "begin": "\\\\(s|w|i|b|textit|textbf|textnf|senseref|Sup|Sub|ref|label|pf|psc)\\{",
             "end": "\\}",
             "beginCaptures": {
                 "0": { "name": "entity.name.function" }

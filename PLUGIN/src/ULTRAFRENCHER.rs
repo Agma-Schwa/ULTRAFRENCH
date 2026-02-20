@@ -1,4 +1,5 @@
 use std::fs::read_to_string;
+use dictgen::Options;
 use plugin::ULTRAFRENCHOps;
 use clap::Parser;
 
@@ -18,8 +19,11 @@ pub fn main() {
     let json = dictgen::parse_and_generate(
         ops,
         &text,
-        true,
-        !args.minify
+        Options {
+            populate_search_fields: true,
+            always_include_ipa: true,
+            pretty_json: !args.minify
+        },
     ).unwrap();
     println!("{}", json);
 }

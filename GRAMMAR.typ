@@ -53,7 +53,11 @@
 
 #table-of-contents()
 
-#chapter([Glossary], "glossary", outlined: false)
+#[
+#set heading(outlined: false)
+= Glossary <glossary>
+]
+
 #glossary(
     (s[abess],[abessive]),
     (s[abl],[ablative]),
@@ -132,9 +136,10 @@
 //  Mainmatter
 // ============================================================================
 #show : mainmatter
-#chapter([Phonology and Evolution from\ Modern Pseudo-French], "phonology")
+= Phonology and Evolution from\ Modern Pseudo-French <phonology>
 #let format-sound-changes(sound-changes, break-at: ()) = columns(2, {
     let num = 1
+    show enum: set block(spacing: auto)
     for (i, (title, changes)) in sound-changes.enumerate() {
         if (i in break-at) { colbreak() }
         if title != [] { partitle(title) }
@@ -427,7 +432,7 @@ The #s[indef orn] affix #w[vén-] can be attached to nouns to form something tha
 though this technically a case affix and not derivation; a more detailed description of this phenomenon is given
 in @subsec:ornative.
 
-#chapter([Nouns], "accidence")
+= Nouns <accidence>
 This chapter covers nouns in the broad sense, i.e. nouns substantive, adjectives, adverbs, numerals, and pronouns.
 
 == Declension <subsubsec:declension>
@@ -1539,7 +1544,7 @@ Fractions don’t have any derived forms.
 
 
 
-#chapter([Verbs], "verbs")
+= Verbs <verbs>
 Verbs in UF are inflected for person, number, tense, aspect, mood, and voice. Verbal inflexion is mainly done
 by means of concatenating a vast set of affixes. This chapter details these affixes, their meanings, uses,
 forms, and restrictions in their use.
@@ -2441,7 +2446,7 @@ stem \*#w[fy] and the #s[pres inf] #w[éḍ], and the same is true for the #s[pr
 // The coalescence rule table is a terrible abomination that isn’t even fully up-to-date and
 // is way too dense; I’m not even going to try converting or updating that.
 
-#chapter([Syntax], "syntax")
+= Syntax <syntax>
 UF syntax is unfortunately complicated in what morphological constructs are used in what situations, and
 the rules are not always clear. The following is a list of the most common constructions.
 
@@ -2931,7 +2936,7 @@ The second example in particular is hard to translate since it communicates an i
 using a morphological future in both the apodosis and the protasis. The tenses used in the translation here thus do not
 reflect the tense actually used in UF.
 
-#chapter([Northern Dialect], "nd")
+= Northern Dialect <nd>
 What we have discussed so far is the standard dialect (SD) of UF. The main other established dialect or language
 variant of UF is the so-called Northern Dialect (ND), or #w[Raúl Áheb’hèc’h],
 #s[nd] #w[Raúl á-S’heuè].
@@ -3055,7 +3060,7 @@ differences:
         poetry, the latter would be unusual in the ND.]
 - The double grave variant, i.e. #w[ṣ’hȁuá], is archaic nowadays, with the circumflex used instead.
 
-#chapter([Examples], "examples")
+= Examples <examples>
 
 == Fully-Glossed Examples
 
@@ -3546,7 +3551,7 @@ sraûd’hárb dáhŷnvúslihé vú._
     Shown toward the bare-faced scoundrel I’m at law with.
 ]
 
-#chapter([Dictionary], "dictionary")
+= Dictionary <dictionary>
 What follows is the UF dictionary: a complete list of UF words, their etymology and definitions, complete with
 select examples from UF literature and simple phrases to illustrate variations. The following conventions apply
 in the dictionary:
@@ -3605,8 +3610,7 @@ mean that a verb can be both transitive and intransitive.
 
 #dictionary(
     read("DICTIONARY/DICTIONARY.dict.txt"),
-    plugin("PLUGIN/target/wasm32-unknown-unknown/release/plugin.wasm"),
-    it => text(weight: "semibold", it)
+    plugin("PLUGIN/target/wasm32-unknown-unknown/release/plugin.wasm")
 )
 
 // ============================================================================

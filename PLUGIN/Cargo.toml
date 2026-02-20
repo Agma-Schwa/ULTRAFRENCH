@@ -13,7 +13,10 @@ name = "ULTRAFRENCHER"
 path = "src/ULTRAFRENCHER.rs"
 
 [dependencies]
+aho-corasick = "1.1.4"
 anyhow = "1.0.100"
 clap = { version = "4.5.54", features = ["derive"] }
 dictgen = { git = "https://github.com/Agma-Schwa/dictionary-generator" }
+lazy_static = "1.5.0"
+unicode-normalization = "0.1.25"
 wasm-minimal-protocol = "0.1.0"
