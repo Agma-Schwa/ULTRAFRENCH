@@ -21,7 +21,7 @@ pub fn main() {
         &text,
         Options {
             populate_search_fields: true,
-            always_include_ipa: true,
+            always_include_ipa: false,
             pretty_json: !args.minify
         },
     ).unwrap();
