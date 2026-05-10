@@ -1,7 +1,0 @@
-# Ignore everything in 'target' but keep the wasm file.
-target/*
-!target/wasm32-unknown-unknown
-target/wasm32-unknown-unknown/*
-!target/wasm32-unknown-unknown/release
-target/wasm32-unknown-unknown/release/*
-!target/wasm32-unknown-unknown/release/plugin.wasm

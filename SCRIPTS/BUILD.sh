@@ -15,4 +15,4 @@ popd
 ./SCRIPTS/GENERATE-DICTIONARY.sh
 
 ## Compile the grammar.
-typst compile GRAMMAR.typ
+${TYPST_CLI:-typst} compile GRAMMAR.typ --root ../..

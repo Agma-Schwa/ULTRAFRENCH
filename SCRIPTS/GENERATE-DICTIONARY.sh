@@ -2,15 +2,20 @@
 
 set -eu
 
-GENERATE() {
-    ./PLUGIN/target/release/ULTRAFRENCHER DICTIONARY/DICTIONARY.dict.txt "$@"
-}
+cd "$(dirname "$0")"
 
-## Build the ULTRAFRENCHER.
-pushd PLUGIN
-cargo build --release --bin ULTRAFRENCHER
+## Build the generator.
+pushd ../../../tools/dictionary-generator
+cargo build --release
+exe="$(realpath target/release/generator)"
 popd
 
+cd ..
+
+GENERATE() {
+    "$exe" DICTIONARY/DICTIONARY.dict.txt "$@"
+}
+
 ## Generate JSON Dictionary.
-GENERATE          > DICTIONARY/DICTIONARY.json
-GENERATE --minify > DICTIONARY/DICTIONARY.min.json
+GENERATE --search          > DICTIONARY/DICTIONARY.json
+GENERATE --search --minify > DICTIONARY/DICTIONARY.min.json

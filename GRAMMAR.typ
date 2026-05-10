@@ -1,4 +1,4 @@
-#import "BASE/src/lib.typ" : *
+#import "../../typst-base/src/lib.typ" : *
 #import "@preview/arborly:0.3.2": tree, a as tree-attr
 
 // ============================================================================
@@ -29,6 +29,16 @@
             ..rows.pos()
         )
     ]
+)
+
+#let plugin = instantiate-dictionary-plugin(
+    read("DICTIONARY/DICTIONARY.dict.txt"),
+    custom-macro-handler: (it, render) => {
+        if it.name == "L" [#super[L]]
+        else if it.name == "N" [#super[N]]
+        else if it.name == "pf" [#s[pf]\u{00A0}_#render(it.args.at(0))_]
+        else { panic("Unknown macro: " + it.name) }
+    }
 )
 
 // ============================================================================
@@ -3608,10 +3618,7 @@ mean that a verb can be both transitive and intransitive.
 
 #__draft-mode.update(false)
 
-#dictionary(
-    read("DICTIONARY/DICTIONARY.dict.txt"),
-    plugin("PLUGIN/target/wasm32-unknown-unknown/release/plugin.wasm")
-)
+#(plugin.typeset-dictionary)()
 
 // ============================================================================
 //  Backmatter
