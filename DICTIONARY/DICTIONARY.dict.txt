@@ -154,13 +154,31 @@ $ipa {
 }
 
 $preprocess {
-    def { !m/['"]/ "Non-typographic quote! Please use ‘’ (and “” for nested quotes) instead!" }
+    def { m/['"]/ then "Non-typographic quote! Please use ‘’ (and “” for nested quotes) instead!" }
 
     #If this is a single word, and the field contains no backslashes,
     #wrap it with '\pf{}'. That takes care of this field for most words
     #(conversely, more complex etymologies often don’t start w/ a PF word).
     #Etymology is empty; don’t do anything here.
     etym { s/^([^ \\]+)$/\pf{${1}}/ }
+}
+
+$collate {
+    preprocess {
+        default
+        s/ȷ/j/
+        search {
+            trie (nfc) {
+                # Hack to keep 't’h' and only replace 't', but note that
+                # 'default' deletes apostrophes, so we match 'th' here.
+                th => th
+                t => d
+                ł => l
+                ph => bh
+                p => b
+            }
+        }
+    }
 }
 
 $declare L  0
@@ -1552,7 +1570,7 @@ vár|n.|marche|
     \\ March (music)
     \\ Step (of a stair or ladder)
 ḍaḅ|n.|étape|\\ Stop (on a journey) \\ Stage, step (in a process)
-ḍéní|v.|tenir|+\s{acc}To hold
+ḍéní|v.|tenir|+\s{acc} To hold
 néḍnírc’haýb’h|v.|\pf{ne tenir qu’à un fil}|To hang by a thread
 ḅárḍáḍaû|n.|From \w{ḅárḍáḍ}|Interest
 b’hér|n.|verbe|Verb
